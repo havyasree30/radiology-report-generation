@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import hashlib
 import os
+import re
 from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 
@@ -71,8 +72,13 @@ def audit_one(path: str) -> dict:
             rec["frac_near_black"] = float((arr <= 5).mean())
         rec["readable"] = True
     except Exception as e:  # noqa: BLE001 - any decoder failure is a finding, not a crash
-        rec["error"] = f"{type(e).__name__}: {str(e)[:200]}"
+        rec["error"] = stable_error(f"{type(e).__name__}: {str(e)[:200]}")
     return rec
+
+
+def stable_error(message: object) -> object:
+    """Drop run-specific memory addresses so audit outputs are reproducible."""
+    return re.sub(r" at 0x[0-9A-Fa-f]+", "", message) if isinstance(message, str) else message
 
 
 def audit_many(paths: list[str], workers: int | None = None, chunksize: int = 256, progress: bool = True) -> list[dict]:

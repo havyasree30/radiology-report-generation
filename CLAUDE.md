@@ -58,7 +58,25 @@ split definitions or chosen policies. Read them from the repository.
 ## Repository conventions
 
 - `configs/`: `paths.example.yaml` is the template. `paths.yaml` is local and git-ignored.
-- `data/splits/`: generated split definitions (tracked). `data/cache/`: regenerable (ignored). No raw data in `data/`.
+- `data/`: the source datasets are stored here locally (`CheXpert-v1.0-small/`, `train.csv`, `IU X-ray/`) but are
+  git-ignored and READ-ONLY. Only `data/README.md` and `data/splits/` are tracked. `data/cache/` is regenerable.
 - `src/`: importable code. `scripts/`: entry points. `notebooks/`: exploration only; reusable logic belongs in `src/`.
 - `results/eda/{figures,tables,summaries}`: EDA outputs. Checkpoints and caches under `results/` are git-ignored.
 - Do not create placeholder modules. Add files only when they have a current purpose.
+
+## Phase 1 artifacts later phases must use (read them, do not re-derive or assume)
+
+- `results/eda/EDA_REPORT.md`: the Phase 1 findings and the open decisions that need user approval.
+- **Splits.**
+  - CheXpert: `data/splits/chexpert/` (unit = patient, merged across byte-identical images; `official_valid` is separate).
+  - IU X-Ray: `data/splits/iu_xray/` (unit = report uid).
+  - Never re-split ad hoc. Regenerate only via `scripts/eda_03_chexpert_splits.py` / `scripts/eda_04_iu_xray.py`.
+- **Retrieval corpus.** Only `data/splits/iu_xray/retrieval_corpus_uids.csv` (training reports) may enter any retrieval
+  index. Enforce it with `src/data/retrieval_corpus.assert_train_only`.
+- **Label policies.** Uncertain (-1) and unmentioned (NaN) labels are mapped at load time by
+  `src/data/label_policies.py`. The CSVs are never rewritten.
+- **pos_weights.** Training-only, per label policy: `data/splits/chexpert/training_pos_weights.json`.
+- **Loss references.** `src/imbalance/losses.py` holds NumPy reference losses. Framework implementations must be
+  tested against them.
+- **Candidate config.** `configs/experiments/phase2_classifier_candidates.yaml` is a PROPOSAL. Nothing in it is
+  approved or a chosen winner.

@@ -19,7 +19,7 @@ import numpy as np
 import pandas as pd
 
 from src.data.chexpert import load_chexpert_csv
-from src.data.image_audit import audit_many, walk_files
+from src.data.image_audit import audit_many, stable_error, walk_files
 from src.data.iu_xray import load_projections
 from src.utils.audit import AuditLog, setup_logging
 from src.utils.config import CACHE_DIR, EDA_TABLES, ensure_output_dirs, load_paths, load_yaml
@@ -126,6 +126,7 @@ def main() -> int:
     else:
         res = pd.DataFrame(audit_many(unique_paths))
         res.to_csv(cache, index=False, compression="gzip")
+    res["error"] = res["error"].map(stable_error)  # also normalises caches written by older runs
     df = inv.merge(res, left_on="abs_path", right_on="path", how="left").drop(columns=["path", "key"])
     for c in ("exists", "readable"):
         df[c] = df[c].fillna(False).astype(bool)

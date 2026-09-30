@@ -25,22 +25,41 @@ comparison.
 
 ## Current status
 
-**Phase 1: Dataset Exploration and EDA.**
+**Phase 1: Dataset Exploration and EDA. Analysis complete, awaiting review.**
 
-The repository and environment are set up. No models have been trained and
-no experimental results exist yet.
+The EDA, data-integrity audit, leak-free splits and imbalance analysis are
+done. See [`results/eda/EDA_REPORT.md`](results/eda/EDA_REPORT.md). No model
+has been trained; Phase 2 (DenseNet121) has not started.
 
 ## Datasets
 
-- **CheXpert**: chest radiographs with 14 observation labels (positive / negative / uncertain / blank).
-- **IU X-Ray / Open-I**: chest radiographs paired with free-text radiology reports.
+- **CheXpert v1.0-small**: chest radiographs with 14 observation labels (positive / negative / uncertain / blank).
+- **IU X-Ray** (Kaggle CSV layout of the Indiana University / Open-I collection): chest radiographs paired with free-text reports.
 
-Datasets are **not** included in this repository. Configure their locations
-locally:
+The datasets are stored locally under `data/` but are **never committed**:
+`.gitignore` excludes everything in `data/` except `data/README.md` and the
+generated `data/splits/`. Source dataset files are treated as read-only.
+Configure their locations in a local, git-ignored file:
 
 ```bash
 cp configs/paths.example.yaml configs/paths.yaml   # then edit the paths
 ```
+
+## Reproducing Phase 1
+
+Run from the project root with the project environment:
+
+```bash
+.venv\Scripts\python.exe -m scripts.eda_01_image_audit
+.venv\Scripts\python.exe -m scripts.eda_02_chexpert
+.venv\Scripts\python.exe -m scripts.eda_03_chexpert_splits
+.venv\Scripts\python.exe -m scripts.eda_04_iu_xray
+.venv\Scripts\python.exe -m scripts.eda_05_summary
+.venv\Scripts\python.exe -m pytest
+```
+
+- **Image audit cache:** stage 1 decodes and hashes every image, which takes several minutes. It caches its results in `data/cache/`; pass `--force` to rescan.
+- **Split selection:** thresholds and the pre-declared split-selection rule are in `configs/eda.yaml`.
 
 ## Environment setup (Phase 1)
 
@@ -57,11 +76,11 @@ Jupyter kernel: `radiology-report-generation`.
 ## Repository layout
 
 ```
-configs/    path & experiment configuration (machine-specific files git-ignored)
-data/       split definitions and caches only (no raw data; see data/README.md)
+configs/    paths template, EDA settings, concept lexicon, Phase 2 candidate config
+data/       local datasets (git-ignored), caches (git-ignored), split manifests (tracked)
 notebooks/  exploratory notebooks
-src/        importable project code
-scripts/    runnable entry points
-tests/      pytest tests
-results/    generated outputs (EDA figures/tables/summaries, later experiments)
+src/        importable code: data loading, splits, label policies, losses, analysis
+scripts/    runnable pipeline stages (eda_01 ... eda_05)
+tests/      pytest tests (label handling, splits, leakage, losses, retrieval invariant)
+results/    generated outputs (EDA report, figures, tables, summaries)
 ```

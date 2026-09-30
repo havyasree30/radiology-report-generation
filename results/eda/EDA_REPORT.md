@@ -263,7 +263,7 @@ These distributions are descriptive only. No fairness conclusion can be drawn fr
 | Age = 0 | 3 | keep; treat age as missing |
 | Sex = Unknown | 1 | keep |
 | No Finding + positive pathology | **0** | none needed |
-| Macro `._` file in CheXpert | 1 | not referenced; ignore |
+| macOS `._` metadata file in CheXpert | 1 | not referenced; ignore |
 | IU empty reports (no findings, no impression) | 25 | excluded from retrieval corpus ✔ |
 | IU duplicated image sets (uid 1015, 3245) | 2 reports | same report ⇒ no split leakage |
 
@@ -395,7 +395,7 @@ Token counts are regex tokens (words, numbers, punctuation), not any language mo
 | Pneumothorax | 0.6% | 0.0% | **67.9%** |
 | Enlarged Cardiomediastinum | 0.3% | 0.0% | 0.9% |
 
-**Negation handling is not optional.** Pleural Effusion, Pneumothorax and Consolidation are mentioned mostly to rule them out. Keyword counting would overstate their prevalence roughly 5–100-fold.
+**Negation handling is not optional.** Pleural Effusion, Pneumothorax and Consolidation are mentioned mostly to rule them out. Counting every keyword hit as positive would overstate their prevalence about 19× (Pleural Effusion), 37× (Consolidation) and 118× (Pneumothorax).
 
 **Agreement with the dataset's own MeSH indexing** (extractor-positive vs MeSH heading present; MeSH is not ground truth):
 
@@ -475,7 +475,7 @@ In each case NaN → 0 and the pos_weights are policy-matched (all precomputed i
 
 1. **Overall severity.** Imbalance is severe and highly heterogeneous. The effective negative : positive ratio ranges from 0.92 : 1 to 61.7 : 1. Seven of 14 labels are in the severe or extreme bands (≥ 10 : 1) under NaN → 0.
 2. **Most affected.** Pleural Other (61.7 : 1), Pneumonia (32.9), Fracture (23.6), Lung Lesion (23.2), Enlarged Cardiomediastinum (18.5).
-3. **Enough positives to train.** All 14 labels have ≥ 1,000 positive frontal training images (minimum: Pleural Other, 1,746) and ≥ 380 positive frontal images in each of val and test. Every label is trainable, but the five rare labels will have wide confidence intervals.
+3. **Enough positives to train.** All 14 labels have ≥ 1,000 positive frontal training images (minimum: Pleural Other, 1,746) and ≥ 378 positive frontal images in each of val and test (minimum: Pleural Other, test). Every label is trainable, but the five rare labels will have wide confidence intervals.
 4. **Labels needing caution.**
    - Pneumonia: 76% of positive-leaning mentions are uncertain, and it is a clinical diagnosis.
    - Pleural Other: rarest, 97% unmentioned.
