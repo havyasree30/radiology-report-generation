@@ -1,0 +1,318 @@
+{
+  "targets": [
+    "No Finding",
+    "Enlarged Cardiomediastinum",
+    "Cardiomegaly",
+    "Lung Opacity",
+    "Lung Lesion",
+    "Edema",
+    "Consolidation",
+    "Pneumonia",
+    "Atelectasis",
+    "Pneumothorax",
+    "Pleural Effusion",
+    "Pleural Other",
+    "Fracture",
+    "Support Devices"
+  ],
+  "multilabel": {
+    "cohort": "official_train_frontal_images",
+    "n_images": 191027,
+    "label_cardinality_14": 2.405696576923681,
+    "label_density_14": 0.17183546978026293,
+    "label_cardinality_13_excl_no_finding": 2.3168400278494663,
+    "label_density_13_excl_no_finding": 0.1782184636807282,
+    "label_cardinality_12_pathologies": 1.755819857925843,
+    "label_cardinality_14_all_images": 2.3077739085285613,
+    "label_density_14_all_images": 0.1648409934663258
+  },
+  "no_finding": {
+    "no_finding_positive_images": 22419,
+    "conflicts_with_positive_pathology": 0,
+    "conflict_pct_of_no_finding_positive": 0.0,
+    "conflict_pct_of_all_images": 0.0,
+    "conflicts_by_observation": {},
+    "no_finding_with_uncertain_pathology": 0,
+    "no_finding_with_support_devices_positive": 8808,
+    "representative_rows": [],
+    "definition": "No Finding == 1 and any of the 12 pathology observations (excluding Support Devices) == 1"
+  },
+  "patients": {
+    "images_total": 223648,
+    "images_official_train": 223414,
+    "images_official_valid": 234,
+    "patients_total": 64740,
+    "patients_official_train": 64540,
+    "patients_official_valid": 200,
+    "studies_total": 187841,
+    "studies_official_train": 187641,
+    "studies_official_valid": 200,
+    "patients_in_both_official_train_and_valid": 0,
+    "rows_missing_patient_id": 0,
+    "many_studies_threshold": 46.0,
+    "patients_above_threshold": 62,
+    "max_studies_per_patient": 91,
+    "max_images_per_patient": 92,
+    "study_label_consistency_train": {
+      "studies_with_multiple_images": 33994,
+      "studies_with_identical_labels_across_images": 33994,
+      "studies_with_differing_labels": 0
+    }
+  },
+  "views": {
+    "Frontal/Lateral:Frontal": 191229,
+    "Frontal/Lateral:Lateral": 32419,
+    "AP/PA:AP": 161759,
+    "AP/PA:Missing": 32419,
+    "AP/PA:PA": 29453,
+    "AP/PA:LL": 16,
+    "AP/PA:RL": 1,
+    "csv_view_vs_filename_mismatch:mismatch": 0,
+    "train_studies_without_frontal": 16,
+    "train_frontal_images": 191027
+  },
+  "demographics": {
+    "age_image_level": {
+      "count": 223648.0,
+      "missing": 0.0,
+      "mean": 60.43103001144656,
+      "median": 62.0,
+      "std": 17.821668081964873,
+      "q1": 49.0,
+      "q3": 74.0,
+      "min": 0.0,
+      "max": 90.0
+    },
+    "age_values_below_plausible_min": 3,
+    "age_value_counts_below_plausible_min": {
+      "0": 3
+    },
+    "age_values_above_plausible_max": 0,
+    "patients_with_implausible_age": 3,
+    "sex_images": {
+      "Male": 132764,
+      "Female": 90883,
+      "Unknown": 1
+    },
+    "sex_patients": {
+      "Male": 35917,
+      "Female": 28822,
+      "Unknown": 1
+    },
+    "patients_with_inconsistent_sex": 0
+  },
+  "label_states_train_all": {
+    "No Finding": {
+      "positive_count": 22381,
+      "negative_count": 0,
+      "uncertain_count": 0,
+      "missing_count": 201033
+    },
+    "Enlarged Cardiomediastinum": {
+      "positive_count": 10798,
+      "negative_count": 21638,
+      "uncertain_count": 12403,
+      "missing_count": 178575
+    },
+    "Cardiomegaly": {
+      "positive_count": 27000,
+      "negative_count": 11116,
+      "uncertain_count": 8087,
+      "missing_count": 177211
+    },
+    "Lung Opacity": {
+      "positive_count": 105581,
+      "negative_count": 6599,
+      "uncertain_count": 5598,
+      "missing_count": 105636
+    },
+    "Lung Lesion": {
+      "positive_count": 9186,
+      "negative_count": 1270,
+      "uncertain_count": 1488,
+      "missing_count": 211470
+    },
+    "Edema": {
+      "positive_count": 52246,
+      "negative_count": 20726,
+      "uncertain_count": 12984,
+      "missing_count": 137458
+    },
+    "Consolidation": {
+      "positive_count": 14783,
+      "negative_count": 28097,
+      "uncertain_count": 27742,
+      "missing_count": 152792
+    },
+    "Pneumonia": {
+      "positive_count": 6039,
+      "negative_count": 2799,
+      "uncertain_count": 18770,
+      "missing_count": 195806
+    },
+    "Atelectasis": {
+      "positive_count": 33376,
+      "negative_count": 1328,
+      "uncertain_count": 33739,
+      "missing_count": 154971
+    },
+    "Pneumothorax": {
+      "positive_count": 19448,
+      "negative_count": 56341,
+      "uncertain_count": 3145,
+      "missing_count": 144480
+    },
+    "Pleural Effusion": {
+      "positive_count": 86187,
+      "negative_count": 35396,
+      "uncertain_count": 11628,
+      "missing_count": 90203
+    },
+    "Pleural Other": {
+      "positive_count": 3523,
+      "negative_count": 316,
+      "uncertain_count": 2653,
+      "missing_count": 216922
+    },
+    "Fracture": {
+      "positive_count": 9040,
+      "negative_count": 2512,
+      "uncertain_count": 642,
+      "missing_count": 211220
+    },
+    "Support Devices": {
+      "positive_count": 116001,
+      "negative_count": 6137,
+      "uncertain_count": 1079,
+      "missing_count": 100197
+    }
+  },
+  "imbalance_train_all": {
+    "Support Devices": {
+      "positive_prevalence_all_images": 0.5192199235500013,
+      "neg_to_pos_ratio_explicit": 0.05290471633865225,
+      "neg_to_pos_ratio_nan_as_neg_unc_masked": 0.9166645115128318,
+      "imbalance_severity": "mild",
+      "prevalence_band": "common",
+      "uncertain_pct": 0.48295988613068114,
+      "missing_pct": 44.848129481590234
+    },
+    "Lung Opacity": {
+      "positive_prevalence_all_images": 0.47258005317482343,
+      "neg_to_pos_ratio_explicit": 0.06250177588770707,
+      "neg_to_pos_ratio_nan_as_neg_unc_masked": 1.0630227029484471,
+      "imbalance_severity": "mild",
+      "prevalence_band": "common",
+      "uncertain_pct": 2.5056621339754894,
+      "missing_pct": 47.28262329128882
+    },
+    "Pleural Effusion": {
+      "positive_prevalence_all_images": 0.38577260153795195,
+      "neg_to_pos_ratio_explicit": 0.41068838687969184,
+      "neg_to_pos_ratio_nan_as_neg_unc_masked": 1.4572847413182963,
+      "imbalance_severity": "mild",
+      "prevalence_band": "common",
+      "uncertain_pct": 5.204687262212753,
+      "missing_pct": 40.37481984119169
+    },
+    "Edema": {
+      "positive_prevalence_all_images": 0.2338528471805706,
+      "neg_to_pos_ratio_explicit": 0.3967002258546109,
+      "neg_to_pos_ratio_nan_as_neg_unc_masked": 3.0276767599433447,
+      "imbalance_severity": "moderate",
+      "prevalence_band": "common",
+      "uncertain_pct": 5.811632216423321,
+      "missing_pct": 61.526135336192006
+    },
+    "Atelectasis": {
+      "positive_prevalence_all_images": 0.14939081704817067,
+      "neg_to_pos_ratio_explicit": 0.03978906999041227,
+      "neg_to_pos_ratio_nan_as_neg_unc_masked": 4.682975790987536,
+      "imbalance_severity": "moderate",
+      "prevalence_band": "uncommon",
+      "uncertain_pct": 15.101560331939806,
+      "missing_pct": 69.36494579569768
+    },
+    "Cardiomegaly": {
+      "positive_prevalence_all_images": 0.12085187141360881,
+      "neg_to_pos_ratio_explicit": 0.4117037037037037,
+      "neg_to_pos_ratio_nan_as_neg_unc_masked": 6.975074074074074,
+      "imbalance_severity": "moderate",
+      "prevalence_band": "uncommon",
+      "uncertain_pct": 3.619737348599461,
+      "missing_pct": 79.319559203989
+    },
+    "No Finding": {
+      "positive_prevalence_all_images": 0.10017724941140663,
+      "neg_to_pos_ratio_explicit": 0.0,
+      "neg_to_pos_ratio_nan_as_neg_unc_masked": 8.982306420624637,
+      "imbalance_severity": "moderate",
+      "prevalence_band": "uncommon",
+      "uncertain_pct": 0.0,
+      "missing_pct": 89.98227505885934
+    },
+    "Pneumothorax": {
+      "positive_prevalence_all_images": 0.08704915537969868,
+      "neg_to_pos_ratio_explicit": 2.8970074043603455,
+      "neg_to_pos_ratio_nan_as_neg_unc_masked": 10.326048951048952,
+      "imbalance_severity": "severe",
+      "prevalence_band": "uncommon",
+      "uncertain_pct": 1.4077005022066658,
+      "missing_pct": 64.66917919199334
+    },
+    "Consolidation": {
+      "positive_prevalence_all_images": 0.0661686375965696,
+      "neg_to_pos_ratio_explicit": 1.9006291009943854,
+      "neg_to_pos_ratio_nan_as_neg_unc_masked": 12.236284921869716,
+      "imbalance_severity": "severe",
+      "prevalence_band": "uncommon",
+      "uncertain_pct": 12.41730598798643,
+      "missing_pct": 68.38962643343747
+    },
+    "Enlarged Cardiomediastinum": {
+      "positive_prevalence_all_images": 0.048331796574968444,
+      "neg_to_pos_ratio_explicit": 2.0038896091868863,
+      "neg_to_pos_ratio_nan_as_neg_unc_masked": 18.541674384145214,
+      "imbalance_severity": "severe",
+      "prevalence_band": "rare",
+      "uncertain_pct": 5.551576893122186,
+      "missing_pct": 79.93008495438961
+    },
+    "Lung Lesion": {
+      "positive_prevalence_all_images": 0.041116492252052245,
+      "neg_to_pos_ratio_explicit": 0.1382538645765295,
+      "neg_to_pos_ratio_nan_as_neg_unc_masked": 23.159155236229044,
+      "imbalance_severity": "severe",
+      "prevalence_band": "rare",
+      "uncertain_pct": 0.6660280913461109,
+      "missing_pct": 94.65387128828095
+    },
+    "Fracture": {
+      "positive_prevalence_all_images": 0.040462996947371245,
+      "neg_to_pos_ratio_explicit": 0.2778761061946903,
+      "neg_to_pos_ratio_nan_as_neg_unc_masked": 23.6429203539823,
+      "imbalance_severity": "severe",
+      "prevalence_band": "rare",
+      "uncertain_pct": 0.2873588942501365,
+      "missing_pct": 94.54197140734242
+    },
+    "Pneumonia": {
+      "positive_prevalence_all_images": 0.027030535239510507,
+      "neg_to_pos_ratio_explicit": 0.46348733233979134,
+      "neg_to_pos_ratio_nan_as_neg_unc_masked": 32.88706739526412,
+      "imbalance_severity": "severe",
+      "prevalence_band": "rare",
+      "uncertain_pct": 8.401443060864583,
+      "missing_pct": 87.64267234819663
+    },
+    "Pleural Other": {
+      "positive_prevalence_all_images": 0.01576893122185718,
+      "neg_to_pos_ratio_explicit": 0.08969628157820039,
+      "neg_to_pos_ratio_nan_as_neg_unc_masked": 61.66278739710474,
+      "imbalance_severity": "extreme",
+      "prevalence_band": "rare",
+      "uncertain_pct": 1.1874815365196452,
+      "missing_pct": 97.09418389178833
+    }
+  }
+}

@@ -1,14 +1,25 @@
 # Dataset path configuration — TEMPLATE.
 #
 # Copy this file to `configs/paths.yaml` and replace the placeholders with
-# absolute paths on your machine. `configs/paths.yaml` is git-ignored because
-# it contains machine-specific paths.
+# paths on your machine. `configs/paths.yaml` is git-ignored because it
+# contains machine-specific paths. Relative paths are resolved against the
+# project root.
 #
-# Raw datasets are never copied into this repository. They are read in place
-# and must be treated as read-only.
+# Source datasets are READ-ONLY: nothing in this project writes to them.
 
-# Root folder of the CheXpert dataset (the folder that contains train.csv / valid.csv).
+# --- CheXpert --------------------------------------------------------------
+# Folder of the CheXpert release (contains train/ and valid/ image folders).
 chexpert_root: "PATH_TO_CHEXPERT"
+# Label CSVs. They may live outside chexpert_root (as in some downloads).
+chexpert_train_csv: "PATH_TO_CHEXPERT_TRAIN_CSV"
+chexpert_valid_csv: "PATH_TO_CHEXPERT_VALID_CSV"
+# Directory that the CSV `Path` column is relative to. For the official
+# release this is the PARENT of chexpert_root, because `Path` values start
+# with the release folder name (e.g. "CheXpert-v1.0-small/train/...").
+chexpert_image_base: "PATH_TO_PARENT_OF_CHEXPERT_ROOT"
 
-# Root folder of the IU X-Ray / Open-I dataset (reports + images).
+# --- IU X-Ray / Open-I -----------------------------------------------------
 iu_xray_root: "PATH_TO_IU_XRAY"
+iu_reports_csv: "PATH_TO_IU_XRAY/indiana_reports.csv"
+iu_projections_csv: "PATH_TO_IU_XRAY/indiana_projections.csv"
+iu_images_dir: "PATH_TO_IU_XRAY/images/images_normalized"

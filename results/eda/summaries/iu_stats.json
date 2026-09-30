@@ -1,0 +1,347 @@
+{
+  "summary": {
+    "reports_rows": 3851,
+    "unique_report_uids": 3851,
+    "projection_rows": 7466,
+    "unique_image_filenames": 7466,
+    "image_files_on_disk": 7470,
+    "image_files_not_in_projections_csv": 4,
+    "projection_rows_missing_file": 0,
+    "reports_without_images": 0,
+    "image_uids_without_report": 0,
+    "frontal_images": 3818,
+    "lateral_images": 3648,
+    "other_projection_images": 0,
+    "section_both": 3331,
+    "section_impression_only": 489,
+    "section_neither": 25,
+    "section_findings_only": 6,
+    "reports_mesh_normal": 1379,
+    "anonymization_tokens_total": 3544,
+    "reports_with_anonymization_token": 1780,
+    "extremely_long_threshold_words": 108.75,
+    "quality_empty_report": 25,
+    "quality_near_empty": 12,
+    "quality_extremely_short": 18,
+    "quality_extremely_long": 39,
+    "quality_missing_findings": 514,
+    "quality_missing_impression": 31,
+    "quality_duplicate_report_text": 945,
+    "quality_findings_equals_impression": 6,
+    "quality_high_anonymization": 0,
+    "quality_malformed": 0,
+    "quality_no_images": 0,
+    "distinct_normalized_texts": 3036
+  },
+  "lengths": [
+    {
+      "section": "findings",
+      "unit": "chars",
+      "n": 3337,
+      "mean": 219.54330236739585,
+      "std": 98.33790176480059,
+      "min": 33,
+      "q1": 151.0,
+      "median": 207.0,
+      "q3": 268.0,
+      "p99": 527.0,
+      "max": 1050
+    },
+    {
+      "section": "findings",
+      "unit": "words",
+      "n": 3337,
+      "mean": 31.45340125861552,
+      "std": 14.505694365782274,
+      "min": 7,
+      "q1": 21.0,
+      "median": 29.0,
+      "q3": 38.0,
+      "p99": 79.0,
+      "max": 169
+    },
+    {
+      "section": "findings",
+      "unit": "tokens_approx",
+      "n": 3337,
+      "mean": 37.26670662271501,
+      "std": 16.379900744906994,
+      "min": 8,
+      "q1": 26.0,
+      "median": 35.0,
+      "q3": 45.0,
+      "p99": 90.0,
+      "max": 189
+    },
+    {
+      "section": "impression",
+      "unit": "chars",
+      "n": 3820,
+      "mean": 76.82068062827226,
+      "std": 82.59268903682194,
+      "min": 5,
+      "q1": 33.0,
+      "median": 40.0,
+      "q3": 89.25,
+      "p99": 397.80999999999995,
+      "max": 887
+    },
+    {
+      "section": "impression",
+      "unit": "words",
+      "n": 3820,
+      "mean": 10.562303664921465,
+      "std": 11.938330799137638,
+      "min": 1,
+      "q1": 4.0,
+      "median": 5.0,
+      "q3": 12.0,
+      "p99": 56.809999999999945,
+      "max": 130
+    },
+    {
+      "section": "impression",
+      "unit": "tokens_approx",
+      "n": 3820,
+      "mean": 13.005759162303665,
+      "std": 14.114760568528759,
+      "min": 2,
+      "q1": 5.0,
+      "median": 7.0,
+      "q3": 15.0,
+      "p99": 69.0,
+      "max": 154
+    },
+    {
+      "section": "combined",
+      "unit": "chars",
+      "n": 3826,
+      "mean": 269.0543648719289,
+      "std": 138.09360914548242,
+      "min": 18,
+      "q1": 176.0,
+      "median": 244.0,
+      "q3": 329.0,
+      "p99": 732.0,
+      "max": 1412
+    },
+    {
+      "section": "combined",
+      "unit": "words",
+      "n": 3826,
+      "mean": 37.979090433873495,
+      "std": 20.244933698422404,
+      "min": 3,
+      "q1": 25.0,
+      "median": 34.0,
+      "q3": 46.0,
+      "p99": 108.75,
+      "max": 230
+    },
+    {
+      "section": "combined",
+      "unit": "tokens_approx",
+      "n": 3826,
+      "mean": 45.489022477783585,
+      "std": 23.40591534049787,
+      "min": 4,
+      "q1": 30.0,
+      "median": 41.0,
+      "q3": 55.0,
+      "p99": 128.0,
+      "max": 265
+    }
+  ],
+  "split_sizes": [
+    {
+      "split": "test",
+      "reports": 578,
+      "images": 1115,
+      "normal_reports": 207,
+      "with_any_text": 577,
+      "normal_pct": 35.813148788927336
+    },
+    {
+      "split": "train",
+      "reports": 2695,
+      "images": 5238,
+      "normal_reports": 965,
+      "with_any_text": 2675,
+      "normal_pct": 35.80705009276438
+    },
+    {
+      "split": "val",
+      "reports": 578,
+      "images": 1113,
+      "normal_reports": 207,
+      "with_any_text": 574,
+      "normal_pct": 35.813148788927336
+    }
+  ],
+  "text_overlap": {
+    "val": {
+      "reports": 574,
+      "exact_text_in_train": 120,
+      "pct": 20.905923344947734
+    },
+    "test": {
+      "reports": 577,
+      "exact_text_in_train": 142,
+      "pct": 24.610051993067593
+    }
+  },
+  "retrieval_corpus_size": 2675,
+  "concepts": {
+    "Enlarged Cardiomediastinum": {
+      "reports_with_text": 3826,
+      "positive_count": 11,
+      "positive_pct": 0.2875065342394145,
+      "uncertain_count": 1,
+      "uncertain_pct": 0.026136957658128592,
+      "negated_count": 35,
+      "negated_pct": 0.9147935180345008,
+      "not_mentioned_count": 3779,
+      "not_mentioned_pct": 98.77156299006796
+    },
+    "Cardiomegaly": {
+      "reports_with_text": 3826,
+      "positive_count": 296,
+      "positive_pct": 7.736539466806064,
+      "uncertain_count": 20,
+      "uncertain_pct": 0.5227391531625719,
+      "negated_count": 6,
+      "negated_pct": 0.15682174594877157,
+      "not_mentioned_count": 3504,
+      "not_mentioned_pct": 91.5838996340826
+    },
+    "Lung Opacity": {
+      "reports_with_text": 3826,
+      "positive_count": 526,
+      "positive_pct": 13.748039728175641,
+      "uncertain_count": 13,
+      "uncertain_pct": 0.3397804495556717,
+      "negated_count": 944,
+      "negated_pct": 24.673288029273394,
+      "not_mentioned_count": 2343,
+      "not_mentioned_pct": 61.2388917929953
+    },
+    "Lung Lesion": {
+      "reports_with_text": 3826,
+      "positive_count": 145,
+      "positive_pct": 3.7898588604286463,
+      "uncertain_count": 21,
+      "uncertain_pct": 0.5488761108207004,
+      "negated_count": 191,
+      "negated_pct": 4.992158912702561,
+      "not_mentioned_count": 3469,
+      "not_mentioned_pct": 90.6691061160481
+    },
+    "Edema": {
+      "reports_with_text": 3826,
+      "positive_count": 69,
+      "positive_pct": 1.803450078410873,
+      "uncertain_count": 28,
+      "uncertain_pct": 0.7318348144276007,
+      "negated_count": 266,
+      "negated_pct": 6.952430737062206,
+      "not_mentioned_count": 3463,
+      "not_mentioned_pct": 90.51228437009932
+    },
+    "Consolidation": {
+      "reports_with_text": 3826,
+      "positive_count": 33,
+      "positive_pct": 0.8625196027182436,
+      "uncertain_count": 7,
+      "uncertain_pct": 0.18295870360690017,
+      "negated_count": 1176,
+      "negated_pct": 30.737062205959226,
+      "not_mentioned_count": 2610,
+      "not_mentioned_pct": 68.21745948771563
+    },
+    "Pneumonia": {
+      "reports_with_text": 3826,
+      "positive_count": 47,
+      "positive_pct": 1.2284370099320439,
+      "uncertain_count": 42,
+      "uncertain_pct": 1.0977522216414008,
+      "negated_count": 173,
+      "negated_pct": 4.521693674856246,
+      "not_mentioned_count": 3564,
+      "not_mentioned_pct": 93.15211709357031
+    },
+    "Atelectasis": {
+      "reports_with_text": 3826,
+      "positive_count": 308,
+      "positive_pct": 8.050182958703607,
+      "uncertain_count": 59,
+      "uncertain_pct": 1.5420805018295871,
+      "negated_count": 8,
+      "negated_pct": 0.20909566126502874,
+      "not_mentioned_count": 3451,
+      "not_mentioned_pct": 90.19864087820177
+    },
+    "Pneumothorax": {
+      "reports_with_text": 3826,
+      "positive_count": 22,
+      "positive_pct": 0.575013068478829,
+      "uncertain_count": 1,
+      "uncertain_pct": 0.026136957658128592,
+      "negated_count": 2598,
+      "negated_pct": 67.90381599581809,
+      "not_mentioned_count": 1205,
+      "not_mentioned_pct": 31.495033978044955
+    },
+    "Pleural Effusion": {
+      "reports_with_text": 3826,
+      "positive_count": 150,
+      "positive_pct": 3.9205436487192893,
+      "uncertain_count": 33,
+      "uncertain_pct": 0.8625196027182436,
+      "negated_count": 2715,
+      "negated_pct": 70.96184004181913,
+      "not_mentioned_count": 928,
+      "not_mentioned_pct": 24.255096706743334
+    },
+    "Pleural Other": {
+      "reports_with_text": 3826,
+      "positive_count": 35,
+      "positive_pct": 0.9147935180345008,
+      "uncertain_count": 7,
+      "uncertain_pct": 0.18295870360690017,
+      "negated_count": 0,
+      "negated_pct": 0.0,
+      "not_mentioned_count": 3784,
+      "not_mentioned_pct": 98.9022477783586
+    },
+    "Fracture": {
+      "reports_with_text": 3826,
+      "positive_count": 102,
+      "positive_pct": 2.6659696811291167,
+      "uncertain_count": 14,
+      "uncertain_pct": 0.36591740721380034,
+      "negated_count": 88,
+      "negated_pct": 2.300052273915316,
+      "not_mentioned_count": 3622,
+      "not_mentioned_pct": 94.66806063774176
+    },
+    "Support Devices": {
+      "reports_with_text": 3826,
+      "positive_count": 185,
+      "positive_pct": 4.835337166753789,
+      "uncertain_count": 2,
+      "uncertain_pct": 0.052273915316257184,
+      "negated_count": 0,
+      "negated_pct": 0.0,
+      "not_mentioned_count": 3639,
+      "not_mentioned_pct": 95.11238891792995
+    }
+  },
+  "audit": [
+    {
+      "dataset": "iu_xray",
+      "severity": "warning",
+      "issue": "image_not_in_projections_csv",
+      "count": 4
+    }
+  ]
+}

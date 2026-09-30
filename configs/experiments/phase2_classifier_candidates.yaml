@@ -1,0 +1,33 @@
+# Phase 2 candidate configuration: PROPOSAL ONLY. Not approved, not run.
+# Derived from the Phase 1 EDA (results/eda/EDA_REPORT.md). No option below
+# is a pre-selected winner; the controlled experiments decide.
+
+fixed:
+  model: densenet121              # ImageNet-pretrained backbone
+  outputs: 14                     # 14 logits -> 14 INDEPENDENT sigmoids (no softmax)
+  targets_from: configs/eda.yaml  # the 14 detected CheXpert observations
+  split: data/splits/chexpert/chexpert_patient_splits.csv   # stratified patient-group split, seed 42
+  views: frontal_only             # primary experiment; laterals kept for a later ablation
+  missing_label_policy: zero      # NaN (unmentioned) -> 0; justified in EDA report section 10
+  exclusions: results/eda/tables/chexpert_exclusion_candidates.csv  # rows with recommendation == exclude (pending approval)
+  model_selection: validation split only (never test, never official_valid)
+  seeds: [0, 1, 2]
+
+# Imbalance-handling candidates (Experiment A is the baseline).
+losses:
+  A_bce: {type: bce}
+  B_weighted_bce: {type: bce, pos_weight: data/splits/chexpert/training_pos_weights.json}  # key: frontal / <label policy>
+  C_focal: {type: focal, gamma: [1, 2], alpha: null}
+  D_asymmetric: {type: asl, gamma_pos: 0, gamma_neg: 4, clip: 0.05}   # Ridnik et al. 2021 defaults
+
+# Uncertainty-handling candidates (labels are never rewritten on disk).
+uncertainty_policies: [mask, zero, one]   # U-Masked, U-Zero, U-One
+
+sampling:
+  enabled: false                  # see results/eda/summaries/sampling_analysis.md
+  optional_ablation: inverse_prevalence_sqrt_max
+
+evaluation:
+  primary: per-label AUROC and AUPRC on the held-out test split; macro averages over labels with adequate positives
+  secondary: official_valid (radiologist-labelled; labels with < 10 positives reported descriptively only)
+  uncertainty: patient-level bootstrap 95% CIs; paired comparisons between configurations

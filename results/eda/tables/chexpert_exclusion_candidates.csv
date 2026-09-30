@@ -1,0 +1,42 @@
+Path,reason,manual_review,recommendation,split
+CheXpert-v1.0-small/train/patient03504/study3/view2_frontal.jpg,unusual_aspect_ratio,,keep (no defect),train
+CheXpert-v1.0-small/train/patient05271/study5/view2_frontal.jpg,near_blank,almost entirely white speckle; no anatomy visible,exclude,train
+CheXpert-v1.0-small/train/patient05843/study9/view1_frontal.jpg,unusual_aspect_ratio,,keep (no defect),train
+CheXpert-v1.0-small/train/patient08615/study4/view2_frontal.jpg,unusual_aspect_ratio,,keep (no defect),train
+CheXpert-v1.0-small/train/patient09025/study1/view1_frontal.jpg,unusual_aspect_ratio,,keep (no defect),val
+CheXpert-v1.0-small/train/patient09797/study4/view1_frontal.jpg,near_blank,almost entirely white apart from corner artefacts; no anatomy visible,exclude,train
+CheXpert-v1.0-small/train/patient12362/study1/view1_frontal.jpg,near_blank,almost entirely white apart from edge noise; no anatomy visible,exclude,train
+CheXpert-v1.0-small/train/patient18378/study2/view2_frontal.jpg,unusual_aspect_ratio,,keep (no defect),train
+CheXpert-v1.0-small/train/patient20163/study1/view2_frontal.jpg,unusual_aspect_ratio,,keep (no defect),train
+CheXpert-v1.0-small/train/patient21925/study1/view2_frontal.jpg,unusual_aspect_ratio,,keep (no defect),train
+CheXpert-v1.0-small/train/patient22599/study5/view2_frontal.jpg,unusual_aspect_ratio,,keep (no defect),train
+CheXpert-v1.0-small/train/patient25979/study8/view1_frontal.jpg,near_blank,almost entirely white; no anatomy visible,exclude,train
+CheXpert-v1.0-small/train/patient27936/study1/view2_frontal.jpg,unusual_aspect_ratio,valid frontal radiograph tightly collimated to the lungs (wide crop); not a defect,keep (no defect),val
+CheXpert-v1.0-small/train/patient29519/study16/view2_frontal.jpg,unusual_aspect_ratio,,keep (no defect),val
+CheXpert-v1.0-small/train/patient36680/study1/view2_frontal.jpg,unusual_aspect_ratio,,keep (no defect),test
+CheXpert-v1.0-small/train/patient39846/study4/view2_frontal.jpg,unusual_aspect_ratio,,keep (no defect),train
+CheXpert-v1.0-small/train/patient43071/study1/view2_lateral.jpg,unusual_aspect_ratio,,keep (no defect),val
+CheXpert-v1.0-small/train/patient44163/study1/view1_frontal.jpg,near_blank,almost entirely white; no anatomy visible,exclude,val
+CheXpert-v1.0-small/train/patient48043/study1/view2_frontal.jpg,near_blank,almost entirely white; no anatomy visible,exclude,train
+CheXpert-v1.0-small/train/patient49374/study2/view1_frontal.jpg,unusual_aspect_ratio,,keep (no defect),val
+CheXpert-v1.0-small/train/patient51430/study1/view1_frontal.jpg,unusual_aspect_ratio,,keep (no defect),train
+CheXpert-v1.0-small/train/patient64538/study1/view1_frontal.jpg,implausible_age=0,,keep image; treat age as missing in any age-stratified analysis,test
+CheXpert-v1.0-small/train/patient64539/study1/view1_frontal.jpg,implausible_age=0,,keep image; treat age as missing in any age-stratified analysis,train
+CheXpert-v1.0-small/train/patient64540/study1/view1_frontal.jpg,implausible_age=0,,keep image; treat age as missing in any age-stratified analysis,val
+CheXpert-v1.0-small/train/patient07958/study5/view2_frontal.jpg,frontal image with AP/PA=LL,,keep; exclude from any AP-vs-PA analysis,train
+CheXpert-v1.0-small/train/patient08287/study5/view2_frontal.jpg,frontal image with AP/PA=LL,,keep; exclude from any AP-vs-PA analysis,train
+CheXpert-v1.0-small/train/patient09010/study1/view2_frontal.jpg,frontal image with AP/PA=LL,,keep; exclude from any AP-vs-PA analysis,train
+CheXpert-v1.0-small/train/patient12419/study1/view2_frontal.jpg,frontal image with AP/PA=LL,,keep; exclude from any AP-vs-PA analysis,val
+CheXpert-v1.0-small/train/patient15664/study1/view2_frontal.jpg,frontal image with AP/PA=LL,,keep; exclude from any AP-vs-PA analysis,test
+CheXpert-v1.0-small/train/patient17783/study1/view2_frontal.jpg,frontal image with AP/PA=LL,,keep; exclude from any AP-vs-PA analysis,train
+CheXpert-v1.0-small/train/patient19531/study1/view2_frontal.jpg,frontal image with AP/PA=LL,,keep; exclude from any AP-vs-PA analysis,train
+CheXpert-v1.0-small/train/patient25114/study3/view1_frontal.jpg,frontal image with AP/PA=LL,,keep; exclude from any AP-vs-PA analysis,train
+CheXpert-v1.0-small/train/patient25145/study2/view2_frontal.jpg,frontal image with AP/PA=LL,,keep; exclude from any AP-vs-PA analysis,val
+CheXpert-v1.0-small/train/patient25359/study12/view2_frontal.jpg,frontal image with AP/PA=LL,,keep; exclude from any AP-vs-PA analysis,train
+CheXpert-v1.0-small/train/patient25979/study8/view1_frontal.jpg,frontal image with AP/PA=LL,,keep; exclude from any AP-vs-PA analysis,train
+CheXpert-v1.0-small/train/patient28011/study2/view2_frontal.jpg,frontal image with AP/PA=LL,,keep; exclude from any AP-vs-PA analysis,train
+CheXpert-v1.0-small/train/patient28939/study1/view3_frontal.jpg,frontal image with AP/PA=LL,,keep; exclude from any AP-vs-PA analysis,train
+CheXpert-v1.0-small/train/patient29942/study3/view2_frontal.jpg,frontal image with AP/PA=LL,,keep; exclude from any AP-vs-PA analysis,train
+CheXpert-v1.0-small/train/patient30230/study1/view2_frontal.jpg,frontal image with AP/PA=LL,,keep; exclude from any AP-vs-PA analysis,test
+CheXpert-v1.0-small/train/patient31206/study1/view2_frontal.jpg,frontal image with AP/PA=LL,,keep; exclude from any AP-vs-PA analysis,test
+CheXpert-v1.0-small/train/patient50022/study1/view2_frontal.jpg,frontal image with AP/PA=RL,,keep; exclude from any AP-vs-PA analysis,train

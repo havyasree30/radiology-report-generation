@@ -1,0 +1,351 @@
+strategy,view_subset,split,observation,n_images,n_positive,prevalence,relative_deviation,uncertain_pct,missing_pct
+chosen:stratified_group,all_images,all,No Finding,223414,22381,0.10017724941140663,0.0,,
+chosen:stratified_group,all_images,all,Enlarged Cardiomediastinum,223414,10798,0.048331796574968444,0.0,,
+chosen:stratified_group,all_images,all,Cardiomegaly,223414,27000,0.12085187141360881,0.0,,
+chosen:stratified_group,all_images,all,Lung Opacity,223414,105581,0.47258005317482343,0.0,,
+chosen:stratified_group,all_images,all,Lung Lesion,223414,9186,0.041116492252052245,0.0,,
+chosen:stratified_group,all_images,all,Edema,223414,52246,0.2338528471805706,0.0,,
+chosen:stratified_group,all_images,all,Consolidation,223414,14783,0.0661686375965696,0.0,,
+chosen:stratified_group,all_images,all,Pneumonia,223414,6039,0.027030535239510507,0.0,,
+chosen:stratified_group,all_images,all,Atelectasis,223414,33376,0.14939081704817067,0.0,,
+chosen:stratified_group,all_images,all,Pneumothorax,223414,19448,0.08704915537969868,0.0,,
+chosen:stratified_group,all_images,all,Pleural Effusion,223414,86187,0.38577260153795195,0.0,,
+chosen:stratified_group,all_images,all,Pleural Other,223414,3523,0.01576893122185718,0.0,,
+chosen:stratified_group,all_images,all,Fracture,223414,9040,0.040462996947371245,0.0,,
+chosen:stratified_group,all_images,all,Support Devices,223414,116001,0.5192199235500013,0.0,,
+chosen:stratified_group,all_images,train,No Finding,156390,15667,0.10017903958053584,1.7870016792538453e-05,0.0,89.98209604194642
+chosen:stratified_group,all_images,train,Enlarged Cardiomediastinum,156390,7558,0.04832789820320992,-8.065853195577232e-05,5.596265745891682,79.89833109533858
+chosen:stratified_group,all_images,train,Cardiomegaly,156390,18900,0.12085171686169192,-1.2788541466640195e-06,3.5903830168169324,79.3663277703178
+chosen:stratified_group,all_images,train,Lung Opacity,156390,73907,0.4725813670950828,2.7803125640714016e-06,2.5423620436089265,47.29330519854211
+chosen:stratified_group,all_images,train,Lung Lesion,156390,6430,0.04111516081590894,-3.2382045996052164e-05,0.6694801457893728,94.65566852100518
+chosen:stratified_group,all_images,train,Edema,156390,36572,0.23385126926274058,-6.747481799059085e-06,5.781060170087601,61.54805294456167
+chosen:stratified_group,all_images,train,Consolidation,156390,10349,0.06617430782019311,8.569352233121767e-05,12.38378412942004,68.43148538909138
+chosen:stratified_group,all_images,train,Pneumonia,156390,4227,0.0270285823901784,-7.224604747201408e-05,8.398235181277574,87.67376430718076
+chosen:stratified_group,all_images,train,Atelectasis,156390,23363,0.1493893471449581,-9.83931436756432e-06,15.066180702090925,69.39126542617814
+chosen:stratified_group,all_images,train,Pneumothorax,156390,13613,0.0870452074940853,-4.535237126837369e-05,1.4092972696463968,64.6620627917386
+chosen:stratified_group,all_images,train,Pleural Effusion,156390,60331,0.3857727476181341,3.786691475509298e-07,5.245220282626766,40.379819681565316
+chosen:stratified_group,all_images,train,Pleural Other,156390,2466,0.015768271628620757,-4.1828658337199906e-05,1.2200268559370804,97.05607775433211
+chosen:stratified_group,all_images,train,Fracture,156390,6328,0.04046294520109982,-1.2788541465382622e-06,0.2851844747106592,94.52266768974998
+chosen:stratified_group,all_images,train,Support Devices,156390,81202,0.5192275720954025,1.4730839581126636e-05,0.49235884647355965,44.82191956007418
+chosen:stratified_group,all_images,val,No Finding,33512,3357,0.10017307233229888,-4.169688359667231e-05,0.0,89.98269276677011
+chosen:stratified_group,all_images,val,Enlarged Cardiomediastinum,33512,1620,0.0483408928145142,0.00018820404351510024,5.5711386965862975,80.41895440439245
+chosen:stratified_group,all_images,val,Cardiomegaly,33512,4050,0.1208522320362855,2.984005729283074e-06,3.634518978276438,79.38648842205777
+chosen:stratified_group,all_images,val,Lung Opacity,33512,15837,0.4725769873478157,-6.487423637778256e-06,2.5632609214609694,47.117450465504895
+chosen:stratified_group,all_images,val,Lung Lesion,33512,1379,0.041149439006922896,0.000801302666304337,0.6415612317975651,94.74218190498925
+chosen:stratified_group,all_images,val,Edema,33512,7837,0.23385652900453568,1.5744191312979988e-05,5.956075435664836,61.372045834328006
+chosen:stratified_group,all_images,val,Consolidation,33512,2217,0.06615540701838148,-0.00019995240447282927,12.458223919789926,68.68584387682024
+chosen:stratified_group,all_images,val,Pneumonia,33512,907,0.027064931964669373,0.0012725136536914875,8.552160420148008,87.31797565051325
+chosen:stratified_group,all_images,val,Atelectasis,33512,5007,0.14940916686560038,0.00012283095970879685,15.370613511577943,69.1662687992361
+chosen:stratified_group,all_images,val,Pneumothorax,33512,2918,0.08707328718071139,0.00027722039240301596,1.4263547386010982,64.94688469801862
+chosen:stratified_group,all_images,val,Pleural Effusion,33512,12928,0.3857722606827405,-8.835651108603843e-07,5.269754117927906,40.65707806158988
+chosen:stratified_group,all_images,val,Pleural Other,33512,528,0.015755550250656482,-0.0008485655122998661,1.1876342802578181,97.06970637383624
+chosen:stratified_group,all_images,val,Fracture,33512,1356,0.040463117689185965,2.9840057294098475e-06,0.301384578658391,94.5929816185247
+chosen:stratified_group,all_images,val,Support Devices,33512,17399,0.5191871568393411,-6.310757575746086e-05,0.43864884220577705,44.94211028885176
+chosen:stratified_group,all_images,test,No Finding,33512,3357,0.10017307233229888,-4.169688359667231e-05,0.0,89.98269276677011
+chosen:stratified_group,all_images,test,Enlarged Cardiomediastinum,33512,1620,0.0483408928145142,0.00018820404351510024,5.323466221055145,79.58940081164955
+chosen:stratified_group,all_images,test,Cardiomegaly,33512,4050,0.1208522320362855,2.984005729283074e-06,3.7419431845309146,79.03437574600143
+chosen:stratified_group,all_images,test,Lung Opacity,33512,15837,0.4725769873478157,-6.487423637778256e-06,2.276796371449033,47.39794700405825
+chosen:stratified_group,all_images,test,Lung Lesion,33512,1377,0.041089758892337076,-0.0006501858074683897,0.6743852948197661,94.55717354977321
+chosen:stratified_group,all_images,test,Edema,33512,7837,0.23385652900453568,1.5744191312979988e-05,5.809859154929577,61.57794222964908
+chosen:stratified_group,all_images,test,Consolidation,33512,2217,0.06615540701838148,-0.00019995240447282927,12.532824063022202,67.89806636428743
+chosen:stratified_group,all_images,test,Pneumonia,33512,905,0.027005251850083553,-0.0009353639949384624,8.26569587013607,87.82227261876344
+chosen:stratified_group,all_images,test,Atelectasis,33512,5006,0.14937932680830748,-7.691396359043112e-05,14.997612795416568,69.44079732633087
+chosen:stratified_group,all_images,test,Pneumothorax,33512,2917,0.08704344712341848,-6.557509093913408e-05,1.381594652661733,64.42468369539269
+chosen:stratified_group,all_images,test,Pleural Effusion,33512,12928,0.3857722606827405,-8.835651108603843e-07,4.95046550489377,40.06922893291956
+chosen:stratified_group,all_images,test,Pleural Other,33512,529,0.01578539030794939,0.0010437667499874272,1.0354499880639771,97.29649080926237
+chosen:stratified_group,all_images,test,Fracture,33512,1356,0.040463117689185965,2.9840057294098475e-06,0.283480544282645,94.58104559560755
+chosen:stratified_group,all_images,test,Support Devices,33512,17400,0.519216996896634,-5.636635334231467e-06,0.483408928145142,44.87646216280735
+chosen:stratified_group,frontal_images,all,No Finding,191027,16974,0.08885654907421464,0.0,,
+chosen:stratified_group,frontal_images,all,Enlarged Cardiomediastinum,191027,9187,0.048092677998398135,0.0,,
+chosen:stratified_group,frontal_images,all,Cardiomegaly,191027,23385,0.12241724991755092,0.0,,
+chosen:stratified_group,frontal_images,all,Lung Opacity,191027,94211,0.4931815921309553,0.0,,
+chosen:stratified_group,frontal_images,all,Lung Lesion,191027,7040,0.036853429096410456,0.0,,
+chosen:stratified_group,frontal_images,all,Edema,191027,49675,0.26004177419945873,0.0,,
+chosen:stratified_group,frontal_images,all,Consolidation,191027,12983,0.06796421448276946,0.0,,
+chosen:stratified_group,frontal_images,all,Pneumonia,191027,4675,0.02447298025933507,0.0,,
+chosen:stratified_group,frontal_images,all,Atelectasis,191027,29720,0.15558010124223276,0.0,,
+chosen:stratified_group,frontal_images,all,Pneumothorax,191027,17693,0.09262041491516906,0.0,,
+chosen:stratified_group,frontal_images,all,Pleural Effusion,191027,76899,0.402555659671146,0.0,,
+chosen:stratified_group,frontal_images,all,Pleural Other,191027,2505,0.01311332952933355,0.0,,
+chosen:stratified_group,frontal_images,all,Fracture,191027,7436,0.03892643448308354,0.0,,
+chosen:stratified_group,frontal_images,all,Support Devices,191027,107170,0.5610201699236234,0.0,,
+chosen:stratified_group,frontal_images,train,No Finding,133649,11906,0.08908409340885454,0.0025608054444005704,0.0,89.98209604194642
+chosen:stratified_group,frontal_images,train,Enlarged Cardiomediastinum,133649,6414,0.0479913804068867,-0.0021062996640530446,5.596265745891682,79.89833109533858
+chosen:stratified_group,frontal_images,train,Cardiomegaly,133649,16393,0.12265710929374705,0.0019593592925644557,3.5903830168169324,79.3663277703178
+chosen:stratified_group,frontal_images,train,Lung Opacity,133649,65912,0.4931724143091232,-1.8609416852874404e-05,2.5423620436089265,47.29330519854211
+chosen:stratified_group,frontal_images,train,Lung Lesion,133649,4908,0.03672305815980666,-0.0035375524015076624,0.6694801457893728,94.65566852100518
+chosen:stratified_group,frontal_images,train,Edema,133649,34768,0.26014410882236305,0.0003935314747769243,5.781060170087601,61.54805294456167
+chosen:stratified_group,frontal_images,train,Consolidation,133649,9044,0.06766979176798929,-0.004332025566996162,12.38378412942004,68.43148538909138
+chosen:stratified_group,frontal_images,train,Pneumonia,133649,3237,0.024220158774102312,-0.010330637403113985,8.398235181277574,87.67376430718076
+chosen:stratified_group,frontal_images,train,Atelectasis,133649,20800,0.155631542323549,0.00033064049261770785,15.066180702090925,69.39126542617814
+chosen:stratified_group,frontal_images,train,Pneumothorax,133649,12368,0.0925409093970026,-0.0008584016627358093,1.4092972696463968,64.6620627917386
+chosen:stratified_group,frontal_images,train,Pleural Effusion,133649,53759,0.4022401963351765,-0.0007836514737544547,5.245220282626766,40.379819681565316
+chosen:stratified_group,frontal_images,train,Pleural Other,133649,1746,0.013064070812351758,-0.003756385201149981,1.2200268559370804,97.05607775433211
+chosen:stratified_group,frontal_images,train,Fracture,133649,5216,0.039027602151905365,0.002598945168373653,0.2851844747106592,94.52266768974998
+chosen:stratified_group,frontal_images,train,Support Devices,133649,75041,0.5614782003606462,0.0008164241886084349,0.49235884647355965,44.82191956007418
+chosen:stratified_group,frontal_images,val,No Finding,28672,2538,0.08851841517857142,-0.003805390814365309,0.0,89.98269276677011
+chosen:stratified_group,frontal_images,val,Enlarged Cardiomediastinum,28672,1373,0.047886439732142856,-0.004288350635457409,5.5711386965862975,80.41895440439245
+chosen:stratified_group,frontal_images,val,Cardiomegaly,28672,3465,0.120849609375,-0.012805716053960824,3.634518978276438,79.38648842205777
+chosen:stratified_group,frontal_images,val,Lung Opacity,28672,14127,0.49271065848214285,-0.0009548889421797542,2.5632609214609694,47.117450465504895
+chosen:stratified_group,frontal_images,val,Lung Lesion,28672,1064,0.037109375,0.0069449684836647456,0.6415612317975651,94.74218190498925
+chosen:stratified_group,frontal_images,val,Edema,28672,7426,0.25899832589285715,-0.004012618010371011,5.956075435664836,61.372045834328006
+chosen:stratified_group,frontal_images,val,Consolidation,28672,1960,0.068359375,0.0058142438669797954,12.458223919789926,68.68584387682024
+chosen:stratified_group,frontal_images,val,Pneumonia,28672,715,0.024937220982142856,0.01896952140231083,8.552160420148008,87.31797565051325
+chosen:stratified_group,frontal_images,val,Atelectasis,28672,4463,0.15565708705357142,0.000494830706009121,15.370613511577943,69.1662687992361
+chosen:stratified_group,frontal_images,val,Pneumothorax,28672,2632,0.091796875,-0.008891559338438972,1.4263547386010982,64.94688469801862
+chosen:stratified_group,frontal_images,val,Pleural Effusion,28672,11543,0.402587890625,8.006583208977294e-05,5.269754117927906,40.65707806158988
+chosen:stratified_group,frontal_images,val,Pleural Other,28672,381,0.013288225446428572,0.013337262417130106,1.1876342802578181,97.06970637383624
+chosen:stratified_group,frontal_images,val,Fracture,28672,1092,0.0380859375,-0.021591933457167783,0.301384578658391,94.5929816185247
+chosen:stratified_group,frontal_images,val,Support Devices,28672,16004,0.5581752232142857,-0.005071023934353317,0.43864884220577705,44.94211028885176
+chosen:stratified_group,frontal_images,test,No Finding,28706,2530,0.08813488469309552,-0.0081216791405704,0.0,89.98269276677011
+chosen:stratified_group,frontal_images,test,Enlarged Cardiomediastinum,28706,1400,0.04877029192503309,0.014089752428790235,5.323466221055145,79.58940081164955
+chosen:stratified_group,frontal_images,test,Cardiomegaly,28706,3527,0.1228662997282798,0.003668190643322888,3.7419431845309146,79.03437574600143
+chosen:stratified_group,frontal_images,test,Lung Opacity,28706,14172,0.4936946979725493,0.0010403994183500042,2.276796371449033,47.39794700405825
+chosen:stratified_group,frontal_images,test,Lung Lesion,28706,1068,0.03720476555423953,0.00953334510365263,0.6743852948197661,94.55717354977321
+chosen:stratified_group,frontal_images,test,Edema,28706,7481,0.2606075384936947,0.0021756669518876504,5.809859154929577,61.57794222964908
+chosen:stratified_group,frontal_images,test,Consolidation,28706,1979,0.06894029122831463,0.014361627703247157,12.532824063022202,67.89806636428743
+chosen:stratified_group,frontal_images,test,Pneumonia,28706,723,0.025186372186999234,0.029150186046182337,8.26569587013607,87.82227261876344
+chosen:stratified_group,frontal_images,test,Atelectasis,28706,4457,0.15526370793562322,-0.002033636076100299,14.997612795416568,69.44079732633087
+chosen:stratified_group,frontal_images,test,Pneumothorax,28706,2693,0.09381314011008152,0.012877562641075065,1.381594652661733,64.42468369539269
+chosen:stratified_group,frontal_images,test,Pleural Effusion,28706,11597,0.403992196753292,0.0035685427533662236,4.95046550489377,40.06922893291956
+chosen:stratified_group,frontal_images,test,Pleural Other,28706,378,0.013167978819758935,0.0041674610786786885,1.0354499880639771,97.29649080926237
+chosen:stratified_group,frontal_images,test,Fracture,28706,1128,0.039294920922455234,0.009466226338603605,0.283480544282645,94.58104559560755
+chosen:stratified_group,frontal_images,test,Support Devices,28706,16125,0.5617292552079705,0.0012639211963513426,0.483408928145142,44.87646216280735
+comparator:random_group,all_images,all,No Finding,223414,22381,0.10017724941140663,0.0,,
+comparator:random_group,all_images,all,Enlarged Cardiomediastinum,223414,10798,0.048331796574968444,0.0,,
+comparator:random_group,all_images,all,Cardiomegaly,223414,27000,0.12085187141360881,0.0,,
+comparator:random_group,all_images,all,Lung Opacity,223414,105581,0.47258005317482343,0.0,,
+comparator:random_group,all_images,all,Lung Lesion,223414,9186,0.041116492252052245,0.0,,
+comparator:random_group,all_images,all,Edema,223414,52246,0.2338528471805706,0.0,,
+comparator:random_group,all_images,all,Consolidation,223414,14783,0.0661686375965696,0.0,,
+comparator:random_group,all_images,all,Pneumonia,223414,6039,0.027030535239510507,0.0,,
+comparator:random_group,all_images,all,Atelectasis,223414,33376,0.14939081704817067,0.0,,
+comparator:random_group,all_images,all,Pneumothorax,223414,19448,0.08704915537969868,0.0,,
+comparator:random_group,all_images,all,Pleural Effusion,223414,86187,0.38577260153795195,0.0,,
+comparator:random_group,all_images,all,Pleural Other,223414,3523,0.01576893122185718,0.0,,
+comparator:random_group,all_images,all,Fracture,223414,9040,0.040462996947371245,0.0,,
+comparator:random_group,all_images,all,Support Devices,223414,116001,0.5192199235500013,0.0,,
+comparator:random_group,all_images,train,No Finding,156389,15681,0.1002692005192181,0.0009178841338900337,,
+comparator:random_group,all_images,train,Enlarged Cardiomediastinum,156389,7620,0.04872465454731471,0.008128354420611954,,
+comparator:random_group,all_images,train,Cardiomegaly,156389,18855,0.12056474560231219,-0.0023758491112972025,,
+comparator:random_group,all_images,train,Lung Opacity,156389,73785,0.4718042829099233,-0.0016415637090233409,,
+comparator:random_group,all_images,train,Lung Lesion,156389,6449,0.04123691563984679,0.002928834178176696,,
+comparator:random_group,all_images,train,Edema,156389,36629,0.23421724034299088,0.001558215633521546,,
+comparator:random_group,all_images,train,Consolidation,156389,10531,0.06733849567424818,0.01767994808675388,,
+comparator:random_group,all_images,train,Pneumonia,156389,4325,0.027655397758154347,0.02311691252530135,,
+comparator:random_group,all_images,train,Atelectasis,156389,23134,0.14792600502592892,-0.009805234693705579,,
+comparator:random_group,all_images,train,Pneumothorax,156389,13683,0.08749336590169385,0.005102984860192763,,
+comparator:random_group,all_images,train,Pleural Effusion,156389,60121,0.38443240892901676,-0.0034740481921014576,,
+comparator:random_group,all_images,train,Pleural Other,156389,2510,0.016049722167160094,0.01780659331646481,,
+comparator:random_group,all_images,train,Fracture,156389,6444,0.04120494408174488,0.01833643551758316,,
+comparator:random_group,all_images,train,Support Devices,156389,81250,0.5195378191560788,0.0006122561782758888,,
+comparator:random_group,all_images,val,No Finding,33483,3365,0.10049876056506286,0.0032094228534450893,,
+comparator:random_group,all_images,val,Enlarged Cardiomediastinum,33483,1625,0.04853209091180599,0.0041441525254884105,,
+comparator:random_group,all_images,val,Cardiomegaly,33483,4133,0.12343577337753486,0.021380736050687944,,
+comparator:random_group,all_images,val,Lung Opacity,33483,16136,0.4819161962787086,0.019755685922764464,,
+comparator:random_group,all_images,val,Lung Lesion,33483,1283,0.038317952393752054,-0.06806368211433472,,
+comparator:random_group,all_images,val,Edema,33483,7774,0.23217752292207985,-0.007164010524948302,,
+comparator:random_group,all_images,val,Consolidation,33483,2103,0.06280799211540185,-0.05078909893320791,,
+comparator:random_group,all_images,val,Pneumonia,33483,845,0.025236687274139115,-0.06636376044634609,,
+comparator:random_group,all_images,val,Atelectasis,33483,5126,0.15309261416241077,0.024779281534061507,,
+comparator:random_group,all_images,val,Pneumothorax,33483,2870,0.08571513902577427,-0.015324862695170112,,
+comparator:random_group,all_images,val,Pleural Effusion,33483,13308,0.39745542514111637,0.0302842232874723,,
+comparator:random_group,all_images,val,Pleural Other,33483,546,0.016306782546366812,0.034108292879362824,,
+comparator:random_group,all_images,val,Fracture,33483,1290,0.03852701370844906,-0.04784576983855759,,
+comparator:random_group,all_images,val,Support Devices,33483,17421,0.5202938804766598,0.0020684046931705156,,
+comparator:random_group,all_images,test,No Finding,33542,3335,0.09942758332836443,-0.007483396554076617,,
+comparator:random_group,all_images,test,Enlarged Cardiomediastinum,33542,1553,0.0463001609921889,-0.042035176152167904,,
+comparator:random_group,all_images,test,Cardiomegaly,33542,4012,0.11961123367718085,-0.010265771823937665,,
+comparator:random_group,all_images,test,Lung Opacity,33542,15660,0.46687734780275475,-0.012067173241353585,,
+comparator:random_group,all_images,test,Lung Lesion,33542,1454,0.043348637529068035,0.054288319716874124,,
+comparator:random_group,all_images,test,Edema,33542,7843,0.23382624768946395,-0.0001137445681219553,,
+comparator:random_group,all_images,test,Consolidation,33542,2149,0.06406892850754278,-0.03173269339212864,,
+comparator:random_group,all_images,test,Pneumonia,33542,869,0.025907817065172024,-0.041535181023622754,,
+comparator:random_group,all_images,test,Atelectasis,33542,5116,0.15252519229622563,0.020981043614242294,,
+comparator:random_group,all_images,test,Pneumothorax,33542,2895,0.08630970127004949,-0.008494672997386096,,
+comparator:random_group,all_images,test,Pleural Effusion,33542,12758,0.3803589529545048,-0.014033263538843058,,
+comparator:random_group,all_images,test,Pleural Other,33542,467,0.013922843002802457,-0.11707123286173476,,
+comparator:random_group,all_images,test,Fracture,33542,1306,0.03893625901854392,-0.03773170659635273,,
+comparator:random_group,all_images,test,Support Devices,33542,17330,0.5166656728877228,-0.004919400328120438,,
+comparator:random_group,frontal_images,all,No Finding,191027,16974,0.08885654907421464,0.0,,
+comparator:random_group,frontal_images,all,Enlarged Cardiomediastinum,191027,9187,0.048092677998398135,0.0,,
+comparator:random_group,frontal_images,all,Cardiomegaly,191027,23385,0.12241724991755092,0.0,,
+comparator:random_group,frontal_images,all,Lung Opacity,191027,94211,0.4931815921309553,0.0,,
+comparator:random_group,frontal_images,all,Lung Lesion,191027,7040,0.036853429096410456,0.0,,
+comparator:random_group,frontal_images,all,Edema,191027,49675,0.26004177419945873,0.0,,
+comparator:random_group,frontal_images,all,Consolidation,191027,12983,0.06796421448276946,0.0,,
+comparator:random_group,frontal_images,all,Pneumonia,191027,4675,0.02447298025933507,0.0,,
+comparator:random_group,frontal_images,all,Atelectasis,191027,29720,0.15558010124223276,0.0,,
+comparator:random_group,frontal_images,all,Pneumothorax,191027,17693,0.09262041491516906,0.0,,
+comparator:random_group,frontal_images,all,Pleural Effusion,191027,76899,0.402555659671146,0.0,,
+comparator:random_group,frontal_images,all,Pleural Other,191027,2505,0.01311332952933355,0.0,,
+comparator:random_group,frontal_images,all,Fracture,191027,7436,0.03892643448308354,0.0,,
+comparator:random_group,frontal_images,all,Support Devices,191027,107170,0.5610201699236234,0.0,,
+comparator:random_group,frontal_images,train,No Finding,133680,11886,0.08891382405745063,0.0006445780736786384,,
+comparator:random_group,frontal_images,train,Enlarged Cardiomediastinum,133680,6477,0.04845152603231598,0.007461593923503181,,
+comparator:random_group,frontal_images,train,Cardiomegaly,133680,16351,0.12231448234590066,-0.0008394860341943098,,
+comparator:random_group,frontal_images,train,Lung Opacity,133680,65816,0.49233991621783363,-0.0017066247535414583,,
+comparator:random_group,frontal_images,train,Lung Lesion,133680,4942,0.036968880909634946,0.0031327291938685656,,
+comparator:random_group,frontal_images,train,Edema,133680,34841,0.26062986235786956,0.0022615141748715648,,
+comparator:random_group,frontal_images,train,Consolidation,133680,9216,0.0689407540394973,0.014368437333670925,,
+comparator:random_group,frontal_images,train,Pneumonia,133680,3325,0.024872830640335127,0.016338442509368577,,
+comparator:random_group,frontal_images,train,Atelectasis,133680,20631,0.15433123877917415,-0.00802713491691443,,
+comparator:random_group,frontal_images,train,Pneumothorax,133680,12448,0.09311789347695991,0.005371154537004457,,
+comparator:random_group,frontal_images,train,Pleural Effusion,133680,53675,0.40151855176540996,-0.0025763093396407666,,
+comparator:random_group,frontal_images,train,Pleural Other,133680,1775,0.013277977259126272,0.012555753245155503,,
+comparator:random_group,frontal_images,train,Fracture,133680,5265,0.0393850987432675,0.011782847986842622,,
+comparator:random_group,frontal_images,train,Support Devices,133680,75006,0.5610861759425494,0.0001176535576876331,,
+comparator:random_group,frontal_images,val,No Finding,28699,2572,0.08961984738144187,0.008590231279291574,,
+comparator:random_group,frontal_images,val,Enlarged Cardiomediastinum,28699,1384,0.04822467681800759,0.00274467601105213,,
+comparator:random_group,frontal_images,val,Cardiomegaly,28699,3589,0.12505662218195757,0.02156046036146287,,
+comparator:random_group,frontal_images,val,Lung Opacity,28699,14378,0.5009930659604864,0.015838940370379702,,
+comparator:random_group,frontal_images,val,Lung Lesion,28699,983,0.034252064531865224,-0.07058677111809403,,
+comparator:random_group,frontal_images,val,Edema,28699,7396,0.25770932785114464,-0.00896950636294706,,
+comparator:random_group,frontal_images,val,Consolidation,28699,1867,0.06505453151677759,-0.042811985515252886,,
+comparator:random_group,frontal_images,val,Pneumonia,28699,683,0.023798738632008085,-0.027550450340832484,,
+comparator:random_group,frontal_images,val,Atelectasis,28699,4556,0.15875117599916375,0.020382264387357185,,
+comparator:random_group,frontal_images,val,Pneumothorax,28699,2608,0.09087424648942471,-0.018852954041975116,,
+comparator:random_group,frontal_images,val,Pleural Effusion,28699,11812,0.4115822850970417,0.022423297770225635,,
+comparator:random_group,frontal_images,val,Pleural Other,28699,388,0.013519634830481898,0.030984144815355517,,
+comparator:random_group,frontal_images,val,Fracture,28699,1082,0.037701662078818074,-0.03146377058494075,,
+comparator:random_group,frontal_images,val,Support Devices,28699,16103,0.561099689884665,0.00014174171501255166,,
+comparator:random_group,frontal_images,test,No Finding,28648,2516,0.08782462999162245,-0.011613314869231657,,
+comparator:random_group,frontal_images,test,Enlarged Cardiomediastinum,28648,1326,0.046285953644233456,-0.03756755558974814,,
+comparator:random_group,frontal_images,test,Cardiomegaly,28648,3445,0.12025272270315554,-0.017681553995480243,,
+comparator:random_group,frontal_images,test,Lung Opacity,28648,14017,0.4892837196313879,-0.007903523898216386,,
+comparator:random_group,frontal_images,test,Lung Lesion,28648,1115,0.03892069254398213,0.05609419525557871,,
+comparator:random_group,frontal_images,test,Edema,28648,7438,0.2596341803965373,-0.001567416635947117,,
+comparator:random_group,frontal_images,test,Consolidation,28648,1900,0.06632225635297403,-0.024159157025373974,,
+comparator:random_group,frontal_images,test,Pneumonia,28648,667,0.023282602624965093,-0.0486404852108649,,
+comparator:random_group,frontal_images,test,Atelectasis,28648,4533,0.1582309410779112,0.01703842467328882,,
+comparator:random_group,frontal_images,test,Pneumothorax,28648,2637,0.09204831052778553,-0.006176871350744019,,
+comparator:random_group,frontal_images,test,Pleural Effusion,28648,11412,0.3983524155263893,-0.010441398707921278,,
+comparator:random_group,frontal_images,test,Pleural Other,28648,342,0.011938006143535325,-0.08962814387979134,,
+comparator:random_group,frontal_images,test,Fracture,28648,1089,0.038013124825467745,-0.023462453464950607,,
+comparator:random_group,frontal_images,test,Support Devices,28648,16061,0.5606325048869031,-0.0006910001770044226,,
+comparator:stratified_group,all_images,all,No Finding,223414,22381,0.10017724941140663,0.0,,
+comparator:stratified_group,all_images,all,Enlarged Cardiomediastinum,223414,10798,0.048331796574968444,0.0,,
+comparator:stratified_group,all_images,all,Cardiomegaly,223414,27000,0.12085187141360881,0.0,,
+comparator:stratified_group,all_images,all,Lung Opacity,223414,105581,0.47258005317482343,0.0,,
+comparator:stratified_group,all_images,all,Lung Lesion,223414,9186,0.041116492252052245,0.0,,
+comparator:stratified_group,all_images,all,Edema,223414,52246,0.2338528471805706,0.0,,
+comparator:stratified_group,all_images,all,Consolidation,223414,14783,0.0661686375965696,0.0,,
+comparator:stratified_group,all_images,all,Pneumonia,223414,6039,0.027030535239510507,0.0,,
+comparator:stratified_group,all_images,all,Atelectasis,223414,33376,0.14939081704817067,0.0,,
+comparator:stratified_group,all_images,all,Pneumothorax,223414,19448,0.08704915537969868,0.0,,
+comparator:stratified_group,all_images,all,Pleural Effusion,223414,86187,0.38577260153795195,0.0,,
+comparator:stratified_group,all_images,all,Pleural Other,223414,3523,0.01576893122185718,0.0,,
+comparator:stratified_group,all_images,all,Fracture,223414,9040,0.040462996947371245,0.0,,
+comparator:stratified_group,all_images,all,Support Devices,223414,116001,0.5192199235500013,0.0,,
+comparator:stratified_group,all_images,train,No Finding,156390,15667,0.10017903958053584,1.7870016792538453e-05,,
+comparator:stratified_group,all_images,train,Enlarged Cardiomediastinum,156390,7558,0.04832789820320992,-8.065853195577232e-05,,
+comparator:stratified_group,all_images,train,Cardiomegaly,156390,18900,0.12085171686169192,-1.2788541466640195e-06,,
+comparator:stratified_group,all_images,train,Lung Opacity,156390,73907,0.4725813670950828,2.7803125640714016e-06,,
+comparator:stratified_group,all_images,train,Lung Lesion,156390,6430,0.04111516081590894,-3.2382045996052164e-05,,
+comparator:stratified_group,all_images,train,Edema,156390,36572,0.23385126926274058,-6.747481799059085e-06,,
+comparator:stratified_group,all_images,train,Consolidation,156390,10349,0.06617430782019311,8.569352233121767e-05,,
+comparator:stratified_group,all_images,train,Pneumonia,156390,4227,0.0270285823901784,-7.224604747201408e-05,,
+comparator:stratified_group,all_images,train,Atelectasis,156390,23363,0.1493893471449581,-9.83931436756432e-06,,
+comparator:stratified_group,all_images,train,Pneumothorax,156390,13613,0.0870452074940853,-4.535237126837369e-05,,
+comparator:stratified_group,all_images,train,Pleural Effusion,156390,60331,0.3857727476181341,3.786691475509298e-07,,
+comparator:stratified_group,all_images,train,Pleural Other,156390,2466,0.015768271628620757,-4.1828658337199906e-05,,
+comparator:stratified_group,all_images,train,Fracture,156390,6328,0.04046294520109982,-1.2788541465382622e-06,,
+comparator:stratified_group,all_images,train,Support Devices,156390,81202,0.5192275720954025,1.4730839581126636e-05,,
+comparator:stratified_group,all_images,val,No Finding,33512,3357,0.10017307233229888,-4.169688359667231e-05,,
+comparator:stratified_group,all_images,val,Enlarged Cardiomediastinum,33512,1620,0.0483408928145142,0.00018820404351510024,,
+comparator:stratified_group,all_images,val,Cardiomegaly,33512,4050,0.1208522320362855,2.984005729283074e-06,,
+comparator:stratified_group,all_images,val,Lung Opacity,33512,15837,0.4725769873478157,-6.487423637778256e-06,,
+comparator:stratified_group,all_images,val,Lung Lesion,33512,1379,0.041149439006922896,0.000801302666304337,,
+comparator:stratified_group,all_images,val,Edema,33512,7837,0.23385652900453568,1.5744191312979988e-05,,
+comparator:stratified_group,all_images,val,Consolidation,33512,2217,0.06615540701838148,-0.00019995240447282927,,
+comparator:stratified_group,all_images,val,Pneumonia,33512,907,0.027064931964669373,0.0012725136536914875,,
+comparator:stratified_group,all_images,val,Atelectasis,33512,5007,0.14940916686560038,0.00012283095970879685,,
+comparator:stratified_group,all_images,val,Pneumothorax,33512,2918,0.08707328718071139,0.00027722039240301596,,
+comparator:stratified_group,all_images,val,Pleural Effusion,33512,12928,0.3857722606827405,-8.835651108603843e-07,,
+comparator:stratified_group,all_images,val,Pleural Other,33512,528,0.015755550250656482,-0.0008485655122998661,,
+comparator:stratified_group,all_images,val,Fracture,33512,1356,0.040463117689185965,2.9840057294098475e-06,,
+comparator:stratified_group,all_images,val,Support Devices,33512,17399,0.5191871568393411,-6.310757575746086e-05,,
+comparator:stratified_group,all_images,test,No Finding,33512,3357,0.10017307233229888,-4.169688359667231e-05,,
+comparator:stratified_group,all_images,test,Enlarged Cardiomediastinum,33512,1620,0.0483408928145142,0.00018820404351510024,,
+comparator:stratified_group,all_images,test,Cardiomegaly,33512,4050,0.1208522320362855,2.984005729283074e-06,,
+comparator:stratified_group,all_images,test,Lung Opacity,33512,15837,0.4725769873478157,-6.487423637778256e-06,,
+comparator:stratified_group,all_images,test,Lung Lesion,33512,1377,0.041089758892337076,-0.0006501858074683897,,
+comparator:stratified_group,all_images,test,Edema,33512,7837,0.23385652900453568,1.5744191312979988e-05,,
+comparator:stratified_group,all_images,test,Consolidation,33512,2217,0.06615540701838148,-0.00019995240447282927,,
+comparator:stratified_group,all_images,test,Pneumonia,33512,905,0.027005251850083553,-0.0009353639949384624,,
+comparator:stratified_group,all_images,test,Atelectasis,33512,5006,0.14937932680830748,-7.691396359043112e-05,,
+comparator:stratified_group,all_images,test,Pneumothorax,33512,2917,0.08704344712341848,-6.557509093913408e-05,,
+comparator:stratified_group,all_images,test,Pleural Effusion,33512,12928,0.3857722606827405,-8.835651108603843e-07,,
+comparator:stratified_group,all_images,test,Pleural Other,33512,529,0.01578539030794939,0.0010437667499874272,,
+comparator:stratified_group,all_images,test,Fracture,33512,1356,0.040463117689185965,2.9840057294098475e-06,,
+comparator:stratified_group,all_images,test,Support Devices,33512,17400,0.519216996896634,-5.636635334231467e-06,,
+comparator:stratified_group,frontal_images,all,No Finding,191027,16974,0.08885654907421464,0.0,,
+comparator:stratified_group,frontal_images,all,Enlarged Cardiomediastinum,191027,9187,0.048092677998398135,0.0,,
+comparator:stratified_group,frontal_images,all,Cardiomegaly,191027,23385,0.12241724991755092,0.0,,
+comparator:stratified_group,frontal_images,all,Lung Opacity,191027,94211,0.4931815921309553,0.0,,
+comparator:stratified_group,frontal_images,all,Lung Lesion,191027,7040,0.036853429096410456,0.0,,
+comparator:stratified_group,frontal_images,all,Edema,191027,49675,0.26004177419945873,0.0,,
+comparator:stratified_group,frontal_images,all,Consolidation,191027,12983,0.06796421448276946,0.0,,
+comparator:stratified_group,frontal_images,all,Pneumonia,191027,4675,0.02447298025933507,0.0,,
+comparator:stratified_group,frontal_images,all,Atelectasis,191027,29720,0.15558010124223276,0.0,,
+comparator:stratified_group,frontal_images,all,Pneumothorax,191027,17693,0.09262041491516906,0.0,,
+comparator:stratified_group,frontal_images,all,Pleural Effusion,191027,76899,0.402555659671146,0.0,,
+comparator:stratified_group,frontal_images,all,Pleural Other,191027,2505,0.01311332952933355,0.0,,
+comparator:stratified_group,frontal_images,all,Fracture,191027,7436,0.03892643448308354,0.0,,
+comparator:stratified_group,frontal_images,all,Support Devices,191027,107170,0.5610201699236234,0.0,,
+comparator:stratified_group,frontal_images,train,No Finding,133649,11906,0.08908409340885454,0.0025608054444005704,,
+comparator:stratified_group,frontal_images,train,Enlarged Cardiomediastinum,133649,6414,0.0479913804068867,-0.0021062996640530446,,
+comparator:stratified_group,frontal_images,train,Cardiomegaly,133649,16393,0.12265710929374705,0.0019593592925644557,,
+comparator:stratified_group,frontal_images,train,Lung Opacity,133649,65912,0.4931724143091232,-1.8609416852874404e-05,,
+comparator:stratified_group,frontal_images,train,Lung Lesion,133649,4908,0.03672305815980666,-0.0035375524015076624,,
+comparator:stratified_group,frontal_images,train,Edema,133649,34768,0.26014410882236305,0.0003935314747769243,,
+comparator:stratified_group,frontal_images,train,Consolidation,133649,9044,0.06766979176798929,-0.004332025566996162,,
+comparator:stratified_group,frontal_images,train,Pneumonia,133649,3237,0.024220158774102312,-0.010330637403113985,,
+comparator:stratified_group,frontal_images,train,Atelectasis,133649,20800,0.155631542323549,0.00033064049261770785,,
+comparator:stratified_group,frontal_images,train,Pneumothorax,133649,12368,0.0925409093970026,-0.0008584016627358093,,
+comparator:stratified_group,frontal_images,train,Pleural Effusion,133649,53759,0.4022401963351765,-0.0007836514737544547,,
+comparator:stratified_group,frontal_images,train,Pleural Other,133649,1746,0.013064070812351758,-0.003756385201149981,,
+comparator:stratified_group,frontal_images,train,Fracture,133649,5216,0.039027602151905365,0.002598945168373653,,
+comparator:stratified_group,frontal_images,train,Support Devices,133649,75041,0.5614782003606462,0.0008164241886084349,,
+comparator:stratified_group,frontal_images,val,No Finding,28672,2538,0.08851841517857142,-0.003805390814365309,,
+comparator:stratified_group,frontal_images,val,Enlarged Cardiomediastinum,28672,1373,0.047886439732142856,-0.004288350635457409,,
+comparator:stratified_group,frontal_images,val,Cardiomegaly,28672,3465,0.120849609375,-0.012805716053960824,,
+comparator:stratified_group,frontal_images,val,Lung Opacity,28672,14127,0.49271065848214285,-0.0009548889421797542,,
+comparator:stratified_group,frontal_images,val,Lung Lesion,28672,1064,0.037109375,0.0069449684836647456,,
+comparator:stratified_group,frontal_images,val,Edema,28672,7426,0.25899832589285715,-0.004012618010371011,,
+comparator:stratified_group,frontal_images,val,Consolidation,28672,1960,0.068359375,0.0058142438669797954,,
+comparator:stratified_group,frontal_images,val,Pneumonia,28672,715,0.024937220982142856,0.01896952140231083,,
+comparator:stratified_group,frontal_images,val,Atelectasis,28672,4463,0.15565708705357142,0.000494830706009121,,
+comparator:stratified_group,frontal_images,val,Pneumothorax,28672,2632,0.091796875,-0.008891559338438972,,
+comparator:stratified_group,frontal_images,val,Pleural Effusion,28672,11543,0.402587890625,8.006583208977294e-05,,
+comparator:stratified_group,frontal_images,val,Pleural Other,28672,381,0.013288225446428572,0.013337262417130106,,
+comparator:stratified_group,frontal_images,val,Fracture,28672,1092,0.0380859375,-0.021591933457167783,,
+comparator:stratified_group,frontal_images,val,Support Devices,28672,16004,0.5581752232142857,-0.005071023934353317,,
+comparator:stratified_group,frontal_images,test,No Finding,28706,2530,0.08813488469309552,-0.0081216791405704,,
+comparator:stratified_group,frontal_images,test,Enlarged Cardiomediastinum,28706,1400,0.04877029192503309,0.014089752428790235,,
+comparator:stratified_group,frontal_images,test,Cardiomegaly,28706,3527,0.1228662997282798,0.003668190643322888,,
+comparator:stratified_group,frontal_images,test,Lung Opacity,28706,14172,0.4936946979725493,0.0010403994183500042,,
+comparator:stratified_group,frontal_images,test,Lung Lesion,28706,1068,0.03720476555423953,0.00953334510365263,,
+comparator:stratified_group,frontal_images,test,Edema,28706,7481,0.2606075384936947,0.0021756669518876504,,
+comparator:stratified_group,frontal_images,test,Consolidation,28706,1979,0.06894029122831463,0.014361627703247157,,
+comparator:stratified_group,frontal_images,test,Pneumonia,28706,723,0.025186372186999234,0.029150186046182337,,
+comparator:stratified_group,frontal_images,test,Atelectasis,28706,4457,0.15526370793562322,-0.002033636076100299,,
+comparator:stratified_group,frontal_images,test,Pneumothorax,28706,2693,0.09381314011008152,0.012877562641075065,,
+comparator:stratified_group,frontal_images,test,Pleural Effusion,28706,11597,0.403992196753292,0.0035685427533662236,,
+comparator:stratified_group,frontal_images,test,Pleural Other,28706,378,0.013167978819758935,0.0041674610786786885,,
+comparator:stratified_group,frontal_images,test,Fracture,28706,1128,0.039294920922455234,0.009466226338603605,,
+comparator:stratified_group,frontal_images,test,Support Devices,28706,16125,0.5617292552079705,0.0012639211963513426,,
+official,all_images,official_valid,No Finding,234,38,0.1623931623931624,,,
+official,all_images,official_valid,Enlarged Cardiomediastinum,234,109,0.4658119658119658,,,
+official,all_images,official_valid,Cardiomegaly,234,68,0.2905982905982906,,,
+official,all_images,official_valid,Lung Opacity,234,126,0.5384615384615384,,,
+official,all_images,official_valid,Lung Lesion,234,1,0.004273504273504274,,,
+official,all_images,official_valid,Edema,234,45,0.19230769230769232,,,
+official,all_images,official_valid,Consolidation,234,33,0.14102564102564102,,,
+official,all_images,official_valid,Pneumonia,234,8,0.03418803418803419,,,
+official,all_images,official_valid,Atelectasis,234,80,0.3418803418803419,,,
+official,all_images,official_valid,Pneumothorax,234,8,0.03418803418803419,,,
+official,all_images,official_valid,Pleural Effusion,234,67,0.2863247863247863,,,
+official,all_images,official_valid,Pleural Other,234,1,0.004273504273504274,,,
+official,all_images,official_valid,Fracture,234,0,0.0,,,
+official,all_images,official_valid,Support Devices,234,107,0.45726495726495725,,,

@@ -1,0 +1,77 @@
+{
+  "unit": "report uid (all images of a report stay together)",
+  "strata": "MeSH == 'normal' vs other",
+  "seed": 42,
+  "ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "sizes": [
+    {
+      "split": "test",
+      "reports": 578,
+      "images": 1115,
+      "normal_reports": 207,
+      "with_any_text": 577,
+      "normal_pct": 35.813148788927336
+    },
+    {
+      "split": "train",
+      "reports": 2695,
+      "images": 5238,
+      "normal_reports": 965,
+      "with_any_text": 2675,
+      "normal_pct": 35.80705009276438
+    },
+    {
+      "split": "val",
+      "reports": 578,
+      "images": 1113,
+      "normal_reports": 207,
+      "with_any_text": 574,
+      "normal_pct": 35.813148788927336
+    }
+  ],
+  "retrieval_corpus": {
+    "rule": "split == train and non-empty findings/impression",
+    "n_reports": 2675
+  },
+  "exact_text_overlap_with_train": {
+    "val": {
+      "reports": 574,
+      "exact_text_in_train": 120,
+      "pct": 20.905923344947734
+    },
+    "test": {
+      "reports": 577,
+      "exact_text_in_train": 142,
+      "pct": 24.610051993067593
+    }
+  },
+  "limitation": "No patient identifier in the IU CSVs; patient-level grouping is impossible.",
+  "environment": {
+    "timestamp_utc": "2026-09-30T10:08:34+00:00",
+    "seed": 42,
+    "python": "3.11.9",
+    "python_executable": "C:\\Users\\Dell\\Desktop\\radiology-report-generation\\.venv\\Scripts\\python.exe",
+    "os": "Windows-10-10.0.26200-SP0",
+    "machine": "AMD64",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.6",
+      "matplotlib": "3.11.2",
+      "pillow": "12.3.0",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.17.1",
+      "pyyaml": "6.0.3",
+      "tqdm": "4.70.1",
+      "pytest": "9.1.1"
+    },
+    "git": {
+      "commit": "bf3b9cdfa329693aa26ed9a2eb7fbc327db2a7ff",
+      "branch": "master",
+      "dirty_working_tree": true
+    }
+  }
+}

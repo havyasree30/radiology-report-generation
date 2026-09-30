@@ -1,0 +1,113 @@
+view_subset,label_policy,uncertain_policy,missing_policy,observation,n_train_images,n_positive,n_negative,n_masked,pos_weight,degenerate_fallback
+frontal,U-Mask_NaN-Zero,mask,zero,No Finding,133649,11906,121743,0,10.22534856374937,False
+frontal,U-Mask_NaN-Zero,mask,zero,Enlarged Cardiomediastinum,133649,6414,119952,7283,18.70159027128157,False
+frontal,U-Mask_NaN-Zero,mask,zero,Cardiomegaly,133649,16393,112588,4668,6.868053437442811,False
+frontal,U-Mask_NaN-Zero,mask,zero,Lung Opacity,133649,65912,64582,3155,0.97982158028887,False
+frontal,U-Mask_NaN-Zero,mask,zero,Lung Lesion,133649,4908,127973,768,26.07436837815811,False
+frontal,U-Mask_NaN-Zero,mask,zero,Edema,133649,34768,90625,8256,2.606563506672803,False
+frontal,U-Mask_NaN-Zero,mask,zero,Consolidation,133649,9044,107602,17003,11.897611676249447,False
+frontal,U-Mask_NaN-Zero,mask,zero,Pneumonia,133649,3237,119226,11186,36.83225208526413,False
+frontal,U-Mask_NaN-Zero,mask,zero,Atelectasis,133649,20800,91999,20850,4.423028846153846,False
+frontal,U-Mask_NaN-Zero,mask,zero,Pneumothorax,133649,12368,119367,1914,9.651277490297542,False
+frontal,U-Mask_NaN-Zero,mask,zero,Pleural Effusion,133649,53759,73136,6754,1.360441972506929,False
+frontal,U-Mask_NaN-Zero,mask,zero,Pleural Other,133649,1746,130597,1306,74.79782359679267,False
+frontal,U-Mask_NaN-Zero,mask,zero,Fracture,133649,5216,128087,346,24.556556748466257,False
+frontal,U-Mask_NaN-Zero,mask,zero,Support Devices,133649,75041,57962,646,0.7724044189176583,False
+frontal,U-Zero_NaN-Zero,zero,zero,No Finding,133649,11906,121743,0,10.22534856374937,False
+frontal,U-Zero_NaN-Zero,zero,zero,Enlarged Cardiomediastinum,133649,6414,127235,0,19.837075148113502,False
+frontal,U-Zero_NaN-Zero,zero,zero,Cardiomegaly,133649,16393,117256,0,7.152809125846398,False
+frontal,U-Zero_NaN-Zero,zero,zero,Lung Opacity,133649,65912,67737,0,1.0276884330622649,False
+frontal,U-Zero_NaN-Zero,zero,zero,Lung Lesion,133649,4908,128741,0,26.23084759576202,False
+frontal,U-Zero_NaN-Zero,zero,zero,Edema,133649,34768,98881,0,2.8440232397606997,False
+frontal,U-Zero_NaN-Zero,zero,zero,Consolidation,133649,9044,124605,0,13.777642636001769,False
+frontal,U-Zero_NaN-Zero,zero,zero,Pneumonia,133649,3237,130412,0,40.28792091442694,False
+frontal,U-Zero_NaN-Zero,zero,zero,Atelectasis,133649,20800,112849,0,5.425432692307692,False
+frontal,U-Zero_NaN-Zero,zero,zero,Pneumothorax,133649,12368,121281,0,9.80603169469599,False
+frontal,U-Zero_NaN-Zero,zero,zero,Pleural Effusion,133649,53759,79890,0,1.486076749939545,False
+frontal,U-Zero_NaN-Zero,zero,zero,Pleural Other,133649,1746,131903,0,75.54581901489118,False
+frontal,U-Zero_NaN-Zero,zero,zero,Fracture,133649,5216,128433,0,24.622891104294478,False
+frontal,U-Zero_NaN-Zero,zero,zero,Support Devices,133649,75041,58608,0,0.7810130462014099,False
+frontal,U-One_NaN-Zero,one,zero,No Finding,133649,11906,121743,0,10.22534856374937,False
+frontal,U-One_NaN-Zero,one,zero,Enlarged Cardiomediastinum,133649,13697,119952,0,8.757538147039497,False
+frontal,U-One_NaN-Zero,one,zero,Cardiomegaly,133649,21061,112588,0,5.345805042495608,False
+frontal,U-One_NaN-Zero,one,zero,Lung Opacity,133649,69067,64582,0,0.9350630547149869,False
+frontal,U-One_NaN-Zero,one,zero,Lung Lesion,133649,5676,127973,0,22.546335447498237,False
+frontal,U-One_NaN-Zero,one,zero,Edema,133649,43024,90625,0,2.106382484194868,False
+frontal,U-One_NaN-Zero,one,zero,Consolidation,133649,26047,107602,0,4.131070756709026,False
+frontal,U-One_NaN-Zero,one,zero,Pneumonia,133649,14423,119226,0,8.266380087360465,False
+frontal,U-One_NaN-Zero,one,zero,Atelectasis,133649,41650,91999,0,2.208859543817527,False
+frontal,U-One_NaN-Zero,one,zero,Pneumothorax,133649,14282,119367,0,8.357863044391541,False
+frontal,U-One_NaN-Zero,one,zero,Pleural Effusion,133649,60513,73136,0,1.2085998050005784,False
+frontal,U-One_NaN-Zero,one,zero,Pleural Other,133649,3052,130597,0,42.790629095674966,False
+frontal,U-One_NaN-Zero,one,zero,Fracture,133649,5562,128087,0,23.028946422150305,False
+frontal,U-One_NaN-Zero,one,zero,Support Devices,133649,75687,57962,0,0.7658118303011086,False
+frontal,U-Mask_NaN-Mask,mask,mask,No Finding,133649,11906,0,121743,1.0,True
+frontal,U-Mask_NaN-Mask,mask,mask,Enlarged Cardiomediastinum,133649,6414,10709,116526,1.6696289367009667,False
+frontal,U-Mask_NaN-Mask,mask,mask,Cardiomegaly,133649,16393,5480,111776,0.3342890258036967,False
+frontal,U-Mask_NaN-Mask,mask,mask,Lung Opacity,133649,65912,3464,64273,0.05255492171380022,False
+frontal,U-Mask_NaN-Mask,mask,mask,Lung Lesion,133649,4908,540,128201,0.1100244498777506,False
+frontal,U-Mask_NaN-Mask,mask,mask,Edema,133649,34768,11166,87715,0.32115738610216293,False
+frontal,U-Mask_NaN-Mask,mask,mask,Consolidation,133649,9044,13725,110880,1.5175807164971251,False
+frontal,U-Mask_NaN-Mask,mask,mask,Pneumonia,133649,3237,1289,129123,0.3982082174853259,False
+frontal,U-Mask_NaN-Mask,mask,mask,Atelectasis,133649,20800,723,112126,0.03475961538461538,False
+frontal,U-Mask_NaN-Mask,mask,mask,Pneumothorax,133649,12368,33510,87771,2.709411384217335,False
+frontal,U-Mask_NaN-Mask,mask,mask,Pleural Effusion,133649,53759,17658,62232,0.3284659312859242,False
+frontal,U-Mask_NaN-Mask,mask,mask,Pleural Other,133649,1746,156,131747,0.08934707903780069,False
+frontal,U-Mask_NaN-Mask,mask,mask,Fracture,133649,5216,1423,127010,0.2728144171779141,False
+frontal,U-Mask_NaN-Mask,mask,mask,Support Devices,133649,75041,3780,54828,0.050372463053530735,False
+all_views,U-Mask_NaN-Zero,mask,zero,No Finding,156390,15667,140723,0,8.98212803982894,False
+all_views,U-Mask_NaN-Zero,mask,zero,Enlarged Cardiomediastinum,156390,7558,140080,8752,18.53400370468378,False
+all_views,U-Mask_NaN-Zero,mask,zero,Cardiomegaly,156390,18900,131875,5615,6.977513227513228,False
+all_views,U-Mask_NaN-Zero,mask,zero,Lung Opacity,156390,73907,78507,3976,1.0622403831842722,False
+all_views,U-Mask_NaN-Zero,mask,zero,Lung Lesion,156390,6430,148913,1047,23.15909797822706,False
+all_views,U-Mask_NaN-Zero,mask,zero,Edema,156390,36572,110777,9041,3.029011265448977,False
+all_views,U-Mask_NaN-Zero,mask,zero,Consolidation,156390,10349,126674,19367,12.240216446033433,False
+all_views,U-Mask_NaN-Zero,mask,zero,Pneumonia,156390,4227,139029,13134,32.89070262597587,False
+all_views,U-Mask_NaN-Zero,mask,zero,Atelectasis,156390,23363,109465,23562,4.685399991439455,False
+all_views,U-Mask_NaN-Zero,mask,zero,Pneumothorax,156390,13613,140573,2204,10.326379196356424,False
+all_views,U-Mask_NaN-Zero,mask,zero,Pleural Effusion,156390,60331,87856,8203,1.4562331139878337,False
+all_views,U-Mask_NaN-Zero,mask,zero,Pleural Other,156390,2466,152016,1908,61.64476885644769,False
+all_views,U-Mask_NaN-Zero,mask,zero,Fracture,156390,6328,149616,446,23.643489254108722,False
+all_views,U-Mask_NaN-Zero,mask,zero,Support Devices,156390,81202,74418,770,0.916455259722667,False
+all_views,U-Zero_NaN-Zero,zero,zero,No Finding,156390,15667,140723,0,8.98212803982894,False
+all_views,U-Zero_NaN-Zero,zero,zero,Enlarged Cardiomediastinum,156390,7558,148832,0,19.691982005821647,False
+all_views,U-Zero_NaN-Zero,zero,zero,Cardiomegaly,156390,18900,137490,0,7.2746031746031745,False
+all_views,U-Zero_NaN-Zero,zero,zero,Lung Opacity,156390,73907,82483,0,1.116037723084417,False
+all_views,U-Zero_NaN-Zero,zero,zero,Lung Lesion,156390,6430,149960,0,23.321928460342146,False
+all_views,U-Zero_NaN-Zero,zero,zero,Edema,156390,36572,119818,0,3.276222246527398,False
+all_views,U-Zero_NaN-Zero,zero,zero,Consolidation,156390,10349,146041,0,14.111604985988984,False
+all_views,U-Zero_NaN-Zero,zero,zero,Pneumonia,156390,4227,152163,0,35.99787083037615,False
+all_views,U-Zero_NaN-Zero,zero,zero,Atelectasis,156390,23363,133027,0,5.6939177331678295,False
+all_views,U-Zero_NaN-Zero,zero,zero,Pneumothorax,156390,13613,142777,0,10.48828325864982,False
+all_views,U-Zero_NaN-Zero,zero,zero,Pleural Effusion,156390,60331,96059,0,1.5921996983308746,False
+all_views,U-Zero_NaN-Zero,zero,zero,Pleural Other,156390,2466,153924,0,62.41849148418491,False
+all_views,U-Zero_NaN-Zero,zero,zero,Fracture,156390,6328,150062,0,23.713969658659924,False
+all_views,U-Zero_NaN-Zero,zero,zero,Support Devices,156390,81202,75188,0,0.925937784783626,False
+all_views,U-One_NaN-Zero,one,zero,No Finding,156390,15667,140723,0,8.98212803982894,False
+all_views,U-One_NaN-Zero,one,zero,Enlarged Cardiomediastinum,156390,16310,140080,0,8.58859595340282,False
+all_views,U-One_NaN-Zero,one,zero,Cardiomegaly,156390,24515,131875,0,5.379359575769937,False
+all_views,U-One_NaN-Zero,one,zero,Lung Opacity,156390,77883,78507,0,1.0080120180270407,False
+all_views,U-One_NaN-Zero,one,zero,Lung Lesion,156390,7477,148913,0,19.916142838036645,False
+all_views,U-One_NaN-Zero,one,zero,Edema,156390,45613,110777,0,2.4286278034770787,False
+all_views,U-One_NaN-Zero,one,zero,Consolidation,156390,29716,126674,0,4.262821375689864,False
+all_views,U-One_NaN-Zero,one,zero,Pneumonia,156390,17361,139029,0,8.008121651978573,False
+all_views,U-One_NaN-Zero,one,zero,Atelectasis,156390,46925,109465,0,2.33276505061268,False
+all_views,U-One_NaN-Zero,one,zero,Pneumothorax,156390,15817,140573,0,8.887462856420306,False
+all_views,U-One_NaN-Zero,one,zero,Pleural Effusion,156390,68534,87856,0,1.281933055125923,False
+all_views,U-One_NaN-Zero,one,zero,Pleural Other,156390,4374,152016,0,34.75445816186557,False
+all_views,U-One_NaN-Zero,one,zero,Fracture,156390,6774,149616,0,22.086802480070858,False
+all_views,U-One_NaN-Zero,one,zero,Support Devices,156390,81972,74418,0,0.9078465817596253,False
+all_views,U-Mask_NaN-Mask,mask,mask,No Finding,156390,15667,0,140723,1.0,True
+all_views,U-Mask_NaN-Mask,mask,mask,Enlarged Cardiomediastinum,156390,7558,15127,133705,2.0014554114845198,False
+all_views,U-Mask_NaN-Mask,mask,mask,Cardiomegaly,156390,18900,7754,129736,0.4102645502645503,False
+all_views,U-Mask_NaN-Mask,mask,mask,Lung Opacity,156390,73907,4545,77938,0.06149620468967757,False
+all_views,U-Mask_NaN-Mask,mask,mask,Lung Lesion,156390,6430,881,149079,0.1370139968895801,False
+all_views,U-Mask_NaN-Mask,mask,mask,Edema,156390,36572,14522,105296,0.39707973312916983,False
+all_views,U-Mask_NaN-Mask,mask,mask,Consolidation,156390,10349,19654,126387,1.8991206879891778,False
+all_views,U-Mask_NaN-Mask,mask,mask,Pneumonia,156390,4227,1916,150247,0.45327655547669743,False
+all_views,U-Mask_NaN-Mask,mask,mask,Atelectasis,156390,23363,944,132083,0.04040576980695972,False
+all_views,U-Mask_NaN-Mask,mask,mask,Pneumothorax,156390,13613,39448,103329,2.8978182619554835,False
+all_views,U-Mask_NaN-Mask,mask,mask,Pleural Effusion,156390,60331,24706,71353,0.40950755001574646,False
+all_views,U-Mask_NaN-Mask,mask,mask,Pleural Other,156390,2466,230,153694,0.09326845093268452,False
+all_views,U-Mask_NaN-Mask,mask,mask,Fracture,156390,6328,1792,148270,0.2831858407079646,False
+all_views,U-Mask_NaN-Mask,mask,mask,Support Devices,156390,81202,4321,70867,0.05321297504987562,False

@@ -1,0 +1,150 @@
+# Transparent lexicon mapping CheXpert observation names to report phrases.
+# Patterns are case-insensitive Python regular expressions matched on word
+# boundaries. This is a deliberately simple, inspectable EDA instrument, NOT a
+# validated clinical NLP labeler. "No Finding" is not a phrase-level concept
+# and is excluded.
+#
+# mesh: MeSH headings (first path component in indiana_reports.csv MeSH) used
+# only to measure AGREEMENT between the extractor and the dataset's own
+# indexing. MeSH indexing is not ground truth.
+
+concepts:
+  Enlarged Cardiomediastinum:
+    patterns:
+      - "widen(?:ed|ing) (?:of the )?(?:superior )?mediastinum"
+      - "mediastin(?:um|al (?:silhouette|contour)s?) (?:is |are |appears? )?(?:widened|enlarged|prominent)"
+      - "mediastinal widening"
+      - "enlarged cardiomediastinal (?:silhouette|contours?)"
+      - "cardiomediastinal (?:silhouette|contours?) (?:is |are |appears? )?(?:enlarged|widened)"
+    mesh: []
+  Cardiomegaly:
+    patterns:
+      - "cardiomegaly"
+      - "cardiac enlargement"
+      - "enlarged (?:heart|cardiac silhouette)"
+      - "(?:heart|cardiac silhouette|heart size) (?:is |appears? )?(?:mildly |moderately |markedly )?enlarged"
+    mesh: ["Cardiomegaly"]
+  Lung Opacity:
+    patterns:
+      - "opacit(?:y|ies)"
+      - "infiltrat(?:e|es|ion|ive)"
+      - "air ?space (?:disease|opacit(?:y|ies))"
+    mesh: ["Opacity", "Airspace Disease", "Infiltrate"]
+  Lung Lesion:
+    patterns:
+      - "nodul(?:e|es|ar opacit(?:y|ies))"
+      - "(?:lung|pulmonary|hilar|perihilar) mass(?:es)?"
+      - "mass(?:es)?"
+      - "(?:lung|pulmonary) lesions?"
+    mesh: ["Nodule", "Mass"]
+  Edema:
+    patterns:
+      - "edema"
+      - "(?:pulmonary |vascular )congestion"
+    mesh: ["Pulmonary Edema", "Pulmonary Congestion"]
+  Consolidation:
+    patterns:
+      - "consolidat(?:ion|ions|ive|ed)"
+    mesh: ["Consolidation"]
+  Pneumonia:
+    patterns:
+      - "pneumonias?"
+      - "infectious process"
+    mesh: ["Pneumonia"]
+  Atelectasis:
+    patterns:
+      - "atelecta(?:sis|tic|ses)"
+    mesh: ["Pulmonary Atelectasis"]
+  Pneumothorax:
+    patterns:
+      - "pneumothora(?:x|ces)"
+    mesh: ["Pneumothorax"]
+  Pleural Effusion:
+    patterns:
+      - "(?<!pericardial )effusions?"
+      - "pleural fluid"
+      - "hydrothorax"
+    mesh: ["Pleural Effusion"]
+  Pleural Other:
+    patterns:
+      - "pleural (?:thickening|plaques?|scarring|calcifications?)"
+      - "fibrothorax"
+    mesh: []
+  Fracture:
+    patterns:
+      - "fractur(?:e|es|ed)"
+    mesh: ["Fractures, Bone"]
+  Support Devices:
+    patterns:
+      - "pacemaker"
+      - "(?:aicd|icd|defibrillator)"
+      - "(?:endotracheal|nasogastric|feeding|enteric|chest|tracheostomy|et|ng) tubes?"
+      - "(?:central venous |picc |venous |dialysis )?(?:catheter|line)s?(?= (?:tip|terminat|project|in|with))"
+      - "picc"
+      - "port-?a-?cath"
+      - "(?:sternotomy|sternal) wires?"
+      - "(?:surgical|vascular) clips?"
+      - "stents?"
+    mesh: ["Catheters, Indwelling", "Surgical Instruments", "Implanted Medical Device", "Tube, Inserted", "Medical Device", "Stents"]
+
+# Assertion triggers (lower-case regex). Negation/uncertainty scope: from the
+# trigger to the end of the clause, capped at `scope_tokens` tokens.
+assertion:
+  scope_tokens: 12
+  negation_pre:
+    - "no"
+    - "not"
+    - "without"
+    - "negative for"
+    - "free of"
+    - "no evidence of"
+    - "no radiographic evidence of"
+    - "resolution of"
+    - "resolved"
+    - "absence of"
+    - "clear of"
+  negation_post:
+    - "(?:is|are|was|were|has been|have been) (?:not (?:seen|identified|present|evident|visualized|demonstrated)|absent|resolved)"
+    - "not (?:seen|identified|present|evident|visualized)"
+    - "(?:has|have) resolved"
+  uncertainty_pre:
+    - "possible"
+    - "possibly"
+    - "probable"
+    - "probably"
+    - "may"
+    - "might"
+    - "could"
+    - "questionable"
+    - "question of"
+    - "suspicious for"
+    - "suspected"
+    - "suggestive of"
+    - "suggests?"
+    - "concerning for"
+    - "cannot (?:be )?(?:excluded|ruled out)"
+    - "borderline"
+    - "likely"
+    - "versus"
+    - "vs"
+    - "differential"
+  uncertainty_post:
+    - "(?:cannot|can not|could not) (?:be )?(?:excluded|ruled out|entirely excluded)"
+    - "(?:is|are) not excluded"
+    - "(?:is|are) (?:possible|questioned|suspected)"
+  # Phrases that contain a negation word but do NOT negate the finding.
+  pseudo_negation:
+    - "no (?:significant |interval |appreciable )?change"
+    - "not (?:significantly )?changed"
+    - "no (?:significant )?(?:increase|decrease)"
+    - "not (?:only|necessarily)"
+  # Clause terminators that stop a trigger's scope.
+  scope_terminators:
+    - "but"
+    - "however"
+    - "although"
+    - "though"
+    - "except"
+    - "aside from"
+    - "which"
+    - "with the exception of"

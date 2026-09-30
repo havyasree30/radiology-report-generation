@@ -1,0 +1,9 @@
+variable,unit,count,missing,mean,median,std,q1,q3,min,max
+age,image,223648,0.0,60.43103001144656,62.0,17.821668081964873,49.0,74.0,0.0,90.0
+age_median_per_patient,patient,64740,0.0,60.34630058696324,62.0,18.582005687106758,48.0,75.0,0.0,90.0
+sex=Male,image,132764,,,,,,,,
+sex=Female,image,90883,,,,,,,,
+sex=Unknown,image,1,,,,,,,,
+sex=Male,patient,35917,,,,,,,,
+sex=Female,patient,28822,,,,,,,,
+sex=Unknown,patient,1,,,,,,,,

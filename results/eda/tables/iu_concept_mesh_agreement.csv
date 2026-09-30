@@ -1,0 +1,23 @@
+concept,extractor_definition,mesh_headings,mesh_positive_reports,extractor_positive_reports,both,extractor_only,mesh_only,agreement_precision_vs_mesh,agreement_recall_vs_mesh
+Cardiomegaly,positive,Cardiomegaly,345,296,285,11,60,0.9628378378378378,0.8260869565217391
+Cardiomegaly,positive_or_uncertain,Cardiomegaly,345,316,305,11,40,0.9651898734177216,0.8840579710144928
+Lung Opacity,positive,Opacity;Airspace Disease;Infiltrate,535,526,517,9,18,0.9828897338403042,0.9663551401869159
+Lung Opacity,positive_or_uncertain,Opacity;Airspace Disease;Infiltrate,535,539,522,17,13,0.9684601113172542,0.9757009345794393
+Lung Lesion,positive,Nodule;Mass,119,145,104,41,15,0.7172413793103448,0.8739495798319328
+Lung Lesion,positive_or_uncertain,Nodule;Mass,119,166,106,60,13,0.6385542168674698,0.8907563025210085
+Edema,positive,Pulmonary Edema;Pulmonary Congestion,92,69,63,6,29,0.9130434782608695,0.6847826086956522
+Edema,positive_or_uncertain,Pulmonary Edema;Pulmonary Congestion,92,97,71,26,21,0.7319587628865979,0.7717391304347826
+Consolidation,positive,Consolidation,30,33,29,4,1,0.8787878787878788,0.9666666666666667
+Consolidation,positive_or_uncertain,Consolidation,30,40,30,10,0,0.75,1.0
+Pneumonia,positive,Pneumonia,40,47,33,14,7,0.7021276595744681,0.825
+Pneumonia,positive_or_uncertain,Pneumonia,40,89,37,52,3,0.4157303370786517,0.925
+Atelectasis,positive,Pulmonary Atelectasis,315,308,296,12,19,0.961038961038961,0.9396825396825397
+Atelectasis,positive_or_uncertain,Pulmonary Atelectasis,315,367,305,62,10,0.8310626702997275,0.9682539682539683
+Pneumothorax,positive,Pneumothorax,22,22,19,3,3,0.8636363636363636,0.8636363636363636
+Pneumothorax,positive_or_uncertain,Pneumothorax,22,23,20,3,2,0.8695652173913043,0.9090909090909091
+Pleural Effusion,positive,Pleural Effusion,149,150,138,12,11,0.92,0.9261744966442953
+Pleural Effusion,positive_or_uncertain,Pleural Effusion,149,183,146,37,3,0.7978142076502732,0.9798657718120806
+Fracture,positive,"Fractures, Bone",83,102,79,23,4,0.7745098039215687,0.9518072289156626
+Fracture,positive_or_uncertain,"Fractures, Bone",83,116,82,34,1,0.7068965517241379,0.9879518072289156
+Support Devices,positive,"Catheters, Indwelling;Surgical Instruments;Implanted Medical Device;Tube, Inserted;Medical Device;Stents",321,185,173,12,148,0.9351351351351351,0.5389408099688473
+Support Devices,positive_or_uncertain,"Catheters, Indwelling;Surgical Instruments;Implanted Medical Device;Tube, Inserted;Medical Device;Stents",321,187,174,13,147,0.93048128342246,0.5420560747663551

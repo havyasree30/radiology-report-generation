@@ -20,7 +20,11 @@ configs/*.local.yaml
 # --- Logs ---
 *.log
 
-# --- Data (raw datasets live OUTSIDE the repo; never commit them) ---
+# --- Data: raw datasets are stored under data/ locally but NEVER committed ---
+# Everything in data/ is ignored except the README and generated split manifests.
+data/*
+!data/README.md
+!data/splits/
 data/raw/
 data/cache/
 

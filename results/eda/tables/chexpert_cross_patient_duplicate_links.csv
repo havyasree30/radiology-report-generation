@@ -1,0 +1,5 @@
+sha256,patients,paths
+25553ac15c709c510803638946defe4c2c0a0743a5b3a49810025e28bb8639ad,patient14431;patient36994,CheXpert-v1.0-small/train/patient14431/study7/view1_frontal.jpg;CheXpert-v1.0-small/train/patient36994/study4/view1_frontal.jpg
+b1c5cf92246787fbff714ad4014cdcc12d5495f0fedd4e36271c63e237272df2,patient44529;patient50936,CheXpert-v1.0-small/train/patient44529/study9/view1_frontal.jpg;CheXpert-v1.0-small/train/patient50936/study2/view1_frontal.jpg
+c14d43711e71d4fdfdf10a25638d9b9b1facd086456b661f9b929af8fcf3f533,patient05189;patient35139,CheXpert-v1.0-small/train/patient05189/study7/view1_frontal.jpg;CheXpert-v1.0-small/train/patient35139/study9/view1_frontal.jpg
+f443977962cddfff540ee3b10b36e495852d2a32d127267b273e59bb2716b9a3,patient05189;patient35139,CheXpert-v1.0-small/train/patient05189/study6/view1_frontal.jpg;CheXpert-v1.0-small/train/patient35139/study8/view1_frontal.jpg

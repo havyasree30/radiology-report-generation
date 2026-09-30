@@ -1,0 +1,63 @@
+# Phase 1 EDA / data-preparation settings.
+# Every threshold here is a DESCRIPTIVE heuristic used to flag or categorise
+# records for review. None of them removes data automatically.
+
+seed: 42
+
+chexpert:
+  # Splits are carved from the official training CSV only. The official
+  # validation CSV (radiologist-labelled) is kept intact as a separate set.
+  split_ratios: {train: 0.70, val: 0.15, test: 0.15}
+  # Pre-declared rule for choosing random vs stratified patient-level splits
+  # (decided BEFORE looking at the split results):
+  # use group-aware multi-label stratification if, for any observation with at
+  # least `min_positive_images` positives, the relative deviation of a split's
+  # positive prevalence from the full cohort exceeds `max_relative_deviation`
+  # for the seeded random split OR at the 95th percentile over
+  # `random_seed_repeats` random seeds.
+  split_selection:
+    max_relative_deviation: 0.10
+    min_positive_images: 100
+    random_seed_repeats: 50
+
+  # Descriptive imbalance categories by positive prevalence among ALL images
+  # (fraction of images with label == 1). Upper bounds are exclusive.
+  prevalence_bands:
+    - {name: extremely_rare, max: 0.01}
+    - {name: rare, max: 0.05}
+    - {name: uncommon, max: 0.15}
+    - {name: common, max: 1.01}
+  # Imbalance severity by effective negative:positive ratio (not-positive / positive).
+  severity_bands:
+    - {name: mild, max_ratio: 3}
+    - {name: moderate, max_ratio: 10}
+    - {name: severe, max_ratio: 50}
+    - {name: extreme, max_ratio: .inf}
+  high_uncertainty_pct: 5.0          # uncertain % of all images
+  high_uncertainty_share_of_mentions: 0.20   # uncertain / (positive + uncertain)
+  missing_dominated_pct: 50.0        # missing % of all images
+  negative_dominated_ratio: 10.0     # explicit negatives / positives
+  many_studies_quantile: 0.999       # flag patients above this studies-per-patient quantile
+  sufficient_positives_train: 1000   # "ample" positives in the training partition (frontal)
+
+  age:
+    plausible_min: 18                # CheXpert is an adult cohort; lower ages flagged
+    plausible_max: 100
+
+images:
+  suspicious_min_side_px: 128
+  # Absolute bounds: an IQR rule was tried first and rejected because
+  # CheXpert-small sizes are discrete (IQR ~ 0) and it flagged ~9% of images.
+  aspect_ratio_min: 0.5
+  aspect_ratio_max: 2.0
+  low_pixel_std: 5.0                 # near-uniform image
+  near_blank_saturated_fraction: 0.90  # >= 90% of pixels near-white (>=250) or near-black (<=5)
+  # Perceptual duplicates: exact match of a 256-bit dHash (candidates only).
+  # The 64-bit dHash is also computed but is not discriminative for chest radiographs.
+
+iu_xray:
+  split_ratios: {train: 0.70, val: 0.15, test: 0.15}
+  near_empty_words: 3
+  extremely_short_words: 5
+  extremely_long_quantile: 0.99
+  high_anonymization_fraction: 0.30  # share of words that are XXXX

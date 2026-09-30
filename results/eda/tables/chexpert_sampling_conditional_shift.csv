@@ -1,0 +1,547 @@
+scheme,label_a,label_b,p_b_given_a_original,p_b_given_a_sampled,abs_change
+inverse_prevalence_max,No Finding,Enlarged Cardiomediastinum,0.0,0.0,0.0
+inverse_prevalence_max,No Finding,Cardiomegaly,0.0,0.0,0.0
+inverse_prevalence_max,No Finding,Lung Opacity,0.0,0.0,0.0
+inverse_prevalence_max,No Finding,Lung Lesion,0.0,0.0,0.0
+inverse_prevalence_max,No Finding,Edema,0.0,0.0,0.0
+inverse_prevalence_max,No Finding,Consolidation,0.0,0.0,0.0
+inverse_prevalence_max,No Finding,Pneumonia,0.0,0.0,0.0
+inverse_prevalence_max,No Finding,Atelectasis,0.0,0.0,0.0
+inverse_prevalence_max,No Finding,Pneumothorax,0.0,0.0,0.0
+inverse_prevalence_max,No Finding,Pleural Effusion,0.0,0.0,0.0
+inverse_prevalence_max,No Finding,Pleural Other,0.0,0.0,0.0
+inverse_prevalence_max,No Finding,Fracture,0.0,0.0,0.0
+inverse_prevalence_max,No Finding,Support Devices,0.43667058625902905,0.43667058625902955,4.996003610813204e-16
+inverse_prevalence_max,Enlarged Cardiomediastinum,No Finding,0.0,0.0,0.0
+inverse_prevalence_max,Enlarged Cardiomediastinum,Cardiomegaly,0.17321484253196134,0.16697139364119815,0.006243448890763198
+inverse_prevalence_max,Enlarged Cardiomediastinum,Lung Opacity,0.49875272840661056,0.503078820660301,0.004326092253690406
+inverse_prevalence_max,Enlarged Cardiomediastinum,Lung Lesion,0.042719052073589024,0.05587572109813753,0.013156669024548505
+inverse_prevalence_max,Enlarged Cardiomediastinum,Edema,0.22435297786092923,0.21760925695673672,0.006743720904192507
+inverse_prevalence_max,Enlarged Cardiomediastinum,Consolidation,0.05908949173682569,0.06155492522164271,0.002465433484817016
+inverse_prevalence_max,Enlarged Cardiomediastinum,Pneumonia,0.012316806984720922,0.023569601088058945,0.011252794103338022
+inverse_prevalence_max,Enlarged Cardiomediastinum,Atelectasis,0.14250077954474588,0.1415242529203663,0.0009765266243795812
+inverse_prevalence_max,Enlarged Cardiomediastinum,Pneumothorax,0.07639538509510446,0.07549190964675973,0.0009034754483447371
+inverse_prevalence_max,Enlarged Cardiomediastinum,Pleural Effusion,0.38150919862800126,0.37856428901409034,0.0029449096139109177
+inverse_prevalence_max,Enlarged Cardiomediastinum,Pleural Other,0.016058621764889303,0.0546106566343577,0.0385520348694684
+inverse_prevalence_max,Enlarged Cardiomediastinum,Fracture,0.06236357966947303,0.07508025814030411,0.012716678470831085
+inverse_prevalence_max,Enlarged Cardiomediastinum,Support Devices,0.5609603991269099,0.5499158914076723,0.011044507719237595
+inverse_prevalence_max,Cardiomegaly,No Finding,0.0,0.0,0.0
+inverse_prevalence_max,Cardiomegaly,Enlarged Cardiomediastinum,0.0677728298664064,0.1308686617673902,0.0630958319009838
+inverse_prevalence_max,Cardiomegaly,Lung Opacity,0.4997864942353444,0.5089616072484106,0.009175113013066172
+inverse_prevalence_max,Cardiomegaly,Lung Lesion,0.0190325138778747,0.04975468389477157,0.03072217001689687
+inverse_prevalence_max,Cardiomegaly,Edema,0.45989141706826087,0.41930658467222937,0.0405848323960315
+inverse_prevalence_max,Cardiomegaly,Consolidation,0.052949429634600136,0.08175966307989604,0.02881023344529591
+inverse_prevalence_max,Cardiomegaly,Pneumonia,0.016470444702006953,0.06205131501589857,0.04558087031389162
+inverse_prevalence_max,Cardiomegaly,Atelectasis,0.1461599463185506,0.13811735667408587,0.00804258964446472
+inverse_prevalence_max,Cardiomegaly,Pneumothorax,0.030622826816324042,0.03753201535433302,0.006909188538008981
+inverse_prevalence_max,Cardiomegaly,Pleural Effusion,0.4465930580125663,0.4274819746117148,0.019111083400851547
+inverse_prevalence_max,Cardiomegaly,Pleural Other,0.00939425364484841,0.06399624376804182,0.05460199012319341
+inverse_prevalence_max,Cardiomegaly,Fracture,0.026108704935033245,0.06309887901795588,0.03699017408292264
+inverse_prevalence_max,Cardiomegaly,Support Devices,0.6050143353870554,0.569291707994404,0.03572262739265142
+inverse_prevalence_max,Lung Opacity,No Finding,0.0,0.0,0.0
+inverse_prevalence_max,Lung Opacity,Enlarged Cardiomediastinum,0.04853440951571793,0.11647200418449619,0.06793759466877826
+inverse_prevalence_max,Lung Opacity,Cardiomegaly,0.1243020997693895,0.15034083164489187,0.026038731875502374
+inverse_prevalence_max,Lung Opacity,Lung Lesion,0.04389185580774366,0.13713582244141162,0.09324396663366796
+inverse_prevalence_max,Lung Opacity,Edema,0.27952421410365336,0.2481792832167199,0.031344930886933464
+inverse_prevalence_max,Lung Opacity,Consolidation,0.051629445321034105,0.10418280455956573,0.052553359238531626
+inverse_prevalence_max,Lung Opacity,Pneumonia,0.033514382813448235,0.1485207411123422,0.11500635829889397
+inverse_prevalence_max,Lung Opacity,Atelectasis,0.13466440101954122,0.1597449641444561,0.025080563124914884
+inverse_prevalence_max,Lung Opacity,Pneumothorax,0.08974086661002549,0.1338488569517236,0.044107990341698114
+inverse_prevalence_max,Lung Opacity,Pleural Effusion,0.5071155480033984,0.45143645577000596,0.05567909223339246
+inverse_prevalence_max,Lung Opacity,Pleural Other,0.01451935914552737,0.11747288266789706,0.1029535235223697
+inverse_prevalence_max,Lung Opacity,Fracture,0.033089573977424444,0.09669753587025824,0.0636079618928338
+inverse_prevalence_max,Lung Opacity,Support Devices,0.6182182303677631,0.5552581275522682,0.06296010281549491
+inverse_prevalence_max,Lung Lesion,No Finding,0.0,0.0,0.0
+inverse_prevalence_max,Lung Lesion,Enlarged Cardiomediastinum,0.05582722086389568,0.05622957551957556,0.00040235465567987905
+inverse_prevalence_max,Lung Lesion,Cardiomegaly,0.06356968215158924,0.06388252095630871,0.00031283880471946746
+inverse_prevalence_max,Lung Lesion,Lung Opacity,0.5894458027709861,0.5960834514619634,0.006637648690977271
+inverse_prevalence_max,Lung Lesion,Edema,0.10961695191524043,0.10933061840644438,0.0002863335087960467
+inverse_prevalence_max,Lung Lesion,Consolidation,0.0812958435207824,0.08441664090762632,0.0031207973868439265
+inverse_prevalence_max,Lung Lesion,Pneumonia,0.04339853300733496,0.06277493278471602,0.019376399777381058
+inverse_prevalence_max,Lung Lesion,Atelectasis,0.12224938875305623,0.12134627371787532,0.0009031150351809097
+inverse_prevalence_max,Lung Lesion,Pneumothorax,0.1136919315403423,0.10881072401117886,0.004881207529163434
+inverse_prevalence_max,Lung Lesion,Pleural Effusion,0.35574572127139364,0.3550628160283158,0.0006829052430778471
+inverse_prevalence_max,Lung Lesion,Pleural Other,0.02852485737571312,0.07469815472838656,0.04617329735267344
+inverse_prevalence_max,Lung Lesion,Fracture,0.03524857375713122,0.036077211633839645,0.0008286378767084282
+inverse_prevalence_max,Lung Lesion,Support Devices,0.38814180929095354,0.3828413634712467,0.005300445819706845
+inverse_prevalence_max,Edema,No Finding,0.0,0.0,0.0
+inverse_prevalence_max,Edema,Enlarged Cardiomediastinum,0.0413886332259549,0.10972767959241703,0.06833904636646213
+inverse_prevalence_max,Edema,Cardiomegaly,0.21683732167510356,0.2697596083239649,0.05292228664886134
+inverse_prevalence_max,Edema,Lung Opacity,0.5299125632765762,0.5405288025879572,0.010616239311381004
+inverse_prevalence_max,Edema,Lung Lesion,0.015473999079613438,0.05478213701401441,0.03930813793440097
+inverse_prevalence_max,Edema,Consolidation,0.06074551311550851,0.1257142408986023,0.06496872778309379
+inverse_prevalence_max,Edema,Pneumonia,0.021025080533824205,0.1062759187743982,0.08525083824057399
+inverse_prevalence_max,Edema,Atelectasis,0.17173838011965026,0.18761994442151406,0.0158815643018638
+inverse_prevalence_max,Edema,Pneumothorax,0.028531983433041877,0.04381871959023561,0.015286736157193732
+inverse_prevalence_max,Edema,Pleural Effusion,0.5075356649792913,0.5007653670911346,0.00677029788815664
+inverse_prevalence_max,Edema,Pleural Other,0.0051771744132535664,0.04812286865031951,0.04294569423706594
+inverse_prevalence_max,Edema,Fracture,0.018752876208007363,0.060974638209085066,0.0422217620010777
+inverse_prevalence_max,Edema,Support Devices,0.6575299125632765,0.6349151339908623,0.02261477857241423
+inverse_prevalence_max,Consolidation,No Finding,0.0,0.0,0.0
+inverse_prevalence_max,Consolidation,Enlarged Cardiomediastinum,0.041906236178682,0.05321437149674227,0.01130813531806027
+inverse_prevalence_max,Consolidation,Cardiomegaly,0.09597523219814241,0.09018029109676808,0.005794941101374337
+inverse_prevalence_max,Consolidation,Lung Opacity,0.37627156125608135,0.3890242363912394,0.012752675135158043
+inverse_prevalence_max,Consolidation,Lung Lesion,0.04411764705882353,0.07251912106834647,0.02840147400952294
+inverse_prevalence_max,Consolidation,Edema,0.2335249889429456,0.21553200905519784,0.017992979887747756
+inverse_prevalence_max,Consolidation,Pneumonia,0.0625829279080053,0.14162333657865983,0.07904040867065452
+inverse_prevalence_max,Consolidation,Atelectasis,0.13633348076072535,0.13131395324488157,0.00501952751584378
+inverse_prevalence_max,Consolidation,Pneumothorax,0.05362671384343211,0.05081507630697502,0.002811637536457086
+inverse_prevalence_max,Consolidation,Pleural Effusion,0.5036488279522335,0.47823115380015346,0.025417674152080072
+inverse_prevalence_max,Consolidation,Pleural Other,0.018022998673153472,0.0747126098343223,0.05668961116116883
+inverse_prevalence_max,Consolidation,Fracture,0.027421494913754976,0.043449094010122716,0.01602759909636774
+inverse_prevalence_max,Consolidation,Support Devices,0.5666740380362671,0.53320094965697,0.03347308837929719
+inverse_prevalence_max,Pneumonia,No Finding,0.0,0.0,0.0
+inverse_prevalence_max,Pneumonia,Enlarged Cardiomediastinum,0.02440531356194007,0.025083369808441468,0.000678056246501399
+inverse_prevalence_max,Pneumonia,Cardiomegaly,0.08341056533827618,0.08425410103108115,0.0008435356928049725
+inverse_prevalence_max,Pneumonia,Lung Opacity,0.6824219956750077,0.6827083931446691,0.00028639746966141466
+inverse_prevalence_max,Pneumonia,Lung Lesion,0.06580166821130677,0.06638626590589199,0.0005845976945852149
+inverse_prevalence_max,Pneumonia,Edema,0.22582638245288847,0.2243002139350052,0.0015261685178832585
+inverse_prevalence_max,Pneumonia,Consolidation,0.1748532591906086,0.17434212762574816,0.0005111315648604342
+inverse_prevalence_max,Pneumonia,Atelectasis,0.10966944701884461,0.1085645646022528,0.0011048824165918042
+inverse_prevalence_max,Pneumonia,Pneumothorax,0.028112449799196786,0.027955882637482218,0.00015656716171456864
+inverse_prevalence_max,Pneumonia,Pleural Effusion,0.28544949026876737,0.2832999435747051,0.0021495466940622543
+inverse_prevalence_max,Pneumonia,Pleural Other,0.017608897126969416,0.03216241698971298,0.014553519862743561
+inverse_prevalence_max,Pneumonia,Fracture,0.0228606734630831,0.0225220066486669,0.0003386668144162025
+inverse_prevalence_max,Pneumonia,Support Devices,0.33271547729379053,0.3324647289624898,0.00025074833130073193
+inverse_prevalence_max,Atelectasis,No Finding,0.0,0.0,0.0
+inverse_prevalence_max,Atelectasis,Enlarged Cardiomediastinum,0.04394230769230769,0.09453175884301249,0.050589451150704796
+inverse_prevalence_max,Atelectasis,Cardiomegaly,0.11519230769230769,0.11770679540974828,0.002514487717440589
+inverse_prevalence_max,Atelectasis,Lung Opacity,0.42673076923076925,0.4608807077046562,0.034149938473886976
+inverse_prevalence_max,Atelectasis,Lung Lesion,0.028846153846153848,0.0805437132890833,0.051697559442929454
+inverse_prevalence_max,Atelectasis,Edema,0.2870673076923077,0.2485347047615459,0.0385326029307618
+inverse_prevalence_max,Atelectasis,Consolidation,0.059278846153846154,0.10145924222834375,0.0421803960744976
+inverse_prevalence_max,Atelectasis,Pneumonia,0.01706730769230769,0.0681398720111483,0.05107256431884061
+inverse_prevalence_max,Atelectasis,Pneumothorax,0.09514423076923077,0.12456373907073613,0.02941950830150536
+inverse_prevalence_max,Atelectasis,Pleural Effusion,0.4912980769230769,0.47427440162485407,0.01702367529822285
+inverse_prevalence_max,Atelectasis,Pleural Other,0.009375,0.0690592174067248,0.0596842174067248
+inverse_prevalence_max,Atelectasis,Fracture,0.037355769230769234,0.09774328786759533,0.06038751863682609
+inverse_prevalence_max,Atelectasis,Support Devices,0.6383653846153846,0.6042258201542567,0.03413956446112787
+inverse_prevalence_max,Pneumothorax,No Finding,0.0,0.0,0.0
+inverse_prevalence_max,Pneumothorax,Enlarged Cardiomediastinum,0.03961836998706339,0.06373015805112985,0.024111788064066456
+inverse_prevalence_max,Pneumothorax,Cardiomegaly,0.04058861578266494,0.04042526541982435,0.0001633503628405905
+inverse_prevalence_max,Pneumothorax,Lung Opacity,0.4782503234152652,0.4880605852338628,0.009810261818597621
+inverse_prevalence_max,Pneumothorax,Lung Lesion,0.045116429495472184,0.09127978743148017,0.04616335793600799
+inverse_prevalence_max,Pneumothorax,Edema,0.08020698576972833,0.0733610329770771,0.006845952792651225
+inverse_prevalence_max,Pneumothorax,Consolidation,0.039214100905562745,0.049621631249575505,0.010407530344012761
+inverse_prevalence_max,Pneumothorax,Pneumonia,0.007357697283311772,0.02217604753266966,0.014818350249357886
+inverse_prevalence_max,Pneumothorax,Atelectasis,0.160009702457956,0.1574306732934158,0.0025790291645401975
+inverse_prevalence_max,Pneumothorax,Pleural Effusion,0.3369987063389392,0.3194723898439805,0.01752631649495867
+inverse_prevalence_max,Pneumothorax,Pleural Other,0.01277490297542044,0.07071993369618927,0.05794503072076883
+inverse_prevalence_max,Pneumothorax,Fracture,0.05489974126778784,0.10541471502543981,0.05051497375765197
+inverse_prevalence_max,Pneumothorax,Support Devices,0.6211998706338939,0.6143168932007501,0.006882977433143811
+inverse_prevalence_max,Pleural Effusion,No Finding,0.0,0.0,0.0
+inverse_prevalence_max,Pleural Effusion,Enlarged Cardiomediastinum,0.04551795978347811,0.11702043034153714,0.07150247055805903
+inverse_prevalence_max,Pleural Effusion,Cardiomegaly,0.13618184862069607,0.1685956111324829,0.03241376251178682
+inverse_prevalence_max,Pleural Effusion,Lung Opacity,0.6217563570750944,0.602744367437767,0.01901198963732731
+inverse_prevalence_max,Pleural Effusion,Lung Lesion,0.03247828270615153,0.1090650434151051,0.07658676070895357
+inverse_prevalence_max,Pleural Effusion,Edema,0.32824271284808126,0.30698524622161066,0.0212574666264706
+inverse_prevalence_max,Pleural Effusion,Consolidation,0.08472999869789244,0.1709990834883158,0.08626908479042336
+inverse_prevalence_max,Pleural Effusion,Pneumonia,0.01718781971390837,0.08228769299030159,0.06509987327639322
+inverse_prevalence_max,Pleural Effusion,Atelectasis,0.1900891013597723,0.21948500999029363,0.029395908630521328
+inverse_prevalence_max,Pleural Effusion,Pneumothorax,0.0775312040774568,0.11697977830034191,0.03944857422288511
+inverse_prevalence_max,Pleural Effusion,Pleural Other,0.009040346732640116,0.07965233113418231,0.07061198440154219
+inverse_prevalence_max,Pleural Effusion,Fracture,0.027623281683067023,0.08711502770473566,0.05949174602166864
+inverse_prevalence_max,Pleural Effusion,Support Devices,0.6496586618054652,0.611120040343433,0.03853862146203213
+inverse_prevalence_max,Pleural Other,No Finding,0.0,0.0,0.0
+inverse_prevalence_max,Pleural Other,Enlarged Cardiomediastinum,0.05899198167239404,0.058991981672393376,6.661338147750939e-16
+inverse_prevalence_max,Pleural Other,Cardiomegaly,0.0882016036655212,0.0882016036655202,9.992007221626409e-16
+inverse_prevalence_max,Pleural Other,Lung Opacity,0.5481099656357389,0.5481099656357381,7.771561172376096e-16
+inverse_prevalence_max,Pleural Other,Lung Lesion,0.08018327605956473,0.08018327605956381,9.159339953157541e-16
+inverse_prevalence_max,Pleural Other,Edema,0.10309278350515463,0.10309278350515347,1.1657341758564144e-15
+inverse_prevalence_max,Pleural Other,Consolidation,0.09335624284077892,0.09335624284077787,1.0547118733938987e-15
+inverse_prevalence_max,Pleural Other,Pneumonia,0.03264604810996564,0.03264604810996527,3.677613769070831e-16
+inverse_prevalence_max,Pleural Other,Atelectasis,0.11168384879725086,0.11168384879724959,1.27675647831893e-15
+inverse_prevalence_max,Pleural Other,Pneumothorax,0.09049255441008018,0.09049255441007917,1.0130785099704553e-15
+inverse_prevalence_max,Pleural Other,Pleural Effusion,0.27835051546391754,0.2783505154639165,1.0547118733938987e-15
+inverse_prevalence_max,Pleural Other,Fracture,0.08132875143184422,0.0813287514318433,9.159339953157541e-16
+inverse_prevalence_max,Pleural Other,Support Devices,0.42210767468499427,0.4221076746849938,4.440892098500626e-16
+inverse_prevalence_max,Fracture,No Finding,0.0,0.0,0.0
+inverse_prevalence_max,Fracture,Enlarged Cardiomediastinum,0.07668711656441718,0.0761750441029108,0.0005120724615063771
+inverse_prevalence_max,Fracture,Cardiomegaly,0.08205521472392638,0.08167986507463261,0.00037534964929376857
+inverse_prevalence_max,Fracture,Lung Opacity,0.4181365030674847,0.4237569654025309,0.005620462335046206
+inverse_prevalence_max,Fracture,Lung Lesion,0.03316717791411043,0.03637292751709394,0.003205749602983511
+inverse_prevalence_max,Fracture,Edema,0.125,0.12268666468749671,0.002313335312503287
+inverse_prevalence_max,Fracture,Consolidation,0.04754601226993865,0.05099194211990099,0.003445929849962337
+inverse_prevalence_max,Fracture,Pneumonia,0.014187116564417178,0.021471401384930235,0.007284284820513057
+inverse_prevalence_max,Fracture,Atelectasis,0.14896472392638035,0.14846600875807417,0.0004987151683061852
+inverse_prevalence_max,Fracture,Pneumothorax,0.13017638036809817,0.12669037222868193,0.003486008139416241
+inverse_prevalence_max,Fracture,Pleural Effusion,0.2847009202453988,0.2859288573939237,0.0012279371485249269
+inverse_prevalence_max,Fracture,Pleural Other,0.027223926380368097,0.07638630020888447,0.049162373828516376
+inverse_prevalence_max,Fracture,Support Devices,0.4415260736196319,0.4353828598689437,0.0061432137506882145
+inverse_prevalence_max,Support Devices,No Finding,0.06928212577124505,0.08571705980950017,0.01643493403825512
+inverse_prevalence_max,Support Devices,Enlarged Cardiomediastinum,0.04794712223984222,0.11660715071236326,0.06866002847252103
+inverse_prevalence_max,Support Devices,Cardiomegaly,0.1321677482975973,0.1540175399177157,0.02184979162011838
+inverse_prevalence_max,Support Devices,Lung Opacity,0.5430098212976906,0.5085554621416131,0.03445435915607753
+inverse_prevalence_max,Support Devices,Lung Lesion,0.025386122253168268,0.08066889418771078,0.055282771934542514
+inverse_prevalence_max,Support Devices,Edema,0.3046467930864461,0.2669966198981254,0.0376501731883207
+inverse_prevalence_max,Support Devices,Consolidation,0.06829599818765741,0.13078372372550273,0.06248772553784532
+inverse_prevalence_max,Support Devices,Pneumonia,0.014352154155728202,0.06624312966820019,0.05189097551247199
+inverse_prevalence_max,Support Devices,Atelectasis,0.17694327101184687,0.19181445225143803,0.014871181239591164
+inverse_prevalence_max,Support Devices,Pneumothorax,0.10238403006356525,0.1543038590304211,0.05191982896685585
+inverse_prevalence_max,Support Devices,Pleural Effusion,0.4654122413080849,0.41921169668348196,0.046200544624602935
+inverse_prevalence_max,Support Devices,Pleural Other,0.009821297690595808,0.08285840616606181,0.073037108475466
+inverse_prevalence_max,Support Devices,Fracture,0.03068988952705854,0.09099411051266121,0.06030422098560267
+inverse_prevalence_mean,No Finding,Enlarged Cardiomediastinum,0.0,0.0,0.0
+inverse_prevalence_mean,No Finding,Cardiomegaly,0.0,0.0,0.0
+inverse_prevalence_mean,No Finding,Lung Opacity,0.0,0.0,0.0
+inverse_prevalence_mean,No Finding,Lung Lesion,0.0,0.0,0.0
+inverse_prevalence_mean,No Finding,Edema,0.0,0.0,0.0
+inverse_prevalence_mean,No Finding,Consolidation,0.0,0.0,0.0
+inverse_prevalence_mean,No Finding,Pneumonia,0.0,0.0,0.0
+inverse_prevalence_mean,No Finding,Atelectasis,0.0,0.0,0.0
+inverse_prevalence_mean,No Finding,Pneumothorax,0.0,0.0,0.0
+inverse_prevalence_mean,No Finding,Pleural Effusion,0.0,0.0,0.0
+inverse_prevalence_mean,No Finding,Pleural Other,0.0,0.0,0.0
+inverse_prevalence_mean,No Finding,Fracture,0.0,0.0,0.0
+inverse_prevalence_mean,No Finding,Support Devices,0.43667058625902905,0.30990391761008457,0.12676666864894448
+inverse_prevalence_mean,Enlarged Cardiomediastinum,No Finding,0.0,0.0,0.0
+inverse_prevalence_mean,Enlarged Cardiomediastinum,Cardiomegaly,0.17321484253196134,0.14956708078726638,0.02364776174469496
+inverse_prevalence_mean,Enlarged Cardiomediastinum,Lung Opacity,0.49875272840661056,0.3868781362676578,0.11187459213895273
+inverse_prevalence_mean,Enlarged Cardiomediastinum,Lung Lesion,0.042719052073589024,0.058537545424388916,0.015818493350799892
+inverse_prevalence_mean,Enlarged Cardiomediastinum,Edema,0.22435297786092923,0.1618799179883141,0.062473059872615117
+inverse_prevalence_mean,Enlarged Cardiomediastinum,Consolidation,0.05908949173682569,0.060239327232370396,0.0011498354955447043
+inverse_prevalence_mean,Enlarged Cardiomediastinum,Pneumonia,0.012316806984720922,0.019609539201396926,0.007292732216676003
+inverse_prevalence_mean,Enlarged Cardiomediastinum,Atelectasis,0.14250077954474588,0.11704668333866089,0.025454096206084992
+inverse_prevalence_mean,Enlarged Cardiomediastinum,Pneumothorax,0.07639538509510446,0.07147186919914236,0.0049235158959620995
+inverse_prevalence_mean,Enlarged Cardiomediastinum,Pleural Effusion,0.38150919862800126,0.2768472580733282,0.10466194055467304
+inverse_prevalence_mean,Enlarged Cardiomediastinum,Pleural Other,0.016058621764889303,0.041450090610616566,0.025391468845727263
+inverse_prevalence_mean,Enlarged Cardiomediastinum,Fracture,0.06236357966947303,0.09130924198995155,0.028945662320478523
+inverse_prevalence_mean,Enlarged Cardiomediastinum,Support Devices,0.5609603991269099,0.4307950961183161,0.13016530300859375
+inverse_prevalence_mean,Cardiomegaly,No Finding,0.0,0.0,0.0
+inverse_prevalence_mean,Cardiomegaly,Enlarged Cardiomediastinum,0.0677728298664064,0.11490154948522366,0.04712871961881726
+inverse_prevalence_mean,Cardiomegaly,Lung Opacity,0.4997864942353444,0.43239992757876605,0.06738656665657833
+inverse_prevalence_mean,Cardiomegaly,Lung Lesion,0.0190325138778747,0.0406962245511429,0.021663710673268197
+inverse_prevalence_mean,Cardiomegaly,Edema,0.45989141706826087,0.39242381352423844,0.06746760354402243
+inverse_prevalence_mean,Cardiomegaly,Consolidation,0.052949429634600136,0.07432943808394035,0.021380008449340217
+inverse_prevalence_mean,Cardiomegaly,Pneumonia,0.016470444702006953,0.043829891848861886,0.027359447146854933
+inverse_prevalence_mean,Cardiomegaly,Atelectasis,0.1461599463185506,0.1407529583854632,0.005406987933087387
+inverse_prevalence_mean,Cardiomegaly,Pneumothorax,0.030622826816324042,0.03594959166383872,0.005326764847514681
+inverse_prevalence_mean,Cardiomegaly,Pleural Effusion,0.4465930580125663,0.3709259084478488,0.07566714956471754
+inverse_prevalence_mean,Cardiomegaly,Pleural Other,0.00939425364484841,0.04184243739001643,0.03244818374516802
+inverse_prevalence_mean,Cardiomegaly,Fracture,0.026108704935033245,0.054534925752971274,0.02842622081793803
+inverse_prevalence_mean,Cardiomegaly,Support Devices,0.6050143353870554,0.5082969432922532,0.09671739209480223
+inverse_prevalence_mean,Lung Opacity,No Finding,0.0,0.0,0.0
+inverse_prevalence_mean,Lung Opacity,Enlarged Cardiomediastinum,0.04853440951571793,0.09476406388032356,0.04622965436460563
+inverse_prevalence_mean,Lung Opacity,Cardiomegaly,0.1243020997693895,0.13786855833676287,0.013566458567373374
+inverse_prevalence_mean,Lung Opacity,Lung Lesion,0.04389185580774366,0.11773944706896435,0.07384759126122069
+inverse_prevalence_mean,Lung Opacity,Edema,0.27952421410365336,0.23845062060665093,0.04107359349700243
+inverse_prevalence_mean,Lung Opacity,Consolidation,0.051629445321034105,0.08937437091806447,0.03774492559703036
+inverse_prevalence_mean,Lung Opacity,Pneumonia,0.033514382813448235,0.12047984447772259,0.08696546166427435
+inverse_prevalence_mean,Lung Opacity,Atelectasis,0.13466440101954122,0.1474606764040981,0.012796275384556882
+inverse_prevalence_mean,Lung Opacity,Pneumothorax,0.08974086661002549,0.11972254302287291,0.02998167641284742
+inverse_prevalence_mean,Lung Opacity,Pleural Effusion,0.5071155480033984,0.425576454728826,0.08153909327457243
+inverse_prevalence_mean,Lung Opacity,Pleural Other,0.01451935914552737,0.08854447985759675,0.07402512071206938
+inverse_prevalence_mean,Lung Opacity,Fracture,0.033089573977424444,0.08041261660443536,0.04732304262701091
+inverse_prevalence_mean,Lung Opacity,Support Devices,0.6182182303677631,0.5186068496599877,0.09961138070777542
+inverse_prevalence_mean,Lung Lesion,No Finding,0.0,0.0,0.0
+inverse_prevalence_mean,Lung Lesion,Enlarged Cardiomediastinum,0.05582722086389568,0.058782090838013064,0.002954869974117383
+inverse_prevalence_mean,Lung Lesion,Cardiomegaly,0.06356968215158924,0.053195485224319154,0.01037419692727009
+inverse_prevalence_mean,Lung Lesion,Lung Opacity,0.5894458027709861,0.4826841343081284,0.10676166846285773
+inverse_prevalence_mean,Lung Lesion,Edema,0.10961695191524043,0.07772760008466419,0.03188935183057624
+inverse_prevalence_mean,Lung Lesion,Consolidation,0.0812958435207824,0.08062862982130639,0.0006672136994760047
+inverse_prevalence_mean,Lung Lesion,Pneumonia,0.04339853300733496,0.06151536026508916,0.018116827257754195
+inverse_prevalence_mean,Lung Lesion,Atelectasis,0.12224938875305623,0.09441883172350268,0.027830557029553546
+inverse_prevalence_mean,Lung Lesion,Pneumothorax,0.1136919315403423,0.09968660898181968,0.014005322558522618
+inverse_prevalence_mean,Lung Lesion,Pleural Effusion,0.35574572127139364,0.26463210149524447,0.09111361977614918
+inverse_prevalence_mean,Lung Lesion,Pleural Other,0.02852485737571312,0.06000423397081585,0.03147937659510273
+inverse_prevalence_mean,Lung Lesion,Fracture,0.03524857375713122,0.045132540536737945,0.009883966779606727
+inverse_prevalence_mean,Lung Lesion,Support Devices,0.38814180929095354,0.2890041730663098,0.09913763622464372
+inverse_prevalence_mean,Edema,No Finding,0.0,0.0,0.0
+inverse_prevalence_mean,Edema,Enlarged Cardiomediastinum,0.0413886332259549,0.08107611578964974,0.03968748256369484
+inverse_prevalence_mean,Edema,Cardiomegaly,0.21683732167510356,0.2558382315408406,0.039000909865737066
+inverse_prevalence_mean,Edema,Lung Opacity,0.5299125632765762,0.48756096266153626,0.04235160061503995
+inverse_prevalence_mean,Edema,Lung Lesion,0.015473999079613438,0.038767223267283116,0.02329322418766968
+inverse_prevalence_mean,Edema,Consolidation,0.06074551311550851,0.10106040045330071,0.0403148873377922
+inverse_prevalence_mean,Edema,Pneumonia,0.021025080533824205,0.06921312484679668,0.04818804431297247
+inverse_prevalence_mean,Edema,Atelectasis,0.17173838011965026,0.1846530667842635,0.012914686664613234
+inverse_prevalence_mean,Edema,Pneumothorax,0.028531983433041877,0.03812730765447745,0.009595324221435574
+inverse_prevalence_mean,Edema,Pleural Effusion,0.5075356649792913,0.4657886259165802,0.041747039062711044
+inverse_prevalence_mean,Edema,Pleural Other,0.0051771744132535664,0.029707703511489318,0.02453052909823575
+inverse_prevalence_mean,Edema,Fracture,0.018752876208007363,0.04387532440680006,0.025122448198792696
+inverse_prevalence_mean,Edema,Support Devices,0.6575299125632765,0.593809103602477,0.06372080896079957
+inverse_prevalence_mean,Consolidation,No Finding,0.0,0.0,0.0
+inverse_prevalence_mean,Consolidation,Enlarged Cardiomediastinum,0.041906236178682,0.052902785915801165,0.010996549737119166
+inverse_prevalence_mean,Consolidation,Cardiomegaly,0.09597523219814241,0.08497074219644347,0.011004490001698938
+inverse_prevalence_mean,Consolidation,Lung Opacity,0.37627156125608135,0.32043646961046773,0.05583509164561362
+inverse_prevalence_mean,Consolidation,Lung Lesion,0.04411764705882353,0.07051429820667718,0.026396651147853646
+inverse_prevalence_mean,Consolidation,Edema,0.2335249889429456,0.17720643408051312,0.05631855486243248
+inverse_prevalence_mean,Consolidation,Pneumonia,0.0625829279080053,0.13245008226006558,0.06986715435206027
+inverse_prevalence_mean,Consolidation,Atelectasis,0.13633348076072535,0.11662766416195082,0.01970581659877453
+inverse_prevalence_mean,Consolidation,Pneumothorax,0.05362671384343211,0.054068320299747,0.00044160645631489276
+inverse_prevalence_mean,Consolidation,Pleural Effusion,0.5036488279522335,0.40357503828967545,0.10007378966255809
+inverse_prevalence_mean,Consolidation,Pleural Other,0.018022998673153472,0.05642753909777469,0.038404540424621214
+inverse_prevalence_mean,Consolidation,Fracture,0.027421494913754976,0.04186072889159057,0.014439233977835596
+inverse_prevalence_mean,Consolidation,Support Devices,0.5666740380362671,0.4487622570932919,0.11791178094297522
+inverse_prevalence_mean,Pneumonia,No Finding,0.0,0.0,0.0
+inverse_prevalence_mean,Pneumonia,Enlarged Cardiomediastinum,0.02440531356194007,0.02226747211034529,0.0021378414515947804
+inverse_prevalence_mean,Pneumonia,Cardiomegaly,0.08341056533827618,0.06478643155202662,0.018624133786249553
+inverse_prevalence_mean,Pneumonia,Lung Opacity,0.6824219956750077,0.5585324846513698,0.12388951102363788
+inverse_prevalence_mean,Pneumonia,Lung Lesion,0.06580166821130677,0.06956272375667681,0.00376105554537004
+inverse_prevalence_mean,Pneumonia,Edema,0.22582638245288847,0.15692496025954356,0.06890142219334491
+inverse_prevalence_mean,Pneumonia,Consolidation,0.1748532591906086,0.17126054858996276,0.0035927106006458376
+inverse_prevalence_mean,Pneumonia,Atelectasis,0.10966944701884461,0.07998635817120195,0.02968308884764266
+inverse_prevalence_mean,Pneumonia,Pneumothorax,0.028112449799196786,0.02158441029832333,0.006528039500873457
+inverse_prevalence_mean,Pneumonia,Pleural Effusion,0.28544949026876737,0.20162301382782102,0.08382647644094635
+inverse_prevalence_mean,Pneumonia,Pleural Other,0.017608897126969416,0.032349184515958126,0.01474028738898871
+inverse_prevalence_mean,Pneumonia,Fracture,0.0228606734630831,0.02371887685547985,0.0008582033923967489
+inverse_prevalence_mean,Pneumonia,Support Devices,0.33271547729379053,0.2375738986356141,0.09514157865817643
+inverse_prevalence_mean,Atelectasis,No Finding,0.0,0.0,0.0
+inverse_prevalence_mean,Atelectasis,Enlarged Cardiomediastinum,0.04394230769230769,0.0771592257792396,0.03321691808693191
+inverse_prevalence_mean,Atelectasis,Cardiomegaly,0.11519230769230769,0.12078038594001181,0.005588078247704117
+inverse_prevalence_mean,Atelectasis,Lung Opacity,0.42673076923076925,0.3968583123609526,0.029872456869816655
+inverse_prevalence_mean,Atelectasis,Lung Lesion,0.028846153846153848,0.06198360764926666,0.03313745380311281
+inverse_prevalence_mean,Atelectasis,Edema,0.2870673076923077,0.243044230320092,0.044023077372215697
+inverse_prevalence_mean,Atelectasis,Consolidation,0.059278846153846154,0.08754511081334038,0.028266264659494222
+inverse_prevalence_mean,Atelectasis,Pneumonia,0.01706730769230769,0.046434539641187905,0.029367231948880215
+inverse_prevalence_mean,Atelectasis,Pneumothorax,0.09514423076923077,0.12188168826102735,0.026737457491796582
+inverse_prevalence_mean,Atelectasis,Pleural Effusion,0.4912980769230769,0.4308698256727155,0.06042825125036144
+inverse_prevalence_mean,Atelectasis,Pleural Other,0.009375,0.04256477291619482,0.03318977291619482
+inverse_prevalence_mean,Atelectasis,Fracture,0.037355769230769234,0.07892707723448157,0.04157130800371234
+inverse_prevalence_mean,Atelectasis,Support Devices,0.6383653846153846,0.5552026291984827,0.08316275541690188
+inverse_prevalence_mean,Pneumothorax,No Finding,0.0,0.0,0.0
+inverse_prevalence_mean,Pneumothorax,Enlarged Cardiomediastinum,0.03961836998706339,0.05716927632852802,0.017550906341464632
+inverse_prevalence_mean,Pneumothorax,Cardiomegaly,0.04058861578266494,0.037431018822016986,0.0031575969606479556
+inverse_prevalence_mean,Pneumothorax,Lung Opacity,0.4782503234152652,0.39096150494063936,0.08728881847462583
+inverse_prevalence_mean,Pneumothorax,Lung Lesion,0.045116429495472184,0.07940609804237994,0.03428966854690776
+inverse_prevalence_mean,Pneumothorax,Edema,0.08020698576972833,0.06089249017285729,0.01931449559687104
+inverse_prevalence_mean,Pneumothorax,Consolidation,0.039214100905562745,0.049246118094011644,0.0100320171884489
+inverse_prevalence_mean,Pneumothorax,Pneumonia,0.007357697283311772,0.015204222404644054,0.007846525121332281
+inverse_prevalence_mean,Pneumothorax,Atelectasis,0.160009702457956,0.14788947472694106,0.012120227731014954
+inverse_prevalence_mean,Pneumothorax,Pleural Effusion,0.3369987063389392,0.2577138156574075,0.07928489068153172
+inverse_prevalence_mean,Pneumothorax,Pleural Other,0.01277490297542044,0.04545249337036366,0.03267759039494322
+inverse_prevalence_mean,Pneumothorax,Fracture,0.05489974126778784,0.09848686126990895,0.04358712000212111
+inverse_prevalence_mean,Pneumothorax,Support Devices,0.6211998706338939,0.5185345712937188,0.1026652993401751
+inverse_prevalence_mean,Pleural Effusion,No Finding,0.0,0.0,0.0
+inverse_prevalence_mean,Pleural Effusion,Enlarged Cardiomediastinum,0.04551795978347811,0.09014800235458277,0.04463004257110466
+inverse_prevalence_mean,Pleural Effusion,Cardiomegaly,0.13618184862069607,0.15722195119386348,0.021040102573167407
+inverse_prevalence_mean,Pleural Effusion,Lung Opacity,0.6217563570750944,0.565749245398477,0.056007111676617316
+inverse_prevalence_mean,Pleural Effusion,Lung Lesion,0.03247828270615153,0.08581197245033087,0.05333368974417934
+inverse_prevalence_mean,Pleural Effusion,Edema,0.32824271284808126,0.3028341175277474,0.02540859532033385
+inverse_prevalence_mean,Pleural Effusion,Consolidation,0.08472999869789244,0.1496379491269958,0.06490795042910336
+inverse_prevalence_mean,Pleural Effusion,Pneumonia,0.01718781971390837,0.0578165874489189,0.04062876773501053
+inverse_prevalence_mean,Pleural Effusion,Atelectasis,0.1900891013597723,0.2128301800688374,0.022741078709065082
+inverse_prevalence_mean,Pleural Effusion,Pneumothorax,0.0775312040774568,0.1049122080113984,0.027381003933941606
+inverse_prevalence_mean,Pleural Effusion,Pleural Other,0.009040346732640116,0.05244176537350004,0.04340141864085992
+inverse_prevalence_mean,Pleural Effusion,Fracture,0.027623281683067023,0.06669673957854347,0.03907345789547645
+inverse_prevalence_mean,Pleural Effusion,Support Devices,0.6496586618054652,0.5782864582580713,0.07137220354739382
+inverse_prevalence_mean,Pleural Other,No Finding,0.0,0.0,0.0
+inverse_prevalence_mean,Pleural Other,Enlarged Cardiomediastinum,0.05899198167239404,0.04910840829642587,0.009883573375968173
+inverse_prevalence_mean,Pleural Other,Cardiomegaly,0.0882016036655212,0.06452937825046927,0.02367222541505193
+inverse_prevalence_mean,Pleural Other,Lung Opacity,0.5481099656357389,0.4282746560993471,0.11983530953639177
+inverse_prevalence_mean,Pleural Other,Lung Lesion,0.08018327605956473,0.0707948633434246,0.009388412716140132
+inverse_prevalence_mean,Pleural Other,Edema,0.10309278350515463,0.0702747802267589,0.032818003278395735
+inverse_prevalence_mean,Pleural Other,Consolidation,0.09335624284077892,0.07612425474994759,0.017231988090831332
+inverse_prevalence_mean,Pleural Other,Pneumonia,0.03264604810996564,0.03375127489772852,0.0011052267877628835
+inverse_prevalence_mean,Pleural Other,Atelectasis,0.11168384879725086,0.0764983283806599,0.03518552041659097
+inverse_prevalence_mean,Pleural Other,Pneumothorax,0.09049255441008018,0.0673225459504516,0.023170008459628577
+inverse_prevalence_mean,Pleural Other,Pleural Effusion,0.27835051546391754,0.19080589844750762,0.08754461701640992
+inverse_prevalence_mean,Pleural Other,Fracture,0.08132875143184422,0.07429833887880526,0.007030412553038962
+inverse_prevalence_mean,Pleural Other,Support Devices,0.42210767468499427,0.30858196591511383,0.11352570876988044
+inverse_prevalence_mean,Fracture,No Finding,0.0,0.0,0.0
+inverse_prevalence_mean,Fracture,Enlarged Cardiomediastinum,0.07668711656441718,0.08431563847210302,0.007628521907685842
+inverse_prevalence_mean,Fracture,Cardiomegaly,0.08205521472392638,0.06555083884961714,0.016504375874309238
+inverse_prevalence_mean,Fracture,Lung Opacity,0.4181365030674847,0.3031433878952686,0.11499311517221605
+inverse_prevalence_mean,Fracture,Lung Lesion,0.03316717791411043,0.04150234675839481,0.008335168844284375
+inverse_prevalence_mean,Fracture,Edema,0.125,0.08089352816943823,0.044106471830561766
+inverse_prevalence_mean,Fracture,Consolidation,0.04754601226993865,0.044015105945769496,0.003530906324169157
+inverse_prevalence_mean,Fracture,Pneumonia,0.014187116564417178,0.019287857431987028,0.0051007408675698505
+inverse_prevalence_mean,Fracture,Atelectasis,0.14896472392638035,0.11055812555117153,0.03840659837520882
+inverse_prevalence_mean,Fracture,Pneumothorax,0.13017638036809817,0.11369572568974828,0.016480654678349888
+inverse_prevalence_mean,Fracture,Pleural Effusion,0.2847009202453988,0.189139448780604,0.09556147146479477
+inverse_prevalence_mean,Fracture,Pleural Other,0.027223926380368097,0.05790847471777215,0.03068454833740405
+inverse_prevalence_mean,Fracture,Support Devices,0.4415260736196319,0.3121588806488456,0.1293671929707863
+inverse_prevalence_mean,Support Devices,No Finding,0.06928212577124505,0.09978959956370473,0.030507473792459674
+inverse_prevalence_mean,Support Devices,Enlarged Cardiomediastinum,0.04794712223984222,0.09443781402857063,0.04649069178872841
+inverse_prevalence_mean,Support Devices,Cardiomegaly,0.1321677482975973,0.14504501419155863,0.01287726589396132
+inverse_prevalence_mean,Support Devices,Lung Opacity,0.5430098212976906,0.4641345877319316,0.07887523356575898
+inverse_prevalence_mean,Support Devices,Lung Lesion,0.025386122253168268,0.0630911969632091,0.03770507471004083
+inverse_prevalence_mean,Support Devices,Edema,0.3046467930864461,0.2599094485161427,0.04473734457030337
+inverse_prevalence_mean,Support Devices,Consolidation,0.06829599818765741,0.11201935519022098,0.043723357002563565
+inverse_prevalence_mean,Support Devices,Pneumonia,0.014352154155728202,0.04586383547829634,0.03151168132256814
+inverse_prevalence_mean,Support Devices,Atelectasis,0.17694327101184687,0.18462815919499861,0.007684888183151745
+inverse_prevalence_mean,Support Devices,Pneumothorax,0.10238403006356525,0.14211022826375186,0.03972619820018661
+inverse_prevalence_mean,Support Devices,Pleural Effusion,0.4654122413080849,0.38931605739819697,0.07609618390988793
+inverse_prevalence_mean,Support Devices,Pleural Other,0.009821297690595808,0.05709726985731386,0.04727597216671805
+inverse_prevalence_mean,Support Devices,Fracture,0.03068988952705854,0.07410669994618284,0.0434168104191243
+inverse_prevalence_sqrt_max,No Finding,Enlarged Cardiomediastinum,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,No Finding,Cardiomegaly,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,No Finding,Lung Opacity,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,No Finding,Lung Lesion,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,No Finding,Edema,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,No Finding,Consolidation,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,No Finding,Pneumonia,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,No Finding,Atelectasis,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,No Finding,Pneumothorax,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,No Finding,Pleural Effusion,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,No Finding,Pleural Other,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,No Finding,Fracture,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,No Finding,Support Devices,0.43667058625902905,0.4366705862590286,4.440892098500626e-16
+inverse_prevalence_sqrt_max,Enlarged Cardiomediastinum,No Finding,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,Enlarged Cardiomediastinum,Cardiomegaly,0.17321484253196134,0.17083749363504036,0.0023773488969209833
+inverse_prevalence_sqrt_max,Enlarged Cardiomediastinum,Lung Opacity,0.49875272840661056,0.5003597320871003,0.0016070036804897159
+inverse_prevalence_sqrt_max,Enlarged Cardiomediastinum,Lung Lesion,0.042719052073589024,0.0488263790378614,0.0061073269642723735
+inverse_prevalence_sqrt_max,Enlarged Cardiomediastinum,Edema,0.22435297786092923,0.22167406879707405,0.0026789090638551782
+inverse_prevalence_sqrt_max,Enlarged Cardiomediastinum,Consolidation,0.05908949173682569,0.05999491279807555,0.0009054210612498559
+inverse_prevalence_sqrt_max,Enlarged Cardiomediastinum,Pneumonia,0.012316806984720922,0.01711370505795724,0.004796898073236317
+inverse_prevalence_sqrt_max,Enlarged Cardiomediastinum,Atelectasis,0.14250077954474588,0.1421522691483118,0.00034851039643407633
+inverse_prevalence_sqrt_max,Enlarged Cardiomediastinum,Pneumothorax,0.07639538509510446,0.07619072694242447,0.0002046581526799901
+inverse_prevalence_sqrt_max,Enlarged Cardiomediastinum,Pleural Effusion,0.38150919862800126,0.3802162624191431,0.0012929362088581753
+inverse_prevalence_sqrt_max,Enlarged Cardiomediastinum,Pleural Other,0.016058621764889303,0.029834853167634682,0.013776231402745379
+inverse_prevalence_sqrt_max,Enlarged Cardiomediastinum,Fracture,0.06236357966947303,0.06846929489338265,0.006105715223909618
+inverse_prevalence_sqrt_max,Enlarged Cardiomediastinum,Support Devices,0.5609603991269099,0.5562317466603993,0.004728652466510552
+inverse_prevalence_sqrt_max,Cardiomegaly,No Finding,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,Cardiomegaly,Enlarged Cardiomediastinum,0.0677728298664064,0.09763038667705307,0.029857556810646668
+inverse_prevalence_sqrt_max,Cardiomegaly,Lung Opacity,0.4997864942353444,0.5025433646517761,0.0027568704164316893
+inverse_prevalence_sqrt_max,Cardiomegaly,Lung Lesion,0.0190325138778747,0.031771098494162174,0.012738584616287473
+inverse_prevalence_sqrt_max,Cardiomegaly,Edema,0.45989141706826087,0.44320528097562545,0.016686136092635417
+inverse_prevalence_sqrt_max,Cardiomegaly,Consolidation,0.052949429634600136,0.06731982357393135,0.014370393939331212
+inverse_prevalence_sqrt_max,Cardiomegaly,Pneumonia,0.016470444702006953,0.03317655847991645,0.016706113777909495
+inverse_prevalence_sqrt_max,Cardiomegaly,Atelectasis,0.1461599463185506,0.14275556138701664,0.0034043849315339436
+inverse_prevalence_sqrt_max,Cardiomegaly,Pneumothorax,0.030622826816324042,0.03456964238612031,0.003946815569796265
+inverse_prevalence_sqrt_max,Cardiomegaly,Pleural Effusion,0.4465930580125663,0.43955410583934834,0.007038952173217983
+inverse_prevalence_sqrt_max,Cardiomegaly,Pleural Other,0.00939425364484841,0.025492311642813542,0.016098057997965133
+inverse_prevalence_sqrt_max,Cardiomegaly,Fracture,0.026108704935033245,0.041919661547607935,0.01581095661257469
+inverse_prevalence_sqrt_max,Cardiomegaly,Support Devices,0.6050143353870554,0.5918930836370185,0.013121251750036866
+inverse_prevalence_sqrt_max,Lung Opacity,No Finding,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,Lung Opacity,Enlarged Cardiomediastinum,0.04853440951571793,0.08554236653621841,0.037007957020500484
+inverse_prevalence_sqrt_max,Lung Opacity,Cardiomegaly,0.1243020997693895,0.1503386460131087,0.026036546243719205
+inverse_prevalence_sqrt_max,Lung Opacity,Lung Lesion,0.04389185580774366,0.08835240120545182,0.04446054539770816
+inverse_prevalence_sqrt_max,Lung Opacity,Edema,0.27952421410365336,0.2770208249533747,0.0025033891502786454
+inverse_prevalence_sqrt_max,Lung Opacity,Consolidation,0.051629445321034105,0.08199375940014639,0.030364314079112283
+inverse_prevalence_sqrt_max,Lung Opacity,Pneumonia,0.033514382813448235,0.08086609174640776,0.04735170893295952
+inverse_prevalence_sqrt_max,Lung Opacity,Atelectasis,0.13466440101954122,0.15792633909538012,0.0232619380758389
+inverse_prevalence_sqrt_max,Lung Opacity,Pneumothorax,0.08974086661002549,0.12191505162189883,0.032174185011873344
+inverse_prevalence_sqrt_max,Lung Opacity,Pleural Effusion,0.5071155480033984,0.48764380448588535,0.019471743517513074
+inverse_prevalence_sqrt_max,Lung Opacity,Pleural Other,0.01451935914552737,0.04739118055071414,0.03287182140518677
+inverse_prevalence_sqrt_max,Lung Opacity,Fracture,0.033089573977424444,0.06438433821038779,0.031294764232963346
+inverse_prevalence_sqrt_max,Lung Opacity,Support Devices,0.6182182303677631,0.5953015974632416,0.022916632904521506
+inverse_prevalence_sqrt_max,Lung Lesion,No Finding,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,Lung Lesion,Enlarged Cardiomediastinum,0.05582722086389568,0.05595692772396282,0.00012970686006713583
+inverse_prevalence_sqrt_max,Lung Lesion,Cardiomegaly,0.06356968215158924,0.06371324963169805,0.00014356748010881104
+inverse_prevalence_sqrt_max,Lung Lesion,Lung Opacity,0.5894458027709861,0.5922687127129148,0.0028229099419286863
+inverse_prevalence_sqrt_max,Lung Lesion,Edema,0.10961695191524043,0.10954581860937436,7.113330586606958e-05
+inverse_prevalence_sqrt_max,Lung Lesion,Consolidation,0.0812958435207824,0.08271149927629773,0.0014156557555153326
+inverse_prevalence_sqrt_max,Lung Lesion,Pneumonia,0.04339853300733496,0.05245872057990764,0.009060187572572681
+inverse_prevalence_sqrt_max,Lung Lesion,Atelectasis,0.12224938875305623,0.12185700053025597,0.00039238822280025787
+inverse_prevalence_sqrt_max,Lung Lesion,Pneumothorax,0.1136919315403423,0.1116484091628165,0.0020435223775257944
+inverse_prevalence_sqrt_max,Lung Lesion,Pleural Effusion,0.35574572127139364,0.3554747089639821,0.0002710123074115556
+inverse_prevalence_sqrt_max,Lung Lesion,Pleural Other,0.02852485737571312,0.046474428657973375,0.017949571282260254
+inverse_prevalence_sqrt_max,Lung Lesion,Fracture,0.03524857375713122,0.035554010185701326,0.00030543642857010916
+inverse_prevalence_sqrt_max,Lung Lesion,Support Devices,0.38814180929095354,0.3858601429041113,0.0022816663868422404
+inverse_prevalence_sqrt_max,Edema,No Finding,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,Edema,Enlarged Cardiomediastinum,0.0413886332259549,0.07245868812134904,0.031070054895394134
+inverse_prevalence_sqrt_max,Edema,Cardiomegaly,0.21683732167510356,0.25350041954086977,0.036663097865766214
+inverse_prevalence_sqrt_max,Edema,Lung Opacity,0.5299125632765762,0.5296501293614456,0.0002624339151305888
+inverse_prevalence_sqrt_max,Edema,Lung Lesion,0.015473999079613438,0.03124438894580584,0.015770389866192405
+inverse_prevalence_sqrt_max,Edema,Consolidation,0.06074551311550851,0.09293425533484992,0.032188742219341406
+inverse_prevalence_sqrt_max,Edema,Pneumonia,0.021025080533824205,0.05100721490961425,0.029982134375790042
+inverse_prevalence_sqrt_max,Edema,Atelectasis,0.17173838011965026,0.18656736872565527,0.014828988606005011
+inverse_prevalence_sqrt_max,Edema,Pneumothorax,0.028531983433041877,0.03756853290875749,0.00903654947571561
+inverse_prevalence_sqrt_max,Edema,Pleural Effusion,0.5075356649792913,0.5075671118783124,3.144689902112585e-05
+inverse_prevalence_sqrt_max,Edema,Pleural Other,0.0051771744132535664,0.017042557157639127,0.01186538274438556
+inverse_prevalence_sqrt_max,Edema,Fracture,0.018752876208007363,0.03633759134440488,0.01758471513639752
+inverse_prevalence_sqrt_max,Edema,Support Devices,0.6575299125632765,0.651074080586287,0.006455831976989512
+inverse_prevalence_sqrt_max,Consolidation,No Finding,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,Consolidation,Enlarged Cardiomediastinum,0.041906236178682,0.047731680894354325,0.005825444715672326
+inverse_prevalence_sqrt_max,Consolidation,Cardiomegaly,0.09597523219814241,0.09372025316927514,0.002254979028867274
+inverse_prevalence_sqrt_max,Consolidation,Lung Opacity,0.37627156125608135,0.38156997336745546,0.005298412111374107
+inverse_prevalence_sqrt_max,Consolidation,Lung Lesion,0.04411764705882353,0.05741942665330518,0.013301779594481651
+inverse_prevalence_sqrt_max,Consolidation,Edema,0.2335249889429456,0.22619997440607353,0.007325014536872065
+inverse_prevalence_sqrt_max,Consolidation,Pneumonia,0.0625829279080053,0.0962853433662472,0.03370241545824189
+inverse_prevalence_sqrt_max,Consolidation,Atelectasis,0.13633348076072535,0.13450405492896658,0.0018294258317587686
+inverse_prevalence_sqrt_max,Consolidation,Pneumothorax,0.05362671384343211,0.052598488261175746,0.0010282255822563618
+inverse_prevalence_sqrt_max,Consolidation,Pleural Effusion,0.5036488279522335,0.4934200790276319,0.010228748924601627
+inverse_prevalence_sqrt_max,Consolidation,Pleural Other,0.018022998673153472,0.03756354631645969,0.019540547643306216
+inverse_prevalence_sqrt_max,Consolidation,Fracture,0.027421494913754976,0.03490403848117248,0.0074825435674175066
+inverse_prevalence_sqrt_max,Consolidation,Support Devices,0.5666740380362671,0.5528725654728635,0.013801472563403694
+inverse_prevalence_sqrt_max,Pneumonia,No Finding,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,Pneumonia,Enlarged Cardiomediastinum,0.02440531356194007,0.024694904492680178,0.0002895909307401093
+inverse_prevalence_sqrt_max,Pneumonia,Cardiomegaly,0.08341056533827618,0.08377083085850744,0.00036026552023125935
+inverse_prevalence_sqrt_max,Pneumonia,Lung Opacity,0.6824219956750077,0.6825443131231955,0.0001223174481878031
+inverse_prevalence_sqrt_max,Pneumonia,Lung Lesion,0.06580166821130677,0.06605134394448807,0.0002496757331812982
+inverse_prevalence_sqrt_max,Pneumonia,Edema,0.22582638245288847,0.22517457139172578,0.0006518110611626882
+inverse_prevalence_sqrt_max,Pneumonia,Consolidation,0.1748532591906086,0.17463496009468224,0.00021829909592635532
+inverse_prevalence_sqrt_max,Pneumonia,Atelectasis,0.10966944701884461,0.10919756296935708,0.00047188404948753093
+inverse_prevalence_sqrt_max,Pneumonia,Pneumothorax,0.028112449799196786,0.02804558155586398,6.686824333280647e-05
+inverse_prevalence_sqrt_max,Pneumonia,Pleural Effusion,0.28544949026876737,0.28453144072492065,0.0009180495438467218
+inverse_prevalence_sqrt_max,Pneumonia,Pleural Other,0.017608897126969416,0.02382455753028318,0.006215660403313766
+inverse_prevalence_sqrt_max,Pneumonia,Fracture,0.0228606734630831,0.022716032309043538,0.00014464115403956326
+inverse_prevalence_sqrt_max,Pneumonia,Support Devices,0.33271547729379053,0.33260838523023717,0.0001070920635533601
+inverse_prevalence_sqrt_max,Atelectasis,No Finding,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,Atelectasis,Enlarged Cardiomediastinum,0.04394230769230769,0.06760445124242663,0.02366214355011894
+inverse_prevalence_sqrt_max,Atelectasis,Cardiomegaly,0.11519230769230769,0.11879898041297686,0.0036066727206691684
+inverse_prevalence_sqrt_max,Atelectasis,Lung Opacity,0.42673076923076925,0.43931613462725144,0.012585365396482195
+inverse_prevalence_sqrt_max,Atelectasis,Lung Lesion,0.028846153846153848,0.050567634181586496,0.02172148033543265
+inverse_prevalence_sqrt_max,Atelectasis,Edema,0.2870673076923077,0.2714448508101108,0.015622456882196878
+inverse_prevalence_sqrt_max,Atelectasis,Consolidation,0.059278846153846154,0.08040157762552688,0.021122731471680728
+inverse_prevalence_sqrt_max,Atelectasis,Pneumonia,0.01706730769230769,0.03598911220435115,0.01892180451204346
+inverse_prevalence_sqrt_max,Atelectasis,Pneumothorax,0.09514423076923077,0.11207286370202267,0.0169286329327919
+inverse_prevalence_sqrt_max,Atelectasis,Pleural Effusion,0.4912980769230769,0.48458607261665654,0.006712004306420383
+inverse_prevalence_sqrt_max,Atelectasis,Pleural Other,0.009375,0.02686227474504131,0.01748727474504131
+inverse_prevalence_sqrt_max,Atelectasis,Fracture,0.037355769230769234,0.06335274900556159,0.02599697977479236
+inverse_prevalence_sqrt_max,Atelectasis,Support Devices,0.6383653846153846,0.6254330371764646,0.012932347438920022
+inverse_prevalence_sqrt_max,Pneumothorax,No Finding,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,Pneumothorax,Enlarged Cardiomediastinum,0.03961836998706339,0.05142772813202313,0.011809358144959738
+inverse_prevalence_sqrt_max,Pneumothorax,Cardiomegaly,0.04058861578266494,0.040830837770508506,0.0002422219878435647
+inverse_prevalence_sqrt_max,Pneumothorax,Lung Opacity,0.4782503234152652,0.4813418684575842,0.0030915450423190105
+inverse_prevalence_sqrt_max,Pneumothorax,Lung Lesion,0.045116429495472184,0.06575797305027349,0.020641543554801307
+inverse_prevalence_sqrt_max,Pneumothorax,Edema,0.08020698576972833,0.07757894759903261,0.0026280381706957207
+inverse_prevalence_sqrt_max,Pneumothorax,Consolidation,0.039214100905562745,0.044624789681209275,0.00541068877564653
+inverse_prevalence_sqrt_max,Pneumothorax,Pneumonia,0.007357697283311772,0.013118868059686616,0.005761170776374843
+inverse_prevalence_sqrt_max,Pneumothorax,Atelectasis,0.160009702457956,0.15906484115663475,0.0009448613013212648
+inverse_prevalence_sqrt_max,Pneumothorax,Pleural Effusion,0.3369987063389392,0.3300577061266816,0.006941000212257575
+inverse_prevalence_sqrt_max,Pneumothorax,Pleural Other,0.01277490297542044,0.030891499454216705,0.018116596478796265
+inverse_prevalence_sqrt_max,Pneumothorax,Fracture,0.05489974126778784,0.07785446599214921,0.022954724724361365
+inverse_prevalence_sqrt_max,Pneumothorax,Support Devices,0.6211998706338939,0.6181032413531168,0.003096629280777141
+inverse_prevalence_sqrt_max,Pleural Effusion,No Finding,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,Pleural Effusion,Enlarged Cardiomediastinum,0.04551795978347811,0.08070837502028663,0.03519041523680852
+inverse_prevalence_sqrt_max,Pleural Effusion,Cardiomegaly,0.13618184862069607,0.16326700947502662,0.027085160854330548
+inverse_prevalence_sqrt_max,Pleural Effusion,Lung Opacity,0.6217563570750944,0.605468726889325,0.016287630185769397
+inverse_prevalence_sqrt_max,Pleural Effusion,Lung Lesion,0.03247828270615153,0.06584113042709687,0.03336284772094534
+inverse_prevalence_sqrt_max,Pleural Effusion,Edema,0.32824271284808126,0.3296141254625804,0.0013714126144991345
+inverse_prevalence_sqrt_max,Pleural Effusion,Consolidation,0.08472999869789244,0.1316474439699219,0.04691744527202946
+inverse_prevalence_sqrt_max,Pleural Effusion,Pneumonia,0.01718781971390837,0.04185572510410516,0.02466790539019679
+inverse_prevalence_sqrt_max,Pleural Effusion,Atelectasis,0.1900891013597723,0.21629045175989262,0.02620135040012031
+inverse_prevalence_sqrt_max,Pleural Effusion,Pneumothorax,0.0775312040774568,0.10379646664461872,0.026265262567161926
+inverse_prevalence_sqrt_max,Pleural Effusion,Pleural Other,0.009040346732640116,0.029882082768143844,0.020841736035503728
+inverse_prevalence_sqrt_max,Pleural Effusion,Fracture,0.027623281683067023,0.054212954229706296,0.026589672546639274
+inverse_prevalence_sqrt_max,Pleural Effusion,Support Devices,0.6496586618054652,0.6364012485683568,0.013257413237108384
+inverse_prevalence_sqrt_max,Pleural Other,No Finding,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,Pleural Other,Enlarged Cardiomediastinum,0.05899198167239404,0.05899198167239366,3.8163916471489756e-16
+inverse_prevalence_sqrt_max,Pleural Other,Cardiomegaly,0.0882016036655212,0.08820160366552038,8.187894806610529e-16
+inverse_prevalence_sqrt_max,Pleural Other,Lung Opacity,0.5481099656357389,0.548109965635738,8.881784197001252e-16
+inverse_prevalence_sqrt_max,Pleural Other,Lung Lesion,0.08018327605956473,0.08018327605956407,6.522560269672795e-16
+inverse_prevalence_sqrt_max,Pleural Other,Edema,0.10309278350515463,0.10309278350515366,9.71445146547012e-16
+inverse_prevalence_sqrt_max,Pleural Other,Consolidation,0.09335624284077892,0.09335624284077805,8.743006318923108e-16
+inverse_prevalence_sqrt_max,Pleural Other,Pneumonia,0.03264604810996564,0.0326460481099654,2.3592239273284576e-16
+inverse_prevalence_sqrt_max,Pleural Other,Atelectasis,0.11168384879725086,0.1116838487972497,1.1657341758564144e-15
+inverse_prevalence_sqrt_max,Pleural Other,Pneumothorax,0.09049255441008018,0.09049255441007939,7.91033905045424e-16
+inverse_prevalence_sqrt_max,Pleural Other,Pleural Effusion,0.27835051546391754,0.27835051546391587,1.6653345369377348e-15
+inverse_prevalence_sqrt_max,Pleural Other,Fracture,0.08132875143184422,0.08132875143184354,6.800116025829084e-16
+inverse_prevalence_sqrt_max,Pleural Other,Support Devices,0.42210767468499427,0.42210767468499305,1.2212453270876722e-15
+inverse_prevalence_sqrt_max,Fracture,No Finding,0.0,0.0,0.0
+inverse_prevalence_sqrt_max,Fracture,Enlarged Cardiomediastinum,0.07668711656441718,0.07644761109139894,0.00023950547301823666
+inverse_prevalence_sqrt_max,Fracture,Cardiomegaly,0.08205521472392638,0.08190002091527537,0.00015519380865100518
+inverse_prevalence_sqrt_max,Fracture,Lung Opacity,0.4181365030674847,0.4204839175003491,0.002347414432864403
+inverse_prevalence_sqrt_max,Fracture,Lung Lesion,0.03316717791411043,0.03463835924642895,0.001471181332318515
+inverse_prevalence_sqrt_max,Fracture,Edema,0.125,0.12412196024268816,0.0008780397573118354
+inverse_prevalence_sqrt_max,Fracture,Consolidation,0.04754601226993865,0.04898368345627404,0.001437671186335386
+inverse_prevalence_sqrt_max,Fracture,Pneumonia,0.014187116564417178,0.01757669566249303,0.0033895790980758515
+inverse_prevalence_sqrt_max,Fracture,Atelectasis,0.14896472392638035,0.14873460778214956,0.0002301161442307964
+inverse_prevalence_sqrt_max,Fracture,Pneumothorax,0.13017638036809817,0.1287823575716397,0.0013940227964584773
+inverse_prevalence_sqrt_max,Fracture,Pleural Effusion,0.2847009202453988,0.28515646498419045,0.0004555447387916689
+inverse_prevalence_sqrt_max,Fracture,Pleural Other,0.027223926380368097,0.04592435735803134,0.018700430977663243
+inverse_prevalence_sqrt_max,Fracture,Support Devices,0.4415260736196319,0.43908121872838607,0.002444854891245851
+inverse_prevalence_sqrt_max,Support Devices,No Finding,0.06928212577124505,0.0853039506577703,0.016021824886525246
+inverse_prevalence_sqrt_max,Support Devices,Enlarged Cardiomediastinum,0.04794712223984222,0.08227714990912717,0.03433002766928495
+inverse_prevalence_sqrt_max,Support Devices,Cardiomegaly,0.1321677482975973,0.15320216898686564,0.021034420689268335
+inverse_prevalence_sqrt_max,Support Devices,Lung Opacity,0.5430098212976906,0.5150644850789496,0.027945336218740957
+inverse_prevalence_sqrt_max,Support Devices,Lung Lesion,0.025386122253168268,0.04980283254864245,0.02441671029547418
+inverse_prevalence_sqrt_max,Support Devices,Edema,0.3046467930864461,0.29463090461341485,0.010015888473031254
+inverse_prevalence_sqrt_max,Support Devices,Consolidation,0.06829599818765741,0.10279126359209452,0.034495265404437106
+inverse_prevalence_sqrt_max,Support Devices,Pneumonia,0.014352154155728202,0.034095208672530984,0.019743054516802784
+inverse_prevalence_sqrt_max,Support Devices,Atelectasis,0.17694327101184687,0.19452829926351994,0.017585028251673074
+inverse_prevalence_sqrt_max,Support Devices,Pneumothorax,0.10238403006356525,0.13545319886282203,0.03306916879925678
+inverse_prevalence_sqrt_max,Support Devices,Pleural Effusion,0.4654122413080849,0.4434723782784623,0.021939863029622586
+inverse_prevalence_sqrt_max,Support Devices,Pleural Other,0.009821297690595808,0.03157749207670576,0.02175619438610995
+inverse_prevalence_sqrt_max,Support Devices,Fracture,0.03068988952705854,0.05817016083939738,0.027480271312338843

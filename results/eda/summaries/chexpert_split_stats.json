@@ -1,0 +1,71 @@
+{
+  "decision": {
+    "rule": "stratify if max relative prevalence deviation (labels with >= 100 positives) > 0.1 for the seeded random split or its 95th percentile over 50 seeds",
+    "random_seeded_max_rel_dev": 0.11707123286173476,
+    "random_p95_max_rel_dev": 0.14919770269493582,
+    "random_median_max_rel_dev": 0.09185943084209727,
+    "random_max_max_rel_dev": 0.17734685602144307,
+    "stratified_max_rel_dev": 0.0012725136536914875,
+    "chosen": "stratified_group"
+  },
+  "sizes": [
+    {
+      "split": "train",
+      "images": 156390,
+      "frontal_images": 133649,
+      "lateral_images": 22741,
+      "patients": 45329,
+      "split_groups": 45326,
+      "studies": 131329,
+      "image_share_of_official_train": 0.7000008951990475,
+      "patient_share_of_official_train": 0.7023396343352959
+    },
+    {
+      "split": "val",
+      "images": 33512,
+      "frontal_images": 28672,
+      "lateral_images": 4840,
+      "patients": 9531,
+      "split_groups": 9531,
+      "studies": 28110,
+      "image_share_of_official_train": 0.14999955240047624,
+      "patient_share_of_official_train": 0.14767585993182522
+    },
+    {
+      "split": "test",
+      "images": 33512,
+      "frontal_images": 28706,
+      "lateral_images": 4806,
+      "patients": 9680,
+      "split_groups": 9680,
+      "studies": 28202,
+      "image_share_of_official_train": 0.14999955240047624,
+      "patient_share_of_official_train": 0.14998450573287883
+    },
+    {
+      "split": "official_valid",
+      "images": 234,
+      "frontal_images": 202,
+      "lateral_images": 32,
+      "patients": 200,
+      "split_groups": 200,
+      "studies": 200,
+      "image_share_of_official_train": NaN,
+      "patient_share_of_official_train": NaN
+    }
+  ],
+  "links": 4,
+  "patients_merged": 3,
+  "sampling_ess_fraction": {
+    "none": 1.0,
+    "inverse_prevalence_max": 0.46590351320539014,
+    "inverse_prevalence_mean": 0.4795112499642034,
+    "inverse_prevalence_sqrt_max": 0.8080680016058773
+  },
+  "sampling_top1pct_weight_share": {
+    "none": 0.00999633368001257,
+    "inverse_prevalence_max": 0.07021367082792211,
+    "inverse_prevalence_mean": 0.06341273043956844,
+    "inverse_prevalence_sqrt_max": 0.029471840415936364
+  }
+}

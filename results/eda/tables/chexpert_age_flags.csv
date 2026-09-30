@@ -1,0 +1,4 @@
+Path,source_split,patient_id,Age,Sex
+CheXpert-v1.0-small/train/patient64538/study1/view1_frontal.jpg,official_train,patient64538,0,Female
+CheXpert-v1.0-small/train/patient64539/study1/view1_frontal.jpg,official_train,patient64539,0,Female
+CheXpert-v1.0-small/train/patient64540/study1/view1_frontal.jpg,official_train,patient64540,0,Female

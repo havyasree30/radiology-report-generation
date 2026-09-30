@@ -1,0 +1,5 @@
+dataset,severity,issue,record_id,detail
+iu_xray,warning,image_not_in_projections_csv,2084_IM-0715-1001-0002.dcm.png,
+iu_xray,warning,image_not_in_projections_csv,2084_IM-0715-2001-0001.dcm.png,
+iu_xray,warning,image_not_in_projections_csv,2560_IM-1064-4001.dcm.png,
+iu_xray,warning,image_not_in_projections_csv,3809_IM-1919-1003002.dcm.png,

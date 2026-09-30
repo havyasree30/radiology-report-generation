@@ -1,0 +1,39 @@
+concept,status,mentions
+Atelectasis,negated,8
+Atelectasis,positive,410
+Atelectasis,uncertain,96
+Cardiomegaly,negated,7
+Cardiomegaly,positive,447
+Cardiomegaly,uncertain,30
+Consolidation,negated,1199
+Consolidation,positive,38
+Consolidation,uncertain,8
+Edema,negated,281
+Edema,positive,96
+Edema,uncertain,42
+Enlarged Cardiomediastinum,negated,35
+Enlarged Cardiomediastinum,positive,13
+Enlarged Cardiomediastinum,uncertain,1
+Fracture,negated,122
+Fracture,positive,138
+Fracture,uncertain,21
+Lung Lesion,negated,347
+Lung Lesion,positive,225
+Lung Lesion,uncertain,38
+Lung Opacity,negated,1045
+Lung Opacity,positive,854
+Lung Opacity,uncertain,70
+Pleural Effusion,negated,2752
+Pleural Effusion,positive,233
+Pleural Effusion,uncertain,48
+Pleural Other,positive,41
+Pleural Other,uncertain,9
+Pneumonia,negated,179
+Pneumonia,positive,53
+Pneumonia,uncertain,53
+Pneumothorax,negated,2630
+Pneumothorax,positive,32
+Pneumothorax,uncertain,2
+Support Devices,negated,1
+Support Devices,positive,238
+Support Devices,uncertain,2

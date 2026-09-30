@@ -1,0 +1,10 @@
+cohort,metric,n_units,mean,median,std,q1,q3,min,p99,max
+official_train,images_per_patient,64540,3.461636194607995,2.0,4.659705566496296,1.0,4.0,1,23.0,92
+official_train,studies_per_patient,64540,2.9073597768825534,1.0,4.189741071399367,1.0,3.0,1,20.0,91
+official_train,images_per_study,187641,1.190645967565724,1.0,0.4162484195299712,1.0,1.0,1,2.0,3
+official_valid,images_per_patient,200,1.17,1.0,0.4146803576189435,1.0,1.0,1,3.0,3
+official_valid,studies_per_patient,200,1.0,1.0,0.0,1.0,1.0,1,1.0,1
+official_valid,images_per_study,200,1.17,1.0,0.4146803576189435,1.0,1.0,1,3.0,3
+combined,images_per_patient,64740,3.454556688291628,2.0,4.654296961055027,1.0,4.0,1,23.0,92
+combined,studies_per_patient,64740,2.901467408093914,1.0,4.184603292892908,1.0,3.0,1,20.0,91
+combined,images_per_study,187841,1.1906239851789546,1.0,0.4162461980292598,1.0,1.0,1,2.0,3

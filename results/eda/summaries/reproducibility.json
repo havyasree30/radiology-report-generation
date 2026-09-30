@@ -1,0 +1,88 @@
+{
+  "environment": {
+    "timestamp_utc": "2026-09-30T10:30:27+00:00",
+    "seed": 42,
+    "python": "3.11.9",
+    "python_executable": "C:\\Users\\Dell\\Desktop\\radiology-report-generation\\.venv\\Scripts\\python.exe",
+    "os": "Windows-10-10.0.26200-SP0",
+    "machine": "AMD64",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.6",
+      "matplotlib": "3.11.2",
+      "pillow": "12.3.0",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.17.1",
+      "pyyaml": "6.0.3",
+      "tqdm": "4.70.1",
+      "pytest": "9.1.1"
+    },
+    "git": {
+      "commit": "bf3b9cdfa329693aa26ed9a2eb7fbc327db2a7ff",
+      "branch": "master",
+      "dirty_working_tree": true
+    }
+  },
+  "config_files": [
+    "configs/eda.yaml",
+    "configs/iu_concept_lexicon.yaml",
+    "configs/paths.yaml (local, git-ignored)"
+  ],
+  "dataset_paths": {
+    "chexpert_root": "C:\\Users\\Dell\\Desktop\\radiology-report-generation\\data\\CheXpert-v1.0-small",
+    "chexpert_train_csv": "C:\\Users\\Dell\\Desktop\\radiology-report-generation\\data\\train.csv",
+    "chexpert_valid_csv": "C:\\Users\\Dell\\Desktop\\radiology-report-generation\\data\\CheXpert-v1.0-small\\valid.csv",
+    "chexpert_image_base": "C:\\Users\\Dell\\Desktop\\radiology-report-generation\\data",
+    "iu_xray_root": "C:\\Users\\Dell\\Desktop\\radiology-report-generation\\data\\IU X-ray",
+    "iu_reports_csv": "C:\\Users\\Dell\\Desktop\\radiology-report-generation\\data\\IU X-ray\\indiana_reports.csv",
+    "iu_projections_csv": "C:\\Users\\Dell\\Desktop\\radiology-report-generation\\data\\IU X-ray\\indiana_projections.csv",
+    "iu_images_dir": "C:\\Users\\Dell\\Desktop\\radiology-report-generation\\data\\IU X-ray\\images\\images_normalized"
+  },
+  "dataset_structure": {
+    "chexpert_root": {
+      "root": "C:\\Users\\Dell\\Desktop\\radiology-report-generation\\data\\CheXpert-v1.0-small",
+      "files": 223650,
+      "directories": 252583,
+      "extensions": {
+        ".jpg": 223649,
+        ".csv": 1
+      },
+      "entries_per_dir_depth_lt_2": {
+        ".": 3,
+        "train": 64540,
+        "valid": 200
+      }
+    },
+    "iu_xray_root": {
+      "root": "C:\\Users\\Dell\\Desktop\\radiology-report-generation\\data\\IU X-ray",
+      "files": 7472,
+      "directories": 2,
+      "extensions": {
+        ".png": 7470,
+        ".csv": 2
+      },
+      "entries_per_dir_depth_lt_2": {
+        ".": 3,
+        "images": 1
+      }
+    }
+  },
+  "dataset_counts": {
+    "chexpert_images": 223648,
+    "chexpert_patients": 64740,
+    "iu_reports": 3851,
+    "iu_images_on_disk": 7470
+  },
+  "split_metadata": {
+    "chexpert": "data/splits/chexpert/split_metadata.json",
+    "iu_xray": "data/splits/iu_xray/split_metadata.json"
+  },
+  "iu_split_seed": 42,
+  "pipeline": [
+    "scripts.eda_01_image_audit",
+    "scripts.eda_02_chexpert",
+    "scripts.eda_03_chexpert_splits",
+    "scripts.eda_04_iu_xray",
+    "scripts.eda_05_summary"
+  ]
+}

@@ -1,0 +1,27 @@
+dataset,rel_path,csv_split,referenced_in_csv,kind,exists,file_bytes,readable,error,format,mode,width,height,pixel_mean,pixel_std,flags
+chexpert,CheXpert-v1.0-small/train/patient03504/study3/view2_frontal.jpg,train,True,image,True,85087,True,,JPEG,L,652.0,320.0,131.71636962890625,74.23883819580078,unusual_aspect_ratio
+chexpert,CheXpert-v1.0-small/train/patient05271/study5/view2_frontal.jpg,train,True,image,True,20129,True,,JPEG,L,320.0,390.0,253.28846740722656,12.995250701904297,near_blank
+chexpert,CheXpert-v1.0-small/train/patient05843/study9/view1_frontal.jpg,train,True,image,True,78301,True,,JPEG,L,666.0,320.0,131.24606323242188,74.83219909667969,unusual_aspect_ratio
+chexpert,CheXpert-v1.0-small/train/patient08615/study4/view2_frontal.jpg,train,True,image,True,89001,True,,JPEG,L,734.0,320.0,130.9730682373047,74.62801361083984,unusual_aspect_ratio
+chexpert,CheXpert-v1.0-small/train/patient09025/study1/view1_frontal.jpg,train,True,image,True,114240,True,,JPEG,L,750.0,320.0,126.56999206542969,73.45745086669922,unusual_aspect_ratio
+chexpert,CheXpert-v1.0-small/train/patient09797/study4/view1_frontal.jpg,train,True,image,True,5293,True,,JPEG,L,390.0,320.0,252.74220275878906,18.970752716064453,near_blank
+chexpert,CheXpert-v1.0-small/train/patient12362/study1/view1_frontal.jpg,train,True,image,True,28139,True,,JPEG,L,390.0,320.0,250.61463928222656,24.238296508789062,near_blank
+chexpert,CheXpert-v1.0-small/train/patient18378/study2/view2_frontal.jpg,train,True,image,True,82153,True,,JPEG,L,659.0,320.0,131.2239532470703,74.73189544677734,unusual_aspect_ratio
+chexpert,CheXpert-v1.0-small/train/patient20163/study1/view2_frontal.jpg,train,True,image,True,86785,True,,JPEG,L,646.0,320.0,131.30613708496094,73.20153045654297,unusual_aspect_ratio
+chexpert,CheXpert-v1.0-small/train/patient21925/study1/view2_frontal.jpg,train,True,image,True,83132,True,,JPEG,L,666.0,320.0,114.96475219726562,80.9569320678711,unusual_aspect_ratio
+chexpert,CheXpert-v1.0-small/train/patient22599/study5/view2_frontal.jpg,train,True,image,True,118109,True,,JPEG,L,791.0,320.0,132.46131896972656,73.36202239990234,unusual_aspect_ratio
+chexpert,CheXpert-v1.0-small/train/patient25979/study8/view1_frontal.jpg,train,True,image,True,6983,True,,JPEG,L,320.0,390.0,253.92364501953125,13.419252395629883,near_blank
+chexpert,CheXpert-v1.0-small/train/patient27936/study1/view2_frontal.jpg,train,True,image,True,96470,True,,JPEG,L,930.0,320.0,129.42977905273438,73.48070526123047,unusual_aspect_ratio
+chexpert,CheXpert-v1.0-small/train/patient29519/study16/view2_frontal.jpg,train,True,image,True,87299,True,,JPEG,L,646.0,320.0,129.2756805419922,73.62115478515625,unusual_aspect_ratio
+chexpert,CheXpert-v1.0-small/train/patient36680/study1/view2_frontal.jpg,train,True,image,True,110051,True,,JPEG,L,722.0,320.0,129.3426513671875,72.7906265258789,unusual_aspect_ratio
+chexpert,CheXpert-v1.0-small/train/patient39846/study4/view2_frontal.jpg,train,True,image,True,107013,True,,JPEG,L,689.0,320.0,128.8194580078125,72.21192169189453,unusual_aspect_ratio
+chexpert,CheXpert-v1.0-small/train/patient43071/study1/view2_lateral.jpg,train,True,image,True,56110,True,,JPEG,L,320.0,642.0,113.58172607421875,82.33057403564453,unusual_aspect_ratio
+chexpert,CheXpert-v1.0-small/train/patient44163/study1/view1_frontal.jpg,train,True,image,True,8079,True,,JPEG,L,390.0,320.0,254.1820526123047,11.338282585144043,near_blank
+chexpert,CheXpert-v1.0-small/train/patient48043/study1/view2_frontal.jpg,train,True,image,True,4682,True,,JPEG,L,390.0,320.0,254.75794982910156,4.960849761962891,near_blank
+chexpert,CheXpert-v1.0-small/train/patient49374/study2/view1_frontal.jpg,train,True,image,True,109809,True,,JPEG,L,800.0,320.0,125.99234008789062,74.37914276123047,unusual_aspect_ratio
+chexpert,CheXpert-v1.0-small/train/patient51430/study1/view1_frontal.jpg,train,True,image,True,80564,True,,JPEG,L,746.0,320.0,131.5713348388672,76.1252212524414,unusual_aspect_ratio
+chexpert,C:\Users\Dell\Desktop\radiology-report-generation\data\CheXpert-v1.0-small\train\patient00001\study1\._view1_frontal.jpg,not_referenced,False,appledouble_metadata,True,4096,False,UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x000001DE447A4900>,,,,,,,unreadable_or_corrupt;not_referenced_in_csv;appledouble_metadata_file
+iu_xray,C:\Users\Dell\Desktop\radiology-report-generation\data\IU X-ray\images\images_normalized\2084_IM-0715-1001-0002.dcm.png,not_referenced,False,image,True,10464,True,,PNG,L,2048.0,2496.0,254.99966430664062,0.04269431531429291,not_referenced_in_csv;near_blank
+iu_xray,C:\Users\Dell\Desktop\radiology-report-generation\data\IU X-ray\images\images_normalized\2084_IM-0715-2001-0001.dcm.png,not_referenced,False,image,True,11682,True,,PNG,L,2048.0,2496.0,254.9976806640625,0.06719139218330383,not_referenced_in_csv;near_blank
+iu_xray,C:\Users\Dell\Desktop\radiology-report-generation\data\IU X-ray\images\images_normalized\2560_IM-1064-4001.dcm.png,not_referenced,False,image,True,1315578,True,,PNG,L,2048.0,2496.0,243.37637329101562,14.151816368103027,not_referenced_in_csv
+iu_xray,C:\Users\Dell\Desktop\radiology-report-generation\data\IU X-ray\images\images_normalized\3809_IM-1919-1003002.dcm.png,not_referenced,False,image,True,4765500,True,,PNG,L,2048.0,2486.0,163.2083282470703,33.28684997558594,not_referenced_in_csv

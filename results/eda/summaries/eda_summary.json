@@ -1,0 +1,494 @@
+{
+  "generated_from": "scripts/eda_05_summary.py (aggregates stage 1-4 outputs; no hand-entered numbers)",
+  "chexpert": {
+    "images": 223648,
+    "images_official_train": 223414,
+    "images_official_valid": 234,
+    "patients": 64740,
+    "studies": 187841,
+    "views": {
+      "Frontal/Lateral:Frontal": 191229,
+      "Frontal/Lateral:Lateral": 32419,
+      "AP/PA:AP": 161759,
+      "AP/PA:Missing": 32419,
+      "AP/PA:PA": 29453,
+      "AP/PA:LL": 16,
+      "AP/PA:RL": 1,
+      "csv_view_vs_filename_mismatch:mismatch": 0,
+      "train_studies_without_frontal": 16,
+      "train_frontal_images": 191027
+    },
+    "targets": [
+      "No Finding",
+      "Enlarged Cardiomediastinum",
+      "Cardiomegaly",
+      "Lung Opacity",
+      "Lung Lesion",
+      "Edema",
+      "Consolidation",
+      "Pneumonia",
+      "Atelectasis",
+      "Pneumothorax",
+      "Pleural Effusion",
+      "Pleural Other",
+      "Fracture",
+      "Support Devices"
+    ],
+    "class_counts_official_train": {
+      "No Finding": {
+        "positive_count": 22381,
+        "negative_count": 0,
+        "uncertain_count": 0,
+        "missing_count": 201033
+      },
+      "Enlarged Cardiomediastinum": {
+        "positive_count": 10798,
+        "negative_count": 21638,
+        "uncertain_count": 12403,
+        "missing_count": 178575
+      },
+      "Cardiomegaly": {
+        "positive_count": 27000,
+        "negative_count": 11116,
+        "uncertain_count": 8087,
+        "missing_count": 177211
+      },
+      "Lung Opacity": {
+        "positive_count": 105581,
+        "negative_count": 6599,
+        "uncertain_count": 5598,
+        "missing_count": 105636
+      },
+      "Lung Lesion": {
+        "positive_count": 9186,
+        "negative_count": 1270,
+        "uncertain_count": 1488,
+        "missing_count": 211470
+      },
+      "Edema": {
+        "positive_count": 52246,
+        "negative_count": 20726,
+        "uncertain_count": 12984,
+        "missing_count": 137458
+      },
+      "Consolidation": {
+        "positive_count": 14783,
+        "negative_count": 28097,
+        "uncertain_count": 27742,
+        "missing_count": 152792
+      },
+      "Pneumonia": {
+        "positive_count": 6039,
+        "negative_count": 2799,
+        "uncertain_count": 18770,
+        "missing_count": 195806
+      },
+      "Atelectasis": {
+        "positive_count": 33376,
+        "negative_count": 1328,
+        "uncertain_count": 33739,
+        "missing_count": 154971
+      },
+      "Pneumothorax": {
+        "positive_count": 19448,
+        "negative_count": 56341,
+        "uncertain_count": 3145,
+        "missing_count": 144480
+      },
+      "Pleural Effusion": {
+        "positive_count": 86187,
+        "negative_count": 35396,
+        "uncertain_count": 11628,
+        "missing_count": 90203
+      },
+      "Pleural Other": {
+        "positive_count": 3523,
+        "negative_count": 316,
+        "uncertain_count": 2653,
+        "missing_count": 216922
+      },
+      "Fracture": {
+        "positive_count": 9040,
+        "negative_count": 2512,
+        "uncertain_count": 642,
+        "missing_count": 211220
+      },
+      "Support Devices": {
+        "positive_count": 116001,
+        "negative_count": 6137,
+        "uncertain_count": 1079,
+        "missing_count": 100197
+      }
+    },
+    "positive_prevalence_official_train": {
+      "Support Devices": 0.5192199235500013,
+      "Lung Opacity": 0.4725800531748234,
+      "Pleural Effusion": 0.3857726015379519,
+      "Edema": 0.2338528471805706,
+      "Atelectasis": 0.1493908170481706,
+      "Cardiomegaly": 0.1208518714136088,
+      "No Finding": 0.1001772494114066,
+      "Pneumothorax": 0.0870491553796986,
+      "Consolidation": 0.0661686375965696,
+      "Enlarged Cardiomediastinum": 0.0483317965749684,
+      "Lung Lesion": 0.0411164922520522,
+      "Fracture": 0.0404629969473712,
+      "Pneumonia": 0.0270305352395105,
+      "Pleural Other": 0.0157689312218571
+    },
+    "neg_to_pos_ratio_explicit": {
+      "Support Devices": 0.0529047163386522,
+      "Lung Opacity": 0.062501775887707,
+      "Pleural Effusion": 0.4106883868796918,
+      "Edema": 0.3967002258546109,
+      "Atelectasis": 0.0397890699904122,
+      "Cardiomegaly": 0.4117037037037037,
+      "No Finding": 0.0,
+      "Pneumothorax": 2.897007404360345,
+      "Consolidation": 1.9006291009943852,
+      "Enlarged Cardiomediastinum": 2.0038896091868863,
+      "Lung Lesion": 0.1382538645765295,
+      "Fracture": 0.2778761061946903,
+      "Pneumonia": 0.4634873323397913,
+      "Pleural Other": 0.0896962815782003
+    },
+    "neg_to_pos_ratio_nan_as_neg_unc_masked": {
+      "Support Devices": 0.9166645115128318,
+      "Lung Opacity": 1.0630227029484471,
+      "Pleural Effusion": 1.4572847413182963,
+      "Edema": 3.0276767599433447,
+      "Atelectasis": 4.682975790987536,
+      "Cardiomegaly": 6.975074074074074,
+      "No Finding": 8.982306420624637,
+      "Pneumothorax": 10.326048951048952,
+      "Consolidation": 12.236284921869716,
+      "Enlarged Cardiomediastinum": 18.54167438414521,
+      "Lung Lesion": 23.159155236229044,
+      "Fracture": 23.6429203539823,
+      "Pneumonia": 32.88706739526412,
+      "Pleural Other": 61.66278739710474
+    },
+    "imbalance_severity": {
+      "Support Devices": "mild",
+      "Lung Opacity": "mild",
+      "Pleural Effusion": "mild",
+      "Edema": "moderate",
+      "Atelectasis": "moderate",
+      "Cardiomegaly": "moderate",
+      "No Finding": "moderate",
+      "Pneumothorax": "severe",
+      "Consolidation": "severe",
+      "Enlarged Cardiomediastinum": "severe",
+      "Lung Lesion": "severe",
+      "Fracture": "severe",
+      "Pneumonia": "severe",
+      "Pleural Other": "extreme"
+    },
+    "uncertain_rate_pct": {
+      "Support Devices": 0.4829598861306811,
+      "Lung Opacity": 2.505662133975489,
+      "Pleural Effusion": 5.204687262212753,
+      "Edema": 5.811632216423321,
+      "Atelectasis": 15.101560331939806,
+      "Cardiomegaly": 3.619737348599461,
+      "No Finding": 0.0,
+      "Pneumothorax": 1.4077005022066658,
+      "Consolidation": 12.41730598798643,
+      "Enlarged Cardiomediastinum": 5.551576893122186,
+      "Lung Lesion": 0.6660280913461109,
+      "Fracture": 0.2873588942501365,
+      "Pneumonia": 8.401443060864583,
+      "Pleural Other": 1.1874815365196452
+    },
+    "missing_rate_pct": {
+      "Support Devices": 44.84812948159024,
+      "Lung Opacity": 47.28262329128882,
+      "Pleural Effusion": 40.37481984119169,
+      "Edema": 61.526135336192006,
+      "Atelectasis": 69.36494579569768,
+      "Cardiomegaly": 79.319559203989,
+      "No Finding": 89.98227505885934,
+      "Pneumothorax": 64.66917919199334,
+      "Consolidation": 68.38962643343747,
+      "Enlarged Cardiomediastinum": 79.93008495438961,
+      "Lung Lesion": 94.65387128828095,
+      "Fracture": 94.54197140734242,
+      "Pneumonia": 87.64267234819663,
+      "Pleural Other": 97.09418389178832
+    },
+    "multilabel": {
+      "cohort": "official_train_frontal_images",
+      "n_images": 191027,
+      "label_cardinality_14": 2.405696576923681,
+      "label_density_14": 0.17183546978026293,
+      "label_cardinality_13_excl_no_finding": 2.3168400278494663,
+      "label_density_13_excl_no_finding": 0.1782184636807282,
+      "label_cardinality_12_pathologies": 1.755819857925843,
+      "label_cardinality_14_all_images": 2.3077739085285613,
+      "label_density_14_all_images": 0.1648409934663258
+    },
+    "no_finding": {
+      "no_finding_positive_images": 22419,
+      "conflicts_with_positive_pathology": 0,
+      "conflict_pct_of_no_finding_positive": 0.0,
+      "conflict_pct_of_all_images": 0.0,
+      "conflicts_by_observation": {},
+      "no_finding_with_uncertain_pathology": 0,
+      "no_finding_with_support_devices_positive": 8808,
+      "definition": "No Finding == 1 and any of the 12 pathology observations (excluding Support Devices) == 1"
+    },
+    "demographics": {
+      "age_image_level": {
+        "count": 223648.0,
+        "missing": 0.0,
+        "mean": 60.43103001144656,
+        "median": 62.0,
+        "std": 17.821668081964873,
+        "q1": 49.0,
+        "q3": 74.0,
+        "min": 0.0,
+        "max": 90.0
+      },
+      "age_values_below_plausible_min": 3,
+      "age_value_counts_below_plausible_min": {
+        "0": 3
+      },
+      "age_values_above_plausible_max": 0,
+      "patients_with_implausible_age": 3,
+      "sex_images": {
+        "Male": 132764,
+        "Female": 90883,
+        "Unknown": 1
+      },
+      "sex_patients": {
+        "Male": 35917,
+        "Female": 28822,
+        "Unknown": 1
+      },
+      "patients_with_inconsistent_sex": 0
+    },
+    "split_decision": {
+      "rule": "stratify if max relative prevalence deviation (labels with >= 100 positives) > 0.1 for the seeded random split or its 95th percentile over 50 seeds",
+      "random_seeded_max_rel_dev": 0.11707123286173476,
+      "random_p95_max_rel_dev": 0.14919770269493582,
+      "random_median_max_rel_dev": 0.09185943084209727,
+      "random_max_max_rel_dev": 0.17734685602144307,
+      "stratified_max_rel_dev": 0.0012725136536914875,
+      "chosen": "stratified_group"
+    },
+    "split_sizes": [
+      {
+        "split": "train",
+        "images": 156390,
+        "frontal_images": 133649,
+        "lateral_images": 22741,
+        "patients": 45329,
+        "split_groups": 45326,
+        "studies": 131329,
+        "image_share_of_official_train": 0.7000008951990475,
+        "patient_share_of_official_train": 0.7023396343352959
+      },
+      {
+        "split": "val",
+        "images": 33512,
+        "frontal_images": 28672,
+        "lateral_images": 4840,
+        "patients": 9531,
+        "split_groups": 9531,
+        "studies": 28110,
+        "image_share_of_official_train": 0.14999955240047624,
+        "patient_share_of_official_train": 0.14767585993182522
+      },
+      {
+        "split": "test",
+        "images": 33512,
+        "frontal_images": 28706,
+        "lateral_images": 4806,
+        "patients": 9680,
+        "split_groups": 9680,
+        "studies": 28202,
+        "image_share_of_official_train": 0.14999955240047624,
+        "patient_share_of_official_train": 0.14998450573287883
+      },
+      {
+        "split": "official_valid",
+        "images": 234,
+        "frontal_images": 202,
+        "lateral_images": 32,
+        "patients": 200,
+        "split_groups": 200,
+        "studies": 200,
+        "image_share_of_official_train": NaN,
+        "patient_share_of_official_train": NaN
+      }
+    ],
+    "cross_patient_duplicate_links": 4,
+    "patients_merged_for_splitting": 3,
+    "training_pos_weight_frontal_U-Mask_NaN-Zero": {
+      "No Finding": 10.22534856374937,
+      "Enlarged Cardiomediastinum": 18.70159027128157,
+      "Cardiomegaly": 6.868053437442811,
+      "Lung Opacity": 0.97982158028887,
+      "Lung Lesion": 26.07436837815811,
+      "Edema": 2.606563506672803,
+      "Consolidation": 11.897611676249449,
+      "Pneumonia": 36.83225208526413,
+      "Atelectasis": 4.423028846153846,
+      "Pneumothorax": 9.651277490297542,
+      "Pleural Effusion": 1.360441972506929,
+      "Pleural Other": 74.79782359679267,
+      "Fracture": 24.556556748466257,
+      "Support Devices": 0.7724044189176583
+    },
+    "sampling_kish_ess_fraction": {
+      "none": 1.0,
+      "inverse_prevalence_max": 0.46590351320539014,
+      "inverse_prevalence_mean": 0.4795112499642034,
+      "inverse_prevalence_sqrt_max": 0.8080680016058773
+    },
+    "image_integrity": {
+      "files_total": 223649.0,
+      "csv_referenced_records": 223648.0,
+      "unique_referenced_paths": 223648.0,
+      "readable": 223648.0,
+      "missing_file": 0.0,
+      "zero_byte": 0.0,
+      "unreadable_or_corrupt": 1.0,
+      "not_referenced_in_csv": 1.0,
+      "appledouble_metadata_file": 1.0,
+      "unusual_extension": 0.0,
+      "non_grayscale_mode": 0.0,
+      "suspiciously_small": 0.0,
+      "near_blank": 6.0,
+      "unusual_aspect_ratio": 15.0,
+      "width_min": 320.0,
+      "width_median": 390.0,
+      "width_max": 930.0,
+      "height_min": 320.0,
+      "height_median": 320.0,
+      "height_max": 642.0,
+      "aspect_min": 0.4984423676012461,
+      "aspect_median": 1.21875,
+      "aspect_max": 2.90625,
+      "file_mb_total": 11446.890334,
+      "dup_groups_exact_sha256": 22.0,
+      "dup_images_exact_sha256": 44.0,
+      "dup_max_group_exact_sha256": 2.0,
+      "dup_groups_dhash64": 8320.0,
+      "dup_images_dhash64": 24677.0,
+      "dup_max_group_dhash64": 63.0,
+      "dup_groups_dhash256": 28.0,
+      "dup_images_dhash256": 56.0,
+      "dup_max_group_dhash256": 2.0,
+      "mode_L": 223648.0,
+      "format_JPEG": 223648.0,
+      "format_PNG": NaN
+    }
+  },
+  "iu_xray": {
+    "images_on_disk": 7470,
+    "images_in_projection_csv": 7466,
+    "reports": 3851,
+    "projection_counts": {
+      "Frontal": 3818,
+      "Lateral": 3648
+    },
+    "report_completeness": {
+      "both": 3331,
+      "impression_only": 489,
+      "neither": 25,
+      "findings_only": 6
+    },
+    "quality_flags": {
+      "empty_report": 25,
+      "near_empty": 12,
+      "extremely_short": 18,
+      "extremely_long": 39,
+      "missing_findings": 514,
+      "missing_impression": 31,
+      "duplicate_report_text": 945,
+      "findings_equals_impression": 6,
+      "high_anonymization": 0,
+      "malformed": 0,
+      "no_images": 0
+    },
+    "split_sizes": [
+      {
+        "split": "test",
+        "reports": 578,
+        "images": 1115,
+        "normal_reports": 207,
+        "with_any_text": 577,
+        "normal_pct": 35.813148788927336
+      },
+      {
+        "split": "train",
+        "reports": 2695,
+        "images": 5238,
+        "normal_reports": 965,
+        "with_any_text": 2675,
+        "normal_pct": 35.80705009276438
+      },
+      {
+        "split": "val",
+        "reports": 578,
+        "images": 1113,
+        "normal_reports": 207,
+        "with_any_text": 574,
+        "normal_pct": 35.813148788927336
+      }
+    ],
+    "retrieval_corpus_reports": 2675,
+    "exact_text_overlap_with_train": {
+      "val": {
+        "reports": 574,
+        "exact_text_in_train": 120,
+        "pct": 20.905923344947734
+      },
+      "test": {
+        "reports": 577,
+        "exact_text_in_train": 142,
+        "pct": 24.610051993067593
+      }
+    },
+    "image_integrity": {
+      "files_total": 7470.0,
+      "csv_referenced_records": 7466.0,
+      "unique_referenced_paths": 7466.0,
+      "readable": 7470.0,
+      "missing_file": 0.0,
+      "zero_byte": 0.0,
+      "unreadable_or_corrupt": 0.0,
+      "not_referenced_in_csv": 4.0,
+      "appledouble_metadata_file": 0.0,
+      "unusual_extension": 0.0,
+      "non_grayscale_mode": 0.0,
+      "suspiciously_small": 0.0,
+      "near_blank": 2.0,
+      "unusual_aspect_ratio": 0.0,
+      "width_min": 1529.0,
+      "width_median": 2048.0,
+      "width_max": 2891.0,
+      "height_min": 1760.0,
+      "height_median": 2048.0,
+      "height_max": 3001.0,
+      "aspect_min": 0.5862187178608159,
+      "aspect_median": 1.0,
+      "aspect_max": 1.41162109375,
+      "file_mb_total": 14183.102197,
+      "dup_groups_exact_sha256": 3.0,
+      "dup_images_exact_sha256": 6.0,
+      "dup_max_group_exact_sha256": 2.0,
+      "dup_groups_dhash64": 93.0,
+      "dup_images_dhash64": 219.0,
+      "dup_max_group_dhash64": 7.0,
+      "dup_groups_dhash256": 5.0,
+      "dup_images_dhash256": 10.0,
+      "dup_max_group_dhash256": 2.0,
+      "mode_L": 7470.0,
+      "format_JPEG": NaN,
+      "format_PNG": 7470.0
+    }
+  },
+  "seed": 42
+}

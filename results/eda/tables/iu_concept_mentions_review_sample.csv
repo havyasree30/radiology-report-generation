@@ -1,0 +1,301 @@
+concept,match,status,sentence,uid
+Atelectasis,atelectasis,positive,Question left basilar atelectasis versus infiltrate.,3882
+Atelectasis,atelectasis,positive,xxxx opacity on the lateral view over the heart also present on the previous exam suggesting chronic subsegmental atelectasis or scarring.,699
+Atelectasis,atelectasis,positive,Low lung volumes on the AP view with bronchovascular crowding and bibasilar atelectasis.,1184
+Atelectasis,atelectasis,positive,Left basilar atelectasis otherwise clear lungs.,1739
+Atelectasis,atelectasis,positive,Moderate hypoinflation with associated bibasilar atelectasis.,631
+Atelectasis,atelectasis,positive,Minimal subsegmental atelectasis at the left base otherwise negative for focal confluent airspace disease.,2723
+Atelectasis,atelectasis,positive,Bibasilar atelectasis.,1360
+Atelectasis,atelectasis,positive,There is mild surrounding airspace disease and/or atelectasis.,3096
+Atelectasis,atelectasis,uncertain,"Streaky left basilar airspace opacities, which could reflect atelectasis and/or infection.",3589
+Atelectasis,atelectasis,uncertain,xxxx airspace opacity in the left upper lung which may represent streaky atelectasis or resolving pneumonia.,1972
+Atelectasis,atelectasis,uncertain,There is left hilar enlargement with partial opacification of the left upper lobe suggestive of hilar mass with obstructive atelectasis.,387
+Cardiomegaly,cardiomegaly,positive,"Mild cardiomegaly, no acute pulmonary findings",1624
+Cardiomegaly,Cardiomegaly,positive,Cardiomegaly 2.,2263
+Cardiomegaly,Cardiomegaly,positive,Cardiomegaly is unchanged.,388
+Cardiomegaly,cardiac silhouette is moderately enlarged,positive,The cardiac silhouette is moderately enlarged with a cardiothoracic ratio of 16.2/24.7.,313
+Cardiomegaly,cardiomegaly,positive,There is mild cardiomegaly.,1343
+Cardiomegaly,cardiomegaly,positive,"Mild stable cardiomegaly with mild central pulmonary vascular congestion and interstitial accentuation, xxxx edema.",1807
+Cardiomegaly,cardiomegaly,positive,Mild stable cardiomegaly.,978
+Cardiomegaly,Cardiomegaly,positive,Cardiomegaly without overt heart failure.,3158
+Cardiomegaly,Heart size is mildly enlarged,positive,Heart size is mildly enlarged.,305
+Cardiomegaly,cardiomegaly,positive,Apparent cardiomegaly xxxx at xxxx partially accentuated by low lung volumes.,2696
+Cardiomegaly,cardiomegaly,positive,There is marked cardiomegaly.,610
+Cardiomegaly,cardiomegaly,positive,Stable cardiomegaly with significantly low lung volumes and associated bronchovascular crowding and bibasilar atelectasis.,1961
+Cardiomegaly,cardiomegaly,positive,Moderate cardiomegaly is identified.,379
+Cardiomegaly,heart is enlarged,positive,The heart is enlarged.,3123
+Cardiomegaly,Cardiomegaly,positive,Cardiomegaly with marked tortuosity of the thoracic aorta.,800
+Consolidation,consolidation,negated,"No alveolar consolidation, no findings of pleural effusion or pulmonary edema.",1045
+Consolidation,consolidation,negated,No focal consolidation.,592
+Consolidation,consolidation,negated,The lungs are clear without areas of focal consolidation.,1620
+Consolidation,consolidation,negated,No xxxx areas of alveolar airspace consolidation are identified.,382
+Consolidation,consolidations,negated,No focal airspace consolidations.,555
+Consolidation,consolidation,negated,"Specifically, no evidence of focal consolidation, pneumothorax, or pleural effusion..",2825
+Consolidation,consolidation,negated,"No focal consolidation, pneumothorax or large pleural effusion.",3574
+Consolidation,consolidations,negated,"No focal consolidations, pneumothorax or pleural effusions.",1071
+Consolidation,consolidation,negated,"Negative for pneumothorax, pleural effusion, or focal airspace consolidation.",1788
+Consolidation,consolidation,negated,There is no focal air space consolidation to suggest acute pneumonia or active tuberculous infection.,480
+Consolidation,consolidation,negated,No focal pulmonary consolidation.,352
+Consolidation,consolidation,negated,"No focal airspace consolidation, large effusion, or appreciable pneumothorax.",2721
+Consolidation,consolidation,negated,"No focal consolidation, pneumothorax or large pleural effusion.",600
+Consolidation,consolidation,negated,No focal consolidation or pleural effusions.,363
+Consolidation,consolidation,negated,"No focal airspace consolidation, pneumothorax, or pleural effusion.",1265
+Consolidation,consolidation,negated,"No focal airspace consolidation, pleural effusion, or pneumothorax.",2593
+Consolidation,consolidation,negated,"No focal consolidation, pleural effusion, or pneumothorax is identified.",927
+Consolidation,consolidation,negated,No focal areas of pulmonary consolidation.,2210
+Consolidation,consolidation,negated,No edema or focal consolidation in the lungs.,2620
+Consolidation,consolidation,negated,"No focal consolidation, large pleural effusion or pneumothorax is identified.",2224
+Consolidation,consolidation,negated,There is no focal consolidation.,1979
+Consolidation,consolidation,negated,"Specifically, no evidence of focal consolidation, pneumothorax, or pleural effusion.",1853
+Consolidation,consolidation,negated,There is no focal air space consolidation.,1713
+Consolidation,consolidation,negated,"No focal consolidation, pleural effusion, or pneumothorax identified.",3628
+Consolidation,consolidation,negated,No focal consolidation is seen.,1758
+Consolidation,consolidation,negated,"No focal consolidation, pleural effusion, or pneumothorax identified.",3028
+Consolidation,consolidation,negated,"No pneumothorax, pleural effusion or airspace consolidation.",3310
+Consolidation,consolidation,negated,No airspace consolidation or lobar atelectasis.,3572
+Consolidation,consolidation,negated,"Specifically, no evidence of focal consolidation, pneumothorax, or pleural effusion..",1786
+Consolidation,consolidation,negated,No focal areas of pulmonary consolidation.,3294
+Consolidation,consolidation,negated,"No focal alveolar consolidation, no definite pleural effusion seen.",521
+Consolidation,consolidation,negated,"xxxx right costophrenic xxxx, right lung free of focal consolidation.",2943
+Consolidation,consolidation,positive,"Marrow pneumothorax, focal lung consolidation or pleural effusions.",3085
+Consolidation,consolidation,positive,"Left lower lobe, superior segment, airspace consolidation, radiographic appearance most typical for pneumonia.",1699
+Edema,edema,negated,Bronchovascular crowding without typical findings of pulmonary edema.,3326
+Edema,edema,negated,No typical findings of pulmonary edema.,1482
+Edema,edema,negated,No significant pulmonary edema.,3892
+Edema,edema,negated,The lungs are well expanded without consolidation or edema.,1199
+Edema,edema,negated,No typical findings of pulmonary edema.,634
+Edema,edema,negated,There is no pulmonary edema.,1457
+Edema,edema,negated,No typical findings of pulmonary edema.,722
+Edema,vascular congestion,positive,"Cardiomegaly, vascular congestion and probable mild interstitial edema.",1102
+Edema,edema,positive,Question edema or atypical infection?,1718
+Edema,edema,uncertain,"Cardiomegaly is noted, with central pulmonary vascular prominence and coarsened interstitial markings, suspicious for developing interstitial pulmonary edema.",1638
+Enlarged Cardiomediastinum,mediastinal widening,negated,There is no mediastinal widening.,3805
+Fracture,fractures,negated,"Specifically, no evidence of rib fractures.",2282
+Fracture,fracture,negated,Negative for acute displaced rib fracture.,947
+Fracture,fracture,negated,No fracture visible.,3046
+Fracture,fracture,positive,There is a minimally displaced right lateral 8th rib fracture and probable nondisplaced right lateral 7th rib fracture.,3378
+Fracture,fractures,positive,There is severe kyphotic deformity of the chest involving prior fractures of thoracic vertebral bodies and the sternum.,1095
+Fracture,fractures,positive,Please note that fractures may not be demonstrated and consider additional imaging as clinically indicated.,2588
+Fracture,fracture,uncertain,The 9th posterior lateral right rib is slightly expanded and this may be the site of an old healed fracture.,3950
+Lung Lesion,nodules,negated,No suspicious pulmonary nodules or masses.,1287
+Lung Lesion,nodules,negated,No suspicious pulmonary nodules or masses.,682
+Lung Lesion,nodules,negated,No suspicious appearing lung nodules identified.,1969
+Lung Lesion,nodules,negated,"No pneumonia, effusions, edema, pneumothorax, adenopathy, nodules or masses.",3037
+Lung Lesion,nodules,negated,No nodules or masses are definitely seen on xxxx radiograph.,2778
+Lung Lesion,nodule,positive,"Previously visualized nodule in right lower lobe not well-seen on today's study, xxxx summation artifact.",3683
+Lung Lesion,nodule,positive,There is an 8mm nodule identified within the left lateral midlung partially overlying the posterior left 7th rib.,1880
+Lung Lesion,nodular opacity,positive,"However, there is a 1.7 cm nodular opacity within the right hilum, which may represent partially calcified granuloma or lymphadenopathy.",729
+Lung Lesion,nodules,positive,"On xxxx component of a xxxx scan xxxx xxxx/xxxx, several nodules were identified.",2430
+Lung Lesion,nodule,positive,A dense nodule in the right base suggest a previous granulomatous process.,2582
+Lung Lesion,nodules,positive,There are numerous bilateral pulmonary nodules of varying sizes.,1626
+Lung Lesion,nodular opacity,positive,Conspicuous for size 3-4 mm nodular opacity projecting in right lung is probably a small calcified granuloma.,2080
+Lung Lesion,mass,uncertain,"An ovoid opacity in the left retrocardiac area, could be projectional or solid mass, further study xxxx is recommended.",1747
+Lung Opacity,infiltrates,negated,"Left base focal atelectasis, no infiltrates that would suggest active tuberculosis.",3150
+Lung Opacity,infiltrate,negated,No focal infiltrate.,2205
+Lung Opacity,opacities,negated,There is no focal opacities.,1706
+Lung Opacity,airspace disease,negated,No focal airspace disease.,1898
+Lung Opacity,opacity,negated,"No focal consolidation, suspicious pulmonary opacity, pneumothorax or definite pleural effusion.",1812
+Lung Opacity,airspace disease,negated,No acute airspace disease or effusions.,3645
+Lung Opacity,airspace opacity,negated,There is no focal airspace opacity.,2560
+Lung Opacity,airspace disease,negated,"The lungs are clear of focal airspace disease, pneumothorax, or pleural effusion.",2971
+Lung Opacity,infiltrate,negated,"The lungs are clear, without evidence of infiltrate.",2892
+Lung Opacity,infiltrate,negated,"The lungs are clear, without evidence of acute infiltrate or effusion.",428
+Lung Opacity,airspace disease,negated,There are no xxxx of acute airspace disease.,3934
+Lung Opacity,airspace opacity,negated,"There is no focal airspace opacity, pleural effusion, or pneumothorax.",3966
+Lung Opacity,opacity,negated,"No focal consolidation, suspicious pulmonary opacity, pneumothorax or definite pleural effusion.",1109
+Lung Opacity,opacities,negated,No suspicious pulmonary opacities.,3391
+Lung Opacity,airspace disease,negated,No airspace disease.,3145
+Lung Opacity,airspace disease,negated,"Lungs clear, no airspace disease, pleural effusion, or pneumothorax.",2564
+Lung Opacity,infiltrates,negated,No xxxx infiltrates.,157
+Lung Opacity,airspace disease,negated,"The lungs are clear of focal airspace disease, pneumothorax, or pleural effusion.",2612
+Lung Opacity,infiltrate,negated,Mildly hyperexpanded lungs without acute focal infiltrate.,3193
+Lung Opacity,airspace disease,negated,"No evidence of focal airspace disease, pleural effusion, or pneumothorax.",2501
+Lung Opacity,airspace disease,negated,No focal airspace disease.,3353
+Lung Opacity,air space opacities,negated,There are no focal air space opacities.,395
+Lung Opacity,infiltrate,negated,No focal infiltrate.,2479
+Lung Opacity,infiltrate,negated,No acute infiltrate.,3754
+Lung Opacity,airspace disease,negated,Stable cardiomegaly with no focal airspace disease.,2962
+Lung Opacity,infiltrates,negated,No focal infiltrates.,1595
+Lung Opacity,airspace disease,negated,Lungs are free of focal airspace disease.,2546
+Lung Opacity,infiltrate,negated,"The lungs are clear, without evidence of infiltrate.",2773
+Lung Opacity,infiltrate,negated,"No focal infiltrate, pneumothorax or pleural effusion identified.",3452
+Lung Opacity,airspace disease,positive,There is patchy airspace disease in the right lower lobe.,3064
+Lung Opacity,airspace disease,positive,There is xxxx airspace disease in the right lower lobe seen behind the right hemidiaphragm on PA view.,3108
+Lung Opacity,opacity,positive,"Nodular right lower lobe opacity, xxxx nipple xxxx.",412
+Lung Opacity,opacities,positive,A few bandlike opacities are present which are xxxx to represent small areas of scarring or atelectasis.,2520
+Lung Opacity,air space opacities,positive,Left lower lobe air space opacities without significant change.,3797
+Lung Opacity,opacity,positive,"Small patchy left lower lobe opacity, primary differential considerations include atelectasis, infiltrate, aspiration, clinical correlation recommended.",2669
+Lung Opacity,airspace opacities,positive,The airspace opacities in right upper lobe seen on xxxx chest are not visualized on this study which could be due to difference in technique and patient rotation.,650
+Lung Opacity,opacities,positive,Diffuse interstitial opacities.,1592
+Lung Opacity,Opacity,positive,Opacity seen xxxx on lateral xxxx xxxx involving both right middle lobe and lingula compatible with some bronchiectasis and chronic inflammatory change.,2188
+Lung Opacity,opacities,positive,"There are xxxx biapical opacities, xxxx scarring.",2169
+Lung Opacity,airspace disease,positive,There is mild surrounding airspace disease and/or atelectasis.,3096
+Lung Opacity,opacities,positive,Bilateral patchy pulmonary opacities noted.,28
+Lung Opacity,opacities,positive,"Abnormal pulmonary opacities most suggestive of pulmonary edema, primary differential diagnosis includes infection and aspiration, clinical correlation recommended",2637
+Lung Opacity,opacities,positive,"Bibasilar and right midlung pulmonary opacities, xxxx atelectatic changes.",524
+Lung Opacity,airspace disease,positive,"Minimal xxxx patchy airspace disease within the lingula, may reflect atelectasis or infiltrate.",1288
+Lung Opacity,airspace disease,positive,Lungs are expanded and clear airspace disease.,3692
+Lung Opacity,opacities,positive,Mildly prominent interstitial opacities.,3880
+Lung Opacity,opacities,positive,xxxx opacities at the lateral left base.,1393
+Lung Opacity,opacity,positive,There is a vague opacity in the right infrahilar region.,1752
+Lung Opacity,infiltrate,uncertain,"Small focal opacity in the left upper lobe, differential diagnosis includes subsegmental atelectasis, small infiltrate, scarring, followup recommended.",1107
+Lung Opacity,infiltrate,uncertain,"Streaky left basilar opacities, xxxx atelectasis versus infiltrate.",1832
+Lung Opacity,infiltrate,uncertain,"Pulmonary opacity seen in the right lung base, may indicate focal infiltrate.",1952
+Pleural Effusion,effusion,negated,No pleural effusion or pneumothorax.,85
+Pleural Effusion,effusion,negated,There is no pleural effusion or pneumothorax.,2006
+Pleural Effusion,effusions,negated,No xxxx of pleural effusions.,3744
+Pleural Effusion,effusion,negated,"No focal consolidation, pneumothorax, or effusion.",2088
+Pleural Effusion,effusion,negated,There is no pleural effusion.,623
+Pleural Effusion,effusion,negated,There is no pleural effusion or pneumothorax.,2592
+Pleural Effusion,effusion,negated,"There is no focal airspace disease, pneumothorax, or pleural effusion.",327
+Pleural Effusion,effusion,negated,No pleural effusion or pneumothorax.,250
+Pleural Effusion,effusions,negated,"No pneumonia, effusions, edema, pneumothorax, adenopathy, nodules or masses.",3764
+Pleural Effusion,effusions,negated,No pleural effusions or pneumothoraces.,1146
+Pleural Effusion,effusion,negated,No pneumothorax or pleural effusion is seen.,2372
+Pleural Effusion,effusion,negated,"Specifically, no evidence of focal consolidation, pneumothorax, or pleural effusion..",1731
+Pleural Effusion,effusions,negated,No edema or effusions,665
+Pleural Effusion,effusion,negated,There is no pneumothorax or pleural effusion.,2628
+Pleural Effusion,effusions,negated,No pleural effusions or pneumothoraces.,571
+Pleural Effusion,effusion,negated,No pleural effusion.,336
+Pleural Effusion,effusions,negated,"No focal consolidations, pleural effusions, or pneumothoraces.",2433
+Pleural Effusion,effusion,negated,"There is no focal air space opacity, pleural effusion, or pneumothorax.",1208
+Pleural Effusion,effusion,negated,"There is no focal air space opacity, pneumothorax, or effusion.",1677
+Pleural Effusion,effusion,negated,"No pneumothorax, pleural effusion, or focal air space consolidation.",2571
+Pleural Effusion,effusion,negated,"No focal airspace consolidation, pleural effusion or pulmonary mass seen.",2809
+Pleural Effusion,effusion,negated,"There is no focal airspace opacity, pleural effusion, or pneumothorax.",1913
+Pleural Effusion,effusion,negated,No large pleural effusion.,77
+Pleural Effusion,effusions,negated,There are no large pleural effusions.,688
+Pleural Effusion,effusion,negated,There is no pneumothorax or large pleural effusion.,2122
+Pleural Effusion,effusion,negated,There is no effusion or pneumothorax.,1197
+Pleural Effusion,effusion,negated,No large pleural effusion or pneumothorax.,791
+Pleural Effusion,effusion,negated,"Lungs are clear bilaterally with no focal infiltrate, pleural effusion, or pneumothoraces.",510
+Pleural Effusion,effusion,negated,There is no large pleural effusion.,1739
+Pleural Effusion,effusion,negated,"Specifically, no evidence of focal consolidation, pneumothorax, or pleural effusion.",2805
+Pleural Effusion,effusions,negated,No pleural effusions or pneumothoraces.,3065
+Pleural Effusion,effusion,negated,No pneumothorax or pleural effusion.,1039
+Pleural Effusion,effusion,negated,"There is no focal consolidation, pneumothorax, or large pleural effusion.",3010
+Pleural Effusion,effusion,negated,"No focal consolidation, visible pneumothorax or large pleural effusion.",2729
+Pleural Effusion,effusion,negated,No pleural effusion or pneumothorax is seen.,3601
+Pleural Effusion,effusion,negated,No pneumothorax or pleural effusion.,1422
+Pleural Effusion,effusions,negated,No pleural effusions or pneumothoraces.,1329
+Pleural Effusion,effusion,negated,No xxxx focal airspace consolidation or pleural effusion.,2369
+Pleural Effusion,effusion,negated,"No focal consolidation, pneumothorax or large pleural effusion.",3716
+Pleural Effusion,effusions,negated,"No focal consolidations, pneumothorax, or effusions identified.",3217
+Pleural Effusion,effusion,negated,No adenopathy or effusion.,2178
+Pleural Effusion,effusion,negated,"No pleural effusion, pneumothorax or interval airspace consolidation to suggest pneumonia.",230
+Pleural Effusion,effusion,negated,No pleural effusion is seen.,143
+Pleural Effusion,effusion,negated,The lungs do not demonstrate focal infiltrate or effusion.,3926
+Pleural Effusion,effusion,negated,No pneumothorax or pleural effusion.,842
+Pleural Effusion,effusion,negated,"No focal alveolar consolidation, no definite pleural effusion seen.",1711
+Pleural Effusion,effusion,negated,There is no pleural effusion or pneumothorax.,2363
+Pleural Effusion,effusion,negated,No pleural effusion or pneumothorax.,367
+Pleural Effusion,effusion,negated,No pleural effusion.,2210
+Pleural Effusion,effusion,negated,"No focal airspace consolidation, suspicious pulmonary opacity, pneumothorax, or pleural effusion.",3407
+Pleural Effusion,effusion,negated,Near-complete resolution of right-sided pleural effusion with xxxx residual.,465
+Pleural Effusion,effusion,negated,"There is no focal airspace consolidation, pleural effusion or pneumothorax.",559
+Pleural Effusion,effusion,negated,"No focal consolidation, suspicious pulmonary opacity, large pleural effusion, or pneumothorax is identified.",1804
+Pleural Effusion,effusion,negated,There is no pleural effusion or pneumothorax.,2181
+Pleural Effusion,effusion,negated,"There is no pneumothorax, pleural effusion, or focal consolidation.",3122
+Pleural Effusion,effusions,negated,No pleural effusions or pneumothoraces.,3313
+Pleural Effusion,effusion,negated,There is no pneumothorax or pleural effusion.,1136
+Pleural Effusion,effusions,negated,"No pneumonia, effusions, edema, pneumothorax, adenopathy, nodules or masses.",3593
+Pleural Effusion,effusion,negated,"No focal air space opacities, pleural effusion, or pneumothorax.",2762
+Pleural Effusion,effusion,negated,There is no pleural effusion or pneumothorax.,3317
+Pleural Effusion,effusions,negated,No xxxx of pleural effusions.,905
+Pleural Effusion,effusion,negated,No pneumothorax or large pleural effusion.,2709
+Pleural Effusion,effusions,negated,"No focal consolidations, effusions, or pneumothoraces.",2155
+Pleural Effusion,effusion,negated,"No focal consolidation, suspicious pulmonary opacity, pleural effusion, or pneumothorax.",770
+Pleural Effusion,effusion,negated,"No pneumothorax, pleural effusion, or focal air space consolidation.",2777
+Pleural Effusion,effusion,negated,No pneumothorax or pleural effusion.,655
+Pleural Effusion,effusion,negated,There is no pleural effusion or pneumothorax.,2493
+Pleural Effusion,effusion,negated,No acute infiltrate or significant pleural effusion are noted.,251
+Pleural Effusion,effusions,negated,No effusions or CHF.,2188
+Pleural Effusion,effusion,negated,There is no pleural effusion or pneumothorax.,1464
+Pleural Effusion,effusion,negated,No pneumothorax or effusion.,2028
+Pleural Effusion,effusion,negated,No pleural effusion is identified.,3141
+Pleural Effusion,effusion,negated,"The lungs are normally inflated without evidence of focal airspace disease, pleural effusion, or pneumothorax.",2862
+Pleural Effusion,effusion,negated,No pleural effusion or pneumothorax.,3906
+Pleural Effusion,effusions,negated,No pneumothorax or large pleural effusions.,350
+Pleural Effusion,effusion,negated,No pneumothorax or pleural effusion is seen.,3097
+Pleural Effusion,effusion,negated,No pleural effusion is identified.,365
+Pleural Effusion,effusion,positive,Very small left pleural effusion.,1867
+Pleural Effusion,effusions,positive,Pleural effusions or pneumothorax.,3170
+Pleural Effusion,effusion,positive,Small pleural effusion is identified.,2747
+Pleural Effusion,pleural fluid,positive,Peripheral opacity along the right mid lung xxxx reflects scar or a small amount of loculated pleural fluid or thickening.,2817
+Pleural Effusion,effusions,positive,"Small bilateral pleural effusions with bibasilar atelectasis and/or airspace disease, left greater than right.",1313
+Pleural Effusion,effusions,positive,Small pleural effusions.,313
+Pleural Effusion,effusions,positive,xxxx bilateral pleural effusions,1430
+Pleural Effusion,effusions,positive,Low lung volumes with xxxx bilateral pleural effusions.,3036
+Pleural Effusion,effusion,uncertain,"Right basilar opacity with associated blunting of costophrenic xxxx on lateral view may represent small pleural effusion, atelectasis, and/or consolidation.",1725
+Pneumonia,pneumonia,negated,No pneumonia.,2977
+Pneumonia,pneumonia,negated,No pneumonia.,1029
+Pneumonia,pneumonia,negated,"No pneumonia, effusions, edema, pneumothorax, adenopathy, nodules or masses.",3314
+Pneumonia,pneumonia,negated,There is no focal air space opacity to suggest a pneumonia.,1721
+Pneumonia,pneumonia,positive,Left upper lobe pneumonia.,1157
+Pneumothorax,pneumothorax,negated,No pneumothorax or pleural effusion.,1697
+Pneumothorax,pneumothorax,negated,"Specifically, no evidence of focal consolidation, pneumothorax, or pleural effusion..",2099
+Pneumothorax,pneumothorax,negated,There is no pleural effusion or pneumothorax.,1078
+Pneumothorax,pneumothorax,negated,No pleural effusion or pneumothorax.,90
+Pneumothorax,pneumothorax,negated,There is no evidence of pneumothorax or large pleural effusion.,1348
+Pneumothorax,pneumothorax,negated,"No pneumothorax, pleural effusion, or focal airspace disease.",1170
+Pneumothorax,pneumothoraces,negated,No pleural effusions or pneumothoraces.,2273
+Pneumothorax,pneumothorax,negated,"There is no pneumothorax, pleural effusion, or focal air space consolidation.",1285
+Pneumothorax,pneumothorax,negated,No visualized pneumothorax.,1916
+Pneumothorax,pneumothoraces,negated,No pleural effusions or pneumothoraces.,2248
+Pneumothorax,pneumothorax,negated,No pneumothorax or large pleural effusion.,1777
+Pneumothorax,pneumothorax,negated,No pleural effusion or pneumothorax is seen.,3101
+Pneumothorax,pneumothorax,negated,No visible pleural effusion or pneumothorax.,3829
+Pneumothorax,pneumothorax,negated,"No focal consolidation, suspicious pulmonary opacity, large pleural effusion, or pneumothorax is identified.",1048
+Pneumothorax,pneumothorax,negated,"The lungs are mildly hypoinflated but grossly clear of focal airspace disease, pneumothorax, or pleural effusion.",1930
+Pneumothorax,pneumothorax,negated,There is no effusion or pneumothorax.,1406
+Pneumothorax,pneumothorax,negated,"Negative for focal pulmonary consolidation, pleural effusion, or pneumothorax.",2456
+Pneumothorax,pneumothorax,negated,No pneumothorax or pleural effusion.,3579
+Pneumothorax,pneumothoraces,negated,"Lungs are clear bilaterally.There is no focal consolidation, pleural effusion, or pneumothoraces.",2839
+Pneumothorax,pneumothorax,negated,No pneumothorax.,3994
+Pneumothorax,pneumothorax,negated,No pneumothorax or pleural effusion.,655
+Pneumothorax,pneumothorax,negated,No pneumothorax is present.,3651
+Pneumothorax,pneumothorax,negated,"No focal airspace consolidation, pleural effusion or pneumothorax.",3402
+Pneumothorax,pneumothorax,negated,No evidence of pneumothorax.,3252
+Pneumothorax,pneumothorax,negated,"No pneumonia, effusions, edema, pneumothorax, adenopathy, nodules or masses.",1603
+Pneumothorax,pneumothorax,negated,"No focal airspace consolidation, pneumothorax, or large pleural effusion.",127
+Pneumothorax,pneumothorax,negated,No visible pneumothorax.,2486
+Pneumothorax,pneumothoraces,negated,No pleural effusions or pneumothoraces.,2250
+Pneumothorax,pneumothorax,negated,There is no pneumothorax.,1848
+Pneumothorax,pneumothorax,negated,"No focal airspace consolidation, pleural effusions or pneumothorax.",1099
+Pneumothorax,pneumothorax,negated,"Specifically, no evidence of focal consolidation, pneumothorax, or pleural effusion..",3156
+Pneumothorax,pneumothorax,negated,There is no pneumothorax.,788
+Pneumothorax,pneumothorax,negated,No pneumothorax or large pleural effusion.,560
+Pneumothorax,pneumothorax,negated,No pneumothorax or effusions.,2686
+Pneumothorax,pneumothorax,negated,"The lungs are clear without focal airspace opacity, pleural effusion, or pneumothorax.",957
+Pneumothorax,pneumothorax,negated,No pleural effusion or pneumothorax.,1529
+Pneumothorax,pneumothorax,negated,No visualized pneumothorax.,3056
+Pneumothorax,pneumothorax,negated,No visible pleural effusion or pneumothorax.,2216
+Pneumothorax,pneumothorax,negated,No pneumothorax or pleural effusion.,1308
+Pneumothorax,pneumothorax,negated,The lungs are clear with no pulmonary effusions or pneumothorax.,1827
+Pneumothorax,pneumothorax,negated,There is no pleural effusion or pneumothorax.,745
+Pneumothorax,pneumothorax,negated,No pneumothorax or effusion.,1851
+Pneumothorax,pneumothorax,negated,There is no pneumothorax or pleural effusion.,3866
+Pneumothorax,pneumothorax,negated,No pleural effusion or pneumothorax is seen.,2967
+Pneumothorax,pneumothorax,negated,No pneumothorax.,182
+Pneumothorax,pneumothorax,negated,"No focal lung consolidation, pneumothorax or pleural effusions.",1844
+Pneumothorax,pneumothorax,negated,"Specifically, no evidence of focal consolidation, pneumothorax, or pleural effusion.",3102
+Pneumothorax,pneumothorax,negated,"There is no focal consolidation, pneumothorax, or pleural effusion identified.",2677
+Pneumothorax,pneumothorax,negated,"No focal consolidation, pneumothorax or large pleural effusion.",271
+Pneumothorax,pneumothorax,negated,No large pleural effusion or pneumothorax.,3438
+Pneumothorax,pneumothorax,negated,"Specifically, no evidence of focal consolidation, pneumothorax, or pleural effusion..",909
+Pneumothorax,pneumothorax,negated,No pleural effusions or pneumothorax.,2156
+Pneumothorax,pneumothorax,negated,There is no pneumothorax.,3721
+Pneumothorax,pneumothorax,negated,"Negative for pneumothorax, pleural effusion, or focal airspace consolidation.",1788
+Pneumothorax,pneumothorax,negated,"Negative for focal pulmonary consolidation, pleural effusion, or pneumothorax.",3371
+Pneumothorax,pneumothorax,negated,There is no pneumothorax.,1739
+Pneumothorax,pneumothorax,positive,There is a moderate sized right pneumothorax.,91
+Pneumothorax,pneumothorax,positive,There is a thin right apical pneumothorax measuring approximately 5 mm in thickness.,1874
+Support Devices,stent,positive,Stable position of the aortic stent with a normal cardiac silhouette and clear lungs.,3927
+Support Devices,PICC,positive,There is a left-sided PICC with tip at the caval atrial junction.,174
+Support Devices,central venous catheter,positive,There is a right chest xxxx with central venous catheter tip overlying the high SVC.,1804
+Support Devices,central venous catheter,positive,A right internal jugular xxxx this catheter has been exchanged for a large xxxx left internal jugular central venous catheter with the tip at the cavoatrial junction.,1936
+Support Devices,pacemaker,positive,Stable right chest wall pacemaker with leads overlie the right atrium and right ventricle.,1941
+Support Devices,central venous catheter,positive,Left internal jugular central venous catheter with tip approximating the high SVC.,509
+Support Devices,venous catheter,positive,Left venous catheter with tip in the right atrium.,3195
+Support Devices,Feeding tube,positive,Feeding tube passes below the left hemidiaphragm.,1240
+Support Devices,chest tube,positive,There has been interval removal of right chest tube with increased elevation of the right hemidiaphragm and xxxx right basilar atelectasis.,1445
