@@ -51,7 +51,7 @@
   },
   "limitation": "No patient identifier in the IU CSVs; patient-level grouping is impossible.",
   "environment": {
-    "timestamp_utc": "2026-09-30T10:08:34+00:00",
+    "timestamp_utc": "2026-09-30T11:12:15+00:00",
     "seed": 42,
     "python": "3.11.9",
     "python_executable": "C:\\Users\\Dell\\Desktop\\radiology-report-generation\\.venv\\Scripts\\python.exe",
@@ -69,8 +69,8 @@
       "pytest": "9.1.1"
     },
     "git": {
-      "commit": "bf3b9cdfa329693aa26ed9a2eb7fbc327db2a7ff",
-      "branch": "master",
+      "commit": "44763b6e752b96d12764a57fd451ce17b24a34d3",
+      "branch": "phase1-eda",
       "dirty_working_tree": true
     }
   }

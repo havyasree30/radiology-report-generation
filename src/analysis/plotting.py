@@ -55,7 +55,8 @@ def save_figure(fig: plt.Figure, name: str, out_dir: Path = EDA_FIGURES, pdf: bo
     fig.savefig(paths[0])
     if pdf:
         paths.append(out_dir / f"{name}.pdf")
-        fig.savefig(paths[1])
+        # No creation timestamp, so identical data yields a byte-identical PDF.
+        fig.savefig(paths[1], metadata={"CreationDate": None})
     plt.close(fig)
     return paths
 

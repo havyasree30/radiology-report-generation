@@ -154,7 +154,9 @@ def main() -> int:
     assert len(manifest) == len(train) + len(valid)
 
     cols = ["Path", "patient_id", "split_group_id", "study_id", "Frontal/Lateral", "AP/PA", "split"]
-    manifest[cols].to_csv(OUT / "chexpert_image_manifest.csv.gz", index=False, compression="gzip")
+    # mtime=0: no timestamp in the gzip header, so identical splits give an identical file.
+    manifest[cols].to_csv(OUT / "chexpert_image_manifest.csv.gz", index=False,
+                          compression={"method": "gzip", "mtime": 0})
     pat = (manifest.groupby("patient_id").agg(split_group_id=("split_group_id", "first"), split=("split", "first"),
                                               n_images=("Path", "size"), n_studies=("study_id", "nunique"))
            .reset_index())
