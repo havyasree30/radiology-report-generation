@@ -1,0 +1,14 @@
+# Dataset path configuration — TEMPLATE.
+#
+# Copy this file to `configs/paths.yaml` and replace the placeholders with
+# absolute paths on your machine. `configs/paths.yaml` is git-ignored because
+# it contains machine-specific paths.
+#
+# Raw datasets are never copied into this repository. They are read in place
+# and must be treated as read-only.
+
+# Root folder of the CheXpert dataset (the folder that contains train.csv / valid.csv).
+chexpert_root: "PATH_TO_CHEXPERT"
+
+# Root folder of the IU X-Ray / Open-I dataset (reports + images).
+iu_xray_root: "PATH_TO_IU_XRAY"

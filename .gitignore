@@ -1,0 +1,40 @@
+# --- Python environment & bytecode ---
+.venv/
+__pycache__/
+*.py[cod]
+
+# --- Tool caches ---
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Secrets / local environment ---
+.env
+.env.*
+
+# --- Machine-specific configuration (copy from *.example.yaml) ---
+configs/paths.yaml
+configs/*.local.yaml
+
+# --- Logs ---
+*.log
+
+# --- Data (raw datasets live OUTSIDE the repo; never commit them) ---
+data/raw/
+data/cache/
+
+# --- Model artifacts & heavy outputs ---
+results/checkpoints/
+results/cache/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# --- OS / editor noise ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
