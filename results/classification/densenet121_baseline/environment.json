@@ -1,0 +1,55 @@
+{
+  "project": {
+    "timestamp_utc": "2026-09-30T13:19:23+00:00",
+    "seed": 42,
+    "python": "3.11.9",
+    "python_executable": "C:\\Users\\Dell\\Desktop\\radiology-report-generation\\.venv\\Scripts\\python.exe",
+    "os": "Windows-10-10.0.26200-SP0",
+    "machine": "AMD64",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.6",
+      "matplotlib": "3.11.2",
+      "pillow": "12.3.0",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.17.1",
+      "pyyaml": "6.0.3",
+      "tqdm": "4.70.1",
+      "pytest": "9.1.1"
+    },
+    "git": {
+      "commit": "0304f4271967689dcc91a201665c38572c720991",
+      "branch": "master",
+      "dirty_working_tree": true
+    }
+  },
+  "cuda": {
+    "torch": "2.11.0+cu128",
+    "torch_cuda_build": "12.8",
+    "cudnn": 91900,
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "gpu_total_memory_gb": 6.441926656,
+    "compute_capability": "8.6"
+  },
+  "physical_batch": 32,
+  "effective_batch": 32,
+  "training_summary": {
+    "counts": {
+      "train_images": 133644,
+      "train_excluded": 5,
+      "train_patients": 45324,
+      "val_images": 28671,
+      "val_excluded": 1,
+      "val_patients": 9530
+    },
+    "epochs_run": 8,
+    "best_epoch": 5,
+    "best_val_macro_auroc": 0.8037923325159262,
+    "best_epoch_train_loss": 0.4208834797600677,
+    "best_epoch_val_loss": 0.4854583857877741,
+    "total_seconds": 7375.352255105972,
+    "peak_gpu_mem_gb": 2.276063232,
+    "stopped_early": false
+  }
+}

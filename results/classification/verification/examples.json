@@ -1,0 +1,1397 @@
+{
+  "examples": {
+    "1_correct_multilabel": {
+      "criterion": "max number of correctly classified valid labels among images with >= 2 true positives",
+      "available": true,
+      "path": "CheXpert-v1.0-small/train/patient12283/study4/view1_frontal.jpg",
+      "n_true_positive": 6,
+      "n_predicted_positive": 7,
+      "fp": 0,
+      "fn": 0,
+      "labels": [
+        {
+          "observation": "No Finding",
+          "probability": 0.0166570395231246,
+          "threshold": 0.3242354094982147,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Enlarged Cardiomediastinum",
+          "probability": 0.0996453016996383,
+          "threshold": 0.17258980870246887,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Cardiomegaly",
+          "probability": 0.7951813340187073,
+          "threshold": 0.23091977834701538,
+          "predicted": "positive",
+          "ground_truth": "positive"
+        },
+        {
+          "observation": "Lung Opacity",
+          "probability": 0.7439128756523132,
+          "threshold": 0.5010204315185547,
+          "predicted": "positive",
+          "ground_truth": "positive"
+        },
+        {
+          "observation": "Lung Lesion",
+          "probability": 0.0260067861527204,
+          "threshold": 0.14021846652030945,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Edema",
+          "probability": 0.925499677658081,
+          "threshold": 0.31216028332710266,
+          "predicted": "positive",
+          "ground_truth": "positive"
+        },
+        {
+          "observation": "Consolidation",
+          "probability": 0.1904227435588836,
+          "threshold": 0.1790994256734848,
+          "predicted": "positive",
+          "ground_truth": "positive"
+        },
+        {
+          "observation": "Pneumonia",
+          "probability": 0.140572041273117,
+          "threshold": 0.11436853557825089,
+          "predicted": "positive",
+          "ground_truth": "uncertain (excluded)"
+        },
+        {
+          "observation": "Atelectasis",
+          "probability": 0.2085010707378387,
+          "threshold": 0.27659282088279724,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Pneumothorax",
+          "probability": 0.104843370616436,
+          "threshold": 0.33895185589790344,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Pleural Effusion",
+          "probability": 0.6005983948707581,
+          "threshold": 0.40662631392478943,
+          "predicted": "positive",
+          "ground_truth": "positive"
+        },
+        {
+          "observation": "Pleural Other",
+          "probability": 0.0261556170880794,
+          "threshold": 0.03289904072880745,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Fracture",
+          "probability": 0.0231092777103185,
+          "threshold": 0.05541279539465904,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Support Devices",
+          "probability": 0.6551154255867004,
+          "threshold": 0.430865615606308,
+          "predicted": "positive",
+          "ground_truth": "positive"
+        }
+      ],
+      "structured_findings": {
+        "positive_findings": [
+          {
+            "observation": "Edema",
+            "probability": 0.925499677658081,
+            "threshold": 0.31216028332710266
+          },
+          {
+            "observation": "Cardiomegaly",
+            "probability": 0.7951813340187073,
+            "threshold": 0.23091977834701538
+          },
+          {
+            "observation": "Lung Opacity",
+            "probability": 0.7439128756523132,
+            "threshold": 0.5010204315185547
+          },
+          {
+            "observation": "Support Devices",
+            "probability": 0.6551154255867004,
+            "threshold": 0.430865615606308
+          },
+          {
+            "observation": "Pleural Effusion",
+            "probability": 0.6005983948707581,
+            "threshold": 0.40662631392478943
+          },
+          {
+            "observation": "Pneumonia",
+            "probability": 0.140572041273117,
+            "threshold": 0.11436853557825089
+          },
+          {
+            "observation": "Consolidation",
+            "probability": 0.1904227435588836,
+            "threshold": 0.1790994256734848
+          }
+        ],
+        "negative_findings": [
+          {
+            "observation": "No Finding",
+            "probability": 0.0166570395231246,
+            "threshold": 0.3242354094982147
+          },
+          {
+            "observation": "Enlarged Cardiomediastinum",
+            "probability": 0.0996453016996383,
+            "threshold": 0.17258980870246887
+          },
+          {
+            "observation": "Lung Lesion",
+            "probability": 0.0260067861527204,
+            "threshold": 0.14021846652030945
+          },
+          {
+            "observation": "Atelectasis",
+            "probability": 0.2085010707378387,
+            "threshold": 0.27659282088279724
+          },
+          {
+            "observation": "Pneumothorax",
+            "probability": 0.104843370616436,
+            "threshold": 0.33895185589790344
+          },
+          {
+            "observation": "Pleural Other",
+            "probability": 0.0261556170880794,
+            "threshold": 0.03289904072880745
+          },
+          {
+            "observation": "Fracture",
+            "probability": 0.0231092777103185,
+            "threshold": 0.05541279539465904
+          }
+        ],
+        "borderline_findings": [
+          {
+            "observation": "Consolidation",
+            "probability": 0.1904227435588836,
+            "threshold": 0.1790994256734848,
+            "status": "positive",
+            "margin": 0.01132331788539881
+          },
+          {
+            "observation": "Pneumonia",
+            "probability": 0.140572041273117,
+            "threshold": 0.11436853557825089,
+            "status": "positive",
+            "margin": 0.026203505694866125
+          },
+          {
+            "observation": "Pleural Other",
+            "probability": 0.0261556170880794,
+            "threshold": 0.03289904072880745,
+            "status": "negative",
+            "margin": -0.006743423640728049
+          },
+          {
+            "observation": "Fracture",
+            "probability": 0.0231092777103185,
+            "threshold": 0.05541279539465904,
+            "status": "negative",
+            "margin": -0.032303517684340546
+          }
+        ],
+        "warnings": [],
+        "borderline_margin": 0.05,
+        "label_order": [
+          "No Finding",
+          "Enlarged Cardiomediastinum",
+          "Cardiomegaly",
+          "Lung Opacity",
+          "Lung Lesion",
+          "Edema",
+          "Consolidation",
+          "Pneumonia",
+          "Atelectasis",
+          "Pneumothorax",
+          "Pleural Effusion",
+          "Pleural Other",
+          "Fracture",
+          "Support Devices"
+        ]
+      },
+      "query": {
+        "query_text": "Chest radiograph findings: edema, cardiomegaly, lung opacity, pleural effusion, pneumonia, consolidation and support devices.",
+        "query_mode": "positive_findings",
+        "positive_observations": [
+          "Edema",
+          "Cardiomegaly",
+          "Lung Opacity",
+          "Support Devices",
+          "Pleural Effusion",
+          "Pneumonia",
+          "Consolidation"
+        ],
+        "borderline_negative_observations": [
+          "Pleural Other",
+          "Fracture"
+        ],
+        "confidence": {
+          "Edema": {
+            "probability": 0.925499677658081,
+            "threshold": 0.31216028332710266
+          },
+          "Cardiomegaly": {
+            "probability": 0.7951813340187073,
+            "threshold": 0.23091977834701538
+          },
+          "Lung Opacity": {
+            "probability": 0.7439128756523132,
+            "threshold": 0.5010204315185547
+          },
+          "Support Devices": {
+            "probability": 0.6551154255867004,
+            "threshold": 0.430865615606308
+          },
+          "Pleural Effusion": {
+            "probability": 0.6005983948707581,
+            "threshold": 0.40662631392478943
+          },
+          "Pneumonia": {
+            "probability": 0.140572041273117,
+            "threshold": 0.11436853557825089
+          },
+          "Consolidation": {
+            "probability": 0.1904227435588836,
+            "threshold": 0.1790994256734848
+          },
+          "Pleural Other": {
+            "probability": 0.0261556170880794,
+            "threshold": 0.03289904072880745
+          },
+          "Fracture": {
+            "probability": 0.0231092777103185,
+            "threshold": 0.05541279539465904
+          }
+        },
+        "warnings": []
+      }
+    },
+    "2_false_positive_heavy": {
+      "criterion": "max false-positive count",
+      "available": true,
+      "path": "CheXpert-v1.0-small/train/patient33073/study1/view1_frontal.jpg",
+      "n_true_positive": 2,
+      "n_predicted_positive": 10,
+      "fp": 10,
+      "fn": 2,
+      "labels": [
+        {
+          "observation": "No Finding",
+          "probability": 0.031798668205738,
+          "threshold": 0.3242354094982147,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Enlarged Cardiomediastinum",
+          "probability": 0.1785258203744888,
+          "threshold": 0.17258980870246887,
+          "predicted": "positive",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Cardiomegaly",
+          "probability": 0.5958454012870789,
+          "threshold": 0.23091977834701538,
+          "predicted": "positive",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Lung Opacity",
+          "probability": 0.7325918078422546,
+          "threshold": 0.5010204315185547,
+          "predicted": "positive",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Lung Lesion",
+          "probability": 0.0687872841954231,
+          "threshold": 0.14021846652030945,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Edema",
+          "probability": 0.4086306989192962,
+          "threshold": 0.31216028332710266,
+          "predicted": "positive",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Consolidation",
+          "probability": 0.3702253699302673,
+          "threshold": 0.1790994256734848,
+          "predicted": "positive",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Pneumonia",
+          "probability": 0.1173696517944336,
+          "threshold": 0.11436853557825089,
+          "predicted": "positive",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Atelectasis",
+          "probability": 0.302494078874588,
+          "threshold": 0.27659282088279724,
+          "predicted": "positive",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Pneumothorax",
+          "probability": 0.2254165858030319,
+          "threshold": 0.33895185589790344,
+          "predicted": "negative",
+          "ground_truth": "positive"
+        },
+        {
+          "observation": "Pleural Effusion",
+          "probability": 0.4897703826427459,
+          "threshold": 0.40662631392478943,
+          "predicted": "positive",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Pleural Other",
+          "probability": 0.1830088496208191,
+          "threshold": 0.03289904072880745,
+          "predicted": "positive",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Fracture",
+          "probability": 0.1003484055399894,
+          "threshold": 0.05541279539465904,
+          "predicted": "positive",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Support Devices",
+          "probability": 0.3618409633636474,
+          "threshold": 0.430865615606308,
+          "predicted": "negative",
+          "ground_truth": "positive"
+        }
+      ],
+      "structured_findings": {
+        "positive_findings": [
+          {
+            "observation": "Cardiomegaly",
+            "probability": 0.5958454012870789,
+            "threshold": 0.23091977834701538
+          },
+          {
+            "observation": "Lung Opacity",
+            "probability": 0.7325918078422546,
+            "threshold": 0.5010204315185547
+          },
+          {
+            "observation": "Consolidation",
+            "probability": 0.3702253699302673,
+            "threshold": 0.1790994256734848
+          },
+          {
+            "observation": "Pleural Other",
+            "probability": 0.1830088496208191,
+            "threshold": 0.03289904072880745
+          },
+          {
+            "observation": "Edema",
+            "probability": 0.4086306989192962,
+            "threshold": 0.31216028332710266
+          },
+          {
+            "observation": "Pleural Effusion",
+            "probability": 0.4897703826427459,
+            "threshold": 0.40662631392478943
+          },
+          {
+            "observation": "Fracture",
+            "probability": 0.1003484055399894,
+            "threshold": 0.05541279539465904
+          },
+          {
+            "observation": "Atelectasis",
+            "probability": 0.302494078874588,
+            "threshold": 0.27659282088279724
+          },
+          {
+            "observation": "Enlarged Cardiomediastinum",
+            "probability": 0.1785258203744888,
+            "threshold": 0.17258980870246887
+          },
+          {
+            "observation": "Pneumonia",
+            "probability": 0.1173696517944336,
+            "threshold": 0.11436853557825089
+          }
+        ],
+        "negative_findings": [
+          {
+            "observation": "No Finding",
+            "probability": 0.031798668205738,
+            "threshold": 0.3242354094982147
+          },
+          {
+            "observation": "Lung Lesion",
+            "probability": 0.0687872841954231,
+            "threshold": 0.14021846652030945
+          },
+          {
+            "observation": "Pneumothorax",
+            "probability": 0.2254165858030319,
+            "threshold": 0.33895185589790344
+          },
+          {
+            "observation": "Support Devices",
+            "probability": 0.3618409633636474,
+            "threshold": 0.430865615606308
+          }
+        ],
+        "borderline_findings": [
+          {
+            "observation": "Enlarged Cardiomediastinum",
+            "probability": 0.1785258203744888,
+            "threshold": 0.17258980870246887,
+            "status": "positive",
+            "margin": 0.005936011672019931
+          },
+          {
+            "observation": "Pneumonia",
+            "probability": 0.1173696517944336,
+            "threshold": 0.11436853557825089,
+            "status": "positive",
+            "margin": 0.0030011162161827087
+          },
+          {
+            "observation": "Atelectasis",
+            "probability": 0.302494078874588,
+            "threshold": 0.27659282088279724,
+            "status": "positive",
+            "margin": 0.02590125799179077
+          },
+          {
+            "observation": "Fracture",
+            "probability": 0.1003484055399894,
+            "threshold": 0.05541279539465904,
+            "status": "positive",
+            "margin": 0.04493561014533036
+          }
+        ],
+        "warnings": [],
+        "borderline_margin": 0.05,
+        "label_order": [
+          "No Finding",
+          "Enlarged Cardiomediastinum",
+          "Cardiomegaly",
+          "Lung Opacity",
+          "Lung Lesion",
+          "Edema",
+          "Consolidation",
+          "Pneumonia",
+          "Atelectasis",
+          "Pneumothorax",
+          "Pleural Effusion",
+          "Pleural Other",
+          "Fracture",
+          "Support Devices"
+        ]
+      },
+      "query": {
+        "query_text": "Chest radiograph findings: cardiomegaly, lung opacity, consolidation, pleural other, edema, pleural effusion, fracture, atelectasis, enlarged cardiomediastinum and pneumonia.",
+        "query_mode": "positive_findings",
+        "positive_observations": [
+          "Cardiomegaly",
+          "Lung Opacity",
+          "Consolidation",
+          "Pleural Other",
+          "Edema",
+          "Pleural Effusion",
+          "Fracture",
+          "Atelectasis",
+          "Enlarged Cardiomediastinum",
+          "Pneumonia"
+        ],
+        "borderline_negative_observations": [],
+        "confidence": {
+          "Cardiomegaly": {
+            "probability": 0.5958454012870789,
+            "threshold": 0.23091977834701538
+          },
+          "Lung Opacity": {
+            "probability": 0.7325918078422546,
+            "threshold": 0.5010204315185547
+          },
+          "Consolidation": {
+            "probability": 0.3702253699302673,
+            "threshold": 0.1790994256734848
+          },
+          "Pleural Other": {
+            "probability": 0.1830088496208191,
+            "threshold": 0.03289904072880745
+          },
+          "Edema": {
+            "probability": 0.4086306989192962,
+            "threshold": 0.31216028332710266
+          },
+          "Pleural Effusion": {
+            "probability": 0.4897703826427459,
+            "threshold": 0.40662631392478943
+          },
+          "Fracture": {
+            "probability": 0.1003484055399894,
+            "threshold": 0.05541279539465904
+          },
+          "Atelectasis": {
+            "probability": 0.302494078874588,
+            "threshold": 0.27659282088279724
+          },
+          "Enlarged Cardiomediastinum": {
+            "probability": 0.1785258203744888,
+            "threshold": 0.17258980870246887
+          },
+          "Pneumonia": {
+            "probability": 0.1173696517944336,
+            "threshold": 0.11436853557825089
+          }
+        },
+        "warnings": []
+      }
+    },
+    "3_false_negative_heavy": {
+      "criterion": "max false-negative count",
+      "available": true,
+      "path": "CheXpert-v1.0-small/train/patient13213/study2/view1_frontal.jpg",
+      "n_true_positive": 6,
+      "n_predicted_positive": 6,
+      "fp": 3,
+      "fn": 5,
+      "labels": [
+        {
+          "observation": "No Finding",
+          "probability": 0.1353463232517242,
+          "threshold": 0.3242354094982147,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Enlarged Cardiomediastinum",
+          "probability": 0.0514627657830715,
+          "threshold": 0.17258980870246887,
+          "predicted": "negative",
+          "ground_truth": "positive"
+        },
+        {
+          "observation": "Cardiomegaly",
+          "probability": 0.0259573571383953,
+          "threshold": 0.23091977834701538,
+          "predicted": "negative",
+          "ground_truth": "positive"
+        },
+        {
+          "observation": "Lung Opacity",
+          "probability": 0.6440012454986572,
+          "threshold": 0.5010204315185547,
+          "predicted": "positive",
+          "ground_truth": "positive"
+        },
+        {
+          "observation": "Lung Lesion",
+          "probability": 0.0840406119823455,
+          "threshold": 0.14021846652030945,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Edema",
+          "probability": 0.449030190706253,
+          "threshold": 0.31216028332710266,
+          "predicted": "positive",
+          "ground_truth": "uncertain (excluded)"
+        },
+        {
+          "observation": "Consolidation",
+          "probability": 0.3864160776138305,
+          "threshold": 0.1790994256734848,
+          "predicted": "positive",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Pneumonia",
+          "probability": 0.4342213571071625,
+          "threshold": 0.11436853557825089,
+          "predicted": "positive",
+          "ground_truth": "uncertain (excluded)"
+        },
+        {
+          "observation": "Atelectasis",
+          "probability": 0.1979091167449951,
+          "threshold": 0.27659282088279724,
+          "predicted": "negative",
+          "ground_truth": "positive"
+        },
+        {
+          "observation": "Pneumothorax",
+          "probability": 0.141399934887886,
+          "threshold": 0.33895185589790344,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Pleural Effusion",
+          "probability": 0.2592625916004181,
+          "threshold": 0.40662631392478943,
+          "predicted": "negative",
+          "ground_truth": "positive"
+        },
+        {
+          "observation": "Pleural Other",
+          "probability": 0.0403890684247016,
+          "threshold": 0.03289904072880745,
+          "predicted": "positive",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Fracture",
+          "probability": 0.1343210488557815,
+          "threshold": 0.05541279539465904,
+          "predicted": "positive",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Support Devices",
+          "probability": 0.3527590036392212,
+          "threshold": 0.430865615606308,
+          "predicted": "negative",
+          "ground_truth": "positive"
+        }
+      ],
+      "structured_findings": {
+        "positive_findings": [
+          {
+            "observation": "Pneumonia",
+            "probability": 0.4342213571071625,
+            "threshold": 0.11436853557825089
+          },
+          {
+            "observation": "Consolidation",
+            "probability": 0.3864160776138305,
+            "threshold": 0.1790994256734848
+          },
+          {
+            "observation": "Lung Opacity",
+            "probability": 0.6440012454986572,
+            "threshold": 0.5010204315185547
+          },
+          {
+            "observation": "Edema",
+            "probability": 0.449030190706253,
+            "threshold": 0.31216028332710266
+          },
+          {
+            "observation": "Fracture",
+            "probability": 0.1343210488557815,
+            "threshold": 0.05541279539465904
+          },
+          {
+            "observation": "Pleural Other",
+            "probability": 0.0403890684247016,
+            "threshold": 0.03289904072880745
+          }
+        ],
+        "negative_findings": [
+          {
+            "observation": "No Finding",
+            "probability": 0.1353463232517242,
+            "threshold": 0.3242354094982147
+          },
+          {
+            "observation": "Enlarged Cardiomediastinum",
+            "probability": 0.0514627657830715,
+            "threshold": 0.17258980870246887
+          },
+          {
+            "observation": "Cardiomegaly",
+            "probability": 0.0259573571383953,
+            "threshold": 0.23091977834701538
+          },
+          {
+            "observation": "Lung Lesion",
+            "probability": 0.0840406119823455,
+            "threshold": 0.14021846652030945
+          },
+          {
+            "observation": "Atelectasis",
+            "probability": 0.1979091167449951,
+            "threshold": 0.27659282088279724
+          },
+          {
+            "observation": "Pneumothorax",
+            "probability": 0.141399934887886,
+            "threshold": 0.33895185589790344
+          },
+          {
+            "observation": "Pleural Effusion",
+            "probability": 0.2592625916004181,
+            "threshold": 0.40662631392478943
+          },
+          {
+            "observation": "Support Devices",
+            "probability": 0.3527590036392212,
+            "threshold": 0.430865615606308
+          }
+        ],
+        "borderline_findings": [
+          {
+            "observation": "Pleural Other",
+            "probability": 0.0403890684247016,
+            "threshold": 0.03289904072880745,
+            "status": "positive",
+            "margin": 0.007490027695894151
+          }
+        ],
+        "warnings": [],
+        "borderline_margin": 0.05,
+        "label_order": [
+          "No Finding",
+          "Enlarged Cardiomediastinum",
+          "Cardiomegaly",
+          "Lung Opacity",
+          "Lung Lesion",
+          "Edema",
+          "Consolidation",
+          "Pneumonia",
+          "Atelectasis",
+          "Pneumothorax",
+          "Pleural Effusion",
+          "Pleural Other",
+          "Fracture",
+          "Support Devices"
+        ]
+      },
+      "query": {
+        "query_text": "Chest radiograph findings: pneumonia, consolidation, lung opacity, edema, fracture and pleural other.",
+        "query_mode": "positive_findings",
+        "positive_observations": [
+          "Pneumonia",
+          "Consolidation",
+          "Lung Opacity",
+          "Edema",
+          "Fracture",
+          "Pleural Other"
+        ],
+        "borderline_negative_observations": [],
+        "confidence": {
+          "Pneumonia": {
+            "probability": 0.4342213571071625,
+            "threshold": 0.11436853557825089
+          },
+          "Consolidation": {
+            "probability": 0.3864160776138305,
+            "threshold": 0.1790994256734848
+          },
+          "Lung Opacity": {
+            "probability": 0.6440012454986572,
+            "threshold": 0.5010204315185547
+          },
+          "Edema": {
+            "probability": 0.449030190706253,
+            "threshold": 0.31216028332710266
+          },
+          "Fracture": {
+            "probability": 0.1343210488557815,
+            "threshold": 0.05541279539465904
+          },
+          "Pleural Other": {
+            "probability": 0.0403890684247016,
+            "threshold": 0.03289904072880745
+          }
+        },
+        "warnings": []
+      }
+    },
+    "4_rare_class_pleural_other": {
+      "criterion": "true Pleural Other positive (rarest class) with the MEDIAN predicted probability",
+      "available": true,
+      "path": "CheXpert-v1.0-small/train/patient26481/study1/view1_frontal.jpg",
+      "n_true_positive": 2,
+      "n_predicted_positive": 4,
+      "fp": 2,
+      "fn": 0,
+      "labels": [
+        {
+          "observation": "No Finding",
+          "probability": 0.1945207715034485,
+          "threshold": 0.3242354094982147,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Enlarged Cardiomediastinum",
+          "probability": 0.1232600435614585,
+          "threshold": 0.17258980870246887,
+          "predicted": "negative",
+          "ground_truth": "negative"
+        },
+        {
+          "observation": "Cardiomegaly",
+          "probability": 0.1700940430164337,
+          "threshold": 0.23091977834701538,
+          "predicted": "negative",
+          "ground_truth": "negative"
+        },
+        {
+          "observation": "Lung Opacity",
+          "probability": 0.4311649799346924,
+          "threshold": 0.5010204315185547,
+          "predicted": "negative",
+          "ground_truth": "negative"
+        },
+        {
+          "observation": "Lung Lesion",
+          "probability": 0.2536760568618774,
+          "threshold": 0.14021846652030945,
+          "predicted": "positive",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Edema",
+          "probability": 0.2225311249494552,
+          "threshold": 0.31216028332710266,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Consolidation",
+          "probability": 0.0607519000768661,
+          "threshold": 0.1790994256734848,
+          "predicted": "negative",
+          "ground_truth": "negative"
+        },
+        {
+          "observation": "Pneumonia",
+          "probability": 0.1404540985822677,
+          "threshold": 0.11436853557825089,
+          "predicted": "positive",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Atelectasis",
+          "probability": 0.0697949230670929,
+          "threshold": 0.27659282088279724,
+          "predicted": "negative",
+          "ground_truth": "uncertain (excluded)"
+        },
+        {
+          "observation": "Pneumothorax",
+          "probability": 0.125922754406929,
+          "threshold": 0.33895185589790344,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Pleural Effusion",
+          "probability": 0.0101696588099002,
+          "threshold": 0.40662631392478943,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Pleural Other",
+          "probability": 0.0881900414824485,
+          "threshold": 0.03289904072880745,
+          "predicted": "positive",
+          "ground_truth": "positive"
+        },
+        {
+          "observation": "Fracture",
+          "probability": 0.6286354064941406,
+          "threshold": 0.05541279539465904,
+          "predicted": "positive",
+          "ground_truth": "positive"
+        },
+        {
+          "observation": "Support Devices",
+          "probability": 0.2011847198009491,
+          "threshold": 0.430865615606308,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        }
+      ],
+      "structured_findings": {
+        "positive_findings": [
+          {
+            "observation": "Fracture",
+            "probability": 0.6286354064941406,
+            "threshold": 0.05541279539465904
+          },
+          {
+            "observation": "Lung Lesion",
+            "probability": 0.2536760568618774,
+            "threshold": 0.14021846652030945
+          },
+          {
+            "observation": "Pleural Other",
+            "probability": 0.0881900414824485,
+            "threshold": 0.03289904072880745
+          },
+          {
+            "observation": "Pneumonia",
+            "probability": 0.1404540985822677,
+            "threshold": 0.11436853557825089
+          }
+        ],
+        "negative_findings": [
+          {
+            "observation": "No Finding",
+            "probability": 0.1945207715034485,
+            "threshold": 0.3242354094982147
+          },
+          {
+            "observation": "Enlarged Cardiomediastinum",
+            "probability": 0.1232600435614585,
+            "threshold": 0.17258980870246887
+          },
+          {
+            "observation": "Cardiomegaly",
+            "probability": 0.1700940430164337,
+            "threshold": 0.23091977834701538
+          },
+          {
+            "observation": "Lung Opacity",
+            "probability": 0.4311649799346924,
+            "threshold": 0.5010204315185547
+          },
+          {
+            "observation": "Edema",
+            "probability": 0.2225311249494552,
+            "threshold": 0.31216028332710266
+          },
+          {
+            "observation": "Consolidation",
+            "probability": 0.0607519000768661,
+            "threshold": 0.1790994256734848
+          },
+          {
+            "observation": "Atelectasis",
+            "probability": 0.0697949230670929,
+            "threshold": 0.27659282088279724
+          },
+          {
+            "observation": "Pneumothorax",
+            "probability": 0.125922754406929,
+            "threshold": 0.33895185589790344
+          },
+          {
+            "observation": "Pleural Effusion",
+            "probability": 0.0101696588099002,
+            "threshold": 0.40662631392478943
+          },
+          {
+            "observation": "Support Devices",
+            "probability": 0.2011847198009491,
+            "threshold": 0.430865615606308
+          }
+        ],
+        "borderline_findings": [
+          {
+            "observation": "Enlarged Cardiomediastinum",
+            "probability": 0.1232600435614585,
+            "threshold": 0.17258980870246887,
+            "status": "negative",
+            "margin": -0.04932976514101037
+          },
+          {
+            "observation": "Pneumonia",
+            "probability": 0.1404540985822677,
+            "threshold": 0.11436853557825089,
+            "status": "positive",
+            "margin": 0.02608556300401682
+          }
+        ],
+        "warnings": [],
+        "borderline_margin": 0.05,
+        "label_order": [
+          "No Finding",
+          "Enlarged Cardiomediastinum",
+          "Cardiomegaly",
+          "Lung Opacity",
+          "Lung Lesion",
+          "Edema",
+          "Consolidation",
+          "Pneumonia",
+          "Atelectasis",
+          "Pneumothorax",
+          "Pleural Effusion",
+          "Pleural Other",
+          "Fracture",
+          "Support Devices"
+        ]
+      },
+      "query": {
+        "query_text": "Chest radiograph findings: fracture, lung lesion, pleural other and pneumonia.",
+        "query_mode": "positive_findings",
+        "positive_observations": [
+          "Fracture",
+          "Lung Lesion",
+          "Pleural Other",
+          "Pneumonia"
+        ],
+        "borderline_negative_observations": [
+          "Enlarged Cardiomediastinum"
+        ],
+        "confidence": {
+          "Fracture": {
+            "probability": 0.6286354064941406,
+            "threshold": 0.05541279539465904
+          },
+          "Lung Lesion": {
+            "probability": 0.2536760568618774,
+            "threshold": 0.14021846652030945
+          },
+          "Pleural Other": {
+            "probability": 0.0881900414824485,
+            "threshold": 0.03289904072880745
+          },
+          "Pneumonia": {
+            "probability": 0.1404540985822677,
+            "threshold": 0.11436853557825089
+          },
+          "Enlarged Cardiomediastinum": {
+            "probability": 0.1232600435614585,
+            "threshold": 0.17258980870246887
+          }
+        },
+        "warnings": []
+      }
+    },
+    "5_no_positive_prediction": {
+      "criterion": "no label at or above its threshold",
+      "available": false
+    },
+    "6_no_finding_contradiction": {
+      "criterion": "first image (file order) whose prediction triggers the No Finding contradiction",
+      "available": true,
+      "path": "CheXpert-v1.0-small/train/patient00005/study1/view1_frontal.jpg",
+      "n_true_positive": 2,
+      "n_predicted_positive": 5,
+      "fp": 3,
+      "fn": 0,
+      "labels": [
+        {
+          "observation": "No Finding",
+          "probability": 0.6768335103988647,
+          "threshold": 0.3242354094982147,
+          "predicted": "positive",
+          "ground_truth": "positive"
+        },
+        {
+          "observation": "Enlarged Cardiomediastinum",
+          "probability": 0.2729925513267517,
+          "threshold": 0.17258980870246887,
+          "predicted": "positive",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Cardiomegaly",
+          "probability": 0.038250058889389,
+          "threshold": 0.23091977834701538,
+          "predicted": "negative",
+          "ground_truth": "negative"
+        },
+        {
+          "observation": "Lung Opacity",
+          "probability": 0.1496556103229522,
+          "threshold": 0.5010204315185547,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Lung Lesion",
+          "probability": 0.2986958920955658,
+          "threshold": 0.14021846652030945,
+          "predicted": "positive",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Edema",
+          "probability": 0.0143923358991742,
+          "threshold": 0.31216028332710266,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Consolidation",
+          "probability": 0.0777974501252174,
+          "threshold": 0.1790994256734848,
+          "predicted": "negative",
+          "ground_truth": "negative"
+        },
+        {
+          "observation": "Pneumonia",
+          "probability": 0.0977343246340751,
+          "threshold": 0.11436853557825089,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Atelectasis",
+          "probability": 0.0579180866479873,
+          "threshold": 0.27659282088279724,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Pneumothorax",
+          "probability": 0.1589561253786087,
+          "threshold": 0.33895185589790344,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Pleural Effusion",
+          "probability": 0.1050268113613128,
+          "threshold": 0.40662631392478943,
+          "predicted": "negative",
+          "ground_truth": "negative"
+        },
+        {
+          "observation": "Pleural Other",
+          "probability": 0.0433657988905906,
+          "threshold": 0.03289904072880745,
+          "predicted": "positive",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Fracture",
+          "probability": 0.0432040356099605,
+          "threshold": 0.05541279539465904,
+          "predicted": "negative",
+          "ground_truth": "blank (scored negative)"
+        },
+        {
+          "observation": "Support Devices",
+          "probability": 0.6698528528213501,
+          "threshold": 0.430865615606308,
+          "predicted": "positive",
+          "ground_truth": "positive"
+        }
+      ],
+      "structured_findings": {
+        "positive_findings": [
+          {
+            "observation": "No Finding",
+            "probability": 0.6768335103988647,
+            "threshold": 0.3242354094982147
+          },
+          {
+            "observation": "Support Devices",
+            "probability": 0.6698528528213501,
+            "threshold": 0.430865615606308
+          },
+          {
+            "observation": "Lung Lesion",
+            "probability": 0.2986958920955658,
+            "threshold": 0.14021846652030945
+          },
+          {
+            "observation": "Enlarged Cardiomediastinum",
+            "probability": 0.2729925513267517,
+            "threshold": 0.17258980870246887
+          },
+          {
+            "observation": "Pleural Other",
+            "probability": 0.0433657988905906,
+            "threshold": 0.03289904072880745
+          }
+        ],
+        "negative_findings": [
+          {
+            "observation": "Cardiomegaly",
+            "probability": 0.038250058889389,
+            "threshold": 0.23091977834701538
+          },
+          {
+            "observation": "Lung Opacity",
+            "probability": 0.1496556103229522,
+            "threshold": 0.5010204315185547
+          },
+          {
+            "observation": "Edema",
+            "probability": 0.0143923358991742,
+            "threshold": 0.31216028332710266
+          },
+          {
+            "observation": "Consolidation",
+            "probability": 0.0777974501252174,
+            "threshold": 0.1790994256734848
+          },
+          {
+            "observation": "Pneumonia",
+            "probability": 0.0977343246340751,
+            "threshold": 0.11436853557825089
+          },
+          {
+            "observation": "Atelectasis",
+            "probability": 0.0579180866479873,
+            "threshold": 0.27659282088279724
+          },
+          {
+            "observation": "Pneumothorax",
+            "probability": 0.1589561253786087,
+            "threshold": 0.33895185589790344
+          },
+          {
+            "observation": "Pleural Effusion",
+            "probability": 0.1050268113613128,
+            "threshold": 0.40662631392478943
+          },
+          {
+            "observation": "Fracture",
+            "probability": 0.0432040356099605,
+            "threshold": 0.05541279539465904
+          }
+        ],
+        "borderline_findings": [
+          {
+            "observation": "Pneumonia",
+            "probability": 0.0977343246340751,
+            "threshold": 0.11436853557825089,
+            "status": "negative",
+            "margin": -0.01663421094417579
+          },
+          {
+            "observation": "Pleural Other",
+            "probability": 0.0433657988905906,
+            "threshold": 0.03289904072880745,
+            "status": "positive",
+            "margin": 0.010466758161783149
+          },
+          {
+            "observation": "Fracture",
+            "probability": 0.0432040356099605,
+            "threshold": 0.05541279539465904,
+            "status": "negative",
+            "margin": -0.012208759784698542
+          }
+        ],
+        "warnings": [
+          {
+            "code": "no_finding_with_pathology",
+            "message": "No Finding is positive while pathology observations are also positive",
+            "observations": [
+              "Enlarged Cardiomediastinum",
+              "Lung Lesion",
+              "Pleural Other"
+            ]
+          }
+        ],
+        "borderline_margin": 0.05,
+        "label_order": [
+          "No Finding",
+          "Enlarged Cardiomediastinum",
+          "Cardiomegaly",
+          "Lung Opacity",
+          "Lung Lesion",
+          "Edema",
+          "Consolidation",
+          "Pneumonia",
+          "Atelectasis",
+          "Pneumothorax",
+          "Pleural Effusion",
+          "Pleural Other",
+          "Fracture",
+          "Support Devices"
+        ]
+      },
+      "query": {
+        "query_text": "Chest radiograph findings: lung lesion, enlarged cardiomediastinum, pleural other and support devices.",
+        "query_mode": "positive_findings",
+        "positive_observations": [
+          "No Finding",
+          "Support Devices",
+          "Lung Lesion",
+          "Enlarged Cardiomediastinum",
+          "Pleural Other"
+        ],
+        "borderline_negative_observations": [
+          "Pneumonia",
+          "Fracture"
+        ],
+        "confidence": {
+          "No Finding": {
+            "probability": 0.6768335103988647,
+            "threshold": 0.3242354094982147
+          },
+          "Support Devices": {
+            "probability": 0.6698528528213501,
+            "threshold": 0.430865615606308
+          },
+          "Lung Lesion": {
+            "probability": 0.2986958920955658,
+            "threshold": 0.14021846652030945
+          },
+          "Enlarged Cardiomediastinum": {
+            "probability": 0.2729925513267517,
+            "threshold": 0.17258980870246887
+          },
+          "Pleural Other": {
+            "probability": 0.0433657988905906,
+            "threshold": 0.03289904072880745
+          },
+          "Pneumonia": {
+            "probability": 0.0977343246340751,
+            "threshold": 0.11436853557825089
+          },
+          "Fracture": {
+            "probability": 0.0432040356099605,
+            "threshold": 0.05541279539465904
+          }
+        },
+        "warnings": [
+          {
+            "code": "no_finding_with_pathology",
+            "message": "No Finding is positive while pathology observations are also positive",
+            "observations": [
+              "Enlarged Cardiomediastinum",
+              "Lung Lesion",
+              "Pleural Other"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "synthetic_no_positive_check": {
+    "source": "SYNTHETIC vector (each probability = 0.5 x its threshold); no validation image has zero positives",
+    "positive_findings_empty": true,
+    "query_mode": "no_positive_findings",
+    "query_text": "Chest radiograph without any classifier finding above its operating threshold.",
+    "does_not_claim_normal": true,
+    "highest_probability_not_forced_positive": true
+  }
+}

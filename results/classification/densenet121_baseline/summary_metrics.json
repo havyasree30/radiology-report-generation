@@ -1,0 +1,13 @@
+{
+  "split": "val",
+  "n_images": 28671,
+  "n_patients": 9530,
+  "checkpoint_epoch": 5,
+  "macro_auroc": 0.8037923325159262,
+  "macro_auprc": 0.4236865083205735,
+  "micro_auroc": 0.8916017872786405,
+  "micro_auprc": 0.6708725125414794,
+  "n_classes_defined": 14,
+  "undefined_classes": [],
+  "competition5_macro_auroc": 0.8143725381244582
+}

@@ -1,0 +1,85 @@
+{
+  "checkpoint_sha256_before": "e1c3898936cd51202544819542da8b51b205e0a88459cbff9639a99509f37e6e",
+  "original_c1_reproduction": {
+    "policy": {
+      "name": "amp_fp16_legacy_c1",
+      "autocast_fp16": true,
+      "allow_tf32": true,
+      "cudnn_deterministic": true
+    },
+    "bit_identical_to_audit_reinference": true,
+    "max_abs_diff_vs_old_16digit_csv": 0.0,
+    "stored_sensitivity_max_abs_diff": 0.0,
+    "stored_specificity_max_abs_diff": 1.1102230246251565e-16
+  },
+  "serialization_before_fix": {
+    "file": "results/classification/densenet121_baseline/validation_predictions.csv.gz",
+    "sha256": "288ae5912e473e59072286202f5397e67649344a47d9d6c82460583a4cbd5a33",
+    "writer": "pandas to_csv default (Python repr, shortest round-trip digits): lossless",
+    "reader_used_downstream": "pandas read_csv default C parser: NOT correctly rounded (root cause)",
+    "with_default_reader": {
+      "max_abs_diff": 1.1102230246251565e-16,
+      "bit_identical": false,
+      "status_mismatches": 72,
+      "status_mismatches_valid_entries_only": 69
+    },
+    "with_round_trip_reader": {
+      "max_abs_diff": 0.0,
+      "bit_identical": true,
+      "status_mismatches": 0
+    },
+    "status_mismatches": 72,
+    "status_mismatches_valid_entries_only": 69
+  },
+  "serialization_after_fix": {
+    "npz": {
+      "max_abs_diff": 0.0,
+      "bit_identical": true,
+      "status_mismatches": 0,
+      "file": "results/classification/densenet121_baseline/validation_predictions.npz"
+    },
+    "csv_17_digits": {
+      "max_abs_diff": 0.0,
+      "bit_identical": true,
+      "status_mismatches": 0,
+      "file": "results/classification/densenet121_baseline/validation_predictions.csv.gz"
+    }
+  },
+  "original_operating_points_correction": {
+    "reason": "previously computed from the lossy 16-digit CSV",
+    "ppv_max_abs_change": 0.0001429626396907413,
+    "summary_before": {
+      "n_images": 28671,
+      "predicted_positives_per_image_mean": 5.094067175892016,
+      "predicted_positives_per_image_median": 5.0,
+      "explicit_true_positives_per_image_mean": 2.3989745736109658,
+      "images_with_zero_predicted_positives": 0,
+      "images_with_no_finding_pathology_warning": 6529,
+      "pct_images_with_no_finding_pathology_warning": 22.772139095253046
+    },
+    "summary_after": {
+      "n_images": 28671,
+      "predicted_positives_per_image_mean": 5.096578424191692,
+      "predicted_positives_per_image_median": 5.0,
+      "explicit_true_positives_per_image_mean": 2.3989745736109658,
+      "images_with_zero_predicted_positives": 0,
+      "images_with_no_finding_pathology_warning": 6532,
+      "pct_images_with_no_finding_pathology_warning": 22.782602629835026
+    }
+  },
+  "original_vs_canonical": {
+    "probabilities_total": 401394,
+    "probabilities_changed": 401380,
+    "probability_max_abs_diff": 0.008758544921875,
+    "probability_median_abs_diff": 0.00018505007028579712,
+    "thresholds_changed": 14,
+    "threshold_max_abs_diff": 0.010672256350517273,
+    "statuses_changed_all_entries": 1670,
+    "statuses_changed_valid_entries": 1602,
+    "statuses_changed_if_original_thresholds_kept": 305,
+    "auroc_auprc_changed_classes": 28,
+    "max_abs_diff_auroc_auprc_any": 0.0004543059716922704
+  },
+  "checkpoint_sha256_after": "e1c3898936cd51202544819542da8b51b205e0a88459cbff9639a99509f37e6e",
+  "checkpoint_byte_identical": true
+}

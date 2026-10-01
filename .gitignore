@@ -31,6 +31,7 @@ data/cache/
 # --- Model artifacts & heavy outputs ---
 results/checkpoints/
 results/cache/
+results/classification/_smoke/
 *.pth
 *.pt
 *.ckpt

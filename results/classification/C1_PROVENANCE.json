@@ -1,0 +1,92 @@
+{
+  "baseline_id": "C1",
+  "checkpoint": {
+    "path": "results/classification/densenet121_baseline/checkpoints/best.pt",
+    "sha256": "e1c3898936cd51202544819542da8b51b205e0a88459cbff9639a99509f37e6e",
+    "embedded_git_commit_at_training": "0304f4271967689dcc91a201665c38572c720991",
+    "embedded_note": "training ran with an uncommitted (dirty) working tree; the checkpoint is NOT modified to add a commit. The code commit for C1 is the commit that adds this file (git log --format=%H -n 1 -- results/classification/C1_PROVENANCE.json)."
+  },
+  "config": {
+    "training_config_frozen": "results/classification/densenet121_baseline/config.yaml",
+    "training_config_frozen_sha256": "37aa68829c8642eaa3977ecae0736b9b81698e37a3b33d0b66b0651e8884d210",
+    "current_config": "configs/classifier/densenet121.yaml",
+    "current_config_sha256": "8ef14abf06535c93dd32709c6ba9d9636e593408b4e89734bd596c14ea81cdd4",
+    "current_config_difference": "adds the `inference` section (canonical policy) at C1 finalization"
+  },
+  "code_sha256": {
+    "src/classification/model.py": "2441ea80d3cf8f27c94eb2d7246fc46e920571072188051574c9a03c41059534",
+    "src/classification/losses.py": "80af42e1692eb8325fd4b9ace70978f2ad129ed58e8438326bd57900e7450934",
+    "src/classification/dataset.py": "a09f117d957b2cbbd7fd5a60142c6e52e354e8a1506edd6cd2a727d43daefcc7",
+    "src/classification/trainer.py": "8c614fd8d255741811936b5fa4a3e4fd0186db0a755b8a3c858318b809dafa7c",
+    "src/classification/evaluator.py": "006eb84c8e17cb22ee91527c7effa59070c460536b2f7ed47a88cf99aee5513e",
+    "src/classification/thresholds.py": "8a724e6b828c5cd0e2f3e42ca7d5ac486dec287c7c3e0ca1960f141621a42227",
+    "src/classification/findings.py": "e02bc7abadf382938ed46acb2fb1c34aaee49b915520da5560ee11ca4dc88522",
+    "src/classification/inference_policy.py": "90eec3aee3c52b162a95a104c22d2cef81faf8a0c29bffe689f6fafdbf77eb62",
+    "src/classification/serialization.py": "cd92b6908a7f02769a83e2e5292b3b7473f1862fc7a06abe4158d2730e2267ae",
+    "src/preprocessing/transforms.py": "51bb35bc5ea5cf72815ad6eaacb3f75a147048075c3a2d02684060aeed5ff540",
+    "src/data/label_policies.py": "7cb3c4923b512407ae49289a9e1ba59175658c0ec32eb066c68d6f0e9361b03e",
+    "scripts/evaluate_classifier.py": "5708941979b1bb9d8bb3c44a32f7a67f8f180c3c270319d4e67f319b6e88dfc6",
+    "scripts/infer_classifier.py": "ab8f58aa61693c475c64fd097efae11b6a77ea1faf7ffb4884c91dc6dd4fe0f6",
+    "scripts/finalize_c1.py": "e8bfab95e467ff5bf25c1d520439b188ac6491683f9a460ffed5f68ed7a4b096"
+  },
+  "label_order": [
+    "No Finding",
+    "Enlarged Cardiomediastinum",
+    "Cardiomegaly",
+    "Lung Opacity",
+    "Lung Lesion",
+    "Edema",
+    "Consolidation",
+    "Pneumonia",
+    "Atelectasis",
+    "Pneumothorax",
+    "Pleural Effusion",
+    "Pleural Other",
+    "Fracture",
+    "Support Devices"
+  ],
+  "split": {
+    "manifest": "data/splits/chexpert/chexpert_image_manifest.csv.gz",
+    "manifest_sha256": "c874472af7a5fac7a1f0b6af52e6dd7dbf9d809d2f16d60fbf7c71f9fdb62fc0",
+    "split_metadata_sha256": "3b1f12f6767dc68b2d163d09c46e81f270d4a617f708cc63e01d2f7e9ab0c890",
+    "exclusions_sha256": "4bea3a63da95f59f19de4b86f9bb1d96880be5833925dd0c1a3356b9e901382e"
+  },
+  "preprocessing": {
+    "image_size": 224,
+    "resize": "aspect_preserving_longest_side",
+    "interpolation": "bilinear",
+    "pad_value": 0,
+    "pad_position": "center",
+    "channels": 3,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "evaluation_precision_policy": {
+    "name": "fp32_strict",
+    "autocast_fp16": false,
+    "allow_tf32": false,
+    "cudnn_deterministic": true
+  },
+  "thresholds": {
+    "canonical": "results/classification/densenet121_baseline/evaluation/fp32_strict/thresholds/youden_j_thresholds.json",
+    "canonical_sha256": "189ff132e3ead422afa5dd39cd18f973a1cfd2e196a316dce0bb2b1282140ebb",
+    "original_amp_fp16": "results/classification/densenet121_baseline/thresholds/youden_j_thresholds.json",
+    "original_sha256": "1913715ef16acf1f71c3e9004cfaf0bb557ce6516b5d823530e91ac9b6bbcdaf",
+    "source_split": "val"
+  },
+  "predictions": {
+    "canonical_npz_sha256": "2e4844820ea78f58872b77a661b68fca042b1fd812a209a1c3951d77beb200bf",
+    "original_npz_sha256": "d03829aaa6884bb125cd7350a8e93af6a11c84eeca9dba14335e0fe340f07864"
+  },
+  "finalization_checks": {
+    "checkpoint_byte_identical": true
+  }
+}

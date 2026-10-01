@@ -1,0 +1,6 @@
+# Phase 2 (DenseNet121 classifier) direct dependencies, on top of requirements-eda.txt.
+# CUDA 12.8 build for the NVIDIA RTX 3050 (driver supports CUDA 13.2). Install with:
+#   pip install -r requirements-classifier.txt --extra-index-url https://download.pytorch.org/whl/cu128
+-r requirements-eda.txt
+torch==2.11.0+cu128
+torchvision==0.26.0+cu128
