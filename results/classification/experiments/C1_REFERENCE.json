@@ -1,0 +1,101 @@
+{
+  "reference": "C1 (frozen historical baseline), canonical fp32_strict re-evaluation of the verified checkpoint",
+  "recorded_before_any_C2_result": true,
+  "checkpoint_sha256": "e1c3898936cd51202544819542da8b51b205e0a88459cbff9639a99509f37e6e",
+  "loss": "masked BCE with sqrt-tempered train-split pos_weight",
+  "selection_metric": "val_macro_auroc (epoch 5)",
+  "training_tf32": true,
+  "caveat": "C1 used macro-AUROC checkpoint selection and TF32-on training; C2 arms use macro-AUPRC selection and TF32 off. C1 is an external reference, not a controlled C2 arm.",
+  "overall": {
+    "macro_auroc": 0.8038321751781142,
+    "micro_auroc": 0.8917159521198125,
+    "macro_auprc": 0.42376127236899525,
+    "micro_auprc": 0.6713268185131717
+  },
+  "per_class": {
+    "No Finding": {
+      "auroc": 0.8838412265655555,
+      "auprc": 0.4815164852516415,
+      "positive_support": 2538,
+      "prevalence": 0.0885215025635659
+    },
+    "Enlarged Cardiomediastinum": {
+      "auroc": 0.6984907693542259,
+      "auprc": 0.1423520908471255,
+      "positive_support": 1373,
+      "prevalence": 0.0506231103900892
+    },
+    "Cardiomegaly": {
+      "auroc": 0.8686109042906462,
+      "auprc": 0.5648761763702383,
+      "positive_support": 3465,
+      "prevalence": 0.1252802082580085
+    },
+    "Lung Opacity": {
+      "auroc": 0.7366409813095584,
+      "auprc": 0.7095038670674472,
+      "positive_support": 14127,
+      "prevalence": 0.5045717551253661
+    },
+    "Lung Lesion": {
+      "auroc": 0.7773275031006337,
+      "auprc": 0.1935398275736177,
+      "positive_support": 1064,
+      "prevalence": 0.0373307136341309
+    },
+    "Edema": {
+      "auroc": 0.8526359284747805,
+      "auprc": 0.6787158919096743,
+      "positive_support": 7426,
+      "prevalence": 0.2763162790697674
+    },
+    "Consolidation": {
+      "auroc": 0.7496873510668264,
+      "auprc": 0.2049065498701461,
+      "positive_support": 1960,
+      "prevalence": 0.0784062725018001
+    },
+    "Pneumonia": {
+      "auroc": 0.7698047946490771,
+      "auprc": 0.1300918828958116,
+      "positive_support": 715,
+      "prevalence": 0.0272463989025226
+    },
+    "Atelectasis": {
+      "auroc": 0.7158687996944204,
+      "auprc": 0.3552947458807383,
+      "positive_support": 4462,
+      "prevalence": 0.1850300642753472
+    },
+    "Pneumothorax": {
+      "auroc": 0.864805278301506,
+      "auprc": 0.4985213130309069,
+      "positive_support": 2632,
+      "prevalence": 0.0931252874783285
+    },
+    "Pleural Effusion": {
+      "auroc": 0.8851917318155808,
+      "auprc": 0.8395781924060712,
+      "positive_support": 11543,
+      "prevalence": 0.4242346282480061
+    },
+    "Pleural Other": {
+      "auroc": 0.7967442227757148,
+      "auprc": 0.0830687961890989,
+      "positive_support": 381,
+      "prevalence": 0.0134154929577464
+    },
+    "Fracture": {
+      "auroc": 0.8004480412428263,
+      "auprc": 0.1880557562178496,
+      "positive_support": 1092,
+      "prevalence": 0.0381951731374606
+    },
+    "Support Devices": {
+      "auroc": 0.8535529198522485,
+      "auprc": 0.8626362376555667,
+      "positive_support": 16003,
+      "prevalence": 0.5606628595452475
+    }
+  }
+}

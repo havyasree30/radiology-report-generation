@@ -160,9 +160,10 @@ def run_training(cfg: dict, out_dir: Path, subset: dict | None = None, require_c
         model.train()
         sm = summary_metrics(pred["targets"], pred["probs"], pred["mask"])
         val_time = time.time() - t1
-        metric = sm["macro_auroc"]
+        metric = sm[_metric_key(tcfg["monitor"])]          # checkpoint selection / early stopping
+        sched_metric = sm[_metric_key(scfg["monitor"])]    # learning-rate scheduler
         row = {"epoch": epoch, "train_loss": run_loss / max(n_batches, 1), "val_loss": pred["loss"],
-               "val_macro_auroc": metric, "val_micro_auroc": sm["micro_auroc"], "val_macro_auprc": sm["macro_auprc"],
+               "val_macro_auroc": sm["macro_auroc"], "val_micro_auroc": sm["micro_auroc"], "val_macro_auprc": sm["macro_auprc"],
                "val_micro_auprc": sm["micro_auprc"], "lr": optimizer.param_groups[0]["lr"],
                "grad_norm_median": float(np.median(grad_norms)) if grad_norms else np.nan,
                "grad_norm_p99": float(np.percentile(grad_norms, 99)) if grad_norms else np.nan,
@@ -172,10 +173,12 @@ def run_training(cfg: dict, out_dir: Path, subset: dict | None = None, require_c
                "peak_gpu_mem_gb": torch.cuda.max_memory_allocated() / 1e9 if device.type == "cuda" else np.nan}
         for rr in per_class_metrics(pred["targets"], pred["probs"], pred["mask"]).itertuples():
             row[f"auroc::{rr.observation}"] = rr.auroc
+            row[f"auprc::{rr.observation}"] = rr.auprc
         history.append(row)
         pd.DataFrame(history).to_csv(out_dir / "training_history.csv", index=False)
-        log.info("epoch %d | train %.4f | val %.4f | macroAUROC %.4f | %.0fs+%.0fs | peak %.2f GB",
-                 epoch, row["train_loss"], row["val_loss"], metric, train_time, val_time, row["peak_gpu_mem_gb"])
+        log.info("epoch %d | train %.4f | val %.4f | macroAUROC %.4f | macroAUPRC %.4f | %s %.4f | %.0fs+%.0fs | peak %.2f GB",
+                 epoch, row["train_loss"], row["val_loss"], sm["macro_auroc"], sm["macro_auprc"], tcfg["monitor"], metric,
+                 train_time, val_time, row["peak_gpu_mem_gb"])
 
         meta = dict(meta_base, epoch=epoch, val_metric=metric, val_loss=pred["loss"], train_loss=row["train_loss"])
         save_checkpoint(out_dir / "checkpoints" / "final.pt", model, meta, optimizer, scheduler)
@@ -184,15 +187,17 @@ def run_training(cfg: dict, out_dir: Path, subset: dict | None = None, require_c
             save_checkpoint(out_dir / "checkpoints" / "best.pt", model, dict(meta, selected_as="best"))
         else:
             bad_epochs += 1
-        scheduler.step(metric)
-        if bad_epochs >= tcfg["early_stopping_patience"]:
+        scheduler.step(sched_metric)
+        if bad_epochs >= tcfg["early_stopping_patience"] and epoch < tcfg["max_epochs"]:
             log.info("early stopping after epoch %d (no improvement for %d epochs)", epoch, bad_epochs)
             break
 
     hist = pd.DataFrame(history)
-    best_row = hist.loc[hist["val_macro_auroc"].idxmax()]
+    best_row = hist.loc[hist[tcfg["monitor"]].idxmax()]
     summary = {"counts": counts, "epochs_run": len(hist), "best_epoch": int(best_row["epoch"]),
+               "selection_metric": tcfg["monitor"], "best_selection_metric": float(best_row[tcfg["monitor"]]),
                "best_val_macro_auroc": float(best_row["val_macro_auroc"]),
+               "best_val_macro_auprc": float(best_row["val_macro_auprc"]),
                "best_epoch_train_loss": float(best_row["train_loss"]), "best_epoch_val_loss": float(best_row["val_loss"]),
                "total_seconds": time.time() - t_start, "peak_gpu_mem_gb": float(hist["peak_gpu_mem_gb"].max()),
                "stopped_early": len(hist) < tcfg["max_epochs"]}
@@ -200,7 +205,28 @@ def run_training(cfg: dict, out_dir: Path, subset: dict | None = None, require_c
     (out_dir / "environment.json").write_text(json.dumps(env, indent=2, default=str), encoding="utf-8")
     (out_dir / "config.yaml").write_text(yaml.safe_dump(copy.deepcopy(cfg), sort_keys=False), encoding="utf-8")
     (out_dir / "training_summary.json").write_text(json.dumps(summary, indent=2, default=float), encoding="utf-8")
+    ck = out_dir / "checkpoints" / "best.pt"
+    (out_dir / "checkpoint_sha256.json").write_text(json.dumps(
+        {"best.pt": {"sha256": _sha256(ck), "size_bytes": ck.stat().st_size, "epoch": summary["best_epoch"]}},
+        indent=2), encoding="utf-8")
     return summary
+
+
+def _metric_key(monitor: str) -> str:
+    keys = {"val_macro_auroc": "macro_auroc", "val_macro_auprc": "macro_auprc",
+            "val_micro_auroc": "micro_auroc", "val_micro_auprc": "micro_auprc"}
+    if monitor not in keys:
+        raise ValueError(f"unsupported monitor {monitor!r}; choose from {sorted(keys)}")
+    return keys[monitor]
+
+
+def _sha256(path: Path) -> str:
+    import hashlib
+    h = hashlib.sha256()
+    with open(path, "rb") as fh:
+        for c in iter(lambda: fh.read(1 << 20), b""):
+            h.update(c)
+    return h.hexdigest()
 
 
 def phase1_pos_weight(view: str, policy_name: str) -> dict:
