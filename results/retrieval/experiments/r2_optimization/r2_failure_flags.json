@@ -1,0 +1,10 @@
+{
+  "R1_Q0_dense": {
+    "duplicate_text_in_topK": 0.49162011173184356,
+    "query_study_has_ambiguous_terms": 0.04189944134078212
+  },
+  "R2_final": {
+    "duplicate_text_in_topK": 0.5139664804469274,
+    "query_study_has_ambiguous_terms": 0.04189944134078212
+  }
+}

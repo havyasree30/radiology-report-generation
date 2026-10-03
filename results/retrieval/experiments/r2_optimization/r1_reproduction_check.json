@@ -1,0 +1,31 @@
+{
+  "r1_order": {
+    "n_rows": 2238,
+    "n_lists_not_identical_to_r1": 0,
+    "max_abs_metric_difference_any_query": 1.1102230246251565e-16,
+    "primary_set_abs_difference_in_mean_jaccard@3": {
+      "dense_minilm|classifier_all_positive": 0.0,
+      "dense_minilm|classifier_gated": 0.0,
+      "dense_minilm|oracle": 0.0,
+      "lexical_bm25|classifier_all_positive": 0.0,
+      "lexical_bm25|classifier_gated": 0.0,
+      "lexical_bm25|oracle": 0.0
+    }
+  },
+  "r2_order": {
+    "n_rows": 2238,
+    "n_lists_not_identical_to_r1": 599,
+    "max_abs_metric_difference_any_query": 0.002794981002807617,
+    "primary_set_abs_difference_in_mean_jaccard@3": {
+      "dense_minilm|classifier_all_positive": 0.0,
+      "dense_minilm|classifier_gated": 0.0,
+      "dense_minilm|oracle": 0.0,
+      "lexical_bm25|classifier_all_positive": 0.0,
+      "lexical_bm25|classifier_gated": 0.0,
+      "lexical_bm25|oracle": 0.0
+    }
+  },
+  "r1_reproduced_exactly": true,
+  "note": "r1_order = FAISS k=10 order used by R1 (reproduced exactly). r2_order = the deterministic tie rule used for every R2 comparison; it differs from R1 only in the order of exactly tied (identical-embedding) reports, which affects a handful of lists.",
+  "primary_set_size": 358
+}

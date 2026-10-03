@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "c1_c6_and_r1_files_checked": 533,
+  "files_changed": [],
+  "files_missing": [],
+  "files_added_in_checked_roots": [],
+  "checkpoint_unchanged": true,
+  "c4_thresholds_unchanged": true,
+  "c5_platt_parameters_unchanged": true,
+  "c6_freeze_manifest_files_all_match": true,
+  "r2_code_files_scanned": [
+    "r2_01_protocol_and_reproduction.py",
+    "r2_02_experiments.py",
+    "r2_03_error_analysis_and_config.py",
+    "r2_04_figures_tables.py",
+    "r2_05_write_docs.py",
+    "r2_06_integrity.py",
+    "expansion.py",
+    "fusion.py",
+    "diversity.py",
+    "evaluation.py",
+    "r2_context.py"
+  ],
+  "fit_tune_or_checkpoint_calls_in_r2_code": {},
+  "allow_locked_true_in_r2_code": {},
+  "locked_retrieval_test_studies_in_r2_outputs": {
+    "per_query_metrics_all_configs.csv": 0,
+    "retrieval_top10_all_configs.csv.gz": 0,
+    "final_pipeline_top10.csv.gz": 0,
+    "r2_error_analysis.csv": 0
+  },
+  "embedding_model_weights_unchanged_not_fine_tuned": true,
+  "r1_baselines_reproduced_exactly": true,
+  "protocol_ordering": {
+    "protocol_created_utc": "2026-10-03T07:00:15+00:00",
+    "protocol_written_before_evaluation_flag": true,
+    "protocol_mtime_before_results": true,
+    "expansion_mapping_mtime_before_results": true,
+    "protocol_sha256_matches_stage_decisions": true,
+    "expansion_sha256_matches_protocol": true
+  },
+  "locked_chexpert_test_used_by_r2": false,
+  "git_head": "f1a83bc396cc4ec126894b1641bc9317cbc73cf9",
+  "git_branch": "r2-retrieval-optimization"
+}

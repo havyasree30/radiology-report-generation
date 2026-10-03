@@ -1,0 +1,717 @@
+system,uid,truth,query,query_findings,top1_uid,top1_findings,top1_exact,coverage_fail_at_K,duplicate_text_in_topK,query_study_has_ambiguous_terms,K,exact_match_possible,query_equals_truth,category_top1_failure,category_coverage_failure
+R1_Q0_dense,20,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,23,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,33,Support Devices,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,50,Cardiomegaly,cardiomegaly pulmonary edema,Cardiomegaly;Edema,1375,Cardiomegaly;Edema,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,54,Atelectasis,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,66,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,72,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,73,Atelectasis;Pleural Effusion,pleural effusion,Pleural Effusion,3365,No Finding,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,78,Atelectasis,lung opacity atelectasis pleural effusion,Atelectasis;Lung Opacity;Pleural Effusion,1016,Atelectasis;Lung Opacity;Pleural Effusion;Pleural Other,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,80,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,113,Lung Lesion;Lung Opacity,no acute abnormality,No Finding,1975,No Finding,False,True,True,True,5,True,False,D,D
+R1_Q0_dense,117,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,144,Atelectasis;Lung Opacity,enlarged cardiomediastinum,Enlarged Cardiomediastinum,1233,Atelectasis;Cardiomegaly,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,152,Cardiomegaly;Fracture,enlarged cardiomediastinum lung lesion fracture,Enlarged Cardiomediastinum;Fracture;Lung Lesion,429,No Finding,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,160,Lung Opacity,lung opacity pneumonia pleural effusion,Lung Opacity;Pleural Effusion;Pneumonia,742,Lung Opacity,True,False,False,False,5,True,False,none,none
+R1_Q0_dense,188,Atelectasis;Lung Opacity;Pleural Effusion,cardiomegaly lung opacity consolidation pleural effusion,Cardiomegaly;Consolidation;Lung Opacity;Pleural Effusion,1743,Cardiomegaly,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,189,Atelectasis;Lung Opacity,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,195,No Finding,pneumonia,Pneumonia,1618,No Finding,True,False,False,False,5,True,False,none,none
+R1_Q0_dense,220,Lung Lesion;Support Devices,lung opacity lung lesion consolidation pneumonia pleural abnormality,Consolidation;Lung Lesion;Lung Opacity;Pleural Other;Pneumonia,742,Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,222,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,229,Lung Lesion,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,249,Lung Lesion,lung opacity lung lesion,Lung Lesion;Lung Opacity,1972,Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,266,Cardiomegaly,enlarged cardiomediastinum cardiomegaly,Cardiomegaly;Enlarged Cardiomediastinum,1233,Atelectasis;Cardiomegaly,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,268,Lung Opacity;Pneumonia,lung opacity consolidation pneumonia,Consolidation;Lung Opacity;Pneumonia,742,Lung Opacity,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,278,Lung Lesion;Lung Opacity,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,290,Support Devices,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,298,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,310,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,317,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,325,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,332,Lung Opacity,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,335,Support Devices,support device,Support Devices,3929,Cardiomegaly;Support Devices,False,False,False,False,5,True,True,C,none
+R1_Q0_dense,338,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,368,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,373,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,382,Lung Opacity,lung opacity lung lesion pneumothorax,Lung Lesion;Lung Opacity;Pneumothorax,2886,Lung Opacity;Pleural Effusion,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,392,Support Devices,support device,Support Devices,3929,Cardiomegaly;Support Devices,False,False,False,False,5,True,True,C,none
+R1_Q0_dense,406,Lung Lesion,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,407,No Finding,support device,Support Devices,3929,Cardiomegaly;Support Devices,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,419,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,427,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,436,Cardiomegaly,lung opacity consolidation pneumonia atelectasis pleural effusion fracture,Atelectasis;Consolidation;Fracture;Lung Opacity;Pleural Effusion;Pneumonia,2325,Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,438,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,441,Lung Lesion,fracture,Fracture,2588,,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,450,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,481,Support Devices,enlarged cardiomediastinum support device,Enlarged Cardiomediastinum;Support Devices,1233,Atelectasis;Cardiomegaly,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,483,Cardiomegaly,atelectasis,Atelectasis,3140,Atelectasis;Lung Opacity,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,499,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,501,Lung Opacity,pneumonia,Pneumonia,1618,No Finding,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,504,Atelectasis;Lung Opacity,lung opacity atelectasis fracture,Atelectasis;Fracture;Lung Opacity,3721,Atelectasis;Lung Opacity,True,False,False,False,5,True,False,none,none
+R1_Q0_dense,505,No Finding,lung opacity pleural abnormality fracture,Fracture;Lung Opacity;Pleural Other,1016,Atelectasis;Lung Opacity;Pleural Effusion;Pleural Other,False,False,False,False,5,True,False,D,none
+R1_Q0_dense,508,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,514,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,522,Atelectasis,fracture,Fracture,2588,,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,530,Cardiomegaly,cardiomegaly,Cardiomegaly,2040,Cardiomegaly,True,False,False,False,5,True,True,none,none
+R1_Q0_dense,546,Pleural Effusion,cardiomegaly lung opacity pleural effusion,Cardiomegaly;Lung Opacity;Pleural Effusion,2263,Atelectasis;Cardiomegaly;Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,569,Lung Opacity;Support Devices,lung opacity atelectasis pneumothorax pleural effusion pleural abnormality fracture support device,Atelectasis;Fracture;Lung Opacity;Pleural Effusion;Pleural Other;Pneumothorax;Support Devices,1016,Atelectasis;Lung Opacity;Pleural Effusion;Pleural Other,False,True,False,True,5,True,False,A,A
+R1_Q0_dense,573,Lung Opacity;Support Devices,lung opacity,Lung Opacity,1972,Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,579,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,582,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,584,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,586,Atelectasis;Cardiomegaly;Lung Opacity,cardiomegaly lung opacity consolidation pneumonia,Cardiomegaly;Consolidation;Lung Opacity;Pneumonia,1740,Consolidation;Lung Opacity,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,601,Lung Opacity;Support Devices,lung opacity consolidation pneumonia support device,Consolidation;Lung Opacity;Pneumonia;Support Devices,1699,Consolidation;Pleural Effusion;Pneumonia;Support Devices,False,False,False,True,5,True,False,A,none
+R1_Q0_dense,608,Fracture,fracture,Fracture,2588,,False,False,False,False,5,True,True,B,none
+R1_Q0_dense,618,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,661,Support Devices,pleural effusion,Pleural Effusion,3365,No Finding,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,665,Cardiomegaly,cardiomegaly,Cardiomegaly,2040,Cardiomegaly,True,False,False,False,5,True,True,none,none
+R1_Q0_dense,668,No Finding,atelectasis,Atelectasis,3140,Atelectasis;Lung Opacity,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,672,Cardiomegaly;Edema,lung opacity consolidation pneumonia pleural effusion,Consolidation;Lung Opacity;Pleural Effusion;Pneumonia,742,Lung Opacity,False,True,False,True,5,True,False,A,A
+R1_Q0_dense,683,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,688,Atelectasis;Lung Opacity;Pleural Other,lung opacity pneumonia atelectasis,Atelectasis;Lung Opacity;Pneumonia,742,Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,689,Lung Lesion,lung opacity lung lesion,Lung Lesion;Lung Opacity,1972,Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,691,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,709,Fracture,fracture,Fracture,2588,,False,False,False,False,5,True,True,B,none
+R1_Q0_dense,716,Cardiomegaly,cardiomegaly pneumonia,Cardiomegaly;Pneumonia,3328,Cardiomegaly;Pleural Effusion,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,725,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,731,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,733,Support Devices,support device,Support Devices,3929,Cardiomegaly;Support Devices,False,False,False,False,5,True,True,C,none
+R1_Q0_dense,739,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,744,Lung Opacity,pneumothorax support device,Pneumothorax;Support Devices,1570,,False,False,False,True,5,True,False,A,none
+R1_Q0_dense,756,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,758,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,760,Atelectasis;Lung Opacity,lung opacity pneumonia fracture,Fracture;Lung Opacity;Pneumonia,742,Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,766,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,793,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,808,Atelectasis;Lung Opacity;Pneumonia,lung opacity consolidation pneumonia atelectasis,Atelectasis;Consolidation;Lung Opacity;Pneumonia,742,Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,841,Support Devices,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,844,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,847,Cardiomegaly,lung opacity atelectasis fracture,Atelectasis;Fracture;Lung Opacity,3721,Atelectasis;Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,867,Support Devices,fracture,Fracture,2588,,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,868,Lung Opacity;Support Devices,lung lesion,Lung Lesion,1220,,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,882,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,906,Cardiomegaly,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,912,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,929,Atelectasis;Lung Opacity,lung lesion fracture,Fracture;Lung Lesion,2588,,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,937,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,940,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,941,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,955,Support Devices,lung opacity consolidation pneumonia,Consolidation;Lung Opacity;Pneumonia,742,Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,959,Lung Opacity,lung opacity,Lung Opacity,1972,Lung Opacity,True,False,False,False,5,True,True,none,none
+R1_Q0_dense,961,Lung Opacity,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,962,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,972,Atelectasis;Lung Opacity,enlarged cardiomediastinum lung lesion,Enlarged Cardiomediastinum;Lung Lesion,1233,Atelectasis;Cardiomegaly,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,980,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,981,Cardiomegaly,enlarged cardiomediastinum cardiomegaly,Cardiomegaly;Enlarged Cardiomediastinum,1233,Atelectasis;Cardiomegaly,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,984,Atelectasis;Lung Opacity,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,1049,No Finding,support device,Support Devices,3929,Cardiomegaly;Support Devices,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,1055,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1064,Atelectasis;Lung Opacity,lung opacity consolidation atelectasis pleural effusion fracture,Atelectasis;Consolidation;Fracture;Lung Opacity;Pleural Effusion,702,Atelectasis;Lung Opacity;Pleural Effusion,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,1079,Atelectasis,atelectasis,Atelectasis,3140,Atelectasis;Lung Opacity,False,False,False,False,5,True,True,C,none
+R1_Q0_dense,1085,Atelectasis;Lung Opacity,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,1125,Cardiomegaly;Lung Opacity,lung opacity,Lung Opacity,1972,Lung Opacity,False,True,False,True,5,True,False,A,A
+R1_Q0_dense,1159,No Finding,support device,Support Devices,3929,Cardiomegaly;Support Devices,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,1162,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1191,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1206,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,1214,Atelectasis,lung opacity consolidation pneumonia,Consolidation;Lung Opacity;Pneumonia,742,Lung Opacity,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,1226,Consolidation;Pneumonia,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,1234,Atelectasis;Cardiomegaly;Support Devices,cardiomegaly,Cardiomegaly,2040,Cardiomegaly,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,1239,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1260,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1263,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1277,Atelectasis,fracture,Fracture,2588,,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,1285,Lung Lesion,pleural effusion,Pleural Effusion,3365,No Finding,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,1288,Lung Opacity,atelectasis,Atelectasis,3140,Atelectasis;Lung Opacity,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,1294,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1314,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1334,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,1361,Cardiomegaly;Lung Opacity,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,1365,Fracture,no acute abnormality,No Finding,1975,No Finding,False,True,True,True,5,True,False,D,D
+R1_Q0_dense,1380,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1394,Lung Lesion,pneumonia,Pneumonia,1618,No Finding,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,1397,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1422,Consolidation;Lung Opacity;Pneumonia,lung opacity lung lesion consolidation pneumonia,Consolidation;Lung Lesion;Lung Opacity;Pneumonia,742,Lung Opacity,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,1431,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1435,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1451,Atelectasis,lung opacity fracture,Fracture;Lung Opacity,3344,Lung Opacity,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,1456,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,1466,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1473,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1502,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1503,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1510,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1518,No Finding,enlarged cardiomediastinum cardiomegaly,Cardiomegaly;Enlarged Cardiomediastinum,1233,Atelectasis;Cardiomegaly,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,1529,Support Devices,atelectasis,Atelectasis,3140,Atelectasis;Lung Opacity,False,True,False,True,5,True,False,A,A
+R1_Q0_dense,1537,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1545,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,1556,Lung Opacity,lung opacity consolidation atelectasis pleural effusion,Atelectasis;Consolidation;Lung Opacity;Pleural Effusion,1016,Atelectasis;Lung Opacity;Pleural Effusion;Pleural Other,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,1567,Lung Opacity,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,1581,Lung Lesion,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,1582,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1595,Cardiomegaly;Lung Opacity,enlarged cardiomediastinum cardiomegaly lung opacity pulmonary edema,Cardiomegaly;Edema;Enlarged Cardiomediastinum;Lung Opacity,2263,Atelectasis;Cardiomegaly;Lung Opacity,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,1616,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1622,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1623,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1631,Lung Lesion;Lung Opacity,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,1647,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,1655,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1661,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,1672,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1707,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1735,Support Devices,pleural effusion fracture,Fracture;Pleural Effusion,2588,,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,1748,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1751,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1753,Cardiomegaly,cardiomegaly lung opacity pulmonary edema,Cardiomegaly;Edema;Lung Opacity,2263,Atelectasis;Cardiomegaly;Lung Opacity,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,1819,Atelectasis;Cardiomegaly;Lung Opacity,enlarged cardiomediastinum cardiomegaly lung opacity pulmonary edema atelectasis,Atelectasis;Cardiomegaly;Edema;Enlarged Cardiomediastinum;Lung Opacity,2263,Atelectasis;Cardiomegaly;Lung Opacity,True,False,False,True,5,True,False,none,none
+R1_Q0_dense,1826,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1832,Atelectasis;Cardiomegaly;Lung Opacity,cardiomegaly lung opacity pulmonary edema pleural effusion,Cardiomegaly;Edema;Lung Opacity;Pleural Effusion,2263,Atelectasis;Cardiomegaly;Lung Opacity,True,False,False,False,5,True,False,none,none
+R1_Q0_dense,1833,Atelectasis,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,1837,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1882,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1907,No Finding,cardiomegaly,Cardiomegaly,2040,Cardiomegaly,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,1914,Lung Opacity,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,1918,Lung Opacity;Support Devices,enlarged cardiomediastinum,Enlarged Cardiomediastinum,1233,Atelectasis;Cardiomegaly,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,1937,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1947,Lung Lesion,fracture,Fracture,2588,,False,True,False,True,5,True,False,A,A
+R1_Q0_dense,1948,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1960,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1976,Lung Opacity,lung opacity consolidation pneumonia,Consolidation;Lung Opacity;Pneumonia,742,Lung Opacity,True,False,False,False,5,True,False,none,none
+R1_Q0_dense,1980,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,1988,Lung Lesion;Lung Opacity,lung opacity pulmonary edema pneumonia,Edema;Lung Opacity;Pneumonia,742,Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,2003,Cardiomegaly,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,2006,Cardiomegaly,fracture,Fracture,2588,,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,2026,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2038,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2062,Atelectasis;Lung Opacity;Support Devices,lung opacity consolidation pneumonia,Consolidation;Lung Opacity;Pneumonia,742,Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,2066,Atelectasis;Cardiomegaly;Lung Opacity,enlarged cardiomediastinum cardiomegaly,Cardiomegaly;Enlarged Cardiomediastinum,1233,Atelectasis;Cardiomegaly,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,2069,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2074,Atelectasis;Lung Opacity;Pleural Effusion,enlarged cardiomediastinum pleural effusion,Enlarged Cardiomediastinum;Pleural Effusion,2194,Cardiomegaly;Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,2075,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2096,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2116,Fracture,lung lesion,Lung Lesion,1220,,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,2138,Fracture;Lung Opacity,lung opacity lung lesion fracture,Fracture;Lung Lesion;Lung Opacity,3344,Lung Opacity,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,2140,Fracture,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,2148,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2157,No Finding,pleural abnormality,Pleural Other,2814,Cardiomegaly,False,False,False,False,5,True,False,D,none
+R1_Q0_dense,2160,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,2170,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2191,Cardiomegaly;Lung Opacity,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,2207,Lung Opacity;Pneumonia,fracture,Fracture,2588,,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,2212,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2223,No Finding,pulmonary edema,Edema,1711,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,2228,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2236,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2238,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,2239,Lung Opacity;Support Devices,lung opacity pneumonia,Lung Opacity;Pneumonia,742,Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,2244,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2277,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2290,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2310,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2313,No Finding,enlarged cardiomediastinum,Enlarged Cardiomediastinum,1233,Atelectasis;Cardiomegaly,False,False,False,False,5,True,False,D,none
+R1_Q0_dense,2326,Cardiomegaly,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,2363,Lung Opacity;Pneumonia,lung opacity consolidation pneumonia pleural effusion,Consolidation;Lung Opacity;Pleural Effusion;Pneumonia,742,Lung Opacity,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,2365,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2377,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2388,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2396,Edema;Lung Opacity,lung opacity,Lung Opacity,1972,Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,2415,Cardiomegaly;Lung Opacity,lung opacity consolidation atelectasis pleural effusion pleural abnormality,Atelectasis;Consolidation;Lung Opacity;Pleural Effusion;Pleural Other,702,Atelectasis;Lung Opacity;Pleural Effusion,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,2453,No Finding,pneumonia,Pneumonia,1618,No Finding,True,False,False,False,5,True,False,none,none
+R1_Q0_dense,2475,Cardiomegaly,enlarged cardiomediastinum,Enlarged Cardiomediastinum,1233,Atelectasis;Cardiomegaly,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,2493,No Finding,enlarged cardiomediastinum fracture,Enlarged Cardiomediastinum;Fracture,429,No Finding,True,False,False,False,5,True,False,none,none
+R1_Q0_dense,2513,Atelectasis,lung opacity atelectasis pleural effusion,Atelectasis;Lung Opacity;Pleural Effusion,1016,Atelectasis;Lung Opacity;Pleural Effusion;Pleural Other,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,2517,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2533,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,2545,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2564,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2591,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2594,Atelectasis;Lung Opacity,enlarged cardiomediastinum fracture,Enlarged Cardiomediastinum;Fracture,429,No Finding,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,2596,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2605,No Finding,lung opacity pleural effusion,Lung Opacity;Pleural Effusion,1016,Atelectasis;Lung Opacity;Pleural Effusion;Pleural Other,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,2612,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2616,Pleural Effusion,pleural effusion pleural abnormality,Pleural Effusion;Pleural Other,3365,No Finding,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,2622,Support Devices,pleural abnormality,Pleural Other,2814,Cardiomegaly,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,2629,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,2644,Cardiomegaly;Lung Lesion,enlarged cardiomediastinum cardiomegaly,Cardiomegaly;Enlarged Cardiomediastinum,1233,Atelectasis;Cardiomegaly,False,True,False,True,5,True,False,A,A
+R1_Q0_dense,2691,Cardiomegaly,enlarged cardiomediastinum,Enlarged Cardiomediastinum,1233,Atelectasis;Cardiomegaly,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,2697,No Finding,cardiomegaly,Cardiomegaly,2040,Cardiomegaly,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,2698,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2709,Lung Opacity,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,2720,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2723,Atelectasis,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,2737,Atelectasis,fracture,Fracture,2588,,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,2747,Pleural Effusion,atelectasis,Atelectasis,3140,Atelectasis;Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,2758,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2765,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,2778,Support Devices,support device,Support Devices,3929,Cardiomegaly;Support Devices,False,False,False,False,5,True,True,C,none
+R1_Q0_dense,2817,Lung Opacity;Pleural Effusion;Pleural Other,lung opacity pneumonia pleural abnormality,Lung Opacity;Pleural Other;Pneumonia,742,Lung Opacity,False,True,False,False,5,False,False,A,A
+R1_Q0_dense,2831,Pleural Effusion;Pneumothorax;Support Devices,pleural effusion,Pleural Effusion,3365,No Finding,False,True,False,False,5,False,False,A,A
+R1_Q0_dense,2832,Cardiomegaly,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,2833,No Finding,pneumothorax,Pneumothorax,1570,,False,False,False,False,5,True,False,D,none
+R1_Q0_dense,2852,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2860,Support Devices,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,2866,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2870,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2884,Support Devices,cardiomegaly,Cardiomegaly,2040,Cardiomegaly,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,2894,Support Devices,support device,Support Devices,3929,Cardiomegaly;Support Devices,False,False,False,False,5,True,True,C,none
+R1_Q0_dense,2898,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2902,No Finding,pleural effusion pleural abnormality,Pleural Effusion;Pleural Other,3365,No Finding,True,False,False,False,5,True,False,none,none
+R1_Q0_dense,2910,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2916,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,2936,Cardiomegaly,enlarged cardiomediastinum cardiomegaly,Cardiomegaly;Enlarged Cardiomediastinum,1233,Atelectasis;Cardiomegaly,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,2955,Cardiomegaly,enlarged cardiomediastinum cardiomegaly pulmonary edema,Cardiomegaly;Edema;Enlarged Cardiomediastinum,2570,Cardiomegaly;Edema;Pleural Other,False,False,False,True,5,True,False,A,none
+R1_Q0_dense,2957,Atelectasis;Cardiomegaly;Lung Opacity,lung opacity lung lesion pneumonia atelectasis,Atelectasis;Lung Lesion;Lung Opacity;Pneumonia,742,Lung Opacity,False,True,False,True,5,True,False,A,A
+R1_Q0_dense,2964,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3004,Atelectasis;Lung Opacity,lung opacity pleural abnormality,Lung Opacity;Pleural Other,1016,Atelectasis;Lung Opacity;Pleural Effusion;Pleural Other,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,3010,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3022,Lung Lesion,lung opacity lung lesion consolidation pneumonia,Consolidation;Lung Lesion;Lung Opacity;Pneumonia,742,Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,3025,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,3045,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3049,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,3060,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3069,Lung Opacity;Pneumonia,lung lesion consolidation pneumonia,Consolidation;Lung Lesion;Pneumonia,1699,Consolidation;Pleural Effusion;Pneumonia;Support Devices,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,3115,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3117,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3134,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3135,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,3148,Cardiomegaly;Pleural Effusion,enlarged cardiomediastinum atelectasis pleural effusion,Atelectasis;Enlarged Cardiomediastinum;Pleural Effusion,2194,Cardiomegaly;Lung Opacity,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,3158,Atelectasis;Cardiomegaly;Lung Opacity,pleural effusion,Pleural Effusion,3365,No Finding,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,3180,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3183,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3191,Cardiomegaly,enlarged cardiomediastinum cardiomegaly pleural abnormality,Cardiomegaly;Enlarged Cardiomediastinum;Pleural Other,2194,Cardiomegaly;Lung Opacity,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,3195,Lung Opacity;Support Devices,lung opacity pulmonary edema atelectasis pleural effusion,Atelectasis;Edema;Lung Opacity;Pleural Effusion,3140,Atelectasis;Lung Opacity,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,3207,Cardiomegaly,cardiomegaly,Cardiomegaly,2040,Cardiomegaly,True,False,False,False,5,True,True,none,none
+R1_Q0_dense,3214,Cardiomegaly;Pleural Effusion,cardiomegaly,Cardiomegaly,2040,Cardiomegaly,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,3216,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3221,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3253,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,3279,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3281,Lung Lesion,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,3285,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3290,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,3347,Support Devices,fracture,Fracture,2588,,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,3358,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3363,Lung Opacity,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,3369,Atelectasis;Lung Opacity;Pneumothorax,pneumothorax fracture,Fracture;Pneumothorax,2588,,False,False,False,False,5,False,False,A,none
+R1_Q0_dense,3370,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3374,Lung Lesion,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,3378,Fracture;Pneumothorax,fracture,Fracture,2588,,False,True,False,False,5,False,False,A,A
+R1_Q0_dense,3379,Cardiomegaly;Lung Opacity,enlarged cardiomediastinum,Enlarged Cardiomediastinum,1233,Atelectasis;Cardiomegaly,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,3386,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3434,No Finding,lung opacity pneumonia pleural abnormality,Lung Opacity;Pleural Other;Pneumonia,742,Lung Opacity,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,3435,Cardiomegaly,enlarged cardiomediastinum,Enlarged Cardiomediastinum,1233,Atelectasis;Cardiomegaly,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,3450,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3455,Atelectasis;Cardiomegaly;Edema;Lung Opacity,lung opacity pulmonary edema,Edema;Lung Opacity,2263,Atelectasis;Cardiomegaly;Lung Opacity,False,False,False,True,5,False,False,A,none
+R1_Q0_dense,3465,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3477,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3508,Atelectasis;Pleural Effusion;Pleural Other,enlarged cardiomediastinum lung opacity lung lesion pleural effusion pleural abnormality,Enlarged Cardiomediastinum;Lung Lesion;Lung Opacity;Pleural Effusion;Pleural Other,742,Lung Opacity,False,True,False,False,5,False,False,A,A
+R1_Q0_dense,3528,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3539,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3542,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3559,Lung Lesion,fracture,Fracture,2588,,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,3562,Atelectasis,enlarged cardiomediastinum fracture,Enlarged Cardiomediastinum;Fracture,429,No Finding,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,3565,Consolidation;Lung Opacity;Pneumonia,lung opacity consolidation pneumonia,Consolidation;Lung Opacity;Pneumonia,742,Lung Opacity,False,False,False,False,5,True,True,C,none
+R1_Q0_dense,3589,Lung Opacity,pneumonia atelectasis,Atelectasis;Pneumonia,3140,Atelectasis;Lung Opacity,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,3593,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3597,Support Devices,lung lesion pneumonia,Lung Lesion;Pneumonia,712,,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,3608,Cardiomegaly,cardiomegaly pulmonary edema,Cardiomegaly;Edema,1375,Cardiomegaly;Edema,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,3610,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3611,Consolidation;Lung Opacity,enlarged cardiomediastinum cardiomegaly lung opacity pleural effusion pleural abnormality fracture,Cardiomegaly;Enlarged Cardiomediastinum;Fracture;Lung Opacity;Pleural Effusion;Pleural Other,429,No Finding,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,3624,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3632,Atelectasis;Lung Opacity;Pleural Effusion;Pleural Other,fracture,Fracture,2588,,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,3639,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3655,Lung Lesion,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,3665,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3667,Support Devices,support device,Support Devices,3929,Cardiomegaly;Support Devices,False,False,False,True,5,True,True,B,none
+R1_Q0_dense,3672,Cardiomegaly;Edema;Support Devices,cardiomegaly pulmonary edema pleural effusion,Cardiomegaly;Edema;Pleural Effusion,3328,Cardiomegaly;Pleural Effusion,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,3683,Support Devices,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,3692,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3701,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3720,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3726,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3756,Lung Opacity,lung opacity atelectasis,Atelectasis;Lung Opacity,3721,Atelectasis;Lung Opacity,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,3785,Lung Opacity,no acute abnormality,No Finding,1975,No Finding,False,True,True,False,5,True,False,D,D
+R1_Q0_dense,3787,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3790,Lung Opacity,lung opacity atelectasis pleural effusion fracture,Atelectasis;Fracture;Lung Opacity;Pleural Effusion,3140,Atelectasis;Lung Opacity,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,3793,Lung Opacity,lung opacity pneumonia atelectasis fracture,Atelectasis;Fracture;Lung Opacity;Pneumonia,742,Lung Opacity,True,False,False,False,5,True,False,none,none
+R1_Q0_dense,3809,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3814,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,3817,No Finding,enlarged cardiomediastinum,Enlarged Cardiomediastinum,1233,Atelectasis;Cardiomegaly,False,False,False,False,5,True,False,D,none
+R1_Q0_dense,3830,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3837,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3847,Pneumothorax,pneumothorax pleural effusion,Pleural Effusion;Pneumothorax,734,No Finding,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,3866,Lung Opacity;Pneumonia,lung opacity consolidation pneumonia,Consolidation;Lung Opacity;Pneumonia,742,Lung Opacity,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,3875,Lung Opacity,lung opacity pneumonia,Lung Opacity;Pneumonia,742,Lung Opacity,True,False,False,False,5,True,False,none,none
+R1_Q0_dense,3879,No Finding,pneumonia,Pneumonia,1618,No Finding,True,False,False,False,5,True,False,none,none
+R1_Q0_dense,3880,Cardiomegaly;Edema;Lung Opacity,cardiomegaly,Cardiomegaly,2040,Cardiomegaly,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,3883,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3900,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3905,Cardiomegaly,cardiomegaly pulmonary edema,Cardiomegaly;Edema,1375,Cardiomegaly;Edema,False,False,False,False,5,True,False,A,none
+R1_Q0_dense,3939,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3951,Lung Lesion;Lung Opacity,lung lesion consolidation pneumonia,Consolidation;Lung Lesion;Pneumonia,1699,Consolidation;Pleural Effusion;Pneumonia;Support Devices,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,3953,No Finding,fracture,Fracture,2588,,False,True,False,False,5,True,False,D,D
+R1_Q0_dense,3968,Pneumonia,fracture,Fracture,2588,,False,True,False,False,5,True,False,A,A
+R1_Q0_dense,3972,Lung Opacity,lung opacity pneumonia pleural abnormality,Lung Opacity;Pleural Other;Pneumonia,742,Lung Opacity,True,False,False,False,5,True,False,none,none
+R1_Q0_dense,3973,No Finding,enlarged cardiomediastinum fracture,Enlarged Cardiomediastinum;Fracture,429,No Finding,True,False,False,False,5,True,False,none,none
+R1_Q0_dense,3976,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R1_Q0_dense,3980,Cardiomegaly;Lung Opacity;Pleural Effusion;Pleural Other,lung opacity consolidation atelectasis pleural effusion,Atelectasis;Consolidation;Lung Opacity;Pleural Effusion,1016,Atelectasis;Lung Opacity;Pleural Effusion;Pleural Other,False,False,False,False,5,False,False,A,none
+R1_Q0_dense,3982,No Finding,no acute abnormality,No Finding,1975,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,20,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,23,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,33,Support Devices,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,50,Cardiomegaly,cardiomegaly pulmonary edema,Cardiomegaly;Edema,2411,Cardiomegaly,True,False,False,False,5,True,False,none,none
+R2_final,54,Atelectasis,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,66,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,72,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,73,Atelectasis;Pleural Effusion,pleural effusion,Pleural Effusion,1593,Atelectasis;Pleural Effusion,True,False,False,False,5,True,False,none,none
+R2_final,78,Atelectasis,lung opacity atelectasis pleural effusion,Atelectasis;Lung Opacity;Pleural Effusion,3813,Lung Opacity,False,False,False,False,5,True,False,A,none
+R2_final,80,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,113,Lung Lesion;Lung Opacity,no acute abnormality,No Finding,1176,No Finding,False,True,True,True,5,True,False,D,D
+R2_final,117,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,144,Atelectasis;Lung Opacity,enlarged cardiomediastinum,Enlarged Cardiomediastinum,3993,Cardiomegaly,False,False,False,False,5,True,False,A,none
+R2_final,152,Cardiomegaly;Fracture,enlarged cardiomediastinum lung lesion fracture,Enlarged Cardiomediastinum;Fracture;Lung Lesion,1233,Atelectasis;Cardiomegaly,False,False,False,False,5,True,False,A,none
+R2_final,160,Lung Opacity,lung opacity pneumonia pleural effusion,Lung Opacity;Pleural Effusion;Pneumonia,742,Lung Opacity,True,False,False,False,5,True,False,none,none
+R2_final,188,Atelectasis;Lung Opacity;Pleural Effusion,cardiomegaly lung opacity pleural effusion,Cardiomegaly;Lung Opacity;Pleural Effusion,2263,Atelectasis;Cardiomegaly;Lung Opacity,False,False,False,False,5,True,False,A,none
+R2_final,189,Atelectasis;Lung Opacity,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,195,No Finding,pneumonia,Pneumonia,1618,No Finding,True,False,False,False,5,True,False,none,none
+R2_final,220,Lung Lesion;Support Devices,lung opacity consolidation pneumonia,Consolidation;Lung Opacity;Pneumonia,1972,Lung Opacity,False,True,False,False,5,True,False,A,A
+R2_final,222,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,229,Lung Lesion,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,249,Lung Lesion,lung opacity lung lesion,Lung Lesion;Lung Opacity,1972,Lung Opacity,False,True,False,False,5,True,False,A,A
+R2_final,266,Cardiomegaly,enlarged cardiomediastinum cardiomegaly,Cardiomegaly;Enlarged Cardiomediastinum,2421,Atelectasis;Cardiomegaly;Lung Opacity;Support Devices,False,False,False,False,5,True,False,A,none
+R2_final,268,Lung Opacity;Pneumonia,lung opacity consolidation pneumonia,Consolidation;Lung Opacity;Pneumonia,1972,Lung Opacity,False,False,False,False,5,True,False,A,none
+R2_final,278,Lung Lesion;Lung Opacity,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,290,Support Devices,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,298,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,310,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,317,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,325,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,332,Lung Opacity,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,335,Support Devices,support device,Support Devices,1773,Support Devices,True,False,False,False,5,True,True,none,none
+R2_final,338,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,368,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,373,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,382,Lung Opacity,lung opacity lung lesion pneumothorax,Lung Lesion;Lung Opacity;Pneumothorax,2886,Lung Opacity;Pleural Effusion,False,False,False,False,5,True,False,A,none
+R2_final,392,Support Devices,support device,Support Devices,1773,Support Devices,True,False,False,False,5,True,True,none,none
+R2_final,406,Lung Lesion,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,407,No Finding,support device,Support Devices,1773,Support Devices,False,True,False,False,5,True,False,D,D
+R2_final,419,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,427,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,436,Cardiomegaly,lung opacity consolidation pleural effusion,Consolidation;Lung Opacity;Pleural Effusion,2886,Lung Opacity;Pleural Effusion,False,False,False,False,5,True,False,A,none
+R2_final,438,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,441,Lung Lesion,fracture,Fracture,1984,Fracture,False,True,False,False,5,True,False,A,A
+R2_final,450,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,481,Support Devices,enlarged cardiomediastinum support device,Enlarged Cardiomediastinum;Support Devices,2865,Support Devices,True,False,False,False,5,True,False,none,none
+R2_final,483,Cardiomegaly,atelectasis,Atelectasis,2242,Atelectasis,False,False,False,False,5,True,False,A,none
+R2_final,499,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,501,Lung Opacity,pneumonia,Pneumonia,1618,No Finding,False,False,False,False,5,True,False,A,none
+R2_final,504,Atelectasis;Lung Opacity,lung opacity atelectasis fracture,Atelectasis;Fracture;Lung Opacity,3813,Lung Opacity,False,False,False,False,5,True,False,A,none
+R2_final,505,No Finding,lung opacity pleural abnormality fracture,Fracture;Lung Opacity;Pleural Other,2886,Lung Opacity;Pleural Effusion,False,True,False,False,5,True,False,D,D
+R2_final,508,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,514,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,522,Atelectasis,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,A,none
+R2_final,530,Cardiomegaly,cardiomegaly,Cardiomegaly,3638,Cardiomegaly,True,False,False,False,5,True,True,none,none
+R2_final,546,Pleural Effusion,cardiomegaly lung opacity pleural effusion,Cardiomegaly;Lung Opacity;Pleural Effusion,2263,Atelectasis;Cardiomegaly;Lung Opacity,False,False,False,False,5,True,False,A,none
+R2_final,569,Lung Opacity;Support Devices,lung opacity pneumothorax support device,Lung Opacity;Pneumothorax;Support Devices,2886,Lung Opacity;Pleural Effusion,False,True,False,True,5,True,False,A,A
+R2_final,573,Lung Opacity;Support Devices,lung opacity,Lung Opacity,1972,Lung Opacity,False,True,False,False,5,True,False,A,A
+R2_final,579,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,582,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,584,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,586,Atelectasis;Cardiomegaly;Lung Opacity,cardiomegaly lung opacity consolidation,Cardiomegaly;Consolidation;Lung Opacity,3863,Cardiomegaly,False,False,False,False,5,True,False,A,none
+R2_final,601,Lung Opacity;Support Devices,lung opacity consolidation support device,Consolidation;Lung Opacity;Support Devices,1972,Lung Opacity,False,True,False,True,5,True,False,A,A
+R2_final,608,Fracture,fracture,Fracture,1984,Fracture,True,False,False,False,5,True,True,none,none
+R2_final,618,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,661,Support Devices,pleural effusion,Pleural Effusion,1593,Atelectasis;Pleural Effusion,False,True,False,False,5,True,False,A,A
+R2_final,665,Cardiomegaly,cardiomegaly,Cardiomegaly,3638,Cardiomegaly,True,False,False,False,5,True,True,none,none
+R2_final,668,No Finding,atelectasis,Atelectasis,2242,Atelectasis,False,True,False,False,5,True,False,D,D
+R2_final,672,Cardiomegaly;Edema,lung opacity pneumonia pleural effusion,Lung Opacity;Pleural Effusion;Pneumonia,742,Lung Opacity,False,True,False,True,5,True,False,A,A
+R2_final,683,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,688,Atelectasis;Lung Opacity;Pleural Other,lung opacity pneumonia atelectasis,Atelectasis;Lung Opacity;Pneumonia,1972,Lung Opacity,False,True,False,False,5,True,False,A,A
+R2_final,689,Lung Lesion,lung opacity lung lesion,Lung Lesion;Lung Opacity,1972,Lung Opacity,False,True,False,False,5,True,False,A,A
+R2_final,691,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,709,Fracture,fracture,Fracture,1984,Fracture,True,False,False,False,5,True,True,none,none
+R2_final,716,Cardiomegaly,cardiomegaly pneumonia,Cardiomegaly;Pneumonia,3328,Cardiomegaly;Pleural Effusion,False,False,False,False,5,True,False,A,none
+R2_final,725,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,731,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,733,Support Devices,support device,Support Devices,1773,Support Devices,True,False,False,False,5,True,True,none,none
+R2_final,739,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,744,Lung Opacity,pneumothorax support device,Pneumothorax;Support Devices,3104,No Finding,False,True,False,True,5,True,False,A,A
+R2_final,756,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,758,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,760,Atelectasis;Lung Opacity,lung opacity pneumonia fracture,Fracture;Lung Opacity;Pneumonia,1972,Lung Opacity,False,True,False,False,5,True,False,A,A
+R2_final,766,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,793,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,808,Atelectasis;Lung Opacity;Pneumonia,lung opacity consolidation atelectasis,Atelectasis;Consolidation;Lung Opacity,3813,Lung Opacity,False,True,False,False,5,True,False,A,A
+R2_final,841,Support Devices,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,844,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,847,Cardiomegaly,lung opacity atelectasis fracture,Atelectasis;Fracture;Lung Opacity,3813,Lung Opacity,False,True,False,False,5,True,False,A,A
+R2_final,867,Support Devices,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,A,none
+R2_final,868,Lung Opacity;Support Devices,lung lesion,Lung Lesion,551,,False,True,False,False,5,True,False,A,A
+R2_final,882,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,906,Cardiomegaly,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,912,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,929,Atelectasis;Lung Opacity,lung lesion fracture,Fracture;Lung Lesion,1348,Atelectasis;Fracture,False,False,False,False,5,True,False,A,none
+R2_final,937,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,940,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,941,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,955,Support Devices,lung opacity consolidation pneumonia,Consolidation;Lung Opacity;Pneumonia,1972,Lung Opacity,False,True,False,False,5,True,False,A,A
+R2_final,959,Lung Opacity,lung opacity,Lung Opacity,1972,Lung Opacity,True,False,False,False,5,True,True,none,none
+R2_final,961,Lung Opacity,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,962,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,972,Atelectasis;Lung Opacity,enlarged cardiomediastinum lung lesion,Enlarged Cardiomediastinum;Lung Lesion,551,,False,False,False,False,5,True,False,A,none
+R2_final,980,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,981,Cardiomegaly,enlarged cardiomediastinum cardiomegaly,Cardiomegaly;Enlarged Cardiomediastinum,2421,Atelectasis;Cardiomegaly;Lung Opacity;Support Devices,False,False,False,False,5,True,False,A,none
+R2_final,984,Atelectasis;Lung Opacity,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,1049,No Finding,support device,Support Devices,1773,Support Devices,False,True,False,False,5,True,False,D,D
+R2_final,1055,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1064,Atelectasis;Lung Opacity,lung opacity atelectasis pleural effusion,Atelectasis;Lung Opacity;Pleural Effusion,3813,Lung Opacity,False,False,False,False,5,True,False,A,none
+R2_final,1079,Atelectasis,atelectasis,Atelectasis,2242,Atelectasis,True,False,False,False,5,True,True,none,none
+R2_final,1085,Atelectasis;Lung Opacity,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,1125,Cardiomegaly;Lung Opacity,lung opacity,Lung Opacity,1972,Lung Opacity,False,False,False,True,5,True,False,A,none
+R2_final,1159,No Finding,support device,Support Devices,1773,Support Devices,False,True,False,False,5,True,False,D,D
+R2_final,1162,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1191,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1206,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,1214,Atelectasis,lung opacity consolidation pneumonia,Consolidation;Lung Opacity;Pneumonia,1972,Lung Opacity,False,True,False,False,5,True,False,A,A
+R2_final,1226,Consolidation;Pneumonia,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,1234,Atelectasis;Cardiomegaly;Support Devices,cardiomegaly,Cardiomegaly,3638,Cardiomegaly,False,True,False,False,5,True,False,A,A
+R2_final,1239,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1260,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1263,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1277,Atelectasis,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,A,none
+R2_final,1285,Lung Lesion,pleural effusion,Pleural Effusion,1593,Atelectasis;Pleural Effusion,False,True,False,False,5,True,False,A,A
+R2_final,1288,Lung Opacity,atelectasis,Atelectasis,2242,Atelectasis,False,False,False,False,5,True,False,A,none
+R2_final,1294,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1314,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1334,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,1361,Cardiomegaly;Lung Opacity,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,1365,Fracture,no acute abnormality,No Finding,1176,No Finding,False,True,True,True,5,True,False,D,D
+R2_final,1380,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1394,Lung Lesion,pneumonia,Pneumonia,1618,No Finding,False,True,False,False,5,True,False,A,A
+R2_final,1397,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1422,Consolidation;Lung Opacity;Pneumonia,lung opacity consolidation pneumonia,Consolidation;Lung Opacity;Pneumonia,1972,Lung Opacity,False,False,False,False,5,True,True,C,none
+R2_final,1431,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1435,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1451,Atelectasis,lung opacity fracture,Fracture;Lung Opacity,1972,Lung Opacity,False,False,False,False,5,True,False,A,none
+R2_final,1456,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,1466,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1473,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1502,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1503,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1510,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1518,No Finding,enlarged cardiomediastinum cardiomegaly,Cardiomegaly;Enlarged Cardiomediastinum,2421,Atelectasis;Cardiomegaly;Lung Opacity;Support Devices,False,True,False,False,5,True,False,D,D
+R2_final,1529,Support Devices,atelectasis,Atelectasis,2242,Atelectasis,False,True,False,True,5,True,False,A,A
+R2_final,1537,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1545,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,1556,Lung Opacity,lung opacity atelectasis pleural effusion,Atelectasis;Lung Opacity;Pleural Effusion,3813,Lung Opacity,True,False,False,False,5,True,False,none,none
+R2_final,1567,Lung Opacity,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,1581,Lung Lesion,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,1582,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1595,Cardiomegaly;Lung Opacity,cardiomegaly lung opacity pulmonary edema,Cardiomegaly;Edema;Lung Opacity,2263,Atelectasis;Cardiomegaly;Lung Opacity,False,False,False,False,5,True,False,A,none
+R2_final,1616,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1622,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1623,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1631,Lung Lesion;Lung Opacity,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,1647,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,1655,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1661,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,1672,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1707,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1735,Support Devices,pleural effusion fracture,Fracture;Pleural Effusion,1984,Fracture,False,True,False,False,5,True,False,A,A
+R2_final,1748,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1751,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1753,Cardiomegaly,cardiomegaly lung opacity pulmonary edema,Cardiomegaly;Edema;Lung Opacity,2263,Atelectasis;Cardiomegaly;Lung Opacity,False,False,False,False,5,True,False,A,none
+R2_final,1819,Atelectasis;Cardiomegaly;Lung Opacity,cardiomegaly lung opacity pulmonary edema,Cardiomegaly;Edema;Lung Opacity,2263,Atelectasis;Cardiomegaly;Lung Opacity,True,False,False,True,5,True,False,none,none
+R2_final,1826,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1832,Atelectasis;Cardiomegaly;Lung Opacity,cardiomegaly lung opacity pulmonary edema,Cardiomegaly;Edema;Lung Opacity,2263,Atelectasis;Cardiomegaly;Lung Opacity,True,False,False,False,5,True,False,none,none
+R2_final,1833,Atelectasis,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,1837,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1882,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1907,No Finding,cardiomegaly,Cardiomegaly,3638,Cardiomegaly,False,True,False,False,5,True,False,D,D
+R2_final,1914,Lung Opacity,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,1918,Lung Opacity;Support Devices,enlarged cardiomediastinum,Enlarged Cardiomediastinum,3993,Cardiomegaly,False,False,False,False,5,True,False,A,none
+R2_final,1937,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1947,Lung Lesion,fracture,Fracture,1984,Fracture,False,True,False,True,5,True,False,A,A
+R2_final,1948,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1960,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1976,Lung Opacity,lung opacity consolidation pneumonia,Consolidation;Lung Opacity;Pneumonia,1972,Lung Opacity,True,False,False,False,5,True,False,none,none
+R2_final,1980,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,1988,Lung Lesion;Lung Opacity,lung opacity pulmonary edema pneumonia,Edema;Lung Opacity;Pneumonia,742,Lung Opacity,False,True,False,False,5,True,False,A,A
+R2_final,2003,Cardiomegaly,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,2006,Cardiomegaly,fracture,Fracture,1984,Fracture,False,True,False,False,5,True,False,A,A
+R2_final,2026,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2038,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2062,Atelectasis;Lung Opacity;Support Devices,lung opacity consolidation pneumonia,Consolidation;Lung Opacity;Pneumonia,1972,Lung Opacity,False,True,False,False,5,True,False,A,A
+R2_final,2066,Atelectasis;Cardiomegaly;Lung Opacity,enlarged cardiomediastinum cardiomegaly,Cardiomegaly;Enlarged Cardiomediastinum,2421,Atelectasis;Cardiomegaly;Lung Opacity;Support Devices,False,False,False,False,5,True,False,A,none
+R2_final,2069,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2074,Atelectasis;Lung Opacity;Pleural Effusion,enlarged cardiomediastinum pleural effusion,Enlarged Cardiomediastinum;Pleural Effusion,798,No Finding,False,True,False,False,5,True,False,A,A
+R2_final,2075,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2096,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2116,Fracture,lung lesion,Lung Lesion,551,,False,True,False,False,5,True,False,A,A
+R2_final,2138,Fracture;Lung Opacity,lung opacity lung lesion fracture,Fracture;Lung Lesion;Lung Opacity,1972,Lung Opacity,False,True,False,False,5,True,False,A,A
+R2_final,2140,Fracture,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,2148,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2157,No Finding,pleural abnormality,Pleural Other,169,No Finding,True,False,True,False,5,True,False,none,none
+R2_final,2160,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,2170,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2191,Cardiomegaly;Lung Opacity,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,2207,Lung Opacity;Pneumonia,fracture,Fracture,1984,Fracture,False,True,False,False,5,True,False,A,A
+R2_final,2212,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2223,No Finding,pulmonary edema,Edema,2082,Cardiomegaly;Edema;Lung Opacity,False,True,False,False,5,True,False,D,D
+R2_final,2228,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2236,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2238,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,2239,Lung Opacity;Support Devices,lung opacity pneumonia,Lung Opacity;Pneumonia,1972,Lung Opacity,False,True,False,False,5,True,False,A,A
+R2_final,2244,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2277,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2290,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2310,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2313,No Finding,enlarged cardiomediastinum,Enlarged Cardiomediastinum,3993,Cardiomegaly,False,True,False,False,5,True,False,D,D
+R2_final,2326,Cardiomegaly,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,2363,Lung Opacity;Pneumonia,lung opacity consolidation pneumonia,Consolidation;Lung Opacity;Pneumonia,1972,Lung Opacity,False,False,False,False,5,True,False,A,none
+R2_final,2365,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2377,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2388,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2396,Edema;Lung Opacity,lung opacity,Lung Opacity,1972,Lung Opacity,False,True,False,False,5,True,False,A,A
+R2_final,2415,Cardiomegaly;Lung Opacity,lung opacity atelectasis pleural effusion,Atelectasis;Lung Opacity;Pleural Effusion,3813,Lung Opacity,False,False,False,False,5,True,False,A,none
+R2_final,2453,No Finding,pneumonia,Pneumonia,1618,No Finding,True,False,False,False,5,True,False,none,none
+R2_final,2475,Cardiomegaly,enlarged cardiomediastinum,Enlarged Cardiomediastinum,3993,Cardiomegaly,True,False,False,False,5,True,False,none,none
+R2_final,2493,No Finding,enlarged cardiomediastinum fracture,Enlarged Cardiomediastinum;Fracture,1268,,False,False,True,False,5,True,False,D,none
+R2_final,2513,Atelectasis,lung opacity atelectasis pleural effusion,Atelectasis;Lung Opacity;Pleural Effusion,3813,Lung Opacity,False,False,False,False,5,True,False,A,none
+R2_final,2517,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2533,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,2545,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2564,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2591,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2594,Atelectasis;Lung Opacity,enlarged cardiomediastinum fracture,Enlarged Cardiomediastinum;Fracture,1268,,False,True,True,False,5,True,False,A,A
+R2_final,2596,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2605,No Finding,lung opacity pleural effusion,Lung Opacity;Pleural Effusion,2886,Lung Opacity;Pleural Effusion,False,True,False,False,5,True,False,D,D
+R2_final,2612,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2616,Pleural Effusion,pleural effusion pleural abnormality,Pleural Effusion;Pleural Other,798,No Finding,False,True,True,False,5,True,False,A,A
+R2_final,2622,Support Devices,pleural abnormality,Pleural Other,169,No Finding,False,True,True,False,5,True,False,A,A
+R2_final,2629,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,2644,Cardiomegaly;Lung Lesion,enlarged cardiomediastinum cardiomegaly,Cardiomegaly;Enlarged Cardiomediastinum,2421,Atelectasis;Cardiomegaly;Lung Opacity;Support Devices,False,True,False,True,5,True,False,A,A
+R2_final,2691,Cardiomegaly,enlarged cardiomediastinum,Enlarged Cardiomediastinum,3993,Cardiomegaly,True,False,False,False,5,True,False,none,none
+R2_final,2697,No Finding,cardiomegaly,Cardiomegaly,3638,Cardiomegaly,False,True,False,False,5,True,False,D,D
+R2_final,2698,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2709,Lung Opacity,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,2720,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2723,Atelectasis,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,2737,Atelectasis,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,A,none
+R2_final,2747,Pleural Effusion,atelectasis,Atelectasis,2242,Atelectasis,False,False,False,False,5,True,False,A,none
+R2_final,2758,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2765,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,2778,Support Devices,support device,Support Devices,1773,Support Devices,True,False,False,False,5,True,True,none,none
+R2_final,2817,Lung Opacity;Pleural Effusion;Pleural Other,lung opacity pneumonia pleural abnormality,Lung Opacity;Pleural Other;Pneumonia,742,Lung Opacity,False,True,False,False,5,False,False,A,A
+R2_final,2831,Pleural Effusion;Pneumothorax;Support Devices,pleural effusion,Pleural Effusion,1593,Atelectasis;Pleural Effusion,False,True,False,False,5,False,False,A,A
+R2_final,2832,Cardiomegaly,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,2833,No Finding,pneumothorax,Pneumothorax,3104,No Finding,True,False,False,False,5,True,False,none,none
+R2_final,2852,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2860,Support Devices,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,2866,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2870,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2884,Support Devices,cardiomegaly,Cardiomegaly,3638,Cardiomegaly,False,True,False,False,5,True,False,A,A
+R2_final,2894,Support Devices,support device,Support Devices,1773,Support Devices,True,False,False,False,5,True,True,none,none
+R2_final,2898,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2902,No Finding,pleural effusion pleural abnormality,Pleural Effusion;Pleural Other,798,No Finding,True,False,True,False,5,True,False,none,none
+R2_final,2910,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2916,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,2936,Cardiomegaly,enlarged cardiomediastinum cardiomegaly,Cardiomegaly;Enlarged Cardiomediastinum,2421,Atelectasis;Cardiomegaly;Lung Opacity;Support Devices,False,False,False,False,5,True,False,A,none
+R2_final,2955,Cardiomegaly,enlarged cardiomediastinum cardiomegaly pulmonary edema,Cardiomegaly;Edema;Enlarged Cardiomediastinum,2082,Cardiomegaly;Edema;Lung Opacity,False,False,False,True,5,True,False,A,none
+R2_final,2957,Atelectasis;Cardiomegaly;Lung Opacity,lung opacity lung lesion atelectasis,Atelectasis;Lung Lesion;Lung Opacity,3813,Lung Opacity,False,False,False,True,5,True,False,A,none
+R2_final,2964,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3004,Atelectasis;Lung Opacity,lung opacity pleural abnormality,Lung Opacity;Pleural Other,1972,Lung Opacity,False,False,False,False,5,True,False,A,none
+R2_final,3010,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3022,Lung Lesion,lung opacity lung lesion consolidation,Consolidation;Lung Lesion;Lung Opacity,1972,Lung Opacity,False,True,False,False,5,True,False,A,A
+R2_final,3025,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,3045,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3049,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,3060,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3069,Lung Opacity;Pneumonia,lung lesion consolidation pneumonia,Consolidation;Lung Lesion;Pneumonia,2370,Atelectasis;Consolidation;Lung Opacity;Pleural Effusion;Pneumonia,False,False,False,False,5,True,False,A,none
+R2_final,3115,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3117,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3134,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3135,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,3148,Cardiomegaly;Pleural Effusion,enlarged cardiomediastinum atelectasis pleural effusion,Atelectasis;Enlarged Cardiomediastinum;Pleural Effusion,2194,Cardiomegaly;Lung Opacity,False,False,False,False,5,True,False,A,none
+R2_final,3158,Atelectasis;Cardiomegaly;Lung Opacity,pleural effusion,Pleural Effusion,1593,Atelectasis;Pleural Effusion,False,True,False,False,5,True,False,A,A
+R2_final,3180,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3183,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3191,Cardiomegaly,enlarged cardiomediastinum cardiomegaly pleural abnormality,Cardiomegaly;Enlarged Cardiomediastinum;Pleural Other,1233,Atelectasis;Cardiomegaly,False,False,False,False,5,True,False,A,none
+R2_final,3195,Lung Opacity;Support Devices,lung opacity pulmonary edema pleural effusion,Edema;Lung Opacity;Pleural Effusion,2263,Atelectasis;Cardiomegaly;Lung Opacity,False,True,False,False,5,True,False,A,A
+R2_final,3207,Cardiomegaly,cardiomegaly,Cardiomegaly,3638,Cardiomegaly,True,False,False,False,5,True,True,none,none
+R2_final,3214,Cardiomegaly;Pleural Effusion,cardiomegaly,Cardiomegaly,3638,Cardiomegaly,False,False,False,False,5,True,False,A,none
+R2_final,3216,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3221,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3253,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,3279,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3281,Lung Lesion,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,3285,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3290,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,3347,Support Devices,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,A,none
+R2_final,3358,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3363,Lung Opacity,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,3369,Atelectasis;Lung Opacity;Pneumothorax,pneumothorax fracture,Fracture;Pneumothorax,1984,Fracture,False,True,False,False,5,False,False,A,A
+R2_final,3370,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3374,Lung Lesion,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,3378,Fracture;Pneumothorax,fracture,Fracture,1984,Fracture,False,True,False,False,5,False,False,A,A
+R2_final,3379,Cardiomegaly;Lung Opacity,enlarged cardiomediastinum,Enlarged Cardiomediastinum,3993,Cardiomegaly,False,False,False,False,5,True,False,A,none
+R2_final,3386,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3434,No Finding,lung opacity pneumonia pleural abnormality,Lung Opacity;Pleural Other;Pneumonia,742,Lung Opacity,False,True,False,False,5,True,False,D,D
+R2_final,3435,Cardiomegaly,enlarged cardiomediastinum,Enlarged Cardiomediastinum,3993,Cardiomegaly,True,False,False,False,5,True,False,none,none
+R2_final,3450,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3455,Atelectasis;Cardiomegaly;Edema;Lung Opacity,lung opacity pulmonary edema,Edema;Lung Opacity,2263,Atelectasis;Cardiomegaly;Lung Opacity,False,True,False,True,5,False,False,A,A
+R2_final,3465,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3477,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3508,Atelectasis;Pleural Effusion;Pleural Other,lung opacity pleural effusion pleural abnormality,Lung Opacity;Pleural Effusion;Pleural Other,2886,Lung Opacity;Pleural Effusion,False,True,False,False,5,False,False,A,A
+R2_final,3528,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3539,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3542,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3559,Lung Lesion,fracture,Fracture,1984,Fracture,False,True,False,False,5,True,False,A,A
+R2_final,3562,Atelectasis,enlarged cardiomediastinum fracture,Enlarged Cardiomediastinum;Fracture,1268,,False,True,True,False,5,True,False,A,A
+R2_final,3565,Consolidation;Lung Opacity;Pneumonia,lung opacity consolidation pneumonia,Consolidation;Lung Opacity;Pneumonia,1972,Lung Opacity,False,False,False,False,5,True,True,C,none
+R2_final,3589,Lung Opacity,pneumonia atelectasis,Atelectasis;Pneumonia,2370,Atelectasis;Consolidation;Lung Opacity;Pleural Effusion;Pneumonia,False,False,False,False,5,True,False,A,none
+R2_final,3593,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3597,Support Devices,lung lesion pneumonia,Lung Lesion;Pneumonia,3824,Lung Opacity;Pneumonia,False,True,False,False,5,True,False,A,A
+R2_final,3608,Cardiomegaly,cardiomegaly pulmonary edema,Cardiomegaly;Edema,2411,Cardiomegaly,True,False,False,False,5,True,False,none,none
+R2_final,3610,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3611,Consolidation;Lung Opacity,cardiomegaly lung opacity pleural effusion,Cardiomegaly;Lung Opacity;Pleural Effusion,2263,Atelectasis;Cardiomegaly;Lung Opacity,False,True,False,False,5,True,False,A,A
+R2_final,3624,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3632,Atelectasis;Lung Opacity;Pleural Effusion;Pleural Other,fracture,Fracture,1984,Fracture,False,True,False,False,5,True,False,A,A
+R2_final,3639,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3655,Lung Lesion,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,3665,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3667,Support Devices,support device,Support Devices,1773,Support Devices,True,False,False,True,5,True,True,none,none
+R2_final,3672,Cardiomegaly;Edema;Support Devices,cardiomegaly pulmonary edema pleural effusion,Cardiomegaly;Edema;Pleural Effusion,3328,Cardiomegaly;Pleural Effusion,False,True,False,False,5,True,False,A,A
+R2_final,3683,Support Devices,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,3692,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3701,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3720,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3726,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3756,Lung Opacity,lung opacity atelectasis,Atelectasis;Lung Opacity,3813,Lung Opacity,True,False,False,False,5,True,False,none,none
+R2_final,3785,Lung Opacity,no acute abnormality,No Finding,1176,No Finding,False,True,True,False,5,True,False,D,D
+R2_final,3787,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3790,Lung Opacity,lung opacity atelectasis pleural effusion,Atelectasis;Lung Opacity;Pleural Effusion,3813,Lung Opacity,True,False,False,False,5,True,False,none,none
+R2_final,3793,Lung Opacity,lung opacity atelectasis fracture,Atelectasis;Fracture;Lung Opacity,3813,Lung Opacity,True,False,False,False,5,True,False,none,none
+R2_final,3809,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3814,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,3817,No Finding,enlarged cardiomediastinum,Enlarged Cardiomediastinum,3993,Cardiomegaly,False,True,False,False,5,True,False,D,D
+R2_final,3830,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3837,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3847,Pneumothorax,pneumothorax pleural effusion,Pleural Effusion;Pneumothorax,1039,No Finding,False,True,False,False,5,True,False,A,A
+R2_final,3866,Lung Opacity;Pneumonia,lung opacity consolidation pneumonia,Consolidation;Lung Opacity;Pneumonia,1972,Lung Opacity,False,False,False,False,5,True,False,A,none
+R2_final,3875,Lung Opacity,lung opacity pneumonia,Lung Opacity;Pneumonia,1972,Lung Opacity,True,False,False,False,5,True,False,none,none
+R2_final,3879,No Finding,pneumonia,Pneumonia,1618,No Finding,True,False,False,False,5,True,False,none,none
+R2_final,3880,Cardiomegaly;Edema;Lung Opacity,cardiomegaly,Cardiomegaly,3638,Cardiomegaly,False,True,False,False,5,True,False,A,A
+R2_final,3883,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3900,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3905,Cardiomegaly,cardiomegaly pulmonary edema,Cardiomegaly;Edema,2411,Cardiomegaly,True,False,False,False,5,True,False,none,none
+R2_final,3939,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3951,Lung Lesion;Lung Opacity,lung lesion consolidation pneumonia,Consolidation;Lung Lesion;Pneumonia,2370,Atelectasis;Consolidation;Lung Opacity;Pleural Effusion;Pneumonia,False,True,False,False,5,True,False,A,A
+R2_final,3953,No Finding,fracture,Fracture,1984,Fracture,False,False,False,False,5,True,False,D,none
+R2_final,3968,Pneumonia,fracture,Fracture,1984,Fracture,False,True,False,False,5,True,False,A,A
+R2_final,3972,Lung Opacity,lung opacity pneumonia pleural abnormality,Lung Opacity;Pleural Other;Pneumonia,742,Lung Opacity,True,False,False,False,5,True,False,none,none
+R2_final,3973,No Finding,enlarged cardiomediastinum fracture,Enlarged Cardiomediastinum;Fracture,1268,,False,False,True,False,5,True,False,D,none
+R2_final,3976,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none
+R2_final,3980,Cardiomegaly;Lung Opacity;Pleural Effusion;Pleural Other,lung opacity atelectasis pleural effusion,Atelectasis;Lung Opacity;Pleural Effusion,3813,Lung Opacity,False,False,False,False,5,False,False,A,none
+R2_final,3982,No Finding,no acute abnormality,No Finding,1176,No Finding,True,False,True,False,5,True,True,none,none

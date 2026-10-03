@@ -1,0 +1,10 @@
+stage,mean_difference,ci95_low,ci95_high,incumbent,challenger,metric,replaces,ndcg3_same_sign
+A1_phrases,-0.011530105524518934,-0.023640983860955929,0.0014951893234016087,R1_Q0_dense,A1_Q1_expanded_dense,jaccard_truth@3,False,True
+A2_weighting,-0.00045003103662321627,-0.010476024208566108,0.010466325263811291,R1_Q0_dense,A2_Q2_uniform_dense,jaccard_truth@3,False,False
+A2_weighting,0.0054158907510862839,-0.0055097765363128484,0.017739369956548724,R1_Q0_dense,A2_Q2_probability_dense,jaccard_truth@3,False,True
+A2_weighting,0.008814400993171944,-0.0026392768466790791,0.021929314090626938,R1_Q0_dense,A2_Q2_margin_dense,jaccard_truth@3,False,True
+A3_topN,0.00026381129733085164,-0.013114525139664802,0.015738671632526381,R1_Q0_dense,A3_Q3_top1_dense,jaccard_truth@3,False,False
+A3_topN,-0.0020173805090006199,-0.0082103507138423341,0.0048754655493482291,R1_Q0_dense,A3_Q3_top2_dense,jaccard_truth@3,False,True
+A3_topN,0.0033829919304779643,2.8320918684047265e-05,0.0072334729981378028,R1_Q0_dense,A3_Q3_top3_dense,jaccard_truth@3,True,True
+B_retriever,0.015635807395583928,-6.3735922674471073e-05,0.032543506695043002,B_dense,B_bm25,jaccard_truth@3,False,True
+B_retriever,0.026039726877715705,0.015561762880198634,0.038321306641837354,B_dense,B_hybrid_rrf,jaccard_truth@3,True,True

@@ -1,0 +1,25 @@
+system,failure_definition,category,category_name,n,pct_of_failures,pct_of_all_queries,n_failures,n_queries
+R1_Q0_dense,top-1 not an exact finding-set match,D,Normal/abnormal disagreement,77,38.5,21.508379888268156,200,358
+R1_Q0_dense,top-1 not an exact finding-set match,A,Upstream classification/query error,113,56.5,31.564245810055866,200,358
+R1_Q0_dense,top-1 not an exact finding-set match,E,Corpus limitation,0,0,0,200,358
+R1_Q0_dense,top-1 not an exact finding-set match,F,Duplicate/template issue,0,0,0,200,358
+R1_Q0_dense,top-1 not an exact finding-set match,B,Terminology mismatch,3,1.5,0.83798882681564246,200,358
+R1_Q0_dense,top-1 not an exact finding-set match,C,Retriever failure despite good query,7,3.5,1.9553072625698324,200,358
+R1_Q0_dense,true findings not fully covered by top-5,D,Normal/abnormal disagreement,72,54.13533834586466,20.11173184357542,133,358
+R1_Q0_dense,true findings not fully covered by top-5,A,Upstream classification/query error,61,45.86466165413534,17.039106145251395,133,358
+R1_Q0_dense,true findings not fully covered by top-5,E,Corpus limitation,0,0,0,133,358
+R1_Q0_dense,true findings not fully covered by top-5,F,Duplicate/template issue,0,0,0,133,358
+R1_Q0_dense,true findings not fully covered by top-5,B,Terminology mismatch,0,0,0,133,358
+R1_Q0_dense,true findings not fully covered by top-5,C,Retriever failure despite good query,0,0,0,133,358
+R2_final,top-1 not an exact finding-set match,D,Normal/abnormal disagreement,77,42.541436464088399,21.508379888268156,181,358
+R2_final,top-1 not an exact finding-set match,A,Upstream classification/query error,102,56.353591160220994,28.491620111731844,181,358
+R2_final,top-1 not an exact finding-set match,E,Corpus limitation,0,0,0,181,358
+R2_final,top-1 not an exact finding-set match,F,Duplicate/template issue,0,0,0,181,358
+R2_final,top-1 not an exact finding-set match,B,Terminology mismatch,0,0,0,181,358
+R2_final,top-1 not an exact finding-set match,C,Retriever failure despite good query,2,1.1049723756906078,0.55865921787709494,181,358
+R2_final,true findings not fully covered by top-5,D,Normal/abnormal disagreement,49,46.666666666666664,13.687150837988828,105,358
+R2_final,true findings not fully covered by top-5,A,Upstream classification/query error,56,53.333333333333336,15.64245810055866,105,358
+R2_final,true findings not fully covered by top-5,E,Corpus limitation,0,0,0,105,358
+R2_final,true findings not fully covered by top-5,F,Duplicate/template issue,0,0,0,105,358
+R2_final,true findings not fully covered by top-5,B,Terminology mismatch,0,0,0,105,358
+R2_final,true findings not fully covered by top-5,C,Retriever failure despite good query,0,0,0,105,358

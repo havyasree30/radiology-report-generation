@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lrrrrrrrrrr}
+\hline
+Setting & Jaccard@3 & Jaccard@5 & nDCG@5 & Coverage@3 & Coverage@5 & Duplicate rate@5 & Unique templates@5 & Pairwise cosine@5 & Duplicate-rate difference@5 (95\% CI) & Adopted \\
+\hline
+standard (no MMR) & 0.544 & 0.557 & 0.559 & 0.647 & 0.748 & 0.404 & 2.98 & 0.835 & reference & n/a \\
+MMR lambda=0.5 & 0.540 & 0.553 & 0.556 & 0.658 & 0.758 & 0.398 & 3.01 & 0.825 & -0.0067 (-0.0123 to -0.0022) & no \\
+MMR lambda=0.7 & 0.562 & 0.557 & 0.560 & 0.719 & 0.756 & 0.402 & 2.99 & 0.830 & -0.0022 (-0.0045 to -0.0006) & no \\
+MMR lambda=0.9 & 0.565 & 0.557 & 0.560 & 0.720 & 0.753 & 0.402 & 2.99 & 0.833 & -0.0022 (-0.0045 to -0.0006) & no \\
+\hline
+\end{tabular}
+\caption{Standard hybrid retrieval versus MMR re-ranking (pool 30).}
+\label{tab:table4_diversity_mmr_analysis}
+\end{table}

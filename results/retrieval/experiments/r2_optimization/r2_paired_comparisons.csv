@@ -1,0 +1,267 @@
+group,comparison,a,b,metric,mean_difference,ci95_low,ci95_high,n_queries,ci_excludes_zero
+query_policy_vs_Q0,A1_Q1_expanded_dense minus R1_Q0_dense,A1_Q1_expanded_dense,R1_Q0_dense,jaccard_truth@1,-0.0025605214152700194,-0.024081703910614528,0.018956005586592172,358,False
+query_policy_vs_Q0,A1_Q1_expanded_dense minus R1_Q0_dense,A1_Q1_expanded_dense,R1_Q0_dense,jaccard_truth@3,-0.011530105524518934,-0.023640983860955929,0.0014951893234016087,358,False
+query_policy_vs_Q0,A1_Q1_expanded_dense minus R1_Q0_dense,A1_Q1_expanded_dense,R1_Q0_dense,jaccard_truth@5,-0.0090635807395583919,-0.018927041766427247,0.0018757980845969609,358,False
+query_policy_vs_Q0,A1_Q1_expanded_dense minus R1_Q0_dense,A1_Q1_expanded_dense,R1_Q0_dense,jaccard_truth@10,-0.020295291300877892,-0.031176609470603883,-0.0088328345304602308,358,True
+query_policy_vs_Q0,A1_Q1_expanded_dense minus R1_Q0_dense,A1_Q1_expanded_dense,R1_Q0_dense,ndcg@1,-0.0029989137181874624,-0.025324235723153316,0.018799852576039722,358,False
+query_policy_vs_Q0,A1_Q1_expanded_dense minus R1_Q0_dense,A1_Q1_expanded_dense,R1_Q0_dense,ndcg@3,-0.0085167779338098416,-0.021772137394452048,0.005344014273679463,358,False
+query_policy_vs_Q0,A1_Q1_expanded_dense minus R1_Q0_dense,A1_Q1_expanded_dense,R1_Q0_dense,ndcg@5,-0.0077619083197803659,-0.018415200137764036,0.0037219174073986568,358,False
+query_policy_vs_Q0,A1_Q1_expanded_dense minus R1_Q0_dense,A1_Q1_expanded_dense,R1_Q0_dense,ndcg@10,-0.016675851555062328,-0.026220639614980435,-0.00686514702293144,358,True
+query_policy_vs_Q0,A1_Q1_expanded_dense minus R1_Q0_dense,A1_Q1_expanded_dense,R1_Q0_dense,union_coverage@1,-0.020484171322160148,-0.039106145251396648,-0.003724394785847302,358,True
+query_policy_vs_Q0,A1_Q1_expanded_dense minus R1_Q0_dense,A1_Q1_expanded_dense,R1_Q0_dense,union_coverage@3,-0.035381750465549353,-0.06191806331471135,-0.0065176908752327739,358,True
+query_policy_vs_Q0,A1_Q1_expanded_dense minus R1_Q0_dense,A1_Q1_expanded_dense,R1_Q0_dense,union_coverage@5,-0.031424581005586594,-0.057501163873370585,-0.005353817504655493,358,True
+query_policy_vs_Q0,A1_Q1_expanded_dense minus R1_Q0_dense,A1_Q1_expanded_dense,R1_Q0_dense,union_coverage@10,-0.12430167597765363,-0.16201117318435754,-0.086126629422718814,358,True
+query_policy_vs_Q0,A2_Q2_uniform_dense minus R1_Q0_dense,A2_Q2_uniform_dense,R1_Q0_dense,jaccard_truth@1,0.0046089385474860339,-0.010571461824953445,0.018670856610800743,358,False
+query_policy_vs_Q0,A2_Q2_uniform_dense minus R1_Q0_dense,A2_Q2_uniform_dense,R1_Q0_dense,jaccard_truth@3,-0.00045003103662321627,-0.010476024208566108,0.010466325263811291,358,False
+query_policy_vs_Q0,A2_Q2_uniform_dense minus R1_Q0_dense,A2_Q2_uniform_dense,R1_Q0_dense,jaccard_truth@5,-0.0038733705772811921,-0.011332169459962753,0.0031936685288640595,358,False
+query_policy_vs_Q0,A2_Q2_uniform_dense minus R1_Q0_dense,A2_Q2_uniform_dense,R1_Q0_dense,jaccard_truth@10,0.00018156424581005788,-0.0062621042830540014,0.0061550279329608973,358,False
+query_policy_vs_Q0,A2_Q2_uniform_dense minus R1_Q0_dense,A2_Q2_uniform_dense,R1_Q0_dense,ndcg@1,0.0040968342644320298,-0.011503724394785848,0.018672020484171319,358,False
+query_policy_vs_Q0,A2_Q2_uniform_dense minus R1_Q0_dense,A2_Q2_uniform_dense,R1_Q0_dense,ndcg@3,0.0011018979146379842,-0.0097776504245973526,0.012586524597434286,358,False
+query_policy_vs_Q0,A2_Q2_uniform_dense minus R1_Q0_dense,A2_Q2_uniform_dense,R1_Q0_dense,ndcg@5,-0.0017398328209936767,-0.0099233590465324425,0.0061230224724176715,358,False
+query_policy_vs_Q0,A2_Q2_uniform_dense minus R1_Q0_dense,A2_Q2_uniform_dense,R1_Q0_dense,ndcg@10,0.00010163820987866018,-0.0067241774374475422,0.0067735621333454574,358,False
+query_policy_vs_Q0,A2_Q2_uniform_dense minus R1_Q0_dense,A2_Q2_uniform_dense,R1_Q0_dense,union_coverage@1,-0.0095437616387337061,-0.022352188081936685,0.0039571694599627553,358,False
+query_policy_vs_Q0,A2_Q2_uniform_dense minus R1_Q0_dense,A2_Q2_uniform_dense,R1_Q0_dense,union_coverage@3,-0.0027932960893854749,-0.017236964618249532,0.010242085661080074,358,False
+query_policy_vs_Q0,A2_Q2_uniform_dense minus R1_Q0_dense,A2_Q2_uniform_dense,R1_Q0_dense,union_coverage@5,-0.00093109869646182473,-0.018162243947858474,0.016532821229050278,358,False
+query_policy_vs_Q0,A2_Q2_uniform_dense minus R1_Q0_dense,A2_Q2_uniform_dense,R1_Q0_dense,union_coverage@10,-0.0076815642458100556,-0.018860567970204842,0.0041899441340782122,358,False
+query_policy_vs_Q0,A2_Q2_probability_dense minus R1_Q0_dense,A2_Q2_probability_dense,R1_Q0_dense,jaccard_truth@1,0.0098230912476722533,-0.0041922718808193662,0.023603351955307262,358,False
+query_policy_vs_Q0,A2_Q2_probability_dense minus R1_Q0_dense,A2_Q2_probability_dense,R1_Q0_dense,jaccard_truth@3,0.0054158907510862839,-0.0055097765363128484,0.017739369956548724,358,False
+query_policy_vs_Q0,A2_Q2_probability_dense minus R1_Q0_dense,A2_Q2_probability_dense,R1_Q0_dense,jaccard_truth@5,0.0094413407821229058,0.0013074953445065187,0.01896950651769087,358,True
+query_policy_vs_Q0,A2_Q2_probability_dense minus R1_Q0_dense,A2_Q2_probability_dense,R1_Q0_dense,jaccard_truth@10,0.012211359404096832,0.0043796554934823094,0.020973114525139662,358,True
+query_policy_vs_Q0,A2_Q2_probability_dense minus R1_Q0_dense,A2_Q2_probability_dense,R1_Q0_dense,ndcg@1,0.0093575418994413396,-0.0051210428305400362,0.023138966480446926,358,False
+query_policy_vs_Q0,A2_Q2_probability_dense minus R1_Q0_dense,A2_Q2_probability_dense,R1_Q0_dense,ndcg@3,0.0070519804378796494,-0.0033727334434545181,0.018725976066217082,358,False
+query_policy_vs_Q0,A2_Q2_probability_dense minus R1_Q0_dense,A2_Q2_probability_dense,R1_Q0_dense,ndcg@5,0.0094362449717301112,0.0010251081995173398,0.019010488143908023,358,True
+query_policy_vs_Q0,A2_Q2_probability_dense minus R1_Q0_dense,A2_Q2_probability_dense,R1_Q0_dense,ndcg@10,0.011464737568657362,0.0035756877460996375,0.019893463942401449,358,True
+query_policy_vs_Q0,A2_Q2_probability_dense minus R1_Q0_dense,A2_Q2_probability_dense,R1_Q0_dense,union_coverage@1,-0.0051210428305400379,-0.018156424581005588,0.0065176908752327739,358,False
+query_policy_vs_Q0,A2_Q2_probability_dense minus R1_Q0_dense,A2_Q2_probability_dense,R1_Q0_dense,union_coverage@3,-0.010707635009310988,-0.027001862197392926,0.0032588454376163874,358,False
+query_policy_vs_Q0,A2_Q2_probability_dense minus R1_Q0_dense,A2_Q2_probability_dense,R1_Q0_dense,union_coverage@5,-0.0060521415270018602,-0.02072276536312849,0.0086184823091247607,358,False
+query_policy_vs_Q0,A2_Q2_probability_dense minus R1_Q0_dense,A2_Q2_probability_dense,R1_Q0_dense,union_coverage@10,-0.0095437616387337061,-0.025605214152700183,0.0048882681564245811,358,False
+query_policy_vs_Q0,A2_Q2_margin_dense minus R1_Q0_dense,A2_Q2_margin_dense,R1_Q0_dense,jaccard_truth@1,0.010893854748603353,-0.0048440409683426439,0.02704958100558659,358,False
+query_policy_vs_Q0,A2_Q2_margin_dense minus R1_Q0_dense,A2_Q2_margin_dense,R1_Q0_dense,jaccard_truth@3,0.008814400993171944,-0.0026392768466790791,0.021929314090626938,358,False
+query_policy_vs_Q0,A2_Q2_margin_dense minus R1_Q0_dense,A2_Q2_margin_dense,R1_Q0_dense,jaccard_truth@5,0.0047672253258845467,-0.0045912476722532571,0.015476256983240224,358,False
+query_policy_vs_Q0,A2_Q2_margin_dense minus R1_Q0_dense,A2_Q2_margin_dense,R1_Q0_dense,jaccard_truth@10,0.0092504655493482277,0.00047043761638733715,0.018870228119180626,358,True
+query_policy_vs_Q0,A2_Q2_margin_dense minus R1_Q0_dense,A2_Q2_margin_dense,R1_Q0_dense,ndcg@1,0.01074643078833023,-0.0052932960893854759,0.027205346058348848,358,False
+query_policy_vs_Q0,A2_Q2_margin_dense minus R1_Q0_dense,A2_Q2_margin_dense,R1_Q0_dense,ndcg@3,0.010134778193916743,-0.0014143625816122223,0.02341275326333481,358,False
+query_policy_vs_Q0,A2_Q2_margin_dense minus R1_Q0_dense,A2_Q2_margin_dense,R1_Q0_dense,ndcg@5,0.0067447229242327041,-0.0027545644868923022,0.01841681255395702,358,False
+query_policy_vs_Q0,A2_Q2_margin_dense minus R1_Q0_dense,A2_Q2_margin_dense,R1_Q0_dense,ndcg@10,0.0091289171227567495,-5.9429133046909796e-05,0.018963630242714427,358,False
+query_policy_vs_Q0,A2_Q2_margin_dense minus R1_Q0_dense,A2_Q2_margin_dense,R1_Q0_dense,union_coverage@1,-0.0034916201117318434,-0.020257216014897578,0.01188896648044691,358,False
+query_policy_vs_Q0,A2_Q2_margin_dense minus R1_Q0_dense,A2_Q2_margin_dense,R1_Q0_dense,union_coverage@3,-0.014897579143389201,-0.033054003724394786,0.0023277467411545617,358,False
+query_policy_vs_Q0,A2_Q2_margin_dense minus R1_Q0_dense,A2_Q2_margin_dense,R1_Q0_dense,union_coverage@5,-0.0065176908752327747,-0.025378258845437613,0.012808426443202972,358,False
+query_policy_vs_Q0,A2_Q2_margin_dense minus R1_Q0_dense,A2_Q2_margin_dense,R1_Q0_dense,union_coverage@10,-0.010009310986964618,-0.024912709497206708,0.0039629888268156365,358,False
+query_policy_vs_Q0,A3_Q3_top1_dense minus R1_Q0_dense,A3_Q3_top1_dense,R1_Q0_dense,jaccard_truth@1,-0.0087057728119180628,-0.026167364990689012,0.0086592178770949733,358,False
+query_policy_vs_Q0,A3_Q3_top1_dense minus R1_Q0_dense,A3_Q3_top1_dense,R1_Q0_dense,jaccard_truth@3,0.00026381129733085164,-0.013114525139664802,0.015738671632526381,358,False
+query_policy_vs_Q0,A3_Q3_top1_dense minus R1_Q0_dense,A3_Q3_top1_dense,R1_Q0_dense,jaccard_truth@5,-0.00042830540037243852,-0.012526303538175044,0.012433426443202977,358,False
+query_policy_vs_Q0,A3_Q3_top1_dense minus R1_Q0_dense,A3_Q3_top1_dense,R1_Q0_dense,jaccard_truth@10,0.0052700186219739259,-0.0055893854748603382,0.016898626629422712,358,False
+query_policy_vs_Q0,A3_Q3_top1_dense minus R1_Q0_dense,A3_Q3_top1_dense,R1_Q0_dense,ndcg@1,-0.0095903165735567973,-0.027423184357541899,0.0081948324022346353,358,False
+query_policy_vs_Q0,A3_Q3_top1_dense minus R1_Q0_dense,A3_Q3_top1_dense,R1_Q0_dense,ndcg@3,-0.001791988247825413,-0.015436471743139888,0.013436624624704017,358,False
+query_policy_vs_Q0,A3_Q3_top1_dense minus R1_Q0_dense,A3_Q3_top1_dense,R1_Q0_dense,ndcg@5,-0.002159862650287296,-0.01460841663996941,0.011363438884721104,358,False
+query_policy_vs_Q0,A3_Q3_top1_dense minus R1_Q0_dense,A3_Q3_top1_dense,R1_Q0_dense,ndcg@10,0.0019715331766208986,-0.0095941452408646009,0.013601727538304891,358,False
+query_policy_vs_Q0,A3_Q3_top1_dense minus R1_Q0_dense,A3_Q3_top1_dense,R1_Q0_dense,union_coverage@1,-0.039804469273743016,-0.061452513966480445,-0.01908170391061453,358,True
+query_policy_vs_Q0,A3_Q3_top1_dense minus R1_Q0_dense,A3_Q3_top1_dense,R1_Q0_dense,union_coverage@3,-0.020716945996275608,-0.041905260707635006,0.0014024674115456174,358,False
+query_policy_vs_Q0,A3_Q3_top1_dense minus R1_Q0_dense,A3_Q3_top1_dense,R1_Q0_dense,union_coverage@5,-0.034916201117318434,-0.05773975791433892,-0.013500931098696463,358,True
+query_policy_vs_Q0,A3_Q3_top1_dense minus R1_Q0_dense,A3_Q3_top1_dense,R1_Q0_dense,union_coverage@10,-0.029329608938547486,-0.050046554934823094,-0.0097765363128491638,358,True
+query_policy_vs_Q0,A3_Q3_top2_dense minus R1_Q0_dense,A3_Q3_top2_dense,R1_Q0_dense,jaccard_truth@1,-0.0074487895716945996,-0.017505819366852887,0.0022823556797020462,358,False
+query_policy_vs_Q0,A3_Q3_top2_dense minus R1_Q0_dense,A3_Q3_top2_dense,R1_Q0_dense,jaccard_truth@3,-0.0020173805090006199,-0.0082103507138423341,0.0048754655493482291,358,False
+query_policy_vs_Q0,A3_Q3_top2_dense minus R1_Q0_dense,A3_Q3_top2_dense,R1_Q0_dense,jaccard_truth@5,0.00061452513966480629,-0.0054497206703910612,0.007281657355679704,358,False
+query_policy_vs_Q0,A3_Q3_top2_dense minus R1_Q0_dense,A3_Q3_top2_dense,R1_Q0_dense,jaccard_truth@10,-0.0027467411545623842,-0.0082127560521415271,0.0025932262569832386,358,False
+query_policy_vs_Q0,A3_Q3_top2_dense minus R1_Q0_dense,A3_Q3_top2_dense,R1_Q0_dense,ndcg@1,-0.0070608317815021721,-0.017118249534450656,0.0027932960893854741,358,False
+query_policy_vs_Q0,A3_Q3_top2_dense minus R1_Q0_dense,A3_Q3_top2_dense,R1_Q0_dense,ndcg@3,-0.0019329956835342655,-0.0084414022384392794,0.0050918502620946665,358,False
+query_policy_vs_Q0,A3_Q3_top2_dense minus R1_Q0_dense,A3_Q3_top2_dense,R1_Q0_dense,ndcg@5,-0.00020573781060707501,-0.0066335023219223892,0.0062671435671866598,358,False
+query_policy_vs_Q0,A3_Q3_top2_dense minus R1_Q0_dense,A3_Q3_top2_dense,R1_Q0_dense,ndcg@10,-0.0024410984548960532,-0.0080198120911388927,0.0030515188672455115,358,False
+query_policy_vs_Q0,A3_Q3_top2_dense minus R1_Q0_dense,A3_Q3_top2_dense,R1_Q0_dense,union_coverage@1,-0.00046554934823091329,-0.010707635009310986,0.0088454376163873364,358,False
+query_policy_vs_Q0,A3_Q3_top2_dense minus R1_Q0_dense,A3_Q3_top2_dense,R1_Q0_dense,union_coverage@3,0.0018621973929236514,-0.0088570763500931109,0.013966480446927373,358,False
+query_policy_vs_Q0,A3_Q3_top2_dense minus R1_Q0_dense,A3_Q3_top2_dense,R1_Q0_dense,union_coverage@5,-0.010940409683426442,-0.024447160148975789,0.0018621973929236508,358,False
+query_policy_vs_Q0,A3_Q3_top2_dense minus R1_Q0_dense,A3_Q3_top2_dense,R1_Q0_dense,union_coverage@10,-0.016759776536312849,-0.033519553072625698,-0.0027932960893854741,358,True
+query_policy_vs_Q0,A3_Q3_top3_dense minus R1_Q0_dense,A3_Q3_top3_dense,R1_Q0_dense,jaccard_truth@1,0.0048882681564245811,-0.0018633612662942273,0.012290502793296089,358,False
+query_policy_vs_Q0,A3_Q3_top3_dense minus R1_Q0_dense,A3_Q3_top3_dense,R1_Q0_dense,jaccard_truth@3,0.0033829919304779643,2.8320918684047265e-05,0.0072334729981378028,358,True
+query_policy_vs_Q0,A3_Q3_top3_dense minus R1_Q0_dense,A3_Q3_top3_dense,R1_Q0_dense,jaccard_truth@5,0.0013407821229050279,-0.001592644320297951,0.0047213687150837987,358,False
+query_policy_vs_Q0,A3_Q3_top3_dense minus R1_Q0_dense,A3_Q3_top3_dense,R1_Q0_dense,jaccard_truth@10,0.00094506517690875276,-0.0014855679702048406,0.003205307262569831,358,False
+query_policy_vs_Q0,A3_Q3_top3_dense minus R1_Q0_dense,A3_Q3_top3_dense,R1_Q0_dense,ndcg@1,0.0055865921787709499,-0.0016294227188081933,0.01424930167597765,358,False
+query_policy_vs_Q0,A3_Q3_top3_dense minus R1_Q0_dense,A3_Q3_top3_dense,R1_Q0_dense,ndcg@3,0.0041850292689170916,0.00033455317089381138,0.0090659969405841503,358,True
+query_policy_vs_Q0,A3_Q3_top3_dense minus R1_Q0_dense,A3_Q3_top3_dense,R1_Q0_dense,ndcg@5,0.0027343252863590963,-0.00075275060409446331,0.006777788092395232,358,False
+query_policy_vs_Q0,A3_Q3_top3_dense minus R1_Q0_dense,A3_Q3_top3_dense,R1_Q0_dense,ndcg@10,0.0021028473440228819,-0.00027557518315187275,0.0047783712127472452,358,False
+query_policy_vs_Q0,A3_Q3_top3_dense minus R1_Q0_dense,A3_Q3_top3_dense,R1_Q0_dense,union_coverage@1,0.0097765363128491621,0.0027932960893854749,0.019553072625698324,358,True
+query_policy_vs_Q0,A3_Q3_top3_dense minus R1_Q0_dense,A3_Q3_top3_dense,R1_Q0_dense,union_coverage@3,0.0018621973929236501,-0.005121042830540037,0.0097765363128491621,358,False
+query_policy_vs_Q0,A3_Q3_top3_dense minus R1_Q0_dense,A3_Q3_top3_dense,R1_Q0_dense,union_coverage@5,0.00046554934823091269,-0.0069832402234636867,0.0083798882681564244,358,False
+query_policy_vs_Q0,A3_Q3_top3_dense minus R1_Q0_dense,A3_Q3_top3_dense,R1_Q0_dense,union_coverage@10,-0.00046554934823091269,-0.0060521415270018619,0.0046671322160148883,358,False
+query_policy_vs_Q0,final R2 pipeline minus R1 Q0 dense,FINAL_pipeline,R1_Q0_dense,jaccard_truth@1,0.033798882681564238,0.012193901303538176,0.05395833333333333,358,True
+query_policy_vs_Q0,final R2 pipeline minus R1 Q0 dense,FINAL_pipeline,R1_Q0_dense,jaccard_truth@3,0.029422718808193669,0.0186219739292365,0.041592178770949714,358,True
+query_policy_vs_Q0,final R2 pipeline minus R1 Q0 dense,FINAL_pipeline,R1_Q0_dense,jaccard_truth@5,0.042988826815642457,0.032167132216014901,0.054696927374301665,358,True
+query_policy_vs_Q0,final R2 pipeline minus R1 Q0 dense,FINAL_pipeline,R1_Q0_dense,jaccard_truth@10,0.014958100558659215,0.0038766294227188074,0.026691689944134071,358,True
+query_policy_vs_Q0,final R2 pipeline minus R1 Q0 dense,FINAL_pipeline,R1_Q0_dense,ndcg@1,0.034834729981378022,0.012397579143389202,0.05504510009310986,358,True
+query_policy_vs_Q0,final R2 pipeline minus R1 Q0 dense,FINAL_pipeline,R1_Q0_dense,ndcg@3,0.03163269707255937,0.020926787414223699,0.044040774898743654,358,True
+query_policy_vs_Q0,final R2 pipeline minus R1 Q0 dense,FINAL_pipeline,R1_Q0_dense,ndcg@5,0.040792543309036734,0.03174109022941965,0.050145357641173768,358,True
+query_policy_vs_Q0,final R2 pipeline minus R1 Q0 dense,FINAL_pipeline,R1_Q0_dense,ndcg@10,0.021846249784394312,0.012122275990444135,0.032125268476385423,358,True
+query_policy_vs_Q0,final R2 pipeline minus R1 Q0 dense,FINAL_pipeline,R1_Q0_dense,union_coverage@1,0.0074487895716946004,-0.015840316573556796,0.027944599627560508,358,False
+query_policy_vs_Q0,final R2 pipeline minus R1 Q0 dense,FINAL_pipeline,R1_Q0_dense,union_coverage@3,0.0011638733705772808,-0.020489990689013037,0.024441340782122904,358,False
+query_policy_vs_Q0,final R2 pipeline minus R1 Q0 dense,FINAL_pipeline,R1_Q0_dense,union_coverage@5,0.07239292364990689,0.037011173184357544,0.1061568901303538,358,True
+query_policy_vs_Q0,final R2 pipeline minus R1 Q0 dense,FINAL_pipeline,R1_Q0_dense,union_coverage@10,-0.021648044692737432,-0.045856610800744879,0.00046554934823091144,358,False
+retriever,B_bm25 minus B_dense,B_bm25,B_dense,jaccard_truth@1,0.0030260707635009335,-0.02076582867783985,0.026071927374301675,358,False
+retriever,B_bm25 minus B_dense,B_bm25,B_dense,jaccard_truth@3,0.015635807395583928,-6.3735922674471073e-05,0.032543506695043002,358,False
+retriever,B_bm25 minus B_dense,B_bm25,B_dense,jaccard_truth@5,0.020722266560255387,0.0095283985102420869,0.032992783985102414,358,True
+retriever,B_bm25 minus B_dense,B_bm25,B_dense,jaccard_truth@10,0.016774408087257248,0.0055971834264432006,0.028269652833200307,358,True
+retriever,B_bm25 minus B_dense,B_bm25,B_dense,ndcg@1,0.0027467411545623864,-0.021372206703910612,0.026211592178770952,358,False
+retriever,B_bm25 minus B_dense,B_bm25,B_dense,ndcg@3,0.01348269074015652,-0.0027715034591644094,0.030345153665826692,358,False
+retriever,B_bm25 minus B_dense,B_bm25,B_dense,ndcg@5,0.017393875203511867,0.0046822400166149246,0.030507742722009283,358,True
+retriever,B_bm25 minus B_dense,B_bm25,B_dense,ndcg@10,0.014343951852043048,0.0033824111722101464,0.025662289989369431,358,True
+retriever,B_bm25 minus B_dense,B_bm25,B_dense,union_coverage@1,-0.026070763500931099,-0.050302607076350092,-0.0027816573556797126,358,True
+retriever,B_bm25 minus B_dense,B_bm25,B_dense,union_coverage@3,-0.015130353817504657,-0.03890246741154562,0.0060521415270018593,358,False
+retriever,B_bm25 minus B_dense,B_bm25,B_dense,union_coverage@5,-0.012802607076350092,-0.037948091247672254,0.010480679702048412,358,False
+retriever,B_bm25 minus B_dense,B_bm25,B_dense,union_coverage@10,-0.018156424581005588,-0.045623836126629416,0.006983240223463685,358,False
+retriever,B_hybrid_rrf minus B_dense,B_hybrid_rrf,B_dense,jaccard_truth@1,0.028910614525139669,0.0071636405959031651,0.049539106145251394,358,True
+retriever,B_hybrid_rrf minus B_dense,B_hybrid_rrf,B_dense,jaccard_truth@3,0.026039726877715705,0.015561762880198634,0.038321306641837354,358,True
+retriever,B_hybrid_rrf minus B_dense,B_hybrid_rrf,B_dense,jaccard_truth@5,0.041648044692737432,0.030953910614525137,0.053120111731843576,358,True
+retriever,B_hybrid_rrf minus B_dense,B_hybrid_rrf,B_dense,jaccard_truth@10,0.014013035381750463,0.0024131750465549336,0.025677723463687147,358,True
+retriever,B_hybrid_rrf minus B_dense,B_hybrid_rrf,B_dense,ndcg@1,0.029248137802607075,0.0067731610800744885,0.050422195065176909,358,True
+retriever,B_hybrid_rrf minus B_dense,B_hybrid_rrf,B_dense,ndcg@3,0.02744766780364228,0.016274070509195545,0.039486249123466252,358,True
+retriever,B_hybrid_rrf minus B_dense,B_hybrid_rrf,B_dense,ndcg@5,0.038058218022677635,0.028284509980355432,0.0479329964598623,358,True
+retriever,B_hybrid_rrf minus B_dense,B_hybrid_rrf,B_dense,ndcg@10,0.01974340244037143,0.0098185220203595176,0.030160605462225164,358,True
+retriever,B_hybrid_rrf minus B_dense,B_hybrid_rrf,B_dense,union_coverage@1,-0.0023277467411545617,-0.025139664804469275,0.018168063314711349,358,False
+retriever,B_hybrid_rrf minus B_dense,B_hybrid_rrf,B_dense,union_coverage@3,-0.00069832402234636874,-0.02094972067039106,0.02188663873370577,358,False
+retriever,B_hybrid_rrf minus B_dense,B_hybrid_rrf,B_dense,union_coverage@5,0.071927374301675992,0.036539804469273747,0.10313663873370577,358,True
+retriever,B_hybrid_rrf minus B_dense,B_hybrid_rrf,B_dense,union_coverage@10,-0.02118249534450652,-0.043994413407821231,0.0011813314711359229,358,False
+retriever,B_hybrid_rrf minus B_bm25,B_hybrid_rrf,B_bm25,jaccard_truth@1,0.025884543761638731,0.0045600558659217904,0.04967877094972066,358,True
+retriever,B_hybrid_rrf minus B_bm25,B_hybrid_rrf,B_bm25,jaccard_truth@3,0.010403919482131773,-0.0025033807750288188,0.023146337678460579,358,False
+retriever,B_hybrid_rrf minus B_bm25,B_hybrid_rrf,B_bm25,jaccard_truth@5,0.020925778132482042,0.0085815376429901578,0.032949288374567703,358,True
+retriever,B_hybrid_rrf minus B_bm25,B_hybrid_rrf,B_bm25,jaccard_truth@10,-0.0027613727055067852,-0.010668811519021017,0.0055461558925246051,358,False
+retriever,B_hybrid_rrf minus B_bm25,B_hybrid_rrf,B_bm25,ndcg@1,0.026501396648044694,0.0050750698324022346,0.050420740223463684,358,True
+retriever,B_hybrid_rrf minus B_bm25,B_hybrid_rrf,B_bm25,ndcg@3,0.013964977063485763,0.00076727321071350617,0.026592586297428947,358,True
+retriever,B_hybrid_rrf minus B_bm25,B_hybrid_rrf,B_bm25,ndcg@5,0.020664342819165772,0.009388342439295547,0.031803472857755664,358,True
+retriever,B_hybrid_rrf minus B_bm25,B_hybrid_rrf,B_bm25,ndcg@10,0.0053994505883283852,-0.0018452112743321243,0.012825642333110697,358,False
+retriever,B_hybrid_rrf minus B_bm25,B_hybrid_rrf,B_bm25,union_coverage@1,0.023743016759776536,-0.00046554934823091144,0.046566573556797018,358,False
+retriever,B_hybrid_rrf minus B_bm25,B_hybrid_rrf,B_bm25,union_coverage@3,0.014432029795158287,-0.0086243016759776549,0.039111964618249534,358,False
+retriever,B_hybrid_rrf minus B_bm25,B_hybrid_rrf,B_bm25,union_coverage@5,0.084729981378026079,0.050023277467411545,0.12012337057728117,358,True
+retriever,B_hybrid_rrf minus B_bm25,B_hybrid_rrf,B_bm25,union_coverage@10,-0.0030260707635009301,-0.026780726256983241,0.022584962756052138,358,False
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,jaccard_truth@3,-0.0030881440099317183,-0.0097466635630043454,0.0041298106765983861,358,False
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,jaccard_truth@5,-0.0034450651769087517,-0.0088919925512104276,0.0010253724394785843,358,False
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,jaccard_truth@10,-0.040055865921787698,-0.046020018621973913,-0.034282472067039098,358,True
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,ndcg@3,-0.0032837395024028805,-0.0085777206234873993,0.0026764350928615535,358,False
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,ndcg@5,-0.0030158813338580902,-0.0072821194193642838,0.00073573028183347038,358,False
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,ndcg@10,-0.029941073902161868,-0.034377875910128086,-0.025549441783048955,358,True
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,union_coverage@3,0.010242085661080074,0.0013966480446927375,0.020018621973929236,358,True
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,union_coverage@5,0.010009310986964618,-0.0013966480446927375,0.021648044692737432,358,False
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,union_coverage@10,0.0060521415270018619,-0.0097765363128491621,0.0223463687150838,358,False
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,duplicate_text_rate@3,-0.0018621973929236501,-0.0046554934823091259,0,358,False
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,duplicate_text_rate@5,-0.0067039106145251404,-0.01229050279329609,-0.0022346368715083801,358,True
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,duplicate_text_rate@10,-0.053351955307262555,-0.058938547486033506,-0.048044692737430159,358,True
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,unique_templates@3,0.0055865921787709499,0,0.013966480446927373,358,False
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,unique_templates@5,0.033519553072625698,0.0111731843575419,0.061452513966480445,358,True
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,unique_templates@10,0.53351955307262566,0.48044692737430167,0.58938547486033521,358,True
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,mean_pairwise_cosine@3,-0.020278206001446898,-0.02357077170683685,-0.016953762135775399,358,True
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,mean_pairwise_cosine@5,-0.0098867393905224081,-0.013197101740031268,-0.0070216111734759208,358,True
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,mean_pairwise_cosine@10,-0.018166415268482443,-0.020058950879637088,-0.016344700749526476,358,True
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,zero_overlap_rate@3,0.0074487895716945996,-0.00093109869646182506,0.014897579143389199,358,False
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,zero_overlap_rate@5,0.0011173184357541901,-0.0033519553072625698,0.0067039106145251395,358,False
+mmr_vs_standard,C_hybrid_mmr0.5 minus B_hybrid_rrf,C_hybrid_mmr0.5,B_hybrid_rrf,zero_overlap_rate@10,0.038547486033519547,0.032388268156424579,0.045251396648044694,358,True
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,jaccard_truth@3,0.018854748603351956,0.0082247051520794538,0.028786468032278082,358,True
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,jaccard_truth@5,0.0001396648044692737,-0.0023777932960893861,0.0027932960893854745,358,False
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,jaccard_truth@10,-0.039315642458100548,-0.044786429236499066,-0.033914106145251394,358,True
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,ndcg@3,0.013197859019052998,0.0056030280348410809,0.020321671406969027,358,True
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,ndcg@5,0.001471941407450495,-0.00073981886700757538,0.0035897736180657883,358,False
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,ndcg@10,-0.025073970803628845,-0.028991097767510333,-0.021568446329449539,358,True
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,union_coverage@3,0.071229050279329603,0.043296089385474863,0.097765363128491614,358,True
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,union_coverage@5,0.0083798882681564244,0,0.019553072625698324,358,False
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,union_coverage@10,-0.00093109869646182506,-0.0093109869646182501,0.0083798882681564244,358,False
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,duplicate_text_rate@3,0,0,0,358,False
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,duplicate_text_rate@5,-0.0022346368715083806,-0.0044692737430167611,-0.00055865921787709514,358,True
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,duplicate_text_rate@10,-0.05083798882681563,-0.056152234636871502,-0.045810055865921781,358,True
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,unique_templates@3,0,0,0,358,False
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,unique_templates@5,0.0111731843575419,0.0027932960893854749,0.0223463687150838,358,True
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,unique_templates@10,0.50837988826815639,0.45810055865921789,0.56152234636871501,358,True
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,mean_pairwise_cosine@3,-0.0055398366637736058,-0.00729044256263605,-0.0038135994870902449,358,True
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,mean_pairwise_cosine@5,-0.0050865110405330554,-0.0076492369840930963,-0.0029605053365230564,358,True
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,mean_pairwise_cosine@10,-0.010410153166541839,-0.0113389383772565,-0.0094907507342000246,358,True
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,zero_overlap_rate@3,-0.020484171322160152,-0.030726256983240222,-0.010242085661080076,358,True
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,zero_overlap_rate@5,-0.0011173184357541896,-0.0039106145251396641,0.0016759776536312851,358,False
+mmr_vs_standard,C_hybrid_mmr0.7 minus B_hybrid_rrf,C_hybrid_mmr0.7,B_hybrid_rrf,zero_overlap_rate@10,0.038268156424581007,0.032953910614525142,0.043854748603351951,358,True
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,jaccard_truth@3,0.021803227808814399,0.012490301055245187,0.031036623215394164,358,True
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,jaccard_truth@5,-3.1011816330311636e-19,-0.0022346368715083806,0.0022346368715083801,358,False
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,jaccard_truth@10,-0.038896648044692728,-0.044484404096834247,-0.033796554934823086,358,True
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,ndcg@3,0.015201835521534356,0.0084527750200209285,0.021762457193506314,358,True
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,ndcg@5,0.001530222527438563,-3.8911192350916147e-05,0.0030653538598108816,358,False
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,ndcg@10,-0.023771215041299396,-0.027427900032240639,-0.020398161839591186,358,True
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,union_coverage@3,0.072625698324022353,0.044692737430167599,0.1005586592178771,358,True
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,union_coverage@5,0.0055865921787709499,0,0.013966480446927373,358,False
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,union_coverage@10,-0.0037243947858473002,-0.010242085661080076,0,358,False
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,duplicate_text_rate@3,0,0,0,358,False
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,duplicate_text_rate@5,-0.0022346368715083806,-0.0044692737430167611,-0.00055865921787709514,358,True
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,duplicate_text_rate@10,-0.04916201117318434,-0.054748603351955291,-0.044134078212290498,358,True
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,unique_templates@3,0,0,0,358,False
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,unique_templates@5,0.0111731843575419,0.0027932960893854749,0.0223463687150838,358,True
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,unique_templates@10,0.49162011173184356,0.44134078212290501,0.54748603351955305,358,True
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,mean_pairwise_cosine@3,-0.00042872222442200732,-0.0010316793146080145,3.4385669830791016e-05,358,False
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,mean_pairwise_cosine@5,-0.0021768676835065446,-0.0035568242008126648,-0.0010445801947036935,358,True
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,mean_pairwise_cosine@10,-0.0088271813352680736,-0.0096284731681453451,-0.0080096880109283512,358,True
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,zero_overlap_rate@3,-0.020484171322160152,-0.029795158286778402,-0.0111731843575419,358,True
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,zero_overlap_rate@5,3.1011816330311636e-19,-0.0022346368715083793,0.0022346368715083801,358,False
+mmr_vs_standard,C_hybrid_mmr0.9 minus B_hybrid_rrf,C_hybrid_mmr0.9,B_hybrid_rrf,zero_overlap_rate@10,0.038547486033519554,0.033240223463687157,0.043854748603351951,358,True
+top_k,K=3 minus K=1,FINAL_pipeline,FINAL_pipeline,jaccard_truth@3 - jaccard_truth@1,-0.012212911235257608,-0.025842644320297953,0.0019106921166976972,358,False
+top_k,K=3 minus K=1,FINAL_pipeline,FINAL_pipeline,ndcg@3 - ndcg@1,-0.0089902512625393196,-0.020054218456877007,0.0024209405037240363,358,False
+top_k,K=3 minus K=1,FINAL_pipeline,FINAL_pipeline,union_coverage@3 - union_coverage@1,0.06540968342644321,0.044925512104283062,0.089856843575418982,358,True
+top_k,K=3 minus K=1,FINAL_pipeline,FINAL_pipeline,duplicate_text_rate@3 - duplicate_text_rate@1,0.33333333333333343,0.29981378026070771,0.37057728119180638,358,True
+top_k,K=3 minus K=1,FINAL_pipeline,FINAL_pipeline,unique_templates@3 - unique_templates@1,1,0.88826815642458101,1.1005586592178771,358,True
+top_k,K=3 minus K=1,FINAL_pipeline,FINAL_pipeline,mean_pairwise_cosine@3 - mean_pairwise_cosine@1,,,,358,False
+top_k,K=3 minus K=1,FINAL_pipeline,FINAL_pipeline,zero_overlap_rate@3 - zero_overlap_rate@1,-0.0046554934823091285,-0.021415270018621976,0.0093109869646182467,358,False
+top_k,K=5 minus K=3,FINAL_pipeline,FINAL_pipeline,jaccard_truth@5 - jaccard_truth@3,0.013246430788330231,0.004725791433891997,0.021896027312228429,358,True
+top_k,K=5 minus K=3,FINAL_pipeline,FINAL_pipeline,ndcg@5 - ndcg@3,0.0095679767469764639,0.0031528658348872703,0.015746537777028721,358,True
+top_k,K=5 minus K=3,FINAL_pipeline,FINAL_pipeline,union_coverage@5 - union_coverage@3,0.1005586592178771,0.070751862197392934,0.12943435754189947,358,True
+top_k,K=5 minus K=3,FINAL_pipeline,FINAL_pipeline,duplicate_text_rate@5 - duplicate_text_rate@3,0.071135940409683407,0.06350093109869645,0.078775605214152666,358,True
+top_k,K=5 minus K=3,FINAL_pipeline,FINAL_pipeline,unique_templates@5 - unique_templates@3,0.97765363128491622,0.86864525139664805,1.0754189944134078,358,True
+top_k,K=5 minus K=3,FINAL_pipeline,FINAL_pipeline,mean_pairwise_cosine@5 - mean_pairwise_cosine@3,0.00029740961237326678,-0.0024443251210884008,0.003344479226117027,358,False
+top_k,K=5 minus K=3,FINAL_pipeline,FINAL_pipeline,zero_overlap_rate@5 - zero_overlap_rate@3,-0.0037243947858472915,-0.013407821229050272,0.0072625698324022409,358,False
+top_k,K=10 minus K=5,FINAL_pipeline,FINAL_pipeline,jaccard_truth@10 - jaccard_truth@5,-0.01585661080074488,-0.022329143389199259,-0.0098036545623836156,358,True
+top_k,K=10 minus K=5,FINAL_pipeline,FINAL_pipeline,ndcg@10 - ndcg@5,-0.008357362387432345,-0.013028736035605852,-0.0038477549509988323,358,True
+top_k,K=10 minus K=5,FINAL_pipeline,FINAL_pipeline,union_coverage@10 - union_coverage@5,0.044227188081936694,0.025832169459962757,0.063553305400372434,358,True
+top_k,K=10 minus K=5,FINAL_pipeline,FINAL_pipeline,duplicate_text_rate@10 - duplicate_text_rate@5,0.052793296089385468,0.046927374301675963,0.058938547486033506,358,True
+top_k,K=10 minus K=5,FINAL_pipeline,FINAL_pipeline,unique_templates@10 - unique_templates@5,2.4497206703910615,2.1759078212290501,2.6956005586592178,358,True
+top_k,K=10 minus K=5,FINAL_pipeline,FINAL_pipeline,mean_pairwise_cosine@10 - mean_pairwise_cosine@5,-0.0011863194031422365,-0.00414398284264783,0.0015165745046551661,358,False
+top_k,K=10 minus K=5,FINAL_pipeline,FINAL_pipeline,zero_overlap_rate@10 - zero_overlap_rate@5,0.018715083798882676,0.010893854748603351,0.027094972067039105,358,True
+top_k,K=10 minus K=3,FINAL_pipeline,FINAL_pipeline,jaccard_truth@10 - jaccard_truth@3,-0.0026101800124146497,-0.012998525760397272,0.0066933969584109226,358,False
+top_k,K=10 minus K=3,FINAL_pipeline,FINAL_pipeline,ndcg@10 - ndcg@3,0.0012106143595441176,-0.0070353606109675908,0.0087870035042120331,358,False
+top_k,K=10 minus K=3,FINAL_pipeline,FINAL_pipeline,union_coverage@10 - union_coverage@3,0.14478584729981378,0.11126047486033519,0.18016759776536312,358,True
+top_k,K=10 minus K=3,FINAL_pipeline,FINAL_pipeline,duplicate_text_rate@10 - duplicate_text_rate@3,0.12392923649906888,0.11191806331471132,0.13631517690875233,358,True
+top_k,K=10 minus K=3,FINAL_pipeline,FINAL_pipeline,unique_templates@10 - unique_templates@3,3.4273743016759775,3.0473463687150839,3.7654329608938548,358,True
+top_k,K=10 minus K=3,FINAL_pipeline,FINAL_pipeline,mean_pairwise_cosine@10 - mean_pairwise_cosine@3,-0.00088890979076896963,-0.0051053486285762405,0.0036900363363034233,358,False
+top_k,K=10 minus K=3,FINAL_pipeline,FINAL_pipeline,zero_overlap_rate@10 - zero_overlap_rate@3,0.014990689013035388,0.0037220670391061531,0.027653631284916207,358,True
+top_k,K=5 minus K=1,FINAL_pipeline,FINAL_pipeline,jaccard_truth@5 - jaccard_truth@1,0.0010335195530726253,-0.016839152700186221,0.01868365921787709,358,False
+top_k,K=5 minus K=1,FINAL_pipeline,FINAL_pipeline,ndcg@5 - ndcg@1,0.0005777254844371439,-0.01449715094497602,0.015033372599392258,358,False
+top_k,K=5 minus K=1,FINAL_pipeline,FINAL_pipeline,union_coverage@5 - union_coverage@1,0.16596834264432031,0.13151187150837987,0.20112313780260707,358,True
+top_k,K=5 minus K=1,FINAL_pipeline,FINAL_pipeline,duplicate_text_rate@5 - duplicate_text_rate@1,0.40446927374301678,0.36424581005586593,0.4480726256983239,358,True
+top_k,K=5 minus K=1,FINAL_pipeline,FINAL_pipeline,unique_templates@5 - unique_templates@1,1.9776536312849162,1.7596368715083799,2.1787709497206702,358,True
+top_k,K=5 minus K=1,FINAL_pipeline,FINAL_pipeline,mean_pairwise_cosine@5 - mean_pairwise_cosine@1,,,,358,False
+top_k,K=5 minus K=1,FINAL_pipeline,FINAL_pipeline,zero_overlap_rate@5 - zero_overlap_rate@1,-0.0083798882681564192,-0.026829608938547484,0.0083938547486033452,358,False
+oracle_gap,oracle dense minus R1 classifier Q0 dense (R1 gap),O_Q0_dense,R1_Q0_dense,jaccard_truth@1,0.27509310986964619,0.23192155493482308,0.31779445996275602,358,True
+oracle_gap,oracle dense minus R1 classifier Q0 dense (R1 gap),O_Q0_dense,R1_Q0_dense,jaccard_truth@3,0.29073556797020489,0.25331781502172568,0.32892031346989442,358,True
+oracle_gap,oracle dense minus R1 classifier Q0 dense (R1 gap),O_Q0_dense,R1_Q0_dense,jaccard_truth@5,0.29483240223463686,0.25733123836126626,0.33169739292364991,358,True
+oracle_gap,oracle dense minus R1 classifier Q0 dense (R1 gap),O_Q0_dense,R1_Q0_dense,jaccard_truth@10,0.24459031657355679,0.2145209497206704,0.27528898975791438,358,True
+oracle_gap,oracle dense minus R1 classifier Q0 dense (R1 gap),O_Q0_dense,R1_Q0_dense,ndcg@1,0.27591558038485409,0.2327622594661701,0.3193078833022967,358,True
+oracle_gap,oracle dense minus R1 classifier Q0 dense (R1 gap),O_Q0_dense,R1_Q0_dense,ndcg@3,0.2917348171463488,0.25380621311462365,0.33094645671028566,358,True
+oracle_gap,oracle dense minus R1 classifier Q0 dense (R1 gap),O_Q0_dense,R1_Q0_dense,ndcg@5,0.29491189848074711,0.25711095261578931,0.33338553922202296,358,True
+oracle_gap,oracle dense minus R1 classifier Q0 dense (R1 gap),O_Q0_dense,R1_Q0_dense,ndcg@10,0.26179752392402833,0.22859627297214324,0.29402207467570829,358,True
+oracle_gap,oracle dense minus R1 classifier Q0 dense (R1 gap),O_Q0_dense,R1_Q0_dense,union_coverage@1,0.2809590316573557,0.23417132216014899,0.32985917132216014,358,True
+oracle_gap,oracle dense minus R1 classifier Q0 dense (R1 gap),O_Q0_dense,R1_Q0_dense,union_coverage@3,0.31750465549348228,0.27047253258845433,0.36780726256983243,358,True
+oracle_gap,oracle dense minus R1 classifier Q0 dense (R1 gap),O_Q0_dense,R1_Q0_dense,union_coverage@5,0.29585661080074488,0.2490630819366853,0.34638035381750465,358,True
+oracle_gap,oracle dense minus R1 classifier Q0 dense (R1 gap),O_Q0_dense,R1_Q0_dense,union_coverage@10,0.16364059590316574,0.125459729981378,0.20624418063314712,358,True
+oracle_gap,oracle dense Q0 minus final R2 pipeline,O_Q0_dense,FINAL_pipeline,jaccard_truth@1,0.24129422718808197,0.1950651769087523,0.28760707635009308,358,True
+oracle_gap,oracle dense Q0 minus final R2 pipeline,O_Q0_dense,FINAL_pipeline,jaccard_truth@3,0.26131284916201114,0.22233472998137802,0.29935133457479823,358,True
+oracle_gap,oracle dense Q0 minus final R2 pipeline,O_Q0_dense,FINAL_pipeline,jaccard_truth@5,0.25184357541899438,0.21780865921787712,0.28641899441340785,358,True
+oracle_gap,oracle dense Q0 minus final R2 pipeline,O_Q0_dense,FINAL_pipeline,jaccard_truth@10,0.22963221601489761,0.1935834497206704,0.26404131750465554,358,True
+oracle_gap,oracle dense Q0 minus final R2 pipeline,O_Q0_dense,FINAL_pipeline,ndcg@1,0.24108085040347613,0.19433862895716947,0.28843420235878336,358,True
+oracle_gap,oracle dense Q0 minus final R2 pipeline,O_Q0_dense,FINAL_pipeline,ndcg@3,0.26010212007378947,0.22052611966214525,0.29853507919289402,358,True
+oracle_gap,oracle dense Q0 minus final R2 pipeline,O_Q0_dense,FINAL_pipeline,ndcg@5,0.25411935517171036,0.21820475459119226,0.29011211228624689,358,True
+oracle_gap,oracle dense Q0 minus final R2 pipeline,O_Q0_dense,FINAL_pipeline,ndcg@10,0.23995127413963402,0.20412122776976702,0.27433342070033756,358,True
+oracle_gap,oracle dense Q0 minus final R2 pipeline,O_Q0_dense,FINAL_pipeline,union_coverage@1,0.27351024208566105,0.22601838919925513,0.32311452513966477,358,True
+oracle_gap,oracle dense Q0 minus final R2 pipeline,O_Q0_dense,FINAL_pipeline,union_coverage@3,0.31634078212290501,0.26954725325884543,0.36499068901303533,358,True
+oracle_gap,oracle dense Q0 minus final R2 pipeline,O_Q0_dense,FINAL_pipeline,union_coverage@5,0.22346368715083798,0.18435172253258844,0.26979166666666671,358,True
+oracle_gap,oracle dense Q0 minus final R2 pipeline,O_Q0_dense,FINAL_pipeline,union_coverage@10,0.18528864059590319,0.14757914338919928,0.23045274674115454,358,True
+oracle_gap,oracle with the final pipeline minus final R2 pipeline,O_final_pipeline,FINAL_pipeline,jaccard_truth@1,0.31047486033519556,0.26624534450651771,0.35605796089385477,358,True
+oracle_gap,oracle with the final pipeline minus final R2 pipeline,O_final_pipeline,FINAL_pipeline,jaccard_truth@3,0.27574487895716948,0.23797486033519549,0.31575457790192424,358,True
+oracle_gap,oracle with the final pipeline minus final R2 pipeline,O_final_pipeline,FINAL_pipeline,jaccard_truth@5,0.2656424581005587,0.23096182495344503,0.30181215083798885,358,True
+oracle_gap,oracle with the final pipeline minus final R2 pipeline,O_final_pipeline,FINAL_pipeline,jaccard_truth@10,0.25655027932960894,0.22201280260707637,0.29135533054003721,358,True
+oracle_gap,oracle with the final pipeline minus final R2 pipeline,O_final_pipeline,FINAL_pipeline,ndcg@1,0.31195297951582868,0.26755450806952208,0.35779368404717565,358,True
+oracle_gap,oracle with the final pipeline minus final R2 pipeline,O_final_pipeline,FINAL_pipeline,ndcg@3,0.2874348940928686,0.24921110548927491,0.32879702764204816,358,True
+oracle_gap,oracle with the final pipeline minus final R2 pipeline,O_final_pipeline,FINAL_pipeline,ndcg@5,0.27818903763366898,0.24231529711904928,0.31575662026682927,358,True
+oracle_gap,oracle with the final pipeline minus final R2 pipeline,O_final_pipeline,FINAL_pipeline,ndcg@10,0.26994840866111802,0.23455655119739074,0.30554501843778958,358,True
+oracle_gap,oracle with the final pipeline minus final R2 pipeline,O_final_pipeline,FINAL_pipeline,union_coverage@1,0.2988826815642458,0.25464385474860335,0.34660730912476717,358,True
+oracle_gap,oracle with the final pipeline minus final R2 pipeline,O_final_pipeline,FINAL_pipeline,union_coverage@3,0.30237430167597767,0.25697742085661079,0.35335195530726254,358,True
+oracle_gap,oracle with the final pipeline minus final R2 pipeline,O_final_pipeline,FINAL_pipeline,union_coverage@5,0.21834264432029796,0.18062732774674117,0.26653282122905031,358,True
+oracle_gap,oracle with the final pipeline minus final R2 pipeline,O_final_pipeline,FINAL_pipeline,union_coverage@10,0.18202979515828679,0.14523975791433894,0.22742667597765362,358,True
