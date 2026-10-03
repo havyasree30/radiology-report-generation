@@ -1,0 +1,11 @@
+{
+  "scores_are_float32_values": true,
+  "min_score": 3.056765081055346e-07,
+  "max_score": 0.9996165037155151,
+  "n_clipped": 0,
+  "max_logit_rounding_error_from_float32_storage": 7.774196793676618e-05,
+  "median_logit_rounding_error": 5.2852596440883766e-08,
+  "logit_min": -15.000738151562285,
+  "logit_max": 7.865797055801726,
+  "note": "stored scores are float32 sigmoid outputs held as float64; logit(p) is recovered to the stated bound, no inference rerun"
+}

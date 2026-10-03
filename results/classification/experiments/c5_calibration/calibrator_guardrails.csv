@@ -1,0 +1,57 @@
+observation,method,cv_fold_flags,cv_pathological_folds,full_fit_flags,strictly_increasing,decision_mismatches_vs_c4
+No Finding,raw,,0,,True,0
+No Finding,temperature,,0,,True,0
+No Finding,platt,,0,,True,0
+No Finding,isotonic,,0,,False,0
+Enlarged Cardiomediastinum,raw,,0,,True,0
+Enlarged Cardiomediastinum,temperature,,0,,True,0
+Enlarged Cardiomediastinum,platt,,0,,True,0
+Enlarged Cardiomediastinum,isotonic,,0,,False,0
+Cardiomegaly,raw,,0,,True,0
+Cardiomegaly,temperature,,0,,True,0
+Cardiomegaly,platt,,0,,True,0
+Cardiomegaly,isotonic,,0,,False,0
+Lung Opacity,raw,,0,,True,0
+Lung Opacity,temperature,,0,,True,0
+Lung Opacity,platt,,0,,True,0
+Lung Opacity,isotonic,,0,,False,0
+Lung Lesion,raw,,0,,True,0
+Lung Lesion,temperature,,0,,True,0
+Lung Lesion,platt,,0,,True,0
+Lung Lesion,isotonic,,0,,False,0
+Edema,raw,,0,,True,0
+Edema,temperature,,0,,True,0
+Edema,platt,,0,,True,0
+Edema,isotonic,,0,,False,0
+Consolidation,raw,,0,,True,0
+Consolidation,temperature,,0,,True,0
+Consolidation,platt,,0,,True,0
+Consolidation,isotonic,,0,,False,0
+Pneumonia,raw,,0,,True,0
+Pneumonia,temperature,,0,,True,0
+Pneumonia,platt,,0,,True,0
+Pneumonia,isotonic,,0,,False,0
+Atelectasis,raw,,0,,True,0
+Atelectasis,temperature,,0,,True,0
+Atelectasis,platt,,0,,True,0
+Atelectasis,isotonic,,0,,False,0
+Pneumothorax,raw,,0,,True,0
+Pneumothorax,temperature,,0,,True,0
+Pneumothorax,platt,,0,,True,0
+Pneumothorax,isotonic,,0,,False,0
+Pleural Effusion,raw,,0,,True,0
+Pleural Effusion,temperature,,0,,True,0
+Pleural Effusion,platt,,0,,True,0
+Pleural Effusion,isotonic,,0,,False,0
+Pleural Other,raw,,0,,True,0
+Pleural Other,temperature,,0,,True,0
+Pleural Other,platt,,0,,True,0
+Pleural Other,isotonic,,0,,False,0
+Fracture,raw,,0,,True,0
+Fracture,temperature,,0,,True,0
+Fracture,platt,,0,,True,0
+Fracture,isotonic,,0,,False,0
+Support Devices,raw,,0,,True,0
+Support Devices,temperature,,0,,True,0
+Support Devices,platt,,0,,True,0
+Support Devices,isotonic,,0,,False,0
