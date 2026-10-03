@@ -1,0 +1,19 @@
+# Results: operating-policy selection (C4)
+
+## Operating-point selection
+
+On the validation set (28,671 images, 9,530 patients), the choice of threshold policy changed the precision-recall balance substantially while the underlying scores were identical. A fixed threshold of 0.50 gave a macro precision of 0.426, macro recall of 0.448 and macro F1 of 0.430 across the 14 observations (Figure 1, Table 1). Class-specific Youden thresholds increased macro recall to 0.754 and balanced accuracy from 0.672 to 0.734, but reduced macro precision to 0.321, macro specificity from 0.897 to 0.713 and macro F1 to 0.399 (Figure 2). F1-optimal thresholds provided an intermediate operating point, with macro precision 0.396, recall 0.543 and the highest macro F1 (0.452).
+
+The policies also differed in how many findings they would pass to downstream stages (Figure 3). The reference labels contained a mean of 2.31 positive findings per image among the 13 observations other than No Finding. The 0.50 policy predicted 2.48, the F1-optimal policy 3.43 and the Youden policy 5.12; 44.8% of images received more than five findings under Youden thresholds, compared with 9.5% under F1-optimal thresholds and 0.6% in the reference labels. At the per-class level, F1-optimal thresholds produced a higher F1 than the 0.50 threshold in 14 of 14 observations (Figure 4), and the movement from 0.50 to Youden to F1-optimal thresholds traced a precision-recall trade-off in most classes (Figure 5).
+
+## Rare-class performance
+
+Differences between policies were largest for the six low-prevalence observations (Table 3, Figure 6). At a threshold of 0.50, recall for these classes ranged from 0.11–0.29. Youden thresholds increased recall to 0.61–0.83, at the cost of precision of 0.03–0.13 and 6.6–28.1 false positives per true positive; for Pleural Other, the rarest class, this corresponded to 28.1 false positives per true positive. F1-optimal thresholds gave recall of 0.26–0.44 and precision of 0.12–0.26, with 2.9–7.5 false positives per true positive. Compared with the 0.50 threshold, F1-optimal thresholds increased recall in 5 of the six classes and lowered precision in 5. Even under the most favourable policy, no rare class exceeded a precision of 0.26, so most positive predictions for these observations were false positives on the validation set.
+
+## No Finding consistency
+
+With F1-optimal thresholds, No Finding and at least one pathology observation were predicted positive together on 2.6% of images (24.0% of images predicted No Finding), compared with 3.1% at 0.50 and 25.8% with Youden thresholds; the reference labels contained none (Figure 7, Table 4). The deterministic consistency rule changed the No Finding output on 755 images and removed all contradictions. It increased No Finding precision from 0.459 to 0.494 and specificity from 0.935 to 0.954, while recall decreased from 0.570 to 0.467 and F1 from 0.509 to 0.480. Predictions for the 13 abnormal observations were unchanged, so macro metrics over those observations were identical with and without the rule. Treating Support Devices as an abnormal finding in the rule reduced No Finding recall to 0.239.
+
+## Final policy selection
+
+F1-optimal per-class thresholds combined with the No Finding consistency rule were selected as the operating policy for downstream use (Figure 8, Table 2). Relative to the 0.50 threshold, this policy provided higher macro recall (0.535 vs 0.448) and macro F1 (0.449 vs 0.430) at a lower macro precision (0.398 vs 0.426), and relative to Youden thresholds it passed on 1.7 fewer findings per image. It predicted 3.43 findings per image on average, still above the 2.31 in the reference labels, and rare-class precision remained low. These results describe validation operating-point performance: thresholds were optimised on the same data, the held-out test partition has not been evaluated, and the model scores have not been calibrated.

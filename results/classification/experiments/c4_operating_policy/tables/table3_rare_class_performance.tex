@@ -1,0 +1,30 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrrrrrrrr}
+\hline
+Observation & Policy & Prevalence & Threshold & TP & FP & Precision & Recall & F1 & FP per TP \\
+\hline
+Pleural Other & Threshold 0.50 & 0.013 & 0.5000 & 43 & 278 & 0.134 & 0.113 & 0.123 & 6.5 \\
+Pleural Other & Youden J & 0.013 & 0.0122 & 286 & 8047 & 0.034 & 0.751 & 0.066 & 28.1 \\
+Pleural Other & F1-optimal & 0.013 & 0.2543 & 98 & 732 & 0.118 & 0.257 & 0.162 & 7.5 \\
+Pneumonia & Threshold 0.50 & 0.027 & 0.5000 & 135 & 602 & 0.183 & 0.189 & 0.186 & 4.5 \\
+Pneumonia & Youden J & 0.027 & 0.0747 & 492 & 7795 & 0.059 & 0.688 & 0.109 & 15.8 \\
+Pneumonia & F1-optimal & 0.027 & 0.3813 & 194 & 1091 & 0.151 & 0.271 & 0.194 & 5.6 \\
+Fracture & Threshold 0.50 & 0.038 & 0.5000 & 212 & 433 & 0.329 & 0.194 & 0.244 & 2.0 \\
+Fracture & Youden J & 0.038 & 0.0428 & 806 & 7765 & 0.094 & 0.738 & 0.167 & 9.6 \\
+Fracture & F1-optimal & 0.038 & 0.3264 & 309 & 898 & 0.256 & 0.283 & 0.269 & 2.9 \\
+Lung Lesion & Threshold 0.50 & 0.037 & 0.5000 & 305 & 1045 & 0.226 & 0.287 & 0.253 & 3.4 \\
+Lung Lesion & Youden J & 0.037 & 0.1015 & 729 & 7755 & 0.086 & 0.685 & 0.153 & 10.6 \\
+Lung Lesion & F1-optimal & 0.037 & 0.5139 & 299 & 976 & 0.235 & 0.281 & 0.256 & 3.3 \\
+Enlarged Cardiomediastinum & Threshold 0.50 & 0.051 & 0.5000 & 209 & 698 & 0.230 & 0.152 & 0.183 & 3.3 \\
+Enlarged Cardiomediastinum & Youden J & 0.051 & 0.1495 & 831 & 8769 & 0.087 & 0.605 & 0.151 & 10.6 \\
+Enlarged Cardiomediastinum & F1-optimal & 0.051 & 0.3040 & 430 & 2527 & 0.145 & 0.313 & 0.199 & 5.9 \\
+Consolidation & Threshold 0.50 & 0.078 & 0.5000 & 428 & 1270 & 0.252 & 0.218 & 0.234 & 3.0 \\
+Consolidation & Youden J & 0.078 & 0.1321 & 1624 & 10757 & 0.131 & 0.829 & 0.226 & 6.6 \\
+Consolidation & F1-optimal & 0.078 & 0.3334 & 853 & 3625 & 0.190 & 0.435 & 0.265 & 4.2 \\
+\hline
+\end{tabular}
+\caption{Rare-class performance under three thresholding policies on the validation set.}
+\label{tab:table3_rare_class_performance}
+\end{table}

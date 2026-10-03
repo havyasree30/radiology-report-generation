@@ -1,0 +1,81 @@
+{
+  "png_dpi": {
+    "fig1_policy_precision_recall_f1": {
+      "dpi": 300,
+      "pixels": [
+        1853,
+        1051
+      ]
+    },
+    "fig2_policy_specificity_balanced_accuracy": {
+      "dpi": 300,
+      "pixels": [
+        1574,
+        1039
+      ]
+    },
+    "fig3_predicted_findings_per_image": {
+      "dpi": 300,
+      "pixels": [
+        2031,
+        1137
+      ]
+    },
+    "fig4_per_class_f1": {
+      "dpi": 300,
+      "pixels": [
+        2258,
+        1460
+      ]
+    },
+    "fig5_per_class_precision_recall_tradeoff": {
+      "dpi": 300,
+      "pixels": [
+        2829,
+        2859
+      ]
+    },
+    "fig6_rare_class_false_alarm_burden": {
+      "dpi": 300,
+      "pixels": [
+        3562,
+        1290
+      ]
+    },
+    "fig7_no_finding_consistency": {
+      "dpi": 300,
+      "pixels": [
+        3085,
+        1232
+      ]
+    },
+    "fig8_final_thresholds": {
+      "dpi": 300,
+      "pixels": [
+        2258,
+        1414
+      ]
+    }
+  },
+  "pdf_has_embedded_raster": {
+    "fig1_policy_precision_recall_f1": false,
+    "fig2_policy_specificity_balanced_accuracy": false,
+    "fig3_predicted_findings_per_image": false,
+    "fig4_per_class_f1": false,
+    "fig5_per_class_precision_recall_tradeoff": false,
+    "fig6_rare_class_false_alarm_burden": false,
+    "fig7_no_finding_consistency": false,
+    "fig8_final_thresholds": false
+  },
+  "svg_present": {
+    "fig1_policy_precision_recall_f1": true,
+    "fig2_policy_specificity_balanced_accuracy": true,
+    "fig3_predicted_findings_per_image": true,
+    "fig4_per_class_f1": true,
+    "fig5_per_class_precision_recall_tradeoff": true,
+    "fig6_rare_class_false_alarm_burden": true,
+    "fig7_no_finding_consistency": true,
+    "fig8_final_thresholds": true
+  },
+  "figure_source_agrees_with_raw_tables": true
+}

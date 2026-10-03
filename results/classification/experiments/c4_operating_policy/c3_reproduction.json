@@ -1,0 +1,27 @@
+{
+  "policies": {
+    "thr_050": {
+      "counts_identical": true,
+      "max_abs_diff_metrics": 0.0,
+      "macro_max_abs_diff": 0.0
+    },
+    "youden": {
+      "counts_identical": true,
+      "max_abs_diff_metrics": 0.0,
+      "macro_max_abs_diff": 0.0
+    },
+    "f1": {
+      "counts_identical": true,
+      "max_abs_diff_metrics": 0.0,
+      "macro_max_abs_diff": 0.0
+    }
+  },
+  "reproduced": true,
+  "c3_per_image_file": {
+    "scores_bit_identical": true,
+    "youden_preds_identical": true,
+    "image_ids_identical": true
+  },
+  "n_images": 28671,
+  "n_patients": 9530
+}

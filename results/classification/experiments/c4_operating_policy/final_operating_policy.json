@@ -1,0 +1,115 @@
+{
+  "policy_name": "f1_optimal_plus_no_finding_consistency",
+  "model": "DenseNet121, 14 independent sigmoid outputs (multi-label)",
+  "checkpoint": "results/classification/experiments/c2b_sqrt_weighted_bce/checkpoints/best.pt",
+  "checkpoint_sha256": "6645ed44be7cb7d4cf4679b1fd561c7ac36be63f964ea320666199883126794b",
+  "checkpoint_epoch": 7,
+  "loss": "sqrt_weighted_bce",
+  "loss_config": {
+    "type": "weighted_bce",
+    "pos_weight_source": "train_split",
+    "pos_weight_tempering": "sqrt"
+  },
+  "threshold_method": "f1_optimal",
+  "threshold_tie_rule": "exact F1 ties: higher recall, then higher threshold",
+  "decision_rule": "positive if sigmoid score >= class threshold; scores are model scores, not calibrated probabilities",
+  "dataset_split_for_selection": "validation",
+  "n_validation_images": 28671,
+  "n_validation_patients": 9530,
+  "evaluation_precision_policy": "fp32_strict",
+  "label_policy": {
+    "uncertain": "ignore",
+    "blank": "zero"
+  },
+  "locked_test_split_used": false,
+  "created_utc": "2026-10-03T04:13:46+00:00",
+  "provenance": {
+    "thresholds_source_file": "results/classification/experiments/c3_threshold_optimization/thresholds_f1.json",
+    "thresholds_source_sha256": "1b19c9f92c80b5a2efb297fbed1d8848cf2118d527b12680f4278c15ae416408",
+    "thresholds_youden_file": "results/classification/experiments/c3_threshold_optimization/thresholds_youden.json",
+    "c2_study": "results/classification/experiments/LOSS_COMPARISON.md (C2-B selected provisionally)",
+    "c2_results_commit": "a2de417",
+    "c2_infrastructure_commit": "c1e4800",
+    "c3_commit": "031edd6",
+    "c3_report": "results/classification/experiments/c3_threshold_optimization/THRESHOLD_OPTIMIZATION.md",
+    "c4_report": "results/classification/experiments/c4_operating_policy/OPERATING_POLICY_SELECTION.md",
+    "code_commit_at_creation": "031edd6306fd2974d9ae6107921ed92860416bf4",
+    "git_branch": "c4-operating-policy",
+    "working_tree_dirty_at_creation": true
+  },
+  "label_order": [
+    "No Finding",
+    "Enlarged Cardiomediastinum",
+    "Cardiomegaly",
+    "Lung Opacity",
+    "Lung Lesion",
+    "Edema",
+    "Consolidation",
+    "Pneumonia",
+    "Atelectasis",
+    "Pneumothorax",
+    "Pleural Effusion",
+    "Pleural Other",
+    "Fracture",
+    "Support Devices"
+  ],
+  "no_finding_rule": "suppress_if_any_abnormal_positive",
+  "no_finding_rule_abnormal_labels": [
+    "Enlarged Cardiomediastinum",
+    "Cardiomegaly",
+    "Lung Opacity",
+    "Lung Lesion",
+    "Edema",
+    "Consolidation",
+    "Pneumonia",
+    "Atelectasis",
+    "Pneumothorax",
+    "Pleural Effusion",
+    "Pleural Other",
+    "Fracture"
+  ],
+  "classes": {
+    "No Finding": {
+      "threshold": 0.642667293548584
+    },
+    "Enlarged Cardiomediastinum": {
+      "threshold": 0.30397042632102966
+    },
+    "Cardiomegaly": {
+      "threshold": 0.4518182575702667
+    },
+    "Lung Opacity": {
+      "threshold": 0.32664650678634644
+    },
+    "Lung Lesion": {
+      "threshold": 0.5139020681381226
+    },
+    "Edema": {
+      "threshold": 0.3789757192134857
+    },
+    "Consolidation": {
+      "threshold": 0.33341237902641296
+    },
+    "Pneumonia": {
+      "threshold": 0.3812790811061859
+    },
+    "Atelectasis": {
+      "threshold": 0.3297014534473419
+    },
+    "Pneumothorax": {
+      "threshold": 0.614745020866394
+    },
+    "Pleural Effusion": {
+      "threshold": 0.36226996779441833
+    },
+    "Pleural Other": {
+      "threshold": 0.2542676031589508
+    },
+    "Fracture": {
+      "threshold": 0.3263857364654541
+    },
+    "Support Devices": {
+      "threshold": 0.34337711334228516
+    }
+  }
+}
