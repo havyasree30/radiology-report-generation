@@ -1,0 +1,46 @@
+{
+  "split": "val",
+  "n_images": 28671,
+  "n_patients": 9530,
+  "checkpoint_epoch": 7,
+  "inference_policy": "fp32_strict",
+  "backend_flags": {
+    "cudnn_allow_tf32": false,
+    "matmul_allow_tf32": false,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false
+  },
+  "macro_auroc": 0.8011384160007895,
+  "macro_auprc": 0.4234861202401775,
+  "micro_auroc": 0.8921544972248846,
+  "micro_auprc": 0.6673779238175399,
+  "n_classes_defined": 14,
+  "undefined_classes": [],
+  "competition5_macro_auroc": 0.812733470250248,
+  "determinism": {
+    "max_abs_diff_run1_vs_run2": 0.0,
+    "bit_identical": true
+  },
+  "serialization_roundtrip": {
+    "npz": {
+      "max_abs_diff": 0.0,
+      "bit_identical": true,
+      "status_mismatches": 0
+    },
+    "csv_17_digits": {
+      "max_abs_diff": 0.0,
+      "bit_identical": true,
+      "status_mismatches": 0
+    }
+  },
+  "overcalling": {
+    "n_images": 28671,
+    "actual_positive_findings_per_image_mean": 2.3989745736109658,
+    "predicted_positive_findings_per_image_mean": 5.3998116563775245,
+    "predicted_positive_findings_per_image_median": 5.0,
+    "images_with_zero_predicted_positives": 0,
+    "images_with_no_finding_pathology_warning": 7410,
+    "pct_images_with_no_finding_pathology_warning": 25.844930417495032,
+    "note": "actual = explicit positive (1) labels; uncertain and blank are not counted as positive"
+  }
+}

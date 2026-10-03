@@ -1,0 +1,21 @@
+{
+  "counts": {
+    "train_images": 133644,
+    "train_excluded": 5,
+    "train_patients": 45324,
+    "val_images": 28671,
+    "val_excluded": 1,
+    "val_patients": 9530
+  },
+  "epochs_run": 8,
+  "best_epoch": 8,
+  "selection_metric": "val_macro_auprc",
+  "best_selection_metric": 0.4150089428577402,
+  "best_val_macro_auroc": 0.7949167637353393,
+  "best_val_macro_auprc": 0.4150089428577402,
+  "best_epoch_train_loss": 0.08268713688128182,
+  "best_epoch_val_loss": 0.09984384507908287,
+  "total_seconds": 7178.151034116745,
+  "peak_gpu_mem_gb": 2.27606272,
+  "stopped_early": false
+}
