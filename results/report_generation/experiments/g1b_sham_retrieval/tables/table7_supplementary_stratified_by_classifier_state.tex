@@ -1,0 +1,33 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lrrrrrrr}
+\hline
+Classifier state & Studies & Metric & G1A & G1B & G1 & G1 - G1B (95\% CI) & CI excludes 0 \\
+\hline
+abnormal & 178 & precision & 0.319 & 0.348 & 0.411 & +0.063 (-0.012 to +0.143) & no \\
+abnormal & 178 & recall & 0.312 & 0.181 & 0.462 & +0.281 (+0.210 to +0.353) & yes \\
+abnormal & 178 & f1 & 0.316 & 0.238 & 0.435 & +0.197 (+0.128 to +0.269) & yes \\
+abnormal & 178 & hallucination\_rate & 0.652 & 0.320 & 0.545 & +0.225 (+0.123 to +0.320) & yes \\
+abnormal & 178 & omission\_rate & 0.573 & 0.652 & 0.522 & -0.129 (-0.191 to -0.067) & yes \\
+abnormal & 178 & clf\_fp\_propagation & 0.561 & 0.270 & 0.405 & +0.135 (+0.046 to +0.215) & yes \\
+abnormal & 178 & tp\_retention & 0.564 & 0.316 & 0.718 & +0.402 (+0.288 to +0.508) & yes \\
+abnormal & 178 & normal\_recall & 0.116 & 0.558 & 0.605 & +0.047 (-0.192 to +0.277) & no \\
+abnormal & 178 & abnormal\_recall & 0.696 & 0.393 & 0.800 & +0.407 (+0.300 to +0.507) & yes \\
+normal & 176 & recall & 0.000 & 0.000 & 0.000 & +0.000 (+0.000 to +0.000) & no \\
+normal & 176 & f1 & 0.000 & 0.000 & 0.000 & +0.000 (+0.000 to +0.000) & no \\
+normal & 176 & hallucination\_rate & 0.920 & 0.102 & 0.000 & -0.102 (-0.148 to -0.062) & yes \\
+normal & 176 & omission\_rate & 0.205 & 0.205 & 0.205 & +0.000 (+0.000 to +0.000) & no \\
+normal & 176 & normal\_recall & 0.064 & 0.886 & 1.000 & +0.114 (+0.063 to +0.168) & yes \\
+normal & 176 & abnormal\_recall & 0.889 & 0.056 & 0.000 & -0.056 (-0.143 to +0.000) & no \\
+indeterminate & 24 & recall & 0.000 & 0.000 & 0.000 & +0.000 (+0.000 to +0.000) & no \\
+indeterminate & 24 & f1 & 0.000 & 0.000 & 0.000 & +0.000 (+0.000 to +0.000) & no \\
+indeterminate & 24 & hallucination\_rate & 0.292 & 0.000 & 0.000 & +0.000 (+0.000 to +0.000) & no \\
+indeterminate & 24 & omission\_rate & 0.625 & 0.625 & 0.625 & +0.000 (+0.000 to +0.000) & no \\
+indeterminate & 24 & normal\_recall & 0.889 & 1.000 & 1.000 & +0.000 (+0.000 to +0.000) & no \\
+indeterminate & 24 & abnormal\_recall & 0.400 & 0.000 & 0.000 & +0.000 (+0.000 to +0.000) & no \\
+\hline
+\end{tabular}
+\caption{Supplementary: G1 minus G1B within each classifier state (descriptive).}
+\label{tab:table7_supplementary_stratified_by_classifier_state}
+\end{table}

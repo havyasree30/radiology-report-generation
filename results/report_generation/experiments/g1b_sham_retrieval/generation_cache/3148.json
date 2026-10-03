@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "01db7151eac19c59c8d5596be3a0c95e4c3fe4a191691a66b087487f0eb9bbb2",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is within normal limits. The lungs are clear. There is no pneumothorax. A small pleural effusion is present on the right.\nIMPRESSION:\nSmall right pleural effusion.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1351,
+ "output_tokens": 50,
+ "total_duration_ns": 1525703300,
+ "load_duration_ns": 4584400,
+ "attempts": 1,
+ "wall_seconds": 3.57,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:37:48+00:00"
+}

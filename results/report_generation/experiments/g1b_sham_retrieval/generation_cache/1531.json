@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "a0e6e2cdf21cda0eac1a346d03fa9cc2482a32b5e99ae4c9f0be9c18d135a1cd",
+ "text": "FINDINGS:\nNo acute abnormality is identified.\nIMPRESSION:\nNo acute cardiopulmonary abnormality.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1122,
+ "output_tokens": 32,
+ "total_duration_ns": 1496454700,
+ "load_duration_ns": 2242900,
+ "attempts": 1,
+ "wall_seconds": 3.53,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:25:43+00:00"
+}

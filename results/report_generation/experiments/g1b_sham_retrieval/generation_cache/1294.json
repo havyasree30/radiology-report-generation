@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "7b8460e67751dc13fb9aa1fa34c4f24fe137bcc97ca68b6012555c19c5bc4ea4",
+ "text": "FINDINGS:\nThe heart is large. In the interval, pulmonary venous engorgement has developed. Also, bibasilar interstitial infiltrates are present.\nIMPRESSION:\nDeveloping heart failure with pulmonary venous engorgement and bibasilar pulmonary interstitial edema.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1271,
+ "output_tokens": 63,
+ "total_duration_ns": 1976701400,
+ "load_duration_ns": 4058100,
+ "attempts": 1,
+ "wall_seconds": 4.03,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:24:00+00:00"
+}

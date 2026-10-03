@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "9fa844b008ce7fbe079c9329ace41e7b107bf4926694c91b475db6eee7e2f3e1",
+ "text": "FINDINGS:\nThe cardiac silhouette, upper mediastinum and pulmonary vasculature are within normal limits. There is no acute pulmonary consolidation, large effusion or pneumothorax. There is minimal left basilar atelectasis. There are small bilateral pulmonary nodules measure approximately 5 mm in size in the right midlung and left upper lung. These are not well appreciated on the lateral projection.\nIMPRESSION:\n1. No focal pulmonary consolidation or effusion. Minimal left basilar atelectasis. 2. Bilateral pulmonary nodules. These were not present on the prior study and may represent sequela of infection, but could represent neoplastic process. Correlation with history of primary malignancy is recommended. Further evaluation of the thorax could be performed, if clinically indicated.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1134,
+ "output_tokens": 152,
+ "total_duration_ns": 3509898100,
+ "load_duration_ns": 5693800,
+ "attempts": 1,
+ "wall_seconds": 5.56,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:15:02+00:00"
+}

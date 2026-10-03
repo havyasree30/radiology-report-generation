@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "f1e4623f2387c0133c86fadf14836ec0d5be0ef00e63cea68a1bf2b50d043005",
+ "text": "FINDINGS:\nA few bandlike opacities are present at the lateral left base.\nIMPRESSION:\n1. opacities at the lateral left base. The appearance atelectasis.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1142,
+ "output_tokens": 43,
+ "total_duration_ns": 1334108500,
+ "load_duration_ns": 4482500,
+ "attempts": 1,
+ "wall_seconds": 3.38,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:38:06+00:00"
+}

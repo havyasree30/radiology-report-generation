@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "6f4117d4cab03e053c12d7baeba32f1d1799616c72a551b6e32503b12a5f209c",
+ "text": "FINDINGS:\nThere is a small opacity in the right lower lung field.\nIMPRESSION:\nPossible pneumonia.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1235,
+ "output_tokens": 26,
+ "total_duration_ns": 1004315400,
+ "load_duration_ns": 7386400,
+ "attempts": 1,
+ "wall_seconds": 3.04,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:36:58+00:00"
+}

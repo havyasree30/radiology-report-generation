@@ -1,0 +1,10 @@
+system,classifier_state,n,report_normal,report_abnormal,report_indeterminate
+G1A_llm_no_retrieval,abnormal,178,46,132,0
+G1A_llm_no_retrieval,normal,176,13,162,1
+G1A_llm_no_retrieval,indeterminate,24,17,7,0
+G1B_llm_sham_retrieval,abnormal,178,106,72,0
+G1B_llm_sham_retrieval,normal,176,158,18,0
+G1B_llm_sham_retrieval,indeterminate,24,24,0,0
+G1_single_agent_rag,abnormal,178,53,125,0
+G1_single_agent_rag,normal,176,176,0,0
+G1_single_agent_rag,indeterminate,24,24,0,0

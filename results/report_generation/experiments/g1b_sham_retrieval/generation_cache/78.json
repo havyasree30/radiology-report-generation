@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "6303d8a089c41361733c7567552e74650db9b7266f78b31a9789ae45e139b472",
+ "text": "FINDINGS:\nThere is a small opacity in the right lower lobe. There is atelectasis in the left lower lobe. There is a small pleural effusion in the right lower lobe.\nIMPRESSION:\nSmall opacity, atelectasis, and pleural effusion.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1150,
+ "output_tokens": 65,
+ "total_duration_ns": 1884759100,
+ "load_duration_ns": 1724400,
+ "attempts": 1,
+ "wall_seconds": 3.94,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:12:49+00:00"
+}

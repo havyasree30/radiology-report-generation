@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "1f9057eae4b05d55c9b5bf8568e338010fdf5f0acf9dce691c7fe4152c30bbd0",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is enlarged. Increased interstitial markings are present in the lung bases.\nIMPRESSION:\n1. Cardiomegaly. 2. Increased interstitial markings in the lung bases, edema versus chronic interstitial changes.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1170,
+ "output_tokens": 54,
+ "total_duration_ns": 1792715100,
+ "load_duration_ns": 4964000,
+ "attempts": 1,
+ "wall_seconds": 3.83,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:32:40+00:00"
+}

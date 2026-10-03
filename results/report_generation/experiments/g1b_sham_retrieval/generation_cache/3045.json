@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "e4a392e5700792b5eb3aa97927ef5c97b7c6b049abce2d79846cbcaf333dc029",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is within normal limits. The lungs are clear without focal consolidation, pneumothorax, or pleural effusion.\nIMPRESSION:\nNo acute cardiopulmonary abnormalities.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1160,
+ "output_tokens": 54,
+ "total_duration_ns": 1506773500,
+ "load_duration_ns": 3858400,
+ "attempts": 1,
+ "wall_seconds": 3.53,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:37:05+00:00"
+}

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "690a004fcab9de9a0ea50184906a9dc4b4ba8d990a7b3586e5d7a7e0cccbdd46",
+ "text": "FINDINGS:\nPulmonary opacity in the right lower lobe.\nIMPRESSION:\n1. Pneumonia in the right lower lobe.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1097,
+ "output_tokens": 39,
+ "total_duration_ns": 1276644100,
+ "load_duration_ns": 2766900,
+ "attempts": 1,
+ "wall_seconds": 3.32,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:23:15+00:00"
+}

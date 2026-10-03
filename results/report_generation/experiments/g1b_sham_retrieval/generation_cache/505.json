@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "9167a31b172bb16dbcaf5bcd47c15d19795a58a5ab9afabd295fe4a4c091c766",
+ "text": "FINDINGS:\nThe lungs are clear. The heart size is normal. No fractures are identified.\nIMPRESSION:\nNo acute cardiopulmonary abnormalities.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1169,
+ "output_tokens": 42,
+ "total_duration_ns": 1256978600,
+ "load_duration_ns": 2084700,
+ "attempts": 1,
+ "wall_seconds": 3.3,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:17:08+00:00"
+}

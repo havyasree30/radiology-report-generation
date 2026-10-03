@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "50288fa5675f5e44725849cf32decf1e0c8b3a8614db5be03a7e8ee51767374e",
+ "text": "FINDINGS:\nThe cardiac silhouette appears within normal limits. The mediastinal structures are unremarkable. The lungs are clear. No pleural effusion or pneumothorax is seen.\nIMPRESSION:\nNo acute cardiopulmonary disease.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1170,
+ "output_tokens": 56,
+ "total_duration_ns": 1767953700,
+ "load_duration_ns": 4427100,
+ "attempts": 1,
+ "wall_seconds": 3.8,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:15:55+00:00"
+}

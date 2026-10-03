@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "643333c0c080ae67670d056cfe2576af7b519ce4cf20f2b19ec18e31a29685a6",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is normal in size and contour. The lungs are clear without focal airspace opacity, pleural effusion, or pneumothorax. The osseous structures are intact.\nIMPRESSION:\nNo acute cardiopulmonary abnormality.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1068,
+ "output_tokens": 64,
+ "total_duration_ns": 1723154900,
+ "load_duration_ns": 4933300,
+ "attempts": 1,
+ "wall_seconds": 3.76,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:42:28+00:00"
+}

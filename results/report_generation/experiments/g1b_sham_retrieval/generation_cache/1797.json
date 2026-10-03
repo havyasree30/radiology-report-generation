@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "0b721a1fe582dd89cfceb30d800a1a5efd0ada434f7c3b854245d7da8c7f28aa",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette and vasculature are within normal limits for size and contour. The lungs are clear without evidence of focal airspace disease. No pleural effusion or pneumothorax is seen. Osseous structures are within normal limits for patient age.\nIMPRESSION:\nNo acute radiographic cardiopulmonary process.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1131,
+ "output_tokens": 78,
+ "total_duration_ns": 2418006300,
+ "load_duration_ns": 4634600,
+ "attempts": 1,
+ "wall_seconds": 4.46,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:27:58+00:00"
+}

@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lrrrr}
+\hline
+Quantity & B0 rule-based & G1A LLM, no retrieval & G1B LLM + sham retrieval & G1 LLM + relevant retrieval \\
+\hline
+Stated findings & 354 & 418 & 147 & 248 \\
+Introduced findings (stated, not classifier positive) & 0 & 219 & 46 & 68 \\
+  present in own context reports & n/a & n/a & 41 & 66 \\
+  match reference & 0 & 3 & 3 & 18 \\
+  unsupported by reference & 0 & 216 & 43 & 50 \\
+Share of introduced findings supported by reference & n/a & 0.014 & 0.065 & 0.265 \\
+Classifier positives removed (not stated) & 0 & 155 & 253 & 174 \\
+  of which reference-correct (lost) & 0 & 51 & 80 & 33 \\
+  of which unsupported (classifier false positive suppressed) & 0 & 104 & 173 & 141 \\
+\hline
+\end{tabular}
+\caption{Findings introduced beyond the classifier output and classifier positives removed, per system (clinical subset).}
+\label{tab:table3_introduced_and_removed_findings}
+\end{table}

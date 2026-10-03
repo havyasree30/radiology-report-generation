@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "368c37f3cdcc85cbd5fe05c2b23a739429be84cf3b372f9e8d8acb69adf93544",
+ "text": "FINDINGS:\nThe heart size is normal. The mediastinal contours are normal. The lungs are clear.\nIMPRESSION:\nNo acute cardiopulmonary process.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1183,
+ "output_tokens": 35,
+ "total_duration_ns": 1306363100,
+ "load_duration_ns": 2326100,
+ "attempts": 1,
+ "wall_seconds": 3.34,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:39:12+00:00"
+}

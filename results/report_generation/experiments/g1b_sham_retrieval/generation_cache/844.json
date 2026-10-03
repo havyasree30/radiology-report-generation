@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "10ce2080127968229eccc9263a8082ce79c5e068ab3f1a44f1522b16b0418d4a",
+ "text": "FINDINGS:\nNo acute abnormality is identified.\nIMPRESSION:\nNo acute abnormality is identified.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1093,
+ "output_tokens": 32,
+ "total_duration_ns": 1069780100,
+ "load_duration_ns": 2594600,
+ "attempts": 1,
+ "wall_seconds": 3.11,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:20:34+00:00"
+}

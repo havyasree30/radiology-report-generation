@@ -1,0 +1,40 @@
+{
+  "frozen_utc": "2026-10-03T13:11:56+00:00",
+  "same_generator_as_g1": {
+    "ollama_version": true,
+    "model_digest": true,
+    "options": true,
+    "num_ctx_and_num_predict": true,
+    "model_tag": true
+  },
+  "ollama_version": "0.35.1",
+  "model_tag": "medgemma1.5:4b",
+  "model_digest": "433252621ab154668b5d8be6aff6c1b771bacba045e46e6193da8d6ad1630f2c",
+  "generation_options": {
+    "temperature": 0.0,
+    "top_k": 1,
+    "top_p": 1.0,
+    "seed": 42,
+    "num_predict": 400,
+    "num_ctx": 8192,
+    "stop": [
+      "A. AUTOMATED CLASSIFIER OUTPUT",
+      "B. RETRIEVED EVIDENCE",
+      "C. EVIDENCE SUMMARY"
+    ]
+  },
+  "prompt_sha256": "476b05326f85652b0cdb2faf79a4868a6e839660eb43e34d46cdae625e4b5688",
+  "prompt_is_g1_prompt": true,
+  "sham_mapping_sha256": "e1095ae78338d7d871d2d3f6fb9744650811cc6ce029411a55d35ed85490ce1e",
+  "endpoint": "http://localhost:11434/api/chat",
+  "tools": "none",
+  "web_access": false,
+  "external_api": false,
+  "hardware_backend": {
+    "os": "Windows-10-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "nvidia_smi": "NVIDIA GeForce RTX 3050 6GB Laptop GPU, 596.08, 6144 MiB",
+    "ollama_ps": []
+  }
+}

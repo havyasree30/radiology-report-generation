@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "0576596686208f97facd314f77c6b2d2583db74c7801a4905543ad6d9a40c6a9",
+ "text": "FINDINGS:\nThe cardiac silhouette is normal in size and configuration. The lungs are well aerated. No pneumothorax, pleural effusion, or focal air space consolidation.\nIMPRESSION:\nNo acute cardiopulmonary disease.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1300,
+ "output_tokens": 57,
+ "total_duration_ns": 1643205700,
+ "load_duration_ns": 4783400,
+ "attempts": 1,
+ "wall_seconds": 3.69,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:38:20+00:00"
+}

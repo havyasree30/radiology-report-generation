@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "3f802f5546121667e49d9adb438d31dee4e36d9ea17e5d0ec141c060bcbf1191",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette appears enlarged. There is mild diffuse interstitial opacities bilaterally.\nIMPRESSION:\nCardiomegaly and pulmonary interstitial edema.\n\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1186,
+ "output_tokens": 50,
+ "total_duration_ns": 1771557600,
+ "load_duration_ns": 1571600,
+ "attempts": 1,
+ "wall_seconds": 3.83,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:34:04+00:00"
+}

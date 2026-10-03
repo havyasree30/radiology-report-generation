@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "ec01e8143f4c2b97ede507ac7f70fb6caf02d48caed908892a24eb1062f92e23",
+ "text": "FINDINGS:\nA fracture is noted.\nIMPRESSION:\nFracture.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1142,
+ "output_tokens": 28,
+ "total_duration_ns": 1338638300,
+ "load_duration_ns": 5463700,
+ "attempts": 1,
+ "wall_seconds": 3.39,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:43:29+00:00"
+}

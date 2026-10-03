@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "dedd87a4fb0bf2553486200209ba17d9ac84f7e2088220fdd9b555601e7815d8",
+ "text": "FINDINGS:\nThe heart size is normal. The mediastinal contour is within normal limits. The lungs are free of any focal infiltrates. No visible pneumothorax. No visible pleural fluid.\nIMPRESSION:\nNo acute radiographic cardiopulmonary process.\n\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1149,
+ "output_tokens": 63,
+ "total_duration_ns": 1788273600,
+ "load_duration_ns": 3163500,
+ "attempts": 1,
+ "wall_seconds": 3.84,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:23:04+00:00"
+}

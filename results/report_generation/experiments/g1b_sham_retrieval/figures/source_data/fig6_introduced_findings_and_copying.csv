@@ -1,0 +1,7 @@
+system,panel,match_reference,unsupported_by_reference,value
+G1B_llm_sham_retrieval,introduced_findings,3,43,
+G1_single_agent_rag,introduced_findings,18,50,
+G1,copied_sentence_rate_from_own_context,,,0.29487951807228913
+G1B,copied_sentence_rate_from_own_context,,,0.26121151271753679
+G1,whole_report_copy_rate_from_own_context,,,0.24096385542168675
+G1B,whole_report_copy_rate_from_own_context,,,0.20481927710843373

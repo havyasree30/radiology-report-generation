@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "168fceed0b1fd211bffbb8e149a578f0e07e44fdfd58aa710be21fd5828a7985",
+ "text": "FINDINGS:\nThe heart size is normal. There is a right paratracheal density. There are patchy right upper lobe streaky opacities. The remainder of the lungs are clear. There is no pleural effusion.\nIMPRESSION:\nPatchy opacities in right upper lobe, concerning for pneumonia. Right paratracheal density possibly reactive lymphadenopathy. Followup evaluation to resolution is recommended.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1111,
+ "output_tokens": 85,
+ "total_duration_ns": 2307792300,
+ "load_duration_ns": 3835100,
+ "attempts": 1,
+ "wall_seconds": 4.33,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:38:00+00:00"
+}

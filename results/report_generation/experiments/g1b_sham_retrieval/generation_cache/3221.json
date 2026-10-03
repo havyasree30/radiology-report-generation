@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "1738b84c2d8a51c9514ce0d378bcbbf624a66c3e5591a06a4633cc4e01bc0b1b",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is normal in size and configuration. The lungs are well aerated. No pneumothorax, pleural effusion, or focal air space consolidation. Minimal scarring or atelectasis left lung base.\nIMPRESSION:\nNo acute cardiopulmonary disease.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1166,
+ "output_tokens": 71,
+ "total_duration_ns": 1840315200,
+ "load_duration_ns": 4112500,
+ "attempts": 1,
+ "wall_seconds": 3.88,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:38:35+00:00"
+}

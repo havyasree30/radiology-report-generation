@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "3b7ffb6996a919faf4b6668293eb7809a3bed7dcac9c60f5da9bea5b92f9f3c6",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette and pulmonary vasculature are within normal limits in size. The lungs are mildly hypoinflated but clear of focal airspace disease, pneumothorax, or pleural effusion. There are multiple sternotomy and surgical clips compatible with prior CABG. The most caudal sternotomy is fractured. There are no acute bony findings.\nIMPRESSION:\n1. Low lung volumes. No acute pulmonary findings. 2. Fractured sternotomy, without evidence of complication.\n\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1138,
+ "output_tokens": 113,
+ "total_duration_ns": 2864584300,
+ "load_duration_ns": 9485300,
+ "attempts": 1,
+ "wall_seconds": 4.9,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:31:06+00:00"
+}

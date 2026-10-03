@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "de9dacc9914c4f36a83ba85fbd195ac16ef5a237f755ea443a3121d0236150f0",
+ "text": "FINDINGS:\nThe heart and lungs are normal.\nIMPRESSION:\nNo active disease.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1082,
+ "output_tokens": 22,
+ "total_duration_ns": 865362200,
+ "load_duration_ns": 6428600,
+ "attempts": 1,
+ "wall_seconds": 2.91,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:28:37+00:00"
+}

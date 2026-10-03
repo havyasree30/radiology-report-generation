@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "aa6e6d0826aab02f9efc265c9101e94bbe03be1f5eb23bc23e0e5ced64628478",
+ "text": "FINDINGS:\nThe heart and mediastinal silhouettes are within normal limits. The lungs are clear without focal airspace opacity, large effusion, or pneumothorax. The are grossly intact. Interval removal of right PICC. Persistent elevation of the left hemidiaphragm.\nIMPRESSION:\nNo acute visualized cardiopulmonary abnormality.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1130,
+ "output_tokens": 78,
+ "total_duration_ns": 2001585100,
+ "load_duration_ns": 2188300,
+ "attempts": 1,
+ "wall_seconds": 4.05,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:20:49+00:00"
+}

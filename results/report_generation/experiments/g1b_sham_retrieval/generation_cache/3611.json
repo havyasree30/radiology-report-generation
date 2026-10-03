@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "1f7882027a8a8e3c783ed8eea16dc3e8e608677fe93fc44b7f34a7604c366571",
+ "text": "FINDINGS:\nCardiomegaly is present. The cardiomediastinal silhouette is enlarged. There is a small pleural effusion.\nIMPRESSION:\nCardiomegaly.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1351,
+ "output_tokens": 40,
+ "total_duration_ns": 1302388700,
+ "load_duration_ns": 3503200,
+ "attempts": 1,
+ "wall_seconds": 3.34,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:41:39+00:00"
+}

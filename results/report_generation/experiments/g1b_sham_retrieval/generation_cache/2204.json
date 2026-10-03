@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "a8cec953af51b6a79b720aaa1fd6871904cd5287f482a0718ce0e6aac6029174",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is normal in size and contour. No focal consolidation, pneumothorax or large pleural effusion. Biapical fibronodular pleural thickening/scarring. There is a like deformity of the anterior cortex of the body (lateral view). Negative for retrosternal density.\nIMPRESSION:\nBuckling deformity of the anterior cortex of the body. Fracture is possible, if high energy was localized to this region. Correlate with focal tenderness. chest, if warranted.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1230,
+ "output_tokens": 109,
+ "total_duration_ns": 2934817200,
+ "load_duration_ns": 3218200,
+ "attempts": 1,
+ "wall_seconds": 5.0,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:31:11+00:00"
+}

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "ecbdf343e5a96f02a38dbefd394157f94fa973eb2b9750499565412b0b0ad944",
+ "text": "FINDINGS:\nDecreased lung volumes with associated bronchopulmonary crowding. No focal consolidation, suspicious pulmonary opacity, large pleural effusion, or pneumothorax is identified. Visualized osseous structures appear intact.\nIMPRESSION:\nNo acute cardiopulmonary abnormality.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1148,
+ "output_tokens": 55,
+ "total_duration_ns": 1478660300,
+ "load_duration_ns": 3797900,
+ "attempts": 1,
+ "wall_seconds": 3.54,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:27:50+00:00"
+}

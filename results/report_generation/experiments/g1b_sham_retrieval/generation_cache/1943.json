@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "788c3b28b7204b0d10d1f8e8d5ade7ef486c33fd2443f37e5ae9ef4e0e215a0d",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is normal in size and contour. No focal airspace disease is identified. No pleural effusion or pneumothorax is seen. No nodules or adenopathy is identified.\nIMPRESSION:\nNo evidence of active disease.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1094,
+ "output_tokens": 56,
+ "total_duration_ns": 1557411200,
+ "load_duration_ns": 6434700,
+ "attempts": 1,
+ "wall_seconds": 3.61,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:29:02+00:00"
+}

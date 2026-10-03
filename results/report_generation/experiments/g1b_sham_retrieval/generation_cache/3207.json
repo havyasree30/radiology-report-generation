@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "f5e4c7c5243b1739c945fd133a59619bc57acebee5a8b9fb6db5c7d7d5d0ab10",
+ "text": "FINDINGS:\nLow lung volumes are present. There is a stable cardiomediastinal silhouette. No acute pulmonary opacity or consolidation is identified.\nIMPRESSION:\nNo acute cardiopulmonary process identified.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1179,
+ "output_tokens": 44,
+ "total_duration_ns": 1666707500,
+ "load_duration_ns": 5059900,
+ "attempts": 1,
+ "wall_seconds": 3.7,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:38:24+00:00"
+}

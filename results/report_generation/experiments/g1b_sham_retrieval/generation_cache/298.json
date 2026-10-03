@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "517867052e21879005d6cb8e28af2a909986df1ecf1db7dea0b4023ecc4abb3b",
+ "text": "FINDINGS: The heart and lungs have in the interval. Both lungs are clear and expanded. Heart and mediastinum normal.\nIMPRESSION: No active disease.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 996,
+ "output_tokens": 35,
+ "total_duration_ns": 1091288700,
+ "load_duration_ns": 1645300,
+ "attempts": 1,
+ "wall_seconds": 3.12,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:14:56+00:00"
+}

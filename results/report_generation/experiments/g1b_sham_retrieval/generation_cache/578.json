@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "df1388eec0e86e1c86fe9ade8559f7a43187d00484cc59d4e4e823840925f8de",
+ "text": "FINDINGS:\nThe heart size is slightly enlarged. The aorta is tortuous. The lungs are clear.\nIMPRESSION:\nNo acute cardiopulmonary abnormality identified.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1139,
+ "output_tokens": 36,
+ "total_duration_ns": 1460779100,
+ "load_duration_ns": 3763000,
+ "attempts": 1,
+ "wall_seconds": 3.51,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:17:47+00:00"
+}

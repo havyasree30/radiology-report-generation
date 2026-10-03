@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "d02af45a143ab3a7607eca3857848f86df409631f710959eb09278032078d06b",
+ "text": "FINDINGS:\nA fracture is noted in the right clavicle.\nIMPRESSION:\nRight clavicle fracture.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1124,
+ "output_tokens": 35,
+ "total_duration_ns": 1140031200,
+ "load_duration_ns": 5747800,
+ "attempts": 1,
+ "wall_seconds": 3.2,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:29:34+00:00"
+}

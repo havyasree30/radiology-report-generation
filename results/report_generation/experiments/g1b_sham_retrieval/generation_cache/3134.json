@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "faef3ed9639b9be612a5b55e4026241afa57ef1e723853499abd0d1ad4afd2eb",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is unchanged. No focal airspace consolidation or pleural effusion is identified.\nIMPRESSION:\nNo acute or active cardiac, pulmonary or pleural disease.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1120,
+ "output_tokens": 51,
+ "total_duration_ns": 1397832400,
+ "load_duration_ns": 4001900,
+ "attempts": 1,
+ "wall_seconds": 3.43,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:37:41+00:00"
+}

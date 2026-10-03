@@ -1,0 +1,20 @@
+{
+  "scheme": "g1b-sham-v1",
+  "seed": 42,
+  "k": 5,
+  "pool": "R2 retrieval corpus = IU training reports (corpus_study_ids.json)",
+  "pool_size": 2675,
+  "exclusions_per_study": [
+    "the query study itself",
+    "the study's own true R2 Top-5 reports"
+  ],
+  "selection_uses": "study id only (no reference, finding, classifier or image information)",
+  "displayed_rank_fields": "dense rank, BM25 rank and fusion score are carried over from the G1 slot the sham report replaces, so the message skeleton is byte-structure-identical",
+  "evidence_table": "computed by the unchanged G1 function from the sham context reports (as G1 computes it from its context)",
+  "empty_query_studies": "unchanged from G1",
+  "n_mapping_rows": 2490,
+  "mapping_sha256": "e1095ae78338d7d871d2d3f6fb9744650811cc6ce029411a55d35ed85490ce1e",
+  "g1_prompt_sha256": "476b05326f85652b0cdb2faf79a4868a6e839660eb43e34d46cdae625e4b5688",
+  "r2_candidate_config_sha256": "9fb4d701a498de9f2e9a1ca325f645027ace0c72af0ef3a6180c0b85f34bc114",
+  "frozen_before_generation": true
+}

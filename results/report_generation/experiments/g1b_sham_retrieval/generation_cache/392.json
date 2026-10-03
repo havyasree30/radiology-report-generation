@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "2d9754813dc609c91213ac300721f8ce9fb275a3082e3db683445321ba8b0714",
+ "text": "FINDINGS:\nSupport Devices.\nIMPRESSION:\nSupport Devices.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1180,
+ "output_tokens": 17,
+ "total_duration_ns": 790506700,
+ "load_duration_ns": 1641600,
+ "attempts": 1,
+ "wall_seconds": 2.83,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:15:51+00:00"
+}

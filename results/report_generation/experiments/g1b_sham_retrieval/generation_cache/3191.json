@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "41b30762c01bb35ac3cff59a916a75b8892491cc7fc8c8ecd236f21fe2a6fe3e",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is enlarged. The lungs are clear.\nIMPRESSION:\nStable cardiomegaly.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1367,
+ "output_tokens": 31,
+ "total_duration_ns": 1352313200,
+ "load_duration_ns": 5578300,
+ "attempts": 1,
+ "wall_seconds": 3.4,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:38:13+00:00"
+}

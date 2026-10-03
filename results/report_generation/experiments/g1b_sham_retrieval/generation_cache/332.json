@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "4e8dc0cb6ba304046bdc55255e5c7b625ed388b80363b167df2b8a3718b60fad",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is normal in size and contour. No focal consolidation, pneumothorax or large pleural effusion. No fracture is identified.\nIMPRESSION:\nNegative for acute abnormality.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1184,
+ "output_tokens": 56,
+ "total_duration_ns": 1586199000,
+ "load_duration_ns": 2277200,
+ "attempts": 1,
+ "wall_seconds": 3.65,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:15:16+00:00"
+}

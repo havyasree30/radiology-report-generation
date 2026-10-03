@@ -1,0 +1,5 @@
+system,stated_findings,introduced_not_classifier_positive,introduced_in_own_context_reports,introduced_not_in_own_context,introduced_match_reference,introduced_unsupported_by_reference,share_introduced_supported_by_reference,introduced_match_reference_and_in_context,introduced_unsupported_and_in_context,classifier_positives_removed,removed_were_correct_(reference_positive),removed_were_unsupported_(classifier_false_positive)
+B0_rule_based,354,0,0,0,0,0,,0,0,0,0,0
+G1A_llm_no_retrieval,418,219,0,219,3,216,0.013698630136986301,0,0,155,51,104
+G1B_llm_sham_retrieval,147,46,41,5,3,43,0.065217391304347824,3,38,253,80,173
+G1_single_agent_rag,248,68,66,2,18,50,0.26470588235294118,18,48,174,33,141

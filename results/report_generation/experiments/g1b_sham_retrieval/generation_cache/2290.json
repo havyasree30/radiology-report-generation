@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "d7b0f0323271c427f96d7c9b5c302b055b41897508df228b068ef0fb3c2c45a7",
+ "text": "FINDINGS:\nThe heart and mediastinum are within normal limits. The lungs are clear.\nIMPRESSION:\nNo acute cardiopulmonary disease.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1053,
+ "output_tokens": 41,
+ "total_duration_ns": 1209647500,
+ "load_duration_ns": 4606700,
+ "attempts": 1,
+ "wall_seconds": 3.27,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:31:59+00:00"
+}

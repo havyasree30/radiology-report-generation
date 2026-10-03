@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "c3e5df95515b5ef32bf0c3205261dd2ef411cea8693110ee90ee9f608bee5b27",
+ "text": "FINDINGS:\nThe heart size is top normal. The mediastinum is stable. There is no acute pulmonary opacity or consolidation. No pleural effusion is seen.\nIMPRESSION:\nNo acute pulmonary disease.\n\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1137,
+ "output_tokens": 53,
+ "total_duration_ns": 1678114300,
+ "load_duration_ns": 4983600,
+ "attempts": 1,
+ "wall_seconds": 3.73,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:23:00+00:00"
+}

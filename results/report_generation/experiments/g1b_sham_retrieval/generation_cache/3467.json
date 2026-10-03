@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "3b9bd619b4c740e9841c8fc6b9e6a45c8e491e35f1f20d91e2d43dcd1f5a2b5a",
+ "text": "FINDINGS:\nThe heart size and mediastinal contours appear within normal limits. No focal airspace consolidation, pleural effusion or pneumothorax. No acute bony abnormalities.\nIMPRESSION:\nNo acute cardiopulmonary findings.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1105,
+ "output_tokens": 55,
+ "total_duration_ns": 1778819500,
+ "load_duration_ns": 3846100,
+ "attempts": 1,
+ "wall_seconds": 3.84,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:40:35+00:00"
+}
