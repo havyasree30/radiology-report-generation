@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "8744807a3514fb33a63fa10e945683a6c48fc7452254c8f2825f8c29b28dba06",
+ "text": "FINDINGS:\nThere is a focal opacity in the right lower lobe.\nIMPRESSION:\nPossible pneumonia.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 534,
+ "output_tokens": 34,
+ "total_duration_ns": 1059184800,
+ "load_duration_ns": 7781600,
+ "attempts": 1,
+ "wall_seconds": 3.1,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:15:31+00:00"
+}

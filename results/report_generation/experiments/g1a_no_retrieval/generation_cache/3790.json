@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "579359fb48367134c6dc4572818b791f1e84e5f1b9cc188b5f99fe25015c76ee",
+ "text": "FINDINGS:\nThere is a small opacity in the right lower lung field. There is a small pleural effusion in the left lower lung field. There is a fracture in the right clavicle.\nIMPRESSION:\nSmall opacity, small pleural effusion, and fracture.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 546,
+ "output_tokens": 65,
+ "total_duration_ns": 1757888900,
+ "load_duration_ns": 7169400,
+ "attempts": 1,
+ "wall_seconds": 3.8,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:42:59+00:00"
+}

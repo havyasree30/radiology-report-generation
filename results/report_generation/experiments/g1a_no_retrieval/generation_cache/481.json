@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "48ebda4812e7e128211ea301dd3a116a23af3bb4dddd268cbada11eadede4ed1",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette appears enlarged. A support device is present.\nIMPRESSION:\nEnlarged Cardiomediastinum and Support Devices are present.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 524,
+ "output_tokens": 50,
+ "total_duration_ns": 1364003200,
+ "load_duration_ns": 3734900,
+ "attempts": 1,
+ "wall_seconds": 3.41,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:18:26+00:00"
+}

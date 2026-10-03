@@ -1,0 +1,7 @@
+system,metric,value,ci95_low,ci95_high
+B0_rule_based,clf_fp_propagation,1,1,1
+B0_rule_based,tp_retention,1,1,1
+G1A_llm_no_retrieval,clf_fp_propagation,0.56118143459915615,0.4850818980074299,0.6378638064912574
+G1A_llm_no_retrieval,tp_retention,0.5641025641025641,0.46399793814432994,0.66666666666666663
+G1_single_agent_rag,clf_fp_propagation,0.4050632911392405,0.34999999999999998,0.46222793148880104
+G1_single_agent_rag,tp_retention,0.71794871794871795,0.6414804700430321,0.78907277960526312

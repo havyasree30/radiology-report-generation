@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "6b938b85a90d4f7cd4efcc1f46c4817a46422f6842acfc3d404361ca88feb8be",
+ "text": "FINDINGS:\nA small opacity is noted in the right lower lung field.\nIMPRESSION:\nA small opacity is noted in the right lower lung field.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 534,
+ "output_tokens": 44,
+ "total_duration_ns": 1339331900,
+ "load_duration_ns": 9642800,
+ "attempts": 1,
+ "wall_seconds": 3.35,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:17:25+00:00"
+}

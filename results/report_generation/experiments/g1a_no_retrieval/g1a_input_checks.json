@@ -1,0 +1,13 @@
+{
+  "classifier_block_identical_to_g1": 547,
+  "forbidden_pattern_hits": 0,
+  "reference_sentences_in_message": 0,
+  "n": 547,
+  "same_547_studies_and_order_as_g1": true,
+  "prompt_sha256_g1a": "e5a4665af2a1d24062a45f7fe3dde9bbc03cad235fa858788fdc6da2ab686b88",
+  "payload_whitelist": [
+    "classifier"
+  ],
+  "retrieval_content_in_any_message": 0,
+  "note": "empty-classifier studies keep the G1 behaviour (rule 9 / the same classifier block); G1 only differed by an explicit 'no retrieval query' line"
+}

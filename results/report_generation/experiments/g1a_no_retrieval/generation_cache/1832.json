@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "1a7f4fb8b13bb08ed105b6ea733128ca5f26185325bb4d29277d84fb9d6cff4f",
+ "text": "FINDINGS:\nCardiomegaly is present. Pulmonary opacities are noted. Pleural effusion is present.\nIMPRESSION:\nCardiomegaly, pulmonary opacities, and pleural effusion are present.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 547,
+ "output_tokens": 56,
+ "total_duration_ns": 1467991100,
+ "load_duration_ns": 6743100,
+ "attempts": 1,
+ "wall_seconds": 3.52,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:28:39+00:00"
+}

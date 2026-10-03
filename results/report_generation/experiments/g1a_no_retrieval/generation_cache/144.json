@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "a670a48c42cccda399a1eb14a377740d027d071a96931c6554ca663fccabbb52",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette appears enlarged.\nIMPRESSION:\nEnlarged Cardiomediastinum.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 512,
+ "output_tokens": 39,
+ "total_duration_ns": 1195768100,
+ "load_duration_ns": 8093400,
+ "attempts": 1,
+ "wall_seconds": 3.23,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:15:24+00:00"
+}

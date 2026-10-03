@@ -1,0 +1,32 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lrrrr}
+\hline
+Metric & G1A (no retrieval) & G1 (retrieval) & G1 - G1A (95\% CI) & CI excludes 0 \\
+\hline
+Finding precision & 0.165 & 0.411 & +0.246 (+0.193 to +0.300) & yes \\
+Finding recall & 0.242 & 0.358 & +0.116 (+0.060 to +0.170) & yes \\
+Finding F1 (micro) & 0.196 & 0.383 & +0.186 (+0.136 to +0.232) & yes \\
+Macro finding F1 & 0.199 & 0.215 & +0.016 (-0.029 to +0.064) & no \\
+Hallucination rate (reports with >=1 hallucinated finding) & 0.754 & 0.257 & -0.497 (-0.561 to -0.431) & yes \\
+Omission rate (reports with >=1 omitted finding) & 0.405 & 0.381 & -0.024 (-0.050 to +0.003) & no \\
+Classifier FP propagation & 0.561 & 0.405 & -0.156 (-0.243 to -0.066) & yes \\
+Classifier TP retention & 0.564 & 0.718 & +0.154 (+0.053 to +0.259) & yes \\
+Normal recall (report state) & 0.115 & 0.911 & +0.797 (+0.734 to +0.856) & yes \\
+Abnormal recall (report state) & 0.710 & 0.581 & -0.129 (-0.232 to -0.031) & yes \\
+ROUGE-L & 0.104 & 0.247 & +0.143 (+0.130 to +0.155) & yes \\
+BLEU-4 & 0.011 & 0.039 & +0.028 (+0.023 to +0.033) & yes \\
+METEOR (exact-match variant) & 0.069 & 0.227 & +0.158 (+0.144 to +0.173) & yes \\
+Mean report length (words) & 15.059 & 23.907 & +8.848 (+6.586 to +10.754) & yes \\
+Mean hallucinated findings per report & 0.923 & 0.386 & -0.537 (-0.683 to -0.405) & yes \\
+Mean omitted findings per report & 0.571 & 0.484 & -0.087 (-0.132 to -0.045) & yes \\
+Over-normalisation: report normal although classifier abnormal & 0.258 & 0.298 & +0.039 (-0.056 to +0.141) & no \\
+Rare-finding TP retention & 0.381 & 0.333 & -0.048 (-0.300 to +0.211) & no \\
+Other-finding TP retention & 0.604 & 0.802 & +0.198 (+0.090 to +0.302) & yes \\
+BLEU-1 & 0.059 & 0.254 & +0.195 (+0.180 to +0.210) & yes \\
+\hline
+\end{tabular}
+\caption{Controlled comparison G1 minus G1A: effect of the retrieval context with classifier, model and decoding held constant (paired study-level bootstrap).}
+\label{tab:table2_g1_minus_g1a_controlled_comparison}
+\end{table}

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "b64cdca364e71ea1bf2e5bc619bad34f38ccaac669dae7928429b729feb6ac00",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette appears enlarged. A small pleural effusion is present.\nIMPRESSION:\nEnlarged cardiomediastinal silhouette and pleural effusion are noted.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 526,
+ "output_tokens": 52,
+ "total_duration_ns": 1485628600,
+ "load_duration_ns": 7226900,
+ "attempts": 1,
+ "wall_seconds": 3.52,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:30:28+00:00"
+}

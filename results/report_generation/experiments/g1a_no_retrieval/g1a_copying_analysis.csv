@@ -1,0 +1,4 @@
+system,n_reports,mean_words,long_sentences_total,corpus_copied_sentence_rate,corpus_template_sentence_share_of_long (df>=10),corpus_template_sentence_share_of_copied,whole_report_all_long_sentences_in_corpus_rate,exact_whole_report_duplicate_of_a_corpus_report_rate,g1_top5_copied_sentence_rate (G1 definition),g1_top5_whole_report_copy_rate (G1 definition),repeated_sentence_rate
+B0_rule_based,547,10.526508226691043,397,0,0,0,0,0,0,0,0
+G1A_llm_no_retrieval,547,15.058500914076783,495,0.040404040404040407,0.040404040404040407,1,0.034734917733089579,0,0,0,0.0097377159273215694
+G1_single_agent_rag,547,23.906764168190129,791,0.47029077117572693,0.32996207332490518,0.70161290322580649,0.22669104204753199,0.10237659963436929,0.26846435100548444,0.21937842778793418,0.0035019824782164823

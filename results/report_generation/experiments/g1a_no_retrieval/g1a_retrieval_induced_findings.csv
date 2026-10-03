@@ -1,0 +1,4 @@
+group,n_findings,appear_in_retrieved_reports,not_in_any_retrieved_report,match_reference,unsupported_by_reference,also_classifier_positive,not_classifier_positive,match_reference_and_in_retrieved,unsupported_and_in_retrieved,match_reference_and_not_classifier_positive,unsupported_and_not_classifier_positive,net_correct_findings (added matching reference - removed matching reference),net_unsupported_findings (added unsupported - removed unsupported),stated_findings_G1,stated_findings_G1A,stated_in_both,n_studies
+"added: in G1, absent in G1A",136.0,133.0,3.0,46.0,90.0,72.0,64.0,46.0,87.0,17.0,47.0,,,,,,
+"removed: in G1A, absent in G1",306.0,52.0,254.0,13.0,293.0,91.0,215.0,10.0,42.0,2.0,213.0,,,,,,
+net effect of the retrieval context,,,,,,,,,,,,33.0,-203.0,248.0,418.0,112.0,378.0

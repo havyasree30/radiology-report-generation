@@ -1,0 +1,31 @@
+{
+  "B0_rule_based": {
+    "n_studies": 547,
+    "max_abs_numeric_difference": 9.93129189996722e-17,
+    "numeric_columns_compared": 16,
+    "string_columns_identical": {
+      "stated": true,
+      "definite": true,
+      "clf_pos": true,
+      "truth": true,
+      "report_state": true,
+      "classifier_state": true,
+      "reference_state": true
+    }
+  },
+  "G1_single_agent_rag": {
+    "n_studies": 547,
+    "max_abs_numeric_difference": 9.8879238130678e-17,
+    "numeric_columns_compared": 16,
+    "string_columns_identical": {
+      "stated": true,
+      "definite": true,
+      "clf_pos": true,
+      "truth": true,
+      "report_state": true,
+      "classifier_state": true,
+      "reference_state": true
+    }
+  },
+  "g1_reproduced": true
+}

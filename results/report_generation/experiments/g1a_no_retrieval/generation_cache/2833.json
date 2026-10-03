@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "efed2c40dbc3a3dfac1ce5b6b3f6da7385eba747776c8369af044f94f1367751",
+ "text": "FINDINGS:\nA small pneumothorax is present.\nIMPRESSION:\nSmall pneumothorax.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 508,
+ "output_tokens": 33,
+ "total_duration_ns": 1035059000,
+ "load_duration_ns": 7117600,
+ "attempts": 1,
+ "wall_seconds": 3.06,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:35:33+00:00"
+}

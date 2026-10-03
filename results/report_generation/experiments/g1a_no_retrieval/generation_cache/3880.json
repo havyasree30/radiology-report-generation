@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "cf296a810b677b16bc3a5562bf9b102653cccd5acb9f10f3d139e628118c1e27",
+ "text": "FINDINGS:\nThe heart appears enlarged.\nThere is a small opacity in the right lower lung.\nIMPRESSION:\nCardiomegaly is suggested.\nA small pulmonary opacity is noted.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 508,
+ "output_tokens": 52,
+ "total_duration_ns": 1477668500,
+ "load_duration_ns": 4530800,
+ "attempts": 1,
+ "wall_seconds": 3.52,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:43:58+00:00"
+}

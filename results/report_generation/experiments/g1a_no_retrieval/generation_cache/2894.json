@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "4007a83d3264fc0fc971cb66d6846e2aa734dca4f273290d5b851cf0aa300d87",
+ "text": "FINDINGS:\nThe chest radiograph demonstrates an enlarged cardiomediastinal silhouette.\nIMPRESSION:\nSupport Devices present.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 507,
+ "output_tokens": 29,
+ "total_duration_ns": 961071300,
+ "load_duration_ns": 7350900,
+ "attempts": 1,
+ "wall_seconds": 3.0,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:35:55+00:00"
+}

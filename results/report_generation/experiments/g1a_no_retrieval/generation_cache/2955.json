@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "b4906c24db2ef371e288caf4a0f9ab303f48cc8ff1e2cb8d72c8133b6babaa7e",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette appears enlarged. The cardiac silhouette appears enlarged. There is evidence of pulmonary edema.\nIMPRESSION:\nCardiomegaly and pulmonary edema are present.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 537,
+ "output_tokens": 53,
+ "total_duration_ns": 1506691500,
+ "load_duration_ns": 8784300,
+ "attempts": 1,
+ "wall_seconds": 3.55,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:36:22+00:00"
+}

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "d0c4d2d015e0cce25eccd02a31a2b9d13b8b94b829968d62f3e212d0b0a75d02",
+ "text": "FINDINGS:\nThere is a small area of increased density in the right lower lung field.\nIMPRESSION:\nPossible atelectasis.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 521,
+ "output_tokens": 40,
+ "total_duration_ns": 1201739700,
+ "load_duration_ns": 8505500,
+ "attempts": 1,
+ "wall_seconds": 3.23,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:42:48+00:00"
+}

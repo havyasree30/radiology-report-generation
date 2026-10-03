@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "b7d7d1341b11612280058312de5da06514abc2da562de81922b453405e4833d6",
+ "text": "FINDINGS:\nCardiomegaly is present. Pulmonary opacity is present. Consolidation is present.\nIMPRESSION:\nCardiomegaly and pulmonary opacity are present.\n\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 545,
+ "output_tokens": 47,
+ "total_duration_ns": 1336809300,
+ "load_duration_ns": 6148200,
+ "attempts": 1,
+ "wall_seconds": 3.38,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:19:34+00:00"
+}

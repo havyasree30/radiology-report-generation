@@ -1,0 +1,64 @@
+{
+  "frozen_utc": "2026-10-03T11:14:01+00:00",
+  "same_generator_as_g1": {
+    "ollama_version": true,
+    "model_tag": true,
+    "model_digest": true,
+    "quantization": true,
+    "generation_options": true,
+    "num_ctx_and_num_predict": true
+  },
+  "ollama_version": "0.35.1",
+  "model": {
+    "model_tag": "medgemma1.5:4b",
+    "digest": "433252621ab154668b5d8be6aff6c1b771bacba045e46e6193da8d6ad1630f2c",
+    "size_bytes": 3338940988,
+    "modified_at": "2026-10-03T15:41:40.3723799+05:30",
+    "format": "gguf",
+    "family": "gemma3",
+    "families": [
+      "gemma3"
+    ],
+    "parameter_size": "4.3B",
+    "quantization_level": "Q4_K_M",
+    "context_length_native": 131072,
+    "capabilities": [
+      "completion",
+      "vision"
+    ],
+    "architecture": "gemma3",
+    "license_present": true
+  },
+  "generation_options": {
+    "temperature": 0.0,
+    "top_k": 1,
+    "top_p": 1.0,
+    "seed": 42,
+    "num_predict": 400,
+    "num_ctx": 8192,
+    "stop": [
+      "A. AUTOMATED CLASSIFIER OUTPUT",
+      "B. RETRIEVED EVIDENCE",
+      "C. EVIDENCE SUMMARY"
+    ]
+  },
+  "endpoint": "http://localhost:11434/api/chat",
+  "tools": "none",
+  "web_access": false,
+  "external_api": false,
+  "hardware_backend": {
+    "os": "Windows-10-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "nvidia_smi": "NVIDIA GeForce RTX 3050 6GB Laptop GPU, 596.08, 6144 MiB",
+    "ollama_ps": [
+      {
+        "name": "medgemma1.5:4b",
+        "size": 2879851068,
+        "size_vram": 2879851068,
+        "context_length": 8192
+      }
+    ]
+  },
+  "g1_generator_freeze_sha256_reference": "2026-10-03T10:15:18+00:00"
+}

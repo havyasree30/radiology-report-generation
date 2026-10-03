@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "06478a635c48da4e11832f582908b2c3f7937a30449b460adbfb5e1af4030f58",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette appears enlarged. A lung lesion is present.\nIMPRESSION:\nEnlarged Cardiomediastinum and Lung Lesion are present.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 525,
+ "output_tokens": 51,
+ "total_duration_ns": 1404613500,
+ "load_duration_ns": 8394700,
+ "attempts": 1,
+ "wall_seconds": 3.44,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:18:58+00:00"
+}

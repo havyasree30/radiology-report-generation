@@ -1,0 +1,23 @@
+| Classifier state | Studies | Metric | B0 | G1A | G1 | G1 - G1A (95% CI) | CI excludes 0 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| abnormal | 178 | precision | 0.331 | 0.319 | 0.411 | +0.092 (+0.034 to +0.150) | yes |
+| abnormal | 178 | recall | 0.529 | 0.312 | 0.462 | +0.149 (+0.079 to +0.217) | yes |
+| abnormal | 178 | f1 | 0.407 | 0.316 | 0.435 | +0.119 (+0.060 to +0.175) | yes |
+| abnormal | 178 | hallucination_rate | 0.865 | 0.652 | 0.545 | -0.107 (-0.208 to +0.000) | no |
+| abnormal | 178 | omission_rate | 0.455 | 0.573 | 0.522 | -0.051 (-0.101 to +0.006) | no |
+| abnormal | 178 | clf_fp_propagation | 1.000 | 0.561 | 0.405 | -0.156 (-0.253 to -0.064) | yes |
+| abnormal | 178 | tp_retention | 1.000 | 0.564 | 0.718 | +0.154 (+0.043 to +0.250) | yes |
+| abnormal | 178 | normal_recall | 0.000 | 0.116 | 0.605 | +0.488 (+0.311 to +0.667) | yes |
+| abnormal | 178 | abnormal_recall | 1.000 | 0.696 | 0.800 | +0.104 (-0.007 to +0.211) | no |
+| normal | 176 | recall | 0.000 | 0.000 | 0.000 | +0.000 (+0.000 to +0.000) | no |
+| normal | 176 | f1 | 0.000 | 0.000 | 0.000 | +0.000 (+0.000 to +0.000) | no |
+| normal | 176 | hallucination_rate | 0.000 | 0.920 | 0.000 | -0.920 (-0.960 to -0.881) | yes |
+| normal | 176 | omission_rate | 0.205 | 0.205 | 0.205 | +0.000 (+0.000 to +0.000) | no |
+| normal | 176 | normal_recall | 1.000 | 0.064 | 1.000 | +0.936 (+0.893 to +0.973) | yes |
+| normal | 176 | abnormal_recall | 0.000 | 0.889 | 0.000 | -0.889 (-0.974 to -0.780) | yes |
+| indeterminate | 24 | recall | 0.000 | 0.000 | 0.000 | +0.000 (+0.000 to +0.000) | no |
+| indeterminate | 24 | f1 | 0.000 | 0.000 | 0.000 | +0.000 (+0.000 to +0.000) | no |
+| indeterminate | 24 | hallucination_rate | 0.000 | 0.292 | 0.000 | -0.292 (-0.500 to -0.125) | yes |
+| indeterminate | 24 | omission_rate | 0.625 | 0.625 | 0.625 | +0.000 (+0.000 to +0.000) | no |
+| indeterminate | 24 | normal_recall | 0.000 | 0.889 | 1.000 | +0.111 (+0.000 to +0.375) | no |
+| indeterminate | 24 | abnormal_recall | 0.000 | 0.400 | 0.000 | -0.400 (-0.647 to -0.167) | yes |

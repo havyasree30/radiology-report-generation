@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "fdcd53c1a404d1b059486c5f45b0d6dc10e825760142805df189aeaceba50f65",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette appears enlarged. The heart size is increased. There is a small pleural thickening.\nIMPRESSION:\nEnlarged Cardiomediastinum, Cardiomegaly, Pleural Other.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 538,
+ "output_tokens": 60,
+ "total_duration_ns": 1657578400,
+ "load_duration_ns": 7314500,
+ "attempts": 1,
+ "wall_seconds": 3.73,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:37:52+00:00"
+}
