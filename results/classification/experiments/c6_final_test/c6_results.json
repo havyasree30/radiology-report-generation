@@ -1,0 +1,283 @@
+{
+  "n_images": 28706,
+  "n_patients": 9680,
+  "freeze_manifest_sha256": "40e649677b8c43a5c36ed2c2cb84c0ec4a33878f9f01184db7bf4478284a619c",
+  "ranking": {
+    "macro_auroc": 0.8025853034924253,
+    "macro_auprc": 0.4268781547990033,
+    "micro_auroc": 0.8931557073001568,
+    "micro_auprc": 0.6720208484721021,
+    "n_classes_defined": 14,
+    "undefined_classes": []
+  },
+  "binary_macro14": {
+    "macro_precision": 0.39921637404839555,
+    "macro_recall": 0.5352044079014869,
+    "macro_specificity": 0.8373820866406031,
+    "macro_f1": 0.45002514942341426,
+    "macro_balanced_accuracy": 0.6862932472710451
+  },
+  "binary_macro13": {
+    "macro_precision": 0.39214119222372756,
+    "macro_recall": 0.538216483060829,
+    "macro_specificity": 0.828693309780721,
+    "macro_f1": 0.44667257223285467,
+    "macro_balanced_accuracy": 0.6834548964207751
+  },
+  "binary_micro": {
+    "micro_precision": 0.5593150073346514,
+    "micro_recall": 0.759724508360045,
+    "micro_f1": 0.6442950554698407
+  },
+  "calibration": {
+    "split": "test",
+    "n_images": 28706,
+    "ece_definition": "10 adaptive equal-frequency bins (identical to C5)",
+    "macro_calibrated": {
+      "brier": 0.0836892685165862,
+      "log_loss": 0.2768125006168072,
+      "ece": 0.006905949332418756
+    },
+    "macro_raw_score_for_reference": {
+      "brier": 0.09603405709211676,
+      "log_loss": 0.3115762426315874,
+      "ece": 0.0648097383529919
+    },
+    "fraction_of_classes_with_lower_brier_after_calibration": 1.0,
+    "fraction_of_classes_with_lower_log_loss_after_calibration": 1.0
+  },
+  "validation": {
+    "ranking": {
+      "macro_auroc": 0.8011384160007895,
+      "micro_auroc": 0.8921544972248846,
+      "macro_auprc": 0.4234861202401775,
+      "micro_auprc": 0.6673779238175399
+    },
+    "binary_macro14": {
+      "macro_precision": 0.39849771378337984,
+      "macro_recall": 0.5354420153906421,
+      "macro_specificity": 0.8373754594714463,
+      "macro_f1": 0.4494931657308073,
+      "macro_balanced_accuracy": 0.6864087374310442
+    },
+    "calibration_frozen_in_sample": {
+      "brier": 0.08385626684796692,
+      "log_loss": 0.2774379564675389,
+      "ece": 0.005606644382870053
+    },
+    "calibration_out_of_fold": {
+      "brier": 0.08388392136081897,
+      "log_loss": 0.2775501337570457,
+      "ece": 0.005580160294397586
+    }
+  },
+  "no_finding_test": {
+    "n_images": 28706,
+    "no_finding_prevalence": 0.08813488469309552,
+    "precision": 0.4911937377690802,
+    "recall": 0.49604743083003955,
+    "specificity": 0.9503361858190709,
+    "f1": 0.4936086529006883,
+    "balanced_accuracy": 0.7231918083245552,
+    "pre_rule_precision": 0.451556077510276,
+    "pre_rule_recall": 0.607905138339921,
+    "pre_rule_specificity": 0.9286369193154034,
+    "pre_rule_f1": 0.5181940700808625,
+    "pct_predicted_no_finding_before_rule": 11.86511530690448,
+    "pct_predicted_no_finding_after_rule": 8.900578276318539,
+    "contradiction_n_before_rule": 851,
+    "contradiction_pct_of_images_before_rule": 2.96453703058594,
+    "contradiction_pct_of_predicted_no_finding_before_rule": 24.98532002348796,
+    "contradiction_n_after_rule": 0,
+    "contradiction_pct_of_images_after_rule": 0.0,
+    "images_modified_by_rule": 851,
+    "ground_truth_no_finding_positive": 2530,
+    "ground_truth_contradiction_with_12_pathology_n": 0,
+    "ground_truth_no_finding_with_support_devices_n": 1096,
+    "ground_truth_no_finding_with_uncertain_pathology_n": 0
+  },
+  "no_finding_validation": {
+    "n_images": 28671,
+    "no_finding_prevalence": 0.08852150256356597,
+    "precision": 0.4943632567849687,
+    "recall": 0.4665090622537431,
+    "specificity": 0.9536601232158574,
+    "f1": 0.48003243462396106,
+    "balanced_accuracy": 0.7100845927348003,
+    "pre_rule_precision": 0.45936507936507937,
+    "pre_rule_recall": 0.570133963750985,
+    "pre_rule_specificity": 0.9348333524662304,
+    "pre_rule_f1": 0.5087904360056259,
+    "pct_predicted_no_finding_before_rule": 10.986711311080883,
+    "pct_predicted_no_finding_after_rule": 8.353388441282132,
+    "contradiction_n_before_rule": 755,
+    "contradiction_pct_of_images_before_rule": 2.6333228697987514,
+    "contradiction_pct_of_predicted_no_finding_before_rule": 23.96825396825397,
+    "contradiction_n_after_rule": 0,
+    "contradiction_pct_of_images_after_rule": 0.0,
+    "images_modified_by_rule": 755,
+    "ground_truth_no_finding_positive": 2538,
+    "ground_truth_contradiction_with_12_pathology_n": 0,
+    "ground_truth_no_finding_with_support_devices_n": 1126,
+    "ground_truth_no_finding_with_uncertain_pathology_n": 0
+  },
+  "counts_test": {
+    "13_non_no_finding": {
+      "ground_truth": {
+        "mean": 2.3245314568382915,
+        "median": 2.0,
+        "p25": 1.0,
+        "p75": 3.0,
+        "p95": 5.0,
+        "max": 7,
+        "pct_0": 9.419633526092106,
+        "pct_1": 19.90872988225458,
+        "pct_2_3": 50.9893402076221,
+        "pct_4_5": 19.00299588936111,
+        "pct_gt5": 0.6793004946701038
+      },
+      "predicted": {
+        "mean": 3.4324183097610255,
+        "median": 4.0,
+        "p25": 2.0,
+        "p75": 5.0,
+        "p95": 6.0,
+        "max": 8,
+        "pct_0": 6.789521354420678,
+        "pct_1": 9.963073921828189,
+        "pct_2_3": 30.133073225109737,
+        "pct_4_5": 42.687939803525396,
+        "pct_gt5": 10.426391695116004
+      }
+    },
+    "12_pathology": {
+      "ground_truth": {
+        "mean": 1.762802201630321,
+        "median": 2.0,
+        "p25": 1.0,
+        "p75": 3.0,
+        "p95": 4.0,
+        "max": 6,
+        "pct_0": 15.96181982860726,
+        "pct_1": 26.36034278548039,
+        "pct_2_3": 50.4215146659235,
+        "pct_4_5": 7.158782136138786,
+        "pct_gt5": 0.09754058385006618
+      },
+      "predicted": {
+        "mean": 2.800320490489793,
+        "median": 3.0,
+        "p25": 2.0,
+        "p75": 4.0,
+        "p95": 5.0,
+        "max": 8,
+        "pct_0": 11.44011704870062,
+        "pct_1": 10.119835574444368,
+        "pct_2_3": 42.44060475161987,
+        "pct_4_5": 33.65150142827284,
+        "pct_gt5": 2.3479411969623074
+      }
+    }
+  },
+  "counts_validation": {
+    "13_non_no_finding": {
+      "ground_truth": {
+        "mean": 2.3104530710474,
+        "median": 2.0,
+        "p25": 1.0,
+        "p75": 3.0,
+        "p95": 4.0,
+        "max": 8,
+        "pct_0": 8.381291200167416,
+        "pct_1": 20.599211747061492,
+        "pct_2_3": 52.30023368560567,
+        "pct_4_5": 18.09842698196784,
+        "pct_gt5": 0.6208363851975863
+      },
+      "predicted": {
+        "mean": 3.4267029402532176,
+        "median": 4.0,
+        "p25": 2.0,
+        "p75": 5.0,
+        "p95": 6.0,
+        "max": 10,
+        "pct_0": 6.020020229500192,
+        "pct_1": 9.996163370653273,
+        "pct_2_3": 30.902305465452894,
+        "pct_4_5": 43.57015799937219,
+        "pct_gt5": 9.51135293502145
+      }
+    },
+    "12_pathology": {
+      "ground_truth": {
+        "mean": 1.7522932579958843,
+        "median": 2.0,
+        "p25": 1.0,
+        "p75": 3.0,
+        "p95": 4.0,
+        "max": 7,
+        "pct_0": 15.203515747619544,
+        "pct_1": 27.14589655052143,
+        "pct_2_3": 51.33758850406333,
+        "pct_4_5": 6.204876007115204,
+        "pct_gt5": 0.10812319068047853
+      },
+      "predicted": {
+        "mean": 2.8029018869240696,
+        "median": 3.0,
+        "p25": 2.0,
+        "p75": 4.0,
+        "p95": 5.0,
+        "max": 9,
+        "pct_0": 10.84719751665446,
+        "pct_1": 9.877576645390814,
+        "pct_2_3": 43.904991105995606,
+        "pct_4_5": 33.33682117819399,
+        "pct_gt5": 2.0334135537651283
+      }
+    }
+  },
+  "file_checks": {
+    "raw_scores_bit_identical_after_reload": true,
+    "final_preds_equal_rule_on_thresholded_scores": true,
+    "only_no_finding_differs_between_raw_and_final": true,
+    "calibrated_probability_range": [
+      0.00013436869851879809,
+      0.9979682063178055
+    ],
+    "calibrated_decisions_equal_raw_decisions_mismatches": 0,
+    "rows": 28706
+  },
+  "records_validated_against_schema": 28706,
+  "representative_classes": {
+    "rare": "Pleural Other",
+    "medium": "Pneumothorax",
+    "common": "Support Devices"
+  },
+  "rare_classes": [
+    "Pleural Other",
+    "Pneumonia",
+    "Fracture",
+    "Lung Lesion",
+    "Enlarged Cardiomediastinum",
+    "Consolidation"
+  ],
+  "bootstrap": {
+    "n_resamples": 1000,
+    "seed": 42,
+    "unit": "patient"
+  },
+  "validation_reproduction": {
+    "binary_count_differences": 0,
+    "binary_metric_max_abs_diff": 0.0,
+    "macro_binary_max_abs_diff": 0.0,
+    "ranking_macro_micro_max_abs_diff_vs_c2b": 0.0,
+    "finding_count_stat_abs_diff": 0.0,
+    "no_finding_rule_images_changed": 755,
+    "c4_images_changed": 755,
+    "calibrated_probs_vs_c5_stored_max_abs_diff": 0.0,
+    "c5_oof_brier_max_abs_diff": 0.0,
+    "c5_raw_brier_max_abs_diff": 0.0,
+    "reproduced": true
+  }
+}

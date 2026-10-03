@@ -1,0 +1,50 @@
+{
+  "c1_c5_files_checked": 373,
+  "c1_c5_files_changed": [],
+  "files_added_under_results_classification_outside_c6": [],
+  "checkpoint_sha256_now": "6645ed44be7cb7d4cf4679b1fd561c7ac36be63f964ea320666199883126794b",
+  "checkpoint_sha256_frozen": "6645ed44be7cb7d4cf4679b1fd561c7ac36be63f964ea320666199883126794b",
+  "checkpoint_unchanged": true,
+  "c4_thresholds_unchanged_vs_manifest": true,
+  "thresholds_used_in_test_output_equal_manifest": true,
+  "c5_platt_parameters_unchanged_vs_manifest": true,
+  "all_frozen_files_match_manifest_hashes": true,
+  "n_frozen_files_hashed": 17,
+  "banned_fit_or_tune_calls_in_c6_code": {
+    "c6_01_integrity_and_freeze.py": [],
+    "c6_02_test_inference.py": [],
+    "c6_03_evaluate.py": [],
+    "c6_04_figures_tables.py": [],
+    "c6_05_write_docs.py": [],
+    "c6_06_integrity.py": [],
+    "final_test.py": []
+  },
+  "allow_locked_true_call_sites_in_repository": {
+    "scripts/c6_02_test_inference.py": 1
+  },
+  "ordering": {
+    "freeze_manifest_created_utc": "2026-10-03T05:00:47+00:00",
+    "test_inference_finished_utc": "2026-10-03T05:04:44+00:00",
+    "manifest_before_inference": true,
+    "manifest_sha256_recorded_by_inference_matches": true,
+    "n_inference_passes": 1,
+    "manifest_mtime_before_prediction_files": true
+  },
+  "validation_reference_reproduced_stored_c2_c5": true,
+  "test_labels_used_for": [
+    "metric computation (c6_03_evaluate)",
+    "bootstrap resampling of metrics",
+    "descriptive error listing"
+  ],
+  "test_labels_not_used_for": [
+    "thresholds",
+    "calibration",
+    "checkpoint choice",
+    "loss choice",
+    "rule changes",
+    "any parameter"
+  ],
+  "git_head": "55ba4bb87453a1dbb2a3452f5e6aebbcb57120b8",
+  "git_branch": "c6-final-test",
+  "status": "PASS"
+}

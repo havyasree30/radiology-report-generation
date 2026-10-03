@@ -1,0 +1,17 @@
+# Methods: locked-test evaluation and classifier freeze (C6)
+
+## Data and split independence
+
+Experiments used frontal chest radiographs from CheXpert, partitioned at the patient level (patients with byte-identical images were merged into one split group) into training (133,644 images, 45,324 patients), validation (28,671 images, 9,530 patients) and a locked test partition (28,706 images, 9,680 patients). Before inference we verified that no patient, split group or image path occurred in more than one partition, and we confirmed from the repository records that the test partition had not been used for training, loss selection, checkpoint selection, threshold selection or calibration fitting. Uncertain labels were excluded from every metric and blank labels were scored as negative.
+
+## Frozen classifier
+
+The classifier was a DenseNet-121 with 14 independent sigmoid outputs, trained with a square-root-weighted binary cross-entropy loss; the checkpoint was selected on validation data (SHA-256 recorded). Binary decisions used class-specific thresholds that maximised the F1 score on the validation set, applied to the raw sigmoid score. A consistency rule then suppressed No Finding whenever any of the 12 pathology findings was positive; Support Devices did not suppress it. Probabilities were obtained by per-class Platt scaling of the logit of the raw score, fitted on the validation set only. Calibration affected the displayed probabilities but not the binary decisions, because the calibrated-equivalent thresholds reproduce the raw decisions exactly. Before any test metric was computed, the complete configuration (checkpoint hash, preprocessing, label policy, all thresholds, all calibration parameters, code commits, software versions) and a hash of every frozen file were written to a freeze manifest, and the manifest was re-verified before evaluation.
+
+## Test inference and metrics
+
+The frozen model was run once on the test partition with canonical single-precision inference, without test-time augmentation or ensembling. We report per-class and macro-averaged AUROC and AUPRC, micro-averaged AUROC and AUPRC, and, for the binary decisions, precision, recall, specificity, F1 score and balanced accuracy (macro averages over the 14 classes; micro-averaged precision, recall and F1 as secondary measures). Calibration was summarised by the Brier score, log loss and expected calibration error with 10 equal-frequency bins, as in the calibration study. Rare classes were the six defined during the loss study, not redefined from test prevalence. We additionally describe No Finding behaviour before and after the consistency rule, the distribution of positive findings per image, and the highest-scoring false positives and lowest-scoring false negatives; no radiological interpretation was attempted.
+
+## Uncertainty and generalisation
+
+Uncertainty was estimated with 1000 patient-level bootstrap resamples (seed 42): patients were drawn with replacement and all of a patient's images were included together, with the model, thresholds and calibrators held fixed. Validation results were recomputed with the same code and matched the stored validation results exactly; differences between validation and test are reported descriptively. No threshold, calibrator, rule or checkpoint was modified after the test partition was opened, and the bootstrap was used for uncertainty reporting only.

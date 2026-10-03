@@ -1,0 +1,214 @@
+{
+  "purpose": "Frozen classification pipeline. Written BEFORE any locked-test inference or metric. No entry may be changed after the test set is opened.",
+  "created_utc": "2026-10-03T05:00:47+00:00",
+  "model_architecture": "densenet121 (ImageNet-pretrained init), Linear(1024, 14) logits, 14 independent sigmoids (multi-label)",
+  "checkpoint": "results/classification/experiments/c2b_sqrt_weighted_bce/checkpoints/best.pt",
+  "checkpoint_sha256": "6645ed44be7cb7d4cf4679b1fd561c7ac36be63f964ea320666199883126794b",
+  "checkpoint_epoch": 7,
+  "loss": "sqrt_weighted_bce",
+  "loss_config": {
+    "type": "weighted_bce",
+    "pos_weight_source": "train_split",
+    "pos_weight_tempering": "sqrt"
+  },
+  "preprocessing": {
+    "image_size": 224,
+    "resize": "aspect_preserving_longest_side",
+    "interpolation": "bilinear",
+    "pad_value": 0,
+    "pad_position": "center",
+    "channels": 3,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "view": "Frontal",
+  "exclusions_file": "results/eda/tables/chexpert_exclusion_candidates.csv",
+  "inference_policy": "fp32_strict",
+  "test_time_augmentation": false,
+  "ensembling": false,
+  "label_order": [
+    "No Finding",
+    "Enlarged Cardiomediastinum",
+    "Cardiomegaly",
+    "Lung Opacity",
+    "Lung Lesion",
+    "Edema",
+    "Consolidation",
+    "Pneumonia",
+    "Atelectasis",
+    "Pneumothorax",
+    "Pleural Effusion",
+    "Pleural Other",
+    "Fracture",
+    "Support Devices"
+  ],
+  "uncertain_label_policy": "ignore (uncertain -1 masked: excluded from every metric)",
+  "missing_label_policy": "blank/unmentioned scored as negative (0)",
+  "f1_thresholds_raw_score": {
+    "No Finding": 0.642667293548584,
+    "Enlarged Cardiomediastinum": 0.30397042632102966,
+    "Cardiomegaly": 0.4518182575702667,
+    "Lung Opacity": 0.32664650678634644,
+    "Lung Lesion": 0.5139020681381226,
+    "Edema": 0.3789757192134857,
+    "Consolidation": 0.33341237902641296,
+    "Pneumonia": 0.3812790811061859,
+    "Atelectasis": 0.3297014534473419,
+    "Pneumothorax": 0.614745020866394,
+    "Pleural Effusion": 0.36226996779441833,
+    "Pleural Other": 0.2542676031589508,
+    "Fracture": 0.3263857364654541,
+    "Support Devices": 0.34337711334228516
+  },
+  "binary_rule": "positive = raw_score >= frozen_F1_threshold",
+  "no_finding_rule": "suppress_if_any_abnormal_positive",
+  "no_finding_rule_abnormal_labels": [
+    "Enlarged Cardiomediastinum",
+    "Cardiomegaly",
+    "Lung Opacity",
+    "Lung Lesion",
+    "Edema",
+    "Consolidation",
+    "Pneumonia",
+    "Atelectasis",
+    "Pneumothorax",
+    "Pleural Effusion",
+    "Pleural Other",
+    "Fracture"
+  ],
+  "support_devices_suppresses_no_finding": false,
+  "calibration": {
+    "method": "platt (all 14 classes)",
+    "version": "c5-v1",
+    "fitted_on": "validation (full)",
+    "input": "logit(raw sigmoid score)",
+    "parameters": {
+      "No Finding": {
+        "a": 0.8777748716640776,
+        "b": -1.4969974171930653,
+        "calibrated_equivalent_threshold": 0.2725389737761761
+      },
+      "Enlarged Cardiomediastinum": {
+        "a": 0.6222472336575032,
+        "b": -1.846470157381534,
+        "calibrated_equivalent_threshold": 0.08611838020557365
+      },
+      "Cardiomegaly": {
+        "a": 0.8123147915425252,
+        "b": -0.8760612423503489,
+        "calibrated_equivalent_threshold": 0.26248286575814805
+      },
+      "Lung Opacity": {
+        "a": 0.8607878449678447,
+        "b": 0.0428778479621502,
+        "calibrated_equivalent_threshold": 0.35897652443888617
+      },
+      "Lung Lesion": {
+        "a": 0.5514169782391131,
+        "b": -1.9984493747863763,
+        "calibrated_equivalent_threshold": 0.12262773849865131
+      },
+      "Edema": {
+        "a": 0.8077759984248426,
+        "b": -0.24683064963105744,
+        "calibrated_equivalent_threshold": 0.343938959811514
+      },
+      "Consolidation": {
+        "a": 0.7034507998683892,
+        "b": -1.4337286803570066,
+        "calibrated_equivalent_threshold": 0.12774191470680563
+      },
+      "Pneumonia": {
+        "a": 0.6228608531276019,
+        "b": -2.039002091922545,
+        "calibrated_equivalent_threshold": 0.08782039236730055
+      },
+      "Atelectasis": {
+        "a": 0.8034053479116776,
+        "b": -0.8266357739392992,
+        "calibrated_equivalent_threshold": 0.19834339329317252
+      },
+      "Pneumothorax": {
+        "a": 0.7428838842585155,
+        "b": -1.42020653128139,
+        "calibrated_equivalent_threshold": 0.2548224905607662
+      },
+      "Pleural Effusion": {
+        "a": 0.8867745826885008,
+        "b": -0.10406652344009547,
+        "calibrated_equivalent_threshold": 0.3530726801243195
+      },
+      "Pleural Other": {
+        "a": 0.4786937339597903,
+        "b": -2.232020045985819,
+        "calibrated_equivalent_threshold": 0.0602515058521729
+      },
+      "Fracture": {
+        "a": 0.6105775835216495,
+        "b": -1.390853760190296,
+        "calibrated_equivalent_threshold": 0.1378498171371338
+      },
+      "Support Devices": {
+        "a": 0.9887459003910158,
+        "b": 0.39303948039576747,
+        "calibrated_equivalent_threshold": 0.4383293032921024
+      }
+    }
+  },
+  "commits": {
+    "C1": "a62073273cef155d6177d929a9d3a8e54279200b",
+    "C2_infrastructure": "c1e4800983f8e050da63ac85e799ba443e4858fe",
+    "C2_results": "a2de4174b386ca8325c3481d626227dc205cd952",
+    "C3": "031edd6306fd2974d9ae6107921ed92860416bf4",
+    "C4": "77dee289fda740a1b261e31cc575343a49baea68",
+    "C5": "55ba4bb87453a1dbb2a3452f5e6aebbcb57120b8",
+    "c6_branch_head_at_freeze": "55ba4bb87453a1dbb2a3452f5e6aebbcb57120b8",
+    "c6_branch": "c6-final-test",
+    "working_tree_clean_at_freeze": false
+  },
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "cudnn": 91900,
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1",
+    "scipy": "1.17.1",
+    "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+  },
+  "bootstrap": {
+    "n_resamples": 1000,
+    "seed": 42,
+    "unit": "patient"
+  },
+  "hashed_files": {
+    "results/classification/experiments/c2b_sqrt_weighted_bce/checkpoints/best.pt": "6645ed44be7cb7d4cf4679b1fd561c7ac36be63f964ea320666199883126794b",
+    "results/classification/experiments/c2b_sqrt_weighted_bce/config.yaml": "704a05b89607fc8fede3553ec45d10eab35fd159bc36af838a096dca26d7b3a1",
+    "results/classification/experiments/c3_threshold_optimization/thresholds_f1.json": "1b19c9f92c80b5a2efb297fbed1d8848cf2118d527b12680f4278c15ae416408",
+    "results/classification/experiments/c4_operating_policy/final_operating_policy.json": "336b90746a273a033ce3f630384677e5acef97ce9b143489265bcaa3972de8e1",
+    "results/classification/experiments/c5_calibration/final_calibrators.json": "50a14779157a60ff0f0ce973cf5b759801d67b17ec39f09949ee0056d7606c83",
+    "data/splits/chexpert/chexpert_image_manifest.csv.gz": "c874472af7a5fac7a1f0b6af52e6dd7dbf9d809d2f16d60fbf7c71f9fdb62fc0",
+    "results/eda/tables/chexpert_exclusion_candidates.csv": "4bea3a63da95f59f19de4b86f9bb1d96880be5833925dd0c1a3356b9e901382e",
+    "src/classification/model.py": "2441ea80d3cf8f27c94eb2d7246fc46e920571072188051574c9a03c41059534",
+    "src/classification/dataset.py": "a09f117d957b2cbbd7fd5a60142c6e52e354e8a1506edd6cd2a727d43daefcc7",
+    "src/classification/evaluator.py": "006eb84c8e17cb22ee91527c7effa59070c460536b2f7ed47a88cf99aee5513e",
+    "src/classification/inference_policy.py": "90eec3aee3c52b162a95a104c22d2cef81faf8a0c29bffe689f6fafdbf77eb62",
+    "src/classification/operating_policy.py": "c3155e680b25211c5aaeaf2398c6ae615d799d644fddadfea004fdfeb46c8b94",
+    "src/classification/calibration.py": "2dbcd038e81e0a79949f27864923550ded294b84121816ab82590cf8b4e0693b",
+    "src/classification/final_test.py": "21d862e2b93231e54eb9a73ef51e4de4855824ae311af6f88a39534b58c949d6",
+    "src/preprocessing/transforms.py": "51bb35bc5ea5cf72815ad6eaacb3f75a147048075c3a2d02684060aeed5ff540",
+    "src/data/label_policies.py": "7cb3c4923b512407ae49289a9e1ba59175658c0ec32eb066c68d6f0e9361b03e",
+    "src/data/chexpert.py": "f151cd1322d360523075f7c43950db7c46b10580a1dc80e835b0df3f6c0ca16a"
+  },
+  "test_inference_started": false
+}

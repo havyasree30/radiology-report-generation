@@ -1,0 +1,11 @@
+{
+  "split": "test",
+  "n_images": 28706,
+  "n_patients": 9680,
+  "macro_auroc": 0.8025853034924253,
+  "macro_auprc": 0.4268781547990033,
+  "micro_auroc": 0.8931557073001568,
+  "micro_auprc": 0.6720208484721021,
+  "n_classes_defined": 14,
+  "undefined_classes": []
+}

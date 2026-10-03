@@ -1,0 +1,40 @@
+{
+  "split": "test",
+  "n_images": 28706,
+  "n_patients": 9680,
+  "n_excluded_by_exclusion_list": 0,
+  "inference_policy": {
+    "name": "fp32_strict",
+    "autocast_fp16": false,
+    "allow_tf32": false,
+    "cudnn_deterministic": true
+  },
+  "backend_flags": {
+    "cudnn_allow_tf32": false,
+    "matmul_allow_tf32": false,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false
+  },
+  "test_time_augmentation": false,
+  "ensembling": false,
+  "n_inference_passes": 1,
+  "seconds": 133.5,
+  "score_min": 8.6509436414417e-07,
+  "score_max": 0.9988853335380554,
+  "serialization_roundtrip": {
+    "npz": {
+      "max_abs_diff": 0.0,
+      "bit_identical": true,
+      "status_mismatches": 0
+    },
+    "csv_17_digits": {
+      "max_abs_diff": 0.0,
+      "bit_identical": true,
+      "status_mismatches": 0
+    }
+  },
+  "checkpoint_sha256_at_inference": "6645ed44be7cb7d4cf4679b1fd561c7ac36be63f964ea320666199883126794b",
+  "freeze_manifest_sha256": "40e649677b8c43a5c36ed2c2cb84c0ec4a33878f9f01184db7bf4478284a619c",
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "finished_utc": "2026-10-03T05:04:44+00:00"
+}
