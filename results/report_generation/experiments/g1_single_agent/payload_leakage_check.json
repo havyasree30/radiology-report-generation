@@ -1,0 +1,11 @@
+{
+  "n_cases": 547,
+  "payload_whitelist_enforced": true,
+  "reference_sentences_in_non_retrieval_payload_total": 0,
+  "cases_with_reference_sentence_outside_retrieved_reports": 0,
+  "cases_with_own_study_in_retrieved": 0,
+  "informational_reference_text_fully_present_in_retrieved_reports_templated_duplicates": 1,
+  "note": "the last count is generic templated reporting by OTHER studies that happens to equal the reference wording; it is legitimate retrieval, not leakage",
+  "prompt_sha256": "476b05326f85652b0cdb2faf79a4868a6e839660eb43e34d46cdae625e4b5688",
+  "truth_findings_in_payload": false
+}

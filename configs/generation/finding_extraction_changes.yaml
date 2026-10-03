@@ -1,0 +1,38 @@
+# G1 finding extraction from generated report text.
+# Base: configs/iu_concept_lexicon.yaml (Phase 1 EDA lexicon with NegEx-style assertion). This file lists the ONLY changes
+# applied for report evaluation. They were fixed BEFORE any report was generated and are not tuned on results.
+#
+# Rationale
+#  * remove: R1 decided that "pulmonary congestion" is ambiguous and must NOT be mapped to Edema; the Phase 1 text lexicon
+#    mapped it. Removing it keeps text extraction consistent with the R1 truth mapping.
+#  * add: patterns for the canonical terms the generator and the B0 baseline are instructed to use, so that a correctly
+#    worded statement is not missed (e.g. "support device", "pleural abnormality", "enlarged cardiomediastinum").
+remove_patterns:
+  Edema:
+    - "(?:pulmonary |vascular )congestion"
+add_patterns:
+  Enlarged Cardiomediastinum:
+    - "enlarged cardiomediastin(?:um|al)"
+    - "(?:widened|enlarged) mediastin(?:um|al)"
+  Pleural Other:
+    - "pleural abnormalit(?:y|ies)"
+  Support Devices:
+    - "(?:support|medical) devices?"
+    - "catheters?"
+    - "(?:cardiac |pacemaker |defibrillator )leads?"
+    - "(?:central venous|venous|dialysis|picc|chest|feeding|enteric|nasogastric|endotracheal|tracheostomy) (?:catheter|line|tube)s?"
+    - "(?:lines?|tubes?) and (?:lines?|tubes?)"
+# Hedging triggers that precede the finding ("cannot exclude pneumonia"); the Phase 1 lexicon only handled them after it.
+add_assertion_patterns:
+  uncertainty_pre:
+    - "(?:cannot|can not|could not) (?:be )?(?:entirely )?(?:exclude|excluded|rule out|ruled out)"
+    - "concern for"
+    - "may represent"
+    - "could represent"
+# Report-level normal statement (used only when no abnormal finding is stated)
+normal_patterns:
+  - "no acute"
+  - "\\bnormal\\b"
+  - "within normal limits"
+  - "unremarkable"
+  - "no (?:radiographic )?abnormalit"

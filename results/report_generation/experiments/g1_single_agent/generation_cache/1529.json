@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "a8ecace97e134df3afef328253d37cb9078c45ed487cf55f7569602e31df59d5",
+ "text": "FINDINGS:\nPossible atelectasis in the right lung base.\nIMPRESSION:\nAtelectasis.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1068,
+ "output_tokens": 26,
+ "total_duration_ns": 1305106300,
+ "load_duration_ns": 8727700,
+ "attempts": 1,
+ "wall_seconds": 3.35,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T10:29:29+00:00"
+}

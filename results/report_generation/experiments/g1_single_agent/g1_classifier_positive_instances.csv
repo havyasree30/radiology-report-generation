@@ -1,0 +1,355 @@
+uid,finding,probability,n_supporting,n_retrieved,is_true_positive,g1_mentions
+50,Cardiomegaly,0.3757625503347336,5,5,True,True
+50,Edema,0.558537804604603,3,5,False,True
+73,Pleural Effusion,0.8896261494820416,3,5,True,True
+78,Lung Opacity,0.5394372134306533,4,5,False,True
+78,Atelectasis,0.3561309661324234,4,5,True,True
+78,Pleural Effusion,0.6498517448913422,1,5,False,False
+144,Enlarged Cardiomediastinum,0.0870972309127823,0,5,False,False
+152,Enlarged Cardiomediastinum,0.3515700322681014,0,5,False,True
+152,Lung Lesion,0.1630943528204843,0,5,False,False
+152,Fracture,0.2074998617107735,2,5,True,True
+160,Lung Opacity,0.6721592846557547,4,5,True,True
+160,Pneumonia,0.1547751571951892,2,5,False,True
+160,Pleural Effusion,0.4682677638689391,0,5,False,False
+188,Cardiomegaly,0.4620446828307618,3,5,False,True
+188,Lung Opacity,0.4964498590876581,4,5,True,True
+188,Consolidation,0.1677019086198397,0,5,False,False
+188,Pleural Effusion,0.910159145399489,2,5,True,False
+195,Pneumonia,0.0992881279092792,1,5,False,True
+220,Lung Opacity,0.6205213798620804,5,5,False,True
+220,Lung Lesion,0.1576747736493454,0,5,True,False
+220,Consolidation,0.2028288575387983,1,5,False,False
+220,Pneumonia,0.1691397139466767,1,5,False,True
+220,Pleural Other,0.0948090634189003,0,5,False,False
+249,Lung Opacity,0.4155488619334246,5,5,False,True
+249,Lung Lesion,0.2642430130578734,0,5,True,False
+266,Enlarged Cardiomediastinum,0.0976735323505678,0,5,False,False
+266,Cardiomegaly,0.5775854534525604,5,5,True,True
+268,Lung Opacity,0.4737602858840375,5,5,True,False
+268,Consolidation,0.6076999656207313,1,5,False,True
+268,Pneumonia,0.6785300918176416,1,5,True,True
+317,Fracture,0.1552358849815801,3,5,False,False
+335,Support Devices,0.644325916156201,5,5,True,False
+382,Lung Opacity,0.6947263147899077,4,5,True,True
+382,Lung Lesion,0.1648706845122376,0,5,False,False
+382,Pneumothorax,0.41063233512472,0,5,False,False
+392,Support Devices,0.6643494469442138,5,5,True,False
+407,Support Devices,0.5085203496977238,5,5,False,False
+436,Lung Opacity,0.7391414643530968,5,5,False,True
+436,Consolidation,0.2465667255327155,1,5,False,False
+436,Pneumonia,0.1137305929982512,0,5,False,False
+436,Atelectasis,0.2172875078878903,1,5,False,False
+436,Pleural Effusion,0.4120968515301758,2,5,False,True
+436,Fracture,0.1560884857041138,0,5,False,False
+441,Fracture,0.1527410034176823,3,5,False,True
+481,Enlarged Cardiomediastinum,0.0955606829991544,0,5,False,False
+481,Support Devices,0.7605282520972562,3,5,True,True
+483,Atelectasis,0.2061485087809062,5,5,False,True
+499,Fracture,0.159825957442575,3,5,False,False
+501,Pneumonia,0.1134375637703853,1,5,False,True
+504,Lung Opacity,0.3990254736873388,4,5,True,True
+504,Atelectasis,0.3183727564421937,4,5,True,True
+504,Fracture,0.1396852871101896,1,5,False,False
+505,Lung Opacity,0.3770253014178304,5,5,False,True
+505,Pleural Other,0.0627786066983816,0,5,False,False
+505,Fracture,0.2185107028283828,0,5,False,False
+522,Fracture,0.2423200020607425,3,5,False,False
+530,Cardiomegaly,0.448132149497965,5,5,True,True
+546,Cardiomegaly,0.5496121386975517,3,5,False,True
+546,Lung Opacity,0.3890497038341327,4,5,False,True
+546,Pleural Effusion,0.7150825417693155,2,5,True,True
+569,Lung Opacity,0.5323093829591807,4,5,True,True
+569,Atelectasis,0.2146268506983156,1,5,False,True
+569,Pneumothorax,0.5029233747632598,0,5,False,False
+569,Pleural Effusion,0.3785396687310856,1,5,False,False
+569,Pleural Other,0.090669693156019,0,5,False,False
+569,Fracture,0.176636824715199,0,5,False,False
+569,Support Devices,0.4853340338745712,0,5,True,False
+573,Lung Opacity,0.5219885605650044,4,5,True,True
+586,Cardiomegaly,0.5835695351139565,4,5,True,True
+586,Lung Opacity,0.6181103086927776,3,5,True,True
+586,Consolidation,0.2785105144041066,0,5,False,False
+586,Pneumonia,0.2006607437421134,0,5,False,False
+601,Lung Opacity,0.7096240146302133,5,5,True,True
+601,Consolidation,0.249076607623323,0,5,False,False
+601,Pneumonia,0.2299609172479312,0,5,False,False
+601,Support Devices,0.4891428617085404,0,5,True,False
+608,Fracture,0.2396485932519749,3,5,True,False
+661,Pleural Effusion,0.5107082607695685,3,5,False,True
+665,Cardiomegaly,0.5103286640151824,5,5,True,True
+668,Atelectasis,0.4265789957025927,5,5,False,True
+672,Lung Opacity,0.6322644928142497,4,5,False,True
+672,Consolidation,0.1943387765615204,0,5,False,False
+672,Pneumonia,0.2710323215655112,2,5,False,True
+672,Pleural Effusion,0.4327586902293238,0,5,False,False
+683,Fracture,0.1663995258088582,3,5,False,False
+688,Lung Opacity,0.3875956004757603,5,5,True,True
+688,Pneumonia,0.1477462923645457,0,5,False,False
+688,Atelectasis,0.3058101816742238,2,5,True,True
+689,Lung Opacity,0.4149240662540992,5,5,False,True
+689,Lung Lesion,0.4450535932840074,0,5,True,False
+691,Fracture,0.1711213454502611,3,5,False,False
+709,Fracture,0.2107715512613838,3,5,True,False
+716,Cardiomegaly,0.5284565436369638,5,5,True,True
+716,Pneumonia,0.1136224164814557,0,5,False,True
+725,Fracture,0.1805890378472289,3,5,False,False
+733,Support Devices,0.8082569399884421,5,5,True,False
+744,Pneumothorax,0.5181401475498679,2,5,False,True
+744,Support Devices,0.5493898118779482,1,5,False,False
+756,Fracture,0.1597738566704035,3,5,False,False
+758,Fracture,0.1410765995072681,3,5,False,False
+760,Lung Opacity,0.4092303992390604,5,5,True,True
+760,Pneumonia,0.1290081458468034,2,5,False,True
+760,Fracture,0.1425509447028293,0,5,False,False
+808,Lung Opacity,0.68625116426974,5,5,True,True
+808,Consolidation,0.1639917386571551,0,5,False,False
+808,Pneumonia,0.138789910380857,0,5,True,False
+808,Atelectasis,0.2403747150365838,3,5,True,True
+847,Lung Opacity,0.4364335715281093,4,5,False,True
+847,Atelectasis,0.2936174617091288,4,5,False,True
+847,Fracture,0.1485331523971368,1,5,False,False
+867,Fracture,0.143460849885723,3,5,False,False
+868,Lung Lesion,0.1335127616064688,2,5,False,False
+929,Lung Lesion,0.2102514583502068,0,5,False,False
+929,Fracture,0.4154301861130524,3,5,False,True
+941,Fracture,0.2296053133049276,3,5,False,True
+955,Lung Opacity,0.5254551971279348,5,5,False,True
+955,Consolidation,0.3105219404183665,1,5,False,False
+955,Pneumonia,0.2818081516315136,1,5,False,True
+959,Lung Opacity,0.3755959221284429,4,5,True,True
+972,Enlarged Cardiomediastinum,0.1498082816880548,0,5,False,True
+972,Lung Lesion,0.1329125743234754,0,5,False,False
+981,Enlarged Cardiomediastinum,0.0959236341236147,0,5,False,False
+981,Cardiomegaly,0.4735097781128738,5,5,True,True
+1049,Support Devices,0.7800155272147643,5,5,False,False
+1064,Lung Opacity,0.5053575055343082,4,5,True,True
+1064,Consolidation,0.1686678631261429,0,5,False,False
+1064,Atelectasis,0.212806932445245,4,5,True,False
+1064,Pleural Effusion,0.8049924691894825,1,5,False,False
+1064,Fracture,0.2040947486597596,0,5,False,False
+1079,Atelectasis,0.2644116343388592,5,5,True,True
+1125,Lung Opacity,0.3790910083080386,4,5,True,True
+1159,Support Devices,0.465847373188155,5,5,False,False
+1206,Fracture,0.2354527189627378,3,5,False,True
+1214,Lung Opacity,0.5776270308849406,5,5,False,True
+1214,Consolidation,0.1284123071783177,1,5,False,False
+1214,Pneumonia,0.2972200713342551,1,5,False,True
+1234,Cardiomegaly,0.4202092375851925,5,5,True,True
+1277,Fracture,0.1620295232140526,3,5,False,False
+1285,Pleural Effusion,0.4301278455373234,3,5,False,True
+1288,Atelectasis,0.2914914882465584,5,5,False,True
+1334,Fracture,0.2535564773312765,3,5,False,False
+1394,Pneumonia,0.0911277288214601,1,5,False,True
+1422,Lung Opacity,0.5001571909562555,5,5,True,True
+1422,Lung Lesion,0.2995927459653179,0,5,False,False
+1422,Consolidation,0.5614178064408623,1,5,True,False
+1422,Pneumonia,0.4647773691473713,1,5,True,True
+1451,Lung Opacity,0.4879519437396078,5,5,False,True
+1451,Fracture,0.1733777922082731,0,5,False,False
+1456,Fracture,0.1452774190541575,3,5,False,False
+1518,Enlarged Cardiomediastinum,0.1001489460618226,0,5,False,False
+1518,Cardiomegaly,0.3519116743796945,5,5,False,True
+1529,Atelectasis,0.2082382451226702,5,5,False,True
+1545,Fracture,0.2848287442394523,3,5,False,False
+1556,Lung Opacity,0.6302164359281603,4,5,True,True
+1556,Consolidation,0.1326249358905301,0,5,False,False
+1556,Atelectasis,0.3607928843009499,4,5,False,False
+1556,Pleural Effusion,0.4817283870625663,1,5,False,False
+1595,Enlarged Cardiomediastinum,0.0953404872267362,0,5,False,False
+1595,Cardiomegaly,0.3507053213835122,5,5,True,True
+1595,Lung Opacity,0.4417627536739779,3,5,True,True
+1595,Edema,0.3520882006725293,3,5,False,False
+1647,Fracture,0.2147115032367333,3,5,False,False
+1661,Fracture,0.2369112623932216,3,5,False,False
+1735,Pleural Effusion,0.5513959941714275,1,5,False,False
+1735,Fracture,0.20490649600002,4,5,False,True
+1753,Cardiomegaly,0.2928571863220429,5,5,True,True
+1753,Lung Opacity,0.3776295569280939,3,5,False,True
+1753,Edema,0.383947777696349,3,5,False,True
+1819,Enlarged Cardiomediastinum,0.0867475210816256,0,5,False,False
+1819,Cardiomegaly,0.75036258854166,5,5,True,True
+1819,Lung Opacity,0.6143008204263529,3,5,True,True
+1819,Edema,0.5635956980441507,3,5,False,False
+1819,Atelectasis,0.2374589160224381,1,5,True,True
+1832,Cardiomegaly,0.7775867722180011,5,5,True,True
+1832,Lung Opacity,0.5014141338596702,3,5,True,True
+1832,Edema,0.4954748880314258,3,5,False,True
+1832,Pleural Effusion,0.4923941375293867,1,5,False,True
+1907,Cardiomegaly,0.4982332506564594,5,5,False,True
+1918,Enlarged Cardiomediastinum,0.0983903553311424,0,5,False,False
+1947,Fracture,0.2302121180781379,3,5,False,False
+1976,Lung Opacity,0.6198938997123085,5,5,True,True
+1976,Consolidation,0.1330808540690096,1,5,False,True
+1976,Pneumonia,0.3104540407811733,1,5,False,False
+1988,Lung Opacity,0.7428212448585761,5,5,True,True
+1988,Edema,0.4037904745799646,0,5,False,False
+1988,Pneumonia,0.1371265855083355,1,5,False,True
+2006,Fracture,0.1949754896650967,3,5,False,False
+2062,Lung Opacity,0.7037818947891767,5,5,True,True
+2062,Consolidation,0.2380595302221215,1,5,False,True
+2062,Pneumonia,0.3957030292680579,1,5,False,False
+2066,Enlarged Cardiomediastinum,0.1216471826715998,0,5,False,False
+2066,Cardiomegaly,0.3289991187294899,5,5,True,True
+2074,Enlarged Cardiomediastinum,0.2687116354198331,0,5,False,False
+2074,Pleural Effusion,0.4526829695009911,0,5,True,False
+2116,Lung Lesion,0.1707304674288427,2,5,False,False
+2138,Lung Opacity,0.4093436313347281,5,5,True,True
+2138,Lung Lesion,0.376775166785959,0,5,False,False
+2138,Fracture,0.42996744627596,0,5,True,False
+2157,Pleural Other,0.0686513405520322,0,5,False,False
+2160,Fracture,0.208299017137547,3,5,False,False
+2207,Fracture,0.2621819741273488,3,5,False,False
+2223,Edema,0.5359554590667063,3,5,False,True
+2238,Fracture,0.1551282395410322,3,5,False,False
+2239,Lung Opacity,0.4036619376119782,5,5,True,True
+2239,Pneumonia,0.1084542255593576,1,5,False,True
+2313,Enlarged Cardiomediastinum,0.1040605532626109,0,5,False,False
+2363,Lung Opacity,0.5786724976375854,5,5,True,True
+2363,Consolidation,0.5278342478719528,1,5,False,False
+2363,Pneumonia,0.5015572505238827,1,5,True,True
+2363,Pleural Effusion,0.3591915505512577,0,5,False,False
+2396,Lung Opacity,0.4937360484280781,4,5,True,True
+2415,Lung Opacity,0.6446601887501164,4,5,True,True
+2415,Consolidation,0.1292847523068794,0,5,False,False
+2415,Atelectasis,0.2573236537162897,4,5,False,True
+2415,Pleural Effusion,0.8615152262156424,1,5,False,False
+2415,Pleural Other,0.1109946093596009,1,5,False,False
+2453,Pneumonia,0.1250489325202696,1,5,False,True
+2475,Enlarged Cardiomediastinum,0.1115609943285497,0,5,False,False
+2493,Enlarged Cardiomediastinum,0.1630879239552525,0,5,False,False
+2493,Fracture,0.1621445251348233,0,5,False,False
+2513,Lung Opacity,0.4301070407399054,4,5,False,True
+2513,Atelectasis,0.2370158322350944,4,5,True,True
+2513,Pleural Effusion,0.83351403517735,1,5,False,False
+2533,Fracture,0.150863895361879,3,5,False,False
+2594,Enlarged Cardiomediastinum,0.1128521979391668,0,5,False,False
+2594,Fracture,0.1559467533163804,0,5,False,False
+2605,Lung Opacity,0.3950923262453308,5,5,False,True
+2605,Pleural Effusion,0.8365679589746942,1,5,False,True
+2616,Pleural Effusion,0.8956447602441153,0,5,True,False
+2616,Pleural Other,0.0656618849962975,0,5,False,False
+2622,Pleural Other,0.0721573877291029,0,5,False,False
+2629,Fracture,0.3094703679510702,3,5,False,True
+2644,Enlarged Cardiomediastinum,0.0878641646942444,0,5,False,False
+2644,Cardiomegaly,0.2885814308701804,5,5,True,True
+2691,Enlarged Cardiomediastinum,0.1500023732718114,0,5,False,False
+2737,Fracture,0.1670540817989137,3,5,False,False
+2747,Atelectasis,0.2346820275912759,5,5,False,True
+2778,Support Devices,0.9163085674818584,5,5,True,False
+2817,Lung Opacity,0.5666041019672462,5,5,True,True
+2817,Pneumonia,0.146052869692189,1,5,False,True
+2817,Pleural Other,0.2472998570597548,0,5,True,False
+2831,Pleural Effusion,0.9534046516699136,3,5,True,True
+2833,Pneumothorax,0.2854931956482487,1,5,False,True
+2884,Cardiomegaly,0.2998117007130387,5,5,False,True
+2894,Support Devices,0.9934932736660508,5,5,True,False
+2902,Pleural Effusion,0.5660563446209222,0,5,False,False
+2902,Pleural Other,0.0856969725435148,0,5,False,False
+2936,Enlarged Cardiomediastinum,0.1037705031385279,0,5,False,False
+2936,Cardiomegaly,0.3912356961360046,5,5,True,True
+2955,Enlarged Cardiomediastinum,0.1673961644159523,0,5,False,False
+2955,Cardiomegaly,0.4938013425903053,5,5,True,True
+2955,Edema,0.4857947749668776,2,5,False,False
+2957,Lung Opacity,0.6542797833689143,5,5,True,True
+2957,Lung Lesion,0.2012194080135517,0,5,False,False
+2957,Pneumonia,0.0966594370033217,0,5,False,False
+2957,Atelectasis,0.2819680398244546,3,5,True,True
+3004,Lung Opacity,0.5093131592358929,5,5,True,True
+3004,Pleural Other,0.1189521718861389,0,5,False,False
+3022,Lung Opacity,0.722663515238563,5,5,False,True
+3022,Lung Lesion,0.4310796955672459,0,5,True,False
+3022,Consolidation,0.405208198286259,0,5,False,True
+3022,Pneumonia,0.2328664148884218,0,5,False,False
+3025,Fracture,0.3380589812780354,3,5,False,False
+3049,Fracture,0.2588682331265647,3,5,False,True
+3069,Lung Lesion,0.1693031042480871,0,5,False,False
+3069,Consolidation,0.130597308184396,2,5,False,True
+3069,Pneumonia,0.088371627996364,3,5,True,True
+3135,Fracture,0.1404063053799792,3,5,False,True
+3148,Enlarged Cardiomediastinum,0.107211775087548,0,5,False,True
+3148,Atelectasis,0.226013242513823,4,5,False,True
+3148,Pleural Effusion,0.9275359007060155,1,5,True,True
+3158,Pleural Effusion,0.4781987352293178,3,5,False,True
+3191,Enlarged Cardiomediastinum,0.1716487747436307,0,5,False,True
+3191,Cardiomegaly,0.3799072149334076,4,5,True,True
+3191,Pleural Other,0.0754125862078986,0,5,False,True
+3195,Lung Opacity,0.5149268960637257,5,5,True,False
+3195,Edema,0.6217930744503148,1,5,False,True
+3195,Atelectasis,0.2632406848497445,1,5,False,False
+3195,Pleural Effusion,0.9307738083715396,2,5,False,True
+3207,Cardiomegaly,0.7687294160204379,5,5,True,True
+3214,Cardiomegaly,0.9046228362151288,5,5,True,True
+3253,Fracture,0.1622994778716212,3,5,False,False
+3290,Fracture,0.1749129546240314,3,5,False,False
+3347,Fracture,0.1882019993573497,3,5,False,False
+3369,Pneumothorax,0.6082364647767644,1,5,True,False
+3369,Fracture,0.1447627113220255,3,5,False,True
+3378,Fracture,0.4352179106028977,3,5,True,False
+3379,Enlarged Cardiomediastinum,0.0988190308926844,0,5,False,False
+3435,Enlarged Cardiomediastinum,0.0959408896992839,0,5,False,False
+3455,Lung Opacity,0.6461465537948998,5,5,True,True
+3455,Edema,0.5754850947940588,0,5,True,False
+3508,Enlarged Cardiomediastinum,0.1070386677812814,0,5,False,False
+3508,Lung Opacity,0.3590567711290927,4,5,False,True
+3508,Lung Lesion,0.1352000267815144,0,5,False,False
+3508,Pleural Effusion,0.8556955175933084,1,5,True,True
+3508,Pleural Other,0.4505200551605184,0,5,True,False
+3559,Fracture,0.3912101863099364,3,5,False,True
+3562,Enlarged Cardiomediastinum,0.2125875545835093,0,5,False,False
+3562,Fracture,0.2356976846625265,0,5,False,False
+3565,Lung Opacity,0.4185423673780986,5,5,True,False
+3565,Consolidation,0.5934577398239842,1,5,True,True
+3565,Pneumonia,0.603939967489221,1,5,True,True
+3589,Pneumonia,0.1775587067730544,3,5,False,True
+3589,Atelectasis,0.3228728478727667,3,5,False,True
+3597,Lung Lesion,0.3945901426460095,0,5,False,False
+3597,Pneumonia,0.1109278230555367,3,5,False,True
+3608,Cardiomegaly,0.9391682751510532,5,5,True,True
+3608,Edema,0.5509394238150919,3,5,False,True
+3611,Enlarged Cardiomediastinum,0.1204927928479833,0,5,False,False
+3611,Cardiomegaly,0.4891512242345525,3,5,False,True
+3611,Lung Opacity,0.3869151270269486,4,5,True,True
+3611,Pleural Effusion,0.4434874086347661,2,5,False,True
+3611,Pleural Other,0.0629411943449721,0,5,False,False
+3611,Fracture,0.1601393163884843,0,5,False,False
+3632,Fracture,0.1919951781726286,3,5,False,False
+3667,Support Devices,0.8875903696477054,5,5,True,False
+3672,Cardiomegaly,0.3149776947217192,5,5,True,True
+3672,Edema,0.5559238877143649,1,5,True,True
+3672,Pleural Effusion,0.4602093349932717,1,5,False,True
+3756,Lung Opacity,0.386553533853398,5,5,True,True
+3756,Atelectasis,0.4973882623944549,3,5,False,True
+3790,Lung Opacity,0.5209770994096898,4,5,True,True
+3790,Atelectasis,0.3508061702463218,4,5,False,True
+3790,Pleural Effusion,0.7724782740836375,1,5,False,False
+3790,Fracture,0.2988052238339064,0,5,False,False
+3793,Lung Opacity,0.5892263975165357,4,5,True,True
+3793,Pneumonia,0.1530882729893209,0,5,False,False
+3793,Atelectasis,0.219853549235936,4,5,False,True
+3793,Fracture,0.1737462341737143,1,5,False,False
+3814,Fracture,0.1512500925633268,3,5,False,False
+3817,Enlarged Cardiomediastinum,0.1144432432972213,0,5,False,False
+3847,Pneumothorax,0.5799000882401762,0,5,True,False
+3847,Pleural Effusion,0.8540895092526796,1,5,False,False
+3866,Lung Opacity,0.7661211737244031,5,5,True,True
+3866,Consolidation,0.2756599464708937,1,5,False,True
+3866,Pneumonia,0.4539085352982102,1,5,True,False
+3875,Lung Opacity,0.4841894294830655,5,5,True,True
+3875,Pneumonia,0.1068977747613183,1,5,False,True
+3879,Pneumonia,0.1467701848787878,1,5,False,True
+3880,Cardiomegaly,0.4876119634261179,5,5,True,True
+3905,Cardiomegaly,0.8714712347432672,5,5,True,True
+3905,Edema,0.4128632280590069,3,5,False,True
+3951,Lung Lesion,0.6744156032214986,0,5,True,False
+3951,Consolidation,0.1466866049319474,2,5,False,False
+3951,Pneumonia,0.1136694607889548,3,5,False,True
+3953,Fracture,0.1585839329370702,3,5,False,False
+3968,Fracture,0.199533728026868,3,5,False,False
+3972,Lung Opacity,0.6314191792089192,5,5,True,True
+3972,Pneumonia,0.1806377132469641,1,5,False,True
+3972,Pleural Other,0.0898009329390044,0,5,False,False
+3980,Lung Opacity,0.6229449848768285,4,5,True,True
+3980,Consolidation,0.1901837027528458,0,5,False,False
+3980,Atelectasis,0.256486194654781,4,5,False,True
+3980,Pleural Effusion,0.8033877523985847,1,5,True,False

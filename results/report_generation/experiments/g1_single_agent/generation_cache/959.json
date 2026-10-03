@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "1e384a28252f4834a5c12d492ccfc1fc8998c164aeaf7248b98b85c769bb53f6",
+ "text": "FINDINGS:\nThere is a patchy opacity in the left lung base. The cardiomediastinal silhouette is within normal limits. No pneumothorax or pleural effusion is identified.\nIMPRESSION:\nPatchy opacity in the left lung base, possibly representing atelectasis or early infiltrate.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1121,
+ "output_tokens": 62,
+ "total_duration_ns": 2043443100,
+ "load_duration_ns": 6612400,
+ "attempts": 1,
+ "wall_seconds": 4.07,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T10:25:22+00:00"
+}

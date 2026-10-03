@@ -1,0 +1,8 @@
+# G1 / G2 (report generation): NO additional Python dependency.
+# The generator is a LOCAL Ollama model called through its HTTP API (http://localhost:11434/api/chat) with the standard library only.
+# No Anthropic or other external API is used anywhere in the G1 / G2 execution path.
+#
+# External software (not pip packages), recorded in results/report_generation/experiments/g1_single_agent/GENERATOR_FREEZE.json:
+#   Ollama 0.35.1 (installed with winget package Ollama.Ollama on 2026-10-03)
+#   model tag medgemma1.5:4b (q4_K_M, 3.3 GB, digest prefix 433252621ab1 as listed by the Ollama library)
+# The same model tag and decoding options are frozen for G1 single-agent and G2 multi-agent systems.

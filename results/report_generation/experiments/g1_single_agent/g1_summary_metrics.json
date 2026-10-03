@@ -1,0 +1,228 @@
+{
+  "populations": {
+    "validation_studies": 578,
+    "locked_retrieval_test_studies_opened": 0,
+    "definition_primary_report_generation_set": "retrieval-validation studies with a frontal image (and a classifier output) and a non-empty reference report; classifier-query empty or imperfect cases are KEPT",
+    "validation_studies_with_frontal_image": 551,
+    "frontal_without_usable_reference_report": 4,
+    "primary_report_generation_set": 547,
+    "clinical_finding_evaluation_subset": 378,
+    "definition_clinical_subset": "primary set studies that also have a usable mapped IU finding set (R1 MeSH mapping)",
+    "primary_set_classifier_query_status": {
+      "no_finding": 261,
+      "findings": 237,
+      "empty": 49
+    },
+    "primary_set_no_retrieval_context_studies": 49,
+    "in_clinical_subset_reference_normal": 192,
+    "r2_primary_358_studies_inside_g1_primary": 354,
+    "paired_model_comparison_set": 547,
+    "studies_not_in_clinical_subset_reason": "no usable mapped IU finding set (only out-of-vocabulary or ambiguous MeSH terms)",
+    "paired_clinical_subset": 378,
+    "studies_without_g1_report": 0,
+    "g1_format_deviations": 0,
+    "dry_run": false
+  },
+  "B0_rule_based": {
+    "finding_any_mention": {
+      "precision": 0.3305084745762712,
+      "recall": 0.4105263157894737,
+      "f1": 0.36619718309859156,
+      "tp": 117,
+      "fp": 237,
+      "fn": 168,
+      "hallucination_rate_reports_with_ge1": 0.4074074074074074,
+      "mean_hallucinated_per_report": 0.626984126984127,
+      "omission_rate_reports_with_ge1": 0.3492063492063492,
+      "mean_omitted_per_report": 0.4444444444444444
+    },
+    "finding_definite_only": {
+      "precision": 0.3305084745762712,
+      "recall": 0.4105263157894737,
+      "f1": 0.36619718309859156,
+      "tp": 117,
+      "fp": 237,
+      "fn": 168,
+      "hallucination_rate_reports_with_ge1": 0.4074074074074074,
+      "mean_hallucinated_per_report": 0.626984126984127,
+      "omission_rate_reports_with_ge1": 0.3492063492063492,
+      "mean_omitted_per_report": 0.4444444444444444
+    },
+    "finding_vs_reference_text_extraction": {
+      "precision": 0.3418079096045198,
+      "recall": 0.41580756013745707,
+      "f1": 0.3751937984496124,
+      "tp": 121,
+      "fp": 233,
+      "fn": 170,
+      "hallucination_rate_reports_with_ge1": 0.4021164021164021,
+      "mean_hallucinated_per_report": 0.6164021164021164,
+      "omission_rate_reports_with_ge1": 0.328042328042328,
+      "mean_omitted_per_report": 0.4497354497354497
+    },
+    "propagation_any_mention": {
+      "clf_fp_propagation": 1.0,
+      "tp_retention": 1.0,
+      "n_clf_fp": 237,
+      "n_clf_tp": 117
+    },
+    "propagation_definite_only": {
+      "clf_fp_propagation": 1.0,
+      "tp_retention": 1.0,
+      "n_clf_fp": 237,
+      "n_clf_tp": 117
+    },
+    "text": {
+      "bleu1": 0.04246027348127623,
+      "bleu4": 0.01010673173347508,
+      "rouge_l": 0.120665123616593,
+      "meteor_exact": 0.06336985685664814
+    },
+    "words_mean": 10.526508226691043,
+    "words_median": 10.0,
+    "repeated_sentence_rate_mean": 0.0,
+    "format_ok_rate": 1.0,
+    "unmappable_sentence_share": 0.0745814307458143
+  },
+  "G1_single_agent_rag": {
+    "finding_any_mention": {
+      "precision": 0.4112903225806452,
+      "recall": 0.35789473684210527,
+      "f1": 0.3827392120075047,
+      "tp": 102,
+      "fp": 146,
+      "fn": 183,
+      "hallucination_rate_reports_with_ge1": 0.2566137566137566,
+      "mean_hallucinated_per_report": 0.3862433862433862,
+      "omission_rate_reports_with_ge1": 0.38095238095238093,
+      "mean_omitted_per_report": 0.48412698412698413
+    },
+    "finding_definite_only": {
+      "precision": 0.4485981308411215,
+      "recall": 0.3368421052631579,
+      "f1": 0.3847695390781563,
+      "tp": 96,
+      "fp": 118,
+      "fn": 189,
+      "hallucination_rate_reports_with_ge1": 0.2037037037037037,
+      "mean_hallucinated_per_report": 0.31216931216931215,
+      "omission_rate_reports_with_ge1": 0.3888888888888889,
+      "mean_omitted_per_report": 0.5
+    },
+    "finding_vs_reference_text_extraction": {
+      "precision": 0.42338709677419356,
+      "recall": 0.36082474226804123,
+      "f1": 0.38961038961038963,
+      "tp": 105,
+      "fp": 143,
+      "fn": 186,
+      "hallucination_rate_reports_with_ge1": 0.24603174603174602,
+      "mean_hallucinated_per_report": 0.3783068783068783,
+      "omission_rate_reports_with_ge1": 0.35714285714285715,
+      "mean_omitted_per_report": 0.49206349206349204
+    },
+    "propagation_any_mention": {
+      "clf_fp_propagation": 0.4050632911392405,
+      "tp_retention": 0.717948717948718,
+      "n_clf_fp": 237,
+      "n_clf_tp": 117
+    },
+    "propagation_definite_only": {
+      "clf_fp_propagation": 0.3291139240506329,
+      "tp_retention": 0.6837606837606838,
+      "n_clf_fp": 237,
+      "n_clf_tp": 117
+    },
+    "text": {
+      "bleu1": 0.25412091393266983,
+      "bleu4": 0.03896168516820127,
+      "rouge_l": 0.2465193333015158,
+      "meteor_exact": 0.2273769747433743
+    },
+    "words_mean": 23.90676416819013,
+    "words_median": 21.0,
+    "repeated_sentence_rate_mean": 0.0035019824782164823,
+    "format_ok_rate": 1.0,
+    "unmappable_sentence_share": 0.22153574580759047
+  },
+  "macro_over_classes_with_truth": {
+    "B0_rule_based": {
+      "classes_with_truth": 12,
+      "macro_precision": 0.34367108167942634,
+      "macro_recall": 0.44948436639613115,
+      "macro_f1": 0.3246243824881783
+    },
+    "G1_single_agent_rag": {
+      "classes_with_truth": 12,
+      "macro_precision": 0.23344650201979214,
+      "macro_recall": 0.24285385094208622,
+      "macro_f1": 0.21542533442980316
+    }
+  },
+  "grounding_provenance_g1_clinical_subset": {
+    "A_classifier_only": 7,
+    "B_retrieval_only": 66,
+    "C_both": 173,
+    "D_neither": 2,
+    "unsupported_rate_D": 0.008064516129032258,
+    "n_stated_findings": 248
+  },
+  "support_vs_truth": {
+    "mean_support_fraction_true_positives": 0.6803418803418803,
+    "mean_support_fraction_false_positives": 0.34430379746835443,
+    "fp_with_zero_support": 85,
+    "n_fp": 237,
+    "tp_with_zero_support": 15,
+    "n_tp": 117,
+    "fp_suppressed_by_g1": 141,
+    "fp_suppressed_with_zero_support": 78,
+    "tp_omitted_by_g1": 33,
+    "tp_omitted_with_zero_support": 15
+  },
+  "context_utilization": {
+    "studies_with_retrieval": 498,
+    "studies_with_stated_findings": 158,
+    "mean_supporting_reports_among_top5": 4.253164556962025,
+    "support_pairs_by_rank_1_to_5": [
+      199,
+      180,
+      166,
+      168,
+      169
+    ],
+    "share_by_rank": [
+      0.2256235827664399,
+      0.20408163265306123,
+      0.18820861678004536,
+      0.19047619047619047,
+      0.19160997732426305
+    ],
+    "studies_supported_only_by_rank1": 0
+  },
+  "normal_abnormal_consistency": {
+    "classifier": {
+      "normal_recall": 0.7291666666666666,
+      "abnormal_recall": 0.7258064516129032,
+      "accuracy": 0.7275132275132276,
+      "indeterminate_share": 0.06349206349206349
+    },
+    "B0_rule_based": {
+      "normal_recall": 0.7291666666666666,
+      "abnormal_recall": 0.7258064516129032,
+      "accuracy": 0.7275132275132276,
+      "indeterminate_share": 0.06349206349206349
+    },
+    "G1_single_agent_rag": {
+      "normal_recall": 0.9114583333333334,
+      "abnormal_recall": 0.5806451612903226,
+      "accuracy": 0.7486772486772487,
+      "indeterminate_share": 0.0
+    }
+  },
+  "extractor_vs_mesh_on_reference_text": {
+    "precision": 0.8591065292096219,
+    "recall": 0.8771929824561403,
+    "f1": 0.8680555555555556,
+    "n_studies": 378
+  }
+}

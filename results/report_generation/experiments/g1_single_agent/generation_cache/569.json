@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "3002fd03322a7edf64b8f95ee1fe2681f232b35efe00065fb30398b30f38c3a7",
+ "text": "FINDINGS:\nLow lung volumes. Patchy opacity in the left lung base. No pneumothorax or pleural effusion.\nIMPRESSION:\nPatchy opacity in the left lung base, possibly atelectasis or early infiltrate.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1288,
+ "output_tokens": 49,
+ "total_duration_ns": 1608496300,
+ "load_duration_ns": 12240400,
+ "attempts": 1,
+ "wall_seconds": 3.65,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T10:21:04+00:00"
+}

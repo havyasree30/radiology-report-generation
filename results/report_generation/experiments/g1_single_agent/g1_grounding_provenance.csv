@@ -1,0 +1,5 @@
+category,n_findings,share
+A_classifier_only,7,0.028225806451612902
+B_retrieval_only,66,0.2661290322580645
+C_both,173,0.69758064516129037
+D_neither,2,0.0080645161290322578

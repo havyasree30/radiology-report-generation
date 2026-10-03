@@ -1,0 +1,129 @@
+{
+  "purpose": "implementation validation only; the prompt is not modified according to clinical answer quality",
+  "n_cases": 4,
+  "cases": [
+    {
+      "uid": "20",
+      "anon_id": "case_4a7e5f5a46",
+      "case_type": "normal study",
+      "classifier_positives": 0,
+      "api_ok": true,
+      "user_message_sha256": "206558114361a5bcfaa221668cebde27436f1a38cf2018edf55aaf0154947b7f",
+      "parsed_findings_nonempty": true,
+      "format_ok": true,
+      "format_flags": [],
+      "words": 23,
+      "done_reason": "stop",
+      "prompt_tokens": 1001,
+      "output_tokens": 46,
+      "prompt_may_be_truncated": false,
+      "identifier_flags": [],
+      "saved_and_reloadable": true,
+      "reference_in_input_outside_retrieved_reports": 0,
+      "output_contains_reference_sentence": 0,
+      "wall_seconds": 3.59
+    },
+    {
+      "uid": "50",
+      "anon_id": "case_e97b55ecd0",
+      "case_type": "two or more positive findings",
+      "classifier_positives": 2,
+      "api_ok": true,
+      "user_message_sha256": "ecd6b82efa4069c4a55651adbc0cf727bc29940ab2d60ea0480f3cefbd5d1573",
+      "parsed_findings_nonempty": true,
+      "format_ok": true,
+      "format_flags": [],
+      "words": 14,
+      "done_reason": "stop",
+      "prompt_tokens": 1063,
+      "output_tokens": 32,
+      "prompt_may_be_truncated": false,
+      "identifier_flags": [],
+      "saved_and_reloadable": true,
+      "reference_in_input_outside_retrieved_reports": 0,
+      "output_contains_reference_sentence": 0,
+      "wall_seconds": 3.21
+    },
+    {
+      "uid": "61",
+      "anon_id": "case_2e6fa8d4e5",
+      "case_type": "one positive finding",
+      "classifier_positives": 1,
+      "api_ok": true,
+      "user_message_sha256": "b471321385313d849555244137a786ee7def9f47f7f60eb5cff35efc9915be7a",
+      "parsed_findings_nonempty": true,
+      "format_ok": true,
+      "format_flags": [],
+      "words": 35,
+      "done_reason": "stop",
+      "prompt_tokens": 1173,
+      "output_tokens": 66,
+      "prompt_may_be_truncated": false,
+      "identifier_flags": [],
+      "saved_and_reloadable": true,
+      "reference_in_input_outside_retrieved_reports": 0,
+      "output_contains_reference_sentence": 0,
+      "wall_seconds": 3.88
+    },
+    {
+      "uid": "187",
+      "anon_id": "case_a00ffd4079",
+      "case_type": "empty-query study",
+      "classifier_positives": 0,
+      "api_ok": true,
+      "user_message_sha256": "b4e04342dd8304060703b36296ca5b3d45b97b3a871d0a6ae629fa6d39addcd3",
+      "parsed_findings_nonempty": true,
+      "format_ok": true,
+      "format_flags": [],
+      "words": 27,
+      "done_reason": "stop",
+      "prompt_tokens": 663,
+      "output_tokens": 52,
+      "prompt_may_be_truncated": false,
+      "identifier_flags": [],
+      "saved_and_reloadable": true,
+      "reference_in_input_outside_retrieved_reports": 0,
+      "output_contains_reference_sentence": 0,
+      "wall_seconds": 3.44
+    }
+  ],
+  "all_implementation_checks_passed": true,
+  "format_deviations": 0,
+  "ollama_version": "0.35.1",
+  "model": {
+    "model_tag": "medgemma1.5:4b",
+    "digest": "433252621ab154668b5d8be6aff6c1b771bacba045e46e6193da8d6ad1630f2c",
+    "size_bytes": 3338940988,
+    "modified_at": "2026-10-03T15:41:40.3723799+05:30",
+    "format": "gguf",
+    "family": "gemma3",
+    "families": [
+      "gemma3"
+    ],
+    "parameter_size": "4.3B",
+    "quantization_level": "Q4_K_M",
+    "context_length_native": 131072,
+    "capabilities": [
+      "completion",
+      "vision"
+    ],
+    "architecture": "gemma3",
+    "license_present": true
+  },
+  "hardware": {
+    "os": "Windows-10-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "nvidia_smi": "NVIDIA GeForce RTX 3050 6GB Laptop GPU, 596.08, 6144 MiB",
+    "ollama_ps": [
+      {
+        "name": "medgemma1.5:4b",
+        "size": 2879851068,
+        "size_vram": 2879851068,
+        "context_length": 8192
+      }
+    ]
+  },
+  "created_utc": "2026-10-03T10:15:18+00:00",
+  "note": "format deviations are reported and counted in the evaluation (format_ok rate); they are not repaired by editing the prompt"
+}

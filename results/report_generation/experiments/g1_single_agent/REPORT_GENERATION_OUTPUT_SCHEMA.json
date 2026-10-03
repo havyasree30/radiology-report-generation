@@ -1,0 +1,315 @@
+{
+  "version": "g1-v1",
+  "notes": [
+    "One record per image; fields feed the future Streamlit application.",
+    "calibrated_probabilities_all_classes are independent per-class probabilities and are never normalised across classes.",
+    "retrieved_evidence carries the retrieval rank and score information (dense rank, BM25 rank, fusion score) of each of the Top-5 reports.",
+    "The reference report and the IU truth never appear in the record.",
+    "The report is a preliminary AI draft for research use, not a radiologist report."
+  ],
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Preliminary report generation output (one image)",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "image_id",
+      "classifier_findings",
+      "retrieved_evidence",
+      "evidence_summary",
+      "preliminary_report",
+      "generation",
+      "disclaimer"
+    ],
+    "properties": {
+      "image_id": {
+        "type": "string"
+      },
+      "classifier_findings": {
+        "type": "object",
+        "required": [
+          "positive_findings",
+          "no_finding_positive",
+          "calibrated_probabilities_all_classes"
+        ],
+        "properties": {
+          "positive_findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "finding",
+                "calibrated_probability"
+              ],
+              "properties": {
+                "finding": {
+                  "enum": [
+                    "Enlarged Cardiomediastinum",
+                    "Cardiomegaly",
+                    "Lung Opacity",
+                    "Lung Lesion",
+                    "Edema",
+                    "Consolidation",
+                    "Pneumonia",
+                    "Atelectasis",
+                    "Pneumothorax",
+                    "Pleural Effusion",
+                    "Pleural Other",
+                    "Fracture",
+                    "Support Devices"
+                  ]
+                },
+                "calibrated_probability": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              }
+            }
+          },
+          "no_finding_positive": {
+            "type": "boolean"
+          },
+          "calibrated_probabilities_all_classes": {
+            "type": "object",
+            "required": [
+              "No Finding",
+              "Enlarged Cardiomediastinum",
+              "Cardiomegaly",
+              "Lung Opacity",
+              "Lung Lesion",
+              "Edema",
+              "Consolidation",
+              "Pneumonia",
+              "Atelectasis",
+              "Pneumothorax",
+              "Pleural Effusion",
+              "Pleural Other",
+              "Fracture",
+              "Support Devices"
+            ],
+            "additionalProperties": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "description": "independent per-class probabilities; never normalised across classes"
+          }
+        }
+      },
+      "retrieved_evidence": {
+        "type": "array",
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "required": [
+            "rank",
+            "study_id",
+            "dense_rank",
+            "bm25_rank",
+            "rrf_score",
+            "findings",
+            "impression",
+            "mapped_findings"
+          ],
+          "properties": {
+            "rank": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5
+            },
+            "study_id": {
+              "type": "string"
+            },
+            "dense_rank": {
+              "type": "integer"
+            },
+            "bm25_rank": {
+              "type": "integer"
+            },
+            "rrf_score": {
+              "type": "number"
+            },
+            "findings": {
+              "type": "string"
+            },
+            "impression": {
+              "type": "string"
+            },
+            "mapped_findings": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "evidence_summary": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "finding",
+            "classifier_probability",
+            "n_supporting",
+            "n_retrieved",
+            "support_fraction"
+          ]
+        }
+      },
+      "preliminary_report": {
+        "type": "object",
+        "required": [
+          "findings",
+          "impression"
+        ],
+        "properties": {
+          "findings": {
+            "type": "string"
+          },
+          "impression": {
+            "type": "string"
+          }
+        }
+      },
+      "generation": {
+        "type": "object",
+        "required": [
+          "model",
+          "prompt_sha256",
+          "temperature",
+          "retrieval"
+        ]
+      },
+      "disclaimer": {
+        "type": "string"
+      }
+    }
+  },
+  "example": {
+    "image_id": "50_IM-2118-2001.dcm.png",
+    "classifier_findings": {
+      "positive_findings": [
+        {
+          "finding": "Cardiomegaly",
+          "calibrated_probability": 0.3757625503347336
+        },
+        {
+          "finding": "Edema",
+          "calibrated_probability": 0.558537804604603
+        }
+      ],
+      "no_finding_positive": false,
+      "calibrated_probabilities_all_classes": {
+        "No Finding": 0.0654410930013374,
+        "Enlarged Cardiomediastinum": 0.0837745546071215,
+        "Cardiomegaly": 0.3757625503347336,
+        "Lung Opacity": 0.2115301107611767,
+        "Lung Lesion": 0.0140588391656897,
+        "Edema": 0.558537804604603,
+        "Consolidation": 0.0208722053993504,
+        "Pneumonia": 0.0272317144176879,
+        "Atelectasis": 0.046423546630617,
+        "Pneumothorax": 0.0023283827044464,
+        "Pleural Effusion": 0.0126335287034473,
+        "Pleural Other": 0.0005987935654562,
+        "Fracture": 0.0151607236549625,
+        "Support Devices": 0.0215889117353887
+      }
+    },
+    "retrieved_evidence": [
+      {
+        "rank": 1,
+        "study_id": "2411",
+        "dense_rank": 3,
+        "bm25_rank": 5,
+        "rrf_score": 0.03125763125763126,
+        "findings": "Mild cardiomegaly, stable mediastinal contours. No focal alveolar consolidation, no definite pleural effusion seen. Mild bronchovascular crowding without typical findings of pulmonary edema.",
+        "impression": "Mild cardiomegaly, no acute pulmonary findings",
+        "mapped_findings": [
+          "Cardiomegaly"
+        ]
+      },
+      {
+        "rank": 2,
+        "study_id": "3372",
+        "dense_rank": 2,
+        "bm25_rank": 9,
+        "rrf_score": 0.030621785881252923,
+        "findings": "",
+        "impression": "Increasing cardiomegaly. No effusions. Minimal interstitial edema.",
+        "mapped_findings": [
+          "Cardiomegaly",
+          "Edema"
+        ]
+      },
+      {
+        "rank": 3,
+        "study_id": "1375",
+        "dense_rank": 1,
+        "bm25_rank": 13,
+        "rrf_score": 0.03009207275993712,
+        "findings": "",
+        "impression": "Cardiomegaly with interstitial edema. No effusions, pneumonia, nodules or masses.",
+        "mapped_findings": [
+          "Cardiomegaly",
+          "Edema"
+        ]
+      },
+      {
+        "rank": 4,
+        "study_id": "925",
+        "dense_rank": 17,
+        "bm25_rank": 1,
+        "rrf_score": 0.02938045560996381,
+        "findings": "Increased interstitial lung changes with superimposed pulmonary edema. Cardiomegaly. Negative for effusion or pneumothorax. Degenerative changes of the thoracic spine.",
+        "impression": "Cardiomegaly with pulmonary edema superimposed on chronic interstitial lung changes.",
+        "mapped_findings": [
+          "Cardiomegaly",
+          "Edema"
+        ]
+      },
+      {
+        "rank": 5,
+        "study_id": "2040",
+        "dense_rank": 11,
+        "bm25_rank": 8,
+        "rrf_score": 0.028790389395194696,
+        "findings": "",
+        "impression": "Cardiomegaly. No effusions or edema. Clear chest",
+        "mapped_findings": [
+          "Cardiomegaly"
+        ]
+      }
+    ],
+    "evidence_summary": [
+      {
+        "finding": "Cardiomegaly",
+        "classifier_probability": 0.3757625503347336,
+        "n_supporting": 5,
+        "n_retrieved": 5,
+        "support_fraction": 1.0
+      },
+      {
+        "finding": "Edema",
+        "classifier_probability": 0.558537804604603,
+        "n_supporting": 3,
+        "n_retrieved": 5,
+        "support_fraction": 0.6
+      }
+    ],
+    "preliminary_report": {
+      "findings": "Cardiomegaly is present. Mild pulmonary edema is noted.",
+      "impression": "Cardiomegaly with pulmonary edema."
+    },
+    "generation": {
+      "model": "medgemma1.5:4b",
+      "prompt_sha256": "476b05326f85652b0cdb2faf79a4868a6e839660eb43e34d46cdae625e4b5688",
+      "temperature": 0.0,
+      "retrieval": "hybrid RRF (dense MiniLM + BM25), top-5"
+    },
+    "disclaimer": "Preliminary AI-generated draft for research use only; not a radiologist report and not a clinical diagnosis."
+  },
+  "n_records_validated_against_schema": 547
+}

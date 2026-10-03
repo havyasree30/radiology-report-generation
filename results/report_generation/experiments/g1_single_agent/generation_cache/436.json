@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "de71423e4c10f4662e1ab907937561844db3a7971e89da636c097ca522137e29",
+ "text": "FINDINGS:\nLow lung volumes. Patchy opacity in the left lung base. Small right pleural effusion.\nIMPRESSION:\n1. Patchy opacity left base, may represent evolving infiltrate. 2. Small right pleural effusion.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1340,
+ "output_tokens": 59,
+ "total_duration_ns": 1835931100,
+ "load_duration_ns": 11691600,
+ "attempts": 1,
+ "wall_seconds": 3.87,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T10:19:42+00:00"
+}

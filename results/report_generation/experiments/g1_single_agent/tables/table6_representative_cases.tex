@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lrrrrrrrrr}
+\hline
+category & anon\_id & classifier\_positives & reference\_findings & g1\_stated & classifier\_fp & omitted & n\_retrieved\_supporting\_any\_truth & g1\_report\_state & reference\_state \\
+\hline
+1\_correct\_normal & case\_4a7e5f5a46 &  &  &  &  &  & 0 & normal & normal \\
+2\_correct\_abnormal & case\_179e5ffb9e & Atelectasis;Cardiomegaly;Edema;Enlarged Cardiomediastinum;Lung Opacity & Atelectasis;Cardiomegaly;Lung Opacity & Atelectasis;Cardiomegaly;Lung Opacity & Edema;Enlarged Cardiomediastinum &  & 5 & abnormal & abnormal \\
+3\_classifier\_fp\_suppressed & case\_9d07911f58 & Atelectasis;Fracture;Lung Opacity;Pleural Effusion;Pleural Other;Pneumothorax;Support Devices & Lung Opacity;Support Devices & Atelectasis;Lung Opacity & Atelectasis;Fracture;Pleural Effusion;Pleural Other;Pneumothorax & Support Devices & 4 & abnormal & abnormal \\
+4\_classifier\_fp\_propagated & case\_c9e2d1042b & Enlarged Cardiomediastinum;Fracture;Lung Lesion & Cardiomegaly;Fracture & Cardiomegaly;Enlarged Cardiomediastinum;Fracture;Lung Opacity;Pneumonia & Enlarged Cardiomediastinum;Lung Lesion &  & 3 & abnormal & abnormal \\
+5\_important\_finding\_omitted & case\_50e4293b74 & Cardiomegaly;Consolidation;Lung Opacity;Pleural Effusion & Atelectasis;Lung Opacity;Pleural Effusion & Atelectasis;Cardiomegaly;Lung Opacity & Cardiomegaly;Consolidation & Pleural Effusion & 4 & abnormal & abnormal \\
+6\_retrieval\_mismatch & case\_db706fc12f &  & Support Devices &  &  & Support Devices & 0 & normal & abnormal \\
+\hline
+\end{tabular}
+\caption{Representative validation cases (deterministic selection; details in qualitative\_examples.md).}
+\label{tab:table6_representative_cases}
+\end{table}

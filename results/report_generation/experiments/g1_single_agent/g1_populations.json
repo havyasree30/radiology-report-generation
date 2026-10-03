@@ -1,0 +1,20 @@
+{
+  "validation_studies": 578,
+  "locked_retrieval_test_studies_opened": 0,
+  "definition_primary_report_generation_set": "retrieval-validation studies with a frontal image (and a classifier output) and a non-empty reference report; classifier-query empty or imperfect cases are KEPT",
+  "validation_studies_with_frontal_image": 551,
+  "frontal_without_usable_reference_report": 4,
+  "primary_report_generation_set": 547,
+  "clinical_finding_evaluation_subset": 378,
+  "definition_clinical_subset": "primary set studies that also have a usable mapped IU finding set (R1 MeSH mapping)",
+  "primary_set_classifier_query_status": {
+    "no_finding": 261,
+    "findings": 237,
+    "empty": 49
+  },
+  "primary_set_no_retrieval_context_studies": 49,
+  "in_clinical_subset_reference_normal": 192,
+  "r2_primary_358_studies_inside_g1_primary": 354,
+  "paired_model_comparison_set": "decided after generation: the studies for which BOTH B0 and G1 reports exist (all studies unless an API failure is reported); B0 and G1 are always compared on identical studies",
+  "studies_not_in_clinical_subset_reason": "no usable mapped IU finding set (only out-of-vocabulary or ambiguous MeSH terms)"
+}
