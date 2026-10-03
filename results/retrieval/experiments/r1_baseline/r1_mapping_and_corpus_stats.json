@@ -1,0 +1,49 @@
+{
+  "corpus_studies": 2675,
+  "validation_studies": 578,
+  "corpus_with_eval_set": 1830,
+  "validation_with_eval_set": 403,
+  "validation_without_eval_set_unusable_as_queries": 175,
+  "validation_indexed_normal": 207,
+  "validation_with_abnormal_mapped_finding": 196,
+  "validation_normal_and_abnormal_conflict": 0,
+  "validation_studies_with_uncertain_terms": 24,
+  "validation_studies_with_unmapped_terms": 287,
+  "validation_studies_with_frontal_image": 551,
+  "mapped_class_frequency_validation": {
+    "Enlarged Cardiomediastinum": 0,
+    "Cardiomegaly": 55,
+    "Lung Opacity": 90,
+    "Lung Lesion": 23,
+    "Edema": 5,
+    "Consolidation": 4,
+    "Pneumonia": 11,
+    "Atelectasis": 45,
+    "Pneumothorax": 4,
+    "Pleural Effusion": 15,
+    "Pleural Other": 5,
+    "Fracture": 9,
+    "Support Devices": 42
+  },
+  "mapped_class_frequency_corpus": {
+    "Enlarged Cardiomediastinum": 0,
+    "Cardiomegaly": 264,
+    "Lung Opacity": 365,
+    "Lung Lesion": 76,
+    "Edema": 31,
+    "Consolidation": 23,
+    "Pneumonia": 25,
+    "Atelectasis": 229,
+    "Pneumothorax": 17,
+    "Pleural Effusion": 106,
+    "Pleural Other": 35,
+    "Fracture": 59,
+    "Support Devices": 230
+  },
+  "corpus_text_source": {
+    "findings+impression": 2327,
+    "impression_only": 341,
+    "findings_only": 4,
+    "both_identical": 3
+  }
+}

@@ -1,0 +1,9 @@
+policy,status,fraction
+All positives,findings,0.43738656987295826
+All positives,no_finding,0.47368421052631576
+All positives,fallback_strongest_positive,0
+All positives,empty,0.088929219600725959
+Precision-aware,findings,0.24682395644283123
+Precision-aware,no_finding,0.47731397459165154
+Precision-aware,fallback_strongest_positive,0.18693284936479129
+Precision-aware,empty,0.088929219600725959

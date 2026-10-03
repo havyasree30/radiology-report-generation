@@ -1,0 +1,14 @@
+{
+  "retrieved_rows": 22380,
+  "retrieved_equal_to_query_study": 0,
+  "self_hits_counted_in_loop": 0,
+  "retrieved_ids_not_in_corpus": 0,
+  "retrieved_ids_in_validation": 0,
+  "retrieved_ids_in_locked_test": 0,
+  "query_ids_in_corpus": 0,
+  "query_ids_in_locked_test": 0,
+  "corpus_validation_overlap": 0,
+  "validation_queries_whose_report_text_equals_a_corpus_report": 107,
+  "top1_retrieved_report_text_identical_to_query_study_report": 3,
+  "status": "PASS"
+}

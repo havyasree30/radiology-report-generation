@@ -1,0 +1,8 @@
+| Retriever | Query policy | Jaccard@1 | Jaccard@3 | nDCG@3 | nDCG@5 | Hit@3 | Query words | Findings/query | Empty rate | Fallback rate |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Dense (MiniLM) | Oracle finding query | 0.797 | 0.805 | 0.809 | 0.813 | 0.906 | 2.74 | 1.27 | 0.0% | 0.0% |
+| Dense (MiniLM) | Classifier: all positives | 0.522 | 0.514 | 0.518 | 0.518 | 0.516 | 2.98 | 1.50 | 6.3% | 0.0% |
+| Dense (MiniLM) | Classifier: precision-aware gated | 0.520 | 0.520 | 0.523 | 0.522 | 0.538 | 2.47 | 1.16 | 6.3% | 18.6% |
+| Lexical (BM25) | Oracle finding query | 0.798 | 0.787 | 0.793 | 0.814 | 0.818 | 2.74 | 1.27 | 0.0% | 0.0% |
+| Lexical (BM25) | Classifier: all positives | 0.539 | 0.533 | 0.537 | 0.539 | 0.541 | 2.98 | 1.50 | 6.3% | 0.0% |
+| Lexical (BM25) | Classifier: precision-aware gated | 0.515 | 0.529 | 0.529 | 0.536 | 0.550 | 2.47 | 1.16 | 6.3% | 18.6% |

@@ -1,0 +1,144 @@
+{
+  "purpose": "Downstream query-building gates. NOT classifier thresholds: the frozen C4 decisions are unchanged; a gate only decides whether a classifier-positive finding enters a retrieval query.",
+  "derived_from": "classifier VALIDATION outputs only (C2-B scores, frozen C5 calibration, frozen C4 decisions); locked classifier test set not used; no retrieval result used",
+  "n_validation_images": 28671,
+  "n_validation_patients": 9530,
+  "principle": {
+    "criterion": "F_beta with beta=0.5 (precision counts twice as much as recall) to reduce false-positive propagation",
+    "candidates": "calibrated-probability quantiles [np.float64(0.0), np.float64(0.05), np.float64(0.1), np.float64(0.15), np.float64(0.2), np.float64(0.25), np.float64(0.3), np.float64(0.35), np.float64(0.4), np.float64(0.45), np.float64(0.5), np.float64(0.55), np.float64(0.6), np.float64(0.65), np.float64(0.7), np.float64(0.75), np.float64(0.8), np.float64(0.85), np.float64(0.9), np.float64(0.95)] of the frozen-positive validation images of each class (quantile 0 = operating point)",
+    "adoption_rule": "adopt the best candidate only if it is stricter than the operating point AND its cross-fitted (5-fold patient-level, seed 42) F_0.5 gain has a 95% patient-bootstrap lower bound > 0; otherwise no gate (finding passes unchanged)",
+    "bootstrap": {
+      "n_resamples": 1000,
+      "seed": 42
+    },
+    "folds": {
+      "n_folds": 5,
+      "seed": 42,
+      "same_folds_as_C5": true
+    }
+  },
+  "no_finding": "not gated (it is not a pathology query term)",
+  "gates": {
+    "Enlarged Cardiomediastinum": {
+      "gate_calibrated_probability": 0.1643254657275701,
+      "gate_adopted": true,
+      "gate_as_raw_score_equivalent": 0.5875110626220703,
+      "frozen_raw_threshold": 0.30397042632102966,
+      "frozen_calibrated_equivalent_threshold": 0.08611838020557365,
+      "reason": "adopted: cross-fitted F0.5 gain lower 95% bound > 0"
+    },
+    "Cardiomegaly": {
+      "gate_calibrated_probability": 0.45499171709729025,
+      "gate_adopted": true,
+      "gate_as_raw_score_equivalent": 0.7018752694129944,
+      "frozen_raw_threshold": 0.4518182575702667,
+      "frozen_calibrated_equivalent_threshold": 0.26248286575814805,
+      "reason": "adopted: cross-fitted F0.5 gain lower 95% bound > 0"
+    },
+    "Lung Opacity": {
+      "gate_calibrated_probability": 0.5561389520520057,
+      "gate_adopted": true,
+      "gate_as_raw_score_equivalent": 0.5528430938720703,
+      "frozen_raw_threshold": 0.32664650678634644,
+      "frozen_calibrated_equivalent_threshold": 0.35897652443888617,
+      "reason": "adopted: cross-fitted F0.5 gain lower 95% bound > 0"
+    },
+    "Lung Lesion": {
+      "gate_calibrated_probability": 0.1887120580573345,
+      "gate_adopted": true,
+      "gate_as_raw_score_equivalent": 0.7269858717918395,
+      "frozen_raw_threshold": 0.5139020681381226,
+      "frozen_calibrated_equivalent_threshold": 0.12262773849865131,
+      "reason": "adopted: cross-fitted F0.5 gain lower 95% bound > 0"
+    },
+    "Edema": {
+      "gate_calibrated_probability": 0.49975245833705645,
+      "gate_adopted": true,
+      "gate_as_raw_score_equivalent": 0.575503706932068,
+      "frozen_raw_threshold": 0.3789757192134857,
+      "frozen_calibrated_equivalent_threshold": 0.343938959811514,
+      "reason": "adopted: cross-fitted F0.5 gain lower 95% bound > 0"
+    },
+    "Consolidation": {
+      "gate_calibrated_probability": 0.22027392617104105,
+      "gate_adopted": true,
+      "gate_as_raw_score_equivalent": 0.5600042939186096,
+      "frozen_raw_threshold": 0.33341237902641296,
+      "frozen_calibrated_equivalent_threshold": 0.12774191470680563,
+      "reason": "adopted: cross-fitted F0.5 gain lower 95% bound > 0"
+    },
+    "Pneumonia": {
+      "gate_calibrated_probability": 0.16130726031659287,
+      "gate_adopted": true,
+      "gate_as_raw_score_equivalent": 0.6517851948738098,
+      "frozen_raw_threshold": 0.3812790811061859,
+      "frozen_calibrated_equivalent_threshold": 0.08782039236730055,
+      "reason": "adopted: cross-fitted F0.5 gain lower 95% bound > 0"
+    },
+    "Atelectasis": {
+      "gate_calibrated_probability": 0.2980178746970493,
+      "gate_adopted": true,
+      "gate_as_raw_score_equivalent": 0.4906288981437682,
+      "frozen_raw_threshold": 0.3297014534473419,
+      "frozen_calibrated_equivalent_threshold": 0.19834339329317252,
+      "reason": "adopted: cross-fitted F0.5 gain lower 95% bound > 0"
+    },
+    "Pneumothorax": {
+      "gate_calibrated_probability": 0.4052768372777469,
+      "gate_adopted": true,
+      "gate_as_raw_score_equivalent": 0.8014659285545349,
+      "frozen_raw_threshold": 0.614745020866394,
+      "frozen_calibrated_equivalent_threshold": 0.2548224905607662,
+      "reason": "adopted: cross-fitted F0.5 gain lower 95% bound > 0"
+    },
+    "Pleural Effusion": {
+      "gate_calibrated_probability": 0.5936506161166712,
+      "gate_adopted": true,
+      "gate_as_raw_score_equivalent": 0.6329360008239746,
+      "frozen_raw_threshold": 0.36226996779441833,
+      "frozen_calibrated_equivalent_threshold": 0.3530726801243195,
+      "reason": "adopted: cross-fitted F0.5 gain lower 95% bound > 0"
+    },
+    "Pleural Other": {
+      "gate_calibrated_probability": null,
+      "gate_adopted": false,
+      "gate_as_raw_score_equivalent": null,
+      "frozen_raw_threshold": 0.2542676031589508,
+      "frozen_calibrated_equivalent_threshold": 0.0602515058521729,
+      "reason": "no gate: cross-fitted F0.5 gain not reliably above zero (95% lower bound <= 0)"
+    },
+    "Fracture": {
+      "gate_calibrated_probability": 0.20428003478706472,
+      "gate_adopted": true,
+      "gate_as_raw_score_equivalent": 0.5127303600311278,
+      "frozen_raw_threshold": 0.3263857364654541,
+      "frozen_calibrated_equivalent_threshold": 0.1378498171371338,
+      "reason": "adopted: cross-fitted F0.5 gain lower 95% bound > 0"
+    },
+    "Support Devices": {
+      "gate_calibrated_probability": 0.6366450267601939,
+      "gate_adopted": true,
+      "gate_as_raw_score_equivalent": 0.5423240661621094,
+      "frozen_raw_threshold": 0.34337711334228516,
+      "frozen_calibrated_equivalent_threshold": 0.4383293032921024,
+      "reason": "adopted: cross-fitted F0.5 gain lower 95% bound > 0"
+    }
+  },
+  "classes_with_gate": [
+    "Enlarged Cardiomediastinum",
+    "Cardiomegaly",
+    "Lung Opacity",
+    "Lung Lesion",
+    "Edema",
+    "Consolidation",
+    "Pneumonia",
+    "Atelectasis",
+    "Pneumothorax",
+    "Pleural Effusion",
+    "Fracture",
+    "Support Devices"
+  ],
+  "classes_without_gate": [
+    "Pleural Other"
+  ]
+}

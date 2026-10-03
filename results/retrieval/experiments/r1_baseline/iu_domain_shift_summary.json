@@ -1,0 +1,32 @@
+{
+  "n_validation_studies_classified": 551,
+  "n_eligible_with_truth": 382,
+  "mean_predicted_abnormal_findings_per_study_all": 0.8130671506352087,
+  "median": 0.0,
+  "mean_predicted_abnormal_findings_eligible": 0.9450261780104712,
+  "mean_mapped_true_abnormal_findings_eligible": 0.7460732984293194,
+  "no_finding_positive_frequency": 0.4882032667876588,
+  "iu_indexed_normal_frequency_eligible": 0.5130890052356021,
+  "empty_query_frequency": 0.08892921960072596,
+  "n_empty": 49,
+  "status_all_positive": {
+    "no_finding": 261,
+    "findings": 241,
+    "empty": 49
+  },
+  "status_gated": {
+    "no_finding": 263,
+    "findings": 136,
+    "fallback_strongest_positive": 103,
+    "empty": 49
+  },
+  "fallback_frequency": 0.1869328493647913,
+  "queries_with_exact_truth_match_all_positive": 0.4031413612565445,
+  "queries_with_exact_truth_match_gated": 0.43455497382198954,
+  "descriptive_agreement_macro_over_13_abnormal": {
+    "precision": 0.3129380136452372,
+    "recall": 0.44948436639613115,
+    "f1": 0.29718003803210935
+  },
+  "caveat": "IU truth = MeSH-mapped findings; 'not mapped' is not a verified negative, so precision is a lower bound; descriptive only, nothing was tuned"
+}

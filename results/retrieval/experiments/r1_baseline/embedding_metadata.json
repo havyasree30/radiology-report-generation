@@ -1,0 +1,30 @@
+{
+  "model_identifier": "sentence-transformers/all-MiniLM-L6-v2",
+  "model_snapshot_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "model_weights_sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+  "embedding_dimension_verified": 384,
+  "embedding_dimension_expected_not_assumed": 384,
+  "n_corpus_studies": 2675,
+  "embeddings_l2_normalised": true,
+  "norm_min": 0.9999998807907104,
+  "norm_max": 1.0000001192092896,
+  "faiss_index_type": "IndexFlatIP",
+  "faiss_metric": "inner product over unit vectors == cosine similarity",
+  "faiss_ntotal": 2675,
+  "faiss_row_to_study_id_roundtrip_first_200": true,
+  "max_seq_length_tokens": 256,
+  "corpus_texts_truncated_by_encoder": 2,
+  "corpus_token_length_median": 62.0,
+  "corpus_token_length_max": 322,
+  "fine_tuned": false,
+  "device": "cpu",
+  "versions": {
+    "sentence_transformers": "6.1.0",
+    "transformers": "5.18.0",
+    "faiss": "1.15.1",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.4.6",
+    "python": "3.11.9"
+  },
+  "created_utc": "2026-10-03T05:49:23+00:00"
+}
