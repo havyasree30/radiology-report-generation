@@ -1,0 +1,223 @@
+{
+  "reproduction": {
+    "reproduced": true,
+    "max_abs_diff_vs_saved": 0.0
+  },
+  "macro_operating_summary": {
+    "baseline_050": {
+      "macro_precision": 0.42634887240387415,
+      "n_classes_defined_precision": 14,
+      "macro_recall": 0.4479172678186885,
+      "n_classes_defined_recall": 14,
+      "macro_specificity": 0.8966224954649045,
+      "n_classes_defined_specificity": 14,
+      "macro_f1": 0.4301195166668097,
+      "n_classes_defined_f1": 14,
+      "macro_balanced_accuracy": 0.6722698816417966,
+      "n_classes_defined_balanced_accuracy": 14
+    },
+    "youden": {
+      "macro_precision": 0.32115747998969196,
+      "n_classes_defined_precision": 14,
+      "macro_recall": 0.7544955948463166,
+      "n_classes_defined_recall": 14,
+      "macro_specificity": 0.7128075212076418,
+      "n_classes_defined_specificity": 14,
+      "macro_f1": 0.3986257730228548,
+      "n_classes_defined_f1": 14,
+      "macro_balanced_accuracy": 0.7336515580269792,
+      "n_classes_defined_balanced_accuracy": 14
+    },
+    "f1_optimal": {
+      "macro_precision": 0.3959978439676735,
+      "n_classes_defined_precision": 14,
+      "macro_recall": 0.5428437940690165,
+      "n_classes_defined_recall": 14,
+      "macro_specificity": 0.8360306901321872,
+      "n_classes_defined_specificity": 14,
+      "macro_f1": 0.4515473086866405,
+      "n_classes_defined_f1": 14,
+      "macro_balanced_accuracy": 0.6894372421006019,
+      "n_classes_defined_balanced_accuracy": 14
+    }
+  },
+  "youden_thresholds": {
+    "No Finding": 0.2364058941602707,
+    "Enlarged Cardiomediastinum": 0.14951692521572113,
+    "Cardiomegaly": 0.18875084817409515,
+    "Lung Opacity": 0.512805163860321,
+    "Lung Lesion": 0.10145293921232224,
+    "Edema": 0.3001885414123535,
+    "Consolidation": 0.13209062814712524,
+    "Pneumonia": 0.07469959557056427,
+    "Atelectasis": 0.30323782563209534,
+    "Pneumothorax": 0.3158630132675171,
+    "Pleural Effusion": 0.39573952555656433,
+    "Pleural Other": 0.012163464911282063,
+    "Fracture": 0.042781297117471695,
+    "Support Devices": 0.45140311121940613
+  },
+  "f1_thresholds": {
+    "No Finding": 0.642667293548584,
+    "Enlarged Cardiomediastinum": 0.30397042632102966,
+    "Cardiomegaly": 0.4518182575702667,
+    "Lung Opacity": 0.32664650678634644,
+    "Lung Lesion": 0.5139020681381226,
+    "Edema": 0.3789757192134857,
+    "Consolidation": 0.33341237902641296,
+    "Pneumonia": 0.3812790811061859,
+    "Atelectasis": 0.3297014534473419,
+    "Pneumothorax": 0.614745020866394,
+    "Pleural Effusion": 0.36226996779441833,
+    "Pleural Other": 0.2542676031589508,
+    "Fracture": 0.3263857364654541,
+    "Support Devices": 0.34337711334228516
+  },
+  "cross_check_vs_earlier_youden_impl": {
+    "max_abs_diff_vs_src.classification.thresholds": 0.0,
+    "classes_differing": [],
+    "note": "the earlier implementation breaks exact J ties by highest threshold; C3 breaks them by higher sensitivity"
+  },
+  "representative_classes": {
+    "rare (lowest prevalence)": "Pleural Other",
+    "medium (median-rank prevalence)": "Pneumothorax",
+    "common (highest prevalence)": "Support Devices"
+  },
+  "unstable_classes": [],
+  "sanity_flagged": [
+    {
+      "observation": "Pneumonia",
+      "flags": "low"
+    },
+    {
+      "observation": "Pleural Other",
+      "flags": "low;near_zero"
+    },
+    {
+      "observation": "Fracture",
+      "flags": "low"
+    }
+  ],
+  "no_finding": {
+    "n_images": 28671,
+    "abnormal_definition": "any of the 12 pathology observations (all except No Finding and Support Devices)",
+    "pathology_labels": [
+      "Enlarged Cardiomediastinum",
+      "Cardiomegaly",
+      "Lung Opacity",
+      "Lung Lesion",
+      "Edema",
+      "Consolidation",
+      "Pneumonia",
+      "Atelectasis",
+      "Pneumothorax",
+      "Pleural Effusion",
+      "Pleural Other",
+      "Fracture"
+    ],
+    "youden": {
+      "no_finding_positive": 7919,
+      "no_finding_positive_pct": 27.620243451571273,
+      "abnormal_positive": 28158,
+      "abnormal_positive_pct": 98.2107355864811,
+      "both": 7410,
+      "both_pct_of_all_images": 25.844930417495032,
+      "contradiction_rate_pct_of_no_finding_positive": 93.57242076019699,
+      "no_finding_positive_and_no_abnormal": 509,
+      "neither_no_finding_nor_abnormal": 4,
+      "co_occurrence_with_predicted_no_finding": {
+        "Enlarged Cardiomediastinum": 2921,
+        "Cardiomegaly": 1321,
+        "Lung Opacity": 445,
+        "Lung Lesion": 3503,
+        "Edema": 869,
+        "Consolidation": 692,
+        "Pneumonia": 2052,
+        "Atelectasis": 2086,
+        "Pneumothorax": 1314,
+        "Pleural Effusion": 439,
+        "Pleural Other": 2755,
+        "Fracture": 3505
+      },
+      "co_occurrence_pct_of_no_finding_positive": {
+        "Enlarged Cardiomediastinum": 36.8859704508145,
+        "Cardiomegaly": 16.681399166561434,
+        "Lung Opacity": 5.619396388432883,
+        "Lung Lesion": 44.23538325546155,
+        "Edema": 10.973607778759945,
+        "Consolidation": 8.73847708043945,
+        "Pneumonia": 25.912362672054552,
+        "Atelectasis": 26.34170981184493,
+        "Pneumothorax": 16.593004167192827,
+        "Pleural Effusion": 5.543629246116934,
+        "Pleural Other": 34.789746180073244,
+        "Fracture": 44.26063896956686
+      },
+      "contradiction_if_support_devices_counted_as_abnormal": 7752,
+      "mean_number_of_abnormal_positives_in_contradictions": 2.955735492577598
+    },
+    "baseline_050": {
+      "no_finding_positive": 4516,
+      "no_finding_positive_pct": 15.751107390743261,
+      "abnormal_positive": 23749,
+      "abnormal_positive_pct": 82.83282759582853,
+      "both": 880,
+      "both_pct_of_all_images": 3.069303477381326,
+      "contradiction_rate_pct_of_no_finding_positive": 19.486271036315323,
+      "no_finding_positive_and_no_abnormal": 3636,
+      "neither_no_finding_nor_abnormal": 1286,
+      "co_occurrence_with_predicted_no_finding": {
+        "Enlarged Cardiomediastinum": 90,
+        "Cardiomegaly": 95,
+        "Lung Opacity": 16,
+        "Lung Lesion": 94,
+        "Edema": 47,
+        "Consolidation": 0,
+        "Pneumonia": 7,
+        "Atelectasis": 158,
+        "Pneumothorax": 296,
+        "Pleural Effusion": 17,
+        "Pleural Other": 10,
+        "Fracture": 147
+      },
+      "co_occurrence_pct_of_no_finding_positive": {
+        "Enlarged Cardiomediastinum": 1.9929140832595218,
+        "Cardiomegaly": 2.103631532329495,
+        "Lung Opacity": 0.354295837023915,
+        "Lung Lesion": 2.0814880425155002,
+        "Edema": 1.0407440212577501,
+        "Consolidation": 0.0,
+        "Pneumonia": 0.1550044286979628,
+        "Atelectasis": 3.49867139061116,
+        "Pneumothorax": 6.554472984942427,
+        "Pleural Effusion": 0.37643932683790965,
+        "Pleural Other": 0.22143489813994685,
+        "Fracture": 3.255093002657219
+      },
+      "contradiction_if_support_devices_counted_as_abnormal": 2329,
+      "mean_number_of_abnormal_positives_in_contradictions": 1.1102272727272726
+    },
+    "ground_truth": {
+      "no_finding_positive": 2538,
+      "no_finding_positive_pct": 8.852150256356598,
+      "gt_no_finding_with_gt_abnormal": 0
+    }
+  },
+  "n_images": 28671,
+  "n_patients": 9530,
+  "n_bootstrap": 1000,
+  "bootstrap_seed": 42,
+  "declared_rules": {
+    "sanity_flags": {
+      "low": 0.1,
+      "high": 0.7,
+      "near_zero": 0.02,
+      "near_one": 0.98
+    },
+    "unstable": {
+      "max_interval_width": 0.2,
+      "max_width_over_median": 1.0
+    }
+  },
+  "locked_test_split_used": false
+}
