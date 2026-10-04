@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "8ecc0d7d2d4c154f639a8c4201a3f0773b769bece2f4b9f7634e1d3e41b099ca",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Reports mention pleural effusion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 3], \"evidence_summary\": \"Reports mention atelectasis.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions cardiomegaly.\"}\n  ],\n  \"normal_report_ranks\": [\n    4, 5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 828,
+ "output_tokens": 179,
+ "total_duration_ns": 4318565500,
+ "load_duration_ns": 2188400,
+ "attempts": 1,
+ "wall_seconds": 6.36,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:11:29+00:00",
+ "agent": "agent1_evidence_verifier"
+}

@@ -1,0 +1,91 @@
+{
+ "uid": "1234",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Cardiomegaly",
+    "classifier_probability": 0.4202,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": []
+ },
+ "agent1_validation_flags": [
+  "agent1_omitted_classifier_finding",
+  "agent1_status_inconsistent_with_count",
+  "agent1_summary_replaced",
+  "agent1_unparseable"
+ ],
+ "agent2_draft": {
+  "findings": "Cardiomegaly.",
+  "impression": "Cardiomegaly.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Cardiomegaly.",
+  "impression": "Cardiomegaly.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Retrieved reports mention cardiomegaly.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung opacity.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung lesion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention edema.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention consolidation.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pneumonia.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention atelectasis.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pneumothorax.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [3, 4], \"evidence_summary\": \"Retrieved reports mention pleural effusion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pleural other.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention support devices.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung opacity. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not present in the classifier output. This finding is not",
+ "agent2_raw_text": "{\n\"findings\": \"Cardiomegaly.\",\n\"impression\": \"Cardiomegaly.\"\n}",
+ "agent3_raw_text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Cardiomegaly.\",\n\"impression\": \"Cardiomegaly.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "98f5b296b63dee03a49c6f15a2c91f907460b8f6802525636fcd04e83f14180f",
+  "agent2_grounded_report_writer": "2c7061ccef563e4e8cf813e88ece69ca841c3dd96f4432b45d385ffbc1282b36",
+  "agent3_grounding_critic": "4532d97cf74fdc3cdae0cedcf65e61be2b8cfbc45de3d9ee9b38cd78b1f03cd1"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "0c99cc0288c564c4e99b82ad7af679e94088eb5be711411c0db841e2ca93a35b",
+  "agent2_grounded_report_writer": "0df0a37f862257681f6a7fc8030891cea3c9db24e2c335515135827a8c14fc14",
+  "agent3_grounding_critic": "c0538e3e1500f3f17a799ece45b390e961f4f031c5dd37d8a26450ccc13a4ffe"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 158.42,
+  "agent2_grounded_report_writer": 7.27,
+  "agent3_grounding_critic": 11.21
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 900,
+  "agent2_grounded_report_writer": 24,
+  "agent3_grounding_critic": 47
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 731,
+  "agent2_grounded_report_writer": 837,
+  "agent3_grounding_critic": 852
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "length",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Cardiomegaly (calibrated probability 0.42)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: Cardiomegaly. No pneumothorax or pleural effusion. Clear lung bilaterally.\nIMPRESSION: 1. Cardiomegaly.\n[2]\nFINDINGS: Persistent cardiomegaly. No abnormal airspace consolidation. Resolved interstitial edema. No pneumothorax or pleural effusion.\nIMPRESSION: Stable cardiomegaly without acute abnormality.\n[3]\nFINDINGS: Cardiomegaly. Prominent are stable. Low lung volumes. No pneumothorax. Minimal right costophrenic blunting. No focal infiltrates.\nIMPRESSION: Cardiomegaly with right pleural effusion.\n[4]\nFINDINGS: Cardiomegaly. No focal consolidation, effusion, or pneumothorax. Mild unfolding of the thoracic aorta. Bony thorax and soft tissues grossly unremarkable.\nIMPRESSION: Cardiomegaly without acute cardiopulmonary abnormality.\n[5]\nFINDINGS: (not available)\nIMPRESSION: Slight cardiomegaly. Clear lungs.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Cardiomegaly (calibrated probability 0.42)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"classifier_probability\": 0.4202,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Cardiomegaly (calibrated probability 0.42)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"classifier_probability\": 0.4202,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nC. DRAFT REPORT\nFINDINGS: Cardiomegaly.\nIMPRESSION: Cardiomegaly.\n\nReturn the JSON now."
+ }
+}

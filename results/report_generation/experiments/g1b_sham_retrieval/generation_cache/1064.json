@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "1a80336e3a7b977aa33fd73a68a601a4b43be5528eade07e22e7a7c17cfb8ca9",
+ "text": "FINDINGS:\nLung opacity is present. Consolidation is present. Atelectasis is present. Pleural effusion is present. Fracture is present.\nIMPRESSION:\nCardiomegaly is present. Pleural effusion is present. Consolidation is present. Atelectasis is present. Lung opacity is present. Fracture is present.\n\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1277,
+ "output_tokens": 79,
+ "total_duration_ns": 2061373100,
+ "load_duration_ns": 5140400,
+ "attempts": 1,
+ "wall_seconds": 4.11,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:22:34+00:00"
+}

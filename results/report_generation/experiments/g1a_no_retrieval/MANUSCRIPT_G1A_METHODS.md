@@ -1,0 +1,17 @@
+# Methods: no-retrieval language-model ablation (G1A)
+
+## Purpose and design
+
+The single-agent retrieval-augmented system (G1) differed from the rule-based baseline in both the language model and the retrieved context. To isolate the contribution of retrieval we ran an ablation (G1A) in which the same language model produced reports for the same 547 validation studies without any retrieved reports. Everything else was held constant: the frozen classifier with its operating thresholds, the No Finding rule and calibrated probabilities; the local model medgemma1.5:4b (Q4_K_M, served by Ollama 0.35.1, digest recorded and verified to be identical to G1); greedy decoding with temperature 0, top-k 1, seed 42, a 8192-token context and at most 400 new tokens; the Findings and Impression format; the finding extractor; the reference labels; and all metrics.
+
+## Inputs and prompt
+
+G1A received only the classifier-positive findings, their calibrated probabilities and the No Finding state. It received no retrieved report, retrieval score, evidence-support count, reference report or reference finding; this was verified for every message, and the classifier block was byte-identical to that of G1. The G1A prompt was the G1 prompt with only the retrieval-dependent wording removed (the introduction of retrieved excerpts, the two rules about retrieved support, and the retrieval references inside other rules); all remaining instructions, including the grounding rules on invention, copying, identifiers, history and recommendations, the normal-report and empty-classifier rules, the standard finding terms and the output format, were unchanged. Because the G1 rule on cautiously treating unsupported classifier positives depends on retrieval, the contrast between G1 and G1A includes that retrieval-linked instruction. The prompt was frozen with its hash after a four-study implementation test, and responses were cached per study.
+
+## Comparisons and outcomes
+
+Three systems were compared on identical studies: the rule-based baseline (B0), G1A and G1. Outcomes were finding precision, recall, micro and macro F1, hallucination and omission rates, propagation of classifier false positives, retention of classifier true positives, normal and abnormal recall of the report state, ROUGE-L, BLEU-4, an exact-match METEOR variant and report length, computed exactly as in G1 on the primary set (547 studies) and the clinical-finding subset (378 studies). G1 results were re-derived from the stored reports to confirm exact reproduction.
+
+## Controlled analyses
+
+The main contrast was G1 minus G1A with a paired study-level bootstrap (1,000 resamples, the fixed seed used in G1); a difference was attributed to retrieval only when its interval excluded zero. Retrieval-induced findings were quantified per study and finding: findings present in G1 but not G1A (and the reverse), whether they appear in the retrieved reports, whether they match the reference, and whether they were classifier positives. Over-normalisation was assessed as the abnormal recall of the classifier, G1A and G1 and as the share of reports stated to be normal when the classifier output was abnormal. Retention of true positives was compared for the six rare findings defined in the loss study and for all other findings. Copying was measured against all corpus reports (sentences of at least six words; template sentences occurring in at least 10 corpus reports; whole-report duplication) and with the G1 definition against the study's own retrieved reports.

@@ -19,6 +19,24 @@ system.
 | **B: Evidence retrieval** | Retrieves relevant report text to ground generation. | IU X-Ray / Open-I |
 | **C: Report generation** | Controlled comparison of Single-Agent RAG vs Multi-Agent RAG for drafting preliminary reports. | Outputs of A + B |
 
+### Pipeline
+
+```
+Chest X-ray
+  → Image Validation            (src/validation/image_validator.py)
+  → Preprocessing               (src/preprocessing/transforms.py: aspect-preserving 224×224, ImageNet norm)
+  → DenseNet121                 (src/classification/model.py: 14 logits)
+  → Sigmoid                     (14 independent probabilities; no softmax, no renormalisation)
+  → Youden's J thresholds       (src/classification/thresholds.py: fitted on validation only)
+  → Structured Findings         (src/classification/findings.py)
+  → Query Builder               (src/classification/findings.py: text is built, NOT embedded)
+  → MiniLM embedding                          [FUTURE, Phase 3]
+  → Qdrant over IU X-Ray TRAIN reports only   [FUTURE, Phase 3]
+  → Multi-Agent RAG                           [FUTURE]
+  → Meerkat-7B-v1.0                           [FUTURE]
+  → Preliminary FINDINGS + IMPRESSION report  [FUTURE]
+```
+
 Each system is evaluated separately (classification, retrieval, generation),
 followed by ablations, error analysis, robustness analysis and statistical
 comparison.

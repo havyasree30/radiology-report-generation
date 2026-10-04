@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "ca8b2993506392e09beb1976fd441c4e0d2ae084f25395e445fd5a7a50cd4f93",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [1, 2, 4], \"evidence_summary\": \"Report 1 states normal cardiomediastinal contours. Report 2 states Enlarged cardiomediastinal silhouette. Report 4 states suspected cardiomegaly or less, pericardial effusion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [2, 4], \"evidence_summary\": \"Report 2 states Cardiomegaly without heart failure. Report 4 states suspected cardiomegaly, less pericardial effusion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [2, 3, 4, 5], \"evidence_summary\": \"Report 2 states left base density. Report 3 states left basilar bandlike opacities suggestive of scarring or atelectasis. Report 4 states low lung volumes and central bronchovascular crowding but no evidence of overt pulmonary edema. Report 5 states Bronchovascular crowding without typical findings of pulmonary edema.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [2], \"evidence_summary\": \"Report 2 states no identified mass lesion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [4, 5], \"evidence_summary\": \"Report 4 states no evidence of overt pulmonary edema. Report 5 states Bronchovascular crowding without typical findings of pulmonary edema.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [2, 3, 4, 5], \"evidence_summary\": \"Report 2 states no pneumothorax. Report 3 states No overt edema. Report 4 states no evidence of focal airspace disease, pneumothorax, pleural effusion. Report 5 states no definite pleural effusion seen.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [2, 3, 4, 5], \"evidence_summary\": \"Report 2 states no large pleural effusion. Report 3 states Question small right pleural effusion versus pleural thickening. Report 4 states no evidence of focal airspace disease, pneumothorax, pleural effusion. Report 5 states no definite pleural effusion seen.\", \"support_status\": \"partially_supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Report 1 states no focal infiltrate. Report 2 states left base density. Report 3 states left basilar bandlike opacities suggestive of scarring or atelectasis. Report 4 states low lung volumes and central bronchovascular crowding but no evidence of overt pulmonary edema. Report 5 states Bronchovascular crowding without typical findings of pulmonary edema. These findings are not classified as positive by the automated classifier.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [2, 4], \"evidence_summary\": \"Report 2 states Cardiomegaly without heart failure. Report 4 states suspected cardiomegaly, less pericardial effusion. These findings are not classified as positive by the automated classifier.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [2, 3, 4, 5], \"evidence_summary\": \"Report 2 states no large pleural effusion. Report 3 states Question small right pleural effusion versus pleural thickening. Report 4 states no evidence of focal airspace disease, pneumothorax, pleural effusion. Report 5 states no definite pleural effusion seen.",
+ "done_reason": "length",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 959,
+ "output_tokens": 900,
+ "total_duration_ns": 18873936900,
+ "load_duration_ns": 4371600,
+ "attempts": 1,
+ "wall_seconds": 20.94,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:25:21+00:00",
+ "agent": "agent1_evidence_verifier"
+}

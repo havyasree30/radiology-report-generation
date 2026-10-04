@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "be8e450e899d3447cd6b731f2bbd551cb22e4de1d65dfb60e60b2e447777784d",
+ "text": "FINDINGS:\nPulmonary opacities are present.\nIMPRESSION:\nPulmonary opacities are present.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1249,
+ "output_tokens": 36,
+ "total_duration_ns": 1457316400,
+ "load_duration_ns": 5763900,
+ "attempts": 1,
+ "wall_seconds": 3.49,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:26:02+00:00"
+}

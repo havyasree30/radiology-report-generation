@@ -1,0 +1,53 @@
+{
+  "png_dpi": {
+    "fig1_brier_raw_vs_calibrated": {
+      "dpi": 300,
+      "pixels": [
+        2187,
+        1414
+      ]
+    },
+    "fig2_logloss_raw_vs_calibrated": {
+      "dpi": 300,
+      "pixels": [
+        2187,
+        1414
+      ]
+    },
+    "fig3_reliability_curves": {
+      "dpi": 300,
+      "pixels": [
+        3260,
+        1059
+      ]
+    },
+    "fig4_calibration_change_per_class": {
+      "dpi": 300,
+      "pixels": [
+        2244,
+        1460
+      ]
+    },
+    "fig5_mean_probability_vs_prevalence": {
+      "dpi": 300,
+      "pixels": [
+        2234,
+        1460
+      ]
+    }
+  },
+  "pdf_has_embedded_raster": {
+    "fig1_brier_raw_vs_calibrated": false,
+    "fig2_logloss_raw_vs_calibrated": false,
+    "fig3_reliability_curves": false,
+    "fig4_calibration_change_per_class": false,
+    "fig5_mean_probability_vs_prevalence": false
+  },
+  "svg_present": {
+    "fig1_brier_raw_vs_calibrated": true,
+    "fig2_logloss_raw_vs_calibrated": true,
+    "fig3_reliability_curves": true,
+    "fig4_calibration_change_per_class": true,
+    "fig5_mean_probability_vs_prevalence": true
+  }
+}

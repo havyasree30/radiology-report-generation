@@ -1,0 +1,40 @@
+{
+  "n": 3,
+  "text_identical_to_stored_g1": {
+    "20": false,
+    "23": true,
+    "32": true
+  },
+  "log": {
+    "started_utc": "2026-10-04T06:46:34+00:00",
+    "n_cases_requiring_generation": 3,
+    "already_cached": 0,
+    "prompt_sha256": "476b05326f85652b0cdb2faf79a4868a6e839660eb43e34d46cdae625e4b5688",
+    "model_tag": "medgemma1.5:4b",
+    "model_digest": "433252621ab154668b5d8be6aff6c1b771bacba045e46e6193da8d6ad1630f2c",
+    "ollama_version": "0.35.1",
+    "path_C_studies_not_called": 544,
+    "finished_utc": "2026-10-04T06:46:51+00:00",
+    "n_cached_success": 3,
+    "n_failed": 0,
+    "failed_ids": [],
+    "failures": {},
+    "wall_seconds_this_run": 17.1,
+    "gpu_memory_used_mib_peak_sampled": 392.0,
+    "gpu_memory_samples": 1,
+    "hardware_at_end": {
+      "os": "Windows-10-10.0.26300-SP0",
+      "machine": "AMD64",
+      "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+      "nvidia_smi": "NVIDIA GeForce RTX 3050 6GB Laptop GPU, 596.08, 6144 MiB",
+      "ollama_ps": [
+        {
+          "name": "medgemma1.5:4b",
+          "size": 2879851068,
+          "size_vram": 2879851068,
+          "context_length": 8192
+        }
+      ]
+    }
+  }
+}

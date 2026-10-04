@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "1b1abceac2853507974031cfb46c63347061c147d46cf91b55c6c7583ccb2a6c",
+ "text": "FINDINGS:\nThe heart size is upper limits of normal. The lungs are clear. No pleural effusion or pneumothorax is seen.\nIMPRESSION:\nNo acute cardiopulmonary abnormality.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1165,
+ "output_tokens": 50,
+ "total_duration_ns": 1410063000,
+ "load_duration_ns": 6501100,
+ "attempts": 1,
+ "wall_seconds": 3.44,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:18:40+00:00"
+}

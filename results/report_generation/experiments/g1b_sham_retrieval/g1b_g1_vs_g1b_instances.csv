@@ -1,0 +1,268 @@
+uid,anon_id,finding,direction,in_true_top5_context,in_sham_context,in_reference,classifier_positive
+50,case_e97b55ecd0,Edema,"relevant_only (in G1, not in G1B)",True,False,False,True
+73,case_aced45e641,Pleural Effusion,"relevant_only (in G1, not in G1B)",True,False,True,True
+78,case_f6871593cb,Pleural Effusion,"sham_only (in G1B, not in G1)",True,False,False,True
+113,case_ba82165f8f,Atelectasis,"sham_only (in G1B, not in G1)",False,True,False,False
+144,case_8dd3772c8f,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,False,False
+152,case_c9e2d1042b,Enlarged Cardiomediastinum,"relevant_only (in G1, not in G1B)",False,False,False,True
+152,case_c9e2d1042b,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,True,False
+152,case_c9e2d1042b,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,False,False
+152,case_c9e2d1042b,Pneumonia,"relevant_only (in G1, not in G1B)",False,False,False,False
+152,case_c9e2d1042b,Fracture,"relevant_only (in G1, not in G1B)",True,False,True,True
+188,case_50e4293b74,Atelectasis,"relevant_only (in G1, not in G1B)",True,True,True,False
+188,case_50e4293b74,Pleural Effusion,"sham_only (in G1B, not in G1)",True,False,True,True
+195,case_03ba8f1c8b,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,False,False
+195,case_03ba8f1c8b,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,False,True
+220,case_da857ce1e5,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,False,True
+220,case_da857ce1e5,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,False,True
+249,case_e9a3149fcc,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,False,True
+249,case_e9a3149fcc,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,False,False
+266,case_b72dbf6387,Enlarged Cardiomediastinum,"sham_only (in G1B, not in G1)",False,False,False,True
+266,case_b72dbf6387,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,True,True
+266,case_b72dbf6387,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,False,False
+266,case_b72dbf6387,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,False,False
+266,case_b72dbf6387,Support Devices,"relevant_only (in G1, not in G1B)",True,False,False,False
+268,case_abe90fb23b,Consolidation,"relevant_only (in G1, not in G1B)",True,False,False,True
+268,case_abe90fb23b,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,True,True
+310,case_161c5f46d0,Lung Lesion,"sham_only (in G1B, not in G1)",False,True,False,False
+310,case_161c5f46d0,Atelectasis,"sham_only (in G1B, not in G1)",False,True,False,False
+317,case_c0bb405ef9,Fracture,"sham_only (in G1B, not in G1)",True,False,False,True
+368,case_7d12ec6d3f,Atelectasis,"sham_only (in G1B, not in G1)",False,True,False,False
+382,case_29bb897ee9,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,True,True
+382,case_29bb897ee9,Pleural Effusion,"relevant_only (in G1, not in G1B)",True,False,False,False
+392,case_5235ba3a4d,Support Devices,"sham_only (in G1B, not in G1)",True,False,True,True
+436,case_d81f4005d4,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,False,True
+436,case_d81f4005d4,Pleural Effusion,"relevant_only (in G1, not in G1B)",True,False,False,True
+481,case_53ae4581c9,Enlarged Cardiomediastinum,"sham_only (in G1B, not in G1)",False,False,False,True
+481,case_53ae4581c9,Cardiomegaly,"sham_only (in G1B, not in G1)",True,True,False,False
+481,case_53ae4581c9,Support Devices,"relevant_only (in G1, not in G1B)",True,True,True,True
+483,case_c2e9f67c8d,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,False,True
+501,case_809278c190,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,True,False
+501,case_809278c190,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,False,True
+505,case_956de92d44,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,False,True
+505,case_956de92d44,Pleural Effusion,"relevant_only (in G1, not in G1B)",True,False,False,False
+530,case_b997f4fbdb,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,True,True
+573,case_d400069bfb,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,True,True
+573,case_d400069bfb,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,False,False
+586,case_7dab9325df,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,True,True
+586,case_7dab9325df,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,True,True
+661,case_6e8f9acf59,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,False,False
+661,case_6e8f9acf59,Pleural Effusion,"relevant_only (in G1, not in G1B)",True,False,False,True
+665,case_b580fd16d2,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,True,True
+668,case_4bab7bd670,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,False,True
+672,case_5e32086e6d,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,False,True
+672,case_5e32086e6d,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,False,True
+683,case_2cbd7063b7,Fracture,"sham_only (in G1B, not in G1)",True,False,False,True
+688,case_b7f222914f,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,True,True
+688,case_b7f222914f,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,True,True
+689,case_4d4d8f4499,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,False,False
+691,case_3aa84a2686,Fracture,"sham_only (in G1B, not in G1)",True,False,False,True
+716,case_2037314533,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,False,False
+716,case_2037314533,Pneumonia,"relevant_only (in G1, not in G1B)",False,False,False,True
+725,case_9f4c3aad9c,Fracture,"sham_only (in G1B, not in G1)",True,False,False,True
+744,case_7f9060b8d4,Pneumothorax,"relevant_only (in G1, not in G1B)",True,False,False,True
+758,case_338ef55f9e,Fracture,"sham_only (in G1B, not in G1)",True,False,False,True
+760,case_62e54d18cb,Pneumonia,"relevant_only (in G1, not in G1B)",True,True,False,True
+760,case_62e54d18cb,Atelectasis,"sham_only (in G1B, not in G1)",False,True,True,False
+808,case_cc2056e015,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,True,True
+808,case_cc2056e015,Atelectasis,"relevant_only (in G1, not in G1B)",True,True,True,True
+867,case_698f59f788,Support Devices,"sham_only (in G1B, not in G1)",True,True,True,False
+929,case_bb5b7296da,Atelectasis,"relevant_only (in G1, not in G1B)",True,True,True,False
+929,case_bb5b7296da,Fracture,"relevant_only (in G1, not in G1B)",True,False,False,True
+941,case_5e475007bb,Fracture,"relevant_only (in G1, not in G1B)",True,False,False,True
+955,case_79e12cd9f0,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,False,True
+955,case_79e12cd9f0,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,False,True
+959,case_a2a73f36f6,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,True,True
+959,case_a2a73f36f6,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,False,False
+972,case_8b1a07d051,Enlarged Cardiomediastinum,"relevant_only (in G1, not in G1B)",False,False,False,True
+972,case_8b1a07d051,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,True,False,False
+972,case_8b1a07d051,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,True,False
+981,case_09a58672d3,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,True,True
+981,case_09a58672d3,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,False,False
+981,case_09a58672d3,Atelectasis,"relevant_only (in G1, not in G1B)",True,True,False,False
+981,case_09a58672d3,Support Devices,"relevant_only (in G1, not in G1B)",True,False,False,False
+1064,case_1646ddce4e,Cardiomegaly,"sham_only (in G1B, not in G1)",True,True,False,False
+1064,case_1646ddce4e,Consolidation,"sham_only (in G1B, not in G1)",False,False,False,True
+1064,case_1646ddce4e,Atelectasis,"sham_only (in G1B, not in G1)",True,True,True,True
+1064,case_1646ddce4e,Pleural Effusion,"sham_only (in G1B, not in G1)",True,True,False,True
+1064,case_1646ddce4e,Fracture,"sham_only (in G1B, not in G1)",False,False,False,True
+1079,case_b181d2175d,Lung Opacity,"sham_only (in G1B, not in G1)",True,True,False,False
+1079,case_b181d2175d,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,True,True
+1125,case_7444cbd91b,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,False,False
+1206,case_acd9ab8196,Fracture,"relevant_only (in G1, not in G1B)",True,True,False,True
+1214,case_4da776b0b3,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,False,True
+1214,case_4da776b0b3,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,False,True
+1234,case_20bba91038,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,True,True
+1277,case_ad6d56363e,Fracture,"sham_only (in G1B, not in G1)",True,False,False,True
+1285,case_5ee919e3c0,Atelectasis,"relevant_only (in G1, not in G1B)",True,True,False,False
+1285,case_5ee919e3c0,Pleural Effusion,"relevant_only (in G1, not in G1B)",True,False,False,True
+1285,case_5ee919e3c0,Support Devices,"sham_only (in G1B, not in G1)",False,True,False,False
+1288,case_cf648ba648,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,False,True
+1294,case_c66a3ffd52,Lung Opacity,"sham_only (in G1B, not in G1)",False,True,False,False
+1294,case_c66a3ffd52,Edema,"sham_only (in G1B, not in G1)",False,True,False,False
+1422,case_bfbc740d54,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,True,True
+1422,case_bfbc740d54,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,True,True
+1451,case_36df25a391,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,False,True
+1451,case_36df25a391,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,True,False
+1518,case_0f269b8d14,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,False,True
+1518,case_0f269b8d14,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,False,False
+1518,case_0f269b8d14,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,False,False
+1518,case_0f269b8d14,Support Devices,"relevant_only (in G1, not in G1B)",True,True,False,False
+1529,case_6f78b35feb,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,False,True
+1529,case_6f78b35feb,Fracture,"sham_only (in G1B, not in G1)",False,False,False,False
+1595,case_0a5d88f79d,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,True,True
+1595,case_0a5d88f79d,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,True,True
+1622,case_00cbce6a8e,Cardiomegaly,"sham_only (in G1B, not in G1)",False,True,False,False
+1622,case_00cbce6a8e,Pleural Effusion,"sham_only (in G1B, not in G1)",False,True,False,False
+1661,case_b17806400e,Fracture,"sham_only (in G1B, not in G1)",True,False,False,True
+1707,case_b6813125e4,Pneumothorax,"sham_only (in G1B, not in G1)",False,True,False,False
+1707,case_b6813125e4,Pleural Effusion,"sham_only (in G1B, not in G1)",False,True,False,False
+1735,case_934e0b4dbc,Fracture,"relevant_only (in G1, not in G1B)",True,False,False,True
+1819,case_179e5ffb9e,Enlarged Cardiomediastinum,"sham_only (in G1B, not in G1)",False,False,False,True
+1819,case_179e5ffb9e,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,True,True,True
+1819,case_179e5ffb9e,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,True,True
+1832,case_a5e12f0c90,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,True,True
+1832,case_a5e12f0c90,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,True,True
+1832,case_a5e12f0c90,Edema,"relevant_only (in G1, not in G1B)",True,False,False,True
+1832,case_a5e12f0c90,Pleural Effusion,"relevant_only (in G1, not in G1B)",True,False,False,True
+1907,case_2366b200c2,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,False,True
+1918,case_39b28bf5e8,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,False,False
+1976,case_a2d925f974,Consolidation,"relevant_only (in G1, not in G1B)",True,False,False,True
+1988,case_2986a2aacb,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,False,True
+2006,case_16e85c539c,Fracture,"sham_only (in G1B, not in G1)",True,False,False,True
+2062,case_f91bcff41a,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,True,True
+2062,case_f91bcff41a,Consolidation,"relevant_only (in G1, not in G1B)",True,False,False,True
+2066,case_fd09360e4e,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,True,True
+2066,case_fd09360e4e,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,True,False
+2066,case_fd09360e4e,Atelectasis,"relevant_only (in G1, not in G1B)",True,True,True,False
+2066,case_fd09360e4e,Support Devices,"relevant_only (in G1, not in G1B)",True,False,False,False
+2069,case_b082bc9daf,Cardiomegaly,"sham_only (in G1B, not in G1)",False,True,False,False
+2069,case_b082bc9daf,Pneumothorax,"sham_only (in G1B, not in G1)",False,False,False,False
+2069,case_b082bc9daf,Support Devices,"sham_only (in G1B, not in G1)",False,True,False,False
+2138,case_727c825b4f,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,False,False
+2138,case_727c825b4f,Pleural Effusion,"sham_only (in G1B, not in G1)",True,True,False,False
+2160,case_7331ea7d0e,Fracture,"sham_only (in G1B, not in G1)",True,False,False,True
+2191,case_02470de19c,Fracture,"sham_only (in G1B, not in G1)",False,True,False,False
+2191,case_02470de19c,Support Devices,"sham_only (in G1B, not in G1)",False,True,False,False
+2223,case_9972c8908e,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,False,False
+2223,case_9972c8908e,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,False,False
+2238,case_733787883d,Fracture,"sham_only (in G1B, not in G1)",True,False,False,True
+2239,case_f7e1d4609a,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,True,True
+2239,case_f7e1d4609a,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,False,True
+2313,case_81864d567c,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,True,False,False
+2363,case_eb3be8f238,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,True,True
+2363,case_eb3be8f238,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,True,True
+2377,case_f6cd710729,Enlarged Cardiomediastinum,"sham_only (in G1B, not in G1)",False,False,False,False
+2377,case_f6cd710729,Cardiomegaly,"sham_only (in G1B, not in G1)",False,True,False,False
+2377,case_f6cd710729,Edema,"sham_only (in G1B, not in G1)",False,True,False,False
+2388,case_1ee15a9211,Lung Opacity,"sham_only (in G1B, not in G1)",False,True,False,False
+2396,case_37c5b65b82,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,True,True
+2396,case_37c5b65b82,Atelectasis,"relevant_only (in G1, not in G1B)",True,True,False,False
+2415,case_a5fbb69525,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,True,True
+2415,case_a5fbb69525,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,False,True
+2453,case_ce0089f9e5,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,False,False
+2453,case_ce0089f9e5,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,False,True
+2475,case_2d33c14b83,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,True,False
+2493,case_c30c164e93,Enlarged Cardiomediastinum,"sham_only (in G1B, not in G1)",False,False,False,True
+2493,case_c30c164e93,Cardiomegaly,"sham_only (in G1B, not in G1)",False,False,False,False
+2493,case_c30c164e93,Fracture,"sham_only (in G1B, not in G1)",False,False,False,True
+2513,case_81a71ee09f,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,True,True
+2513,case_81a71ee09f,Pleural Effusion,"sham_only (in G1B, not in G1)",True,False,False,True
+2533,case_d68a4ccafc,Fracture,"sham_only (in G1B, not in G1)",True,False,False,True
+2591,case_669e80f39c,Cardiomegaly,"sham_only (in G1B, not in G1)",False,True,False,False
+2591,case_669e80f39c,Lung Opacity,"sham_only (in G1B, not in G1)",False,True,False,False
+2591,case_669e80f39c,Atelectasis,"sham_only (in G1B, not in G1)",False,True,False,False
+2591,case_669e80f39c,Support Devices,"sham_only (in G1B, not in G1)",False,True,False,False
+2594,case_097ae4ef10,Enlarged Cardiomediastinum,"sham_only (in G1B, not in G1)",False,False,False,True
+2594,case_097ae4ef10,Cardiomegaly,"sham_only (in G1B, not in G1)",False,True,False,False
+2594,case_097ae4ef10,Lung Opacity,"sham_only (in G1B, not in G1)",False,True,True,False
+2594,case_097ae4ef10,Edema,"sham_only (in G1B, not in G1)",False,True,False,False
+2644,case_c7395d541e,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,True,True
+2644,case_c7395d541e,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,False,False
+2644,case_c7395d541e,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,False,False
+2644,case_c7395d541e,Support Devices,"relevant_only (in G1, not in G1B)",True,False,False,False
+2691,case_d43368ae23,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,True,False
+2817,case_4eabaebd42,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,True,True
+2817,case_4eabaebd42,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,False,True
+2833,case_6fbc43aae3,Pneumothorax,"relevant_only (in G1, not in G1B)",True,False,False,True
+2884,case_21704c8a9c,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,False,True
+2936,case_271094c2f0,Enlarged Cardiomediastinum,"sham_only (in G1B, not in G1)",False,False,False,True
+2936,case_271094c2f0,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,False,False
+2936,case_271094c2f0,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,False,False
+2936,case_271094c2f0,Support Devices,"relevant_only (in G1, not in G1B)",True,False,False,False
+2955,case_32081caf37,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,True,True,True
+2957,case_5b73fa16b1,Pneumonia,"sham_only (in G1B, not in G1)",False,False,False,True
+2957,case_5b73fa16b1,Atelectasis,"relevant_only (in G1, not in G1B)",True,True,True,True
+3004,case_15c93406f8,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,True,True
+3004,case_15c93406f8,Pneumonia,"relevant_only (in G1, not in G1B)",False,False,False,False
+3004,case_15c93406f8,Atelectasis,"relevant_only (in G1, not in G1B)",True,True,True,False
+3022,case_bb8ec2a5b0,Consolidation,"relevant_only (in G1, not in G1B)",False,False,False,True
+3022,case_bb8ec2a5b0,Pneumonia,"sham_only (in G1B, not in G1)",False,False,False,True
+3022,case_bb8ec2a5b0,Atelectasis,"relevant_only (in G1, not in G1B)",True,True,False,False
+3025,case_2e3869a68b,Fracture,"sham_only (in G1B, not in G1)",True,False,False,True
+3049,case_94ee8dcded,Fracture,"relevant_only (in G1, not in G1B)",True,False,False,True
+3069,case_af89a6f929,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,True,False
+3069,case_af89a6f929,Consolidation,"relevant_only (in G1, not in G1B)",True,False,False,True
+3069,case_af89a6f929,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,True,True
+3069,case_af89a6f929,Atelectasis,"relevant_only (in G1, not in G1B)",True,True,False,False
+3069,case_af89a6f929,Pleural Effusion,"relevant_only (in G1, not in G1B)",True,True,False,False
+3148,case_aaba488fd8,Enlarged Cardiomediastinum,"relevant_only (in G1, not in G1B)",False,False,False,True
+3148,case_aaba488fd8,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,True,False
+3148,case_aaba488fd8,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,False,False
+3148,case_aaba488fd8,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,False,True
+3158,case_2e428a8221,Pleural Effusion,"relevant_only (in G1, not in G1B)",True,False,False,True
+3180,case_ef0c3eef6f,Lung Opacity,"sham_only (in G1B, not in G1)",False,True,False,False
+3180,case_ef0c3eef6f,Atelectasis,"sham_only (in G1B, not in G1)",False,True,False,False
+3191,case_b07d31c7fc,Pleural Other,"relevant_only (in G1, not in G1B)",False,True,False,True
+3195,case_70bffb6388,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,False,False
+3195,case_70bffb6388,Edema,"relevant_only (in G1, not in G1B)",True,False,False,True
+3195,case_70bffb6388,Pleural Effusion,"relevant_only (in G1, not in G1B)",True,False,False,True
+3207,case_9623883991,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,True,True
+3214,case_18da40dc41,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,True,True
+3221,case_c91a8e91d1,Atelectasis,"sham_only (in G1B, not in G1)",False,True,False,False
+3253,case_443e353543,Fracture,"sham_only (in G1B, not in G1)",True,False,False,True
+3290,case_ba6152204c,Fracture,"sham_only (in G1B, not in G1)",True,False,False,True
+3347,case_2d4a3ec26d,Fracture,"sham_only (in G1B, not in G1)",True,False,False,True
+3369,case_8c15f047ba,Fracture,"relevant_only (in G1, not in G1B)",True,True,False,True
+3370,case_60c42cd467,Pneumothorax,"sham_only (in G1B, not in G1)",False,True,False,False
+3379,case_0bd86aed41,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,True,True,False
+3435,case_8a5c73989d,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,True,False
+3455,case_bbc5208df2,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,True,True,False
+3455,case_bbc5208df2,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,True,False
+3477,case_8d5f2e2134,Atelectasis,"sham_only (in G1B, not in G1)",False,True,False,False
+3508,case_48f5b29b8b,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,False,True
+3508,case_48f5b29b8b,Pleural Effusion,"relevant_only (in G1, not in G1B)",True,False,True,True
+3542,case_49e7a4e14d,Pneumonia,"sham_only (in G1B, not in G1)",False,True,False,False
+3565,case_b291095284,Lung Opacity,"sham_only (in G1B, not in G1)",True,False,True,True
+3565,case_b291095284,Consolidation,"relevant_only (in G1, not in G1B)",True,False,True,True
+3589,case_c046b23496,Consolidation,"relevant_only (in G1, not in G1B)",True,False,False,False
+3589,case_c046b23496,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,False,True
+3589,case_c046b23496,Atelectasis,"relevant_only (in G1, not in G1B)",True,False,False,True
+3597,case_055164c4b9,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,False,False
+3597,case_055164c4b9,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,False,True
+3611,case_2b7f6b4200,Enlarged Cardiomediastinum,"sham_only (in G1B, not in G1)",False,False,False,True
+3611,case_2b7f6b4200,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,True,True
+3632,case_638b26ceb6,Fracture,"sham_only (in G1B, not in G1)",True,False,False,True
+3639,case_f348014dd7,Lung Opacity,"sham_only (in G1B, not in G1)",False,True,False,False
+3726,case_b4a79e5cc2,Lung Opacity,"sham_only (in G1B, not in G1)",False,True,False,False
+3726,case_b4a79e5cc2,Support Devices,"sham_only (in G1B, not in G1)",False,True,False,False
+3790,case_d781751166,Atelectasis,"relevant_only (in G1, not in G1B)",True,True,False,True
+3790,case_d781751166,Pleural Effusion,"sham_only (in G1B, not in G1)",True,False,False,True
+3793,case_db97ac0b82,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,True,True
+3793,case_db97ac0b82,Atelectasis,"relevant_only (in G1, not in G1B)",True,True,False,True
+3814,case_b3d1cfc000,Fracture,"sham_only (in G1B, not in G1)",True,False,False,True
+3817,case_ee4f95dda6,Enlarged Cardiomediastinum,"sham_only (in G1B, not in G1)",False,False,False,True
+3817,case_ee4f95dda6,Cardiomegaly,"relevant_only (in G1, not in G1B)",True,False,False,False
+3866,case_309b2a3c7e,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,True,True
+3866,case_309b2a3c7e,Consolidation,"relevant_only (in G1, not in G1B)",True,False,False,True
+3875,case_a86ccff141,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,True,True
+3875,case_a86ccff141,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,False,True
+3879,case_52c0e69c8c,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,False,False
+3879,case_52c0e69c8c,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,False,True
+3951,case_b79a096f41,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,True,False
+3951,case_b79a096f41,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,False,True
+3968,case_bb1bc18476,Fracture,"sham_only (in G1B, not in G1)",True,False,False,True
+3972,case_250b927fdf,Lung Opacity,"relevant_only (in G1, not in G1B)",True,False,True,True
+3972,case_250b927fdf,Pneumonia,"relevant_only (in G1, not in G1B)",True,False,False,True
+3980,case_7332240355,Lung Opacity,"relevant_only (in G1, not in G1B)",True,True,True,True
+3980,case_7332240355,Atelectasis,"relevant_only (in G1, not in G1B)",True,True,False,True

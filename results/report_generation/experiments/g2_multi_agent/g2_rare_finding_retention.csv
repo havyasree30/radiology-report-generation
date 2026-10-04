@@ -1,0 +1,13 @@
+system,group,classifier_true_positives,retained,tp_retention
+B0_rule_based,rare (C2 definition),21,21,1
+B0_rule_based,other findings,96,96,1
+G1A_llm_no_retrieval,rare (C2 definition),21,8,0.38095238095238093
+G1A_llm_no_retrieval,other findings,96,58,0.60416666666666663
+G1B_llm_sham_retrieval,rare (C2 definition),21,1,0.047619047619047616
+G1B_llm_sham_retrieval,other findings,96,36,0.375
+G1_single_agent_rag,rare (C2 definition),21,7,0.33333333333333331
+G1_single_agent_rag,other findings,96,77,0.80208333333333337
+G2_agent2_draft_pre_critic,rare (C2 definition),21,17,0.80952380952380953
+G2_agent2_draft_pre_critic,other findings,96,92,0.95833333333333337
+G2_multi_agent_rag,rare (C2 definition),21,17,0.80952380952380953
+G2_multi_agent_rag,other findings,96,92,0.95833333333333337

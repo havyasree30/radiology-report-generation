@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "595128d635fea7935a122135f9d196a0731ff1cf815a2f33463672eeea9ee276",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Enlarged Cardiomediastinum.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"Reports 1, 3, and 5 mention Cardiomegaly.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 4], \"evidence_summary\": \"Reports 1, 2, and 4 mention Lung Opacity.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"Reports 1, 3, and 5 mention Pleural Effusion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [3, 5], \"evidence_summary\": \"Reports 3 and 5 mention Pleural Other.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Fracture.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Enlarged Cardiomediastinum.\"}\n  ],\n  \"normal_report_ranks\": [\n    2\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1016,
+ "output_tokens": 385,
+ "total_duration_ns": 9455453800,
+ "load_duration_ns": 7853400,
+ "attempts": 1,
+ "wall_seconds": 11.53,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T17:10:12+00:00",
+ "agent": "agent1_evidence_verifier"
+}

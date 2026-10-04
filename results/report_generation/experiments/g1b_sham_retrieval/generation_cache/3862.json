@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "bab722dbd2aa1b796a27ca43de361e62311535cd3c2a9497650b20aa283da895",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is normal in size and configuration. The lungs are clear.\nIMPRESSION:\nNo acute cardiopulmonary disease.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1271,
+ "output_tokens": 45,
+ "total_duration_ns": 1425271500,
+ "load_duration_ns": 4435800,
+ "attempts": 1,
+ "wall_seconds": 3.48,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:44:04+00:00"
+}

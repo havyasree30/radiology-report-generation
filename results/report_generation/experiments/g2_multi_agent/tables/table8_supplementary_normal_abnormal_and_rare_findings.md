@@ -1,0 +1,6 @@
+| Source | Normal recall | Abnormal recall | Abnormal studies reported normal | Normal studies reported abnormal | Report normal given classifier abnormal | Rare-finding TP retention | Other-finding TP retention |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Classifier (= B0 report state) | 0.729 (0.667 to 0.791) | 0.726 (0.659 to 0.790) | 36 of 186 | 43 of 192 | n/a | n/a | n/a |
+| G1 single-agent RAG | 0.911 (0.871 to 0.950) | 0.581 (0.511 to 0.649) | 78 of 186 | 17 of 192 | 0.298 (0.233 to 0.368) | 0.333 | 0.802 |
+| G2 Agent 2 draft (before critic) | 0.776 (0.714 to 0.831) | 0.720 (0.656 to 0.787) | 51 of 186 | 42 of 192 | 0.000 (0.000 to 0.000) | 0.810 | 0.958 |
+| G2 multi-agent RAG (final) | 0.776 (0.714 to 0.831) | 0.720 (0.656 to 0.787) | 51 of 186 | 42 of 192 | 0.000 (0.000 to 0.000) | 0.810 | 0.958 |

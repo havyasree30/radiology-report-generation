@@ -1,0 +1,35 @@
+{
+  "G1A_llm_no_retrieval": {
+    "distinct_report_texts": 84,
+    "most_common_text_share": 0.453382084095064,
+    "most_common_text": "FINDINGS: The chest radiograph demonstrates an enlarged cardiomediastinal silhouette. IMPRESSION: Enlarged Cardiomediastinum.",
+    "enlarged_cardiomediastinum_stated_without_classifier_positive_in_classifier_normal_studies": 240,
+    "classifier_normal_studies": 261,
+    "reports_with_leaked_reasoning_tokens": 6,
+    "reports_stopped_by_token_limit": 5,
+    "format_ok_rate": 0.9890310786106032,
+    "mean_output_tokens": 46.04936014625228
+  },
+  "G1B_llm_sham_retrieval": {
+    "distinct_report_texts": 420,
+    "most_common_text_share": 0.08775137111517367,
+    "most_common_text": "FINDINGS: The heart size is normal. The mediastinal contours are normal. The lung fields are clear. No pleural effusion is seen. IMPRESSION: No acute cardiopulmonary process identified.",
+    "enlarged_cardiomediastinum_stated_without_classifier_positive_in_classifier_normal_studies": 2,
+    "classifier_normal_studies": 261,
+    "reports_with_leaked_reasoning_tokens": 0,
+    "reports_stopped_by_token_limit": 0,
+    "format_ok_rate": 0.9835466179159049,
+    "mean_output_tokens": 51.376599634369285
+  },
+  "G1_single_agent_rag": {
+    "distinct_report_texts": 97,
+    "most_common_text_share": 0.36380255941499084,
+    "most_common_text": "FINDINGS: The lungs and pleural spaces are clear. The heart size is normal. The pulmonary vascularity is normal. IMPRESSION: No acute pulmonary abnormality.",
+    "enlarged_cardiomediastinum_stated_without_classifier_positive_in_classifier_normal_studies": 0,
+    "classifier_normal_studies": 261,
+    "reports_with_leaked_reasoning_tokens": 0,
+    "reports_stopped_by_token_limit": 0,
+    "format_ok_rate": 1.0,
+    "mean_output_tokens": 49.87385740402194
+  }
+}

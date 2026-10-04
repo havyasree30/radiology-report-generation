@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "19eef23a27af528d4a68d2c1e900ceb77dc497a490812dc699bfc62fd3fff6ed",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [2, 3, 4], \"evidence_summary\": \"Retrieved reports mention pneumonia.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [], \"evidence_summary\": \"Retrieved reports do not mention cardiomegaly.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [4], \"evidence_summary\": \"Retrieved report mentions lung opacity.\", \"support_status\": \"partially_supported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"Retrieved reports do not mention lung lesion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"Retrieved reports do not mention edema.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"Retrieved reports do not mention consolidation.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [], \"evidence_summary\": \"Retrieved reports do not mention pneumonia.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [], \"evidence_summary\": \"Retrieved reports do not mention atelectasis.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"Retrieved reports do not mention pneumothorax.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [], \"evidence_summary\": \"Retrieved reports do not mention pleural effusion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"Retrieved reports do not mention pleural other.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"Retrieved reports do not mention fracture.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"Retrieved reports do not mention support devices.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [4], \"evidence_summary\": \"Retrieved report mentions lung opacity. This is not a classifier positive finding. It is a candidate finding. The opacity is described as mild streaky perihilar opacity without confluent airspace opacity to suggest a bacterial pneumonia. The candidate is only a candidate, never a conclusion. Use [] if there is none. No candidate found.\"}\n  ],\n  \"normal_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 731,
+ "output_tokens": 692,
+ "total_duration_ns": 17471165400,
+ "load_duration_ns": 12572000,
+ "attempts": 1,
+ "wall_seconds": 19.51,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:58:52+00:00",
+ "agent": "agent1_evidence_verifier"
+}

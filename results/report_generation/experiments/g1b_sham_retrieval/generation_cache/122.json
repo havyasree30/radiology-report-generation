@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "d355dc579b2d5c72c73b2609e9b51e9c88e23cb4c886c967f0e7a41b65c80512",
+ "text": "FINDINGS:\nThe lungs are clear bilaterally. The cardiomediastinal silhouette is unremarkable. No pleural effusion or pneumothorax is identified.\nIMPRESSION:\nNo acute cardiopulmonary abnormality.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1134,
+ "output_tokens": 53,
+ "total_duration_ns": 1916222500,
+ "load_duration_ns": 2072000,
+ "attempts": 1,
+ "wall_seconds": 3.95,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:13:18+00:00"
+}

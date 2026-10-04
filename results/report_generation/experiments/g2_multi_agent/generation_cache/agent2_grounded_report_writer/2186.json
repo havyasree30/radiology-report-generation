@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "d5d73a966e194915201d5f953479d15e29ac03d7435a2f2c05a6ec81b3a5a219",
+ "text": "{\n\"findings\": \"Lung opacity and atelectasis are present. Fracture is possible.\",\n\"impression\": \"Pneumonia is possible.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1297,
+ "output_tokens": 33,
+ "total_duration_ns": 1603730400,
+ "load_duration_ns": 8597100,
+ "attempts": 1,
+ "wall_seconds": 3.65,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:22:31+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

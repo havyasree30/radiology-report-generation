@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "a93c9ce27dbafa3aff0d75b52a5c06894c75e42e3ad80dc58a013a5bce832b44",
+ "text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Enlarged Cardiomediastinum is possible.\",\n\"impression\": \"Fracture is possible.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 981,
+ "output_tokens": 53,
+ "total_duration_ns": 2035860500,
+ "load_duration_ns": 6191400,
+ "attempts": 1,
+ "wall_seconds": 4.07,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 700,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T17:15:59+00:00",
+ "agent": "agent3_grounding_critic"
+}

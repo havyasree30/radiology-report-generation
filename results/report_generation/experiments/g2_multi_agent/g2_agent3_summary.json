@@ -1,0 +1,39 @@
+{
+  "n_studies": 547,
+  "actions": {
+    "revise": 239,
+    "approve": 308
+  },
+  "approved_unchanged_pct": 56.307129798903105,
+  "modified_pct": 43.692870201096895,
+  "n_modified": 239,
+  "issue_counts": {
+    "no_finding_contradiction": 322,
+    "excessive_certainty": 15,
+    "unsupported_finding_stated": 222,
+    "missed_strongly_supported_finding": 12,
+    "abnormal_to_normal_collapse": 21,
+    "invented_measurement_history_or_comparison": 12,
+    "duplication_or_repetition": 11,
+    "malformed_structure": 11
+  },
+  "flag_counts": {
+    "revise_but_identical": 308
+  },
+  "approve_model_copy_identical_to_draft_pct": 100.0,
+  "findings_removed_total_all_studies": 2,
+  "findings_added_total_all_studies": 0,
+  "clinical_subset": {
+    "findings_removed": 2,
+    "correct_removals_(not_in_reference)": 2,
+    "incorrect_removals_(in_reference)": 0,
+    "findings_added": 0,
+    "correct_additions_(in_reference)": 0,
+    "unsupported_additions_(not_in_reference)": 0,
+    "added_were_classifier_positive": 0
+  },
+  "studies_with_removed_or_added_finding": 2,
+  "modified_beyond_section_labels_n": 239,
+  "modified_beyond_section_labels_pct": 43.692870201096895,
+  "revise_actions": 239
+}

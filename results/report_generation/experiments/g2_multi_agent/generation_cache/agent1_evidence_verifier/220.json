@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "543490598bf228648bf772fd7f8d80ad5eb0fb4e44e5d2b74bbe6750c4274669",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Lung Opacity is mentioned in reports 1, 2, 3, and 4.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"Lung Lesion is not mentioned in any retrieved report.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [1, 2, 4], \"evidence_summary\": \"Consolidation is mentioned in reports 1, 2, and 4.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Pneumonia is mentioned in reports 1, 2, 3, 4, and 5.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"Edema is not mentioned in any retrieved report.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"Consolidation is not mentioned in any retrieved report.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"Pneumothorax is not mentioned in any retrieved report.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [], \"evidence_summary\": \"Pleural Effusion is not mentioned in any retrieved report.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [4], \"evidence_summary\": \"Pleural Other is mentioned in report 4.\", \"support_status\": \"partially_supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"Fracture is not mentioned in any retrieved report.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"Support Devices is not mentioned in any retrieved report.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"Lung Opacity is not mentioned in any retrieved report. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports",
+ "done_reason": "length",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1000,
+ "output_tokens": 900,
+ "total_duration_ns": 20244730300,
+ "load_duration_ns": 8258600,
+ "attempts": 1,
+ "wall_seconds": 22.28,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T14:54:10+00:00",
+ "agent": "agent1_evidence_verifier"
+}

@@ -1,0 +1,96 @@
+{
+ "uid": "1947",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Fracture",
+    "classifier_probability": 0.2302,
+    "retrieval_support_count": 5,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "evidence_summary": "Fracture is mentioned in reports 1, 2, 3, 4, and 5.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   1,
+   4,
+   5
+  ]
+ },
+ "agent1_validation_flags": [
+  "agent1_extra_or_duplicate_classifier_entry"
+ ],
+ "agent2_draft": {
+  "findings": "Fracture is mentioned in reports 1, 2, 3, 4, and 5.",
+  "impression": "Fracture",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "revise",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": false,
+  "flags": []
+ },
+ "final_report": {
+  "findings": "Fracture",
+  "impression": "Fracture",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Fracture is mentioned in reports 1, 2, 3, 4, and 5.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Enlarged Cardiomediastinum.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Cardiomegaly.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [2], \"evidence_summary\": \"Report 2 mentions opacity left base compatible atelectasis or scarring.\", \"support_status\": \"partially_supported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Lung Lesion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Edema.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Consolidation.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [2], \"evidence_summary\": \"Report 2 mentions opacity left base compatible atelectasis or scarring.\", \"support_status\": \"partially_supported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Pneumothorax.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Pleural Effusion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Pleural Other.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Fracture.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Support Devices.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [],\n  \"normal_report_ranks\": [1, 4, 5]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Fracture is mentioned in reports 1, 2, 3, 4, and 5.\",\n\"impression\": \"Fracture\"\n}",
+ "agent3_raw_text": "{\"issues_detected\": [\"unsupported_finding_stated\"], \"decision\": \"REVISE\", \"findings\": \"Fracture\", \"impression\": \"Fracture\"}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "217c1697243c457c4db26835ec4ef632706d38864f94faf57285ab5c702e6b1d",
+  "agent2_grounded_report_writer": "11046125c93a224651d9b507937899cb8b12929465e2efbdf3d4c0309669f623",
+  "agent3_grounding_critic": "3dd3551bff1d9c4a4789dc22ed54b9eae0757e96f71513a20afe6f81433ec8de"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "48b27d335638765839b37a81cfe16684ff67388a41a3659d7ed27fe7056f1253",
+  "agent2_grounded_report_writer": "e2ec19653ad39b1ae9d166e61ab336e042fa22ce7c760b3f89585aaa708c273f",
+  "agent3_grounding_critic": "ee1d354314c37bda6d33bcf2de74762703646869d7fdd4cd87055cb1fd293045"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 15.78,
+  "agent2_grounded_report_writer": 3.42,
+  "agent3_grounding_critic": 3.51
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 607,
+  "agent2_grounded_report_writer": 39,
+  "agent3_grounding_critic": 36
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 863,
+  "agent2_grounded_report_writer": 882,
+  "agent3_grounding_critic": 911
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Fracture (calibrated probability 0.23)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: Heart size and mediastinal contour are within normal limits. No focal consolidation, suspicious pulmonary opacity, large pleural effusion, or pneumothorax is identified. Again visualized is a wedge-shaped fracture of T12.\nIMPRESSION: 1. No acute cardiopulmonary abnormality. 2. Wedge-shaped fracture of T12.\n[2]\nFINDINGS: Fracture deformity proximal right humerus. Hyperinflation lungs. No pulmonary consolidation. opacity left base compatible atelectasis or scarring. The cardiomediastinal silhouette appears unremarkable. Mild atherosclerotic calcification aorta. Prior chest surgery. Costophrenic clear. Visualized spine vertebrae appear normal in and alignment.\nIMPRESSION: 1. Fracture deformity proximal right humerus. 2. No pulmonary consolidation.\n[3]\nFINDINGS: (not available)\nIMPRESSION: Heart size normal. Lungs are clear. Calcified mediastinal and hilar lymph unchanged. Old fracture deformity of approximately T6.\n[4]\nFINDINGS: The cardiomediastinal silhouette and pulmonary vasculature are within normal limits in size. The lungs are clear of focal airspace disease, pneumothorax, or pleural effusion. There is no definite evidence of acute fracture.\nIMPRESSION: No acute cardiopulmonary findings..\n[5]\nFINDINGS: (not available)\nIMPRESSION: Catheter tip mid SVC. Heart size is normal. No acute alveolar or interstitial infiltrates. The 9th posterior lateral right rib is slightly expanded and this may be the site of an old healed fracture. Otherwise no acute rib fractures seen. Bone scan may be informative\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Fracture (calibrated probability 0.23)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.2302,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Fracture is mentioned in reports 1, 2, 3, 4, and 5.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  4,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Fracture (calibrated probability 0.23)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.2302,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Fracture is mentioned in reports 1, 2, 3, 4, and 5.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  4,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Fracture is mentioned in reports 1, 2, 3, 4, and 5.\nIMPRESSION: Fracture\n\nReturn the JSON now."
+ }
+}

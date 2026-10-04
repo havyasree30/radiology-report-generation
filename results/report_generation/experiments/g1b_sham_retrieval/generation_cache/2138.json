@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "4086d0eb32b35070bdb5a20a0909169ad8bdf986e61b95f78db8fd1d1a449852",
+ "text": "FINDINGS:\nPatchy bilateral airspace disease is present. Small bilateral pleural effusions are noted. No pneumothorax is identified.\nIMPRESSION:\nSmall bilateral pleural effusions with patchy bilateral airspace disease.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1176,
+ "output_tokens": 54,
+ "total_duration_ns": 1743642600,
+ "load_duration_ns": 4253300,
+ "attempts": 1,
+ "wall_seconds": 3.78,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:30:29+00:00"
+}

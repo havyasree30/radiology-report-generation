@@ -1,0 +1,281 @@
+observation,fold,method,n_train,n_train_positive,T,a,b,n_levels,n_knots,fit_flags,pathological
+No Finding,0,raw,22923,2031,,,,,,,False
+No Finding,0,temperature,22923,2031,0.91415126734852348,,,,,,False
+No Finding,0,platt,22923,2031,,0.88186009667154808,-1.5147405062401784,,,,False
+No Finding,0,isotonic,22923,2031,,,,51,102,,False
+No Finding,1,raw,22941,2030,,,,,,,False
+No Finding,1,temperature,22941,2030,0.89357054993714546,,,,,,False
+No Finding,1,platt,22941,2030,,0.89857833620287353,-1.4760950320728741,,,,False
+No Finding,1,isotonic,22941,2030,,,,40,80,,False
+No Finding,2,raw,22940,2030,,,,,,,False
+No Finding,2,temperature,22940,2030,0.90473053585990104,,,,,,False
+No Finding,2,platt,22940,2030,,0.88505496056991528,-1.4970852167021638,,,,False
+No Finding,2,isotonic,22940,2030,,,,53,106,,False
+No Finding,3,raw,22940,2031,,,,,,,False
+No Finding,3,temperature,22940,2031,0.91828536394025639,,,,,,False
+No Finding,3,platt,22940,2031,,0.86918209997693086,-1.5070684098543627,,,,False
+No Finding,3,isotonic,22940,2031,,,,50,100,,False
+No Finding,4,raw,22940,2030,,,,,,,False
+No Finding,4,temperature,22940,2030,0.92130801932293938,,,,,,False
+No Finding,4,platt,22940,2030,,0.85551692874430763,-1.490183011659507,,,,False
+No Finding,4,isotonic,22940,2030,,,,46,92,,False
+Enlarged Cardiomediastinum,0,raw,21623,1099,,,,,,,False
+Enlarged Cardiomediastinum,0,temperature,21623,1099,0.67801278822942546,,,,,,False
+Enlarged Cardiomediastinum,0,platt,21623,1099,,0.61949988028040914,-1.8497739805464806,,,,False
+Enlarged Cardiomediastinum,0,isotonic,21623,1099,,,,33,66,,False
+Enlarged Cardiomediastinum,1,raw,21740,1099,,,,,,,False
+Enlarged Cardiomediastinum,1,temperature,21740,1099,0.68024733588355324,,,,,,False
+Enlarged Cardiomediastinum,1,platt,21740,1099,,0.61219760225536612,-1.8565316343187948,,,,False
+Enlarged Cardiomediastinum,1,isotonic,21740,1099,,,,32,64,,False
+Enlarged Cardiomediastinum,2,raw,21725,1098,,,,,,,False
+Enlarged Cardiomediastinum,2,temperature,21725,1098,0.66936384178671482,,,,,,False
+Enlarged Cardiomediastinum,2,platt,21725,1098,,0.63523081919456592,-1.8279550245109002,,,,False
+Enlarged Cardiomediastinum,2,isotonic,21725,1098,,,,33,66,,False
+Enlarged Cardiomediastinum,3,raw,21707,1097,,,,,,,False
+Enlarged Cardiomediastinum,3,temperature,21707,1097,0.67705462496843627,,,,,,False
+Enlarged Cardiomediastinum,3,platt,21707,1097,,0.61741457535514699,-1.8567385888615446,,,,False
+Enlarged Cardiomediastinum,3,isotonic,21707,1097,,,,38,76,,False
+Enlarged Cardiomediastinum,4,raw,21693,1099,,,,,,,False
+Enlarged Cardiomediastinum,4,temperature,21693,1099,0.67532693253674481,,,,,,False
+Enlarged Cardiomediastinum,4,platt,21693,1099,,0.62743860586653721,-1.8407198662543875,,,,False
+Enlarged Cardiomediastinum,4,isotonic,21693,1099,,,,36,72,,False
+Cardiomegaly,0,raw,22098,2773,,,,,,,False
+Cardiomegaly,0,temperature,22098,2773,0.97649847556086911,,,,,,False
+Cardiomegaly,0,platt,22098,2773,,0.81563199336040826,-0.8567796317959373,,,,False
+Cardiomegaly,0,isotonic,22098,2773,,,,56,112,,False
+Cardiomegaly,1,raw,22126,2770,,,,,,,False
+Cardiomegaly,1,temperature,22126,2770,0.9704827576459506,,,,,,False
+Cardiomegaly,1,platt,22126,2770,,0.82460668112036561,-0.87543595985397704,,,,False
+Cardiomegaly,1,isotonic,22126,2770,,,,60,120,,False
+Cardiomegaly,2,raw,22160,2773,,,,,,,False
+Cardiomegaly,2,temperature,22160,2773,0.97491635664273923,,,,,,False
+Cardiomegaly,2,platt,22160,2773,,0.81395277948681211,-0.88125112972835662,,,,False
+Cardiomegaly,2,isotonic,22160,2773,,,,49,98,,False
+Cardiomegaly,3,raw,22123,2772,,,,,,,False
+Cardiomegaly,3,temperature,22123,2772,0.97844428267238803,,,,,,False
+Cardiomegaly,3,platt,22123,2772,,0.81072786421405441,-0.89536393527388491,,,,False
+Cardiomegaly,3,isotonic,22123,2772,,,,58,116,,False
+Cardiomegaly,4,raw,22125,2772,,,,,,,False
+Cardiomegaly,4,temperature,22125,2772,0.98930374306489854,,,,,,False
+Cardiomegaly,4,platt,22125,2772,,0.7970604706710851,-0.87202312173901453,,,,False
+Cardiomegaly,4,isotonic,22125,2772,,,,55,110,,False
+Lung Opacity,0,raw,22368,11301,,,,,,,False
+Lung Opacity,0,temperature,22368,11301,1.1284356755996903,,,,,,False
+Lung Opacity,0,platt,22368,11301,,0.88314074165784873,0.039205930294362243,,,,False
+Lung Opacity,0,isotonic,22368,11301,,,,62,124,,False
+Lung Opacity,1,raw,22402,11302,,,,,,,False
+Lung Opacity,1,temperature,22402,11302,1.1602106639374428,,,,,,False
+Lung Opacity,1,platt,22402,11302,,0.85914328592196132,0.04458905041276999,,,,False
+Lung Opacity,1,isotonic,22402,11302,,,,50,100,,False
+Lung Opacity,2,raw,22386,11301,,,,,,,False
+Lung Opacity,2,temperature,22386,11301,1.1661327145193405,,,,,,False
+Lung Opacity,2,platt,22386,11301,,0.85470801352652992,0.044926333445195185,,,,False
+Lung Opacity,2,isotonic,22386,11301,,,,53,106,,False
+Lung Opacity,3,raw,22402,11302,,,,,,,False
+Lung Opacity,3,temperature,22402,11302,1.1532919519050866,,,,,,False
+Lung Opacity,3,platt,22402,11302,,0.86417700978527501,0.046185120890472428,,,,False
+Lung Opacity,3,isotonic,22402,11302,,,,55,110,,False
+Lung Opacity,4,raw,22434,11302,,,,,,,False
+Lung Opacity,4,temperature,22434,11302,1.1825974742228598,,,,,,False
+Lung Opacity,4,platt,22434,11302,,0.84314547854008814,0.039263678168700446,,,,False
+Lung Opacity,4,isotonic,22434,11302,,,,53,106,,False
+Lung Lesion,0,raw,22790,852,,,,,,,False
+Lung Lesion,0,temperature,22790,852,0.85359140254212662,,,,,,False
+Lung Lesion,0,platt,22790,852,,0.54741436597809678,-1.9880424307159312,,,,False
+Lung Lesion,0,isotonic,22790,852,,,,32,64,,False
+Lung Lesion,1,raw,22804,851,,,,,,,False
+Lung Lesion,1,temperature,22804,851,0.84850209814900812,,,,,,False
+Lung Lesion,1,platt,22804,851,,0.56498391110712143,-1.978476206093279,,,,False
+Lung Lesion,1,isotonic,22804,851,,,,37,74,,False
+Lung Lesion,2,raw,22805,851,,,,,,,False
+Lung Lesion,2,temperature,22805,851,0.85799189458371949,,,,,,False
+Lung Lesion,2,platt,22805,851,,0.5478297705480043,-2.0143414405169944,,,,False
+Lung Lesion,2,isotonic,22805,851,,,,30,60,,False
+Lung Lesion,3,raw,22810,851,,,,,,,False
+Lung Lesion,3,temperature,22810,851,0.8529548565556655,,,,,,False
+Lung Lesion,3,platt,22810,851,,0.5595259833230436,-1.9884017094892152,,,,False
+Lung Lesion,3,isotonic,22810,851,,,,30,60,,False
+Lung Lesion,4,raw,22799,851,,,,,,,False
+Lung Lesion,4,temperature,22799,851,0.85863217094484168,,,,,,False
+Lung Lesion,4,platt,22799,851,,0.53767221171952684,-2.0230564629832628,,,,False
+Lung Lesion,4,isotonic,22799,851,,,,25,50,,False
+Edema,0,raw,21502,5941,,,,,,,False
+Edema,0,temperature,21502,5941,1.1739008775667295,,,,,,False
+Edema,0,platt,21502,5941,,0.80545726069521195,-0.23700383772235611,,,,False
+Edema,0,isotonic,21502,5941,,,,64,128,,False
+Edema,1,raw,21495,5941,,,,,,,False
+Edema,1,temperature,21495,5941,1.1392538920241637,,,,,,False
+Edema,1,platt,21495,5941,,0.8314687699766945,-0.24613058329938028,,,,False
+Edema,1,isotonic,21495,5941,,,,65,130,,False
+Edema,2,raw,21515,5941,,,,,,,False
+Edema,2,temperature,21515,5941,1.1728626940553502,,,,,,False
+Edema,2,platt,21515,5941,,0.80590752179399705,-0.24108146022746349,,,,False
+Edema,2,isotonic,21515,5941,,,,60,120,,False
+Edema,3,raw,21492,5940,,,,,,,False
+Edema,3,temperature,21492,5940,1.1835273882012609,,,,,,False
+Edema,3,platt,21492,5940,,0.79599149402964109,-0.25638163473923575,,,,False
+Edema,3,isotonic,21492,5940,,,,58,116,,False
+Edema,4,raw,21496,5941,,,,,,,False
+Edema,4,temperature,21496,5941,1.1768912238210685,,,,,,False
+Edema,4,platt,21496,5941,,0.80081811653946688,-0.25367433575067572,,,,False
+Edema,4,isotonic,21496,5941,,,,64,128,,False
+Consolidation,0,raw,19997,1567,,,,,,,False
+Consolidation,0,temperature,19997,1567,0.72268633946322636,,,,,,False
+Consolidation,0,platt,19997,1567,,0.70452717849256929,-1.4313745216730023,,,,False
+Consolidation,0,isotonic,19997,1567,,,,45,89,,False
+Consolidation,1,raw,19974,1568,,,,,,,False
+Consolidation,1,temperature,19974,1568,0.7318981588142851,,,,,,False
+Consolidation,1,platt,19974,1568,,0.68431420367370632,-1.455475121717926,,,,False
+Consolidation,1,isotonic,19974,1568,,,,42,83,,False
+Consolidation,2,raw,19968,1568,,,,,,,False
+Consolidation,2,temperature,19968,1568,0.72451921651056195,,,,,,False
+Consolidation,2,platt,19968,1568,,0.70765950143732359,-1.4267277625124626,,,,False
+Consolidation,2,isotonic,19968,1568,,,,38,76,,False
+Consolidation,3,raw,20018,1568,,,,,,,False
+Consolidation,3,temperature,20018,1568,0.71876446279757622,,,,,,False
+Consolidation,3,platt,20018,1568,,0.71981419306398775,-1.4106819017829617,,,,False
+Consolidation,3,isotonic,20018,1568,,,,41,81,,False
+Consolidation,4,raw,20035,1569,,,,,,,False
+Consolidation,4,temperature,20035,1569,0.72273252743808525,,,,,,False
+Consolidation,4,platt,20035,1569,,0.70151473161378752,-1.4437765719471845,,,,False
+Consolidation,4,isotonic,20035,1569,,,,35,69,,False
+Pneumonia,0,raw,20999,573,,,,,,,False
+Pneumonia,0,temperature,20999,573,0.74438175797318451,,,,,,False
+Pneumonia,0,platt,20999,573,,0.62412636230331597,-2.0406215041538367,,,,False
+Pneumonia,0,isotonic,20999,573,,,,30,60,,False
+Pneumonia,1,raw,20978,572,,,,,,,False
+Pneumonia,1,temperature,20978,572,0.74505459116666961,,,,,,False
+Pneumonia,1,platt,20978,572,,0.63089833807857765,-2.029616116429978,,,,False
+Pneumonia,1,isotonic,20978,572,,,,30,60,,False
+Pneumonia,2,raw,21002,570,,,,,,,False
+Pneumonia,2,temperature,21002,570,0.7434627689586053,,,,,,False
+Pneumonia,2,platt,21002,570,,0.61975488078965135,-2.0470472189690683,,,,False
+Pneumonia,2,isotonic,21002,570,,,,26,52,,False
+Pneumonia,3,raw,20989,572,,,,,,,False
+Pneumonia,3,temperature,20989,572,0.75171527276195083,,,,,,False
+Pneumonia,3,platt,20989,572,,0.611665234118415,-2.0494418511709194,,,,False
+Pneumonia,3,isotonic,20989,572,,,,27,54,,False
+Pneumonia,4,raw,21000,573,,,,,,,False
+Pneumonia,4,temperature,21000,573,0.74361768494950642,,,,,,False
+Pneumonia,4,platt,21000,573,,0.62775785763761716,-2.0289674690604849,,,,False
+Pneumonia,4,isotonic,21000,573,,,,24,48,,False
+Atelectasis,0,raw,19316,3570,,,,,,,False
+Atelectasis,0,temperature,19316,3570,0.78536494848199856,,,,,,False
+Atelectasis,0,platt,19316,3570,,0.81997661735534877,-0.81439626510585617,,,,False
+Atelectasis,0,isotonic,19316,3570,,,,53,105,,False
+Atelectasis,1,raw,19276,3569,,,,,,,False
+Atelectasis,1,temperature,19276,3569,0.78496749928046394,,,,,,False
+Atelectasis,1,platt,19276,3569,,0.81426607134122753,-0.82178831163059185,,,,False
+Atelectasis,1,isotonic,19276,3569,,,,47,94,,False
+Atelectasis,2,raw,19265,3569,,,,,,,False
+Atelectasis,2,temperature,19265,3569,0.80053031593442614,,,,,,False
+Atelectasis,2,platt,19265,3569,,0.79272018527570343,-0.83035511181245558,,,,False
+Atelectasis,2,isotonic,19265,3569,,,,44,87,,False
+Atelectasis,3,raw,19276,3570,,,,,,,False
+Atelectasis,3,temperature,19276,3570,0.80086433526714962,,,,,,False
+Atelectasis,3,platt,19276,3570,,0.79472945979196397,-0.83049791315155552,,,,False
+Atelectasis,3,isotonic,19276,3570,,,,48,95,,False
+Atelectasis,4,raw,19327,3570,,,,,,,False
+Atelectasis,4,temperature,19327,3570,0.7955600887538159,,,,,,False
+Atelectasis,4,platt,19327,3570,,0.79600751087234933,-0.83582235362415613,,,,False
+Atelectasis,4,isotonic,19327,3570,,,,46,92,,False
+Pneumothorax,0,raw,22595,2105,,,,,,,False
+Pneumothorax,0,temperature,22595,2105,0.98900459158293896,,,,,,False
+Pneumothorax,0,platt,22595,2105,,0.73247210829985399,-1.4208165189403981,,,,False
+Pneumothorax,0,isotonic,22595,2105,,,,57,114,,False
+Pneumothorax,1,raw,22598,2106,,,,,,,False
+Pneumothorax,1,temperature,22598,2106,0.96575601537588196,,,,,,False
+Pneumothorax,1,platt,22598,2106,,0.76217443472755209,-1.4140795397829233,,,,False
+Pneumothorax,1,isotonic,22598,2106,,,,61,120,,False
+Pneumothorax,2,raw,22606,2106,,,,,,,False
+Pneumothorax,2,temperature,22606,2106,0.99008919636428583,,,,,,False
+Pneumothorax,2,platt,22606,2106,,0.73576895034887013,-1.428640887137359,,,,False
+Pneumothorax,2,isotonic,22606,2106,,,,54,106,,False
+Pneumothorax,3,raw,22621,2105,,,,,,,False
+Pneumothorax,3,temperature,22621,2105,0.98090175487193421,,,,,,False
+Pneumothorax,3,platt,22621,2105,,0.73886035135529315,-1.4095571566702108,,,,False
+Pneumothorax,3,isotonic,22621,2105,,,,53,104,,False
+Pneumothorax,4,raw,22632,2106,,,,,,,False
+Pneumothorax,4,temperature,22632,2106,0.97964840265948283,,,,,,False
+Pneumothorax,4,platt,22632,2106,,0.74564430914899893,-1.4281638590722325,,,,False
+Pneumothorax,4,isotonic,22632,2106,,,,54,108,,False
+Pleural Effusion,0,raw,21738,9234,,,,,,,False
+Pleural Effusion,0,temperature,21738,9234,1.1290381304038084,,,,,,False
+Pleural Effusion,0,platt,21738,9234,,0.88384073620997872,-0.10953106722161686,,,,False
+Pleural Effusion,0,isotonic,21738,9234,,,,55,110,,False
+Pleural Effusion,1,raw,21755,9235,,,,,,,False
+Pleural Effusion,1,temperature,21755,9235,1.1377983754507266,,,,,,False
+Pleural Effusion,1,platt,21755,9235,,0.87655395235495637,-0.10305580771311212,,,,False
+Pleural Effusion,1,isotonic,21755,9235,,,,70,140,,False
+Pleural Effusion,2,raw,21779,9234,,,,,,,False
+Pleural Effusion,2,temperature,21779,9234,1.1230858266506145,,,,,,False
+Pleural Effusion,2,platt,21779,9234,,0.88804081615686636,-0.090583850534981483,,,,False
+Pleural Effusion,2,isotonic,21779,9234,,,,58,116,,False
+Pleural Effusion,3,raw,21776,9235,,,,,,,False
+Pleural Effusion,3,temperature,21776,9235,1.117134411146766,,,,,,False
+Pleural Effusion,3,platt,21776,9235,,0.8931513403914223,-0.10398451047736006,,,,False
+Pleural Effusion,3,isotonic,21776,9235,,,,63,126,,False
+Pleural Effusion,4,raw,21788,9234,,,,,,,False
+Pleural Effusion,4,temperature,21788,9234,1.1180367441481338,,,,,,False
+Pleural Effusion,4,platt,21788,9234,,0.89254396997005769,-0.11325552352759514,,,,False
+Pleural Effusion,4,isotonic,21788,9234,,,,71,142,,False
+Pleural Other,0,raw,22705,305,,,,,,,False
+Pleural Other,0,temperature,22705,305,0.98650659004261809,,,,,,False
+Pleural Other,0,platt,22705,305,,0.47594306791390817,-2.2457407902195756,,,,False
+Pleural Other,0,isotonic,22705,305,,,,21,42,,False
+Pleural Other,1,raw,22726,305,,,,,,,False
+Pleural Other,1,temperature,22726,305,0.98938602940649378,,,,,,False
+Pleural Other,1,platt,22726,305,,0.47715619620028943,-2.2378017783551414,,,,False
+Pleural Other,1,isotonic,22726,305,,,,23,46,,False
+Pleural Other,2,raw,22730,305,,,,,,,False
+Pleural Other,2,temperature,22730,305,0.97222478551778624,,,,,,False
+Pleural Other,2,platt,22730,305,,0.50493623609279159,-2.1507504304904765,,,,False
+Pleural Other,2,isotonic,22730,305,,,,25,50,,False
+Pleural Other,3,raw,22719,304,,,,,,,False
+Pleural Other,3,temperature,22719,304,0.99845993313111392,,,,,,False
+Pleural Other,3,platt,22719,304,,0.46409010962923236,-2.2727874296368209,,,,False
+Pleural Other,3,isotonic,22719,304,,,,28,56,,False
+Pleural Other,4,raw,22720,305,,,,,,,False
+Pleural Other,4,temperature,22720,305,0.98744953532334079,,,,,,False
+Pleural Other,4,platt,22720,305,,0.47198186186381841,-2.2528803390075165,,,,False
+Pleural Other,4,isotonic,22720,305,,,,19,38,,False
+Fracture,0,raw,22859,874,,,,,,,False
+Fracture,0,temperature,22859,874,0.98956863595150102,,,,,,False
+Fracture,0,platt,22859,874,,0.59931682493732263,-1.4151666680618316,,,,False
+Fracture,0,isotonic,22859,874,,,,38,76,,False
+Fracture,1,raw,22871,874,,,,,,,False
+Fracture,1,temperature,22871,874,0.97882162599580658,,,,,,False
+Fracture,1,platt,22871,874,,0.62431336297918627,-1.3607578293744917,,,,False
+Fracture,1,isotonic,22871,874,,,,35,70,,False
+Fracture,2,raw,22872,874,,,,,,,False
+Fracture,2,temperature,22872,874,0.9842859415542059,,,,,,False
+Fracture,2,platt,22872,874,,0.6100523939413155,-1.3992595839433211,,,,False
+Fracture,2,isotonic,22872,874,,,,40,80,,False
+Fracture,3,raw,22873,874,,,,,,,False
+Fracture,3,temperature,22873,874,0.99050538718870051,,,,,,False
+Fracture,3,platt,22873,874,,0.60151477317621893,-1.4045982011366358,,,,False
+Fracture,3,isotonic,22873,874,,,,39,78,,False
+Fracture,4,raw,22885,872,,,,,,,False
+Fracture,4,temperature,22885,872,0.98171687187466516,,,,,,False
+Fracture,4,platt,22885,872,,0.61787574260382871,-1.3746380141505994,,,,False
+Fracture,4,isotonic,22885,872,,,,37,74,,False
+Support Devices,0,raw,22821,12803,,,,,,,False
+Support Devices,0,temperature,22821,12803,1.0278182652783174,,,,,,False
+Support Devices,0,platt,22821,12803,,0.98514391644501154,0.4140189213187887,,,,False
+Support Devices,0,isotonic,22821,12803,,,,64,127,,False
+Support Devices,1,raw,22835,12803,,,,,,,False
+Support Devices,1,temperature,22835,12803,1.0048017446240258,,,,,,False
+Support Devices,1,platt,22835,12803,,1.0013599994607731,0.38979432859752011,,,,False
+Support Devices,1,isotonic,22835,12803,,,,74,148,,False
+Support Devices,2,raw,22837,12801,,,,,,,False
+Support Devices,2,temperature,22837,12801,1.0315359762654077,,,,,,False
+Support Devices,2,platt,22837,12801,,0.97706300964460868,0.39047024333884156,,,,False
+Support Devices,2,isotonic,22837,12801,,,,67,134,,False
+Support Devices,3,raw,22840,12803,,,,,,,False
+Support Devices,3,temperature,22840,12803,1.0052536062959398,,,,,,False
+Support Devices,3,platt,22840,12803,,1.0028471546534461,0.3961502833178433,,,,False
+Support Devices,3,isotonic,22840,12803,,,,66,132,,False
+Support Devices,4,raw,22839,12802,,,,,,,False
+Support Devices,4,temperature,22839,12802,1.027215705810453,,,,,,False
+Support Devices,4,platt,22839,12802,,0.9781707076112155,0.37497520947452967,,,,False
+Support Devices,4,isotonic,22839,12802,,,,64,127,,False

@@ -1,0 +1,31 @@
+{
+  "validation_studies": 578,
+  "with_usable_truth_eval_set": 403,
+  "with_frontal_image_and_classifier_output": 551,
+  "eligible_and_classified": 382,
+  "primary_paired_set_non_empty_classifier_query": 358,
+  "eligible_but_empty_classifier_query": 24,
+  "exact_match_possible_in_primary": 351,
+  "primary_queries_with_exact_duplicate_report_text_in_corpus": 100,
+  "bootstrap": {
+    "n": 1000,
+    "seed": 42,
+    "unit": "query (study)"
+  },
+  "primary_truth_class_frequency": {
+    "No Finding": 187,
+    "Enlarged Cardiomediastinum": 0,
+    "Cardiomegaly": 46,
+    "Lung Opacity": 77,
+    "Lung Lesion": 21,
+    "Edema": 5,
+    "Consolidation": 4,
+    "Pneumonia": 10,
+    "Atelectasis": 40,
+    "Pneumothorax": 4,
+    "Pleural Effusion": 13,
+    "Pleural Other": 5,
+    "Fracture": 8,
+    "Support Devices": 33
+  }
+}

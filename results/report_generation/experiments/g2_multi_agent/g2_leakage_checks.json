@@ -1,0 +1,15 @@
+{
+  "n_studies": 547,
+  "agent2_message_shares_6gram_with_retrieved_text": 0,
+  "agent3_message_shares_6gram_with_retrieved_text": 0,
+  "agent1_message_reference_sentences_outside_retrieved_text": 0,
+  "agent2_message_reference_sentences": 0,
+  "agent3_message_reference_sentences": 0,
+  "messages_rebuilt_identically": 1592,
+  "messages_checked": 1592,
+  "agent1_hash_equals_case_file": 498,
+  "retrieved_study_ids_in_messages": 0,
+  "reference_report_in_any_case_or_agent_output_input_field": 0,
+  "all_stored_hashes_match_recomputed": true,
+  "pass": true
+}

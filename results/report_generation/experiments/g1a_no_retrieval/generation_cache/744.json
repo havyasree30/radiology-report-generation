@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "068eb4f9cfc519ca52946ecddb026fa676ec74d473f4e05fae23913d9654ee64",
+ "text": "FINDINGS:\nA small pneumothorax is present. A support device is visualized.\nIMPRESSION:\nPneumothorax and support device are present.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 520,
+ "output_tokens": 44,
+ "total_duration_ns": 1321492900,
+ "load_duration_ns": 6006400,
+ "attempts": 1,
+ "wall_seconds": 3.37,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:21:03+00:00"
+}

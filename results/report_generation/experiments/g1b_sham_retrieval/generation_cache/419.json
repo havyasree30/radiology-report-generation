@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "51538a2defb6000315fce07c407bdaab43dfe7441dbd4707a38b0e855c2ff1bd",
+ "text": "FINDINGS:\nThe heart size and pulmonary vascularity appear within normal limits. The lungs are free of focal airspace disease. No pleural effusion or pneumothorax is seen.\nIMPRESSION:\nNo evidence of active disease.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1105,
+ "output_tokens": 48,
+ "total_duration_ns": 1546630700,
+ "load_duration_ns": 3657700,
+ "attempts": 1,
+ "wall_seconds": 3.59,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:16:13+00:00"
+}

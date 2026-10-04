@@ -1,0 +1,32 @@
+{
+  "split": "test",
+  "n_images": 28706,
+  "policy": "f1_optimal_plus_no_finding_consistency",
+  "macro_over_14_classes_primary": {
+    "macro_precision": 0.39921637404839555,
+    "macro_recall": 0.5352044079014869,
+    "macro_specificity": 0.8373820866406031,
+    "macro_f1": 0.45002514942341426,
+    "macro_balanced_accuracy": 0.6862932472710451
+  },
+  "macro_over_13_non_no_finding_classes": {
+    "macro_precision": 0.39214119222372756,
+    "macro_recall": 0.538216483060829,
+    "macro_specificity": 0.828693309780721,
+    "macro_f1": 0.44667257223285467,
+    "macro_balanced_accuracy": 0.6834548964207751
+  },
+  "micro_pooled_over_14_classes_secondary": {
+    "micro_precision": 0.5593150073346514,
+    "micro_recall": 0.759724508360045,
+    "micro_f1": 0.6442950554698407
+  },
+  "n_classes_defined": {
+    "precision": 14,
+    "recall": 14,
+    "specificity": 14,
+    "f1": 14,
+    "balanced_accuracy": 14
+  },
+  "images_with_no_predicted_positive": 482
+}

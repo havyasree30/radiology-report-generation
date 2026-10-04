@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "1e350a416edb0c175c52451f760c9733a13caff0ca152c1cb18b9204a2f435bf",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 3, 4], \"evidence_summary\": \"Reports 1, 3, and 4 mention pneumonia.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 3], \"evidence_summary\": \"Reports 1, 2, and 3 mention atelectasis.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3], \"evidence_summary\": \"Reports 1, 2, and 3 mention lung opacity.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 3], \"evidence_summary\": \"Reports 1 and 3 mention pleural effusion.\"}\n  ],\n  \"normal_report_ranks\": [\n    5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 805,
+ "output_tokens": 246,
+ "total_duration_ns": 6371009200,
+ "load_duration_ns": 7135600,
+ "attempts": 1,
+ "wall_seconds": 8.43,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T17:08:46+00:00",
+ "agent": "agent1_evidence_verifier"
+}

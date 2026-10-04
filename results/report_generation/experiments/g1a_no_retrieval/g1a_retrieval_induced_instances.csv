@@ -1,0 +1,443 @@
+uid,anon_id,finding,direction,n_retrieved_reports_containing_finding,in_reference,classifier_positive
+20,case_4a7e5f5a46,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+23,case_b1fb14530e,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+33,case_db706fc12f,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+54,case_9e752cc6dc,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+66,case_32a5e2d0d9,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+72,case_8b416cb366,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+73,case_aced45e641,Pleural Effusion,"added_by_retrieval_context (in G1, not in G1A)",3,True,True
+78,case_f6871593cb,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",4,True,True
+78,case_f6871593cb,Pleural Effusion,"removed_by_retrieval_context (in G1A, not in G1)",1,False,True
+80,case_ec693745dc,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+113,case_ba82165f8f,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+117,case_4722d7d0ac,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+144,case_8dd3772c8f,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+144,case_8dd3772c8f,Cardiomegaly,"added_by_retrieval_context (in G1, not in G1A)",5,False,False
+152,case_c9e2d1042b,Cardiomegaly,"added_by_retrieval_context (in G1, not in G1A)",2,True,False
+152,case_c9e2d1042b,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+152,case_c9e2d1042b,Lung Lesion,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+152,case_c9e2d1042b,Pneumonia,"added_by_retrieval_context (in G1, not in G1A)",0,False,False
+188,case_50e4293b74,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",2,True,False
+188,case_50e4293b74,Pleural Effusion,"removed_by_retrieval_context (in G1A, not in G1)",2,True,True
+189,case_c7bae88f78,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+210,case_822aa4bc65,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+218,case_06269fd849,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+220,case_da857ce1e5,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,False,True
+220,case_da857ce1e5,Pneumonia,"added_by_retrieval_context (in G1, not in G1A)",1,False,True
+222,case_e4c1ac5c5f,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+229,case_a8b3b1bfc3,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+249,case_e9a3149fcc,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,False,True
+249,case_e9a3149fcc,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+266,case_b72dbf6387,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+266,case_b72dbf6387,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+266,case_b72dbf6387,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",2,False,False
+266,case_b72dbf6387,Support Devices,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+297,case_d37abed5bb,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+298,case_5c5596e447,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+310,case_161c5f46d0,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+317,case_c0bb405ef9,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+325,case_a732dc61e5,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+332,case_5ba30aa31d,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+335,case_2500d82e89,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+335,case_2500d82e89,Support Devices,"removed_by_retrieval_context (in G1A, not in G1)",5,True,True
+338,case_2c8e8811d5,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+368,case_7d12ec6d3f,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+373,case_4eb99eddc8,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+382,case_29bb897ee9,Pleural Effusion,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+392,case_5235ba3a4d,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+392,case_5235ba3a4d,Support Devices,"removed_by_retrieval_context (in G1A, not in G1)",5,True,True
+406,case_c637497cf6,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+407,case_6fe716a062,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+407,case_6fe716a062,Support Devices,"removed_by_retrieval_context (in G1A, not in G1)",5,False,True
+419,case_c3c924f29c,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+427,case_e98a735ecf,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+436,case_d81f4005d4,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,False,True
+436,case_d81f4005d4,Consolidation,"removed_by_retrieval_context (in G1A, not in G1)",1,False,True
+436,case_d81f4005d4,Pneumonia,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+436,case_d81f4005d4,Pleural Effusion,"added_by_retrieval_context (in G1, not in G1A)",2,False,True
+438,case_f4edb18323,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+450,case_7b1ea020e6,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+481,case_53ae4581c9,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+483,case_c2e9f67c8d,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",5,False,True
+499,case_2bfb6941d0,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+504,case_4097780022,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",4,True,True
+504,case_4097780022,Consolidation,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+505,case_956de92d44,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,False,True
+505,case_956de92d44,Pleural Effusion,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+508,case_248e80fcdb,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+514,case_24c87a19bf,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+522,case_4c43d9be65,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+569,case_9d07911f58,Pneumonia,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+573,case_d400069bfb,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+579,case_9426363908,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+582,case_96d420b0f4,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+584,case_342fe8c50f,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+586,case_7dab9325df,Consolidation,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+601,case_54ad53f588,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,True,True
+601,case_54ad53f588,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",2,False,False
+608,case_eea3c40b28,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,True,True
+618,case_d4ad2c6670,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+661,case_6e8f9acf59,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+661,case_6e8f9acf59,Pleural Effusion,"added_by_retrieval_context (in G1, not in G1A)",3,False,True
+672,case_5e32086e6d,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",4,False,True
+672,case_5e32086e6d,Consolidation,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+683,case_2cbd7063b7,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+688,case_b7f222914f,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,True,True
+688,case_b7f222914f,Pneumonia,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+689,case_4d4d8f4499,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+691,case_3aa84a2686,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+709,case_763c1e7ad2,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,True,True
+725,case_9f4c3aad9c,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+731,case_8037f4280a,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+739,case_ed1ca99fe3,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+744,case_7f9060b8d4,Support Devices,"removed_by_retrieval_context (in G1A, not in G1)",1,False,True
+756,case_a98355cf80,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+758,case_338ef55f9e,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+760,case_62e54d18cb,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,True,True
+760,case_62e54d18cb,Pneumonia,"added_by_retrieval_context (in G1, not in G1A)",2,False,True
+766,case_111a34c18c,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+793,case_d4ea76bdad,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+808,case_cc2056e015,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,True,True
+808,case_cc2056e015,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",3,True,True
+841,case_fc61e4ff1d,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+844,case_d20599938c,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+847,case_a8e7c940f8,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",4,False,True
+847,case_a8e7c940f8,Consolidation,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+867,case_698f59f788,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+882,case_92c1823bf2,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+906,case_ca154be23d,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+912,case_896a6d7b06,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+929,case_bb5b7296da,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",1,True,False
+929,case_bb5b7296da,Fracture,"added_by_retrieval_context (in G1, not in G1A)",3,False,True
+937,case_6fdb66e944,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+940,case_5cc8d6af1e,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+955,case_79e12cd9f0,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,False,True
+955,case_79e12cd9f0,Consolidation,"removed_by_retrieval_context (in G1A, not in G1)",1,False,True
+959,case_a2a73f36f6,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+961,case_77386a710d,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+962,case_fb7302fc56,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+972,case_8b1a07d051,Cardiomegaly,"added_by_retrieval_context (in G1, not in G1A)",4,False,False
+972,case_8b1a07d051,Lung Lesion,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+972,case_8b1a07d051,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",1,True,False
+980,case_618a0b828e,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+981,case_09a58672d3,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+981,case_09a58672d3,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+981,case_09a58672d3,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",2,False,False
+981,case_09a58672d3,Support Devices,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+984,case_98e3fbb7ed,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1014,case_d3a72aebe4,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1049,case_925b078a07,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1049,case_925b078a07,Support Devices,"removed_by_retrieval_context (in G1A, not in G1)",5,False,True
+1055,case_74e651118f,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1064,case_1646ddce4e,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",4,True,True
+1079,case_b181d2175d,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",5,True,True
+1085,case_d60d6a05f0,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1125,case_7444cbd91b,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+1159,case_3e898a83d8,Support Devices,"removed_by_retrieval_context (in G1A, not in G1)",5,False,True
+1162,case_9c3aa44a15,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1191,case_0b0a6f9d3e,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1214,case_4da776b0b3,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,False,True
+1214,case_4da776b0b3,Pneumonia,"added_by_retrieval_context (in G1, not in G1A)",1,False,True
+1226,case_1d0fe42f3f,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1239,case_acc020f4be,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1260,case_32486fc223,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1263,case_9889242581,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1277,case_ad6d56363e,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+1285,case_5ee919e3c0,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+1285,case_5ee919e3c0,Pleural Effusion,"added_by_retrieval_context (in G1, not in G1A)",3,False,True
+1288,case_cf648ba648,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",5,False,True
+1334,case_2b14cbc980,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+1361,case_521cb8114d,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1365,case_2b12dc11a3,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1380,case_ef84739e89,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1394,case_411b4ceabc,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+1394,case_411b4ceabc,Pneumonia,"added_by_retrieval_context (in G1, not in G1A)",1,False,True
+1397,case_9ca4ffb49c,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1422,case_bfbc740d54,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,True,True
+1422,case_bfbc740d54,Pneumonia,"added_by_retrieval_context (in G1, not in G1A)",1,True,True
+1431,case_b089465213,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1435,case_c055bbf76a,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1451,case_36df25a391,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",1,True,False
+1451,case_36df25a391,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+1456,case_e09f173599,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+1466,case_b0f6645bad,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1518,case_0f269b8d14,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+1518,case_0f269b8d14,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+1518,case_0f269b8d14,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",2,False,False
+1518,case_0f269b8d14,Support Devices,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+1529,case_6f78b35feb,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",5,False,True
+1537,case_d940e9c3d1,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1545,case_c1916cd558,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+1556,case_703cc74881,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",4,True,True
+1567,case_d21565dc63,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1581,case_65d6c809ca,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1582,case_1e79ee7be8,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1595,case_0a5d88f79d,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+1616,case_426b7f89b5,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1622,case_00cbce6a8e,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1623,case_16e004b21c,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1631,case_c9ede8ccc2,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1647,case_6101e0516d,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+1655,case_613dbbd8b3,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1661,case_b17806400e,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+1672,case_dfe16e6b3e,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1707,case_b6813125e4,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1735,case_934e0b4dbc,Fracture,"added_by_retrieval_context (in G1, not in G1A)",4,False,True
+1748,case_d55f2ae2c0,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1751,case_149b7bec29,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1819,case_179e5ffb9e,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+1819,case_179e5ffb9e,Edema,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+1826,case_79ab7b86bc,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1832,case_a5e12f0c90,Edema,"added_by_retrieval_context (in G1, not in G1A)",3,False,True
+1833,case_8482b208f5,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1837,case_6542718443,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1882,case_051ede7305,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1914,case_b1b36e8785,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1918,case_39b28bf5e8,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+1918,case_39b28bf5e8,Cardiomegaly,"added_by_retrieval_context (in G1, not in G1A)",5,False,False
+1937,case_21eaed993d,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1939,case_e61b157d57,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1947,case_92d1a34b60,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+1948,case_2c4a989054,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1960,case_ff981c0f47,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1976,case_a2d925f974,Consolidation,"added_by_retrieval_context (in G1, not in G1A)",1,False,True
+1976,case_a2d925f974,Pneumonia,"removed_by_retrieval_context (in G1A, not in G1)",1,False,True
+1980,case_17054cc4fb,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+1988,case_2986a2aacb,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,True,True
+1988,case_2986a2aacb,Pneumonia,"added_by_retrieval_context (in G1, not in G1A)",1,False,True
+2006,case_16e85c539c,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+2026,case_818a7822a2,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2038,case_4f0c24d611,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2062,case_f91bcff41a,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,True,True
+2062,case_f91bcff41a,Consolidation,"added_by_retrieval_context (in G1, not in G1A)",1,False,True
+2066,case_fd09360e4e,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+2066,case_fd09360e4e,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",1,True,False
+2066,case_fd09360e4e,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",2,True,False
+2066,case_fd09360e4e,Support Devices,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+2069,case_b082bc9daf,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2074,case_08dad26235,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+2074,case_08dad26235,Pleural Effusion,"removed_by_retrieval_context (in G1A, not in G1)",0,True,True
+2075,case_0403c3160e,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2096,case_c6a05e5311,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2116,case_c937ae3189,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2138,case_727c825b4f,Lung Lesion,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+2138,case_727c825b4f,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+2138,case_727c825b4f,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",0,True,True
+2140,case_7bd6e5df66,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2160,case_7331ea7d0e,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+2170,case_9d0be69894,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2191,case_02470de19c,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2207,case_81d6b4ee65,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+2212,case_6e9b85b75f,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2223,case_9972c8908e,Cardiomegaly,"added_by_retrieval_context (in G1, not in G1A)",4,False,False
+2223,case_9972c8908e,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+2228,case_f22593f49e,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2236,case_1cf5078265,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2238,case_733787883d,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+2244,case_436f85fc7d,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2277,case_59ab47a44d,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2290,case_1f7f05c822,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2310,case_4554cdf69e,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2313,case_81864d567c,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+2313,case_81864d567c,Cardiomegaly,"added_by_retrieval_context (in G1, not in G1A)",5,False,False
+2326,case_5331262931,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2363,case_eb3be8f238,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,True,True
+2363,case_eb3be8f238,Pneumonia,"added_by_retrieval_context (in G1, not in G1A)",1,True,True
+2365,case_a3f187611c,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2377,case_f6cd710729,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2388,case_1ee15a9211,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2396,case_37c5b65b82,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+2415,case_a5fbb69525,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",4,True,True
+2415,case_a5fbb69525,Consolidation,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+2415,case_a5fbb69525,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",4,False,True
+2453,case_ce0089f9e5,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+2453,case_ce0089f9e5,Pneumonia,"added_by_retrieval_context (in G1, not in G1A)",1,False,True
+2475,case_2d33c14b83,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+2475,case_2d33c14b83,Cardiomegaly,"added_by_retrieval_context (in G1, not in G1A)",5,True,False
+2493,case_c30c164e93,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+2493,case_c30c164e93,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+2513,case_81a71ee09f,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",4,False,True
+2513,case_81a71ee09f,Consolidation,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2533,case_d68a4ccafc,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+2545,case_fda4a8b704,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2564,case_e551a8501d,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2591,case_669e80f39c,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2594,case_097ae4ef10,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+2594,case_097ae4ef10,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+2596,case_a3f1a327ec,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2605,case_7f8228ee15,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,False,True
+2605,case_7f8228ee15,Pleural Effusion,"added_by_retrieval_context (in G1, not in G1A)",1,False,True
+2612,case_96f3b1cceb,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2644,case_c7395d541e,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+2644,case_c7395d541e,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+2644,case_c7395d541e,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",2,False,False
+2644,case_c7395d541e,Support Devices,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+2691,case_d43368ae23,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+2691,case_d43368ae23,Cardiomegaly,"added_by_retrieval_context (in G1, not in G1A)",5,True,False
+2698,case_eabe206821,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2709,case_cdafc0d4c8,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2720,case_f88dabbd9b,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2723,case_fdcfee118f,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2737,case_b961621b12,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+2747,case_7e91ee1dd2,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",5,False,True
+2758,case_d900a4460b,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2778,case_b3a2037033,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2778,case_b3a2037033,Support Devices,"removed_by_retrieval_context (in G1A, not in G1)",5,True,True
+2817,case_4eabaebd42,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,True,True
+2817,case_4eabaebd42,Pneumonia,"added_by_retrieval_context (in G1, not in G1A)",1,False,True
+2831,case_ecfa65f129,Pleural Effusion,"added_by_retrieval_context (in G1, not in G1A)",3,True,True
+2832,case_5fb25a6201,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2852,case_feb3186de0,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2860,case_cc68d5fb3e,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2866,case_63c463b623,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2870,case_2089e92ba1,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2894,case_88d52a7f70,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2894,case_88d52a7f70,Support Devices,"removed_by_retrieval_context (in G1A, not in G1)",5,True,True
+2898,case_f3bb728d20,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2910,case_cce542a1e2,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2916,case_d17bf6e179,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2933,case_0386729ff4,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+2936,case_271094c2f0,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+2936,case_271094c2f0,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+2936,case_271094c2f0,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",2,False,False
+2936,case_271094c2f0,Support Devices,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+2955,case_32081caf37,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+2955,case_32081caf37,Edema,"removed_by_retrieval_context (in G1A, not in G1)",2,False,True
+2957,case_5b73fa16b1,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",3,True,True
+2964,case_12e6f3bbd2,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3004,case_15c93406f8,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,True,True
+3004,case_15c93406f8,Pneumonia,"added_by_retrieval_context (in G1, not in G1A)",0,False,False
+3004,case_15c93406f8,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",1,True,False
+3010,case_fcc60721d2,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3022,case_bb8ec2a5b0,Consolidation,"added_by_retrieval_context (in G1, not in G1A)",0,False,True
+3022,case_bb8ec2a5b0,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",2,False,False
+3025,case_2e3869a68b,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+3045,case_6638243e04,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3060,case_7a3db9e376,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3069,case_af89a6f929,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",3,True,False
+3069,case_af89a6f929,Consolidation,"added_by_retrieval_context (in G1, not in G1A)",2,False,True
+3069,case_af89a6f929,Pneumonia,"added_by_retrieval_context (in G1, not in G1A)",3,True,True
+3069,case_af89a6f929,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+3069,case_af89a6f929,Pleural Effusion,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+3115,case_321b82e932,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3117,case_81a5b3616a,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3134,case_e1bcd75599,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3148,case_aaba488fd8,Cardiomegaly,"added_by_retrieval_context (in G1, not in G1A)",5,True,False
+3148,case_aaba488fd8,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",4,False,False
+3158,case_2e428a8221,Pleural Effusion,"added_by_retrieval_context (in G1, not in G1A)",3,False,True
+3180,case_ef0c3eef6f,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3183,case_c70b65aaff,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3195,case_70bffb6388,Cardiomegaly,"added_by_retrieval_context (in G1, not in G1A)",2,False,False
+3195,case_70bffb6388,Edema,"added_by_retrieval_context (in G1, not in G1A)",1,False,True
+3195,case_70bffb6388,Pleural Effusion,"added_by_retrieval_context (in G1, not in G1A)",2,False,True
+3216,case_e7a2ce9bef,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3216,case_e7a2ce9bef,Cardiomegaly,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3216,case_e7a2ce9bef,Lung Opacity,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3216,case_e7a2ce9bef,Lung Lesion,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3216,case_e7a2ce9bef,Edema,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3216,case_e7a2ce9bef,Consolidation,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3216,case_e7a2ce9bef,Pneumonia,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3216,case_e7a2ce9bef,Atelectasis,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3216,case_e7a2ce9bef,Pneumothorax,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3216,case_e7a2ce9bef,Pleural Effusion,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3216,case_e7a2ce9bef,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3216,case_e7a2ce9bef,Support Devices,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3221,case_c91a8e91d1,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3221,case_c91a8e91d1,Cardiomegaly,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3221,case_c91a8e91d1,Lung Opacity,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3221,case_c91a8e91d1,Lung Lesion,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3221,case_c91a8e91d1,Edema,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3221,case_c91a8e91d1,Consolidation,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3221,case_c91a8e91d1,Pneumonia,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3221,case_c91a8e91d1,Atelectasis,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3221,case_c91a8e91d1,Pneumothorax,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3221,case_c91a8e91d1,Pleural Effusion,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3221,case_c91a8e91d1,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3221,case_c91a8e91d1,Support Devices,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3253,case_443e353543,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+3279,case_57ad957a88,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3281,case_6a74f1c984,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3285,case_560160b8cd,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3290,case_ba6152204c,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+3347,case_2d4a3ec26d,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+3369,case_8c15f047ba,Pneumothorax,"removed_by_retrieval_context (in G1A, not in G1)",1,True,True
+3370,case_60c42cd467,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3374,case_5f180354cc,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3378,case_a2dd606dab,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,True,True
+3379,case_0bd86aed41,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+3379,case_0bd86aed41,Cardiomegaly,"added_by_retrieval_context (in G1, not in G1A)",5,True,False
+3386,case_98d6b8f835,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3435,case_8a5c73989d,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+3435,case_8a5c73989d,Cardiomegaly,"added_by_retrieval_context (in G1, not in G1A)",5,True,False
+3450,case_be22358ac7,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3455,case_bbc5208df2,Cardiomegaly,"added_by_retrieval_context (in G1, not in G1A)",2,True,False
+3455,case_bbc5208df2,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,True,True
+3455,case_bbc5208df2,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",2,True,False
+3465,case_4e18ee387b,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3477,case_8d5f2e2134,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3508,case_48f5b29b8b,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+3528,case_f3604ab4d3,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3539,case_b790bc6b1f,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3542,case_49e7a4e14d,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3562,case_b4bfdfefb4,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+3562,case_b4bfdfefb4,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+3589,case_c046b23496,Lung Opacity,"removed_by_retrieval_context (in G1A, not in G1)",3,True,False
+3589,case_c046b23496,Consolidation,"added_by_retrieval_context (in G1, not in G1A)",1,False,False
+3593,case_50d0617977,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3597,case_055164c4b9,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",3,False,False
+3597,case_055164c4b9,Pneumonia,"added_by_retrieval_context (in G1, not in G1A)",3,False,True
+3610,case_a30ae7d4a1,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3611,case_2b7f6b4200,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+3611,case_2b7f6b4200,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+3624,case_94543cb8c0,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3632,case_638b26ceb6,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+3639,case_f348014dd7,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3641,case_4e37b79ff9,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3655,case_e9ce1d0cc9,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3665,case_6f7c512484,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3683,case_3a391edba4,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3692,case_63899f51d0,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3701,case_7dbe966651,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3720,case_93a0fabee1,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3726,case_b4a79e5cc2,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3756,case_17bce75e60,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,True,True
+3785,case_9780d46fd1,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3787,case_f6894d4997,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3790,case_d781751166,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",4,False,True
+3790,case_d781751166,Pleural Effusion,"removed_by_retrieval_context (in G1A, not in G1)",1,False,True
+3790,case_d781751166,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+3793,case_db97ac0b82,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",4,True,True
+3793,case_db97ac0b82,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",4,False,True
+3809,case_90e385881f,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3814,case_b3d1cfc000,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+3817,case_ee4f95dda6,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,True
+3817,case_ee4f95dda6,Cardiomegaly,"added_by_retrieval_context (in G1, not in G1A)",5,False,False
+3830,case_926dba4c33,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3837,case_ac17fbf547,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3847,case_397e896660,Pleural Effusion,"removed_by_retrieval_context (in G1A, not in G1)",1,False,True
+3866,case_309b2a3c7e,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,True,True
+3866,case_309b2a3c7e,Consolidation,"added_by_retrieval_context (in G1, not in G1A)",1,False,True
+3875,case_a86ccff141,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",5,True,True
+3875,case_a86ccff141,Pneumonia,"added_by_retrieval_context (in G1, not in G1A)",1,False,True
+3880,case_7d2c7a6d2f,Lung Opacity,"removed_by_retrieval_context (in G1A, not in G1)",0,True,False
+3883,case_06f3c6c267,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3900,case_8f02887392,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3900,case_8f02887392,Cardiomegaly,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3900,case_8f02887392,Lung Opacity,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3900,case_8f02887392,Lung Lesion,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3900,case_8f02887392,Edema,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3900,case_8f02887392,Consolidation,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3900,case_8f02887392,Pneumonia,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3900,case_8f02887392,Atelectasis,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3900,case_8f02887392,Pneumothorax,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3900,case_8f02887392,Pleural Effusion,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3900,case_8f02887392,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3900,case_8f02887392,Support Devices,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3951,case_b79a096f41,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",3,True,False
+3951,case_b79a096f41,Pneumonia,"added_by_retrieval_context (in G1, not in G1A)",3,False,True
+3953,case_d5dd966914,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+3968,case_bb1bc18476,Fracture,"removed_by_retrieval_context (in G1A, not in G1)",3,False,True
+3976,case_123567499a,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False
+3980,case_7332240355,Lung Opacity,"added_by_retrieval_context (in G1, not in G1A)",4,True,True
+3980,case_7332240355,Atelectasis,"added_by_retrieval_context (in G1, not in G1A)",4,False,True
+3982,case_070a60c22d,Enlarged Cardiomediastinum,"removed_by_retrieval_context (in G1A, not in G1)",0,False,False

@@ -1,0 +1,5 @@
+system,metric,value,ci95_low,ci95_high
+B0_rule_based,fp_propagation,1,1,1
+B0_rule_based,tp_retention,1,1,1
+G1_single_agent_rag,fp_propagation,0.4050632911392405,0.34999999999999998,0.46222793148880104
+G1_single_agent_rag,tp_retention,0.71794871794871795,0.6414804700430321,0.78907277960526312

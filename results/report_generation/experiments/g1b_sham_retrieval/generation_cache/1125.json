@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "714496cf9c1a3b898d8f06bbfff78ef73062ff09d8cc65841e3fcb5591a79da0",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is normal in size and contour. There are streaky perihilar opacities. Peribronchial cuffing is noted. No focal consolidation, pneumothorax or large pleural effusion.\nIMPRESSION:\nFindings most suggestive of infectious or reactive small airways disease. No focal pneumonia.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1120,
+ "output_tokens": 82,
+ "total_duration_ns": 2370432600,
+ "load_duration_ns": 3463100,
+ "attempts": 1,
+ "wall_seconds": 4.43,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:22:49+00:00"
+}

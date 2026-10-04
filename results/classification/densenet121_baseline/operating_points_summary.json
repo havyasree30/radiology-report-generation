@@ -1,0 +1,9 @@
+{
+  "n_images": 28671,
+  "predicted_positives_per_image_mean": 5.096578424191692,
+  "predicted_positives_per_image_median": 5.0,
+  "explicit_true_positives_per_image_mean": 2.3989745736109658,
+  "images_with_zero_predicted_positives": 0,
+  "images_with_no_finding_pathology_warning": 6532,
+  "pct_images_with_no_finding_pathology_warning": 22.782602629835026
+}

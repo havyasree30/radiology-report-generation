@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "27447656cdec6f9e145b252eaeb6e381f0d9831b26931168230bed1323ec8394",
+ "text": "{\n  \"classifier_findings\": [],\n  \"retrieval_only_candidates\": [],\n  \"normal_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 713,
+ "output_tokens": 56,
+ "total_duration_ns": 2023779400,
+ "load_duration_ns": 9566700,
+ "attempts": 1,
+ "wall_seconds": 4.09,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:22:52+00:00",
+ "agent": "agent1_evidence_verifier"
+}

@@ -1,0 +1,25 @@
+{
+  "G1_single_agent_rag": {
+    "distinct_report_texts": 97,
+    "most_common_text_share": 0.36380255941499084,
+    "most_common_text": "The lungs and pleural spaces are clear. The heart size is normal. The pulmonary vascularity is normal. No acute pulmonary abnormality.",
+    "format_ok_rate": 1.0
+  },
+  "G2_agent2_draft_pre_critic": {
+    "distinct_report_texts": 108,
+    "most_common_text_share": 0.56672760511883,
+    "most_common_text": "No abnormal findings. No acute cardiopulmonary process.",
+    "format_ok_rate": 1.0
+  },
+  "G2_multi_agent_rag": {
+    "distinct_report_texts": 108,
+    "most_common_text_share": 0.4186471663619744,
+    "most_common_text": "FINDINGS: No abnormal findings. IMPRESSION: No acute cardiopulmonary process.",
+    "format_ok_rate": 1.0
+  },
+  "agents": {
+    "reasoning_token_leaks": 0,
+    "calls_stopped_by_token_limit": 52,
+    "calls_with_possibly_truncated_prompt": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "8db9450538369005186ced9073dcdd88c74f19d787323337c85dd6064d5cac38",
+ "text": "FINDINGS:\nThe heart size and pulmonary vascularity appear within normal limits. The lungs are free of focal airspace disease. No pleural effusion or pneumothorax is seen. A few bandlike opacities are present on the lateral view which appear to represent small areas of scarring. Surgical clips are present in the right upper quadrant of the abdomen. Degenerative changes are present in the spine.\nIMPRESSION:\n1. No evidence of active disease.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1231,
+ "output_tokens": 104,
+ "total_duration_ns": 2565578700,
+ "load_duration_ns": 4663700,
+ "attempts": 1,
+ "wall_seconds": 4.62,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:28:27+00:00"
+}

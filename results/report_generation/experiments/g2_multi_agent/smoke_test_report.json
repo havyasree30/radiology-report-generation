@@ -1,0 +1,202 @@
+{
+  "purpose": "implementation validation only (JSON parsing, output structure, connectivity, leakage, cache); prompts are not modified according to clinical answer quality",
+  "cases": [
+    {
+      "uid": "20",
+      "anon_id": "case_4a7e5f5a46",
+      "case_type": "normal study",
+      "pipeline_failed_at": null,
+      "agent1_json_parsed": true,
+      "agent1_skipped_no_query": false,
+      "agent1_validation_flags": [],
+      "agent2_format_ok": true,
+      "agent3_action": "approve",
+      "agent3_flags": [
+        "revise_but_identical"
+      ],
+      "final_format_ok": true,
+      "done_reasons": {
+        "agent1_evidence_verifier": "stop",
+        "agent2_grounded_report_writer": "stop",
+        "agent3_grounding_critic": "stop"
+      },
+      "prompt_truncated": {
+        "agent1_evidence_verifier": false,
+        "agent2_grounded_report_writer": false,
+        "agent3_grounding_critic": false
+      },
+      "tokens": {
+        "agent1_evidence_verifier": [
+          713,
+          56
+        ],
+        "agent2_grounded_report_writer": [
+          758,
+          24
+        ],
+        "agent3_grounding_critic": [
+          775,
+          52
+        ]
+      },
+      "seconds": {
+        "agent1_evidence_verifier": 4.5,
+        "agent2_grounded_report_writer": 3.26,
+        "agent3_grounding_critic": 3.82
+      },
+      "agent2_message_contains_retrieved_prose": false,
+      "agent3_message_contains_retrieved_prose": false,
+      "identifier_flags": [],
+      "cache_reloadable": true
+    },
+    {
+      "uid": "50",
+      "anon_id": "case_e97b55ecd0",
+      "case_type": "two or more positive findings",
+      "pipeline_failed_at": null,
+      "agent1_json_parsed": true,
+      "agent1_skipped_no_query": false,
+      "agent1_validation_flags": [],
+      "agent2_format_ok": true,
+      "agent3_action": "approve",
+      "agent3_flags": [
+        "revise_but_identical"
+      ],
+      "final_format_ok": true,
+      "done_reasons": {
+        "agent1_evidence_verifier": "stop",
+        "agent2_grounded_report_writer": "stop",
+        "agent3_grounding_critic": "stop"
+      },
+      "prompt_truncated": {
+        "agent1_evidence_verifier": false,
+        "agent2_grounded_report_writer": false,
+        "agent3_grounding_critic": false
+      },
+      "tokens": {
+        "agent1_evidence_verifier": [
+          735,
+          238
+        ],
+        "agent2_grounded_report_writer": [
+          967,
+          32
+        ],
+        "agent3_grounding_critic": [
+          990,
+          48
+        ]
+      },
+      "seconds": {
+        "agent1_evidence_verifier": 8.36,
+        "agent2_grounded_report_writer": 3.33,
+        "agent3_grounding_critic": 3.85
+      },
+      "agent2_message_contains_retrieved_prose": false,
+      "agent3_message_contains_retrieved_prose": false,
+      "identifier_flags": [],
+      "cache_reloadable": true
+    },
+    {
+      "uid": "61",
+      "anon_id": "case_2e6fa8d4e5",
+      "case_type": "one positive finding",
+      "pipeline_failed_at": null,
+      "agent1_json_parsed": true,
+      "agent1_skipped_no_query": false,
+      "agent1_validation_flags": [
+        "agent1_extra_or_duplicate_classifier_entry"
+      ],
+      "agent2_format_ok": true,
+      "agent3_action": "approve",
+      "agent3_flags": [
+        "revise_but_identical"
+      ],
+      "final_format_ok": true,
+      "done_reasons": {
+        "agent1_evidence_verifier": "stop",
+        "agent2_grounded_report_writer": "stop",
+        "agent3_grounding_critic": "stop"
+      },
+      "prompt_truncated": {
+        "agent1_evidence_verifier": false,
+        "agent2_grounded_report_writer": false,
+        "agent3_grounding_critic": false
+      },
+      "tokens": {
+        "agent1_evidence_verifier": [
+          863,
+          582
+        ],
+        "agent2_grounded_report_writer": [
+          869,
+          20
+        ],
+        "agent3_grounding_critic": [
+          878,
+          43
+        ]
+      },
+      "seconds": {
+        "agent1_evidence_verifier": 14.94,
+        "agent2_grounded_report_writer": 3.2,
+        "agent3_grounding_critic": 3.58
+      },
+      "agent2_message_contains_retrieved_prose": false,
+      "agent3_message_contains_retrieved_prose": false,
+      "identifier_flags": [],
+      "cache_reloadable": true
+    },
+    {
+      "uid": "187",
+      "anon_id": "case_a00ffd4079",
+      "case_type": "empty-query study",
+      "pipeline_failed_at": null,
+      "agent1_json_parsed": null,
+      "agent1_skipped_no_query": true,
+      "agent1_validation_flags": [
+        "agent1_skipped_no_query"
+      ],
+      "agent2_format_ok": true,
+      "agent3_action": "revise",
+      "agent3_flags": [],
+      "final_format_ok": true,
+      "done_reasons": {
+        "agent2_grounded_report_writer": "stop",
+        "agent3_grounding_critic": "stop"
+      },
+      "prompt_truncated": {
+        "agent2_grounded_report_writer": false,
+        "agent3_grounding_critic": false
+      },
+      "tokens": {
+        "agent2_grounded_report_writer": [
+          737,
+          24
+        ],
+        "agent3_grounding_critic": [
+          754,
+          48
+        ]
+      },
+      "seconds": {
+        "agent2_grounded_report_writer": 3.22,
+        "agent3_grounding_critic": 3.62
+      },
+      "agent2_message_contains_retrieved_prose": false,
+      "agent3_message_contains_retrieved_prose": false,
+      "identifier_flags": [],
+      "cache_reloadable": true
+    }
+  ],
+  "all_implementation_checks_passed": true,
+  "generator_identical_to_g1": {
+    "ollama_version": true,
+    "model_tag": true,
+    "model_digest": true,
+    "quantization": true,
+    "sampling_options": true,
+    "num_ctx": true
+  },
+  "created_utc": "2026-10-03T14:45:12+00:00"
+}

@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "ece3282ea331d26c140e1506182fe03e669d5113a372aaff6a54c7026168a0df",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Retrieved reports mention airspace opacity, focal opacity, perihilar opacity, and rounded opacity.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Retrieved reports mention airspace opacity, focal opacity, rounded opacity, and perihilar opacity which may represent pneumonia.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions fracture.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Edema\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions edema as a possible differential, but not as a finding.\"}\n  ],\n  \"normal_report_ranks\": [\n    1, 2, 3, 4, 5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 918,
+ "output_tokens": 262,
+ "total_duration_ns": 5926001800,
+ "load_duration_ns": 5080900,
+ "attempts": 1,
+ "wall_seconds": 8.0,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:17:46+00:00",
+ "agent": "agent1_evidence_verifier"
+}

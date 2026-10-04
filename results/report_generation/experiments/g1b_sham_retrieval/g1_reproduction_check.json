@@ -1,0 +1,49 @@
+{
+  "B0_rule_based": {
+    "n_studies": 547,
+    "max_abs_numeric_difference": 9.93129189996722e-17,
+    "numeric_columns_compared": 16,
+    "string_columns_identical": {
+      "stated": true,
+      "definite": true,
+      "clf_pos": true,
+      "truth": true,
+      "report_state": true,
+      "classifier_state": true,
+      "reference_state": true
+    }
+  },
+  "G1_single_agent_rag": {
+    "n_studies": 547,
+    "max_abs_numeric_difference": 9.8879238130678e-17,
+    "numeric_columns_compared": 16,
+    "string_columns_identical": {
+      "stated": true,
+      "definite": true,
+      "clf_pos": true,
+      "truth": true,
+      "report_state": true,
+      "classifier_state": true,
+      "reference_state": true
+    }
+  },
+  "G1A_llm_no_retrieval": {
+    "n_studies": 547,
+    "max_abs_numeric_difference": 9.980080997729068e-17,
+    "numeric_columns_compared": 16,
+    "string_columns_identical": {
+      "stated": true,
+      "definite": true,
+      "clf_pos": true,
+      "truth": true,
+      "report_state": true,
+      "classifier_state": true,
+      "reference_state": true
+    }
+  },
+  "g1_and_g1a_reproduced": true,
+  "empty_query_studies": {
+    "n": 49,
+    "g1b_text_identical_to_g1_text": 47
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "description": "expected value for K reports drawn uniformly at random (200 draws per query, seed 42); Jaccard is the exact expectation",
+  "union_coverage@1": 0.22532122905027932,
+  "union_coverage@3": 0.49092760707635,
+  "union_coverage@5": 0.6309799813780261,
+  "union_coverage@10": 0.7805423649906891,
+  "jaccard_truth@1": 0.21345507355555388,
+  "jaccard_truth@3": 0.21345507355555388,
+  "jaccard_truth@5": 0.21345507355555388,
+  "jaccard_truth@10": 0.21345507355555388
+}

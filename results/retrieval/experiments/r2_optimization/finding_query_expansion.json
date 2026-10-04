@@ -1,0 +1,32 @@
+{
+  "version": "r2-v1",
+  "created_utc": "2026-10-03T07:00:15+00:00",
+  "evaluated_before_creation": false,
+  "purpose": "ONE fixed mapping from each frozen-classifier finding to a short radiology phrase (finding names + common report wording). Never generated per query; no patient-specific content.",
+  "rules": [
+    "<= 8 words",
+    "only terms that name the finding or a standard synonym / closely tied sign",
+    "no negation, laterality, severity or patient-specific observation"
+  ],
+  "expansions": {
+    "Enlarged Cardiomediastinum": "enlarged cardiomediastinal silhouette widened mediastinum",
+    "Cardiomegaly": "cardiomegaly enlarged cardiac silhouette",
+    "Lung Opacity": "lung opacity airspace opacity",
+    "Lung Lesion": "lung nodule mass lesion",
+    "Edema": "pulmonary edema interstitial edema",
+    "Consolidation": "consolidation airspace consolidation",
+    "Pneumonia": "pneumonia focal airspace disease",
+    "Atelectasis": "atelectasis volume loss",
+    "Pneumothorax": "pneumothorax pleural air",
+    "Pleural Effusion": "pleural effusion pleural fluid",
+    "Pleural Other": "pleural thickening pleural scarring",
+    "Fracture": "fracture rib fracture",
+    "Support Devices": "support device catheter tube pacemaker lead"
+  },
+  "normal_phrase_candidates": [
+    "no acute abnormality",
+    "normal chest radiograph",
+    "no acute cardiopulmonary abnormality"
+  ],
+  "normal_phrase_selection": "see normal_query_selection.json (chosen on retrieval-validation data only, rule in r2_selection_protocol.json)"
+}

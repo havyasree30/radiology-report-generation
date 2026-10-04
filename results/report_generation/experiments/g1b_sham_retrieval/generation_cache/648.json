@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "bd9ed87ca173895f2fc931f400ae9405612d226589d227364b84d707d26fde26",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette and pulmonary vasculature are within normal limits. There is no pneumothorax or pleural effusion. There are no focal areas of consolidation. No displaced rib fracture visualized.\nIMPRESSION:\nNo acute cardiopulmonary abnormality.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1178,
+ "output_tokens": 65,
+ "total_duration_ns": 1918835500,
+ "load_duration_ns": 1730500,
+ "attempts": 1,
+ "wall_seconds": 3.97,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:18:30+00:00"
+}

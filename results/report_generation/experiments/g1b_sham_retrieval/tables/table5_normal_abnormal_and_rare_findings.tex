@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lrrrrrrr}
+\hline
+Source & Normal recall & Abnormal recall & Abnormal studies reported normal & Normal studies reported abnormal & Report normal given classifier abnormal & Rare-finding TP retention & Other-finding TP retention \\
+\hline
+Classifier (= B0 report state) & 0.729 (0.667 to 0.791) & 0.726 (0.659 to 0.790) & 36 of 186 & 43 of 192 & n/a & n/a & n/a \\
+B0 rule-based & 0.729 (0.667 to 0.791) & 0.726 (0.659 to 0.790) & 36 of 186 & 43 of 192 & 0.000 (0.000 to 0.000) & 1.000 & 1.000 \\
+G1A LLM, no retrieval & 0.115 (0.072 to 0.167) & 0.710 (0.646 to 0.775) & 54 of 186 & 169 of 192 & 0.258 (0.191 to 0.322) & 0.381 & 0.604 \\
+G1B LLM + sham retrieval & 0.818 (0.763 to 0.870) & 0.296 (0.232 to 0.366) & 131 of 186 & 35 of 192 & 0.596 (0.519 to 0.667) & 0.048 & 0.375 \\
+G1 LLM + relevant retrieval & 0.911 (0.871 to 0.950) & 0.581 (0.511 to 0.649) & 78 of 186 & 17 of 192 & 0.298 (0.233 to 0.368) & 0.333 & 0.802 \\
+\hline
+\end{tabular}
+\caption{Normal/abnormal consistency and rare-finding retention for the classifier and the four report generators (rare findings: C2 definition, pooled).}
+\label{tab:table5_normal_abnormal_and_rare_findings}
+\end{table}

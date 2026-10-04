@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "953dc1b6ebc228ba46e8d40791644bfd5a379d95c3db9c37d42d6e3895997efb",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 3, 4], \"evidence_summary\": \"Retrieved reports mention airspace opacity, streaky opacity, patchy opacity, and opacities compatible with scarring/chronic inflammatory change.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions a lung lesion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [1, 3], \"evidence_summary\": \"Retrieved reports mention airspace opacity, patchy opacity, and evolving infiltrate.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 3], \"evidence_summary\": \"Retrieved reports mention airspace opacity, patchy opacity, and evolving infiltrate.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions edema or pulmonary edema. The reports mention atelectasis, scarring, or infiltrates instead.\"}\n  ],\n  \"normal_report_ranks\": [\n    2,\n    5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 930,
+ "output_tokens": 301,
+ "total_duration_ns": 8122092200,
+ "load_duration_ns": 9358100,
+ "attempts": 1,
+ "wall_seconds": 10.14,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:48:35+00:00",
+ "agent": "agent1_evidence_verifier"
+}

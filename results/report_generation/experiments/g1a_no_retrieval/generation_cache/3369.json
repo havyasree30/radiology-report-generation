@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "5e29154c88d19c7133299dd4e33d8bb4cb91b54adea9bf7a4585c0330e28a50e",
+ "text": "FINDINGS:\nA small pneumothorax is present. A fracture is also noted.\nIMPRESSION:\nPneumothorax and fracture are present.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 519,
+ "output_tokens": 43,
+ "total_duration_ns": 1276343100,
+ "load_duration_ns": 7047200,
+ "attempts": 1,
+ "wall_seconds": 3.32,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:39:21+00:00"
+}

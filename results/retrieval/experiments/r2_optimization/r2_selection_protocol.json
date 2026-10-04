@@ -1,0 +1,95 @@
+{
+  "version": "r2-v1",
+  "created_utc": "2026-10-03T07:00:15+00:00",
+  "written_before_any_r2_evaluation": true,
+  "r1_commit": "f1a83bc396cc4ec126894b1641bc9317cbc73cf9",
+  "branch": "r2-retrieval-optimization",
+  "expansion_file_sha256": "ddde8964f002740ae774423dbffe946e34ff16ee7deb2a6352fb15f75ada65dd",
+  "population": "the exact R1 primary paired validation set (358 studies); no re-split, no removal, locked retrieval test never opened",
+  "primary_selection_metric": "dense Jaccard@3 versus the study truth, mean over primary queries; nDCG@3 must not disagree in sign (reported)",
+  "replacement_rule": "a challenger replaces the incumbent only if the lower bound of the paired bootstrap 95% CI of (challenger - incumbent) in the primary selection metric is > 0; otherwise the incumbent (simpler / earlier) is kept",
+  "bootstrap": {
+    "n_resamples": 1000,
+    "seed": 42,
+    "unit": "query (study); one shared set of resampling indices for every comparison"
+  },
+  "normal_phrase_rule": {
+    "candidates": [
+      "no acute abnormality",
+      "normal chest radiograph",
+      "no acute cardiopulmonary abnormality"
+    ],
+    "data": "dense retrieval on ALL eligible validation studies whose TRUE finding set is {No Finding} (oracle-normal queries; independent of classifier errors)",
+    "metric": "Jaccard@3",
+    "rule": "replace the R1 phrase 'no acute abnormality' only if a candidate's paired CI lower bound > 0"
+  },
+  "stage_A": {
+    "A1_phrases": "incumbent Q0_finding_names (R1); challenger Q1_expanded_findings (text query of the fixed expansions)",
+    "A2_weighting": {
+      "representation": "dense query vector = L2-normalised sum_i w_i * embedding(phrase_i) using the phrases of the A1 winner; challengers: uniform, probability, margin; incumbent = the A1 winner's text query",
+      "weight_definitions": {
+        "uniform": "w=1",
+        "probability": "w=calibrated probability p",
+        "margin": "w=(p - t)/(1 - t), t = frozen calibrated-equivalent threshold"
+      },
+      "rejected_by_design": "max(p - 0.5, 0): most frozen positives have p < 0.5, so it would zero most findings"
+    },
+    "A3_top_n": {
+      "N": [
+        1,
+        2,
+        3
+      ],
+      "incumbent": "all positives",
+      "ordering": "calibrated probability descending, ties by class order",
+      "rule": "among N with a reliable gain over 'all' choose the highest mean Jaccard@3; else keep all"
+    }
+  },
+  "stage_B": {
+    "retrievers": [
+      "dense",
+      "bm25",
+      "hybrid_rrf"
+    ],
+    "incumbent": "dense",
+    "rrf": {
+      "k": 60,
+      "depth": 100,
+      "ties": "corpus order"
+    },
+    "rule": "same replacement rule (challenger CI lower bound > 0 vs dense)",
+    "bm25_text_when_q2_selected": "text query of the A1 winner (weights apply to the dense vector only)"
+  },
+  "stage_C": {
+    "method": "MMR over the top-30 candidates of the Stage-B pipeline",
+    "pool": 30,
+    "lambdas": [
+      0.5,
+      0.7,
+      0.9
+    ],
+    "relevance": "min-max normalised retriever score inside the pool",
+    "similarity": "cosine of MiniLM report embeddings",
+    "adoption_rule": "a lambda is eligible if, at BOTH K=3 and K=5: duplicate-text-rate difference (MMR - standard) has CI upper bound < 0; Jaccard@K and nDCG@K differences do not have CI upper bound < 0 (no reliable loss); union-coverage@K point difference >= 0. Adopt the LARGEST eligible lambda (least intervention); otherwise reject MMR"
+  },
+  "k_selection": {
+    "candidates": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "start": 1,
+    "advance_to_larger_K_if_all": [
+      "paired union-coverage gain has CI lower bound > 0",
+      "mean coverage gain >= 0.05",
+      "Jaccard@K does not fall by more than 0.03 (point estimate)",
+      "duplicate-text rate@K <= 0.50 and unique-template count increases",
+      "mean context <= 1000 words"
+    ],
+    "procedure": "from the current K test every larger candidate in ascending order and move to the SMALLEST candidate that satisfies all conditions; repeat; stop when none does (prefer the smaller K)"
+  },
+  "oracle_references": "R1 oracle dense and BM25 (Q0) reproduced exactly; oracle with the selected R2 representation/pipeline reported as a diagnostic",
+  "no_finding_query": "the selected normal phrase is used by every R2 policy for studies whose classifier query is normal; Q0 keeps the R1 phrase to remain the exact R1 baseline",
+  "secondary_sensitivity": "primary set excluding queries whose own report text has an exact copy in the corpus; official primary results are unchanged"
+}

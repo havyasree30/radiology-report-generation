@@ -1,0 +1,14 @@
+finding,rare_c2,reference_positive_in_abstained_reference_abnormal,share_of_abstained_findings,reference_positive_in_all_reference_abnormal_clinical,share_of_all_findings,abstained_fraction_of_this_finding
+Enlarged Cardiomediastinum,True,0,0,0,0,
+Cardiomegaly,False,6,0.31578947368421051,52,0.18245614035087721,0.11538461538461539
+Lung Opacity,False,8,0.42105263157894735,85,0.2982456140350877,0.094117647058823528
+Lung Lesion,True,0,0,21,0.073684210526315783,0
+Edema,False,0,0,5,0.017543859649122806,0
+Consolidation,True,0,0,4,0.014035087719298246,0
+Pneumonia,True,0,0,10,0.035087719298245612,0
+Atelectasis,False,2,0.10526315789473684,42,0.14736842105263157,0.047619047619047616
+Pneumothorax,False,0,0,4,0.014035087719298246,0
+Pleural Effusion,False,0,0,13,0.045614035087719301,0
+Pleural Other,True,0,0,5,0.017543859649122806,0
+Fracture,True,1,0.052631578947368418,9,0.031578947368421054,0.1111111111111111
+Support Devices,False,2,0.10526315789473684,35,0.12280701754385964,0.057142857142857141

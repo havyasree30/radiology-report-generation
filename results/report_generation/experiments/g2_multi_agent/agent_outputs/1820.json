@@ -1,0 +1,103 @@
+{
+ "uid": "1820",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Pneumonia",
+    "classifier_probability": 0.0901,
+    "retrieval_support_count": 3,
+    "supporting_retrieved_report_ranks": [
+     2,
+     3,
+     4
+    ],
+    "evidence_summary": "Retrieved reports mention pneumonia.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   }
+  ],
+  "retrieval_only_candidates": [
+   {
+    "finding": "Lung Opacity",
+    "retrieval_support_count": 1,
+    "supporting_retrieved_report_ranks": [
+     4
+    ],
+    "evidence_summary": "Retrieved report 4 mentions mild streaky perihilar opacity.",
+    "status": "retrieval_only"
+   }
+  ],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   1,
+   5
+  ]
+ },
+ "agent1_validation_flags": [],
+ "agent2_draft": {
+  "findings": "Pneumonia.",
+  "impression": "Pneumonia.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Pneumonia.",
+  "impression": "Pneumonia.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [2, 3, 4], \"evidence_summary\": \"Retrieved reports mention pneumonia.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [4], \"evidence_summary\": \"Retrieved report 4 mentions mild streaky perihilar opacity.\"}\n  ],\n  \"normal_report_ranks\": [\n    1, 5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Pneumonia.\",\n\"impression\": \"Pneumonia.\"\n}",
+ "agent3_raw_text": "{\"issues_detected\": [\"unsupported_finding_stated\"], \"decision\": \"REVISE\", \"findings\": \"Pneumonia.\", \"impression\": \"Pneumonia.\"}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "a85608d01a30ae0cb75df06e15940d91ede0ff1d414ddc037052a8c935c31879",
+  "agent2_grounded_report_writer": "0c08d749e546b90796cf50c7dac6bb9e7577d894bacc0454568c6de679a1e4f6",
+  "agent3_grounding_critic": "a715c124c6a1bc4fa04389be85f0e83d90b87da46f2063937115936a3f54797e"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "19eef23a27af528d4a68d2c1e900ceb77dc497a490812dc699bfc62fd3fff6ed",
+  "agent2_grounded_report_writer": "b6cb9f987d72d7889bdafc2ff32e3acc149139fb3b83717022238f8b56256c9c",
+  "agent3_grounding_critic": "bcf1872b0511f7520a0463f57fd75cfa174121e1dedea4c9ec0c8a54f29bee00"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 13.39,
+  "agent2_grounded_report_writer": 5.47,
+  "agent3_grounding_critic": 5.89
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 134,
+  "agent2_grounded_report_writer": 22,
+  "agent3_grounding_critic": 39
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 731,
+  "agent2_grounded_report_writer": 941,
+  "agent3_grounding_critic": 954
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Pneumonia (calibrated probability 0.09)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: (not available)\nIMPRESSION: Heart size is normal and lungs are clear. No pneumonia.\n[2]\nFINDINGS: (not available)\nIMPRESSION: Anterior segment right lower lobe pneumonia. No effusion. Heart size is normal. Lungs otherwise clear.\n[3]\nFINDINGS: (not available)\nIMPRESSION: No pneumothorax or effusion. No pneumonia. Heart size normal. Lungs clear\n[4]\nFINDINGS: The heart size is upper limits of normal. The pulmonary and mediastinum are within normal limits. There is no pleural effusion or pneumothorax. There is mild streaky perihilar opacity without confluent airspace opacity to suggest a bacterial pneumonia.\nIMPRESSION: Minimal perihilar opacity which could indicate an atypical pneumonia.\n[5]\nFINDINGS: (not available)\nIMPRESSION: Heart size normal. Lungs clear. Hiatal hernia. No effusion the or pneumothorax. No pneumonia\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Pneumonia (calibrated probability 0.09)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Pneumonia\",\n   \"classifier_probability\": 0.0901,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention pneumonia.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    4\n   ],\n   \"evidence_summary\": \"Retrieved report 4 mentions mild streaky perihilar opacity.\",\n   \"status\": \"retrieval_only\"\n  }\n ],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Pneumonia (calibrated probability 0.09)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Pneumonia\",\n   \"classifier_probability\": 0.0901,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention pneumonia.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    4\n   ],\n   \"evidence_summary\": \"Retrieved report 4 mentions mild streaky perihilar opacity.\",\n   \"status\": \"retrieval_only\"\n  }\n ],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Pneumonia.\nIMPRESSION: Pneumonia.\n\nReturn the JSON now."
+ }
+}

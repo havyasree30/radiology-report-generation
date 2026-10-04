@@ -1,0 +1,15 @@
+{
+  "figures": 7,
+  "tables": 5,
+  "min_dpi": 300,
+  "formats_per_figure": [
+    "png",
+    "pdf",
+    "svg"
+  ],
+  "formats_per_table": [
+    "csv",
+    "md",
+    "tex"
+  ]
+}

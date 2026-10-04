@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "88a8adc4d4387b56405610d38c310cb2d9e6549e482e802c16e04734dead6c1e",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is within normal limits. No focal consolidation, suspicious pulmonary opacity, large pleural effusion, or pneumothorax is identified. A wedge-shaped fracture of T12 is visualized.\nIMPRESSION:\n1. No acute cardiopulmonary abnormality. 2. Wedge-shaped fracture of T12.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1470,
+ "output_tokens": 83,
+ "total_duration_ns": 2354884000,
+ "load_duration_ns": 10970300,
+ "attempts": 1,
+ "wall_seconds": 4.38,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:08:17+00:00"
+}

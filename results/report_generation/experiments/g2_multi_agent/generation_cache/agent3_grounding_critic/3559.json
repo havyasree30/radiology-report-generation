@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "631a5a964c8ee99aad49a453b8ecad63213b001aab6e535cbd1cb6ee5cdf938f",
+ "text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Fracture.\",\n\"impression\": \"Fracture.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 880,
+ "output_tokens": 43,
+ "total_duration_ns": 1644885000,
+ "load_duration_ns": 7279800,
+ "attempts": 1,
+ "wall_seconds": 3.69,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 700,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T17:07:52+00:00",
+ "agent": "agent3_grounding_critic"
+}

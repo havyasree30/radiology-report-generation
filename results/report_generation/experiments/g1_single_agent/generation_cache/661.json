@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "22e730d088a889a6c4e4f2acec4062cb621b210fb36ec05ff2b64f7d43ea01dc",
+ "text": "FINDINGS:\nModerate sized right loculated pleural effusion with right lower lobe atelectasis. Normal cardiac contour with atherosclerotic changes throughout the aorta. Clear left lung.\nIMPRESSION:\n1. Moderate right pleural effusion.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1143,
+ "output_tokens": 57,
+ "total_duration_ns": 1658831000,
+ "load_duration_ns": 8189800,
+ "attempts": 1,
+ "wall_seconds": 3.69,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T10:22:02+00:00"
+}

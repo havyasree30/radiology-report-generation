@@ -1,0 +1,129 @@
+{
+  "source_files": {
+    "reports_csv": "data\\IU X-ray\\indiana_reports.csv",
+    "projections_csv": "data\\IU X-ray\\indiana_projections.csv",
+    "images_dir": "data\\IU X-ray\\images\\images_normalized",
+    "downloaded_by_r1": false
+  },
+  "reports_studies": 3851,
+  "report_columns": [
+    "uid",
+    "MeSH",
+    "Problems",
+    "image",
+    "indication",
+    "comparison",
+    "findings",
+    "impression"
+  ],
+  "images_listed_in_projections_csv": 7466,
+  "image_files_on_disk": 7470,
+  "listed_images_missing_on_disk": 0,
+  "disk_images_not_listed": 4,
+  "frontal_images": 3818,
+  "lateral_images": 3648,
+  "studies_with_multiple_images": 3405,
+  "studies_with_one_image": 446,
+  "images_per_study_distribution": {
+    "1": 446,
+    "2": 3210,
+    "3": 181,
+    "4": 13,
+    "5": 1
+  },
+  "studies_without_images": 0,
+  "image_uids_without_report": 0,
+  "studies_with_at_least_one_frontal": 3689,
+  "studies_without_frontal": 162,
+  "studies_with_more_than_one_frontal": 122,
+  "studies_with_lateral": 3550,
+  "sections_after_cleaning": {
+    "with_findings": 3337,
+    "with_impression": 3820,
+    "with_both": 3331,
+    "with_neither": 25,
+    "findings_only": 6,
+    "impression_only": 489
+  },
+  "other_text_fields": {
+    "indication_present": 3765,
+    "comparison_present": 2685,
+    "note": "indication/comparison are metadata and are NOT part of the retrieval text"
+  },
+  "terminology_available": {
+    "MeSH": {
+      "studies_with_MeSH": 3851,
+      "distinct_terms": 121,
+      "studies_indexed_normal": 1379,
+      "studies_no_indexing": 92,
+      "top_terms": [
+        [
+          "normal",
+          1379
+        ],
+        [
+          "Lung",
+          553
+        ],
+        [
+          "Opacity",
+          509
+        ],
+        [
+          "Cardiomegaly",
+          345
+        ],
+        [
+          "Calcinosis",
+          332
+        ],
+        [
+          "Pulmonary Atelectasis",
+          330
+        ],
+        [
+          "Calcified Granuloma",
+          276
+        ],
+        [
+          "Thoracic Vertebrae",
+          256
+        ],
+        [
+          "Cicatrix",
+          196
+        ],
+        [
+          "Spine",
+          174
+        ],
+        [
+          "Markings",
+          167
+        ],
+        [
+          "Pleural Effusion",
+          160
+        ],
+        [
+          "Aorta",
+          158
+        ],
+        [
+          "Diaphragm",
+          140
+        ],
+        [
+          "Density",
+          129
+        ]
+      ]
+    },
+    "Problems": {
+      "studies_with_Problems": 3851,
+      "distinct_terms": 121,
+      "identical_to_MeSH_terms_in_this_export": false
+    }
+  },
+  "frontal_view_rule_for_classifier_query": "first Frontal image of the study in sorted filename order (deterministic)"
+}

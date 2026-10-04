@@ -1,0 +1,4 @@
+routing_state,n,final_report_prose_normal,final_report_prose_abnormal,final_report_prose_indeterminate,original_g1_prose_normal,original_g1_prose_abnormal,original_g1_prose_indeterminate
+normal,269,269,0,0,269,0,0
+abnormal,229,71,158,0,71,158,0
+indeterminate,49,0,0,49,49,0,0

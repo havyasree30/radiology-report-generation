@@ -1,0 +1,185 @@
+{
+  "method": "youden_j",
+  "labels": [
+    "No Finding",
+    "Enlarged Cardiomediastinum",
+    "Cardiomegaly",
+    "Lung Opacity",
+    "Lung Lesion",
+    "Edema",
+    "Consolidation",
+    "Pneumonia",
+    "Atelectasis",
+    "Pneumothorax",
+    "Pleural Effusion",
+    "Pleural Other",
+    "Fracture",
+    "Support Devices"
+  ],
+  "provenance": {
+    "source_split": "val",
+    "checkpoint": "results\\classification\\densenet121_baseline\\checkpoints\\best.pt",
+    "checkpoint_epoch": 5,
+    "git_commit_at_training": "0304f4271967689dcc91a201665c38572c720991",
+    "n_images": 28671,
+    "label_policy": {
+      "uncertain": "ignore",
+      "blank": "zero"
+    },
+    "inference_policy": {
+      "name": "fp32_strict",
+      "autocast_fp16": false,
+      "allow_tf32": false,
+      "cudnn_deterministic": true
+    },
+    "backend_flags": {
+      "cudnn_allow_tf32": false,
+      "matmul_allow_tf32": false,
+      "cudnn_deterministic": true,
+      "cudnn_benchmark": false
+    },
+    "rule": "positive if probability >= threshold; threshold = argmax(TPR - FPR) on validation ROC"
+  },
+  "thresholds": [
+    {
+      "label": "No Finding",
+      "threshold": 0.32298335433006287,
+      "sensitivity": 0.8219070133963751,
+      "specificity": 0.8083649026135538,
+      "youden_j": 0.6302719160099288,
+      "positive_support": 2538,
+      "negative_support": 26133,
+      "undefined_reason": null
+    },
+    {
+      "label": "Enlarged Cardiomediastinum",
+      "threshold": 0.18326206505298615,
+      "sensitivity": 0.5345957756737072,
+      "specificity": 0.7567284166375393,
+      "youden_j": 0.2913241923112465,
+      "positive_support": 1373,
+      "negative_support": 25749,
+      "undefined_reason": null
+    },
+    {
+      "label": "Cardiomegaly",
+      "threshold": 0.23206745088100433,
+      "sensitivity": 0.7760461760461761,
+      "specificity": 0.8137477782829744,
+      "youden_j": 0.5897939543291505,
+      "positive_support": 3465,
+      "negative_support": 24193,
+      "undefined_reason": null
+    },
+    {
+      "label": "Lung Opacity",
+      "threshold": 0.5040755271911621,
+      "sensitivity": 0.7290295179443619,
+      "specificity": 0.6194218152981039,
+      "youden_j": 0.34845133324246585,
+      "positive_support": 14127,
+      "negative_support": 13871,
+      "undefined_reason": null
+    },
+    {
+      "label": "Lung Lesion",
+      "threshold": 0.1416008174419403,
+      "sensitivity": 0.6118421052631579,
+      "specificity": 0.7967052992200598,
+      "youden_j": 0.40854740448321764,
+      "positive_support": 1064,
+      "negative_support": 27438,
+      "undefined_reason": null
+    },
+    {
+      "label": "Edema",
+      "threshold": 0.31313541531562805,
+      "sensitivity": 0.8157823862106114,
+      "specificity": 0.732942567741272,
+      "youden_j": 0.5487249539518835,
+      "positive_support": 7426,
+      "negative_support": 19449,
+      "undefined_reason": null
+    },
+    {
+      "label": "Consolidation",
+      "threshold": 0.1791447550058365,
+      "sensitivity": 0.7576530612244898,
+      "specificity": 0.6198454726972827,
+      "youden_j": 0.37749853392177257,
+      "positive_support": 1960,
+      "negative_support": 23038,
+      "undefined_reason": null
+    },
+    {
+      "label": "Pneumonia",
+      "threshold": 0.1142473965883255,
+      "sensitivity": 0.6811188811188811,
+      "specificity": 0.7249578877267207,
+      "youden_j": 0.4060767688456018,
+      "positive_support": 715,
+      "negative_support": 25527,
+      "undefined_reason": null
+    },
+    {
+      "label": "Atelectasis",
+      "threshold": 0.27638739347457886,
+      "sensitivity": 0.7234424025100852,
+      "specificity": 0.5902406757238081,
+      "youden_j": 0.31368307823389324,
+      "positive_support": 4462,
+      "negative_support": 19653,
+      "undefined_reason": null
+    },
+    {
+      "label": "Pneumothorax",
+      "threshold": 0.3368397355079651,
+      "sensitivity": 0.7481003039513677,
+      "specificity": 0.8251726425032188,
+      "youden_j": 0.5732729464545865,
+      "positive_support": 2632,
+      "negative_support": 25631,
+      "undefined_reason": null
+    },
+    {
+      "label": "Pleural Effusion",
+      "threshold": 0.40196239948272705,
+      "sensitivity": 0.8352248115741142,
+      "specificity": 0.7760755776841568,
+      "youden_j": 0.611300389258271,
+      "positive_support": 11543,
+      "negative_support": 15666,
+      "undefined_reason": null
+    },
+    {
+      "label": "Pleural Other",
+      "threshold": 0.03316567465662956,
+      "sensitivity": 0.6981627296587927,
+      "specificity": 0.7610193083264927,
+      "youden_j": 0.4591820379852854,
+      "positive_support": 381,
+      "negative_support": 28019,
+      "undefined_reason": null
+    },
+    {
+      "label": "Fracture",
+      "threshold": 0.059554778039455414,
+      "sensitivity": 0.7426739926739927,
+      "specificity": 0.7232162339079206,
+      "youden_j": 0.46589022658191326,
+      "positive_support": 1092,
+      "negative_support": 27498,
+      "undefined_reason": null
+    },
+    {
+      "label": "Support Devices",
+      "threshold": 0.43439674377441406,
+      "sensitivity": 0.8080359932512654,
+      "specificity": 0.7688197767145135,
+      "youden_j": 0.576855769965779,
+      "positive_support": 16003,
+      "negative_support": 12540,
+      "undefined_reason": null
+    }
+  ]
+}

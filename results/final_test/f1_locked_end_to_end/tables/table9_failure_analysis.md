@@ -1,0 +1,13 @@
+| Category | Studies | Share of clinical subset |
+|---|---:|---:|
+| Classifier error | 199 | 54.1% |
+| Normal/abnormal classifier mismatch | 86 | 23.4% |
+| Retrieval/query mismatch | 73 | 19.8% |
+| Retrieval-only unsupported finding | 34 | 9.2% |
+| Report-generator omission | 134 | 36.4% |
+| Report-generator hallucination | 80 | 21.7% |
+| Abnormal routing, normal prose | 47 | 12.8% |
+| Indeterminate / abstention | 40 | 10.9% |
+| Corpus limitation (flag) | 9 | 2.4% |
+| Reference-label limitation (flag) | 120 | 32.6% |
+| no failure in categories 1 to 8 | 142 | 38.6% |

@@ -1,0 +1,141 @@
+{
+ "uid": "3148",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Enlarged Cardiomediastinum",
+    "classifier_probability": 0.1072,
+    "retrieval_support_count": 4,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "evidence_summary": "Retrieved reports mention enlarged cardiomediastinal silhouette.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Atelectasis",
+    "classifier_probability": 0.226,
+    "retrieval_support_count": 4,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "evidence_summary": "Retrieved reports mention atelectasis or scarring.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Pleural Effusion",
+    "classifier_probability": 0.9275,
+    "retrieval_support_count": 4,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     5
+    ],
+    "evidence_summary": "Retrieved reports mention pleural effusion.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   }
+  ],
+  "retrieval_only_candidates": [
+   {
+    "finding": "Cardiomegaly",
+    "retrieval_support_count": 4,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "evidence_summary": "Retrieved reports mention enlarged heart or cardiomegaly.",
+    "status": "retrieval_only"
+   }
+  ],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   5
+  ]
+ },
+ "agent1_validation_flags": [],
+ "agent2_draft": {
+  "findings": "Enlarged cardiomediastinal silhouette, atelectasis, and pleural effusion are identified.",
+  "impression": "Cardiomegaly and pulmonary opacity are possible.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated",
+   "missed_strongly_supported_finding",
+   "no_finding_contradiction",
+   "abnormal_to_normal_collapse",
+   "invented_measurement_history_or_comparison",
+   "excessive_certainty",
+   "duplication_or_repetition",
+   "malformed_structure"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Enlarged cardiomediastinal silhouette, atelectasis, and pleural effusion are identified.",
+  "impression": "Cardiomegaly and pulmonary opacity are possible.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Retrieved reports mention enlarged cardiomediastinal silhouette.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Retrieved reports mention atelectasis or scarring.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 2, 3, 5], \"evidence_summary\": \"Retrieved reports mention pleural effusion.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Retrieved reports mention enlarged heart or cardiomegaly.\"}\n  ],\n  \"normal_report_ranks\": [\n    5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Enlarged cardiomediastinal silhouette, atelectasis, and pleural effusion are identified.\",\n\"impression\": \"Cardiomegaly and pulmonary opacity are possible.\"\n}",
+ "agent3_raw_text": "{\n \"issues_detected\": [\n  \"unsupported_finding_stated\",\n  \"missed_strongly_supported_finding\",\n  \"no_finding_contradiction\",\n  \"abnormal_to_normal_collapse\",\n  \"invented_measurement_history_or_comparison\",\n  \"excessive_certainty\",\n  \"duplication_or_repetition\",\n  \"malformed_structure\"\n ],\n \"decision\": \"REVISE\",\n \"findings\": \"Enlarged cardiomediastinal silhouette, atelectasis, and pleural effusion are identified.\",\n \"impression\": \"Cardiomegaly and pulmonary opacity are possible.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "9dd8ead8157ace6bd5970f213ff6bd83bd1c7f247e4876fe5d384d7a307f5da7",
+  "agent2_grounded_report_writer": "00f3657acb1f865e5b6af7b6072038b2a537e77a56506812509fd8ec4e367183",
+  "agent3_grounding_critic": "100a67105305c506ef0c03b8b43bc0b8e9f54d66bcb945077caf540cc10569f6"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "21529e1f3cb36fa9777c88f498db75e62b6e1bcfcdc191d14c768d105edc95ef",
+  "agent2_grounded_report_writer": "94a64cd9dcd1ec968e71e4a915ce08192e7b28e596ed251ef326814d3c5c0c25",
+  "agent3_grounding_critic": "779e197a86ec88bbfbea8137fd666dabb813a3960756d9059f010f0ea9936fb9"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 8.86,
+  "agent2_grounded_report_writer": 3.72,
+  "agent3_grounding_critic": 6.07
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 255,
+  "agent2_grounded_report_writer": 44,
+  "agent3_grounding_critic": 148
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 937,
+  "agent2_grounded_report_writer": 1200,
+  "agent3_grounding_critic": 1235
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.11); Atelectasis (calibrated probability 0.23); Pleural Effusion (calibrated probability 0.93)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: (not available)\nIMPRESSION: Stable enlarged cardiomediastinal silhouette. Tortuous aorta. Low lung volumes and left basilar bandlike opacities suggestive of scarring or atelectasis. No overt edema. Question small right pleural effusion versus pleural thickening. No visible pneumothorax.\n[2]\nFINDINGS: Enlarged cardiomediastinal silhouette. Low lung volumes. Relative elevation of right hemidiaphragm. left base density. No focal consolidation, pneumothorax or large pleural effusion. Negative for acute bone abnormality.\nIMPRESSION: Cardiomegaly without heart failure. Minimal left basilar scarring/atelectasis.\n[3]\nFINDINGS: The heart is enlarged. The left subclavian ICD is again identified. There is again hilar enlargement, superimposes enlarged pulmonary vasculature. opacities are unchanged and compatible with subsegmental atelectasis or scarring. There is no large pleural effusion or focal consolidation.\nIMPRESSION: Stable moderate to marked cardiomegaly.\n[4]\nFINDINGS: Heart size moderately enlarged, stable mediastinal contours. opacity in the left lung base. Otherwise, no focal alveolar consolidation, no definite pleural effusion seen. No typical findings of pulmonary edema.\nIMPRESSION: 1. Cardiomegaly 2. opacity in the left base atelectasis\n[5]\nFINDINGS: The cardiac silhouette is mildly enlarged. Mediastinal contours are within normal limits. The pulmonary vasculaturity is increased. There is large right-sided pleural effusion and probable underlying associated compressive atelectasis. Mild perihilar opacities, edema. No pneumothorax is seen.\nIMPRESSION: 1. Cardiomegaly and central vascular congestion with perihilar opacities, possibly edema. 2. Large right pleural effusion.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.11); Atelectasis (calibrated probability 0.23); Pleural Effusion (calibrated probability 0.93)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Enlarged Cardiomediastinum\",\n   \"classifier_probability\": 0.1072,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention enlarged cardiomediastinal silhouette.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Atelectasis\",\n   \"classifier_probability\": 0.226,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention atelectasis or scarring.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"classifier_probability\": 0.9275,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention pleural effusion.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention enlarged heart or cardiomegaly.\",\n   \"status\": \"retrieval_only\"\n  }\n ],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.11); Atelectasis (calibrated probability 0.23); Pleural Effusion (calibrated probability 0.93)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Enlarged Cardiomediastinum\",\n   \"classifier_probability\": 0.1072,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention enlarged cardiomediastinal silhouette.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Atelectasis\",\n   \"classifier_probability\": 0.226,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention atelectasis or scarring.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"classifier_probability\": 0.9275,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention pleural effusion.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention enlarged heart or cardiomegaly.\",\n   \"status\": \"retrieval_only\"\n  }\n ],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Enlarged cardiomediastinal silhouette, atelectasis, and pleural effusion are identified.\nIMPRESSION: Cardiomegaly and pulmonary opacity are possible.\n\nReturn the JSON now."
+ }
+}

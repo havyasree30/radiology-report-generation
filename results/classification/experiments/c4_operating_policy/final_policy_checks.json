@@ -1,0 +1,11 @@
+{
+  "scores_bit_identical_to_c2b": true,
+  "raw_preds_equal_threshold_rule": true,
+  "final_preds_equal_rule_applied_to_raw": true,
+  "only_no_finding_differs_between_raw_and_final": true,
+  "no_finding_columns_present": true,
+  "image_ids_identical": true,
+  "n_rows": 28671,
+  "scores_not_normalised": true,
+  "rule": "suppress_if_any_abnormal_positive"
+}

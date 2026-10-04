@@ -1,0 +1,120 @@
+{
+  "recomputed": {
+    "macro_auroc": 0.8011384160007895,
+    "micro_auroc": 0.8921544972248846,
+    "macro_auprc": 0.4234861202401775,
+    "micro_auprc": 0.6673779238175399
+  },
+  "saved": {
+    "macro_auroc": 0.8011384160007895,
+    "micro_auroc": 0.8921544972248846,
+    "macro_auprc": 0.4234861202401775,
+    "micro_auprc": 0.6673779238175399
+  },
+  "abs_diff": {
+    "macro_auroc": 0.0,
+    "micro_auroc": 0.0,
+    "macro_auprc": 0.0,
+    "micro_auprc": 0.0
+  },
+  "per_class": {
+    "No Finding": {
+      "auroc": 0.8805657243360531,
+      "auprc": 0.47267451594602405,
+      "saved_auroc": 0.8805657243360531,
+      "saved_auprc": 0.47267451594602405
+    },
+    "Enlarged Cardiomediastinum": {
+      "auroc": 0.6866788708756167,
+      "auprc": 0.13744056789310077,
+      "saved_auroc": 0.6866788708756167,
+      "saved_auprc": 0.13744056789310077
+    },
+    "Cardiomegaly": {
+      "auroc": 0.8683498243949614,
+      "auprc": 0.5636233763686277,
+      "saved_auroc": 0.8683498243949614,
+      "saved_auprc": 0.5636233763686277
+    },
+    "Lung Opacity": {
+      "auroc": 0.7391090350831842,
+      "auprc": 0.7114574818438204,
+      "saved_auroc": 0.7391090350831842,
+      "saved_auprc": 0.7114574818438204
+    },
+    "Lung Lesion": {
+      "auroc": 0.7703657377644856,
+      "auprc": 0.18966023320419703,
+      "saved_auroc": 0.7703657377644856,
+      "saved_auprc": 0.18966023320419703
+    },
+    "Edema": {
+      "auroc": 0.8520639975244737,
+      "auprc": 0.6758519276628657,
+      "saved_auroc": 0.8520639975244737,
+      "saved_auprc": 0.6758519276628657
+    },
+    "Consolidation": {
+      "auroc": 0.7456365237734994,
+      "auprc": 0.20429522977020476,
+      "saved_auroc": 0.7456365237734994,
+      "saved_auprc": 0.20429522977020476
+    },
+    "Pneumonia": {
+      "auroc": 0.7616312468821578,
+      "auprc": 0.13367248384372726,
+      "saved_auroc": 0.7616312468821578,
+      "saved_auprc": 0.13367248384372726
+    },
+    "Atelectasis": {
+      "auroc": 0.7145868138514295,
+      "auprc": 0.36289112213014607,
+      "saved_auroc": 0.7145868138514295,
+      "saved_auprc": 0.36289112213014607
+    },
+    "Pneumothorax": {
+      "auroc": 0.8654466656721137,
+      "auprc": 0.4994281849614772,
+      "saved_auroc": 0.8654466656721137,
+      "saved_auprc": 0.4994281849614772
+    },
+    "Pleural Effusion": {
+      "auroc": 0.8830301917068755,
+      "auprc": 0.8348280708538098,
+      "saved_auroc": 0.8830301917068755,
+      "saved_auprc": 0.8348280708538098
+    },
+    "Pleural Other": {
+      "auroc": 0.7863287182610151,
+      "auprc": 0.07624606407617616,
+      "saved_auroc": 0.7863287182610151,
+      "saved_auprc": 0.07624606407617616
+    },
+    "Fracture": {
+      "auroc": 0.7965519703464281,
+      "auprc": 0.19600811405543211,
+      "saved_auroc": 0.7965519703464281,
+      "saved_auprc": 0.19600811405543211
+    },
+    "Support Devices": {
+      "auroc": 0.8655925035387604,
+      "auprc": 0.8707283107528765,
+      "saved_auroc": 0.8655925035387604,
+      "saved_auprc": 0.8707283107528765
+    }
+  },
+  "task_expected_approx": {
+    "macro_auroc": 0.8011,
+    "micro_auroc": 0.8922,
+    "macro_auprc": 0.4235,
+    "micro_auprc": 0.6674
+  },
+  "abs_diff_vs_task_expected": {
+    "macro_auroc": 3.8416000789465166e-05,
+    "micro_auroc": 4.550277511539136e-05,
+    "macro_auprc": 1.3879759822477133e-05,
+    "micro_auprc": 2.207618246008458e-05
+  },
+  "max_per_class_abs_diff": 0.0,
+  "reproduced": true
+}

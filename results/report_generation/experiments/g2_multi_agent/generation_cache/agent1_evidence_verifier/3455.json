@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "02cf0211f8622a54e8f79dfd6739e843f3de7d185e4ad4f9905f1b1492471374",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"The classifier identified Lung Opacity with a probability of 0.65. This finding is supported by reports 1, 2, 3, 4, and 5.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"The classifier identified Edema with a probability of 0.58. This finding is not supported by any retrieved reports.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 3], \"evidence_summary\": \"Report 1 and 3 mention cardiomegaly. The classifier did not identify this finding.\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [2], \"evidence_summary\": \"Report 2 mentions opacity in the right lung base which may be compatible with pneumonia. The classifier did not identify this finding.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Reports 1, 2, 3, 4, and 5 mention opacity or atelectasis. The classifier did not identify this finding.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pneumothorax. The classifier did not identify this finding.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 2, 4, 5], \"evidence_summary\": \"Reports 1, 2, 4, and 5 mention pleural effusion. The classifier did not identify this finding.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [2], \"evidence_summary\": \"Report 2 mentions opacity in the right lung base which may be compatible with pneumonia. The classifier did not identify this finding.\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung lesion. The classifier did not identify this finding.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture. The classifier did not identify this finding.\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention support devices. The classifier did not identify this finding.\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pleural other. The classifier did not identify this finding.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"The classifier identified Lung Opacity with a probability of 0.65. This finding is not supported by any retrieved reports. Note: This is the same finding as classifier_findings[0].\"}\n  ],\n  \"normal_report_ranks\": [\n    1, 2, 3, 4, 5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 870,
+ "output_tokens": 727,
+ "total_duration_ns": 16885057800,
+ "load_duration_ns": 8393300,
+ "attempts": 1,
+ "wall_seconds": 18.95,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T17:03:32+00:00",
+ "agent": "agent1_evidence_verifier"
+}

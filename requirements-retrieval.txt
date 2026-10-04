@@ -1,0 +1,11 @@
+# R1 (retrieval baseline) additional direct dependencies. Python 3.11. Added with user approval at the start of R1
+# (installed 2026-10-03); numpy / pandas / scikit-learn / torch are unchanged from the earlier requirement files.
+# Transitive packages (tokenizers, safetensors, huggingface-hub, hf-xet, regex, ...) are resolved by pip.
+#
+# Embedding model (downloaded from huggingface.co, not a pip package):
+#   sentence-transformers/all-MiniLM-L6-v2, snapshot 1110a243fdf4706b3f48f1d95db1a4f5529b4d41
+#   (model.safetensors sha256 53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db)
+
+faiss-cpu==1.15.1
+sentence-transformers==6.1.0
+transformers==5.18.0

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "cb7fdcb616db2def1b530adaec1372e271c8d6f2dc744079b1d4d381cf33d04b",
+ "text": "FINDINGS:\nNo focal consolidation or pleural effusion identified. The cardiomediastinal silhouette is within normal limits.\nIMPRESSION:\nNo acute cardiopulmonary abnormality identified.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1318,
+ "output_tokens": 47,
+ "total_duration_ns": 1613242800,
+ "load_duration_ns": 6789100,
+ "attempts": 1,
+ "wall_seconds": 3.65,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T06:58:59+00:00"
+}

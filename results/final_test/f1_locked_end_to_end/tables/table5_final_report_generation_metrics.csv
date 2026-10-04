@@ -1,0 +1,15 @@
+Metric,Final system on the locked test (95% CI)
+Finding precision,0.413 (0.342 to 0.489)
+Finding recall,0.306 (0.247 to 0.364)
+Finding F1 (micro),0.351 (0.295 to 0.407)
+Macro finding F1,0.233 (0.165 to 0.304)
+Hallucination rate,0.217 (0.174 to 0.261)
+Omission rate,0.364 (0.312 to 0.413)
+Classifier FP propagation,0.356 (0.290 to 0.419)
+Classifier TP retention,0.702 (0.612 to 0.788)
+ROUGE-L,0.220 (0.211 to 0.230)
+BLEU-4,0.035 (0.031 to 0.040)
+METEOR (exact-match variant),0.204 (0.192 to 0.217)
+Mean report length (words),23.1 (22.4 to 23.9)
+Studies (clinical subset / primary set),368 / 549
+Persistent generation failures,0

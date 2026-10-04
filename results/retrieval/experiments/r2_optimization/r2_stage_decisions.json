@@ -1,0 +1,57 @@
+{
+  "decisions": [
+    {
+      "stage": "A1",
+      "winner": "R1_Q0_dense",
+      "base_phrases": "names"
+    },
+    {
+      "stage": "A2",
+      "winner": "R1_Q0_dense",
+      "weighting": null
+    },
+    {
+      "stage": "A2_note",
+      "share_of_frozen_positive_findings_with_p_below_0.5": 0.739612188365651,
+      "n_positive_findings": 361
+    },
+    {
+      "stage": "A3",
+      "winner": "A3_Q3_top3_dense",
+      "top_n": 3
+    },
+    {
+      "stage": "B",
+      "winner": "B_hybrid_rrf",
+      "retriever": "hybrid"
+    },
+    {
+      "stage": "C",
+      "mmr_base": "hybrid",
+      "eligible_lambdas": [],
+      "selected_lambda": null,
+      "final_pipeline_config": "B_hybrid_rrf"
+    },
+    {
+      "stage": "K",
+      "selected_K": 5
+    }
+  ],
+  "selected_query_policy": {
+    "phrases": "names",
+    "weighting": null,
+    "top_n": 3,
+    "normal": "no acute abnormality"
+  },
+  "selected_retriever": "hybrid",
+  "mmr": {
+    "base": "hybrid",
+    "lambda": null
+  },
+  "final_config": "B_hybrid_rrf",
+  "selected_K": 5,
+  "primary_set_size": 358,
+  "protocol_sha256": "68211677acf136f9ba08b7bf73f5830c15a2bc43bc940e43d7156f0f29a340ae",
+  "expansion_sha256": "ddde8964f002740ae774423dbffe946e34ff16ee7deb2a6352fb15f75ada65dd",
+  "normal_phrase": "no acute abnormality"
+}

@@ -1,0 +1,125 @@
+{
+ "uid": "188",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Cardiomegaly",
+    "classifier_probability": 0.462,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   },
+   {
+    "finding": "Lung Opacity",
+    "classifier_probability": 0.4964,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   },
+   {
+    "finding": "Consolidation",
+    "classifier_probability": 0.1677,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   },
+   {
+    "finding": "Pleural Effusion",
+    "classifier_probability": 0.9102,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": []
+ },
+ "agent1_validation_flags": [
+  "agent1_omitted_classifier_finding",
+  "agent1_status_inconsistent_with_count",
+  "agent1_summary_replaced",
+  "agent1_unparseable"
+ ],
+ "agent2_draft": {
+  "findings": "Cardiomegaly and Pleural Effusion are present.",
+  "impression": "Cardiomegaly and Pleural Effusion are present.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated",
+   "missed_strongly_supported_finding",
+   "no_finding_contradiction",
+   "abnormal_to_normal_collapse",
+   "invented_measurement_history_or_comparison",
+   "excessive_certainty",
+   "duplication_or_repetition",
+   "malformed_structure"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Cardiomegaly and Pleural Effusion are present.",
+  "impression": "Cardiomegaly and Pleural Effusion are present.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"Report 1, 3, and 5 mention cardiomegaly.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Report 1 and 4 mention lung opacity.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions consolidation.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"Report 1, 3, and 5 mention pleural effusion.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Edema\", \"supporting_ranks\": [3, 5], \"evidence_summary\": \"Report 3 and 5 mention edema, but are not classifier positive findings.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Report 1 and 4 mention atelectasis, but are not classifier positive findings.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions pneumothorax.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions fracture.\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions support devices.\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions pleural other, but is not classifier positive findings.\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [3], \"evidence_summary\": \"Report 3 mentions lung lesions, but are not classifier positive findings.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [3, 5], \"evidence_summary\": \"Report 3 and 5 mention cardiomegaly, but are not classifier positive findings.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"Report 1, 3, and 5 mention cardiomegaly, but are not classifier positive findings.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"Report 1, 3, and 5 mention cardiomegaly, but are not classifier positive findings.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"Report 1, 3, and 5 mention cardiomegaly, but are not classifier positive findings.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"Report 1, 3, and 5 mention cardiomegaly, but are not classifier positive findings.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"Report 1, 3, and 5 mention cardiomegaly, but are not classifier positive findings.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"Report 1, 3, and 5 mention cardiomegaly, but are not classifier positive findings.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"Report 1, 3, and 5 mention cardiomegaly, but are not classifier positive findings.\"},\n",
+ "agent2_raw_text": "{\n\"findings\": \"Cardiomegaly and Pleural Effusion are present.\",\n\"impression\": \"Cardiomegaly and Pleural Effusion are present.\"\n}",
+ "agent3_raw_text": "{\n \"issues_detected\": [\n  \"unsupported_finding_stated\",\n  \"missed_strongly_supported_finding\",\n  \"no_finding_contradiction\",\n  \"abnormal_to_normal_collapse\",\n  \"invented_measurement_history_or_comparison\",\n  \"excessive_certainty\",\n  \"duplication_or_repetition\",\n  \"malformed_structure\"\n ],\n \"decision\": \"REVISE\",\n \"findings\": \"Cardiomegaly and Pleural Effusion are present.\",\n \"impression\": \"Cardiomegaly and Pleural Effusion are present.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "d3e09a15142b6cf1b39a36ec3721b3572c24290307fcbbc96f8cc329516fad50",
+  "agent2_grounded_report_writer": "14812b9141c251a9e8ad4dadeb98def3327deb34d61f177621b3be35a7de990a",
+  "agent3_grounding_critic": "dd714583b2722cf9cb184933fca9bb2936cee960a466dc86bf3c0badde9ab03d"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "3b332963d90b78db76b4b15db42f5621b6924f8de209554d0982f4f9f3c2e601",
+  "agent2_grounded_report_writer": "328d8871213e4bf413cfe9be9d8d307651b3d6e348c6173cfc033a6d0261c768",
+  "agent3_grounding_critic": "e9e1f3803a229a67f083dd10f267f5e4adca7af0650db7624cc3bad789a73e0d"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 22.77,
+  "agent2_grounded_report_writer": 3.6,
+  "agent3_grounding_critic": 5.67
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 900,
+  "agent2_grounded_report_writer": 38,
+  "agent3_grounding_critic": 142
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 987,
+  "agent2_grounded_report_writer": 1128,
+  "agent3_grounding_critic": 1157
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "length",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Cardiomegaly (calibrated probability 0.46); Lung Opacity (calibrated probability 0.50); Consolidation (calibrated probability 0.17); Pleural Effusion (calibrated probability 0.91)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: Heart size moderately enlarged, stable mediastinal contours. opacity in the left lung base. Otherwise, no focal alveolar consolidation, no definite pleural effusion seen. No typical findings of pulmonary edema.\nIMPRESSION: 1. Cardiomegaly 2. opacity in the left base atelectasis\n[2]\nFINDINGS: No focal lung opacity, pleural effusion or pneumothorax. Cardiomediastinal silhouette is unremarkable.\nIMPRESSION: No focal lung opacity, pleural effusion of pneumothorax.\n[3]\nFINDINGS: Cardiomegaly is present. There is interstitial pulmonary edema with the presence of B-lines. There is no pneumothorax. There is an oval, 17 mm nodular opacity projecting between the posterior left 5th and 6th ribs. There is a 10 mm nodular density projecting over the right posterior 4th rib. There is a posterior effusion. Normal mediastinal silhouette. T-spine osteophytes.\nIMPRESSION: 1. Cardiomegaly with mild interstitial edema and posterior pleural effusion. 2. 17 mm nodular opacity in the left lung and 10 mm nodular opacity in the right lung. These lesions are and could be followed up radiographically after treatment of edema, or could be further characterized with CT.\n[4]\nFINDINGS: There is opacity left lung base may represent atelectasis or early infiltrate. The cardiomediastinal silhouette is within normal limits. No pneumothorax or pleural effusion.\nIMPRESSION: opacity left lung base..\n[5]\nFINDINGS: 1. Cardiomegaly and/or pericardial effusion. 2. Right base opacity combination of pleural effusion and atelectasis/airspace disease. Cannot exclude elevation right hemidiaphragm. 3. Left lung relatively clear. 4. Limited exam due to underpenetrated technique related to large patient habitus. 5. No evidence of pneumothorax.\nIMPRESSION: (not available)\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Cardiomegaly (calibrated probability 0.46); Lung Opacity (calibrated probability 0.50); Consolidation (calibrated probability 0.17); Pleural Effusion (calibrated probability 0.91)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"classifier_probability\": 0.462,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.4964,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Consolidation\",\n   \"classifier_probability\": 0.1677,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"classifier_probability\": 0.9102,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Cardiomegaly (calibrated probability 0.46); Lung Opacity (calibrated probability 0.50); Consolidation (calibrated probability 0.17); Pleural Effusion (calibrated probability 0.91)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"classifier_probability\": 0.462,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.4964,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Consolidation\",\n   \"classifier_probability\": 0.1677,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"classifier_probability\": 0.9102,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nC. DRAFT REPORT\nFINDINGS: Cardiomegaly and Pleural Effusion are present.\nIMPRESSION: Cardiomegaly and Pleural Effusion are present.\n\nReturn the JSON now."
+ }
+}

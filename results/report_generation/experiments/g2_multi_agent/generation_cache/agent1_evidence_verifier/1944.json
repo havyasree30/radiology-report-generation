@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "5e5c74661becefa24b9f5ef54052c8e1cc3019ffbf304ac053aae9c4a0783997",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [1, 5], \"evidence_summary\": \"Report 1 mentions a fracture of the left anterior 7th rib and the left anterior 6th rib, of uncertain acuity. Report 5 mentions a deformity of the right 6th rib laterally has appearance of acute or subacute fracture.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [1, 5], \"evidence_summary\": \"Report 1 mentions a fracture of the left anterior 7th rib and the left anterior 6th rib, of uncertain acuity. Report 5 mentions a deformity of the right 6th rib laterally has appearance of acute or subacute fracture.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions Enlarged Cardiomediastinum.\"}\n  ],\n  \"normal_report_ranks\": [\n    3\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1052,
+ "output_tokens": 258,
+ "total_duration_ns": 6755355200,
+ "load_duration_ns": 4713800,
+ "attempts": 1,
+ "wall_seconds": 8.82,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:15:06+00:00",
+ "agent": "agent1_evidence_verifier"
+}

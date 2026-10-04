@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "c907f5096659d1c9a7468941b74b055acf030da927329fec9e91b7b8c03eb4e7",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette and pulmonary vasculature are within normal limits in size. Lungs are clear of focal airspace disease. There is no pneumothorax. There is mild blunting of the right costophrenic, without definite pleural effusion.\nIMPRESSION:\nNo acute cardiopulmonary abnormality.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1177,
+ "output_tokens": 68,
+ "total_duration_ns": 2039302000,
+ "load_duration_ns": 5588300,
+ "attempts": 1,
+ "wall_seconds": 4.08,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:39:00+00:00"
+}

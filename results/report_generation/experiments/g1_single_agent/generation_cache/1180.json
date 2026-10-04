@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "1c5fce4e1f330138d87d89a66e0c2245ae6b0a29750d5369db52ee3de39db87c",
+ "text": "FINDINGS:\nCardiomegaly is present. The lungs are clear.\nIMPRESSION:\nCardiomegaly.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1042,
+ "output_tokens": 28,
+ "total_duration_ns": 6168879300,
+ "load_duration_ns": 6385800,
+ "attempts": 1,
+ "wall_seconds": 8.21,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T10:26:59+00:00"
+}

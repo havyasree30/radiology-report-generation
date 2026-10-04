@@ -1,0 +1,29 @@
+{
+  "started_utc": "2026-10-03T11:14:15+00:00",
+  "n_cases": 547,
+  "already_cached": 0,
+  "prompt_sha256": "e5a4665af2a1d24062a45f7fe3dde9bbc03cad235fa858788fdc6da2ab686b88",
+  "model_tag": "medgemma1.5:4b",
+  "model_digest": "433252621ab154668b5d8be6aff6c1b771bacba045e46e6193da8d6ad1630f2c",
+  "ollama_version": "0.35.1",
+  "finished_utc": "2026-10-03T11:45:08+00:00",
+  "n_cached_success": 547,
+  "n_failed": 0,
+  "failed_ids": [],
+  "failures": {},
+  "hardware_at_end": {
+    "os": "Windows-10-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "nvidia_smi": "NVIDIA GeForce RTX 3050 6GB Laptop GPU, 596.08, 6144 MiB",
+    "ollama_ps": [
+      {
+        "name": "medgemma1.5:4b",
+        "size": 2879851068,
+        "size_vram": 2879851068,
+        "context_length": 8192
+      }
+    ]
+  },
+  "wall_seconds_this_run": 1855.4
+}

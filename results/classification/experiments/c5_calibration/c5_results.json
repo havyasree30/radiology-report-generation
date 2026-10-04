@@ -1,0 +1,141 @@
+{
+  "c4_reproduced": true,
+  "n_images": 28671,
+  "n_patients": 9530,
+  "cv": {
+    "n_folds": 5,
+    "seed": 42,
+    "method": "multi-label iterative stratification over patients (valid positive images per class)",
+    "images_per_fold": [
+      5748,
+      5730,
+      5731,
+      5731,
+      5731
+    ],
+    "patients_per_fold": [
+      1895,
+      1951,
+      1949,
+      1852,
+      1883
+    ],
+    "patient_overlap_between_folds": 0,
+    "min_positives_per_class_per_fold": {
+      "No Finding": 507,
+      "Enlarged Cardiomediastinum": 274,
+      "Cardiomegaly": 692,
+      "Lung Opacity": 2825,
+      "Lung Lesion": 212,
+      "Edema": 1485,
+      "Consolidation": 391,
+      "Pneumonia": 142,
+      "Atelectasis": 892,
+      "Pneumothorax": 526,
+      "Pleural Effusion": 2308,
+      "Pleural Other": 76,
+      "Fracture": 218,
+      "Support Devices": 3200
+    }
+  },
+  "logit_reconstruction": {
+    "scores_are_float32_values": true,
+    "min_score": 3.056765081055346e-07,
+    "max_score": 0.9996165037155151,
+    "n_clipped": 0,
+    "max_logit_rounding_error_from_float32_storage": 7.774196793676618e-05,
+    "median_logit_rounding_error": 5.2852596440883766e-08,
+    "logit_min": -15.000738151562285,
+    "logit_max": 7.865797055801726,
+    "note": "stored scores are float32 sigmoid outputs held as float64; logit(p) is recovered to the stated bound, no inference rerun"
+  },
+  "macro_raw": {
+    "brier": 0.09621754450913929,
+    "log_loss": 0.31246062327328217,
+    "ece": 0.06428186529609033
+  },
+  "macro_by_method": {
+    "raw": {
+      "brier": 0.09621754450913929,
+      "log_loss": 0.3124606232732821,
+      "ece": 0.06428186529609031
+    },
+    "temperature": {
+      "brier": 0.09501245500347937,
+      "log_loss": 0.30823641074703095,
+      "ece": 0.05329160717344963
+    },
+    "platt": {
+      "brier": 0.08388392136081899,
+      "log_loss": 0.27755013375704574,
+      "ece": 0.005580160294397585
+    },
+    "isotonic": {
+      "brier": 0.08397720491771796,
+      "log_loss": 0.27839967420439127,
+      "ece": 0.0029554166230944486
+    }
+  },
+  "macro_selected": {
+    "raw_brier": 0.09621754450913929,
+    "raw_log_loss": 0.31246062327328217,
+    "raw_ece": 0.06428186529609033,
+    "calibrated_brier": 0.08388392136081897,
+    "calibrated_log_loss": 0.2775501337570457,
+    "calibrated_ece": 0.005580160294397586
+  },
+  "final_choice": {
+    "No Finding": "platt",
+    "Enlarged Cardiomediastinum": "platt",
+    "Cardiomegaly": "platt",
+    "Lung Opacity": "platt",
+    "Lung Lesion": "platt",
+    "Edema": "platt",
+    "Consolidation": "platt",
+    "Pneumonia": "platt",
+    "Atelectasis": "platt",
+    "Pneumothorax": "platt",
+    "Pleural Effusion": "platt",
+    "Pleural Other": "platt",
+    "Fracture": "platt",
+    "Support Devices": "platt"
+  },
+  "uniform_method": "platt",
+  "uniform_check": {
+    "dominant_method": "platt",
+    "n_classes_selected": 12,
+    "worst_relative_loss_if_uniform": 0.002936847776967122
+  },
+  "selection_rule": {
+    "tolerance_rel": 0.005,
+    "uniform_min_classes": 10,
+    "uniform_max_rel_loss": 0.01
+  },
+  "representative": {
+    "rare": "Pleural Other",
+    "medium": "Pneumothorax",
+    "common": "Support Devices"
+  },
+  "total_threshold_decision_mismatches": 0,
+  "guardrail_flags": {},
+  "locked_test_split_used": false,
+  "checkpoint": {
+    "path": "results/classification/experiments/c2b_sqrt_weighted_bce/checkpoints/best.pt",
+    "sha256_recomputed": "6645ed44be7cb7d4cf4679b1fd561c7ac36be63f964ea320666199883126794b",
+    "sha256_recorded": "6645ed44be7cb7d4cf4679b1fd561c7ac36be63f964ea320666199883126794b",
+    "sha256_match": true,
+    "size_bytes": 28439162,
+    "git_commit_in_checkpoint": "c1e4800983f8e050da63ac85e799ba443e4858fe",
+    "architecture": "densenet121",
+    "num_labels": 14,
+    "training_loss": {
+      "type": "weighted_bce",
+      "pos_weight_source": "train_split",
+      "pos_weight_tempering": "sqrt"
+    },
+    "selected_epoch": 7,
+    "selection_metric": "val_macro_auprc",
+    "selection_metric_value": 0.4234861202401775,
+    "training_summary_best_epoch": 7
+  }
+}

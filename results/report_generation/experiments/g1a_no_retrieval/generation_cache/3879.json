@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "3b54f1b9498616b3325ac846e7a953c23e17f3efaaaa6a0a1505f5aa609e6f25",
+ "text": "FINDINGS:\nPulmonary opacity is present.\nIMPRESSION:\nPneumonia is likely.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 507,
+ "output_tokens": 32,
+ "total_duration_ns": 1027764600,
+ "load_duration_ns": 5738500,
+ "attempts": 1,
+ "wall_seconds": 3.05,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:43:55+00:00"
+}

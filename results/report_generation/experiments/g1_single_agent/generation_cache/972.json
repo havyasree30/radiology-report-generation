@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "59b316d98c59e455d9606cd8cdc999c6eef85a8e1af31a45a83219d4be177087",
+ "text": "FINDINGS:\nEnlarged cardiomediastinal silhouette. Low lung volumes.\nIMPRESSION:\nCardiomegaly without heart failure. Minimal left basilar scarring/atelectasis.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1296,
+ "output_tokens": 52,
+ "total_duration_ns": 1975836200,
+ "load_duration_ns": 10794200,
+ "attempts": 1,
+ "wall_seconds": 4.0,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T10:25:37+00:00"
+}

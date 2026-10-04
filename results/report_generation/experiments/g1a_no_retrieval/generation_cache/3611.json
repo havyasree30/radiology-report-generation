@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "dc33f40058962c9d03f87cb419d8663a93dd883cab4feb7aec0a6f378ca427fe",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette appears enlarged. The heart size is increased. There is a patchy opacity in the right lower lung. A small pleural effusion is present on the left. A fracture is noted in the right clavicle.\nIMPRESSION:\nEnlarged cardiomediastinal silhouette, cardiomegaly, pulmonary opacity, pleural effusion, and fracture are identified.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 576,
+ "output_tokens": 92,
+ "total_duration_ns": 2341850000,
+ "load_duration_ns": 9520600,
+ "attempts": 1,
+ "wall_seconds": 4.4,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:41:13+00:00"
+}

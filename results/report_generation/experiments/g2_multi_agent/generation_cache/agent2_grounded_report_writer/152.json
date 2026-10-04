@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "623cb09da2bfb58c825df3481735f6cff4d37f62572e697c59d06463db1cda9e",
+ "text": "{\n\"findings\": \"Enlarged Cardiomediastinum is possible. Fracture is supported. Lung Lesion is unsupported. Atelectasis is retrieval_only.\",\n\"impression\": \"Cardiomegaly is possible. Pneumonia is retrieval_only.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1425,
+ "output_tokens": 57,
+ "total_duration_ns": 2058204200,
+ "load_duration_ns": 1617900,
+ "attempts": 1,
+ "wall_seconds": 4.09,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T14:50:56+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

@@ -1,0 +1,15 @@
+| Parameter | Value |
+|---|---:|
+| Status | candidate; locked retrieval test unopened |
+| Embedding model; dimension | sentence-transformers/all-MiniLM-L6-v2; 384 |
+| Query phrase set | names |
+| Clinical phrase expansion selected | False |
+| Probability weighting selected | False |
+| Top-N findings | 3 |
+| No Finding query phrase | no acute abnormality |
+| Lexical | BM25 k1=1.5, b=0.75 |
+| Retriever | hybrid |
+| Fusion | RRF k=60, depth 100 |
+| MMR | not adopted |
+| Provisional Top-K | 5 |
+| Candidate Jaccard@K / nDCG@K / coverage@K | 0.557 / 0.559 / 0.748 |

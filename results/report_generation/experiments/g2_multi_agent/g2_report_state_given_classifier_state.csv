@@ -1,0 +1,10 @@
+system,classifier_state,n,report_normal,report_abnormal,report_indeterminate
+G1_single_agent_rag,abnormal,178,53,125,0
+G1_single_agent_rag,normal,176,176,0,0
+G1_single_agent_rag,indeterminate,24,24,0,0
+G2_agent2_draft_pre_critic,abnormal,178,0,176,2
+G2_agent2_draft_pre_critic,normal,176,176,0,0
+G2_agent2_draft_pre_critic,indeterminate,24,24,0,0
+G2_multi_agent_rag,abnormal,178,0,176,2
+G2_multi_agent_rag,normal,176,176,0,0
+G2_multi_agent_rag,indeterminate,24,24,0,0

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "59c7f4c69288c08d79495eec348233289e82687e098da69cd1e24dcebc101999",
+ "text": "FINDINGS:\nThe trachea is midline. The cardiomediastinal silhouette is normal. The lungs are clear, without evidence of focal infiltrate or effusion. There is no pneumothorax. The visualized bony structures reveal no acute abnormalities.\nIMPRESSION:\nNo acute cardiopulmonary abnormalities.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1219,
+ "output_tokens": 70,
+ "total_duration_ns": 2124279700,
+ "load_duration_ns": 1572000,
+ "attempts": 1,
+ "wall_seconds": 4.16,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:31:19+00:00"
+}

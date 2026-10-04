@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "f71b475beafa0b5fb203769c0e39648388c9c93089869a81e77efd8736c998eb",
+ "text": "FINDINGS: Cardiomegaly. No pneumothorax or pleural effusion. Clear lung fields.\nIMPRESSION: Cardiomegaly.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1042,
+ "output_tokens": 29,
+ "total_duration_ns": 1162484400,
+ "load_duration_ns": 9243600,
+ "attempts": 1,
+ "wall_seconds": 3.2,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T06:49:30+00:00"
+}

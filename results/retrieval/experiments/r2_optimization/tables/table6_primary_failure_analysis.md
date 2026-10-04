@@ -1,0 +1,4 @@
+| System | Failures (top-1 not exact) | Queries | D normal/abnormal disagreement | A upstream classification/query error | E corpus limitation | F duplicate/template issue | B terminology mismatch | C retriever failure despite good query |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| R1 Q0 dense baseline | 200 | 358 | 77 (38.5%) | 113 (56.5%) | 0 (0.0%) | 0 (0.0%) | 3 (1.5%) | 7 (3.5%) |
+| R2 selected pipeline | 181 | 358 | 77 (42.5%) | 102 (56.4%) | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) | 2 (1.1%) |

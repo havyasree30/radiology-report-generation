@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "f55f2291350de9fc29a30fc3886c9f279972555808f41ba9b1b7bd15faa03d05",
+ "text": "{\n\"findings\": \"Lung Opacity\",\n\"impression\": \"Pneumonia\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1125,
+ "output_tokens": 22,
+ "total_duration_ns": 1003947000,
+ "load_duration_ns": 4948500,
+ "attempts": 1,
+ "wall_seconds": 3.06,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:18:38+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

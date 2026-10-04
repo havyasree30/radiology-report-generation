@@ -1,0 +1,13 @@
+Observation,Split,Prevalence,AUROC,AUPRC,Precision,Recall,Specificity,F1,TP,FP,FP per TP
+Pleural Other,validation,0.013,0.786,0.076,0.118,0.257,0.974,0.162,98,732,7.47
+Pleural Other,test,0.013,0.809,0.093,0.113,0.249,0.974,0.156,94,735,7.82
+Pneumonia,validation,0.027,0.762,0.134,0.151,0.271,0.957,0.194,194,1091,5.62
+Pneumonia,test,0.027,0.750,0.122,0.142,0.232,0.960,0.176,168,1014,6.04
+Fracture,validation,0.038,0.797,0.196,0.256,0.283,0.967,0.269,309,898,2.91
+Fracture,test,0.039,0.779,0.199,0.261,0.285,0.967,0.272,321,910,2.83
+Lung Lesion,validation,0.037,0.770,0.190,0.235,0.281,0.964,0.256,299,976,3.26
+Lung Lesion,test,0.037,0.784,0.213,0.244,0.274,0.967,0.258,293,906,3.09
+Enlarged Cardiomediastinum,validation,0.051,0.687,0.137,0.145,0.313,0.902,0.199,430,2527,5.88
+Enlarged Cardiomediastinum,test,0.051,0.682,0.140,0.134,0.319,0.889,0.189,447,2880,6.44
+Consolidation,validation,0.078,0.746,0.204,0.190,0.435,0.843,0.265,853,3625,4.25
+Consolidation,test,0.079,0.751,0.209,0.196,0.447,0.843,0.273,884,3622,4.10

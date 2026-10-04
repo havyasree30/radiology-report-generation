@@ -1,0 +1,91 @@
+{
+ "uid": "2396",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Lung Opacity",
+    "classifier_probability": 0.4937,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": []
+ },
+ "agent1_validation_flags": [
+  "agent1_omitted_classifier_finding",
+  "agent1_status_inconsistent_with_count",
+  "agent1_summary_replaced",
+  "agent1_unparseable"
+ ],
+ "agent2_draft": {
+  "findings": "Lung Opacity",
+  "impression": "Pulmonary opacity is present.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Lung Opacity",
+  "impression": "Pulmonary opacity is present.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 4, 5], \"evidence_summary\": \"Retrieved reports mention lung opacity in various locations.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention cardiomegaly.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung lesions.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention edema.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention consolidation.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 5], \"evidence_summary\": \"Retrieved reports mention atelectasis in various locations.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pneumothorax.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [4, 5], \"evidence_summary\": \"Retrieved reports mention pleural effusion in various locations.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention support devices.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention enlarged cardiomediastinum. The cardiomediastinal silhouette is within normal limits in retrieved reports [1, 2, 3].\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 4, 5], \"evidence_summary\": \"Retrieved reports mention lung opacity in various locations. This is a classifier finding, not a candidate. The classifier states Lung Opacity is positive with probability 0.49. The retrieved reports mention opacity in the left upper lung, left lung base, left midlung, and left base. The classifier finding is supported by multiple retrieved reports. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is not a candidate as it is a classifier finding. The candidate is",
+ "agent2_raw_text": "{\n\"findings\": \"Lung Opacity\",\n\"impression\": \"Pulmonary opacity is present.\"\n}",
+ "agent3_raw_text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Lung Opacity\",\n\"impression\": \"Pulmonary opacity is present.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "cc97c3374cdcd4cec036dd18f58e8a0713557a9d1233cde1ac815e85ff95a2b4",
+  "agent2_grounded_report_writer": "6d02de5c1fca4f8d8c6f364a02f1a823389a4c1e46be12a605fd37d339f816fe",
+  "agent3_grounding_critic": "c82a8d70d8df0c1108ae332e2d4b4d1b67ea74c5e54616ca12020c5ffa0cc875"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "9ef1ef5c5befa082c66c86a25cf5936eb42f90e96b8bc42d581b873a1312feaa",
+  "agent2_grounded_report_writer": "63fa9a7aa391e09de4f0882d7df6b0aa0a0c38631de03b95a9cf0d693a27c9a5",
+  "agent3_grounding_critic": "03d1afbae0b53bd743e33eed18198444deb8242420bb09323b9a9054d11173ba"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 23.16,
+  "agent2_grounded_report_writer": 3.21,
+  "agent3_grounding_critic": 3.67
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 900,
+  "agent2_grounded_report_writer": 24,
+  "agent3_grounding_critic": 47
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 808,
+  "agent2_grounded_report_writer": 836,
+  "agent3_grounding_critic": 851
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "length",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Lung Opacity (calibrated probability 0.49)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: There is a airspace opacity in the left upper lung. Heart size within normal limits. Mild calcification of the aortic. No pneumothorax or pleural effusions.\nIMPRESSION: airspace opacity in the left upper lung which may represent streaky atelectasis or resolving pneumonia.\n[2]\nFINDINGS: There is opacity left lung base may represent atelectasis or early infiltrate. The cardiomediastinal silhouette is within normal limits. No pneumothorax or pleural effusion.\nIMPRESSION: opacity left lung base..\n[3]\nFINDINGS: No focal lung opacity, pleural effusion or pneumothorax. Cardiomediastinal silhouette is unremarkable.\nIMPRESSION: No focal lung opacity, pleural effusion of pneumothorax.\n[4]\nFINDINGS: Low lung volumes. Question patchy opacity left base. No pneumothorax. Osseous structures intact. Small right effusion.\nIMPRESSION: 1. Patchy opacity left base, may represent evolving infiltrate. 2. Small right pleural effusion..\n[5]\nFINDINGS: Lung volumes are low. The heart is large, the pulmonary are engorged. No infiltrates. opacity is present in the left midlung.\nIMPRESSION: Hypoinflation with cardiomegaly and pulmonary venous hypertension. Left mid lung focal atelectasis.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Opacity (calibrated probability 0.49)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.4937,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Opacity (calibrated probability 0.49)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.4937,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nC. DRAFT REPORT\nFINDINGS: Lung Opacity\nIMPRESSION: Pulmonary opacity is present.\n\nReturn the JSON now."
+ }
+}

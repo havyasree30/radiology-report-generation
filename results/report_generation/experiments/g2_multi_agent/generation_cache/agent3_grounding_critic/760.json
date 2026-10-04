@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "d04ba1288aed3a44ad527bd99a643aa15c45f26bcd3163dae3808dffe55ebf88",
+ "text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Lung Opacity and Pneumonia are supported by retrieved evidence. Fracture is not supported by retrieved evidence.\",\n\"impression\": \"Lung Opacity and Pneumonia are present.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1229,
+ "output_tokens": 66,
+ "total_duration_ns": 1929914100,
+ "load_duration_ns": 5092400,
+ "attempts": 1,
+ "wall_seconds": 3.98,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 700,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:17:54+00:00",
+ "agent": "agent3_grounding_critic"
+}

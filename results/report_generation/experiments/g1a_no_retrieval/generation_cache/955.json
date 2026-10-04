@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "59d7a46004a97e5b020e586c17134103c90c9e4130065e7033150c02dba17c6b",
+ "text": "FINDINGS:\nThere is a consolidation in the right lower lobe.\nIMPRESSION:\nPneumonia.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 532,
+ "output_tokens": 34,
+ "total_duration_ns": 1163424500,
+ "load_duration_ns": 12474600,
+ "attempts": 1,
+ "wall_seconds": 3.2,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:22:46+00:00"
+}

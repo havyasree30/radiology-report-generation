@@ -1,0 +1,31 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lrrrr}
+\hline
+Group & Metric & Validation & Test & Test minus validation \\
+\hline
+classification (IU, same pipeline) & macro AUROC & 0.847 & 0.847 & 0.000 \\
+classification (IU, same pipeline) & macro AUPRC & 0.465 & 0.465 & 0.000 \\
+classification (IU, same pipeline) & macro F1 & 0.330 & 0.330 & 0.000 \\
+classification (IU, same pipeline) & Brier score (macro) & 0.054 & 0.054 & 0.000 \\
+classification (IU, same pipeline) & ECE (macro) & 0.054 & 0.054 & 0.000 \\
+retrieval (classifier query) & Jaccard@5 & 0.557 & 0.557 & 0.000 \\
+retrieval (classifier query) & finding coverage@5 & 0.748 & 0.748 & 0.000 \\
+report generation & finding precision & 0.411 & 0.411 & 0.000 \\
+report generation & finding recall & 0.358 & 0.358 & 0.000 \\
+report generation & finding F1 & 0.383 & 0.383 & 0.000 \\
+report generation & hallucination rate & 0.257 & 0.257 & 0.000 \\
+report generation & omission rate & 0.381 & 0.381 & 0.000 \\
+report generation & classifier FP propagation & 0.405 & 0.405 & 0.000 \\
+report generation & classifier TP retention & 0.718 & 0.718 & 0.000 \\
+system & decision coverage & 0.937 & 0.937 & 0.000 \\
+system & normal recall (decided) & 0.781 & 0.781 & 0.000 \\
+system & abnormal recall (decided) & 0.760 & 0.760 & 0.000 \\
+system & indeterminate rate (P3) & 0.090 & 0.090 & 0.000 \\
+system & abnormal-routing -> normal-prose rate (\%) & 31.004 & 31.004 & 0.000 \\
+\hline
+\end{tabular}
+\caption{Descriptive validation-to-test comparison (same code, IU validation dry run versus locked test); not used for tuning.}
+\label{tab:table8_validation_to_test_comparison}
+\end{table}

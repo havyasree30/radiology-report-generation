@@ -1,0 +1,4 @@
+Retriever,Jaccard@1,Jaccard@3,Jaccard@5,nDCG@3,Coverage@3,Coverage@5,Hit@3,Difference vs dense in Jaccard@3 (95% CI)
+Dense (MiniLM),0.527,0.518,0.515,0.522,0.648,0.676,0.516,reference
+BM25,0.530,0.533,0.536,0.535,0.633,0.663,0.544,+0.016 (-0.000 to +0.033)
+Hybrid RRF,0.556,0.544,0.557,0.549,0.647,0.748,0.536,+0.026 (+0.016 to +0.038)

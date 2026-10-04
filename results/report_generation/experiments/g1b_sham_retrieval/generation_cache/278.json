@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "a692b2fb65470de2a8e3ff4c87cd0d2aff81d425f102508b1ab93169c96c1da8",
+ "text": "FINDINGS: The lungs are clear. The heart size is normal. The mediastinum is normal. No pleural effusion or pneumothorax is seen.\nIMPRESSION: No acute cardiopulmonary abnormality.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1072,
+ "output_tokens": 42,
+ "total_duration_ns": 1555389500,
+ "load_duration_ns": 3249400,
+ "attempts": 1,
+ "wall_seconds": 3.61,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:14:43+00:00"
+}

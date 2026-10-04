@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "83f55f930d93b2cbafc69b9949cec6193e309aad5ac76ab2acc5dd56807194dc",
+ "text": "FINDINGS: The tracheostomy tube tip is 5 cm above the carina. There are prominent diffuse bilateral interstitial opacities, stable from prior radiographs. There is no focal airspace consolidation. No pleural effusion. No pneumothorax. Heart size is within normal limits. There are mild degenerative changes of the spine. IMPRESSION: 1. No focal airspace consolidation. 2. Prominent bilateral interstitial opacities, stable from prior radiographs.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1220,
+ "output_tokens": 91,
+ "total_duration_ns": 2291617900,
+ "load_duration_ns": 5287500,
+ "attempts": 1,
+ "wall_seconds": 4.34,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:42:57+00:00"
+}

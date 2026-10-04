@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "885bf4055a810eaea1870bbd135f4b88b616654b2cc2846960143f997bc58dba",
+ "text": "FINDINGS:\nThe heart and lungs have in the interval. Both lungs are clear and expanded. Heart and mediastinum normal. No change right anterior soft tissue surgical clips. Configuration of breast shadows on the PA view suggests prior right lumpectomy.\nIMPRESSION:\nNo active disease.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1179,
+ "output_tokens": 61,
+ "total_duration_ns": 1812782600,
+ "load_duration_ns": 6720000,
+ "attempts": 1,
+ "wall_seconds": 3.86,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:23:52+00:00"
+}

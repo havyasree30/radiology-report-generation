@@ -1,0 +1,98 @@
+{
+ "uid": "3667",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Support Devices",
+    "classifier_probability": 0.8876,
+    "retrieval_support_count": 5,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "evidence_summary": "Retrieved reports mention the presence of support devices.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "agent1_validation_flags": [],
+ "agent2_draft": {
+  "findings": "Support Devices",
+  "impression": "Support Devices",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Support Devices",
+  "impression": "Support Devices",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [\n      1,\n      2,\n      3,\n      4,\n      5\n    ],\n    \"evidence_summary\": \"Retrieved reports mention the presence of support devices.\",\n    \"support_status\": \"supported\"\n  }\n],\"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention enlarged cardiomediastinum.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention cardiomegaly.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention lung opacity.\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention lung lesion.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention edema.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention consolidation.\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention pneumonia.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention atelectasis.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention pneumothorax.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention pleural effusion.\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention pleural other.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention fracture.\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention support devices (other than the one mentioned in classifier output).\"}\n  ],\n  \"normal_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Support Devices\",\n\"impression\": \"Support Devices\"\n}",
+ "agent3_raw_text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Support Devices\",\n\"impression\": \"Support Devices\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "106435cc3966586b958256c3df9e7bfdcb65495704500f980e67292733522b6d",
+  "agent2_grounded_report_writer": "7b3736e0aa386ec2c63d8cf91915962cab079df2031b84b3ace53a41c8467ad5",
+  "agent3_grounding_critic": "1f3409c4c1923f3ca46ca8c69eda2ddc02c764028f5eebbd2e043b269bce27bd"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "31a370b9895f69da95caa77132207fb2049ef13a351bd80075ae0dbd2b385e13",
+  "agent2_grounded_report_writer": "4001ba5ad455f04c238d6debe614fbeee5de3d2ba460f80a3eebb300f1aa3538",
+  "agent3_grounding_critic": "612055cf849f76368471674c2dd78f1c48aebf5142416c15b48eb51a1822a160"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 14.67,
+  "agent2_grounded_report_writer": 2.98,
+  "agent3_grounding_critic": 3.48
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 563,
+  "agent2_grounded_report_writer": 20,
+  "agent3_grounding_critic": 43
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 843,
+  "agent2_grounded_report_writer": 879,
+  "agent3_grounding_critic": 890
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Support Devices (calibrated probability 0.89)\nNo Finding: positive\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: (not available)\nIMPRESSION: Presumed closure device at the level of the ligamentum arteriosum. Normal cardiac silhouette and clear lungs, with no evidence of left-to-right shunt.\n[2]\nFINDINGS: (not available)\nIMPRESSION: Device compatible tracheostomy is in, with tip approximately 5-6 centimeters above carina. Well-expanded and clear lungs. Mediastinal contour within normal limits. No acute cardiopulmonary abnormality identified.\n[3]\nFINDINGS: (not available)\nIMPRESSION: A cardiac pacemaker/defibrillator device is redemonstration of the left chest wall with a single projecting over the right atrium and 2 leads projecting over the right ventricle. The cardiac silhouette is mildly enlarged, unchanged. No focal pulmonary consolidation. No pneumothorax. No pleural effusion. Minimal degenerative changes of the thoracic spine..\n[4]\nFINDINGS: There is a stable closure device projected over the heart. The heart and mediastinum are otherwise normal. There is stable scarring of left mid lung. The lungs are otherwise clear. There is no infiltrate, effusion, mass or pneumothorax.\nIMPRESSION: Stable appearance of the chest\n[5]\nFINDINGS: The cardiomediastinal silhouette and pulmonary vasculature are within normal limits in size. The lungs are clear of focal airspace disease, pneumothorax, or pleural effusion. closure device demonstrated projecting over the right heart. There are no acute bony findings.\nIMPRESSION: No acute cardiopulmonary findings.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Support Devices (calibrated probability 0.89)\nNo Finding: positive\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Support Devices\",\n   \"classifier_probability\": 0.8876,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention the presence of support devices.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  3,\n  4,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Support Devices (calibrated probability 0.89)\nNo Finding: positive\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Support Devices\",\n   \"classifier_probability\": 0.8876,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention the presence of support devices.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  3,\n  4,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Support Devices\nIMPRESSION: Support Devices\n\nReturn the JSON now."
+ }
+}

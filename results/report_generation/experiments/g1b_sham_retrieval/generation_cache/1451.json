@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "5367b39f92a933e17b004e1c0034b5094be207f0e0f11e5d9958c5fe3efc6390",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is normal. No focal airspace consolidation is identified. No pneumothorax or pleural effusion is seen.\nIMPRESSION:\nNo acute cardiopulmonary abnormality is identified.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1125,
+ "output_tokens": 55,
+ "total_duration_ns": 1508603700,
+ "load_duration_ns": 2092300,
+ "attempts": 1,
+ "wall_seconds": 3.55,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:24:59+00:00"
+}

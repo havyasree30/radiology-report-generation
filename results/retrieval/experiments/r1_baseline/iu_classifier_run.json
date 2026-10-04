@@ -1,0 +1,12 @@
+{
+  "n_validation_studies_with_frontal": 551,
+  "n_images_failing_validator": 0,
+  "n_classified": 551,
+  "device": "cuda",
+  "inference_policy": "fp32_strict",
+  "split_used": "validation only; locked retrieval-test studies not opened",
+  "checkpoint_sha256": "6645ed44be7cb7d4cf4679b1fd561c7ac36be63f964ea320666199883126794b",
+  "classifier_tuned_on_iu": false,
+  "image_validator_warnings": {},
+  "note": "External / domain-shift application of the frozen CheXpert classifier to IU X-Ray (PNG 'images_normalized')."
+}

@@ -1,0 +1,31 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lrrrrrr}
+\hline
+Metric & G1 & G2 & G2 - G1 (95\% CI) & CI excludes 0 & Draft - G1 (95\% CI) & G2 - draft (95\% CI) \\
+\hline
+Finding precision & 0.411 & 0.359 & -0.052 (-0.092 to -0.011) & yes & -0.054 (-0.095 to -0.013) & +0.002 (+0.000 to +0.006) \\
+Finding recall & 0.358 & 0.407 & +0.049 (+0.010 to +0.090) & yes & +0.049 (+0.010 to +0.090) & +0.000 (+0.000 to +0.000) \\
+Finding F1 (micro) & 0.383 & 0.382 & -0.001 (-0.038 to +0.034) & no & -0.002 (-0.039 to +0.033) & +0.001 (+0.000 to +0.003) \\
+Macro finding F1 & 0.215 & 0.312 & +0.096 (+0.042 to +0.147) & yes & +0.096 (+0.041 to +0.146) & +0.000 (+0.000 to +0.001) \\
+Hallucination rate (reports with >=1 hallucinated finding) & 0.257 & 0.381 & +0.124 (+0.087 to +0.164) & yes & +0.127 (+0.090 to +0.167) & -0.003 (-0.008 to +0.000) \\
+Omission rate (reports with >=1 omitted finding) & 0.381 & 0.339 & -0.042 (-0.069 to -0.021) & yes & -0.042 (-0.069 to -0.021) & +0.000 (+0.000 to +0.000) \\
+Classifier FP propagation & 0.405 & 0.831 & +0.426 (+0.358 to +0.490) & yes & +0.435 (+0.369 to +0.498) & -0.008 (-0.022 to +0.000) \\
+Classifier TP retention & 0.718 & 0.932 & +0.214 (+0.138 to +0.287) & yes & +0.214 (+0.138 to +0.287) & +0.000 (+0.000 to +0.000) \\
+Normal recall (report state) & 0.911 & 0.776 & -0.135 (-0.185 to -0.089) & yes & -0.135 (-0.185 to -0.089) & +0.000 (+0.000 to +0.000) \\
+Abnormal recall (report state) & 0.581 & 0.720 & +0.140 (+0.093 to +0.188) & yes & +0.140 (+0.093 to +0.188) & +0.000 (+0.000 to +0.000) \\
+ROUGE-L & 0.247 & 0.103 & -0.143 (-0.154 to -0.134) & yes & -0.140 (-0.151 to -0.131) & -0.004 (-0.004 to -0.003) \\
+BLEU-4 & 0.039 & 0.006 & -0.033 (-0.037 to -0.029) & yes & -0.034 (-0.039 to -0.031) & +0.001 (+0.001 to +0.002) \\
+METEOR (exact-match variant) & 0.227 & 0.054 & -0.173 (-0.186 to -0.162) & yes & -0.173 (-0.186 to -0.162) & -0.000 (-0.001 to -0.000) \\
+Mean report length (words) & 23.907 & 8.007 & -15.899 (-16.766 to -15.077) & yes & -16.647 (-17.477 to -15.851) & +0.748 (+0.627 to +0.857) \\
+Mean hallucinated findings per report & 0.386 & 0.548 & +0.161 (+0.098 to +0.228) & yes & +0.167 (+0.103 to +0.230) & -0.005 (-0.013 to +0.000) \\
+Mean omitted findings per report & 0.484 & 0.447 & -0.037 (-0.066 to -0.008) & yes & -0.037 (-0.066 to -0.008) & +0.000 (+0.000 to +0.000) \\
+Over-normalisation: report normal although classifier abnormal & 0.298 & 0.000 & -0.298 (-0.368 to -0.233) & yes & -0.298 (-0.368 to -0.233) & +0.000 (+0.000 to +0.000) \\
+Rare-finding TP retention & 0.333 & 0.810 & +0.476 (+0.263 to +0.722) & yes & +0.476 (+0.263 to +0.722) & +0.000 (+0.000 to +0.000) \\
+Other-finding TP retention & 0.802 & 0.958 & +0.156 (+0.076 to +0.240) & yes & +0.156 (+0.076 to +0.240) & +0.000 (+0.000 to +0.000) \\
+\hline
+\end{tabular}
+\caption{Primary comparison G2 minus G1 and the contribution of the critic (G2 minus Agent 2 draft); paired study-level bootstrap, 1,000 resamples.}
+\label{tab:table3_paired_bootstrap_differences}
+\end{table}

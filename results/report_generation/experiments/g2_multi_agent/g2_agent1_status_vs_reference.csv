@@ -1,0 +1,8 @@
+status_source,support_status,n_classifier_positives,n_reference_positive,share_matching_reference
+validated (used downstream),supported,190,67,0.35263157894736841
+validated (used downstream),partially_supported,22,0,0
+validated (used downstream),unsupported,142,50,0.352112676056338
+model-stated (before validation),supported,203,67,0.33004926108374383
+model-stated (before validation),partially_supported,9,0,0
+model-stated (before validation),unsupported,44,8,0.18181818181818182
+all classifier positives (clinical subset),all,354,117,0.33050847457627119

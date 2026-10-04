@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "ce494bc54af763f2723859eb34eeb776ae75eb20315bce8d7ca173c76ff530e7",
+ "text": "{\n  \"classifier_findings\": [\n    {\n      \"finding\": \"Fracture\",\n      \"supporting_ranks\": [\n        1,\n        2,\n        3,\n        4,\n        5\n      ],\n      \"evidence_summary\": \"Fracture is mentioned in reports 1, 2, 3, 4, and 5.\",\n      \"support_status\": \"supported\"\n    }\n  ],\n  \"retrieval_only_candidates\": [\n    {\n      \"finding\": \"Fracture\",\n      \"supporting_ranks\": [\n        1,\n        2,\n        3,\n        4,\n        5\n      ],\n      \"evidence_summary\": \"Fracture is mentioned in reports 1, 2, 3, 4, and 5.\"\n    }\n  ],\n  \"normal_report_ranks\": []\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 863,
+ "output_tokens": 202,
+ "total_duration_ns": 5717957500,
+ "load_duration_ns": 7576500,
+ "attempts": 1,
+ "wall_seconds": 7.76,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T17:15:37+00:00",
+ "agent": "agent1_evidence_verifier"
+}

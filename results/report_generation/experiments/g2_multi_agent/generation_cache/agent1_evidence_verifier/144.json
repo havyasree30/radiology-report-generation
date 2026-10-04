@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "859fe11842afcc79f2d0ced33d2ce4f9d4ffd485d24612753bfb48f6163ba095",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Report 1 mentions enlarged mediastinum. Report 4 mentions enlarged cardiomediastinal silhouette.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 2, 3, 5], \"evidence_summary\": \"Reports 1, 2, 3, and 5 mention enlarged heart. Report 4 mentions moderate to marked cardiomegaly.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [2, 3, 4], \"evidence_summary\": \"Reports 2, 3, and 4 mention opacities compatible with atelectasis or scarring.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [4], \"evidence_summary\": \"Report 4 mentions no overt edema.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [3], \"evidence_summary\": \"Report 3 mentions no pneumothorax.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [4], \"evidence_summary\": \"Report 4 mentions question small right pleural effusion versus pleural thickening.\", \"support_status\": \"partially_supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions lung lesion.\"}\n  ],\n  \"normal_report_ranks\": [\n    1, 2, 3, 5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 817,
+ "output_tokens": 414,
+ "total_duration_ns": 9669426500,
+ "load_duration_ns": 4912800,
+ "attempts": 1,
+ "wall_seconds": 11.7,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T14:50:33+00:00",
+ "agent": "agent1_evidence_verifier"
+}

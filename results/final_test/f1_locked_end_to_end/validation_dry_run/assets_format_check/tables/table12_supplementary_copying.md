@@ -1,0 +1,6 @@
+| Quantity | Locked test |
+|---|---:|
+| Copied-sentence rate against the study's own Top-5 (studies with context) | 29.5% (26.0% to 33.3%) |
+| Whole-report copy rate | 24.1% (20.7% to 27.9%) |
+| Repeated-sentence rate (all studies) | 0.4% |
+| Studies with context | 498 |

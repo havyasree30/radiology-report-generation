@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "681ebf2817cba8309c4f04acef6fbf7572c6a1274a39a65bbe9bbbdf235284dc",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [4], \"evidence_summary\": \"Report 4 mentions an enlarged cardiomediastinal silhouette.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 3, 4, 5], \"evidence_summary\": \"Reports 1, 3, 4, and 5 mention an enlarged heart.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Reports 1 and 4 mention opacities.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention a lung lesion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention edema.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Reports 1 and 4 mention consolidation.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Reports 1 and 4 mention atelectasis.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pneumothorax.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Reports 1 and 4 mention pleural effusion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pleural other.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [1], \"evidence_summary\": \"Report 1 mentions a left subclavian ICD.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [],\n  \"normal_report_ranks\": [2, 5]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 836,
+ "output_tokens": 577,
+ "total_duration_ns": 12076688600,
+ "load_duration_ns": 5633200,
+ "attempts": 1,
+ "wall_seconds": 14.13,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:25:53+00:00",
+ "agent": "agent1_evidence_verifier"
+}

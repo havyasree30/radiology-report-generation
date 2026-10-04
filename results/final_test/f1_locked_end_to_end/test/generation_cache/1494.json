@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "912601660ebfd64da1e181c72ae389a3624725508446bf337151b2594138ab98",
+ "text": "FINDINGS:\nThere is opacity in the left lung base.\nIMPRESSION:\nLeft lung base opacity.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1289,
+ "output_tokens": 34,
+ "total_duration_ns": 1268359500,
+ "load_duration_ns": 7462700,
+ "attempts": 1,
+ "wall_seconds": 3.33,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T06:59:26+00:00"
+}

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "a234f44674f5906577aaee5e0f9e5327b3cdb10e9978653bf64ce13589f63cd8",
+ "text": "FINDINGS:\nThe heart size is mildly enlarged. The mediastinal contours are stable. The lungs are clear.\nIMPRESSION:\nMild stable cardiomegaly, no acute disease.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1136,
+ "output_tokens": 49,
+ "total_duration_ns": 1477070300,
+ "load_duration_ns": 8995300,
+ "attempts": 1,
+ "wall_seconds": 3.53,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:13:12+00:00"
+}

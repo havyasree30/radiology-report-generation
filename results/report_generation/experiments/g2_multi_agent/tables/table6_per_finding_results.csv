@@ -1,0 +1,14 @@
+Finding,Reference positives,Classifier TPs,TP retention B0 rule-based,TP retention G1 single-agent RAG,TP retention G2 multi-agent RAG (final),P / R / F1 G1 single-agent RAG,P / R / F1 G2 multi-agent RAG (final)
+Enlarged Cardiomediastinum (rare),0,0,n/a,n/a,n/a,0.000 / n/a / 0.000,0.000 / n/a / 0.000
+Cardiomegaly,52,23,1.000,1.000,1.000,0.698 / 0.577 / 0.632,0.735 / 0.481 / 0.581
+Lung Opacity,85,42,1.000,0.929,0.976,0.581 / 0.506 / 0.541,0.698 / 0.518 / 0.595
+Lung Lesion (rare),21,5,1.000,0.000,0.600,n/a / 0.000 / 0.000,0.300 / 0.143 / 0.194
+Edema,5,2,1.000,0.500,1.000,0.125 / 0.200 / 0.154,0.154 / 0.400 / 0.222
+Consolidation (rare),4,2,1.000,0.500,1.000,0.125 / 0.250 / 0.167,0.200 / 0.500 / 0.286
+Pneumonia (rare),10,7,1.000,0.714,1.000,0.185 / 0.500 / 0.270,0.179 / 0.700 / 0.286
+Atelectasis,42,9,1.000,0.889,0.778,0.326 / 0.357 / 0.341,0.333 / 0.214 / 0.261
+Pneumothorax,4,2,1.000,0.000,1.000,0.000 / 0.000 / 0.000,0.333 / 0.500 / 0.400
+Pleural Effusion,13,9,1.000,0.556,1.000,0.294 / 0.385 / 0.333,0.300 / 0.692 / 0.419
+Pleural Other (rare),5,2,1.000,0.000,0.000,0.000 / 0.000 / 0.000,0.000 / 0.000 / 0.000
+Fracture (rare),9,5,1.000,0.200,1.000,0.091 / 0.111 / 0.100,0.091 / 0.556 / 0.156
+Support Devices,35,9,1.000,0.111,0.889,0.143 / 0.029 / 0.048,0.667 / 0.229 / 0.340

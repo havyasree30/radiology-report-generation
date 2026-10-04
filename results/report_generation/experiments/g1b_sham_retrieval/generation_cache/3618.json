@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "a7836164442dcacd8fec6d8b35bd8e6f9839c1f6dcfebb1ad43f6e9bfee43e33",
+ "text": "FINDINGS:\nA rounded opacity projecting retrosternally is seen on the lateral view.\nIMPRESSION:\n1. Rounded opacity projecting retrosternally on lateral view. 2. No acute cardiopulmonary disease.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1193,
+ "output_tokens": 46,
+ "total_duration_ns": 2069667000,
+ "load_duration_ns": 5159700,
+ "attempts": 1,
+ "wall_seconds": 4.12,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:41:43+00:00"
+}

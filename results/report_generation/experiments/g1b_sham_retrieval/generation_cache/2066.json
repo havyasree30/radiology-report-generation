@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "6142ca6fe9925e57e580c1dd4d8a21e27fa4d20ed94aead27bfe8330877f9f0e",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette and pulmonary vasculature are within normal limits. No significant interval change compared to prior study, no infiltrates noted.\nIMPRESSION:\nNo radiographic evidence of acute cardiopulmonary disease.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1245,
+ "output_tokens": 58,
+ "total_duration_ns": 1822045100,
+ "load_duration_ns": 5590600,
+ "attempts": 1,
+ "wall_seconds": 3.88,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:30:00+00:00"
+}

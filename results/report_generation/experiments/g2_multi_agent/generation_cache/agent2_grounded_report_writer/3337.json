@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "00318d4914ef432adec01b6cb50f086b8aa579c8f9b3bab7403a44a89b1f2516",
+ "text": "{\n\"findings\": \"Pneumonia.\",\n\"impression\": \"Pneumonia.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 964,
+ "output_tokens": 22,
+ "total_duration_ns": 1181131600,
+ "load_duration_ns": 6024400,
+ "attempts": 1,
+ "wall_seconds": 3.23,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:58:55+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

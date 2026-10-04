@@ -1,0 +1,5 @@
+system,definition,clf_fp_propagation,tp_retention,n_clf_fp,n_clf_tp,fp_mentioned,tp_retained
+B0_rule_based,any mention (primary),1,1,237,117,237,117
+B0_rule_based,definite assertions only,1,1,237,117,237,117
+G1_single_agent_rag,any mention (primary),0.4050632911392405,0.71794871794871795,237,117,96,84
+G1_single_agent_rag,definite assertions only,0.32911392405063289,0.68376068376068377,237,117,78,80

@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "8bdbfa5f3a82611c715091000122ab63c365f5965640e57b08a5939aa7945884",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [], \"evidence_summary\": \"The classifier suggests Pneumonia is present.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"The classifier suggests Lung Opacity is present.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [], \"evidence_summary\": \"Retrieved reports mention Pneumonia, but the classifier did not identify it.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"Retrieved reports mention Lung Opacity, but the classifier did not identify it.\"}\n  ],\n  \"normal_report_ranks\": [\n    1,\n    2,\n    3,\n    5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 731,
+ "output_tokens": 217,
+ "total_duration_ns": 6196504100,
+ "load_duration_ns": 8473800,
+ "attempts": 1,
+ "wall_seconds": 8.21,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T14:52:53+00:00",
+ "agent": "agent1_evidence_verifier"
+}

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "4bcd76d0157841f1491e616c434063597984a3e09821641f5b004483e6d84d56",
+ "text": "FINDINGS:\nThe heart size and mediastinal contours appear within normal limits. Pulmonary vascularity is within normal limits. No focal consolidation, suspicious pulmonary opacity, pneumothorax or definite pleural effusion. Visualized osseous structures appear intact.\nIMPRESSION:\nNo acute cardiopulmonary abnormality.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1070,
+ "output_tokens": 70,
+ "total_duration_ns": 1937558500,
+ "load_duration_ns": 6102900,
+ "attempts": 1,
+ "wall_seconds": 4.0,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:37:38+00:00"
+}

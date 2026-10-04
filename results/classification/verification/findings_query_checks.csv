@@ -1,0 +1,6 @@
+example,statuses_match_p_ge_threshold,structured_positive_set_exact,structured_negative_set_exact,probabilities_unaltered,query_mentions_only_positive_observations,query_no_location_severity_relationship_words,contradiction_warning_expected,contradiction_warning_emitted,ok
+1_correct_multilabel,True,True,True,True,True,True,False,False,True
+2_false_positive_heavy,True,True,True,True,True,True,False,False,True
+3_false_negative_heavy,True,True,True,True,True,True,False,False,True
+4_rare_class_pleural_other,True,True,True,True,True,True,False,False,True
+6_no_finding_contradiction,True,True,True,True,True,True,True,True,True

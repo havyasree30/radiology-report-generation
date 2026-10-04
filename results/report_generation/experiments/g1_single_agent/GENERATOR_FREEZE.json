@@ -1,0 +1,64 @@
+{
+  "frozen_utc": "2026-10-03T10:15:18+00:00",
+  "applies_to": [
+    "G1_single_agent_rag",
+    "G2_multi_agent_rag"
+  ],
+  "rule": "the SAME model tag, digest and decoding options are used by G1 and G2 so that the comparison changes the RAG architecture, not the language model",
+  "endpoint": "http://localhost:11434/api/chat",
+  "ollama_version": "0.35.1",
+  "model": {
+    "model_tag": "medgemma1.5:4b",
+    "digest": "433252621ab154668b5d8be6aff6c1b771bacba045e46e6193da8d6ad1630f2c",
+    "size_bytes": 3338940988,
+    "modified_at": "2026-10-03T15:41:40.3723799+05:30",
+    "format": "gguf",
+    "family": "gemma3",
+    "families": [
+      "gemma3"
+    ],
+    "parameter_size": "4.3B",
+    "quantization_level": "Q4_K_M",
+    "context_length_native": 131072,
+    "capabilities": [
+      "completion",
+      "vision"
+    ],
+    "architecture": "gemma3",
+    "license_present": true
+  },
+  "generation_options": {
+    "temperature": 0.0,
+    "top_k": 1,
+    "top_p": 1.0,
+    "seed": 42,
+    "num_predict": 400,
+    "num_ctx": 8192,
+    "stop": [
+      "A. AUTOMATED CLASSIFIER OUTPUT",
+      "B. RETRIEVED EVIDENCE",
+      "C. EVIDENCE SUMMARY"
+    ]
+  },
+  "decoding": "greedy (temperature 0, top_k 1) with fixed seed",
+  "tools": "none",
+  "web_access": false,
+  "external_api": false,
+  "context_size_num_ctx": 8192,
+  "max_new_tokens": 400,
+  "hardware_backend": {
+    "os": "Windows-10-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "nvidia_smi": "NVIDIA GeForce RTX 3050 6GB Laptop GPU, 596.08, 6144 MiB",
+    "ollama_ps": [
+      {
+        "name": "medgemma1.5:4b",
+        "size": 2879851068,
+        "size_vram": 2879851068,
+        "context_length": 8192
+      }
+    ]
+  },
+  "determinism_note": "greedy decoding with a fixed seed on one machine is expected to be repeatable; bitwise GPU determinism is not guaranteed by Ollama"
+}

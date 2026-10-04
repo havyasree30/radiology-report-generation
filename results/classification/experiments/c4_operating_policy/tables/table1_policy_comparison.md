@@ -1,0 +1,6 @@
+| Policy | Macro precision | Macro recall | Macro specificity | Macro F1 | Macro balanced accuracy | Mean predicted abnormal findings per image | No Finding contradiction rate (% of images) |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Threshold 0.50 | 0.426 | 0.448 | 0.897 | 0.430 | 0.672 | 2.48 | 3.1 |
+| Youden J | 0.321 | 0.754 | 0.713 | 0.399 | 0.734 | 5.12 | 25.8 |
+| F1-optimal | 0.396 | 0.543 | 0.836 | 0.452 | 0.689 | 3.43 | 2.6 |
+| F1-optimal + No Finding rule | 0.398 | 0.535 | 0.837 | 0.449 | 0.686 | 3.43 | 0.0 |

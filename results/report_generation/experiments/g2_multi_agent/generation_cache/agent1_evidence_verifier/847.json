@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "fa6a04157b06e01f50fabb4d1672d72cbe8f5cc0a204764011633ac4a3004774",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention opacity in the left lung base, left lung, and left midlung.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention atelectasis in the left lung base, left lower lobe, left lung base, left lung base, and left midlung.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [3], \"evidence_summary\": \"Retrieved report 3 mentions fractures of the left anterior 6th and 7th ribs.\", \"support_status\": \"partially_supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions enlarged cardiomediastinum.\"}\n  ],\n  \"normal_report_ranks\": [\n    1, 2, 4, 5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 947,
+ "output_tokens": 290,
+ "total_duration_ns": 6549452800,
+ "load_duration_ns": 4431200,
+ "attempts": 1,
+ "wall_seconds": 8.57,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:20:29+00:00",
+ "agent": "agent1_evidence_verifier"
+}

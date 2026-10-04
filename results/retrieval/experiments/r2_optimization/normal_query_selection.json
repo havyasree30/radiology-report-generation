@@ -1,0 +1,38 @@
+{
+  "population": "207 eligible validation studies whose true finding set is {No Finding} (oracle-normal; dense retrieval)",
+  "candidates": [
+    {
+      "phrase": "no acute abnormality",
+      "jaccard_truth@3": 1.0,
+      "jaccard_truth@5": 1.0,
+      "ndcg@3": 1.0,
+      "ndcg@5": 1.0,
+      "vs_r1_phrase_mean_difference": 0.0,
+      "vs_r1_phrase_ci95_low": 0.0,
+      "vs_r1_phrase_ci95_high": 0.0
+    },
+    {
+      "phrase": "normal chest radiograph",
+      "jaccard_truth@3": 1.0,
+      "jaccard_truth@5": 1.0,
+      "ndcg@3": 1.0,
+      "ndcg@5": 1.0,
+      "vs_r1_phrase_mean_difference": 0.0,
+      "vs_r1_phrase_ci95_low": 0.0,
+      "vs_r1_phrase_ci95_high": 0.0
+    },
+    {
+      "phrase": "no acute cardiopulmonary abnormality",
+      "jaccard_truth@3": 0.6666666666666669,
+      "jaccard_truth@5": 0.5999999999999998,
+      "ndcg@3": 0.7653606369886213,
+      "ndcg@5": 0.6843515475204857,
+      "vs_r1_phrase_mean_difference": -0.3333333333333335,
+      "vs_r1_phrase_ci95_low": -0.3333333333333335,
+      "vs_r1_phrase_ci95_high": -0.3333333333333335
+    }
+  ],
+  "chosen": "no acute abnormality",
+  "r1_phrase": "no acute abnormality",
+  "note": "every normal query uses one fixed phrase, so all studies share one retrieved list; the paired interval is degenerate and the rule reduces to 'strictly better than the R1 phrase'. Selection used retrieval-validation data only."
+}

@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "5cce7dab31a52de5c238a1b4f3bfec541c2fe7a1d7a5acbb3b926ac215217eed",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [1, 2, 4], \"evidence_summary\": \"Report 1 states normal cardiomediastinal contours. Report 2 states Enlarged cardiomediastinal silhouette. Report 4 states suspected cardiomegaly or less, pericardial effusion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [2, 4], \"evidence_summary\": \"Report 2 states left base density. Report 4 states no evidence of focal airspace disease, pneumothorax, pleural effusion. No visible pneumothorax.\", \"support_status\": \"partially_supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [2, 3, 4, 5], \"evidence_summary\": \"Report 2 states left base density. Report 3 states left basilar bandlike opacities suggestive of scarring or atelectasis. Report 4 states no evidence of focal airspace disease, pneumothorax, pleural effusion. Report 5 states Bronchovascular crowding without typical findings of pulmonary edema. No report explicitly states Lung Opacity, but these findings are consistent with it. Use 'Lung Opacity' as a general term for these findings.\"}\n  ],\n  \"normal_report_ranks\": [\n    1\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 959,
+ "output_tokens": 327,
+ "total_duration_ns": 7492104600,
+ "load_duration_ns": 4916600,
+ "attempts": 1,
+ "wall_seconds": 9.54,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:06:50+00:00",
+ "agent": "agent1_evidence_verifier"
+}

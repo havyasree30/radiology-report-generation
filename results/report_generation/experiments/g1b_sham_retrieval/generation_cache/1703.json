@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "47d0d2f31af46bceaf9e0381b314956cc17638e29991ce7a442d23fa9c0ad114",
+ "text": "FINDINGS:\nNo focal consolidation, pneumothorax, or pleural effusion is identified. The heart size and cardiomediastinal silhouette are unremarkable. No significant pulmonary edema or atelectasis is seen.\nIMPRESSION:\nNo acute cardiopulmonary findings.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1206,
+ "output_tokens": 64,
+ "total_duration_ns": 1719336700,
+ "load_duration_ns": 2698500,
+ "attempts": 1,
+ "wall_seconds": 3.78,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:27:12+00:00"
+}

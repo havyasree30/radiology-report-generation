@@ -1,0 +1,4 @@
+group,n_findings,match_reference,unsupported_by_reference,share_supported_by_reference,also_classifier_positive,not_classifier_positive,in_true_top5_context,in_sham_context,match_reference_and_not_classifier_positive,unsupported_and_not_classifier_positive
+stated with relevant context only (G1 not G1B),184.0,69,115,0.375,118.0,66.0,176.0,47.0,18.0,48.0
+stated with sham context only (G1B not G1),83.0,7,76,0.08433734939759036,39.0,44.0,31.0,42.0,3.0,41.0
+net (relevant-only minus sham-only),,62,39,,,,,,,

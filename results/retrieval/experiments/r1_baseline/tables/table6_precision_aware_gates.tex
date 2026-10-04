@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lrrrrrrrr}
+\hline
+Finding & Frozen raw threshold & Frozen calibrated-equivalent threshold & Retrieval gate & Precision before & Precision after & Recall before & Recall after & OOF F0.5 gain (95\% CI) \\
+\hline
+Enlarged Cardiomediastinum & 0.304 & 0.086 & 0.164 & 0.145 & 0.283 & 0.313 & 0.122 & +0.061 (+0.036 to +0.085) \\
+Cardiomegaly & 0.452 & 0.262 & 0.455 & 0.507 & 0.640 & 0.622 & 0.392 & +0.039 (+0.025 to +0.053) \\
+Lung Opacity & 0.327 & 0.359 & 0.556 & 0.607 & 0.685 & 0.896 & 0.657 & +0.030 (+0.025 to +0.036) \\
+Lung Lesion & 0.514 & 0.123 & 0.189 & 0.235 & 0.342 & 0.281 & 0.164 & +0.026 (+0.001 to +0.051) \\
+Edema & 0.379 & 0.344 & 0.500 & 0.589 & 0.675 & 0.728 & 0.543 & +0.030 (+0.022 to +0.038) \\
+Consolidation & 0.333 & 0.128 & 0.220 & 0.190 & 0.289 & 0.435 & 0.165 & +0.035 (+0.015 to +0.056) \\
+Pneumonia & 0.381 & 0.088 & 0.161 & 0.151 & 0.286 & 0.271 & 0.129 & +0.065 (+0.031 to +0.099) \\
+Atelectasis & 0.330 & 0.198 & 0.298 & 0.300 & 0.380 & 0.659 & 0.334 & +0.028 (+0.015 to +0.041) \\
+Pneumothorax & 0.615 & 0.255 & 0.405 & 0.486 & 0.618 & 0.537 & 0.376 & +0.049 (+0.031 to +0.065) \\
+Pleural Effusion & 0.362 & 0.353 & 0.594 & 0.709 & 0.798 & 0.866 & 0.682 & +0.034 (+0.027 to +0.040) \\
+Pleural Other & 0.254 & 0.060 & none & 0.118 & 0.118 & 0.257 & 0.257 & -0.016 (-0.040 to +0.010) \\
+Fracture & 0.326 & 0.138 & 0.204 & 0.256 & 0.338 & 0.283 & 0.187 & +0.026 (+0.006 to +0.048) \\
+Support Devices & 0.343 & 0.438 & 0.637 & 0.792 & 0.849 & 0.880 & 0.755 & +0.021 (+0.017 to +0.026) \\
+\hline
+\end{tabular}
+\caption{Validation-derived precision-aware retrieval gates (CheXpert validation set; not classifier thresholds).}
+\label{tab:table6_precision_aware_gates}
+\end{table}

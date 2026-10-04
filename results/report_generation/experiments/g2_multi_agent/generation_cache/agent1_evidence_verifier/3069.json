@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "988b9e2e4f8116e3cc08934e7943493dd9720504ca5589f946c28991a0120805",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Lung Lesion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [\n      1,\n      3,\n      4\n    ], \"evidence_summary\": \"Reports 1, 3, and 4 mention Consolidation.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [\n      1,\n      3,\n      4,\n      5\n    ], \"evidence_summary\": \"Reports 1, 3, 4, and 5 mention Pneumonia.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [\n      1\n    ], \"evidence_summary\": \"Report 1 mentions Atelectasis.\"}\n  ],\n  \"normal_report_ranks\": [\n    2\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 823,
+ "output_tokens": 250,
+ "total_duration_ns": 6596102900,
+ "load_duration_ns": 7604300,
+ "attempts": 1,
+ "wall_seconds": 8.62,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:49:59+00:00",
+ "agent": "agent1_evidence_verifier"
+}

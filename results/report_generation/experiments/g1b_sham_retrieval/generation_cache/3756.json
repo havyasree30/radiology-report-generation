@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "4ed88d1b4bab6892443c8238a25c1c2a303702a7a987a86ae5d542500261fe0c",
+ "text": "FINDINGS:\nThere is a small opacity in the right lower lung field.\nIMPRESSION:\nPossible atelectasis.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1101,
+ "output_tokens": 28,
+ "total_duration_ns": 1166490700,
+ "load_duration_ns": 1624100,
+ "attempts": 1,
+ "wall_seconds": 3.22,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:43:04+00:00"
+}

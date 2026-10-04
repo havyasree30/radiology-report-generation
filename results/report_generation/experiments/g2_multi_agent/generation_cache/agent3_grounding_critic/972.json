@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "ff942ac1472cfa09495e653ce6e9149e1fe4c974107c9e1da351236eebb2909f",
+ "text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Enlarged Cardiomediastinum and Lung Lesion.\",\n\"impression\": \"Enlarged Cardiomediastinum and Lung Lesion.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 973,
+ "output_tokens": 63,
+ "total_duration_ns": 1730775000,
+ "load_duration_ns": 4375500,
+ "attempts": 1,
+ "wall_seconds": 3.76,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 700,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:25:28+00:00",
+ "agent": "agent3_grounding_critic"
+}

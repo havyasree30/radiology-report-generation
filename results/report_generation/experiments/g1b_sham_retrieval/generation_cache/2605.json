@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "547621f185ab8f5bb423599f39bf8444675504212f9cdd612dd9bcfec0a9cd91",
+ "text": "FINDINGS:\nThere is a possible lung opacity in the left lower lung zone. A small pleural effusion is present.\nIMPRESSION:\nPossible left lower lung opacity and small pleural effusion.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1252,
+ "output_tokens": 50,
+ "total_duration_ns": 1466101100,
+ "load_duration_ns": 3779700,
+ "attempts": 1,
+ "wall_seconds": 3.53,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:34:12+00:00"
+}

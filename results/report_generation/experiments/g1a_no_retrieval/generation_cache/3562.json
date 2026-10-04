@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "6a27e9b41106258126a3b012d1e6a62e33aac56ef845f4e97fcb0db2f7480ac0",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette appears enlarged. A fracture is present.\nIMPRESSION:\nEnlarged Cardiomediastinum and Fracture.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 523,
+ "output_tokens": 46,
+ "total_duration_ns": 1346793900,
+ "load_duration_ns": 7179600,
+ "attempts": 1,
+ "wall_seconds": 3.36,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:40:49+00:00"
+}

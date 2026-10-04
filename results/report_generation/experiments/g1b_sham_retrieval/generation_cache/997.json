@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "c25e15693fcf66349d6b1a2cbe7ddef800f376c1651795b26cd0ed2efef42cc8",
+ "text": "FINDINGS: Postoperative changes of sternotomy. Heart size is within normal limits. Aortic atherosclerotic vascular calcification. The lungs are mildly hyperexpanded. No focal airspace consolidation. No pleural effusion or pneumothorax. Thoracic spondylosis. IMPRESSION: No acute process.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1169,
+ "output_tokens": 61,
+ "total_duration_ns": 1664915700,
+ "load_duration_ns": 4315400,
+ "attempts": 1,
+ "wall_seconds": 3.7,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:22:11+00:00"
+}

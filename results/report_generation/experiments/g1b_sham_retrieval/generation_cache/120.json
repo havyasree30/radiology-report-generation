@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "c3cdd1a3705e2242dbd1c610600a6c67f4e784e2689d4cec92f7598173c28ebd",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette and pulmonary vasculature are within normal limits in size. There is a thin right apical pneumothorax measuring approximately 5 mm in thickness. There is extensive subcutaneous emphysema in the right chest wall and neck. There are fractures of the right anterior 5th through 9th anterior ribs with mild displacement. Additional fractures cannot entirely be excluded. There is mild streaky airspace disease in the right lung base. Left lung is clear. There is a small hiatal hernia. There is an intrathecal catheter terminating in the lower thoracic spine.\nIMPRESSION:\n1. right apical pneumothorax measuring approximately 5 mm in thickness. 2. Multiple right-sided rib fractures involving at the right anterior 5th through 9th ribs with mild displacement. 3. Mild right basilar airspace disease, atelectasis versus contusion.\n\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1337,
+ "output_tokens": 193,
+ "total_duration_ns": 4543096900,
+ "load_duration_ns": 4423200,
+ "attempts": 1,
+ "wall_seconds": 6.58,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:13:15+00:00"
+}

@@ -1,0 +1,8 @@
+| Rare finding | Test support | Precision | Recall | F1 | Classifier TPs | TPs retained in report | TP retention |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Enlarged Cardiomediastinum | 0 | 0.000 | n/a | 0.000 | 0 | 0 | n/a |
+| Lung Lesion | 20 | n/a | 0.000 | 0.000 | 7 | 0 | 0.000 |
+| Consolidation | 3 | 0.333 | 0.333 | 0.333 | 1 | 1 | 1.000 |
+| Pneumonia | 4 | 0.188 | 0.750 | 0.300 | 4 | 3 | 0.750 |
+| Pleural Other | 3 | n/a | 0.000 | 0.000 | 2 | 0 | 0.000 |
+| Fracture | 15 | 0.111 | 0.133 | 0.121 | 8 | 2 | 0.250 |

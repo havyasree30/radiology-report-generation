@@ -1,0 +1,16 @@
+| Observation | Raw F1 threshold | Calibrated-equivalent threshold | Decision mismatches |
+|---|---:|---:|---:|
+| No Finding | 0.6427 | 0.2725 | 0 |
+| Enlarged Cardiomediastinum | 0.3040 | 0.0861 | 0 |
+| Cardiomegaly | 0.4518 | 0.2625 | 0 |
+| Lung Opacity | 0.3266 | 0.3590 | 0 |
+| Lung Lesion | 0.5139 | 0.1226 | 0 |
+| Edema | 0.3790 | 0.3439 | 0 |
+| Consolidation | 0.3334 | 0.1277 | 0 |
+| Pneumonia | 0.3813 | 0.0878 | 0 |
+| Atelectasis | 0.3297 | 0.1983 | 0 |
+| Pneumothorax | 0.6147 | 0.2548 | 0 |
+| Pleural Effusion | 0.3623 | 0.3531 | 0 |
+| Pleural Other | 0.2543 | 0.0603 | 0 |
+| Fracture | 0.3264 | 0.1378 | 0 |
+| Support Devices | 0.3434 | 0.4383 | 0 |

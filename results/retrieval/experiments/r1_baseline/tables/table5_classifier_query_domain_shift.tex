@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lrrrrrrr}
+\hline
+Finding & IU truth frequency & Predicted frequency & Precision & Recall & F1 & Retrieval gate & Positives removed by gate \\
+\hline
+No Finding & 0.513 & 0.488 & 0.777 & 0.730 & 0.753 & n/a & n/a \\
+Enlarged Cardiomediastinum & 0.000 & 0.071 & 0.000 & n/a & 0.000 & 0.164 & 31 of 39 \\
+Cardiomegaly & 0.136 & 0.062 & 0.767 & 0.442 & 0.561 & 0.455 & 17 of 34 \\
+Lung Opacity & 0.223 & 0.122 & 0.700 & 0.494 & 0.579 & 0.556 & 42 of 67 \\
+Lung Lesion & 0.055 & 0.045 & 0.294 & 0.238 & 0.263 & 0.189 & 13 of 25 \\
+Edema & 0.013 & 0.024 & 0.154 & 0.400 & 0.222 & 0.500 & 6 of 13 \\
+Consolidation & 0.010 & 0.044 & 0.087 & 0.500 & 0.148 & 0.220 & 13 of 24 \\
+Pneumonia & 0.026 & 0.085 & 0.189 & 0.700 & 0.298 & 0.161 & 29 of 47 \\
+Atelectasis & 0.110 & 0.054 & 0.346 & 0.214 & 0.265 & 0.298 & 21 of 30 \\
+Pneumothorax & 0.010 & 0.013 & 0.333 & 0.500 & 0.400 & 0.405 & 2 of 7 \\
+Pleural Effusion & 0.034 & 0.056 & 0.290 & 0.692 & 0.409 & 0.594 & 15 of 31 \\
+Pleural Other & 0.013 & 0.040 & 0.133 & 0.400 & 0.200 & none & 0 of 22 \\
+Fracture & 0.024 & 0.172 & 0.082 & 0.556 & 0.143 & 0.204 & 57 of 95 \\
+Support Devices & 0.092 & 0.025 & 0.692 & 0.257 & 0.375 & 0.637 & 5 of 14 \\
+Summary & 0.513 indexed normal & No Finding 0.488; empty query 0.089 & 0.313 & 0.449 & 0.297 & fallback 0.187 & macro over 13 abnormal findings \\
+\hline
+\end{tabular}
+\caption{Frozen-classifier behaviour on IU X-Ray validation studies and query construction.}
+\label{tab:table5_classifier_query_domain_shift}
+\end{table}

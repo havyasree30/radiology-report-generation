@@ -1,0 +1,14 @@
+panel,category,value,system
+critic_changes,Removed: not in reference,2,
+critic_changes,Removed: in reference,0,
+critic_changes,Added: in reference,0,
+critic_changes,Added: not in reference,0,
+copying,Sentences copied from Top-5,0.29487951807228913,G1_single_agent_rag
+copying,Whole-report copies of Top-5,0.24096385542168675,G1_single_agent_rag
+copying,Repeated-sentence rate,0.0035019824782164823,G1_single_agent_rag
+copying,Sentences copied from Top-5,0,G2_agent2_draft_pre_critic
+copying,Whole-report copies of Top-5,0,G2_agent2_draft_pre_critic
+copying,Repeated-sentence rate,0.041285801340645953,G2_agent2_draft_pre_critic
+copying,Sentences copied from Top-5,0,G2_multi_agent_rag
+copying,Whole-report copies of Top-5,0,G2_multi_agent_rag
+copying,Repeated-sentence rate,0.040676416819012795,G2_multi_agent_rag

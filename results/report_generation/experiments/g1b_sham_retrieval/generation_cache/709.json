@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "08bf309f83ea9eba42787c8413a5f4c979c858ab996d70ffb2e93844e0fd15f9",
+ "text": "FINDINGS:\nThe heart and mediastinum are unremarkable. The lungs are clear without infiltrate. There is no effusion or pneumothorax. There is a mild levoscoliosis of the thoracic spine.\nIMPRESSION:\n1. No acute cardiopulmonary disease.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1220,
+ "output_tokens": 65,
+ "total_duration_ns": 1788246700,
+ "load_duration_ns": 5531700,
+ "attempts": 1,
+ "wall_seconds": 3.85,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:19:16+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "n": 547,
+  "n_with_context": 498,
+  "n_empty_query_identical_to_g1": 49,
+  "n_empty_query": 49,
+  "query_study_in_sham": 0,
+  "true_top5_overlap": 0,
+  "sham_not_in_corpus": 0,
+  "sham_in_locked_test": 0,
+  "duplicates_within_study": 0,
+  "reference_sentences_outside_context": 0,
+  "format_identical_skeleton": 498,
+  "same_order_and_studies_as_g1": true,
+  "g1_prompt_sha256_equals_current_prompt": true,
+  "mapping_sha256": "e1095ae78338d7d871d2d3f6fb9744650811cc6ce029411a55d35ed85490ce1e",
+  "distinct_sham_reports_used": 1620,
+  "pool_size": 2675
+}

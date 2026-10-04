@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "7121d3e5c2c61d578669d90d9e4ff1be8c88bffde321ebaff58e5eeacc0d2bab",
+ "text": "FINDINGS:\nMild cardiomegaly. Scattered opacities in the right lung base representing subsegmental atelectasis. Scattered airspace opacities in the medial left lower lobe.\nIMPRESSION:\nMild cardiomegaly. Scattered opacities in the right lung base representing subsegmental atelectasis. Scattered airspace opacities in the medial left lower lobe.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1206,
+ "output_tokens": 88,
+ "total_duration_ns": 2398055600,
+ "load_duration_ns": 3974600,
+ "attempts": 1,
+ "wall_seconds": 4.43,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:39:33+00:00"
+}

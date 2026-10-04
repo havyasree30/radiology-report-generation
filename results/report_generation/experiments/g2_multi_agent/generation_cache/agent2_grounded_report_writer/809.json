@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "aaf38ff71f0dce42c50920de69f2e7ae0646fc065988952fb86d9a514e6b0127",
+ "text": "{\n\"findings\": \"Cardiomegaly is noted. A fracture is possible.\",\n\"impression\": \"Cardiomegaly and fracture are present.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 960,
+ "output_tokens": 35,
+ "total_duration_ns": 1181306600,
+ "load_duration_ns": 3750400,
+ "attempts": 1,
+ "wall_seconds": 3.24,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:18:51+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

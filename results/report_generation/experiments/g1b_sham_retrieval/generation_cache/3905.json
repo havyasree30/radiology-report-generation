@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "f920e1025e25637763ec46b251112464ef11a0354ecfd4dadb8a46f2e9b3e688",
+ "text": "FINDINGS:\nCardiomegaly is present. Pulmonary edema is present.\nIMPRESSION:\nCardiomegaly and pulmonary edema.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1228,
+ "output_tokens": 40,
+ "total_duration_ns": 1571856600,
+ "load_duration_ns": 5149100,
+ "attempts": 1,
+ "wall_seconds": 3.63,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:44:33+00:00"
+}

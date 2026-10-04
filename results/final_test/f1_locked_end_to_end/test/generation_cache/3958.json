@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "e33d7cb2a4ff9f250ff9b0ea1ed3a6892a28361e3557927188332d306a11e01c",
+ "text": "FINDINGS:\nThere is a possible airspace opacity in the left lung. The cardiomediastinal silhouette is within normal limits. No pneumothorax or pleural effusion is identified.\nIMPRESSION:\nPossible airspace opacity in the left lung.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1121,
+ "output_tokens": 52,
+ "total_duration_ns": 10429244400,
+ "load_duration_ns": 11074900,
+ "attempts": 1,
+ "wall_seconds": 12.46,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:24:21+00:00"
+}

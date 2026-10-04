@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "e62ad164a59078b5a85253500319ccd217bfb68f8b397e3d17dc55ea1aee492c",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette and lungs are unremarkable.\nIMPRESSION:\nNo acute cardiopulmonary process.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1084,
+ "output_tokens": 38,
+ "total_duration_ns": 1209534300,
+ "load_duration_ns": 4268100,
+ "attempts": 1,
+ "wall_seconds": 3.27,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:12:14+00:00"
+}

@@ -1,0 +1,10 @@
+{
+  "r2_primary_studies_checked": 354,
+  "top5_identical_to_r2": 354,
+  "mismatches": [],
+  "top5_integrity_pass": true,
+  "retrieval_config": {
+    "sha256_of_r2_candidate_config": "9fb4d701a498de9f2e9a1ca325f645027ace0c72af0ef3a6180c0b85f34bc114",
+    "k": 5
+  }
+}

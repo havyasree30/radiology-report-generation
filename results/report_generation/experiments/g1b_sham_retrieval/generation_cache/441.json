@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "b25dcaafd3eb105a61ff4b08d721a9795c5b9c8409fa1ce6e5330c2198ccfba0",
+ "text": "FINDINGS:\nA fracture of the left clavicle is noted. The cardiomediastinal silhouette and pulmonary vasculature are within normal limits. The lungs are clear.\nIMPRESSION:\n1. Left clavicle fracture. 2. No acute cardiopulmonary abnormality.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1190,
+ "output_tokens": 57,
+ "total_duration_ns": 1596282200,
+ "load_duration_ns": 6132900,
+ "attempts": 1,
+ "wall_seconds": 3.64,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:16:30+00:00"
+}

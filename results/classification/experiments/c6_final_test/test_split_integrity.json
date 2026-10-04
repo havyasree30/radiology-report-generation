@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "image_counts_after_frontal_and_exclusion_filters": {
+    "train": 133644,
+    "val": 28671,
+    "test": 28706,
+    "official_valid": 202
+  },
+  "image_counts_in_manifest_before_filters": {
+    "train": 156390,
+    "val": 33512,
+    "test": 33512,
+    "official_valid": 234
+  },
+  "frontal_image_counts_before_exclusions": {
+    "train": 133649,
+    "val": 28672,
+    "test": 28706,
+    "official_valid": 202
+  },
+  "patient_counts": {
+    "train": 45324,
+    "val": 9530,
+    "test": 9680,
+    "official_valid": 200
+  },
+  "split_group_counts": {
+    "train": 45321,
+    "val": 9530,
+    "test": 9680,
+    "official_valid": 200
+  },
+  "overlap_counts": {
+    "train_and_val": {
+      "patients": 0,
+      "split_groups": 0,
+      "image_paths": 0
+    },
+    "train_and_test": {
+      "patients": 0,
+      "split_groups": 0,
+      "image_paths": 0
+    },
+    "val_and_test": {
+      "patients": 0,
+      "split_groups": 0,
+      "image_paths": 0
+    }
+  },
+  "patient_unique_in_patient_split_table": true,
+  "every_patient_in_exactly_one_split": true,
+  "split_provenance": {
+    "created_by": "scripts/eda_03_chexpert_splits.py",
+    "seed": 42,
+    "ratios": {
+      "train": 0.7,
+      "val": 0.15,
+      "test": 0.15
+    },
+    "unit": "split_group_id (patient merged with patients sharing byte-identical images)",
+    "method": "stratified_group",
+    "train_csv_sha256": "b4bcd3d7942de23349bbe922a2389185d639cb06a24e700efb4980caae80b8e8",
+    "manifest_sha256": "c874472af7a5fac7a1f0b6af52e6dd7dbf9d809d2f16d60fbf7c71f9fdb62fc0",
+    "patient_splits_sha256": "baeea3ad02aa9c2b2ed59954b6d309440bacbc3bbe76bc097884e60b07955da6",
+    "official_valid": "separate partition, not part of train/val/test"
+  },
+  "test_never_used_for": {
+    "model_training": {
+      "train_split": "train",
+      "locked_splits_config": [
+        "test"
+      ],
+      "evidence": "training_summary / config use train+val only; loader raises LockedSplitError on 'test'"
+    },
+    "loss_selection": {
+      "selection_metric": "val_macro_auprc on the validation split (C2)",
+      "c2_reports_flag_locked_test": "see flags"
+    },
+    "threshold_selection": {
+      "thresholds_split": "validation",
+      "locked_test_split_used": false
+    },
+    "calibration_fitting": {
+      "fitting_split": "validation",
+      "locked_test_split_used": false
+    },
+    "checkpoint_selection": {
+      "selection_metric": "val_macro_auprc",
+      "checkpoint_epoch": 7,
+      "split_for_selection": "validation"
+    },
+    "locked_test_split_used_flags_in_C1_to_C5_json": {
+      "results\\classification\\experiments\\c3_threshold_optimization\\c3_results.json": "false",
+      "results\\classification\\experiments\\c3_threshold_optimization\\input_verification.json": "false",
+      "results\\classification\\experiments\\c4_operating_policy\\c4_results.json": "false",
+      "results\\classification\\experiments\\c4_operating_policy\\final_operating_policy.json": "false",
+      "results\\classification\\experiments\\c5_calibration\\c5_results.json": "false",
+      "results\\classification\\experiments\\c5_calibration\\final_calibrators.json": "false"
+    },
+    "flags_that_are_true": [],
+    "allow_locked_True_occurrences_in_code_before_C6": {},
+    "result_files_with_'test'_in_the_name_before_C6": []
+  },
+  "labels_or_images_of_test_opened_by_this_script": false
+}

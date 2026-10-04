@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrr}
+\hline
+Method & Macro Brier score & Macro log loss & Macro ECE \\
+\hline
+Raw sigmoid score & 0.0962 & 0.3125 & 0.0643 \\
+Temperature scaling & 0.0950 & 0.3082 & 0.0533 \\
+Platt scaling & 0.0839 & 0.2776 & 0.0056 \\
+Isotonic regression & 0.0840 & 0.2784 & 0.0030 \\
+\hline
+\end{tabular}
+\caption{Macro calibration metrics (14 observations) from patient-level 5-fold out-of-fold predictions; the raw row is unaffected by cross-validation.}
+\label{tab:table1_calibration_method_comparison}
+\end{table}

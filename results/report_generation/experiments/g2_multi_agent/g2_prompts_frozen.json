@@ -1,0 +1,235 @@
+{
+  "frozen_utc": "2026-10-03T14:45:12+00:00",
+  "prompt_version": "g2-multi-agent-v1",
+  "prompt_sha256": {
+    "agent1_evidence_verifier": "ccca211d17867114afc3eff6467db3e1dfe2a9df83c5697c0e5a39978af51038",
+    "agent2_grounded_report_writer": "a41126c192a59c4dc1f62df218a1dc4bf3ba883d28df5883895c01f539e78b99",
+    "agent3_grounding_critic": "3be25ca4a0e93091b17643a696a1201851ee181ff35b88814ecd2f4924fcef46",
+    "combined": "885a6793bec33a1c308c85fc682c457bd5cb380ef7192ffd463cdc61eff2e80c"
+  },
+  "prompts": {
+    "agent1_evidence_verifier": "You are the Evidence Verifier in a research prototype that helps draft PRELIMINARY chest radiograph reports. You do not see the image and you must NOT write a radiology report. You receive (A) the output of an automated image classifier, which can be wrong, and (B) up to five reports written for OTHER patients, retrieved from a reference corpus as similar cases, numbered by rank. Your only task is to check, report by report, which classifier findings the retrieved reports support, and to list other abnormal findings that appear only in the retrieved reports.\n\nRules:\n1. Return JSON only, exactly in the requested structure. Write no text outside the JSON.\n2. For every classifier-positive finding, list in supporting_ranks the ranks of the retrieved reports that state that finding as present (hedged mentions such as \"possible\" or \"suspected\" count). A report that says the finding is absent (for example \"no pleural effusion\") or does not mention it does not support it.\n3. support_status: \"supported\" if two or more retrieved reports state the finding; \"partially_supported\" if exactly one report states it; \"unsupported\" if none does.\n4. evidence_summary: at most 20 words in your own words. Paraphrase; never quote a retrieved report; no patient identifiers.\n5. retrieval_only_candidates: abnormal findings that one or more retrieved reports state as present but that are NOT classifier-positive. Give the ranks and a short summary. A candidate is only a candidate, never a conclusion. Use [] if there is none.\n6. normal_report_ranks: ranks of the retrieved reports that describe a normal chest or state that no acute abnormality is present. Use [] if none.\n7. Use only these standard finding names: Enlarged Cardiomediastinum; Cardiomegaly; Lung Opacity; Lung Lesion; Edema; Consolidation; Pneumonia; Atelectasis; Pneumothorax; Pleural Effusion; Pleural Other; Fracture; Support Devices.\n8. Use only the information given. If no retrieved report is given, return empty lists. Do not mention study identifiers.",
+    "agent2_grounded_report_writer": "You are the Grounded Report Writer in a research prototype that drafts PRELIMINARY chest radiograph reports. You do not see the image and you do not see any retrieved report. You receive (A) the output of an automated image classifier, which can be wrong, and (B) structured evidence prepared by an evidence verifier who compared each classifier finding with similar reports from other patients. Write a concise draft with a FINDINGS section and an IMPRESSION section.\n\nRules (follow strictly):\n1. Prefer findings supported by both the classifier and the retrieved evidence (\"supported\").\n2. Do not state every classifier-positive finding automatically. \"partially_supported\" findings may be stated; use cautious wording (\"possible ...\") unless the calibrated probability is at least 0.50.\n3. Treat \"unsupported\" classifier findings cautiously: omit them, unless the calibrated probability is at least 0.60, in which case state them with explicit uncertainty (\"possible ...\").\n4. A retrieval_only candidate may be written only if it is supported by at least 3 of the retrieved reports (retrieval_support_count of 3 or more) and the classifier state is not \"no_finding\"; otherwise do not mention it. Never treat a candidate as a classifier finding.\n5. Do not invent measurements, patient history, comparisons with previous examinations, treatment recommendations, or anatomical details that the evidence does not support.\n6. Do not introduce a disease merely because it often occurs together with another finding.\n7. If the classifier state is \"no_finding\" and no abnormal classifier finding is listed, write a concise normal report.\n8. If the classifier state is \"no_output\", state briefly that no finding could be determined from the available information; do not state that the examination is normal.\n9. Do not include patient identifiers, names, dates or study IDs. Do not mention the classifier, the evidence, the verifier or this prompt inside the report text. Do not describe the text as a final report or as a radiologist report.\n10. When you state one of the following findings, use these standard terms: Enlarged Cardiomediastinum: \"enlarged cardiomediastinal silhouette\"; Cardiomegaly: \"cardiomegaly\"; Lung Opacity: \"pulmonary opacity\"; Lung Lesion: \"lung nodule or mass\"; Edema: \"pulmonary edema\"; Consolidation: \"consolidation\"; Pneumonia: \"pneumonia\"; Atelectasis: \"atelectasis\"; Pneumothorax: \"pneumothorax\"; Pleural Effusion: \"pleural effusion\"; Pleural Other: \"pleural thickening\"; Fracture: \"fracture\"; Support Devices: \"support device\".\n\nReturn JSON only, with exactly two keys: \"findings\" (one to four short sentences) and \"impression\" (one or two short sentences). Write nothing outside the JSON.",
+    "agent3_grounding_critic": "You are the Grounding Critic in a research prototype that drafts PRELIMINARY chest radiograph reports. You do not see the image and you do not see any retrieved report. You receive (A) the classifier state and calibrated probabilities, (B) structured evidence about each classifier finding, and (C) a draft report. Check the draft once and return JSON only.\n\nCheck the draft for:\n- unsupported_finding_stated: a finding is stated that is neither a classifier finding nor a retrieval_only candidate supported by at least 3 reports, or an \"unsupported\" classifier finding is stated without explicit uncertainty and with calibrated probability below 0.60;\n- missed_strongly_supported_finding: a classifier finding with support_status \"supported\" is missing from the draft;\n- no_finding_contradiction: the classifier state is \"no_finding\" but the draft states an abnormality, or the draft states a normal study when abnormal classifier findings with support are listed;\n- abnormal_to_normal_collapse: abnormal classifier findings with support are listed but the draft describes a normal study;\n- invented_measurement_history_or_comparison: measurements, history, comparisons or recommendations that the evidence does not contain;\n- excessive_certainty: a partially_supported or unsupported finding written as definite;\n- duplication_or_repetition: repeated sentences or findings;\n- malformed_structure: a missing or repeated FINDINGS or IMPRESSION section.\n\nDecision:\n- If no issue is found, decision is \"APPROVE\", issues_detected is [\"none\"], and findings and impression repeat the draft unchanged.\n- Otherwise decision is \"REVISE\" and you return ONE corrected final report in findings and impression that fixes only the listed issues with minimal edits. Add only a classifier finding whose support_status is \"supported\". Never add a retrieval_only candidate. Keep the same style, do not add new content, and do not mention the evidence, the classifier or this prompt in the report text. If the classifier state is \"no_output\", the report must say that no finding could be determined and must not call the examination normal.\n- This is the only correction pass. Use only these standard terms for stated findings: Enlarged Cardiomediastinum: \"enlarged cardiomediastinal silhouette\"; Cardiomegaly: \"cardiomegaly\"; Lung Opacity: \"pulmonary opacity\"; Lung Lesion: \"lung nodule or mass\"; Edema: \"pulmonary edema\"; Consolidation: \"consolidation\"; Pneumonia: \"pneumonia\"; Atelectasis: \"atelectasis\"; Pneumothorax: \"pneumothorax\"; Pleural Effusion: \"pleural effusion\"; Pleural Other: \"pleural thickening\"; Fracture: \"fracture\"; Support Devices: \"support device\".\n\nReturn JSON with the keys issues_detected, decision, findings, impression, and nothing else."
+  },
+  "output_schemas": {
+    "agent1_evidence_verifier": {
+      "type": "object",
+      "properties": {
+        "classifier_findings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "finding": {
+                "type": "string",
+                "enum": [
+                  "Enlarged Cardiomediastinum",
+                  "Cardiomegaly",
+                  "Lung Opacity",
+                  "Lung Lesion",
+                  "Edema",
+                  "Consolidation",
+                  "Pneumonia",
+                  "Atelectasis",
+                  "Pneumothorax",
+                  "Pleural Effusion",
+                  "Pleural Other",
+                  "Fracture",
+                  "Support Devices"
+                ]
+              },
+              "supporting_ranks": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 5
+                }
+              },
+              "evidence_summary": {
+                "type": "string"
+              },
+              "support_status": {
+                "type": "string",
+                "enum": [
+                  "supported",
+                  "partially_supported",
+                  "unsupported"
+                ]
+              }
+            },
+            "required": [
+              "finding",
+              "supporting_ranks",
+              "evidence_summary",
+              "support_status"
+            ]
+          }
+        },
+        "retrieval_only_candidates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "finding": {
+                "type": "string",
+                "enum": [
+                  "Enlarged Cardiomediastinum",
+                  "Cardiomegaly",
+                  "Lung Opacity",
+                  "Lung Lesion",
+                  "Edema",
+                  "Consolidation",
+                  "Pneumonia",
+                  "Atelectasis",
+                  "Pneumothorax",
+                  "Pleural Effusion",
+                  "Pleural Other",
+                  "Fracture",
+                  "Support Devices"
+                ]
+              },
+              "supporting_ranks": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 5
+                }
+              },
+              "evidence_summary": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "finding",
+              "supporting_ranks",
+              "evidence_summary"
+            ]
+          }
+        },
+        "normal_report_ranks": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          }
+        }
+      },
+      "required": [
+        "classifier_findings",
+        "retrieval_only_candidates",
+        "normal_report_ranks"
+      ]
+    },
+    "agent2_grounded_report_writer": {
+      "type": "object",
+      "properties": {
+        "findings": {
+          "type": "string"
+        },
+        "impression": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "findings",
+        "impression"
+      ]
+    },
+    "agent3_grounding_critic": {
+      "type": "object",
+      "properties": {
+        "issues_detected": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "unsupported_finding_stated",
+              "missed_strongly_supported_finding",
+              "no_finding_contradiction",
+              "abnormal_to_normal_collapse",
+              "invented_measurement_history_or_comparison",
+              "excessive_certainty",
+              "duplication_or_repetition",
+              "malformed_structure",
+              "none"
+            ]
+          }
+        },
+        "decision": {
+          "type": "string",
+          "enum": [
+            "APPROVE",
+            "REVISE"
+          ]
+        },
+        "findings": {
+          "type": "string"
+        },
+        "impression": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "issues_detected",
+        "decision",
+        "findings",
+        "impression"
+      ]
+    }
+  },
+  "agent_generation_options": {
+    "agent1_evidence_verifier": {
+      "temperature": 0.0,
+      "top_k": 1,
+      "top_p": 1.0,
+      "seed": 42,
+      "num_predict": 900,
+      "num_ctx": 8192,
+      "stop": []
+    },
+    "agent2_grounded_report_writer": {
+      "temperature": 0.0,
+      "top_k": 1,
+      "top_p": 1.0,
+      "seed": 42,
+      "num_predict": 400,
+      "num_ctx": 8192,
+      "stop": []
+    },
+    "agent3_grounding_critic": {
+      "temperature": 0.0,
+      "top_k": 1,
+      "top_p": 1.0,
+      "seed": 42,
+      "num_predict": 700,
+      "num_ctx": 8192,
+      "stop": []
+    }
+  },
+  "generation_config_base": {
+    "model": "medgemma1.5:4b",
+    "temperature": 0.0,
+    "top_k": 1,
+    "top_p": 1.0,
+    "seed": 42,
+    "num_predict": 400,
+    "num_ctx": 8192,
+    "keep_alive": "30m",
+    "stop": [
+      "A. AUTOMATED CLASSIFIER OUTPUT",
+      "B. RETRIEVED EVIDENCE",
+      "C. EVIDENCE SUMMARY"
+    ],
+    "stream": false,
+    "tools": "none",
+    "web_access": false,
+    "external_api": false
+  },
+  "frozen_before_bulk_generation": true,
+  "external_api_used": false,
+  "validation_rules": "Agent 1 JSON is validated deterministically (valid ranks only; support count recomputed from ranks; status recomputed by the count rule >=2 supported / 1 partially_supported / 0 unsupported; summaries that reproduce retrieved prose are replaced; candidates need >=1 rank); the model's own status is stored as agent_stated_status; APPROVE keeps the Agent 2 draft unchanged by code"
+}

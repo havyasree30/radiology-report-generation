@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "79eccb29003b73dbd3a45989dcbf56e1e5bb5ccdefd2d9352dc6d1ef2afe8ce2",
+ "text": "FINDINGS:\nThe heart size is enlarged. The lungs are clear.\nIMPRESSION:\nStable moderate to marked cardiomegaly.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1144,
+ "output_tokens": 30,
+ "total_duration_ns": 1046776000,
+ "load_duration_ns": 4392800,
+ "attempts": 1,
+ "wall_seconds": 3.11,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:12:24+00:00"
+}

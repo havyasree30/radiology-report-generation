@@ -1,0 +1,15 @@
+observation,eligible,ineligible_reasons,best_log_loss_among_eligible,best_brier_among_eligible,per_class_selected,final_selected
+No Finding,"raw,temperature,platt,isotonic",,0.20516014064907115,0.059235358926922853,platt,platt
+Enlarged Cardiomediastinum,"raw,temperature,platt,isotonic",,0.18719169290898141,0.046223707480785983,platt,platt
+Cardiomegaly,"raw,temperature,platt,isotonic",,0.25960109792065683,0.076484511548828391,platt,platt
+Lung Opacity,"raw,temperature,platt,isotonic",,0.59748143237720663,0.20579825140632779,raw,platt
+Lung Lesion,"raw,temperature,platt,isotonic",,0.13814517347333738,0.033108167565204329,platt,platt
+Edema,"raw,temperature,platt,isotonic",,0.41530860586094265,0.13531899183678511,platt,platt
+Consolidation,"raw,temperature,platt,isotonic",,0.24562398852748446,0.067593652327626624,platt,platt
+Pneumonia,"raw,temperature,platt,isotonic",,0.11075281693279918,0.025053510154077922,platt,platt
+Atelectasis,"raw,temperature,platt,isotonic",,0.43224292966707484,0.13682339948057751,platt,platt
+Pneumothorax,"raw,temperature,platt,isotonic",,0.21730992242694067,0.061530787668971736,platt,platt
+Pleural Effusion,"raw,temperature,platt,isotonic",,0.42420193070813078,0.13706584444659167,temperature,platt
+Pleural Other,"raw,temperature,platt,isotonic",,0.062650157627454753,0.012813347438692774,platt,platt
+Fracture,"raw,temperature,platt,isotonic",,0.13698262385362953,0.03363614726107949,platt,platt
+Support Devices,"raw,temperature,platt,isotonic",,0.45210936293531073,0.1433011459117286,platt,platt

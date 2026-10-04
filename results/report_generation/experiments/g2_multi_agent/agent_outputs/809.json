@@ -1,0 +1,104 @@
+{
+ "uid": "809",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Cardiomegaly",
+    "classifier_probability": 0.3188,
+    "retrieval_support_count": 3,
+    "supporting_retrieved_report_ranks": [
+     1,
+     3,
+     4
+    ],
+    "evidence_summary": "Retrieved reports mention cardiomegaly.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Fracture",
+    "classifier_probability": 0.166,
+    "retrieval_support_count": 1,
+    "supporting_retrieved_report_ranks": [
+     1
+    ],
+    "evidence_summary": "Retrieved report mentions fracture.",
+    "support_status": "partially_supported",
+    "agent_stated_status": "partially_supported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   2,
+   5
+  ]
+ },
+ "agent1_validation_flags": [],
+ "agent2_draft": {
+  "findings": "Cardiomegaly is noted. A fracture is possible.",
+  "impression": "Cardiomegaly and fracture are present.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "abnormal_to_normal_collapse"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Cardiomegaly is noted. A fracture is possible.",
+  "impression": "Cardiomegaly and fracture are present.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 3, 4], \"evidence_summary\": \"Retrieved reports mention cardiomegaly.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [1], \"evidence_summary\": \"Retrieved report mentions fracture.\", \"support_status\": \"partially_supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions enlarged cardiomediastinum.\"}\n  ],\n  \"normal_report_ranks\": [\n    2, 5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Cardiomegaly is noted. A fracture is possible.\",\n\"impression\": \"Cardiomegaly and fracture are present.\"\n}",
+ "agent3_raw_text": "{\n\"issues_detected\": [\"abnormal_to_normal_collapse\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Cardiomegaly is noted. A fracture is possible.\",\n\"impression\": \"Cardiomegaly and fracture are present.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "b22c5e22ae522c1c507282ceb11eb6e8eaf02964afd26fb6574f38b415ae2125",
+  "agent2_grounded_report_writer": "80db8781a5806b1de748a9b356364703ddbb5a46a0835e4f5065d9a16dd684de",
+  "agent3_grounding_critic": "3c0b49b0f7f84acd95c3abfc9852170806dbdfc9065505cb22d3e0d08e3d598f"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "35dfd11439bf051ba68331f7e1c865d463c7b84e76c88e0c08feb2973f0b556a",
+  "agent2_grounded_report_writer": "aaf38ff71f0dce42c50920de69f2e7ae0646fc065988952fb86d9a514e6b0127",
+  "agent3_grounding_critic": "d83dd38cc8ca7ad20a1d923debef53bb0029e008a33c74ac623169639da43ec5"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 6.34,
+  "agent2_grounded_report_writer": 3.24,
+  "agent3_grounding_critic": 3.75
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 178,
+  "agent2_grounded_report_writer": 35,
+  "agent3_grounding_critic": 60
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 854,
+  "agent2_grounded_report_writer": 960,
+  "agent3_grounding_critic": 986
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Cardiomegaly (calibrated probability 0.32); Fracture (calibrated probability 0.17)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: Mild cardiomegaly. Negative for focal pulmonary consolidation, pleural effusion, or pneumothorax. There is thoracic kyphosis. There is deformity of T12 and L1, unchanged abdomen,. Aortic calcifications are noted. Fracture of right proximal humerus, incompletely evaluated.\nIMPRESSION: 1. No acute abnormality of the chest. 2. deformities of T12 and L1, unchanged abdomen, abdomen,. 3. Fracture of right proximal humerus, incompletely evaluated..\n[2]\nFINDINGS: The cardiomediastinal silhouette is normal size and configuration. The thoracic aorta is tortuous. Pulmonary vasculature within normal limits. The lungs are well-aerated. There is no pneumothorax, pleural effusion, or focal consolidation. There is no obvious displaced rib fracture. If there is concern for fracture consider rib series.\nIMPRESSION: No acute cardiopulmonary disease..\n[3]\nFINDINGS: Cardiomegaly. No focal consolidation, effusion, or pneumothorax. Mild unfolding of the thoracic aorta. Bony thorax and soft tissues grossly unremarkable.\nIMPRESSION: Cardiomegaly without acute cardiopulmonary abnormality.\n[4]\nFINDINGS: Persistent cardiomegaly. No abnormal airspace consolidation. Resolved interstitial edema. No pneumothorax or pleural effusion.\nIMPRESSION: Stable cardiomegaly without acute abnormality.\n[5]\nFINDINGS: (not available)\nIMPRESSION: Cardiomegaly. No effusions or edema. Clear chest\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Cardiomegaly (calibrated probability 0.32); Fracture (calibrated probability 0.17)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"classifier_probability\": 0.3188,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention cardiomegaly.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.166,\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    1\n   ],\n   \"evidence_summary\": \"Retrieved report mentions fracture.\",\n   \"support_status\": \"partially_supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  2,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Cardiomegaly (calibrated probability 0.32); Fracture (calibrated probability 0.17)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"classifier_probability\": 0.3188,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention cardiomegaly.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.166,\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    1\n   ],\n   \"evidence_summary\": \"Retrieved report mentions fracture.\",\n   \"support_status\": \"partially_supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  2,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Cardiomegaly is noted. A fracture is possible.\nIMPRESSION: Cardiomegaly and fracture are present.\n\nReturn the JSON now."
+ }
+}

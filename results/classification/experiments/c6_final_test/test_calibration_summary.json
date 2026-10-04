@@ -1,0 +1,17 @@
+{
+  "split": "test",
+  "n_images": 28706,
+  "ece_definition": "10 adaptive equal-frequency bins (identical to C5)",
+  "macro_calibrated": {
+    "brier": 0.0836892685165862,
+    "log_loss": 0.2768125006168072,
+    "ece": 0.006905949332418756
+  },
+  "macro_raw_score_for_reference": {
+    "brier": 0.09603405709211676,
+    "log_loss": 0.3115762426315874,
+    "ece": 0.0648097383529919
+  },
+  "fraction_of_classes_with_lower_brier_after_calibration": 1.0,
+  "fraction_of_classes_with_lower_log_loss_after_calibration": 1.0
+}

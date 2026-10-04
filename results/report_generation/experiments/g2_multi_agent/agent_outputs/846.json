@@ -1,0 +1,149 @@
+{
+ "uid": "846",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Lung Lesion",
+    "classifier_probability": 0.1587,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "The classifier suggests a lung lesion, but no retrieved reports mention this.",
+    "support_status": "unsupported",
+    "agent_stated_status": "unsupported"
+   },
+   {
+    "finding": "Fracture",
+    "classifier_probability": 0.1504,
+    "retrieval_support_count": 2,
+    "supporting_retrieved_report_ranks": [
+     1,
+     4
+    ],
+    "evidence_summary": "Retrieved reports 1 and 4 mention fractures, but the classifier does not.",
+    "support_status": "supported",
+    "agent_stated_status": "partially_supported"
+   },
+   {
+    "finding": "Support Devices",
+    "classifier_probability": 0.7217,
+    "retrieval_support_count": 1,
+    "supporting_retrieved_report_ranks": [
+     2
+    ],
+    "evidence_summary": "The classifier suggests support devices, but only retrieved report 2 mentions this.",
+    "support_status": "partially_supported",
+    "agent_stated_status": "partially_supported"
+   }
+  ],
+  "retrieval_only_candidates": [
+   {
+    "finding": "Lung Opacity",
+    "retrieval_support_count": 4,
+    "supporting_retrieved_report_ranks": [
+     1,
+     3,
+     4,
+     5
+    ],
+    "evidence_summary": "Retrieved reports 1, 3, 4, and 5 mention lung opacity, but the classifier does not.",
+    "status": "retrieval_only"
+   },
+   {
+    "finding": "Atelectasis",
+    "retrieval_support_count": 3,
+    "supporting_retrieved_report_ranks": [
+     1,
+     4,
+     5
+    ],
+    "evidence_summary": "Retrieved reports 1, 4, and 5 mention atelectasis, but the classifier does not.",
+    "status": "retrieval_only"
+   },
+   {
+    "finding": "Pleural Effusion",
+    "retrieval_support_count": 3,
+    "supporting_retrieved_report_ranks": [
+     1,
+     4,
+     5
+    ],
+    "evidence_summary": "Retrieved reports 1, 4, and 5 mention pleural effusion, but the classifier does not.",
+    "status": "retrieval_only"
+   }
+  ],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   2,
+   5
+  ]
+ },
+ "agent1_validation_flags": [
+  "agent1_status_inconsistent_with_count"
+ ],
+ "agent2_draft": {
+  "findings": "Lung Lesion and Fracture are suggested by the classifier. Support Devices are also suggested. Fracture is supported by retrieved reports. Support Devices are partially supported. Lung Lesion is not supported.",
+  "impression": "Fracture is present. Support Devices are present.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Lung Lesion and Fracture are suggested by the classifier. Support Devices are also suggested. Fracture is supported by retrieved reports. Support Devices are partially supported. Lung Lesion is not supported.",
+  "impression": "Fracture is present. Support Devices are present.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"The classifier suggests a lung lesion, but no retrieved reports mention this.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Retrieved reports 1 and 4 mention fractures, but the classifier does not.\", \"support_status\": \"partially_supported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [2], \"evidence_summary\": \"The classifier suggests support devices, but only retrieved report 2 mentions this.\", \"support_status\": \"partially_supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention enlarged cardiomediastinum.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention cardiomegaly.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 3, 4, 5], \"evidence_summary\": \"Retrieved reports 1, 3, 4, and 5 mention lung opacity, but the classifier does not.\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung lesion.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention edema.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention consolidation.\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pneumonia.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 4, 5], \"evidence_summary\": \"Retrieved reports 1, 4, and 5 mention atelectasis, but the classifier does not.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pneumothorax.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 4, 5], \"evidence_summary\": \"Retrieved reports 1, 4, and 5 mention pleural effusion, but the classifier does not.\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pleural other.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention support devices.\"}\n  ],\n  \"normal_report_ranks\": [\n    2,\n    5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Lung Lesion and Fracture are suggested by the classifier. Support Devices are also suggested. Fracture is supported by retrieved reports. Support Devices are partially supported. Lung Lesion is not supported.\",\n\"impression\": \"Fracture is present. Support Devices are present.\"\n}",
+ "agent3_raw_text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Lung Lesion and Fracture are suggested by the classifier. Support Devices are also suggested. Fracture is supported by retrieved reports. Support Devices are partially supported. Lung Lesion is not supported.\",\n\"impression\": \"Fracture is present. Support Devices are present.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "d8eb81afb400a55a444a8a6bdef67973101bb56738cd8bee80b31a51e9800329",
+  "agent2_grounded_report_writer": "b0670249435955425644b9ad3ed5f3bb062556fdf8ac82d5531bd9e8a5c90919",
+  "agent3_grounding_critic": "1cf37348ac380927e9dda974cb99113826f6a7c3ec64de76596a6bc0b0507f0f"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "b671f0efbd99fe66b46e948dc83eee060826235a04d0e2f7eb70492e1c356898",
+  "agent2_grounded_report_writer": "db66f2b6c608b9077583468725e8ceaa74bc2a1785b13f3889d95d823bae9d32",
+  "agent3_grounding_critic": "02d36b9e716fbbb2f20b9b35ae5f35ea33c235c60cc3e03420062991e160ffea"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 16.48,
+  "agent2_grounded_report_writer": 3.91,
+  "agent3_grounding_critic": 4.45
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 679,
+  "agent2_grounded_report_writer": 61,
+  "agent3_grounding_critic": 84
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 968,
+  "agent2_grounded_report_writer": 1385,
+  "agent3_grounding_critic": 1438
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Lung Lesion (calibrated probability 0.16); Fracture (calibrated probability 0.15); Support Devices (calibrated probability 0.72)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: The lungs are hypoinflated with mild basilar bronchovascular crowding/atelectasis. There is a fracture of the left anterior 7th rib and the left anterior 6th rib, of uncertain acuity. Correlate with tenderness. There is mild atelectasis in the left lung base. There is corticated deformity of the right anterior 7th rib, remote fracture. There is no evidence of pneumothorax or large pleural effusion.\nIMPRESSION: 1. Suspected fractures of the left anterior 6th and 7th ribs, of uncertain acuity. Correlate with tenderness. 2. Low lung volumes with mild basilar atelectasis, left greater than right..\n[2]\nFINDINGS: There is a stable closure device projected over the heart. The heart and mediastinum are otherwise normal. There is stable scarring of left mid lung. The lungs are otherwise clear. There is no infiltrate, effusion, mass or pneumothorax.\nIMPRESSION: Stable appearance of the chest\n[3]\nFINDINGS: (not available)\nIMPRESSION: Device compatible tracheostomy is in, with tip approximately 5-6 centimeters above carina. Well-expanded and clear lungs. Mediastinal contour within normal limits. No acute cardiopulmonary abnormality identified.\n[4]\nFINDINGS: Right thorax volume loss with some degree of left-to-right mediastinal shift. Relative hyperlucency of left lung, compensatory hyperinflation. Diminutive right hilar silhouette, compatible with absence of right pulmonary artery, as noted on prior CT. No focal consolidation, pneumothorax or large pleural effusion. Negative for acute displaced rib fracture.\nIMPRESSION: Negative for acute abnormality.\n[5]\nFINDINGS: The cardiomediastinal silhouette and pulmonary vasculature are within normal limits in size. The lungs are clear of focal airspace disease, pneumothorax, or pleural effusion. There is no definite evidence of acute fracture.\nIMPRESSION: No acute cardiopulmonary findings..\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Lesion (calibrated probability 0.16); Fracture (calibrated probability 0.15); Support Devices (calibrated probability 0.72)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Lesion\",\n   \"classifier_probability\": 0.1587,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"The classifier suggests a lung lesion, but no retrieved reports mention this.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.1504,\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports 1 and 4 mention fractures, but the classifier does not.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Support Devices\",\n   \"classifier_probability\": 0.7217,\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    2\n   ],\n   \"evidence_summary\": \"The classifier suggests support devices, but only retrieved report 2 mentions this.\",\n   \"support_status\": \"partially_supported\"\n  }\n ],\n \"retrieval_only_candidates\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports 1, 3, 4, and 5 mention lung opacity, but the classifier does not.\",\n   \"status\": \"retrieval_only\"\n  },\n  {\n   \"finding\": \"Atelectasis\",\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports 1, 4, and 5 mention atelectasis, but the classifier does not.\",\n   \"status\": \"retrieval_only\"\n  },\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports 1, 4, and 5 mention pleural effusion, but the classifier does not.\",\n   \"status\": \"retrieval_only\"\n  }\n ],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  2,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Lesion (calibrated probability 0.16); Fracture (calibrated probability 0.15); Support Devices (calibrated probability 0.72)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Lesion\",\n   \"classifier_probability\": 0.1587,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"The classifier suggests a lung lesion, but no retrieved reports mention this.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.1504,\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports 1 and 4 mention fractures, but the classifier does not.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Support Devices\",\n   \"classifier_probability\": 0.7217,\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    2\n   ],\n   \"evidence_summary\": \"The classifier suggests support devices, but only retrieved report 2 mentions this.\",\n   \"support_status\": \"partially_supported\"\n  }\n ],\n \"retrieval_only_candidates\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports 1, 3, 4, and 5 mention lung opacity, but the classifier does not.\",\n   \"status\": \"retrieval_only\"\n  },\n  {\n   \"finding\": \"Atelectasis\",\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports 1, 4, and 5 mention atelectasis, but the classifier does not.\",\n   \"status\": \"retrieval_only\"\n  },\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports 1, 4, and 5 mention pleural effusion, but the classifier does not.\",\n   \"status\": \"retrieval_only\"\n  }\n ],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  2,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Lung Lesion and Fracture are suggested by the classifier. Support Devices are also suggested. Fracture is supported by retrieved reports. Support Devices are partially supported. Lung Lesion is not supported.\nIMPRESSION: Fracture is present. Support Devices are present.\n\nReturn the JSON now."
+ }
+}

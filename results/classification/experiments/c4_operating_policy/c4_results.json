@@ -1,0 +1,65 @@
+{
+  "c3_reproduced": true,
+  "n_images": 28671,
+  "n_patients": 9530,
+  "no_finding_ground_truth": {
+    "gt_no_finding_positive": 2538,
+    "gt_contradiction_pathology12": 0,
+    "gt_no_finding_with_support_devices": 1126
+  },
+  "rule": {
+    "images_changed": 755,
+    "abnormal_columns_identical": true
+  },
+  "checkpoint": {
+    "path": "results/classification/experiments/c2b_sqrt_weighted_bce/checkpoints/best.pt",
+    "sha256_recomputed": "6645ed44be7cb7d4cf4679b1fd561c7ac36be63f964ea320666199883126794b",
+    "sha256_recorded": "6645ed44be7cb7d4cf4679b1fd561c7ac36be63f964ea320666199883126794b",
+    "sha256_match": true,
+    "size_bytes": 28439162,
+    "git_commit_in_checkpoint": "c1e4800983f8e050da63ac85e799ba443e4858fe",
+    "architecture": "densenet121",
+    "num_labels": 14,
+    "training_loss": {
+      "type": "weighted_bce",
+      "pos_weight_source": "train_split",
+      "pos_weight_tempering": "sqrt"
+    },
+    "selected_epoch": 7,
+    "selection_metric": "val_macro_auprc",
+    "selection_metric_value": 0.4234861202401775,
+    "training_summary_best_epoch": 7
+  },
+  "locked_test_split_used": false,
+  "definitions": {
+    "abnormal_for_rule_and_contradiction": [
+      "Enlarged Cardiomediastinum",
+      "Cardiomegaly",
+      "Lung Opacity",
+      "Lung Lesion",
+      "Edema",
+      "Consolidation",
+      "Pneumonia",
+      "Atelectasis",
+      "Pneumothorax",
+      "Pleural Effusion",
+      "Pleural Other",
+      "Fracture"
+    ],
+    "abnormal_for_counts_and_macro13": [
+      "Enlarged Cardiomediastinum",
+      "Cardiomegaly",
+      "Lung Opacity",
+      "Lung Lesion",
+      "Edema",
+      "Consolidation",
+      "Pneumonia",
+      "Atelectasis",
+      "Pneumothorax",
+      "Pleural Effusion",
+      "Pleural Other",
+      "Fracture",
+      "Support Devices"
+    ]
+  }
+}

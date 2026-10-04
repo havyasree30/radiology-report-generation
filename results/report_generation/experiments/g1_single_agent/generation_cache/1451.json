@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "8df731a05030f9f6f29d46ac6b1eba12813ccdd14865dffe4d27a90275302e33",
+ "text": "FINDINGS:\nThere is a patchy opacity in the left lung base.\nIMPRESSION:\nPossible atelectasis or infiltrate in the left lung base.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1219,
+ "output_tokens": 34,
+ "total_duration_ns": 1288258300,
+ "load_duration_ns": 6849700,
+ "attempts": 1,
+ "wall_seconds": 3.31,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T10:28:50+00:00"
+}

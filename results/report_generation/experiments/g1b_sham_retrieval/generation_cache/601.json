@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "d50e24a725897c1f19b700192916fbb2b9e16ab55f11e8c286246d8c40f580db",
+ "text": "FINDINGS:\nThe heart size is within normal limits. Mild streaky opacities are present in the left lung base. An accessory azygos fissure is noted. No pleural effusion or pneumothorax.\nIMPRESSION:\nMild streaky left basilar airspace disease, atelectasis.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1294,
+ "output_tokens": 62,
+ "total_duration_ns": 2149860300,
+ "load_duration_ns": 3249900,
+ "attempts": 1,
+ "wall_seconds": 4.2,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:18:11+00:00"
+}

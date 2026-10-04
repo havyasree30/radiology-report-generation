@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "62e617bdc0177abd983190bcb5a25b2f69033b4984fe24131f43226c710a2519",
+ "text": "FINDINGS:\nThe lungs and pleural spaces are clear. The heart size is normal. The pulmonary vascularity is normal.\nIMPRESSION:\nNo acute pulmonary abnormality.\n\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1001,
+ "output_tokens": 46,
+ "total_duration_ns": 1261999000,
+ "load_duration_ns": 10091100,
+ "attempts": 1,
+ "wall_seconds": 3.31,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T06:51:06+00:00"
+}

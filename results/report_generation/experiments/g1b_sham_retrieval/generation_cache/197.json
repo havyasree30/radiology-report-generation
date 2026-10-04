@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "fecf194c26a49d24eea5f54dd28c0b1ea0aaad8964656e19b6782ec1cce42d76",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is unchanged. The cardiac silhouette remains moderately enlarged. No focal airspace consolidation is seen. No pneumothorax is identified. The left costophrenic sulcus is blunted. No retrocardiac pleural fluid collection is seen on the lateral view. The right acromioclavicular joint is mildly widened. IMPRESSION:\n1. Cardiomegaly. 2. Left-sided small pleural effusion versus extrapleural fat or scarring.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1221,
+ "output_tokens": 101,
+ "total_duration_ns": 2669069200,
+ "load_duration_ns": 5122800,
+ "attempts": 1,
+ "wall_seconds": 4.72,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:14:00+00:00"
+}

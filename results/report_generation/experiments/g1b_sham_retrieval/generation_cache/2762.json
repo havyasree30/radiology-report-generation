@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "494371e679620e78e1e92f239438c8077392efeacc36fdd8461e49e1db8647ca",
+ "text": "FINDINGS:\nThe left hilum is retracted superiorly. In the collapsed left upper lobe are stranding and pneumatoceles. Additionally, pleural thickening is present in the left apex. No infiltrates are present in the left lower lobe or in the right lung. Heart size is normal.\nIMPRESSION:\nStable left upper lobe collapse associated with parenchymal scarring and pleural thickening. Findings consistent with previous active pulmonary tuberculosis pneumonia.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1194,
+ "output_tokens": 100,
+ "total_duration_ns": 2414808600,
+ "load_duration_ns": 8960300,
+ "attempts": 1,
+ "wall_seconds": 4.46,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:35:26+00:00"
+}

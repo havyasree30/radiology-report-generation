@@ -1,0 +1,95 @@
+{
+ "uid": "2624",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Pneumothorax",
+    "classifier_probability": 0.4039,
+    "retrieval_support_count": 2,
+    "supporting_retrieved_report_ranks": [
+     2,
+     5
+    ],
+    "evidence_summary": "Retrieved reports 2 and 5 mention a pneumothorax.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   1,
+   4,
+   5
+  ]
+ },
+ "agent1_validation_flags": [
+  "agent1_extra_or_duplicate_classifier_entry"
+ ],
+ "agent2_draft": {
+  "findings": "Pneumothorax.",
+  "impression": "Pneumothorax.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Pneumothorax.",
+  "impression": "Pneumothorax.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [2, 5], \"evidence_summary\": \"Retrieved reports 2 and 5 mention a pneumothorax.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [3], \"evidence_summary\": \"Retrieved report 3 mentions cardiomegaly.\", \"support_status\": \"partially_supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung opacity.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung lesion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention edema.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention consolidation.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention atelectasis.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pneumothorax.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pleural effusion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pleural other.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention support devices.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung opacity. This finding is not mentioned in the classifier output either. It is not a candidate for further investigation based on the retrieved reports alone. Use [] if there is none.\"}\n  ],\n  \"normal_report_ranks\": [\n    1,\n    4,\n    5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Pneumothorax.\",\n\"impression\": \"Pneumothorax.\"\n}",
+ "agent3_raw_text": "{\"issues_detected\": [\"unsupported_finding_stated\"], \"decision\": \"REVISE\", \"findings\": \"Pneumothorax.\", \"impression\": \"Pneumothorax.\"}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "76b90a36b33f8d506f831e1cc9d38c85651b82f6cd15c3be4a30f85905884d92",
+  "agent2_grounded_report_writer": "9d0a6d7253cd0c60901f95e8edae150332ca80e0e48e8360a62f25e57cb5a236",
+  "agent3_grounding_critic": "869d10dfe107d07c942abc4288e5833923d2e61636c777e70956dae7378f7266"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "3e073e5a49b38b473254958fbe1546ad6739d78e53e227698f4af768a4e1ee7d",
+  "agent2_grounded_report_writer": "1b438e67889b923847b8a0d971ebd421cd10e50c9fd986892eb9210005f46eb0",
+  "agent3_grounding_critic": "cb221d89629676aa83b1898cf0173ae0ceb95b64f0ad1e4f93af1a0f4d841fbf"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 16.89,
+  "agent2_grounded_report_writer": 3.19,
+  "agent3_grounding_critic": 3.69
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 605,
+  "agent2_grounded_report_writer": 24,
+  "agent3_grounding_critic": 41
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 767,
+  "agent2_grounded_report_writer": 866,
+  "agent3_grounding_critic": 881
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Pneumothorax (calibrated probability 0.40)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: (not available)\nIMPRESSION: No pneumothorax or effusion. No pneumonia. Heart size normal. Lungs clear\n[2]\nFINDINGS: Small 3.3 mm right-sided pneumothorax only visible on the left lateral decubitus film. Left lung is clear. Normal cardiac contour. No evidence of pleural effusion.\nIMPRESSION: 1. Small 3.3 mm right-sided pneumothorax.\n[3]\nFINDINGS: Cardiomegaly. No pneumothorax or pleural effusion. Clear lung bilaterally.\nIMPRESSION: 1. Cardiomegaly.\n[4]\nFINDINGS: The trachea is midline. Cardiomediastinal silhouette is normal. The lungs are clear without evidence of acute infiltrate or effusion. There is no pneumothorax. The visualized bony structures reveal no abnormalities.\nIMPRESSION: No acute cardiopulmonary abnormality seen on chest x-. No pneumothorax.\n[5]\nFINDINGS: No pneumothorax. Heart size is normal. No large pleural effusions. No focal airspace consolidation.\nIMPRESSION: No acute cardiopulmonary abnormalities.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Pneumothorax (calibrated probability 0.40)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Pneumothorax\",\n   \"classifier_probability\": 0.4039,\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    2,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports 2 and 5 mention a pneumothorax.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  4,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Pneumothorax (calibrated probability 0.40)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Pneumothorax\",\n   \"classifier_probability\": 0.4039,\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    2,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports 2 and 5 mention a pneumothorax.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  4,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Pneumothorax.\nIMPRESSION: Pneumothorax.\n\nReturn the JSON now."
+ }
+}

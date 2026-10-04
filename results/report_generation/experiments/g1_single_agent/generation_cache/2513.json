@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "29df399c02a74c8da86113c8c7a997336f8530e4470719718a64e22acc461e00",
+ "text": "FINDINGS:\nThere is an opacity in the left lung base.\nIMPRESSION:\nAtelectasis.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1261,
+ "output_tokens": 35,
+ "total_duration_ns": 1278102600,
+ "load_duration_ns": 9139900,
+ "attempts": 1,
+ "wall_seconds": 3.3,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T10:37:11+00:00"
+}

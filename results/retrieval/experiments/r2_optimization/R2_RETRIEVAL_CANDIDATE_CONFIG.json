@@ -1,0 +1,152 @@
+{
+  "status": "CANDIDATE - not the frozen retrieval system; the locked retrieval-test split remains unopened and unevaluated",
+  "created_utc": "2026-10-03T07:08:04+00:00",
+  "git_branch": "r2-retrieval-optimization",
+  "git_head_at_creation": "f1a83bc396cc4ec126894b1641bc9317cbc73cf9",
+  "selection_protocol_sha256": "68211677acf136f9ba08b7bf73f5830c15a2bc43bc940e43d7156f0f29a340ae",
+  "selection_decisions": [
+    {
+      "stage": "A1",
+      "winner": "R1_Q0_dense",
+      "base_phrases": "names"
+    },
+    {
+      "stage": "A2",
+      "winner": "R1_Q0_dense",
+      "weighting": null
+    },
+    {
+      "stage": "A2_note",
+      "share_of_frozen_positive_findings_with_p_below_0.5": 0.739612188365651,
+      "n_positive_findings": 361
+    },
+    {
+      "stage": "A3",
+      "winner": "A3_Q3_top3_dense",
+      "top_n": 3
+    },
+    {
+      "stage": "B",
+      "winner": "B_hybrid_rrf",
+      "retriever": "hybrid"
+    },
+    {
+      "stage": "C",
+      "mmr_base": "hybrid",
+      "eligible_lambdas": [],
+      "selected_lambda": null,
+      "final_pipeline_config": "B_hybrid_rrf"
+    },
+    {
+      "stage": "K",
+      "selected_K": 5
+    }
+  ],
+  "evaluation_population": "R1 primary paired validation set, 358 studies",
+  "embedding_model": {
+    "identifier": "sentence-transformers/all-MiniLM-L6-v2",
+    "snapshot_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "dimension": 384,
+    "normalised": true,
+    "fine_tuned": false,
+    "weights_sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db"
+  },
+  "query_construction": {
+    "policy": "Q0_finding_names + Q3_topN",
+    "phrase_set": "names",
+    "top_n_findings": 3,
+    "top_n_order": "calibrated probability descending, ties by class order; never pads",
+    "probability_weighting": null,
+    "weighting_selected": false,
+    "clinical_phrase_expansion_selected": false,
+    "clinical_expansion_mapping_file": "finding_query_expansion.json",
+    "clinical_expansion_mapping_sha256": "ddde8964f002740ae774423dbffe946e34ff16ee7deb2a6352fb15f75ada65dd",
+    "clinical_expansion_mapping": {
+      "Enlarged Cardiomediastinum": "enlarged cardiomediastinal silhouette widened mediastinum",
+      "Cardiomegaly": "cardiomegaly enlarged cardiac silhouette",
+      "Lung Opacity": "lung opacity airspace opacity",
+      "Lung Lesion": "lung nodule mass lesion",
+      "Edema": "pulmonary edema interstitial edema",
+      "Consolidation": "consolidation airspace consolidation",
+      "Pneumonia": "pneumonia focal airspace disease",
+      "Atelectasis": "atelectasis volume loss",
+      "Pneumothorax": "pneumothorax pleural air",
+      "Pleural Effusion": "pleural effusion pleural fluid",
+      "Pleural Other": "pleural thickening pleural scarring",
+      "Fracture": "fracture rib fracture",
+      "Support Devices": "support device catheter tube pacemaker lead"
+    },
+    "finding_name_phrases": "src/retrieval/queries.py PHRASE",
+    "no_finding_query_phrase": "no acute abnormality",
+    "normal_phrase_candidates_evaluated": [
+      "no acute abnormality",
+      "normal chest radiograph",
+      "no acute cardiopulmonary abnormality"
+    ],
+    "empty_query_policy": "recorded as empty; no finding invented"
+  },
+  "lexical": {
+    "method": "Okapi BM25 (in-house implementation)",
+    "k1": 1.5,
+    "b": 0.75,
+    "tokenizer": "lowercase alphanumeric runs; no stop-word removal, no stemming",
+    "tie_break": "corpus order (stable sort)"
+  },
+  "retriever": {
+    "selected": "hybrid",
+    "hybrid": {
+      "method": "Reciprocal Rank Fusion",
+      "rrf_k": 60,
+      "depth_per_ranker": 100,
+      "rankers": [
+        "dense_minilm",
+        "bm25"
+      ],
+      "tie_break": "corpus order",
+      "provenance_saved": "dense_rank, bm25_rank, rrf_score per retrieved report (final_pipeline_top10.csv.gz)"
+    },
+    "dense_tie_break": "score descending then corpus order (independent of FAISS depth)"
+  },
+  "diversity_reranking": {
+    "mmr_selected": false,
+    "mmr_lambda": null,
+    "mmr_pool": 30,
+    "lambdas_evaluated": [
+      0.5,
+      0.7,
+      0.9
+    ],
+    "reason": "not adopted: no lambda reliably reduced the exact-duplicate rate at both K=3 and K=5 (see r2_mmr_adoption_checks.csv)"
+  },
+  "provisional_top_k": 5,
+  "top_k_rule": {
+    "candidates": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "start": 1,
+    "advance_to_larger_K_if_all": [
+      "paired union-coverage gain has CI lower bound > 0",
+      "mean coverage gain >= 0.05",
+      "Jaccard@K does not fall by more than 0.03 (point estimate)",
+      "duplicate-text rate@K <= 0.50 and unique-template count increases",
+      "mean context <= 1000 words"
+    ],
+    "procedure": "from the current K test every larger candidate in ascending order and move to the SMALLEST candidate that satisfies all conditions; repeat; stop when none does (prefer the smaller K)"
+  },
+  "validation_performance_of_candidate": {
+    "jaccard@K": 0.556806331471136,
+    "ndcg@K": 0.5588140693702223,
+    "union_coverage@K": 0.7479050279329608,
+    "duplicate_text_rate@K": 0.4044692737430167,
+    "jaccard@3": 0.5435599006828056,
+    "oracle_dense_q0_jaccard@K_for_reference": 0.8086499068901303
+  },
+  "classifier": "frozen (C2-B checkpoint, C4 thresholds and No Finding rule, C5 Platt calibration); unchanged",
+  "caveats": [
+    "selected and evaluated on the same retrieval-validation queries (the locked test is unopened); paired intervals do not account for selection",
+    "differences between several challengers were small; the Top-3 query rule gained +0.003 Jaccard@3 and is not practically meaningful on its own"
+  ]
+}

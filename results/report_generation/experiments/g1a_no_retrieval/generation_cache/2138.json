@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "7f5d5c9336c6cd5597e9c32807eddc0b7b3b6c50d72cbfcef38e209f7f56594c",
+ "text": "FINDINGS:\nA small opacity is seen in the right lower lung. A small nodule is seen in the left lower lung. A fracture is seen in the right clavicle.\nIMPRESSION:\nLung opacity, lung nodule, and fracture are present.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 532,
+ "output_tokens": 65,
+ "total_duration_ns": 1752069200,
+ "load_duration_ns": 3737800,
+ "attempts": 1,
+ "wall_seconds": 3.79,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T11:30:48+00:00"
+}

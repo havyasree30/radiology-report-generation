@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "64ab3321962bfe6ef176969b615e85dcca3dba828b6eb725b480f29cd4f42827",
+ "text": "{\n\"findings\": \"Pneumothorax is present. Fracture is present.\",\n\"impression\": \"Pneumothorax and Fracture.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 966,
+ "output_tokens": 32,
+ "total_duration_ns": 1334975600,
+ "load_duration_ns": 7976700,
+ "attempts": 1,
+ "wall_seconds": 3.42,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T17:00:42+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

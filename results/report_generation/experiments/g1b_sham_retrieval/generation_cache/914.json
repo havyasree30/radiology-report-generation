@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "18c0cf08820c46742a9b428dbdf306bd56f6c9c79ca451a501070d8313261f9e",
+ "text": "FINDINGS: Mediport catheter seen on the right with the tip in the mid SVC. The lungs appear clear. No pleural effusion is seen. The heart and mediastinum are normal. The skeletal structures are normal.\nIMPRESSION: No active disease.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1107,
+ "output_tokens": 62,
+ "total_duration_ns": 1618626500,
+ "load_duration_ns": 5129300,
+ "attempts": 1,
+ "wall_seconds": 3.65,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:21:14+00:00"
+}

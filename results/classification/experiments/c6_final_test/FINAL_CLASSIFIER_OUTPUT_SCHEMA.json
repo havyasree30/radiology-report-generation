@@ -1,0 +1,769 @@
+{
+  "version": "c6-v1",
+  "label_order": [
+    "No Finding",
+    "Enlarged Cardiomediastinum",
+    "Cardiomegaly",
+    "Lung Opacity",
+    "Lung Lesion",
+    "Edema",
+    "Consolidation",
+    "Pneumonia",
+    "Atelectasis",
+    "Pneumothorax",
+    "Pleural Effusion",
+    "Pleural Other",
+    "Fracture",
+    "Support Devices"
+  ],
+  "notes": [
+    "Multi-label output: the 14 entries are independent; probabilities are never normalised or softmaxed across classes.",
+    "raw_score is the DenseNet-121 sigmoid output and is a model score, not a probability.",
+    "calibrated_probability (C5 Platt scaling) is for interpretable probability reporting only.",
+    "threshold (frozen C4 F1-optimal, raw-score scale) alone determines `positive`; calibrated_equivalent_threshold reproduces the same decision on the calibrated scale.",
+    "No Finding is positive only if its own raw score >= its threshold AND none of the 12 pathology findings is positive (Support Devices does not suppress it).",
+    "calibrated_probability estimates P(CheXpert label positive | image) under the project label policy, not a clinical ground-truth probability.",
+    "The example below was computed on the first VALIDATION image; no locked-test image is used as an example."
+  ],
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Final classifier output (one image)",
+    "description": "Multi-label output: the 14 entries are independent and are never normalised or softmaxed across classes.",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "image_id",
+      "findings",
+      "positive_findings"
+    ],
+    "properties": {
+      "image_id": {
+        "type": "string"
+      },
+      "findings": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "No Finding",
+          "Enlarged Cardiomediastinum",
+          "Cardiomegaly",
+          "Lung Opacity",
+          "Lung Lesion",
+          "Edema",
+          "Consolidation",
+          "Pneumonia",
+          "Atelectasis",
+          "Pneumothorax",
+          "Pleural Effusion",
+          "Pleural Other",
+          "Fracture",
+          "Support Devices"
+        ],
+        "properties": {
+          "No Finding": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "raw_score",
+              "calibrated_probability",
+              "threshold",
+              "calibrated_equivalent_threshold",
+              "positive"
+            ],
+            "properties": {
+              "raw_score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "DenseNet-121 sigmoid output (model score, not a probability)"
+              },
+              "calibrated_probability": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "C5 Platt-calibrated estimate of P(CheXpert label positive | image) under the project label policy"
+              },
+              "threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "frozen C4 F1-optimal threshold on the RAW score; it alone decides activation"
+              },
+              "calibrated_equivalent_threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "the same threshold expressed on the calibrated scale (for display only)"
+              },
+              "positive": {
+                "type": "boolean",
+                "description": "final decision after the No Finding rule (only No Finding can differ from raw_score >= threshold)"
+              }
+            }
+          },
+          "Enlarged Cardiomediastinum": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "raw_score",
+              "calibrated_probability",
+              "threshold",
+              "calibrated_equivalent_threshold",
+              "positive"
+            ],
+            "properties": {
+              "raw_score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "DenseNet-121 sigmoid output (model score, not a probability)"
+              },
+              "calibrated_probability": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "C5 Platt-calibrated estimate of P(CheXpert label positive | image) under the project label policy"
+              },
+              "threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "frozen C4 F1-optimal threshold on the RAW score; it alone decides activation"
+              },
+              "calibrated_equivalent_threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "the same threshold expressed on the calibrated scale (for display only)"
+              },
+              "positive": {
+                "type": "boolean",
+                "description": "final decision after the No Finding rule (only No Finding can differ from raw_score >= threshold)"
+              }
+            }
+          },
+          "Cardiomegaly": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "raw_score",
+              "calibrated_probability",
+              "threshold",
+              "calibrated_equivalent_threshold",
+              "positive"
+            ],
+            "properties": {
+              "raw_score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "DenseNet-121 sigmoid output (model score, not a probability)"
+              },
+              "calibrated_probability": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "C5 Platt-calibrated estimate of P(CheXpert label positive | image) under the project label policy"
+              },
+              "threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "frozen C4 F1-optimal threshold on the RAW score; it alone decides activation"
+              },
+              "calibrated_equivalent_threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "the same threshold expressed on the calibrated scale (for display only)"
+              },
+              "positive": {
+                "type": "boolean",
+                "description": "final decision after the No Finding rule (only No Finding can differ from raw_score >= threshold)"
+              }
+            }
+          },
+          "Lung Opacity": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "raw_score",
+              "calibrated_probability",
+              "threshold",
+              "calibrated_equivalent_threshold",
+              "positive"
+            ],
+            "properties": {
+              "raw_score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "DenseNet-121 sigmoid output (model score, not a probability)"
+              },
+              "calibrated_probability": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "C5 Platt-calibrated estimate of P(CheXpert label positive | image) under the project label policy"
+              },
+              "threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "frozen C4 F1-optimal threshold on the RAW score; it alone decides activation"
+              },
+              "calibrated_equivalent_threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "the same threshold expressed on the calibrated scale (for display only)"
+              },
+              "positive": {
+                "type": "boolean",
+                "description": "final decision after the No Finding rule (only No Finding can differ from raw_score >= threshold)"
+              }
+            }
+          },
+          "Lung Lesion": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "raw_score",
+              "calibrated_probability",
+              "threshold",
+              "calibrated_equivalent_threshold",
+              "positive"
+            ],
+            "properties": {
+              "raw_score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "DenseNet-121 sigmoid output (model score, not a probability)"
+              },
+              "calibrated_probability": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "C5 Platt-calibrated estimate of P(CheXpert label positive | image) under the project label policy"
+              },
+              "threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "frozen C4 F1-optimal threshold on the RAW score; it alone decides activation"
+              },
+              "calibrated_equivalent_threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "the same threshold expressed on the calibrated scale (for display only)"
+              },
+              "positive": {
+                "type": "boolean",
+                "description": "final decision after the No Finding rule (only No Finding can differ from raw_score >= threshold)"
+              }
+            }
+          },
+          "Edema": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "raw_score",
+              "calibrated_probability",
+              "threshold",
+              "calibrated_equivalent_threshold",
+              "positive"
+            ],
+            "properties": {
+              "raw_score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "DenseNet-121 sigmoid output (model score, not a probability)"
+              },
+              "calibrated_probability": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "C5 Platt-calibrated estimate of P(CheXpert label positive | image) under the project label policy"
+              },
+              "threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "frozen C4 F1-optimal threshold on the RAW score; it alone decides activation"
+              },
+              "calibrated_equivalent_threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "the same threshold expressed on the calibrated scale (for display only)"
+              },
+              "positive": {
+                "type": "boolean",
+                "description": "final decision after the No Finding rule (only No Finding can differ from raw_score >= threshold)"
+              }
+            }
+          },
+          "Consolidation": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "raw_score",
+              "calibrated_probability",
+              "threshold",
+              "calibrated_equivalent_threshold",
+              "positive"
+            ],
+            "properties": {
+              "raw_score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "DenseNet-121 sigmoid output (model score, not a probability)"
+              },
+              "calibrated_probability": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "C5 Platt-calibrated estimate of P(CheXpert label positive | image) under the project label policy"
+              },
+              "threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "frozen C4 F1-optimal threshold on the RAW score; it alone decides activation"
+              },
+              "calibrated_equivalent_threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "the same threshold expressed on the calibrated scale (for display only)"
+              },
+              "positive": {
+                "type": "boolean",
+                "description": "final decision after the No Finding rule (only No Finding can differ from raw_score >= threshold)"
+              }
+            }
+          },
+          "Pneumonia": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "raw_score",
+              "calibrated_probability",
+              "threshold",
+              "calibrated_equivalent_threshold",
+              "positive"
+            ],
+            "properties": {
+              "raw_score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "DenseNet-121 sigmoid output (model score, not a probability)"
+              },
+              "calibrated_probability": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "C5 Platt-calibrated estimate of P(CheXpert label positive | image) under the project label policy"
+              },
+              "threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "frozen C4 F1-optimal threshold on the RAW score; it alone decides activation"
+              },
+              "calibrated_equivalent_threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "the same threshold expressed on the calibrated scale (for display only)"
+              },
+              "positive": {
+                "type": "boolean",
+                "description": "final decision after the No Finding rule (only No Finding can differ from raw_score >= threshold)"
+              }
+            }
+          },
+          "Atelectasis": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "raw_score",
+              "calibrated_probability",
+              "threshold",
+              "calibrated_equivalent_threshold",
+              "positive"
+            ],
+            "properties": {
+              "raw_score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "DenseNet-121 sigmoid output (model score, not a probability)"
+              },
+              "calibrated_probability": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "C5 Platt-calibrated estimate of P(CheXpert label positive | image) under the project label policy"
+              },
+              "threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "frozen C4 F1-optimal threshold on the RAW score; it alone decides activation"
+              },
+              "calibrated_equivalent_threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "the same threshold expressed on the calibrated scale (for display only)"
+              },
+              "positive": {
+                "type": "boolean",
+                "description": "final decision after the No Finding rule (only No Finding can differ from raw_score >= threshold)"
+              }
+            }
+          },
+          "Pneumothorax": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "raw_score",
+              "calibrated_probability",
+              "threshold",
+              "calibrated_equivalent_threshold",
+              "positive"
+            ],
+            "properties": {
+              "raw_score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "DenseNet-121 sigmoid output (model score, not a probability)"
+              },
+              "calibrated_probability": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "C5 Platt-calibrated estimate of P(CheXpert label positive | image) under the project label policy"
+              },
+              "threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "frozen C4 F1-optimal threshold on the RAW score; it alone decides activation"
+              },
+              "calibrated_equivalent_threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "the same threshold expressed on the calibrated scale (for display only)"
+              },
+              "positive": {
+                "type": "boolean",
+                "description": "final decision after the No Finding rule (only No Finding can differ from raw_score >= threshold)"
+              }
+            }
+          },
+          "Pleural Effusion": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "raw_score",
+              "calibrated_probability",
+              "threshold",
+              "calibrated_equivalent_threshold",
+              "positive"
+            ],
+            "properties": {
+              "raw_score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "DenseNet-121 sigmoid output (model score, not a probability)"
+              },
+              "calibrated_probability": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "C5 Platt-calibrated estimate of P(CheXpert label positive | image) under the project label policy"
+              },
+              "threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "frozen C4 F1-optimal threshold on the RAW score; it alone decides activation"
+              },
+              "calibrated_equivalent_threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "the same threshold expressed on the calibrated scale (for display only)"
+              },
+              "positive": {
+                "type": "boolean",
+                "description": "final decision after the No Finding rule (only No Finding can differ from raw_score >= threshold)"
+              }
+            }
+          },
+          "Pleural Other": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "raw_score",
+              "calibrated_probability",
+              "threshold",
+              "calibrated_equivalent_threshold",
+              "positive"
+            ],
+            "properties": {
+              "raw_score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "DenseNet-121 sigmoid output (model score, not a probability)"
+              },
+              "calibrated_probability": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "C5 Platt-calibrated estimate of P(CheXpert label positive | image) under the project label policy"
+              },
+              "threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "frozen C4 F1-optimal threshold on the RAW score; it alone decides activation"
+              },
+              "calibrated_equivalent_threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "the same threshold expressed on the calibrated scale (for display only)"
+              },
+              "positive": {
+                "type": "boolean",
+                "description": "final decision after the No Finding rule (only No Finding can differ from raw_score >= threshold)"
+              }
+            }
+          },
+          "Fracture": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "raw_score",
+              "calibrated_probability",
+              "threshold",
+              "calibrated_equivalent_threshold",
+              "positive"
+            ],
+            "properties": {
+              "raw_score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "DenseNet-121 sigmoid output (model score, not a probability)"
+              },
+              "calibrated_probability": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "C5 Platt-calibrated estimate of P(CheXpert label positive | image) under the project label policy"
+              },
+              "threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "frozen C4 F1-optimal threshold on the RAW score; it alone decides activation"
+              },
+              "calibrated_equivalent_threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "the same threshold expressed on the calibrated scale (for display only)"
+              },
+              "positive": {
+                "type": "boolean",
+                "description": "final decision after the No Finding rule (only No Finding can differ from raw_score >= threshold)"
+              }
+            }
+          },
+          "Support Devices": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "raw_score",
+              "calibrated_probability",
+              "threshold",
+              "calibrated_equivalent_threshold",
+              "positive"
+            ],
+            "properties": {
+              "raw_score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "DenseNet-121 sigmoid output (model score, not a probability)"
+              },
+              "calibrated_probability": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "C5 Platt-calibrated estimate of P(CheXpert label positive | image) under the project label policy"
+              },
+              "threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "frozen C4 F1-optimal threshold on the RAW score; it alone decides activation"
+              },
+              "calibrated_equivalent_threshold": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "the same threshold expressed on the calibrated scale (for display only)"
+              },
+              "positive": {
+                "type": "boolean",
+                "description": "final decision after the No Finding rule (only No Finding can differ from raw_score >= threshold)"
+              }
+            }
+          }
+        }
+      },
+      "positive_findings": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+          "enum": [
+            "No Finding",
+            "Enlarged Cardiomediastinum",
+            "Cardiomegaly",
+            "Lung Opacity",
+            "Lung Lesion",
+            "Edema",
+            "Consolidation",
+            "Pneumonia",
+            "Atelectasis",
+            "Pneumothorax",
+            "Pleural Effusion",
+            "Pleural Other",
+            "Fracture",
+            "Support Devices"
+          ]
+        }
+      }
+    }
+  },
+  "example": {
+    "image_id": "example_validation_image_0",
+    "findings": {
+      "No Finding": {
+        "raw_score": 0.6197888851165771,
+        "calibrated_probability": 0.25577014676085447,
+        "threshold": 0.642667293548584,
+        "calibrated_equivalent_threshold": 0.2725389737761761,
+        "positive": false
+      },
+      "Enlarged Cardiomediastinum": {
+        "raw_score": 0.21318157017230988,
+        "calibrated_probability": 0.06543439810772626,
+        "threshold": 0.30397042632102966,
+        "calibrated_equivalent_threshold": 0.08611838020557365,
+        "positive": false
+      },
+      "Cardiomegaly": {
+        "raw_score": 0.02499419078230858,
+        "calibrated_probability": 0.020791096226439477,
+        "threshold": 0.4518182575702667,
+        "calibrated_equivalent_threshold": 0.26248286575814805,
+        "positive": false
+      },
+      "Lung Opacity": {
+        "raw_score": 0.1593232899904251,
+        "calibrated_probability": 0.19959200692523213,
+        "threshold": 0.32664650678634644,
+        "calibrated_equivalent_threshold": 0.35897652443888617,
+        "positive": false
+      },
+      "Lung Lesion": {
+        "raw_score": 0.3966144323348999,
+        "calibrated_probability": 0.09710447234221135,
+        "threshold": 0.5139020681381226,
+        "calibrated_equivalent_threshold": 0.12262773849865131,
+        "positive": false
+      },
+      "Edema": {
+        "raw_score": 0.006277470849454403,
+        "calibrated_probability": 0.012896679942808888,
+        "threshold": 0.3789757192134857,
+        "calibrated_equivalent_threshold": 0.343938959811514,
+        "positive": false
+      },
+      "Consolidation": {
+        "raw_score": 0.06321047246456146,
+        "calibrated_probability": 0.034548756381376305,
+        "threshold": 0.33341237902641296,
+        "calibrated_equivalent_threshold": 0.12774191470680563,
+        "positive": false
+      },
+      "Pneumonia": {
+        "raw_score": 0.06229536980390549,
+        "calibrated_probability": 0.023478328640237477,
+        "threshold": 0.3812790811061859,
+        "calibrated_equivalent_threshold": 0.08782039236730055,
+        "positive": false
+      },
+      "Atelectasis": {
+        "raw_score": 0.04656710475683212,
+        "calibrated_probability": 0.03724587553291099,
+        "threshold": 0.3297014534473419,
+        "calibrated_equivalent_threshold": 0.19834339329317252,
+        "positive": false
+      },
+      "Pneumothorax": {
+        "raw_score": 0.21370233595371246,
+        "calibrated_probability": 0.08409238372942392,
+        "threshold": 0.614745020866394,
+        "calibrated_equivalent_threshold": 0.2548224905607662,
+        "positive": false
+      },
+      "Pleural Effusion": {
+        "raw_score": 0.06898345798254013,
+        "calibrated_probability": 0.0822759549844652,
+        "threshold": 0.36226996779441833,
+        "calibrated_equivalent_threshold": 0.3530726801243195,
+        "positive": false
+      },
+      "Pleural Other": {
+        "raw_score": 0.019277114421129227,
+        "calibrated_probability": 0.016095557502651285,
+        "threshold": 0.2542676031589508,
+        "calibrated_equivalent_threshold": 0.0602515058521729,
+        "positive": false
+      },
+      "Fracture": {
+        "raw_score": 0.01609911397099495,
+        "calibrated_probability": 0.01980118984171853,
+        "threshold": 0.3263857364654541,
+        "calibrated_equivalent_threshold": 0.1378498171371338,
+        "positive": false
+      },
+      "Support Devices": {
+        "raw_score": 0.4538591504096985,
+        "calibrated_probability": 0.5523159459962173,
+        "threshold": 0.34337711334228516,
+        "calibrated_equivalent_threshold": 0.4383293032921024,
+        "positive": true
+      }
+    },
+    "positive_findings": [
+      "Support Devices"
+    ]
+  }
+}

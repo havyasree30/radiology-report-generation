@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "f91752ad6699f50acaa16329c6d7328047603ecd9690d3b8d79340b2e610cf39",
+ "text": "FINDINGS:\nThe heart size and mediastinal contour are within normal limits. The lungs are clear without focal consolidation or pleural effusion.\nIMPRESSION:\nNo acute cardiopulmonary abnormality.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1112,
+ "output_tokens": 49,
+ "total_duration_ns": 1508598700,
+ "load_duration_ns": 7093200,
+ "attempts": 1,
+ "wall_seconds": 3.55,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T10:40:05+00:00"
+}

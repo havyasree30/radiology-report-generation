@@ -1,0 +1,5 @@
+provenance,stated_findings,reference_supported,reference_unsupported,share_supported
+classifier only,7,0,7,0.0
+retrieval only,66,18,48,0.2727272727272727
+classifier and retrieval,173,84,89,0.48554913294797686
+neither,2,0,2,0.0

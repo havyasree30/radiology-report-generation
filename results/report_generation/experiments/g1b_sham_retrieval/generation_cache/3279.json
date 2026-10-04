@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "66cd30b60b7cb535577de6583eb3515bb336b09e8fa36e765a46e62ac8d8c955",
+ "text": "FINDINGS:\nThe lungs are clear. The heart size and mediastinal contour are normal. There is no pleural effusion or pneumothorax.\nIMPRESSION:\nNo acute cardiopulmonary findings.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1083,
+ "output_tokens": 51,
+ "total_duration_ns": 1465161200,
+ "load_duration_ns": 6195000,
+ "attempts": 1,
+ "wall_seconds": 3.51,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:38:45+00:00"
+}

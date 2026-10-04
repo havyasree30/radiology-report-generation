@@ -1,0 +1,12 @@
+{
+  "description": "expected value when retrieving uniformly at random from the corpus (exact expectation for Jaccard; nDCG uses the expected gain at every rank)",
+  "n_queries": 358,
+  "jaccard_truth@1": 0.21345507355555388,
+  "jaccard_truth@3": 0.21345507355555388,
+  "jaccard_truth@5": 0.21345507355555388,
+  "jaccard_truth@10": 0.21345507355555388,
+  "ndcg@1": 0.2137727272821449,
+  "ndcg@3": 0.21392138457996232,
+  "ndcg@5": 0.21408633422591447,
+  "ndcg@10": 0.2145174489761861
+}

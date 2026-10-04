@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "627901d0f89ddb0a995857f8ab317543e24479e54df8ac0d2b0ce4db01f23a65",
+ "text": "FINDINGS:\nCardiomegaly is noted. Central pulmonary vascular prominence and coarsened interstitial markings are present, concerning for developing interstitial pulmonary edema. No focal consolidation, pneumothorax, or definite effusion identified. No acute bony abnormality seen.\nIMPRESSION:\nCardiomegaly with central pulmonary vascular prominence and coarsened interstitial markings, concerning for interstitial pulmonary edema.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1096,
+ "output_tokens": 86,
+ "total_duration_ns": 2362902500,
+ "load_duration_ns": 5103800,
+ "attempts": 1,
+ "wall_seconds": 4.4,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:29:53+00:00"
+}

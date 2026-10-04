@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "6bc757a2714ebd3b513f6a6d172d9f38e747f8bdd4f45257dc5242a2ced58a10",
+ "text": "{\n\"findings\": \"Enlarged Cardiomediastinum\",\n\"impression\": \"Enlarged Cardiomediastinum\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 884,
+ "output_tokens": 32,
+ "total_duration_ns": 1320432800,
+ "load_duration_ns": 8838800,
+ "attempts": 1,
+ "wall_seconds": 3.35,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T17:02:58+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

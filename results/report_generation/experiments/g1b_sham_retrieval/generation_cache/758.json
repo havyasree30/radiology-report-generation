@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "ce753345d8f825141f7792fc89d15bf5816edcb1b0c2a2a951f3b4de52b2ad1a",
+ "text": "FINDINGS:\nA fracture of the distal radius is noted.\nIMPRESSION:\nFracture of the distal radius.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1183,
+ "output_tokens": 36,
+ "total_duration_ns": 1246428400,
+ "load_duration_ns": 5081000,
+ "attempts": 1,
+ "wall_seconds": 3.3,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:19:55+00:00"
+}

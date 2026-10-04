@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "c33b43f0384c19b85422c516ad69657c833215e56b5c89407a7f310ed14c4644",
+ "text": "FINDINGS:\nThe heart size is mildly enlarged. The left subclavian ICD is again identified. There is hilar enlargement, superimposes enlarged pulmonary vasculature. opacities are unchanged and compatible with subsegmental atelectasis or scarring. There is no large pleural effusion or focal consolidation.\nIMPRESSION:\nStable moderate to marked cardiomegaly.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1170,
+ "output_tokens": 83,
+ "total_duration_ns": 2611297800,
+ "load_duration_ns": 5870500,
+ "attempts": 1,
+ "wall_seconds": 4.64,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T10:37:03+00:00"
+}

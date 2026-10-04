@@ -1,0 +1,22 @@
+| Metric | G1B (sham context) | G1 (relevant context) | G1 - G1B (95% CI) | CI excludes 0 |
+|---|---:|---:|---:|---:|
+| Finding precision | 0.272 | 0.411 | +0.139 (+0.065 to +0.210) | yes |
+| Finding recall | 0.140 | 0.358 | +0.218 (+0.160 to +0.276) | yes |
+| Finding F1 (micro) | 0.185 | 0.383 | +0.198 (+0.141 to +0.257) | yes |
+| Macro finding F1 | 0.115 | 0.215 | +0.101 (+0.062 to +0.136) | yes |
+| Hallucination rate (reports with >=1 hallucinated finding) | 0.198 | 0.257 | +0.058 (+0.005 to +0.114) | yes |
+| Omission rate (reports with >=1 omitted finding) | 0.442 | 0.381 | -0.061 (-0.090 to -0.034) | yes |
+| Classifier FP propagation | 0.270 | 0.405 | +0.135 (+0.052 to +0.219) | yes |
+| Classifier TP retention | 0.316 | 0.718 | +0.402 (+0.299 to +0.505) | yes |
+| Normal recall (report state) | 0.818 | 0.911 | +0.094 (+0.030 to +0.156) | yes |
+| Abnormal recall (report state) | 0.296 | 0.581 | +0.285 (+0.203 to +0.365) | yes |
+| ROUGE-L | 0.254 | 0.247 | -0.008 (-0.018 to +0.004) | no |
+| BLEU-4 | 0.059 | 0.039 | -0.020 (-0.027 to -0.013) | yes |
+| METEOR (exact-match variant) | 0.232 | 0.227 | -0.005 (-0.019 to +0.010) | no |
+| Mean report length (words) | 23.852 | 23.907 | +0.055 (-1.366 to +1.405) | no |
+| Mean hallucinated findings per report | 0.283 | 0.386 | +0.103 (+0.016 to +0.198) | yes |
+| Mean omitted findings per report | 0.648 | 0.484 | -0.164 (-0.220 to -0.116) | yes |
+| Over-normalisation: report normal although classifier abnormal | 0.596 | 0.298 | -0.298 (-0.396 to -0.194) | yes |
+| Rare-finding TP retention | 0.048 | 0.333 | +0.286 (+0.115 to +0.467) | yes |
+| Other-finding TP retention | 0.375 | 0.802 | +0.427 (+0.295 to +0.564) | yes |
+| BLEU-1 | 0.237 | 0.254 | +0.017 (+0.004 to +0.031) | yes |

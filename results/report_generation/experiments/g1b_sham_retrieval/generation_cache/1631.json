@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "54495910e63e1b10d092a910cf468144e28897d15759f1dfb0f6ab898126c6f8",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is normal in size and contour. The lungs are clear without evidence of focal airspace disease. There is no evidence of pneumothorax or large pleural effusion. The cardiac contour is within normal limits. Compared to prior exam, there is prominence of the mediastinal contour near the right hilum. This may represent the ascending aorta or mediastinal lymphadenopathy. There are mild degenerative changes of the thoracic spine.\nIMPRESSION:\nProminence of the mediastinal contour near the right hilum possibly representing the ascending aorta or mediastinal lymphadenopathy. CT chest with contrast may be helpful for further evaluation. No acute cardiopulmonary process.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1290,
+ "output_tokens": 140,
+ "total_duration_ns": 3424767600,
+ "load_duration_ns": 4985100,
+ "attempts": 1,
+ "wall_seconds": 5.46,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:26:39+00:00"
+}

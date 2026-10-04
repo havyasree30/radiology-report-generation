@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "f294143f8f662de95793bcde0d60eea03b9ba559cda81af9d422e843b81706c4",
+ "text": "{\n\"findings\": \"Lung Opacity is supported by the classifier and retrieved evidence. Consolidation and Pneumonia are also supported. Lung Lesion is not supported.\",\n\"impression\": \"The findings suggest pneumonia or consolidation.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1184,
+ "output_tokens": 49,
+ "total_duration_ns": 1753798700,
+ "load_duration_ns": 8974000,
+ "attempts": 1,
+ "wall_seconds": 3.8,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:48:39+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

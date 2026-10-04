@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "2345c579782ac22b783b4342dae7931a5ef3156f5f8d3ee691c4c276c097c187",
+ "text": "FINDINGS:\nThe lungs are clear without focal consolidation, effusion, or pneumothorax. Normal heart size. Bony thorax unremarkable.\nIMPRESSION:\nNegative for acute cardiopulmonary abnormality.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1137,
+ "output_tokens": 51,
+ "total_duration_ns": 1695688600,
+ "load_duration_ns": 2179100,
+ "attempts": 1,
+ "wall_seconds": 3.72,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:12:53+00:00"
+}

@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "02d36b9e716fbbb2f20b9b35ae5f35ea33c235c60cc3e03420062991e160ffea",
+ "text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Lung Lesion and Fracture are suggested by the classifier. Support Devices are also suggested. Fracture is supported by retrieved reports. Support Devices are partially supported. Lung Lesion is not supported.\",\n\"impression\": \"Fracture is present. Support Devices are present.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1438,
+ "output_tokens": 84,
+ "total_duration_ns": 2403896000,
+ "load_duration_ns": 3192800,
+ "attempts": 1,
+ "wall_seconds": 4.45,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 700,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:20:20+00:00",
+ "agent": "agent3_grounding_critic"
+}

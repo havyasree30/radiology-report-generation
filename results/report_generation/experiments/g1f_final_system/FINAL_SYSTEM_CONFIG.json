@@ -1,0 +1,365 @@
+{
+  "frozen_utc": "2026-10-04T06:27:05+00:00",
+  "config_sha256": "cc04996cf8e8f6441505eedf5b41068b6af63384bf3a0a51bfde2a37c503eff5",
+  "config_hash_definition": "SHA-256 of the canonical JSON (sorted keys, compact separators) of the `settings` object",
+  "settings": {
+    "classification": {
+      "architecture": "densenet121 (ImageNet-pretrained init), Linear(1024, 14) logits, 14 independent sigmoids (multi-label)",
+      "checkpoint": "results/classification/experiments/c2b_sqrt_weighted_bce/checkpoints/best.pt",
+      "checkpoint_sha256": "6645ed44be7cb7d4cf4679b1fd561c7ac36be63f964ea320666199883126794b",
+      "checkpoint_epoch": 7,
+      "loss": "sqrt_weighted_bce",
+      "loss_config": {
+        "type": "weighted_bce",
+        "pos_weight_source": "train_split",
+        "pos_weight_tempering": "sqrt"
+      },
+      "label_order": [
+        "No Finding",
+        "Enlarged Cardiomediastinum",
+        "Cardiomegaly",
+        "Lung Opacity",
+        "Lung Lesion",
+        "Edema",
+        "Consolidation",
+        "Pneumonia",
+        "Atelectasis",
+        "Pneumothorax",
+        "Pleural Effusion",
+        "Pleural Other",
+        "Fracture",
+        "Support Devices"
+      ],
+      "preprocessing": {
+        "image_size": 224,
+        "resize": "aspect_preserving_longest_side",
+        "interpolation": "bilinear",
+        "pad_value": 0,
+        "pad_position": "center",
+        "channels": 3,
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "view": "Frontal",
+      "inference_policy": "fp32_strict",
+      "test_time_augmentation": false,
+      "ensembling": false,
+      "decision_rule": "positive = raw_score >= frozen_F1_threshold",
+      "f1_thresholds_raw_score": {
+        "No Finding": 0.642667293548584,
+        "Enlarged Cardiomediastinum": 0.30397042632102966,
+        "Cardiomegaly": 0.4518182575702667,
+        "Lung Opacity": 0.32664650678634644,
+        "Lung Lesion": 0.5139020681381226,
+        "Edema": 0.3789757192134857,
+        "Consolidation": 0.33341237902641296,
+        "Pneumonia": 0.3812790811061859,
+        "Atelectasis": 0.3297014534473419,
+        "Pneumothorax": 0.614745020866394,
+        "Pleural Effusion": 0.36226996779441833,
+        "Pleural Other": 0.2542676031589508,
+        "Fracture": 0.3263857364654541,
+        "Support Devices": 0.34337711334228516
+      },
+      "operating_policy_file": "results/classification/experiments/c4_operating_policy/final_operating_policy.json",
+      "operating_policy_file_sha256": "336b90746a273a033ce3f630384677e5acef97ce9b143489265bcaa3972de8e1",
+      "no_finding_rule": "suppress_if_any_abnormal_positive",
+      "no_finding_rule_abnormal_labels": [
+        "Enlarged Cardiomediastinum",
+        "Cardiomegaly",
+        "Lung Opacity",
+        "Lung Lesion",
+        "Edema",
+        "Consolidation",
+        "Pneumonia",
+        "Atelectasis",
+        "Pneumothorax",
+        "Pleural Effusion",
+        "Pleural Other",
+        "Fracture"
+      ],
+      "support_devices_suppresses_no_finding": false,
+      "calibration": {
+        "method": "platt (all 14 classes)",
+        "version": "c5-v1",
+        "fitted_on": "validation (full)",
+        "file": "results/classification/experiments/c5_calibration/final_calibrators.json",
+        "file_sha256": "50a14779157a60ff0f0ce973cf5b759801d67b17ec39f09949ee0056d7606c83",
+        "parameters": {
+          "No Finding": {
+            "a": 0.8777748716640776,
+            "b": -1.4969974171930653
+          },
+          "Enlarged Cardiomediastinum": {
+            "a": 0.6222472336575032,
+            "b": -1.846470157381534
+          },
+          "Cardiomegaly": {
+            "a": 0.8123147915425252,
+            "b": -0.8760612423503489
+          },
+          "Lung Opacity": {
+            "a": 0.8607878449678447,
+            "b": 0.0428778479621502
+          },
+          "Lung Lesion": {
+            "a": 0.5514169782391131,
+            "b": -1.9984493747863763
+          },
+          "Edema": {
+            "a": 0.8077759984248426,
+            "b": -0.24683064963105744
+          },
+          "Consolidation": {
+            "a": 0.7034507998683892,
+            "b": -1.4337286803570066
+          },
+          "Pneumonia": {
+            "a": 0.6228608531276019,
+            "b": -2.039002091922545
+          },
+          "Atelectasis": {
+            "a": 0.8034053479116776,
+            "b": -0.8266357739392992
+          },
+          "Pneumothorax": {
+            "a": 0.7428838842585155,
+            "b": -1.42020653128139
+          },
+          "Pleural Effusion": {
+            "a": 0.8867745826885008,
+            "b": -0.10406652344009547
+          },
+          "Pleural Other": {
+            "a": 0.4786937339597903,
+            "b": -2.232020045985819
+          },
+          "Fracture": {
+            "a": 0.6105775835216495,
+            "b": -1.390853760190296
+          },
+          "Support Devices": {
+            "a": 0.9887459003910158,
+            "b": 0.39303948039576747
+          }
+        }
+      },
+      "c6_freeze_manifest": "results/classification/experiments/c6_final_test/FINAL_CLASSIFIER_FREEZE_MANIFEST.json",
+      "c6_freeze_manifest_sha256": "40e649677b8c43a5c36ed2c2cb84c0ec4a33878f9f01184db7bf4478284a619c"
+    },
+    "retrieval": {
+      "r2_candidate_config": "results/retrieval/experiments/r2_optimization/R2_RETRIEVAL_CANDIDATE_CONFIG.json",
+      "r2_candidate_config_sha256": "9fb4d701a498de9f2e9a1ca325f645027ace0c72af0ef3a6180c0b85f34bc114",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+      "embedding_snapshot_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "embedding_dimension": 384,
+      "embedding_normalised": true,
+      "embedding_fine_tuned": false,
+      "embedding_weights_sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+      "query_construction": {
+        "policy": "Q0_finding_names + Q3_topN",
+        "phrase_set": "names",
+        "top_n_findings": 3,
+        "top_n_order": "calibrated probability descending, ties by class order; never pads",
+        "probability_weighting": null,
+        "weighting_selected": false,
+        "clinical_phrase_expansion_selected": false,
+        "clinical_expansion_mapping_file": "finding_query_expansion.json",
+        "clinical_expansion_mapping_sha256": "ddde8964f002740ae774423dbffe946e34ff16ee7deb2a6352fb15f75ada65dd",
+        "finding_name_phrases": "src/retrieval/queries.py PHRASE",
+        "no_finding_query_phrase": "no acute abnormality",
+        "normal_phrase_candidates_evaluated": [
+          "no acute abnormality",
+          "normal chest radiograph",
+          "no acute cardiopulmonary abnormality"
+        ],
+        "empty_query_policy": "recorded as empty; no finding invented"
+      },
+      "bm25": {
+        "method": "Okapi BM25 (in-house implementation)",
+        "k1": 1.5,
+        "b": 0.75,
+        "tokenizer": "lowercase alphanumeric runs; no stop-word removal, no stemming",
+        "tie_break": "corpus order (stable sort)"
+      },
+      "fusion": {
+        "method": "Reciprocal Rank Fusion",
+        "rrf_k": 60,
+        "candidate_depth_per_ranker": 100,
+        "rankers": [
+          "dense_minilm",
+          "bm25"
+        ]
+      },
+      "mmr": false,
+      "phrase_expansion": false,
+      "confidence_weighting": false,
+      "top_k": 5,
+      "corpus": {
+        "ids_file": "results/retrieval/experiments/r1_baseline/corpus_study_ids.json",
+        "ids_file_sha256": "e25e6e7897a3c07e61cc75976068b32e739372aa71095e36f7d8e5688b19fd8c",
+        "n_reports": 2675,
+        "corpus_uids_file": "data/splits/iu_xray/retrieval_corpus_uids.csv",
+        "corpus_uids_file_sha256": "a2438ef8703dc5a5a0ff10509591845fd5cce34a99c00b494a5d0d22288a756c",
+        "rule": "IU training reports only (assert_train_only)"
+      },
+      "split_identifiers": {
+        "retrieval_split_file": "results/retrieval/experiments/r1_baseline/retrieval_split.json",
+        "retrieval_split_file_sha256": "f287cdeeef106fb4656c9cb74f12b1858d7ac438e2d196fd0e1cfbc7d2dcf013",
+        "iu_report_splits_sha256": "d49b6a9aa464c16bc1cca85eab15bf0fef724c747d60950e742cb3a5d580341a",
+        "sizes": {
+          "train_studies": 2695,
+          "reference_corpus_studies": 2675,
+          "validation_studies": 578,
+          "locked_test_studies": 578,
+          "train_images": 5238,
+          "validation_images": 1113,
+          "locked_test_images": 1115
+        },
+        "seed": 42
+      }
+    },
+    "generation": {
+      "selected_architecture": "G1 Single-Agent RAG",
+      "not_selected": "G2 Structured Multi-Agent RAG (negative result; see FINAL_SYSTEM_SELECTION.md)",
+      "model_tag": "medgemma1.5:4b",
+      "model_digest": "433252621ab154668b5d8be6aff6c1b771bacba045e46e6193da8d6ad1630f2c",
+      "quantization": "Q4_K_M",
+      "parameter_size": "4.3B",
+      "ollama_version": "0.35.1",
+      "endpoint": "http://localhost:11434/api/chat",
+      "generation_options": {
+        "temperature": 0.0,
+        "top_k": 1,
+        "top_p": 1.0,
+        "seed": 42,
+        "num_predict": 400,
+        "num_ctx": 8192,
+        "stop": [
+          "A. AUTOMATED CLASSIFIER OUTPUT",
+          "B. RETRIEVED EVIDENCE",
+          "C. EVIDENCE SUMMARY"
+        ]
+      },
+      "context_size_num_ctx": 8192,
+      "max_new_tokens": 400,
+      "tools": "none",
+      "web_access": false,
+      "external_api": false,
+      "g1_prompt_version": "g1-single-agent-v1",
+      "g1_prompt_sha256": "476b05326f85652b0cdb2faf79a4868a6e839660eb43e34d46cdae625e4b5688",
+      "g1_prompt_file": "results/report_generation/experiments/g1_single_agent/g1_prompt_frozen.json",
+      "g1_prompt_file_sha256": "a1818de0678e62f61f036d9918d9b68c8aef06a03a4b02e7d78d8b2c78aabd67",
+      "generator_freeze_file_sha256": "3f75807ee793ce027b75b5bea9b0f95b2a7c056fe149b1649839b866f45607f2",
+      "parser": "src/generation/parse.py",
+      "parser_sha256": "fb1d242f8f50e5657462a440de4c31bea38cbd3f4dda12ec24629ec2e9fcefc9",
+      "stored_validation_reports_sha256": "8200530c545507504756530c1114b74178df22e5c4c0a62d2217d96d9ab0d7d1"
+    },
+    "guard": {
+      "implementation": "src/system/guard.py",
+      "guard_module_sha256": "1f0b340cc71cf261de84f4b19f290c99568a69760dc757d57c62d2c68c9397ee",
+      "states": [
+        "normal",
+        "abnormal",
+        "indeterminate"
+      ],
+      "pathology_labels": [
+        "Enlarged Cardiomediastinum",
+        "Cardiomegaly",
+        "Lung Opacity",
+        "Lung Lesion",
+        "Edema",
+        "Consolidation",
+        "Pneumonia",
+        "Atelectasis",
+        "Pneumothorax",
+        "Pleural Effusion",
+        "Pleural Other",
+        "Fracture"
+      ],
+      "support_devices_is_pathology": false,
+      "path_A_normal": "No Finding positive AND no pathology label positive (Support Devices is not a pathology label, as in the frozen C4 rule): frozen G1 normal behaviour (query 'no acute abnormality', G1 prompt, G1 report)",
+      "path_B_abnormal": "any positive label that does not make the study an explicit normal one: frozen G1 Single-Agent RAG report (retrieval query = top-3 positive findings by calibrated probability)",
+      "path_C_indeterminate": "no label positive AND No Finding not positive (empty classifier output): no retrieval, no language-model call, not declared normal",
+      "indeterminate_findings": "Model output is indeterminate for this study.",
+      "indeterminate_impression": "Automated preliminary interpretation could not be established. Radiologist review is required.",
+      "indeterminate_report_text": "FINDINGS: Model output is indeterminate for this study.\nIMPRESSION: Automated preliminary interpretation could not be established. Radiologist review is required.",
+      "ui_message_indeterminate": "Automated interpretation unavailable — radiologist review required.",
+      "ui_must_not_show_for_indeterminate": [
+        "No abnormality detected",
+        "Normal X-ray",
+        "a fabricated preliminary diagnosis"
+      ],
+      "state_field": "system_interpretation_state",
+      "state_source": "deterministic routing of the classifier output; never inferred from generated prose",
+      "validation_counts": {
+        "A_normal": 269,
+        "B_abnormal": 229,
+        "C_indeterminate": 49
+      },
+      "support_devices_decision": "chosen by the project owner before the freeze: empty output = no positive label at all"
+    },
+    "evaluation": {
+      "finding_extraction": {
+        "lexicon": "configs/iu_concept_lexicon.yaml",
+        "lexicon_sha256": "2d5cb064f4fabc7c88318fd18a9a77dd9e9ce1ed85f7019a0ef36590ace6f0ec",
+        "changes": "configs/generation/finding_extraction_changes.yaml",
+        "changes_sha256": "3a6b15faf82ea40b608cf6fe9f5c3d0acb6cb32f538a046ae1a4d411c5f9f2b5",
+        "stated_definition": "affirmative (definite or hedged) mention",
+        "reference": "MeSH-mapped IU findings (R1)"
+      },
+      "validation_populations_file_sha256": "7f848aa0aec729b6d15ff10afb662ef3330517543f9ea42562195d836b685eaa",
+      "primary_set_n": 547,
+      "clinical_subset_n": 378,
+      "validation_split": {
+        "iu_validation_studies": 578,
+        "validation_study_ids_sha256": "1735ac76ea7db04dc82c15fd629e7263646f440b874e22f44fa9d106ba25eaf2",
+        "chexpert_patient_splits_sha256": "baeea3ad02aa9c2b2ed59954b6d309440bacbc3bbe76bc097884e60b07955da6"
+      },
+      "locked_test_split": {
+        "identity": "IU report-level locked retrieval/end-to-end test split",
+        "n_studies": 578,
+        "study_ids_sha256": "2ca402e9ad3550d99240abf1f36fc1334d4fb45287b78e29cc3e24f0203b4780",
+        "opened": false,
+        "classifier_test_note": "the C6 one-shot classifier test is documented in C6 and is not part of this freeze; no retrieval or end-to-end test result exists"
+      },
+      "bootstrap": {
+        "resamples": 1000,
+        "seed": 42,
+        "unit": "study"
+      }
+    }
+  },
+  "commits": {
+    "C1-C5": {
+      "C1": "a62073273cef155d6177d929a9d3a8e54279200b",
+      "C2_infrastructure": "c1e4800983f8e050da63ac85e799ba443e4858fe",
+      "C2_results": "a2de4174b386ca8325c3481d626227dc205cd952",
+      "C3": "031edd6306fd2974d9ae6107921ed92860416bf4",
+      "C4": "77dee289fda740a1b261e31cc575343a49baea68",
+      "C5": "55ba4bb87453a1dbb2a3452f5e6aebbcb57120b8",
+      "c6_branch_head_at_freeze": "55ba4bb87453a1dbb2a3452f5e6aebbcb57120b8",
+      "c6_branch": "c6-final-test",
+      "working_tree_clean_at_freeze": false
+    },
+    "C6": "15a276565eeb58d1e6f005833757921cc353f978",
+    "R1": "f1a83bc396cc4ec126894b1641bc9317cbc73cf9",
+    "R2": "0518b9aed626512a032aad52aacc4965878ff1ae",
+    "G1": "9714f50d3f72587e91bf30cef238d4e5240f55e6",
+    "G1A": "d4f78fca8601bb8a5146b307d4dcc74cd360d1f6",
+    "G1B": "26dc0b34514d825710cf0d5a22bb59b33ae6cf43",
+    "G2": "0f583d58466d39825060d781d41d97eedec0c419",
+    "base_head_at_freeze": "0f583d58466d39825060d781d41d97eedec0c419",
+    "branch": "g1f-final-system-guard",
+    "note": "the G1F files are uncommitted at freeze time; the base head is the G2 commit"
+  },
+  "locked_test_results_included": false
+}

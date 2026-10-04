@@ -1,0 +1,127 @@
+{
+ "uid": "220",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Lung Opacity",
+    "classifier_probability": 0.6205,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   },
+   {
+    "finding": "Lung Lesion",
+    "classifier_probability": 0.1577,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   },
+   {
+    "finding": "Consolidation",
+    "classifier_probability": 0.2028,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   },
+   {
+    "finding": "Pneumonia",
+    "classifier_probability": 0.1691,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   },
+   {
+    "finding": "Pleural Other",
+    "classifier_probability": 0.0948,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": []
+ },
+ "agent1_validation_flags": [
+  "agent1_omitted_classifier_finding",
+  "agent1_status_inconsistent_with_count",
+  "agent1_summary_replaced",
+  "agent1_unparseable"
+ ],
+ "agent2_draft": {
+  "findings": "Lung Opacity.",
+  "impression": "Pneumonia.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Lung Opacity.",
+  "impression": "Pneumonia.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Lung Opacity is mentioned in reports 1, 2, 3, and 4.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"Lung Lesion is not mentioned in any retrieved report.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [1, 2, 4], \"evidence_summary\": \"Consolidation is mentioned in reports 1, 2, and 4.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Pneumonia is mentioned in reports 1, 2, 3, 4, and 5.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"Edema is not mentioned in any retrieved report.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"Consolidation is not mentioned in any retrieved report.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"Pneumothorax is not mentioned in any retrieved report.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [], \"evidence_summary\": \"Pleural Effusion is not mentioned in any retrieved report.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [4], \"evidence_summary\": \"Pleural Other is mentioned in report 4.\", \"support_status\": \"partially_supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"Fracture is not mentioned in any retrieved report.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"Support Devices is not mentioned in any retrieved report.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"Lung Opacity is not mentioned in any retrieved report. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports. This finding is not a candidate based on the retrieved reports",
+ "agent2_raw_text": "{\n\"findings\": \"Lung Opacity.\",\n\"impression\": \"Pneumonia.\"\n}",
+ "agent3_raw_text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Lung Opacity.\",\n\"impression\": \"Pneumonia.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "763b50cd65b6797f315ca9509ae3482c75e5e031ad54b5849dcaa92b4ef2f3ce",
+  "agent2_grounded_report_writer": "8d03b37c2be339df93e85682cd481cc687719aae15acc9a371f3897cc6b5c17e",
+  "agent3_grounding_critic": "18fc966c06f9ed4924ee081b6412be6aed05db253037c3ed60ca5d2a7417c84a"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "543490598bf228648bf772fd7f8d80ad5eb0fb4e44e5d2b74bbe6750c4274669",
+  "agent2_grounded_report_writer": "9edc7cc8db98c25f42d42bb48eb169f83f014a21a39e7384c2511a215dd79203",
+  "agent3_grounding_critic": "dfdb9d576699125c443e00af494052216ca5aa888ebb869108026230ae0e7ea0"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 22.28,
+  "agent2_grounded_report_writer": 3.6,
+  "agent3_grounding_critic": 3.77
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 900,
+  "agent2_grounded_report_writer": 22,
+  "agent3_grounding_critic": 45
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 1000,
+  "agent2_grounded_report_writer": 1222,
+  "agent3_grounding_critic": 1236
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "length",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Lung Opacity (calibrated probability 0.62); Lung Lesion (calibrated probability 0.16); Consolidation (calibrated probability 0.20); Pneumonia (calibrated probability 0.17); Pleural Other (calibrated probability 0.09)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: There is a airspace opacity in the left upper lung. Heart size within normal limits. Mild calcification of the aortic. No pneumothorax or pleural effusions.\nIMPRESSION: airspace opacity in the left upper lung which may represent streaky atelectasis or resolving pneumonia.\n[2]\nFINDINGS: focal opacity in the medial right lung base seen on the frontal view. No definite pleural effusion. Stable cardiomediastinal silhouette with normal heart size, no typical findings of pulmonary edema.\nIMPRESSION: Abnormal opacity in the right lung base which may be compatible with pneumonia in the appropriate clinical setting. Recommend clinical correlation for infection and followup to resolution. Or, if clinical findings are not compatible with may be of.\n[3]\nFINDINGS: Vague increased opacity which appears to be within the left lower lobe. Question of this could be developing or resolving pneumonia. Lungs are otherwise clear. No pleural effusions or pneumothoraces. heart and mediastinum are stable normal size heart. Atherosclerotic vascular disease. Degenerative changes in the thoracic spine.\nIMPRESSION: Vague opacity at the left lung base which appears to be within the left lower lobe. This may represent resolving or developing pneumonia given the patient's history.\n[4]\nFINDINGS: Frontal and lateral views of the chest show an unchanged cardiomediastinal silhouette. There is airspace opacity in the mid right lung radiating from the right hilum to the pleura and bordered inferiorly by the fissures. The fissure is convex upward. There is right base patchy airspace opacity. This appears chronic and may be due to scarring. There is no significant pleural effusion.\nIMPRESSION: Right upper lobe airspace consolidation Please correlate clinically for pneumonia.\n[5]\nFINDINGS: (not available)\nIMPRESSION: 1. Patchy bilateral opacities, primarily in the lung bases, whose features are most consistent with pneumonia. Aspiration or edema are also possible but less. 2. lung volumes 3. No pneumothorax\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Opacity (calibrated probability 0.62); Lung Lesion (calibrated probability 0.16); Consolidation (calibrated probability 0.20); Pneumonia (calibrated probability 0.17); Pleural Other (calibrated probability 0.09)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.6205,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Lung Lesion\",\n   \"classifier_probability\": 0.1577,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Consolidation\",\n   \"classifier_probability\": 0.2028,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Pneumonia\",\n   \"classifier_probability\": 0.1691,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Pleural Other\",\n   \"classifier_probability\": 0.0948,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Opacity (calibrated probability 0.62); Lung Lesion (calibrated probability 0.16); Consolidation (calibrated probability 0.20); Pneumonia (calibrated probability 0.17); Pleural Other (calibrated probability 0.09)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.6205,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Lung Lesion\",\n   \"classifier_probability\": 0.1577,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Consolidation\",\n   \"classifier_probability\": 0.2028,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Pneumonia\",\n   \"classifier_probability\": 0.1691,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Pleural Other\",\n   \"classifier_probability\": 0.0948,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nC. DRAFT REPORT\nFINDINGS: Lung Opacity.\nIMPRESSION: Pneumonia.\n\nReturn the JSON now."
+ }
+}

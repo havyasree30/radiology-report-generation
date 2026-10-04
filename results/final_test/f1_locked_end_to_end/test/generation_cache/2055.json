@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "1f9055c0ebca31e153746e546d21fcc8b6c7db11181daa9527636cd8fb65a119",
+ "text": "FINDINGS:\nThere is a left lower lobe opacity. The cardiomediastinal silhouette is within normal limits. No pneumothorax or pleural effusion.\nIMPRESSION:\nLeft lower lobe opacity.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1279,
+ "output_tokens": 44,
+ "total_duration_ns": 1391273800,
+ "load_duration_ns": 4519300,
+ "attempts": 1,
+ "wall_seconds": 3.44,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:03:46+00:00"
+}

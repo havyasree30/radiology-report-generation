@@ -1,0 +1,148 @@
+{
+ "uid": "3611",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Enlarged Cardiomediastinum",
+    "classifier_probability": 0.1205,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "No retrieved reports mention Enlarged Cardiomediastinum.",
+    "support_status": "unsupported",
+    "agent_stated_status": "unsupported"
+   },
+   {
+    "finding": "Cardiomegaly",
+    "classifier_probability": 0.4892,
+    "retrieval_support_count": 3,
+    "supporting_retrieved_report_ranks": [
+     1,
+     3,
+     5
+    ],
+    "evidence_summary": "Reports 1, 3, and 5 mention Cardiomegaly.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Lung Opacity",
+    "classifier_probability": 0.3869,
+    "retrieval_support_count": 3,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     4
+    ],
+    "evidence_summary": "Reports 1, 2, and 4 mention Lung Opacity.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Pleural Effusion",
+    "classifier_probability": 0.4435,
+    "retrieval_support_count": 3,
+    "supporting_retrieved_report_ranks": [
+     1,
+     3,
+     5
+    ],
+    "evidence_summary": "Reports 1, 3, and 5 mention Pleural Effusion.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Pleural Other",
+    "classifier_probability": 0.0629,
+    "retrieval_support_count": 2,
+    "supporting_retrieved_report_ranks": [
+     3,
+     5
+    ],
+    "evidence_summary": "Reports 3 and 5 mention Pleural Other.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Fracture",
+    "classifier_probability": 0.1601,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "No retrieved reports mention Fracture.",
+    "support_status": "unsupported",
+    "agent_stated_status": "unsupported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   2
+  ]
+ },
+ "agent1_validation_flags": [],
+ "agent2_draft": {
+  "findings": "Cardiomegaly and Lung Opacity are supported by retrieved evidence. Pleural Effusion and Pleural Other are also supported. Enlarged Cardiomediastinum and Fracture are not supported.",
+  "impression": "Cardiomegaly, Lung Opacity, Pleural Effusion, and Pleural Other are present.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Cardiomegaly and Lung Opacity are supported by retrieved evidence. Pleural Effusion and Pleural Other are also supported. Enlarged Cardiomediastinum and Fracture are not supported.",
+  "impression": "Cardiomegaly, Lung Opacity, Pleural Effusion, and Pleural Other are present.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Enlarged Cardiomediastinum.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"Reports 1, 3, and 5 mention Cardiomegaly.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 4], \"evidence_summary\": \"Reports 1, 2, and 4 mention Lung Opacity.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"Reports 1, 3, and 5 mention Pleural Effusion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [3, 5], \"evidence_summary\": \"Reports 3 and 5 mention Pleural Other.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Fracture.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Enlarged Cardiomediastinum.\"}\n  ],\n  \"normal_report_ranks\": [\n    2\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Cardiomegaly and Lung Opacity are supported by retrieved evidence. Pleural Effusion and Pleural Other are also supported. Enlarged Cardiomediastinum and Fracture are not supported.\",\n\"impression\": \"Cardiomegaly, Lung Opacity, Pleural Effusion, and Pleural Other are present.\"\n}",
+ "agent3_raw_text": "{\n \"issues_detected\": [\n  \"unsupported_finding_stated\"\n ],\n \"decision\": \"REVISE\",\n \"findings\": \"Cardiomegaly and Lung Opacity are supported by retrieved evidence. Pleural Effusion and Pleural Other are also supported. Enlarged Cardiomediastinum and Fracture are not supported.\",\n \"impression\": \"Cardiomegaly, Lung Opacity, Pleural Effusion, and Pleural Other are present.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "424740ef4eb377b0dff17d04ec300e4dcbecb964a561966808020174c8ef4f7f",
+  "agent2_grounded_report_writer": "1d1af5c65d3ac530e8c16385787162b067b84b5f3a04e728a4c9dd8bcd66cbe2",
+  "agent3_grounding_critic": "2372d72780d97b1bc6987b393031760a00e7a8b6994485e4cb14a23f679d8266"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "595128d635fea7935a122135f9d196a0731ff1cf815a2f33463672eeea9ee276",
+  "agent2_grounded_report_writer": "b9d6a1d16cbf21ebe131994e3ea419a645588c983baf541d971ee80176b5021e",
+  "agent3_grounding_critic": "38b58e08ec9cb5b122d2ad77ef98acb06da51ef637c5ddaf0d40ab3f35c8104b"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 11.53,
+  "agent2_grounded_report_writer": 4.63,
+  "agent3_grounding_critic": 5.22
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 385,
+  "agent2_grounded_report_writer": 74,
+  "agent3_grounding_critic": 102
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 1016,
+  "agent2_grounded_report_writer": 1416,
+  "agent3_grounding_critic": 1481
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.12); Cardiomegaly (calibrated probability 0.49); Lung Opacity (calibrated probability 0.39); Pleural Effusion (calibrated probability 0.44); Pleural Other (calibrated probability 0.06); Fracture (calibrated probability 0.16)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: Heart size moderately enlarged, stable mediastinal contours. opacity in the left lung base. Otherwise, no focal alveolar consolidation, no definite pleural effusion seen. No typical findings of pulmonary edema.\nIMPRESSION: 1. Cardiomegaly 2. opacity in the left base atelectasis\n[2]\nFINDINGS: No focal lung opacity, pleural effusion or pneumothorax. Cardiomediastinal silhouette is unremarkable.\nIMPRESSION: No focal lung opacity, pleural effusion of pneumothorax.\n[3]\nFINDINGS: Cardiomegaly is present. There is interstitial pulmonary edema with the presence of B-lines. There is no pneumothorax. There is an oval, 17 mm nodular opacity projecting between the posterior left 5th and 6th ribs. There is a 10 mm nodular density projecting over the right posterior 4th rib. There is a posterior effusion. Normal mediastinal silhouette. T-spine osteophytes.\nIMPRESSION: 1. Cardiomegaly with mild interstitial edema and posterior pleural effusion. 2. 17 mm nodular opacity in the left lung and 10 mm nodular opacity in the right lung. These lesions are and could be followed up radiographically after treatment of edema, or could be further characterized with CT.\n[4]\nFINDINGS: There is opacity left lung base may represent atelectasis or early infiltrate. The cardiomediastinal silhouette is within normal limits. No pneumothorax or pleural effusion.\nIMPRESSION: opacity left lung base..\n[5]\nFINDINGS: 1. Cardiomegaly and/or pericardial effusion. 2. Right base opacity combination of pleural effusion and atelectasis/airspace disease. Cannot exclude elevation right hemidiaphragm. 3. Left lung relatively clear. 4. Limited exam due to underpenetrated technique related to large patient habitus. 5. No evidence of pneumothorax.\nIMPRESSION: (not available)\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.12); Cardiomegaly (calibrated probability 0.49); Lung Opacity (calibrated probability 0.39); Pleural Effusion (calibrated probability 0.44); Pleural Other (calibrated probability 0.06); Fracture (calibrated probability 0.16)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Enlarged Cardiomediastinum\",\n   \"classifier_probability\": 0.1205,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports mention Enlarged Cardiomediastinum.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"classifier_probability\": 0.4892,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    3,\n    5\n   ],\n   \"evidence_summary\": \"Reports 1, 3, and 5 mention Cardiomegaly.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.3869,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    4\n   ],\n   \"evidence_summary\": \"Reports 1, 2, and 4 mention Lung Opacity.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"classifier_probability\": 0.4435,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    3,\n    5\n   ],\n   \"evidence_summary\": \"Reports 1, 3, and 5 mention Pleural Effusion.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pleural Other\",\n   \"classifier_probability\": 0.0629,\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    3,\n    5\n   ],\n   \"evidence_summary\": \"Reports 3 and 5 mention Pleural Other.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.1601,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports mention Fracture.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  2\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.12); Cardiomegaly (calibrated probability 0.49); Lung Opacity (calibrated probability 0.39); Pleural Effusion (calibrated probability 0.44); Pleural Other (calibrated probability 0.06); Fracture (calibrated probability 0.16)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Enlarged Cardiomediastinum\",\n   \"classifier_probability\": 0.1205,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports mention Enlarged Cardiomediastinum.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"classifier_probability\": 0.4892,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    3,\n    5\n   ],\n   \"evidence_summary\": \"Reports 1, 3, and 5 mention Cardiomegaly.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.3869,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    4\n   ],\n   \"evidence_summary\": \"Reports 1, 2, and 4 mention Lung Opacity.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"classifier_probability\": 0.4435,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    3,\n    5\n   ],\n   \"evidence_summary\": \"Reports 1, 3, and 5 mention Pleural Effusion.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pleural Other\",\n   \"classifier_probability\": 0.0629,\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    3,\n    5\n   ],\n   \"evidence_summary\": \"Reports 3 and 5 mention Pleural Other.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.1601,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports mention Fracture.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  2\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Cardiomegaly and Lung Opacity are supported by retrieved evidence. Pleural Effusion and Pleural Other are also supported. Enlarged Cardiomediastinum and Fracture are not supported.\nIMPRESSION: Cardiomegaly, Lung Opacity, Pleural Effusion, and Pleural Other are present.\n\nReturn the JSON now."
+ }
+}

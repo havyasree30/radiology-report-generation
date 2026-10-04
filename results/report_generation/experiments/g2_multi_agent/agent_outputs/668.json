@@ -1,0 +1,94 @@
+{
+ "uid": "668",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Atelectasis",
+    "classifier_probability": 0.4266,
+    "retrieval_support_count": 5,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "evidence_summary": "Atelectasis is present in the right base.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": []
+ },
+ "agent1_validation_flags": [
+  "agent1_extra_or_duplicate_classifier_entry"
+ ],
+ "agent2_draft": {
+  "findings": "Atelectasis is present in the right base.",
+  "impression": "Atelectasis.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Atelectasis is present in the right base.",
+  "impression": "Atelectasis.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Atelectasis is present in the right base.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [], \"evidence_summary\": \"Cardiomegaly is not supported by the retrieved reports.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [3], \"evidence_summary\": \"Lung opacity is present in the right base.\", \"support_status\": \"partially_supported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"Lung lesion is not supported by the retrieved reports.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"Edema is not supported by the retrieved reports.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"Consolidation is not supported by the retrieved reports.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [], \"evidence_summary\": \"Pneumonia is not supported by the retrieved reports.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [], \"evidence_summary\": \"Atelectasis is not supported by the retrieved reports.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"Pneumothorax is not supported by the retrieved reports.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [3], \"evidence_summary\": \"Pleural effusion is present in the right base.\", \"support_status\": \"partially_supported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"Pleural other is not supported by the retrieved reports.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"Fracture is not supported by the retrieved reports.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"Support devices are not supported by the retrieved reports.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [],\n  \"normal_report_ranks\": []\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Atelectasis is present in the right base.\",\n\"impression\": \"Atelectasis.\"\n}",
+ "agent3_raw_text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Atelectasis is present in the right base.\",\n\"impression\": \"Atelectasis.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "7d1ed3ed16f5818e7d5d2f08e39455986597cca18f51d360d052675cc74e70b2",
+  "agent2_grounded_report_writer": "f8cfecd2b336ccc3c639f01d349fdc5e0e7fcf1b176968843db467a45e0665d5",
+  "agent3_grounding_critic": "79002b7a595bb39894c0e91c08f0adc71cd0478020034546367fa0cc57427149"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "ee591615246d2a2e4c1c6255cb8b94bd4287c0196d891cbd2d673a3c30274c87",
+  "agent2_grounded_report_writer": "fcbbc30e949f550b902cbb23c22e6a6c6949c425f9bf39ce15c4fd25b752f20a",
+  "agent3_grounding_critic": "fe41363ca883203a286d02157442172f6864cce9ca1b714a65d85162dd5817c4"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 14.86,
+  "agent2_grounded_report_writer": 3.11,
+  "agent3_grounding_critic": 3.56
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 615,
+  "agent2_grounded_report_writer": 30,
+  "agent3_grounding_critic": 53
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 754,
+  "agent2_grounded_report_writer": 862,
+  "agent3_grounding_critic": 883
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Atelectasis (calibrated probability 0.43)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: (not available)\nIMPRESSION: Elevated diaphragms with atelectasis in the bases. Normal heart size. Mild spondylosis.\n[2]\nFINDINGS: (not available)\nIMPRESSION: Marked elevation left diaphragm with atelectasis in the left base. Mild atelectasis in the right base. Stable or line cardiac enlargement with atherosclerotic aorta. Obscured left heart. Kyphotic degenerated thoracic spine with osteopenia multilevel deformities, poorly defined due to the extensive osteopenia.\n[3]\nFINDINGS: (not available)\nIMPRESSION: Cardiomegaly. Left lung clear. Large right effusion. Compressive atelectasis or infiltrate in the right base\n[4]\nFINDINGS: (not available)\nIMPRESSION: Minimal atelectasis, platelike in the right upper lobe. Heart size upper limits normal. Degenerative spurring of thoracic spine.\n[5]\nFINDINGS: (not available)\nIMPRESSION: Minimal atelectasis right base. No evidence of tuberculosis. Heart size is normal.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Atelectasis (calibrated probability 0.43)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Atelectasis\",\n   \"classifier_probability\": 0.4266,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Atelectasis is present in the right base.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Atelectasis (calibrated probability 0.43)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Atelectasis\",\n   \"classifier_probability\": 0.4266,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Atelectasis is present in the right base.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nC. DRAFT REPORT\nFINDINGS: Atelectasis is present in the right base.\nIMPRESSION: Atelectasis.\n\nReturn the JSON now."
+ }
+}

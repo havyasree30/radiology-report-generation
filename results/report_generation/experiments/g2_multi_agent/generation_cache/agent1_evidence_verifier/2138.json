@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "89f2af254c86e0ba2513072f8effe35a5534d7270c6c91da271b5a9f89c5cfda",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention lung opacity.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung lesion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Edema\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention edema, although not classified as positive by the classifier.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention consolidation, although not classified as positive by the classifier.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention atelectasis, although not classified as positive by the classifier.\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention pneumonia, although not classified as positive by the classifier.\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [1, 3], \"evidence_summary\": \"Retrieved reports mention pleural other, although not classified as positive by the classifier.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention pneumothorax, although not classified as positive by the classifier.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention pleural effusion, although not classified as positive by the classifier.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention cardiomegaly, although not classified as positive by the classifier.\"},\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention enlarged cardiomediastinum, although not classified as positive by the classifier.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention lung opacity, although not classified as positive by the classifier.\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention lung lesion, although not classified as positive by the classifier.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention fracture, although not classified as positive by the classifier.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention edema, although not classified as positive by the classifier.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention consolidation, although not classified as positive by the classifier.\"},\n    {\"finding\": \"Ate",
+ "done_reason": "length",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 882,
+ "output_tokens": 900,
+ "total_duration_ns": 19724277500,
+ "load_duration_ns": 8068700,
+ "attempts": 1,
+ "wall_seconds": 21.75,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:20:32+00:00",
+ "agent": "agent1_evidence_verifier"
+}

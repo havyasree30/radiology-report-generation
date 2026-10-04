@@ -1,0 +1,97 @@
+{
+ "uid": "3349",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Lung Lesion",
+    "classifier_probability": 0.1519,
+    "retrieval_support_count": 1,
+    "supporting_retrieved_report_ranks": [
+     3
+    ],
+    "evidence_summary": "Stated in 1 of 5 retrieved reports.",
+    "support_status": "partially_supported",
+    "agent_stated_status": "supported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   1,
+   2,
+   4,
+   5
+  ]
+ },
+ "agent1_validation_flags": [
+  "agent1_extra_or_duplicate_classifier_entry",
+  "agent1_status_inconsistent_with_count",
+  "agent1_summary_replaced"
+ ],
+ "agent2_draft": {
+  "findings": "Lung Lesion",
+  "impression": "Lung Lesion",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Lung Lesion",
+  "impression": "Lung Lesion",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [3], \"evidence_summary\": \"Report 3 mentions a large medial right upper lobe mass lesion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions patchy alveolar and interstitial opacities within the lung bases bilaterally.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions enlarged cardiomediastinum.\"}\n  ],\n  \"normal_report_ranks\": [\n    1,\n    2,\n    4,\n    5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Lung Lesion\",\n\"impression\": \"Lung Lesion\"\n}",
+ "agent3_raw_text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Lung Lesion\",\n\"impression\": \"Lung Lesion\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "b0a9d6140950046cb0ae955cd54409054ead20a2b38f5c7f937d12c4c2c2c531",
+  "agent2_grounded_report_writer": "629c7681d35e7cf1fd0c38b2c044f4b111a8e3ab6893bf2772cd24c91acf7999",
+  "agent3_grounding_critic": "0e236e5269f42645a8287015f8ccc8b53436260ff5ad814846af2efc9df98b45"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "646169594555e1f2c7df8fdd04e9944581f529d5aa2f53c2d810e27c91a9cf1b",
+  "agent2_grounded_report_writer": "c1aba6a82285e243b6d851755d445a221c5f72f249f64234e7ac0cb11391db98",
+  "agent3_grounding_critic": "1522d4256cd2e022143ed1e5375789f09ed100b198353a112c1fb9a8c986ef5c"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 7.52,
+  "agent2_grounded_report_writer": 3.33,
+  "agent3_grounding_critic": 3.88
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 195,
+  "agent2_grounded_report_writer": 22,
+  "agent3_grounding_critic": 45
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 971,
+  "agent2_grounded_report_writer": 865,
+  "agent3_grounding_critic": 878
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Lung Lesion (calibrated probability 0.15)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: Lungs are hyperinflated with flattening of the diaphragms and increased AP chest diameter, compatible with emphysema. There is no evidence of focal infiltrate, pneumothorax, pleural effusion, or identified mass lesion. There is normal cardiomediastinal contours.\nIMPRESSION: 1. No acute cardiopulmonary abnormality, findings compatible with emphysema.\n[2]\nFINDINGS: There is obscuration of the bilateral lung bases with lower lung volumes compared to prior examination. Stable atelectatic/fibrotic changes of the visualized lung, and stable left-sided calcified granuloma. No acute osseous abnormalities identified. Cardiomediastinal silhouette unremarkable.\nIMPRESSION: Obscuration of the bilateral lung bases, combination of atelectasis, infiltrate, effusions.\n[3]\nFINDINGS: Large medial right upper lobe mass lesion, measuring approximately 5.8 cm x 6.0 cm in diameter. No pneumothorax. No pleural effusions. Lungs clear. Heart size within normal limits. Degenerative changes thoracic spine.\nIMPRESSION: Large medial right upper lobe mass highly concerning for primary lung cancer. chest with intravenous contrast for further evaluation.. 's was notified of this result at XXXXPM / and accepted receipt. Results were faxed..\n[4]\nFINDINGS: Heart size and pulmonary vascularity appear within normal limits. Innumerable bilateral lung nodules are present. These are seen diffusely throughout both lungs. No superimposed focal airspace disease is seen. No pleural effusion or pneumothorax is identified. Scoliosis is present.\nIMPRESSION: 1. Continued innumerable bilateral small lung nodules. No change.\n[5]\nFINDINGS: There are patchy alveolar and interstitial opacities within the lung bases bilaterally representing an infectious etiology versus chronic lung disease. There is no evidence of pneumothorax or large pleural effusion. The cardiac silhouette is enlarged. There are atherosclerotic calcifications of the aortic. There are degenerative changes throughout the thoracic spine.\nIMPRESSION: Patchy alveolar and interstitial opacities within the lung bases bilaterally representing an infectious etiology versus chronic lung disease.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Lesion (calibrated probability 0.15)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Lesion\",\n   \"classifier_probability\": 0.1519,\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    3\n   ],\n   \"evidence_summary\": \"Stated in 1 of 5 retrieved reports.\",\n   \"support_status\": \"partially_supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  4,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Lesion (calibrated probability 0.15)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Lesion\",\n   \"classifier_probability\": 0.1519,\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    3\n   ],\n   \"evidence_summary\": \"Stated in 1 of 5 retrieved reports.\",\n   \"support_status\": \"partially_supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  4,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Lung Lesion\nIMPRESSION: Lung Lesion\n\nReturn the JSON now."
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "b6b3d7c2690ee79bb2b28135d826826efa13b79a462757c5a76a327b48723692",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette and vasculature are within normal limits for size and contour. The lungs are normally inflated and clear. Degenerative changes of the spine are noted.\nIMPRESSION:\nNo acute radiographic cardiopulmonary process.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1133,
+ "output_tokens": 63,
+ "total_duration_ns": 2156180800,
+ "load_duration_ns": 1600900,
+ "attempts": 1,
+ "wall_seconds": 4.21,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:16:54+00:00"
+}

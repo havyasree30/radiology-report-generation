@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "earlier_artifacts_checked": 1859,
+  "files_changed": [],
+  "files_missing": [],
+  "c6_freeze_manifest_files_all_match": true,
+  "checkpoint_unchanged": true,
+  "c4_thresholds_unchanged": true,
+  "c5_platt_parameters_unchanged": true,
+  "r2_candidate_config_unchanged": true,
+  "g1_and_g1a_artifacts_unchanged": true,
+  "g1_code_unchanged_since_commit": {
+    "commit": "9714f50d3f72587e91bf30cef238d4e5240f55e6",
+    "all_unchanged": true,
+    "changed": []
+  },
+  "g1a_code_unchanged_since_commit": {
+    "commit": "d4f78fca8601bb8a5146b307d4dcc74cd360d1f6",
+    "all_unchanged": true,
+    "changed": []
+  },
+  "same_generator_and_prompt_as_g1": {
+    "ollama_version": true,
+    "model_digest": true,
+    "options": true,
+    "recorded_in_g1b_metadata": true,
+    "run_log_digest": true,
+    "run_log_version": true,
+    "prompt_sha256_equals_g1": true
+  },
+  "model_tag": "medgemma1.5:4b",
+  "model_digest": "433252621ab154668b5d8be6aff6c1b771bacba045e46e6193da8d6ad1630f2c",
+  "n_cases": 547,
+  "n_responses_cached": 547,
+  "generation_failures": 0,
+  "responses_whose_request_equals_the_checked_message": 547,
+  "responses_with_options_different_from_g1": 0,
+  "sham_mapping_sha256": "e1095ae78338d7d871d2d3f6fb9744650811cc6ce029411a55d35ed85490ce1e",
+  "sham_mapping_hash_matches_frozen": true,
+  "sham_selection_seed": 42,
+  "sham_reports_equal_to_query_study": 0,
+  "sham_reports_overlapping_the_true_top5": 0,
+  "sham_reports_outside_the_training_corpus": 0,
+  "sham_reports_in_locked_test": 0,
+  "message_lines_revealing_the_control": 0,
+  "classifier_outputs_different_from_g1": 0,
+  "empty_query_messages_identical_to_g1": "49 of 49",
+  "locked_retrieval_test_studies_in_g1b_outputs": {
+    "g1b_cases.jsonl": 0,
+    "g1b_per_study_results.csv": 0
+  },
+  "external_api_used_in_g1b_code": {},
+  "fit_or_tune_calls_in_g1b_code": {},
+  "allow_locked_true_in_g1b_code": {},
+  "git_head": "d4f78fca8601bb8a5146b307d4dcc74cd360d1f6",
+  "git_branch": "g1b-sham-retrieval-control"
+}

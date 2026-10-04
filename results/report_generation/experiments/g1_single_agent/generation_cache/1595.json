@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "e1ad29dfd8b249c9297f6ffa2dd7e2f3e945d2ae5b224f22f02029369a7d4639",
+ "text": "FINDINGS:\nCardiomegaly is present. There is a lung opacity in the left lung base.\nIMPRESSION:\nCardiomegaly and left lung base opacity.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1316,
+ "output_tokens": 48,
+ "total_duration_ns": 1560181100,
+ "load_duration_ns": 8271600,
+ "attempts": 1,
+ "wall_seconds": 3.6,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T10:30:11+00:00"
+}

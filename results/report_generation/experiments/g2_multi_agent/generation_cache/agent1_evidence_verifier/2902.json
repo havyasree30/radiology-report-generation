@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "6bd885c3700e3efa882e6a91d451373442b47cb852c9562976dfeba6384bd511",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention pleural effusion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention pleural other.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [],\n  \"normal_report_ranks\": [\n    1, 2, 3, 4, 5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 777,
+ "output_tokens": 138,
+ "total_duration_ns": 3869892500,
+ "load_duration_ns": 6577000,
+ "attempts": 1,
+ "wall_seconds": 5.91,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:44:43+00:00",
+ "agent": "agent1_evidence_verifier"
+}

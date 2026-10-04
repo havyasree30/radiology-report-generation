@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lr}
+\hline
+Quantity & Value \\
+\hline
+Classifier inference: model load / image loading and preprocessing / inference / total (s) & 0.9 / 25.2 / 2.9 / 29.0 \\
+Query construction and hybrid retrieval, all studies (s); mean per study (s) & 9.1; 0.015 \\
+G1 generation: reports generated; mean / median seconds per report & 486; 4.54 / 3.66 \\
+G1 generation total call time (min); wall time of the run (min) & 36.8; 37.0 \\
+Mean prompt / output tokens per report & 1089 / 50 \\
+Total end-to-end compute (min) & 37.6 \\
+Sampled peak GPU memory used (MiB) & 4213 \\
+Ollama / model / digest & 0.35.1 / medgemma1.5:4b / 433252621ab1 \\
+\hline
+\end{tabular}
+\caption{Runtime and compute summary of the locked run (local RTX 3050 6 GB GPU).}
+\label{tab:table10_runtime_compute}
+\end{table}

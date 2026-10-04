@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "68ea6f9550e9c425186c6c38830331f1bfe7e026e3b7651f67caeca422c2466c",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Retrieved reports mention cardiomegaly.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 4], \"evidence_summary\": \"Retrieved reports mention lung opacity.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [2, 3, 4], \"evidence_summary\": \"Retrieved reports mention edema.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions fracture.\"}\n  ],\n  \"normal_report_ranks\": [\n    5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 934,
+ "output_tokens": 216,
+ "total_duration_ns": 5467186800,
+ "load_duration_ns": 7788800,
+ "attempts": 1,
+ "wall_seconds": 7.53,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:08:04+00:00",
+ "agent": "agent1_evidence_verifier"
+}

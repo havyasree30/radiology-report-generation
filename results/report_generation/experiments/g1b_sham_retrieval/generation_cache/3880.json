@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "e9f31bb1ec5abc4b4666204d7b8f84fe49ad6a0377263d4003e65610ccfe29a2",
+ "text": "FINDINGS:\nThe cardiac silhouette appears enlarged. The lungs are clear.\nIMPRESSION:\nCardiomegaly.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1110,
+ "output_tokens": 27,
+ "total_duration_ns": 1205676600,
+ "load_duration_ns": 2054600,
+ "attempts": 1,
+ "wall_seconds": 3.24,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:44:18+00:00"
+}

@@ -1,0 +1,7 @@
+panel,category,n,n_reference_positive
+status,supported,190,67
+status,partially_supported,22,0
+status,unsupported,142,50
+retrieval_only_funnel,proposed by Agent 1 (retrieval_only candidates),34,5
+retrieval_only_funnel,promoted into the Agent 2 draft,10,3
+retrieval_only_funnel,surviving Agent 3 (in final G2 report),10,3

@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "cd581ff498cd5afa436bdc3ac629af825081bb95fc2de467d691ce885c917625",
+ "text": "{\n\"findings\": \"Pulmonary opacities are present.\",\n\"impression\": \"Pneumonia and atelectasis are present.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1064,
+ "output_tokens": 32,
+ "total_duration_ns": 1338644500,
+ "load_duration_ns": 6512700,
+ "attempts": 1,
+ "wall_seconds": 3.38,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T17:08:50+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

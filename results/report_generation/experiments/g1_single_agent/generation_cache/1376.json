@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "455ded8d4c545091f24c19a116edcc37a31da17a006adf64c7fdabce6a6a28e6",
+ "text": "FINDINGS:\nA focal opacity is seen in the left upper lung. A focal opacity is seen in the medial right lung base.\nIMPRESSION:\nPossible pneumonia. Recommend clinical correlation.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1276,
+ "output_tokens": 41,
+ "total_duration_ns": 1432173500,
+ "load_duration_ns": 8382800,
+ "attempts": 1,
+ "wall_seconds": 3.46,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T10:28:14+00:00"
+}

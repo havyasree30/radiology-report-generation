@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "4bcdd8954884b7dbaf42bf09de72d5ca01be53adb207f0d3ee5e309968babe2f",
+ "text": "FINDINGS:\nThe heart size and cardiomediastinal silhouette are normal. The lungs are clear. No pleural effusion, pneumothorax, or consolidation is identified.\nIMPRESSION:\nNo acute cardiopulmonary abnormality.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1101,
+ "output_tokens": 57,
+ "total_duration_ns": 1544117000,
+ "load_duration_ns": 7096600,
+ "attempts": 1,
+ "wall_seconds": 3.58,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:21:00+00:00"
+}

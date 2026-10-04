@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "77d94a0dc6cc2b132528d5f10abff0522098bd45fcbe87893192d3c6a071b2cf",
+ "text": "FINDINGS:\nHeart size is mildly to moderately enlarged. Distal tip of dual-lumen catheter is near the caval atrial junction. Mild vascular cephalization is noted. No definite interstitial changes of pulmonary edema, focal alveolar consolidation, pleural effusion, or pneumothorax.\nIMPRESSION:\n1. Mild to moderate cardiomegaly. 2. Vascular redistribution without definite findings of pulmonary edema.\n\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1144,
+ "output_tokens": 92,
+ "total_duration_ns": 2502726300,
+ "load_duration_ns": 5016300,
+ "attempts": 1,
+ "wall_seconds": 4.54,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:30:04+00:00"
+}

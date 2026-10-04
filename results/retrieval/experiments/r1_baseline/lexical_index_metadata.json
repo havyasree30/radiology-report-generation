@@ -1,0 +1,12 @@
+{
+  "method": "Okapi BM25 (in-house implementation)",
+  "k1": 1.5,
+  "b": 0.75,
+  "idf": "log(1 + (N - df + 0.5) / (df + 0.5))",
+  "tokenizer": "lowercase alphanumeric runs; no stop-word removal, no stemming",
+  "n_documents": 2675,
+  "avg_doc_length_tokens": 37.029906542056075,
+  "vocabulary_size": 1794,
+  "tie_break": "corpus order (stable sort)",
+  "hyperparameters_tuned": false
+}

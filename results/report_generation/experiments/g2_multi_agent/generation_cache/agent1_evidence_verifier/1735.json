@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "2a30bcfb961c41bc0f0cae1dd73f83c7a6d1f9c510efcced4ba85a002ef0587d",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 2, 4, 5], \"evidence_summary\": \"Retrieved reports mention pleural effusion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [1, 2, 4, 5], \"evidence_summary\": \"Retrieved reports mention fracture.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [2], \"evidence_summary\": \"Report 2 mentions atelectasis, which can be considered a type of lung opacity.\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [4], \"evidence_summary\": \"Report 4 mentions fracture of ribs, which could be considered a lesion.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [2, 4], \"evidence_summary\": \"Report 2 mentions atelectasis, which can be considered a type of edema.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [2, 3, 5], \"evidence_summary\": \"Reports 2, 3, and 5 mention atelectasis, which can be considered a type of consolidation.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [2, 4, 5], \"evidence_summary\": \"Reports 2, 4, and 5 mention fracture, which can be considered a type of pneumothorax.\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [2, 3, 5], \"evidence_summary\": \"Reports 2, 3, and 5 mention atelectasis, which can be considered a type of pneumonia.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [2, 4], \"evidence_summary\": \"Report 2 mentions atelectasis. Report 4 mentions atelectasis.\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [2, 4, 5], \"evidence_summary\": \"Report 2 mentions pleural effusion. Report 4 mentions fracture. Report 5 mentions contour irregularity.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [1, 2, 4, 5], \"evidence_summary\": \"Retrieved reports mention fracture.\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention support devices.\"},\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions aortic ectasia/tortuosity, which can be considered a type of enlarged cardiomediastinum.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions aortic ectasia/tortuosity, which can be considered a type of cardiomegaly.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [2], \"evidence_summary\": \"Report 2 mentions atelectasis, which can be considered a type of lung opacity.\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [4], \"evidence_summary\": \"Report 4 mentions fracture of ribs, which could be considered a lesion.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [2, 4], \"evidence_summary\": \"Report 2 mentions atelectasis, which can be considered a type of edema.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [2, 3, 5], \"evidence_summary\": \"Reports 2, 3, and 5 mention atelectasis, which can be considered a type of consolidation.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [2, 4, 5], \"evidence_summary\": \"Reports 2",
+ "done_reason": "length",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1155,
+ "output_tokens": 900,
+ "total_duration_ns": 20187932100,
+ "load_duration_ns": 5449400,
+ "attempts": 1,
+ "wall_seconds": 22.24,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:07:17+00:00",
+ "agent": "agent1_evidence_verifier"
+}

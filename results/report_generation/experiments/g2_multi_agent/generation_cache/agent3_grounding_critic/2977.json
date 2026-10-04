@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "37b1bb6a53120f2a505751cbb8b63e7e08af559c28da59e401ce8288333fbf8a",
+ "text": "{\"issues_detected\": [\"unsupported_finding_stated\"], \"decision\": \"REVISE\", \"findings\": \"Fracture is supported by retrieved evidence. Lung Lesion is not supported by retrieved evidence.\", \"impression\": \"Fracture.\"}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 986,
+ "output_tokens": 52,
+ "total_duration_ns": 1762087500,
+ "load_duration_ns": 8236700,
+ "attempts": 1,
+ "wall_seconds": 3.8,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 700,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:48:00+00:00",
+ "agent": "agent3_grounding_critic"
+}

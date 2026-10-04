@@ -1,0 +1,35 @@
+{
+  "G1A_llm_no_retrieval": {
+    "studies_by_classifier_state": {
+      "normal": 261,
+      "abnormal": 237,
+      "indeterminate": 49
+    },
+    "enlarged_cardiomediastinum_stated_without_classifier_positive_by_classifier_state": {
+      "normal": 240,
+      "indeterminate": 11,
+      "abnormal": 7
+    },
+    "distinct_report_texts": 84,
+    "most_common_text_share": 0.453382084095064,
+    "most_common_text": "FINDINGS: The chest radiograph demonstrates an enlarged cardiomediastinal silhouette. IMPRESSION: Enlarged Cardiomediastinum.",
+    "reports_with_leaked_reasoning_tokens": 6,
+    "reports_stopped_by_token_limit": 5,
+    "format_ok_rate": 0.9890310786106032
+  },
+  "G1_single_agent_rag": {
+    "studies_by_classifier_state": {
+      "normal": 261,
+      "abnormal": 237,
+      "indeterminate": 49
+    },
+    "enlarged_cardiomediastinum_stated_without_classifier_positive_by_classifier_state": {},
+    "distinct_report_texts": 97,
+    "most_common_text_share": 0.36380255941499084,
+    "most_common_text": "FINDINGS: The lungs and pleural spaces are clear. The heart size is normal. The pulmonary vascularity is normal. IMPRESSION: No acute pulmonary abnormality.",
+    "reports_with_leaked_reasoning_tokens": 0,
+    "reports_stopped_by_token_limit": 0,
+    "format_ok_rate": 1.0
+  },
+  "note": "post-hoc descriptive diagnostics; the G1A prompt was frozen before generation and is NOT changed. The most common G1A report is the first standard term of the prompt's term list (Enlarged Cardiomediastinum), written for 'No Finding: positive' inputs; G1 never does this."
+}

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "f8d95a73daeaa4b962406cb1d067927ca4063cda5855f687f14d3fbc4949a196",
+ "text": "FINDINGS:\nBilateral patchy pulmonary opacities noted. Interval improvement in left base consolidative opacity. Pulmonary vascular congestion again noted. Stable enlarged cardiomediastinal silhouette. Stable left. No evidence of pneumothorax. No large pleural effusions.\nIMPRESSION: 1. Interval improvement in consolidative left base opacity. Multifocal scattered bibasilar patchy and pulmonary opacities again noted, most consistent with atelectasis/infiltrate. 2. Stable enlarged cardiomediastinal silhouette. Stable pulmonary vascular congestion..",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1089,
+ "output_tokens": 114,
+ "total_duration_ns": 2789337200,
+ "load_duration_ns": 3812000,
+ "attempts": 1,
+ "wall_seconds": 4.84,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:22:19+00:00"
+}

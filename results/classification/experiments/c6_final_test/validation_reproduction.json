@@ -1,0 +1,13 @@
+{
+  "binary_count_differences": 0,
+  "binary_metric_max_abs_diff": 0.0,
+  "macro_binary_max_abs_diff": 0.0,
+  "ranking_macro_micro_max_abs_diff_vs_c2b": 0.0,
+  "finding_count_stat_abs_diff": 0.0,
+  "no_finding_rule_images_changed": 755,
+  "c4_images_changed": 755,
+  "calibrated_probs_vs_c5_stored_max_abs_diff": 0.0,
+  "c5_oof_brier_max_abs_diff": 0.0,
+  "c5_raw_brier_max_abs_diff": 0.0,
+  "reproduced": true
+}

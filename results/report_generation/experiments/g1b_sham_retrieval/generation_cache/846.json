@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "0d188d6a57d8ed79a5462f447ee3b8c09d562d33114568791499f431fde05f09",
+ "text": "FINDINGS:\nA lung nodule is identified. A fracture is identified. Support devices are present.\nIMPRESSION:\nLung nodule and fracture are present. Support devices are present.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1176,
+ "output_tokens": 50,
+ "total_duration_ns": 1460060700,
+ "load_duration_ns": 2137300,
+ "attempts": 1,
+ "wall_seconds": 3.47,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:20:37+00:00"
+}

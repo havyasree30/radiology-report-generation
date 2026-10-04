@@ -1,0 +1,11 @@
+split,code,kind,count
+train,_images,total,133649
+train,_hard_rejected,error,5
+train,nearly_white_image,error,5
+train,dominant_flat_region,warning,9
+train,unusual_aspect_ratio,warning,9
+train,very_bright_image,warning,2
+val,_images,total,28672
+val,_hard_rejected,error,1
+val,nearly_white_image,error,1
+val,unusual_aspect_ratio,warning,4

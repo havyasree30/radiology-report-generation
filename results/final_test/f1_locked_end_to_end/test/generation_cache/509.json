@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "7212917577d90194a9f6b3719e6f72a380effe66afa2e09232bfba6b325e51a7",
+ "text": "FINDINGS:\nThere is a left lower lobe opacity. The cardiomediastinal silhouette is unremarkable. No pneumothorax or pleural effusion is identified.\nIMPRESSION:\nLeft lower lobe opacity.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1249,
+ "output_tokens": 44,
+ "total_duration_ns": 2935210700,
+ "load_duration_ns": 6363300,
+ "attempts": 1,
+ "wall_seconds": 5.02,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T06:52:59+00:00"
+}

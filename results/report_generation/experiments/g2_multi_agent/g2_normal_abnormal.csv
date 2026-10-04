@@ -1,0 +1,11 @@
+source,reference,n,predicted_normal,predicted_abnormal,predicted_indeterminate
+classifier,normal,192,140,43,9
+classifier,abnormal,186,36,135,15
+B0_rule_based,normal,192,140,43,9
+B0_rule_based,abnormal,186,36,135,15
+G1_single_agent_rag,normal,192,175,17,0
+G1_single_agent_rag,abnormal,186,78,108,0
+G2_agent2_draft_pre_critic,normal,192,149,42,1
+G2_agent2_draft_pre_critic,abnormal,186,51,134,1
+G2_multi_agent_rag,normal,192,149,42,1
+G2_multi_agent_rag,abnormal,186,51,134,1

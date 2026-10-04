@@ -1,0 +1,115 @@
+{
+ "uid": "2955",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Enlarged Cardiomediastinum",
+    "classifier_probability": 0.1674,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "None of the retrieved reports mention Enlarged Cardiomediastinum.",
+    "support_status": "unsupported",
+    "agent_stated_status": "unsupported"
+   },
+   {
+    "finding": "Cardiomegaly",
+    "classifier_probability": 0.4938,
+    "retrieval_support_count": 4,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     4,
+     5
+    ],
+    "evidence_summary": "Reports 1, 2, 4, and 5 mention Cardiomegaly.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Edema",
+    "classifier_probability": 0.4858,
+    "retrieval_support_count": 3,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     4
+    ],
+    "evidence_summary": "Reports 1, 2, and 4 mention Edema.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": []
+ },
+ "agent1_validation_flags": [
+  "agent1_extra_or_duplicate_classifier_entry"
+ ],
+ "agent2_draft": {
+  "findings": "Cardiomegaly and Edema are present.",
+  "impression": "Cardiomegaly and Edema.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Cardiomegaly and Edema are present.",
+  "impression": "Cardiomegaly and Edema.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention Enlarged Cardiomediastinum.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 2, 4, 5], \"evidence_summary\": \"Reports 1, 2, 4, and 5 mention Cardiomegaly.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 4], \"evidence_summary\": \"Reports 1, 2, and 4 mention Lung Opacity.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [1, 2, 4], \"evidence_summary\": \"Reports 1, 2, and 4 mention Edema.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention Consolidation.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention Pneumonia.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention Atelectasis.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention Pneumothorax.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention Pleural Effusion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention Pleural Other.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention Fracture.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention Support Devices.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [],\n  \"normal_report_ranks\": []\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Cardiomegaly and Edema are present.\",\n\"impression\": \"Cardiomegaly and Edema.\"\n}",
+ "agent3_raw_text": "{\"issues_detected\": [\"unsupported_finding_stated\"], \"decision\": \"REVISE\", \"findings\": \"Cardiomegaly and Edema are present.\", \"impression\": \"Cardiomegaly and Edema.\"}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "6b2877f6d8443519b6ce0d18b2a893a318a5c305c2b4c1a543bde27e8baa3185",
+  "agent2_grounded_report_writer": "f82f30cc0057c7236343b7316ba577f2a346cd22c12c1a130ed090aae34625cb",
+  "agent3_grounding_critic": "721384266b68e333187781e32705d3880c5f4bdb15017698dba1fd6e5579e1a6"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "4eaedf7886b9b82c3f81dd82a63f294c622e94b3943340f55964a24671a7a494",
+  "agent2_grounded_report_writer": "ec8631556cdf5a4a6e2bbc72d84fad0e0673f236d5af71a30bfcd458d3143ab4",
+  "agent3_grounding_critic": "16885352b6e6e06650aecad937a4a36cd47e6fb10aaa367da11b2d64e8290a04"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 15.04,
+  "agent2_grounded_report_writer": 3.41,
+  "agent3_grounding_critic": 3.84
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 588,
+  "agent2_grounded_report_writer": 32,
+  "agent3_grounding_critic": 49
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 893,
+  "agent2_grounded_report_writer": 1093,
+  "agent3_grounding_critic": 1116
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.17); Cardiomegaly (calibrated probability 0.49); Edema (calibrated probability 0.49)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: The heart is enlarged. There is pulmonary vascular congestion with diffusely increased interstitial and mild patchy airspace opacities. The distribution pulmonary edema. There is no pneumothorax or large pleural effusion. There are no acute bony findings.\nIMPRESSION: Cardiomegaly with vascular congestion and suspected pulmonary edema..\n[2]\nFINDINGS: There has been interval increase in size of the cardiac silhouette from. The cardiac fluid is now mildly enlarged. Pulmonary vasculature is increased with mildly increased interstitial markings and fissural thickening, suggesting mild pulmonary edema. There is no focal airspace disease, pneumothorax, or large pleural effusion. Descending thoracic aorta is tortuous. There are no acute bony findings.\nIMPRESSION: Cardiomegaly which appears from with probable mild pulmonary edema..\n[3]\nFINDINGS: Heart size mildly enlarged, stable mediastinal and hilar contours, mediastinal calcifications suggest a previous granulomatous process. No focal alveolar consolidation, no definite pleural effusion seen. No typical findings of pulmonary edema.\nIMPRESSION: Mild cardiomegaly, no acute pulmonary findings\n[4]\nFINDINGS: The heart is significantly enlarged. Prominent pulmonary vascularity. No focal airspace consolidation, suspicious pulmonary opacity, or definite pleural effusion. No pneumothorax. Visualized osseous structures appear intact.\nIMPRESSION: Cardiomegaly with central pulmonary vascular congestion. No edema.\n[5]\nFINDINGS: Heart size mildly enlarged. No alveolar consolidation, no findings of pleural effusion or pulmonary edema. No pneumothorax. S-shaped spine curvature noted.\nIMPRESSION: Cardiomegaly, no acute pulmonary findings\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.17); Cardiomegaly (calibrated probability 0.49); Edema (calibrated probability 0.49)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Enlarged Cardiomediastinum\",\n   \"classifier_probability\": 0.1674,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"None of the retrieved reports mention Enlarged Cardiomediastinum.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"classifier_probability\": 0.4938,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Reports 1, 2, 4, and 5 mention Cardiomegaly.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Edema\",\n   \"classifier_probability\": 0.4858,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    4\n   ],\n   \"evidence_summary\": \"Reports 1, 2, and 4 mention Edema.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.17); Cardiomegaly (calibrated probability 0.49); Edema (calibrated probability 0.49)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Enlarged Cardiomediastinum\",\n   \"classifier_probability\": 0.1674,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"None of the retrieved reports mention Enlarged Cardiomediastinum.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"classifier_probability\": 0.4938,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Reports 1, 2, 4, and 5 mention Cardiomegaly.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Edema\",\n   \"classifier_probability\": 0.4858,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    4\n   ],\n   \"evidence_summary\": \"Reports 1, 2, and 4 mention Edema.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nC. DRAFT REPORT\nFINDINGS: Cardiomegaly and Edema are present.\nIMPRESSION: Cardiomegaly and Edema.\n\nReturn the JSON now."
+ }
+}

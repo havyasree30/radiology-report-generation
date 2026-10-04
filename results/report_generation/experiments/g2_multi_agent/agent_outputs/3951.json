@@ -1,0 +1,109 @@
+{
+ "uid": "3951",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Lung Lesion",
+    "classifier_probability": 0.6744,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   },
+   {
+    "finding": "Consolidation",
+    "classifier_probability": 0.1467,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   },
+   {
+    "finding": "Pneumonia",
+    "classifier_probability": 0.1137,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": []
+ },
+ "agent1_validation_flags": [
+  "agent1_omitted_classifier_finding",
+  "agent1_status_inconsistent_with_count",
+  "agent1_summary_replaced",
+  "agent1_unparseable"
+ ],
+ "agent2_draft": {
+  "findings": "Lung Lesion",
+  "impression": "Pneumonia",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Lung Lesion",
+  "impression": "Pneumonia",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"The classifier suggests a lung lesion, but no retrieved reports mention this.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [3, 4], \"evidence_summary\": \"Retrieved reports 3 and 4 mention consolidation, but the classifier does not.\", \"support_status\": \"partially_supported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 3, 4], \"evidence_summary\": \"Retrieved reports 1, 3, and 4 mention pneumonia, but the classifier does not.\", \"support_status\": \"partially_supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1], \"evidence_summary\": \"Report 1 mentions atelectasis, but the classifier does not.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Report 1 and 4 mention pleural effusion, but the classifier does not.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 3, 4], \"evidence_summary\": \"Retrieved reports 1, 3, and 4 mention lung opacity, but the classifier does not.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [4], \"evidence_summary\": \"Report 4 mentions edema as a possibility, but the classifier does not.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [3], \"evidence_summary\": \"Report 3 mentions atelectasis, but the classifier does not.\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 3, 4], \"evidence_summary\": \"Retrieved reports 1, 3, and 4 mention pneumonia, but the classifier does not.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 3, 4], \"evidence_summary\": \"Retrieved reports 1, 3, and 4 mention lung opacity, but the classifier does not.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1], \"evidence_summary\": \"Report 1 mentions atelectasis, but the classifier does not.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Report 1 and 4 mention pleural effusion, but the classifier does not.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 3, 4], \"evidence_summary\": \"Retrieved reports 1, 3, and 4 mention lung opacity, but the classifier does not.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [4], \"evidence_summary\": \"Report 4 mentions edema as a possibility, but the classifier does not.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1], \"evidence_summary\": \"Report 1 mentions atelectasis, but the classifier does not.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Report 1 and 4 mention pleural effusion, but the classifier does not.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 3, 4], \"evidence_summary\": \"Retrieved reports 1, 3, and 4 mention lung opacity, but the classifier does not.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [4], \"evidence_summary\": \"Report 4 mentions edema as a possibility, but the classifier does not.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1], \"evidence_summary\": \"Report 1 mentions atelectasis, but",
+ "agent2_raw_text": "{\n\"findings\": \"Lung Lesion\",\n\"impression\": \"Pneumonia\"\n}",
+ "agent3_raw_text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Lung Lesion\",\n\"impression\": \"Pneumonia\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "139685bb21326e61b93605b334fde0620ba6476dff5084ee2f08e624193dcc30",
+  "agent2_grounded_report_writer": "eb13b7011808b547fb112edc96e79133c8047fef557d2b56e9888c1bfd3aaf4d",
+  "agent3_grounding_critic": "86c9e57e8f0d36e11270198e86d1013425bbe4c087cc279ab80ef6ddd4abdb83"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "19d6f56aa3cf16020766c3ff721ede278687fa6538280745099ed85e5af81af6",
+  "agent2_grounded_report_writer": "fd646385193190e3a068961e0e864cae38e72344ae88d5372cec5c8cf7b2ddea",
+  "agent3_grounding_critic": "88ae6bcdeb3fcfd8a54f28676635029db1d86832d3c0a6649fdcef7f797989ee"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 21.95,
+  "agent2_grounded_report_writer": 3.35,
+  "agent3_grounding_critic": 4.04
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 900,
+  "agent2_grounded_report_writer": 22,
+  "agent3_grounding_critic": 45
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 823,
+  "agent2_grounded_report_writer": 1028,
+  "agent3_grounding_critic": 1040
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "length",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Lung Lesion (calibrated probability 0.67); Consolidation (calibrated probability 0.15); Pneumonia (calibrated probability 0.11)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: In the interval, consolidation and atelectasis have developed in the right lower lobe. Costophrenic blunted on the right. Left lung clear. Heart size normal.\nIMPRESSION: Left lower lobe airspace disease consistent with pneumonia. Associated right pleural effusion.\n[2]\nFINDINGS: The lungs are mildly hyperexpanded. There is no focal airspace consolidation to suggest pneumonia. No pleural effusion or pneumothorax. Normal heart size and mediastinal contour.\nIMPRESSION: No acute abnormality demonstrated.\n[3]\nFINDINGS: Consolidation is developing in the left lower lobe. A patchy infiltrate is also present in the right lower lobe. Heart size is normal.\nIMPRESSION: Bibasilar pneumonia.\n[4]\nFINDINGS: (not available)\nIMPRESSION: 1. Patchy bilateral opacities, primarily in the lung bases, whose features are most consistent with pneumonia. Aspiration or edema are also possible but less. 2. lung volumes 3. No pneumothorax\n[5]\nFINDINGS: (not available)\nIMPRESSION: Heart size, mediastinal silhouette, pulmonary vascularity are within normal limits. There is no focal air space consolidation to suggest acute pneumonia or active tuberculous infection. No pleural effusion or pneumothorax.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Lesion (calibrated probability 0.67); Consolidation (calibrated probability 0.15); Pneumonia (calibrated probability 0.11)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Lesion\",\n   \"classifier_probability\": 0.6744,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Consolidation\",\n   \"classifier_probability\": 0.1467,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Pneumonia\",\n   \"classifier_probability\": 0.1137,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Lesion (calibrated probability 0.67); Consolidation (calibrated probability 0.15); Pneumonia (calibrated probability 0.11)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Lesion\",\n   \"classifier_probability\": 0.6744,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Consolidation\",\n   \"classifier_probability\": 0.1467,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Pneumonia\",\n   \"classifier_probability\": 0.1137,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nC. DRAFT REPORT\nFINDINGS: Lung Lesion\nIMPRESSION: Pneumonia\n\nReturn the JSON now."
+ }
+}

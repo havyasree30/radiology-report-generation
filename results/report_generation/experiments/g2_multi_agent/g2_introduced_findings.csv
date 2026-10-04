@@ -1,0 +1,6 @@
+system,"introduced_findings_(stated, not classifier positive)",introduced_reference_supported,introduced_unsupported,share_supported,introduced_also_in_retrieved_reports_(retrieval-derived),retrieval_derived_reference_supported,retrieval_derived_unsupported,retrieval_derived_share_supported,stated_findings_total
+B0_rule_based,0,0,0,,0,0,0,,354
+G1A_llm_no_retrieval,219,3,216,0.013698630136986301,5,2,3,0.40000000000000002,418
+G1_single_agent_rag,68,18,50,0.26470588235294118,66,18,48,0.27272727272727271,248
+G2_agent2_draft_pre_critic,17,7,10,0.41176470588235292,13,7,6,0.53846153846153844,325
+G2_multi_agent_rag,17,7,10,0.41176470588235292,13,7,6,0.53846153846153844,323

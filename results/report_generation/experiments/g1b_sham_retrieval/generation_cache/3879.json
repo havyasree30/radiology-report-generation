@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "00e81f5656c142ddfa9521aacf4dde6e408a43930c760d03763667aabe41b862",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is normal in size and configuration. The pulmonary vasculature is within normal limits. The lungs are well-aerated. No focal consolidation, pleural effusion, or pneumothorax is identified.\nIMPRESSION:\nNo acute cardiopulmonary disease.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1187,
+ "output_tokens": 70,
+ "total_duration_ns": 2117221100,
+ "load_duration_ns": 4443600,
+ "attempts": 1,
+ "wall_seconds": 4.17,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:44:15+00:00"
+}

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "c6d3469fe34b3b28992718de6590b374924c43e4c64d5d0b437fdb0843d4adcb",
+ "text": "FINDINGS:\nThe lungs are clear. No pneumothorax or pleural effusion is identified. A fracture of the right 10th rib is noted.\nIMPRESSION:\nNo acute cardiopulmonary findings.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1457,
+ "output_tokens": 45,
+ "total_duration_ns": 1628486200,
+ "load_duration_ns": 10263800,
+ "attempts": 1,
+ "wall_seconds": 3.67,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:07:08+00:00"
+}

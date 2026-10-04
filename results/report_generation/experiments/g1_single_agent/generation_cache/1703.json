@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "cb55241790326f7f2ae90bc9fe80a538286c29d4ab6ceae215d0e5220944c779",
+ "text": "FINDINGS:\nThere is a focal opacity in the left lung base. The cardiomediastinal silhouette is within normal limits. No pneumothorax or pleural effusion is identified.\nIMPRESSION:\nLeft lung base opacity, possibly representing atelectasis. Clinical correlation is recommended.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1231,
+ "output_tokens": 60,
+ "total_duration_ns": 2291447300,
+ "load_duration_ns": 83554200,
+ "attempts": 1,
+ "wall_seconds": 4.35,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T10:30:59+00:00"
+}

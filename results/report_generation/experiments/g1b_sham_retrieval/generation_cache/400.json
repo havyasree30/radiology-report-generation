@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "f5e6fd8d706548280fd02119817e678433b7b9aeb42e379878e403548f6acd77",
+ "text": "FINDINGS:\nHeart size is within normal limits. Lung volumes are low. There is mild streaky bibasilar opacity. No pleural effusion or pneumothorax is identified.\nIMPRESSION:\nLow lung volumes with mild bibasilar atelectasis. No acute cardiopulmonary process identified.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1276,
+ "output_tokens": 62,
+ "total_duration_ns": 1822784300,
+ "load_duration_ns": 3294100,
+ "attempts": 1,
+ "wall_seconds": 3.86,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:15:59+00:00"
+}

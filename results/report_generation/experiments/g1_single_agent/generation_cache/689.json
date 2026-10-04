@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "a518b8c5f45f113d07fa40a0f97ea9548b43aa51320057f0b857f4efe06b0034",
+ "text": "FINDINGS:\nThere is a patchy opacity in the left lung base.\nIMPRESSION:\nThe left lung opacity is most consistent with atelectasis or infiltrate. Clinical correlation is recommended.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1203,
+ "output_tokens": 41,
+ "total_duration_ns": 1607527600,
+ "load_duration_ns": 9086100,
+ "attempts": 1,
+ "wall_seconds": 3.64,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T10:22:36+00:00"
+}

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "abc20ff39579c16f96e7976d9f0ad3f8b04a978175bb875305eda04e932e847e",
+ "text": "FINDINGS:\nThere is a focal opacity in the right lung base.\nIMPRESSION:\nAbnormal opacity in the right lung base which may be compatible with pneumonia in the appropriate clinical setting.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1276,
+ "output_tokens": 42,
+ "total_duration_ns": 3213376900,
+ "load_duration_ns": 3642500,
+ "attempts": 1,
+ "wall_seconds": 5.24,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T10:48:11+00:00"
+}

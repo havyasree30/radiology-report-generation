@@ -1,0 +1,108 @@
+{
+ "uid": "744",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Pneumothorax",
+    "classifier_probability": 0.5181,
+    "retrieval_support_count": 4,
+    "supporting_retrieved_report_ranks": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "evidence_summary": "Retrieved reports mention a pneumothorax.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Support Devices",
+    "classifier_probability": 0.5494,
+    "retrieval_support_count": 1,
+    "supporting_retrieved_report_ranks": [
+     5
+    ],
+    "evidence_summary": "Retrieved reports mention support devices.",
+    "support_status": "partially_supported",
+    "agent_stated_status": "supported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   1,
+   4,
+   5
+  ]
+ },
+ "agent1_validation_flags": [
+  "agent1_status_inconsistent_with_count"
+ ],
+ "agent2_draft": {
+  "findings": "Pneumothorax is possible. Support Devices are possible.",
+  "impression": "Pneumothorax and Support Devices are present.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Pneumothorax is possible. Support Devices are possible.",
+  "impression": "Pneumothorax and Support Devices are present.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention a pneumothorax.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [5], \"evidence_summary\": \"Retrieved reports mention support devices.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung opacity.\"}\n  ],\n  \"normal_report_ranks\": [\n    1, 4, 5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Pneumothorax is possible. Support Devices are possible.\",\n\"impression\": \"Pneumothorax and Support Devices are present.\"\n}",
+ "agent3_raw_text": "{\"issues_detected\": [\"unsupported_finding_stated\"], \"decision\": \"REVISE\", \"findings\": \"Pneumothorax is possible. Support Devices are possible.\", \"impression\": \"Pneumothorax and Support Devices are present.\"}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "872badd335d5e86182b1abdc7c655cd457f6fca32fbf3d910fa1cdf177d0b2d3",
+  "agent2_grounded_report_writer": "e3ee9ea063a2c6d7fefcad272f9b639bcf935ce75e69a218a488072c3cb9dc98",
+  "agent3_grounding_critic": "90728178aac0f44582b7524c08736e15168fd0fa08befa89473eb886f829d92e"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "f15d8cf803ba0d37f3debf500ec2edb1913d795019840cccf0227861da3a82c4",
+  "agent2_grounded_report_writer": "3db7ad6b8a61ccae17741b41f7bd2a191c11f75a1fdb3d6d6d9ae4e618918599",
+  "agent3_grounding_critic": "4dbc578e08fb93888f4e3211f0db6001beea4a30f966001422a7605edb59b587"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 6.15,
+  "agent2_grounded_report_writer": 3.24,
+  "agent3_grounding_critic": 3.61
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 174,
+  "agent2_grounded_report_writer": 36,
+  "agent3_grounding_critic": 53
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 776,
+  "agent2_grounded_report_writer": 972,
+  "agent3_grounding_critic": 999
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Pneumothorax (calibrated probability 0.52); Support Devices (calibrated probability 0.55)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: (not available)\nIMPRESSION: No pneumothorax or effusion. No pneumonia. Heart size normal. Lungs clear\n[2]\nFINDINGS: Small 3.3 mm right-sided pneumothorax only visible on the left lateral decubitus film. Left lung is clear. Normal cardiac contour. No evidence of pleural effusion.\nIMPRESSION: 1. Small 3.3 mm right-sided pneumothorax.\n[3]\nFINDINGS: (not available)\nIMPRESSION: Stable 1 cm right apical pneumothorax. Minimal atelectasis left base. Heart size normal\n[4]\nFINDINGS: No pneumothorax. Heart size is normal. No large pleural effusions. No focal airspace consolidation.\nIMPRESSION: No acute cardiopulmonary abnormalities.\n[5]\nFINDINGS: There is a stable closure device projected over the heart. The heart and mediastinum are otherwise normal. There is stable scarring of left mid lung. The lungs are otherwise clear. There is no infiltrate, effusion, mass or pneumothorax.\nIMPRESSION: Stable appearance of the chest\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Pneumothorax (calibrated probability 0.52); Support Devices (calibrated probability 0.55)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Pneumothorax\",\n   \"classifier_probability\": 0.5181,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention a pneumothorax.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Support Devices\",\n   \"classifier_probability\": 0.5494,\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention support devices.\",\n   \"support_status\": \"partially_supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  4,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Pneumothorax (calibrated probability 0.52); Support Devices (calibrated probability 0.55)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Pneumothorax\",\n   \"classifier_probability\": 0.5181,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention a pneumothorax.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Support Devices\",\n   \"classifier_probability\": 0.5494,\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention support devices.\",\n   \"support_status\": \"partially_supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  4,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Pneumothorax is possible. Support Devices are possible.\nIMPRESSION: Pneumothorax and Support Devices are present.\n\nReturn the JSON now."
+ }
+}

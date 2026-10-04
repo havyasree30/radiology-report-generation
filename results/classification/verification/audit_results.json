@@ -1,0 +1,358 @@
+{
+  "1_checkpoint": {
+    "path": "results\\classification\\densenet121_baseline\\checkpoints\\best.pt",
+    "size_bytes": 28439162,
+    "sha256": "e1c3898936cd51202544819542da8b51b205e0a88459cbff9639a99509f37e6e",
+    "architecture": "densenet121",
+    "classifier_weight_shape": [
+      14,
+      1024
+    ],
+    "state_dict_loads_strict_into_torchvision_densenet121": true,
+    "label_order_matches_expected": true,
+    "best_epoch_meta": 5,
+    "best_epoch_history_argmax": 5,
+    "selection_metric": "val_macro_auroc",
+    "selection_metric_value_meta": 0.8037923325159262,
+    "selection_metric_value_history": 0.8037923325159262,
+    "meta_json_matches_embedded_meta": true,
+    "selected_as": "best",
+    "subset": null,
+    "git_commit": "0304f4271967689dcc91a201665c38572c720991",
+    "label_policy_matches_config": true,
+    "loss_matches_config": true,
+    "preprocessing_matches_config": true,
+    "git_working_tree_dirty_at_training": true,
+    "status": "WARNING"
+  },
+  "2_validation_population": {
+    "val_patients_all_views": 9531,
+    "val_studies_all_views": 28110,
+    "val_images_before_filtering": 33512,
+    "val_images_frontal": 28672,
+    "val_excluded": [
+      "CheXpert-v1.0-small/train/patient44163/study1/view1_frontal.jpg"
+    ],
+    "val_exclusion_reasons": [
+      "near_blank"
+    ],
+    "val_images_expected_after_exclusion": 28671,
+    "prediction_rows": 28671,
+    "prediction_rows_equal_expected": true,
+    "prediction_paths_equal_expected_set": true,
+    "duplicate_prediction_paths": 0,
+    "evaluated_patients": 9530,
+    "evaluated_studies": 28109,
+    "train_val_patient_overlap": 0,
+    "status": "VERIFIED"
+  },
+  "3_locked_test_audit": {
+    "training_used_test": {
+      "status": "PASS",
+      "evidence": "run recorded train_images=133644 = manifest train frontal minus exclusions; 0 of those paths are in the test split"
+    },
+    "early_stopping_and_checkpoint_selection_used_test": {
+      "status": "PASS",
+      "evidence": "monitor=val_macro_auroc computed on data.val_split='val'"
+    },
+    "threshold_optimisation_used_test": {
+      "status": "PASS",
+      "evidence": "threshold provenance source_split=val, n_images=28671 = validation prediction rows; prediction paths contain 0 test images"
+    },
+    "preprocessing_selection_used_test": {
+      "status": "PASS",
+      "evidence": "preprocessing fixed a priori in config; no preprocessing search was run"
+    },
+    "class_weights_used_test": {
+      "status": "PASS",
+      "evidence": "train_pos_weights.csv counts exactly equal counts recomputed from the TRAIN split frontal images (n=133644)"
+    },
+    "calibration_used_test": {
+      "status": "PASS",
+      "evidence": "no calibration step exists in the pipeline"
+    },
+    "hyperparameter_tuning_used_test": {
+      "status": "PASS",
+      "evidence": "single run with config-fixed hyperparameters; no search"
+    },
+    "code_never_unlocks_test": {
+      "status": "PASS",
+      "evidence": "allow_locked=True occurrences: {'src/classification/trainer.py': 0, 'scripts/train_classifier.py': 0, 'scripts/evaluate_classifier.py': 0, 'scripts/infer_classifier.py': 0, 'scripts/analyze_operating_points.py': 0, 'src/classification/dataset.py': 0}"
+    },
+    "validation_labels_not_used_in_training": {
+      "status": "PASS",
+      "evidence": "training label counts match the train split only; train and validation share 0 patients"
+    },
+    "test_patients_in_validation_predictions": 0
+  },
+  "4_prediction_integrity": {
+    "any_nan": 0,
+    "any_inf": 0,
+    "any_out_of_range": 0,
+    "collapsed_classes": [],
+    "rows_with_identical_14_vectors": 5,
+    "identical_vector_paths": [
+      "CheXpert-v1.0-small/train/patient14746/study1/view1_frontal.jpg",
+      "CheXpert-v1.0-small/train/patient14746/study2/view1_frontal.jpg",
+      "CheXpert-v1.0-small/train/patient15959/study8/view1_frontal.jpg",
+      "CheXpert-v1.0-small/train/patient15959/study9/view1_frontal.jpg",
+      "CheXpert-v1.0-small/train/patient16563/study13/view1_frontal.jpg",
+      "CheXpert-v1.0-small/train/patient16563/study13/view2_frontal.jpg",
+      "CheXpert-v1.0-small/train/patient41910/study3/view1_frontal.jpg",
+      "CheXpert-v1.0-small/train/patient41910/study4/view1_frontal.jpg",
+      "CheXpert-v1.0-small/train/patient46046/study7/view1_frontal.jpg",
+      "CheXpert-v1.0-small/train/patient46046/study7/view2_frontal.jpg"
+    ],
+    "identical_vectors_all_byte_identical_images_from_phase1": true,
+    "sum_of_14_probabilities": {
+      "min": 1.2239151376415975,
+      "q1": 2.7819370928336866,
+      "median": 3.3489992944523688,
+      "mean": 3.3218357668377587,
+      "q3": 3.8845515104476362,
+      "max": 5.588611765298992,
+      "share_within_0.05_of_1": 0.0
+    },
+    "all_zero_rows": 0,
+    "all_one_rows": 0,
+    "status": "VERIFIED"
+  },
+  "5_metric_recomputation": {
+    "ground_truth_reread_from_source_csv_identical_to_saved_labels_and_masks": true,
+    "max_abs_diff_any_metric": 5.551115123125783e-17,
+    "supports_match": true,
+    "overall": [
+      {
+        "metric": "macro_auroc",
+        "saved": 0.8037923325159262,
+        "recomputed": 0.8037923325159262,
+        "abs_diff": 0.0
+      },
+      {
+        "metric": "micro_auroc",
+        "saved": 0.8916017872786405,
+        "recomputed": 0.8916017872786405,
+        "abs_diff": 0.0
+      },
+      {
+        "metric": "macro_auprc",
+        "saved": 0.4236865083205735,
+        "recomputed": 0.4236865083205735,
+        "abs_diff": 0.0
+      },
+      {
+        "metric": "micro_auprc",
+        "saved": 0.6708725125414794,
+        "recomputed": 0.6708725125414794,
+        "abs_diff": 0.0
+      },
+      {
+        "metric": "competition5_macro_auroc",
+        "saved": 0.8143725381244582,
+        "recomputed": 0.8143725381244582,
+        "abs_diff": 0.0
+      },
+      {
+        "metric": "best_epoch_val_macro_auroc_history",
+        "saved": 0.8037923325159262,
+        "recomputed": 0.8037923325159262,
+        "abs_diff": 0.0
+      }
+    ],
+    "status": "VERIFIED"
+  },
+  "6_prevalence_baseline": {
+    "auprc_over_prevalence": {
+      "No Finding": 5.4387808745579544,
+      "Enlarged Cardiomediastinum": 2.811323303376659,
+      "Cardiomegaly": 4.506368026807786,
+      "Lung Opacity": 1.4060284835068728,
+      "Lung Lesion": 5.183036577259687,
+      "Edema": 2.4561700588827176,
+      "Consolidation": 2.612772813041977,
+      "Pneumonia": 4.774820654387378,
+      "Atelectasis": 1.9199435768915196,
+      "Pneumothorax": 5.352568343185967,
+      "Pleural Effusion": 1.9788999922399557,
+      "Pleural Other": 6.183018571654438,
+      "Fracture": 4.924475896487925,
+      "Support Devices": 1.538283404812171
+    },
+    "classes_below_3x_prevalence": [
+      "Enlarged Cardiomediastinum",
+      "Lung Opacity",
+      "Edema",
+      "Consolidation",
+      "Atelectasis",
+      "Pleural Effusion",
+      "Support Devices"
+    ],
+    "status": "WARNING"
+  },
+  "7_roc": {
+    "undefined_classes": [],
+    "max_abs_diff_sklearn_vs_trapezoid": 0.0,
+    "all_curves_valid": true,
+    "status": "VERIFIED"
+  },
+  "8_pr": {
+    "definition_used_by_pipeline": "sklearn.metrics.average_precision_score (step-wise AP, no interpolation)",
+    "max_abs_diff_sklearn_vs_manual_stepwise_ap": 2.220446049250313e-16,
+    "trapezoid_minus_ap_range": [
+      -0.0012864018556941331,
+      1.142959162814261e-05
+    ],
+    "status": "VERIFIED"
+  },
+  "9_youden": {
+    "from_saved_csv": {
+      "max_threshold_abs_diff": 8.326672684688674e-17,
+      "max_youden_j_abs_diff": 0.0,
+      "max_sensitivity_abs_diff": 0.002624671916010568,
+      "max_specificity_abs_diff": 0.0005876131155246878
+    },
+    "source_split": "val",
+    "status": "VERIFIED"
+  },
+  "10_confusion": {
+    "all_identities_hold": true,
+    "status": "VERIFIED"
+  },
+  "11_threshold_sanity": {
+    "flags": {
+      "below_0.10": {
+        "Pleural Other": 0.0329,
+        "Fracture": 0.0554
+      },
+      "above_0.90": {},
+      "non_finite": [],
+      "le_0_or_ge_1": [],
+      "positive_support_below_500": [
+        "Pleural Other"
+      ]
+    },
+    "status": "WARNING"
+  },
+  "13_macro_micro": {
+    "macro_auroc": 0.8037923325159262,
+    "micro_auroc": 0.8916017872786405,
+    "macro_auprc": 0.4236865083205735,
+    "micro_auprc": 0.6708725125414794,
+    "four_most_common": [
+      "Support Devices",
+      "Lung Opacity",
+      "Pleural Effusion",
+      "Edema"
+    ],
+    "share_of_valid_positives_from_4_most_common": 0.7138453933499077,
+    "micro_auroc_without_4_most_common": 0.8389538640840554,
+    "micro_auprc_without_4_most_common": 0.3698833226206161,
+    "micro_auroc_pooled_all_labels_mixes_between_class_prevalence": true
+  },
+  "14_training_history": {
+    "best_epoch": 5,
+    "val_loss_min_epoch": 2,
+    "train_loss_monotone_decreasing": true,
+    "max_abs_epoch_to_epoch_macro_auroc_change": 0.01341873696423812,
+    "lr_by_epoch": {
+      "1": 0.0001,
+      "2": 0.0001,
+      "3": 0.0001,
+      "4": 0.0001,
+      "5": 1e-05,
+      "6": 1e-05,
+      "7": 1e-05,
+      "8": 1.0000000000000002e-06
+    },
+    "grad_norm_max_by_epoch": {
+      "1": 4.779468536376953,
+      "2": 1.949213981628418,
+      "3": 2.0317063331604004,
+      "4": 2.0589025020599365,
+      "5": 2.24692702293396,
+      "6": 2.7027876377105717,
+      "7": 2.663628578186035,
+      "8": 2.8500871658325195
+    },
+    "amp_skipped_steps_total": 12,
+    "best_epoch_from_training_summary": 5,
+    "training_summary_stopped_early": false
+  },
+  "15_leakage": {
+    "train_val_patient_overlap": 0,
+    "train_val_split_group_overlap": 0,
+    "train_val_path_overlap": 0,
+    "exact_duplicate_groups_crossing_splits": 0,
+    "exact_duplicate_groups_checked": 22,
+    "cross_patient_links_crossing_splits": 0,
+    "cross_patient_links_checked": 4,
+    "prediction_paths_all_in_val_split": true,
+    "sampled_prediction_paths_resolve_on_disk": true,
+    "status": "VERIFIED"
+  },
+  "17_distributions": {
+    "overlap_threshold_definition": "histogram overlap coefficient >= 0.5 (50 bins; descriptive)",
+    "substantial_overlap": [
+      "Enlarged Cardiomediastinum",
+      "Lung Opacity",
+      "Lung Lesion",
+      "Consolidation",
+      "Pneumonia",
+      "Atelectasis",
+      "Pleural Other",
+      "Fracture"
+    ]
+  },
+  "20_21_findings_query": {
+    "all_checks_pass": true,
+    "synthetic_no_positive": {
+      "source": "SYNTHETIC vector (each probability = 0.5 x its threshold); no validation image has zero positives",
+      "positive_findings_empty": true,
+      "query_mode": "no_positive_findings",
+      "query_text": "Chest radiograph without any classifier finding above its operating threshold.",
+      "does_not_claim_normal": true,
+      "highest_probability_not_forced_positive": true
+    },
+    "validation_images_with_zero_predicted_positives": 0,
+    "status": "VERIFIED"
+  },
+  "22_consistency": {
+    "artifact_cross_checks": {
+      "history_best_epoch == meta epoch == summary best_epoch == threshold provenance epoch": true,
+      "summary_metrics n_images == prediction rows": true,
+      "threshold file label order == expected": true,
+      "experiment config.yaml == configs/classifier/densenet121.yaml": true,
+      "per_class_metrics thresholds == threshold file (|diff| < 1e-15)": true
+    },
+    "documentation_issues": [
+      "BASELINE_ANALYSIS epoch 6 LR column: doc '1e-5 \u2192 1e-6' vs history '1e-5'",
+      "BASELINE_ANALYSIS epoch 7 LR column: doc '1e-6' vs history '1e-5 \u2192 1e-6'"
+    ],
+    "status": "WARNING"
+  },
+  "9b_threshold_precision": {
+    "csv_float_digits_written": "16 significant digits (pandas default); exact float64 round trip needs 17",
+    "thresholds_bitexact_on_inmemory_probs": true,
+    "max_sens_diff_exact_vs_stored": 0.0,
+    "max_spec_diff_exact_vs_stored": 1.1102230246251565e-16,
+    "ties_exactly_at_threshold_total": 77,
+    "status_flips_csv_vs_exact_total": 69,
+    "status": "WARNING"
+  },
+  "23b_fp32_vs_fp16": {
+    "n_images": 512,
+    "selection": "every k-th validation image (deterministic)",
+    "max_abs_prob_diff": 0.005303442478179932,
+    "median_abs_prob_diff": 0.00018579885363578796,
+    "status_flips": 5,
+    "label_decisions": 7168
+  },
+  "23_reproducibility": {
+    "max_abs_diff_run1_vs_run2": 0.0,
+    "status_flips_run1_vs_run2": 0,
+    "max_abs_diff_run1_vs_saved": 1.1102230246251565e-16,
+    "status_flips_run1_vs_saved": 72,
+    "macro_auroc_run1": 0.8037923325159262,
+    "status": "WARNING"
+  }
+}

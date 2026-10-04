@@ -1,0 +1,167 @@
+{
+ "uid": "436",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Lung Opacity",
+    "classifier_probability": 0.7391,
+    "retrieval_support_count": 5,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "evidence_summary": "The classifier indicates Lung Opacity is likely present. Reports 1, 2, 3, 4, and 5 mention various lung opacities.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Consolidation",
+    "classifier_probability": 0.2466,
+    "retrieval_support_count": 3,
+    "supporting_retrieved_report_ranks": [
+     1,
+     3,
+     5
+    ],
+    "evidence_summary": "The classifier indicates Consolidation is likely present. Reports 1, 3, and 5 mention consolidation.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Pneumonia",
+    "classifier_probability": 0.1137,
+    "retrieval_support_count": 2,
+    "supporting_retrieved_report_ranks": [
+     1,
+     5
+    ],
+    "evidence_summary": "The classifier indicates Pneumonia is likely present. Reports 1 and 5 mention pneumonia.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Atelectasis",
+    "classifier_probability": 0.2173,
+    "retrieval_support_count": 3,
+    "supporting_retrieved_report_ranks": [
+     2,
+     3,
+     5
+    ],
+    "evidence_summary": "The classifier indicates Atelectasis is likely present. Reports 2, 3, and 5 mention atelectasis.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Pleural Effusion",
+    "classifier_probability": 0.4121,
+    "retrieval_support_count": 5,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "evidence_summary": "The classifier indicates Pleural Effusion is likely present. Reports 1, 2, 3, 4, and 5 mention pleural effusion.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Fracture",
+    "classifier_probability": 0.1561,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "The classifier indicates Fracture is likely present. No retrieved reports mention fracture.",
+    "support_status": "unsupported",
+    "agent_stated_status": "unsupported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "agent1_validation_flags": [],
+ "agent2_draft": {
+  "findings": "Lung Opacity, Consolidation, Pneumonia, Atelectasis, and Pleural Effusion are likely present. Fracture is possible.",
+  "impression": "Multiple lung abnormalities are present.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated",
+   "missed_strongly_supported_finding",
+   "no_finding_contradiction",
+   "abnormal_to_normal_collapse",
+   "invented_measurement_history_or_comparison",
+   "excessive_certainty",
+   "duplication_or_repetition",
+   "malformed_structure"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Lung Opacity, Consolidation, Pneumonia, Atelectasis, and Pleural Effusion are likely present. Fracture is possible.",
+  "impression": "Multiple lung abnormalities are present.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"The classifier indicates Lung Opacity is likely present. Reports 1, 2, 3, 4, and 5 mention various lung opacities.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"The classifier indicates Consolidation is likely present. Reports 1, 3, and 5 mention consolidation.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 5], \"evidence_summary\": \"The classifier indicates Pneumonia is likely present. Reports 1 and 5 mention pneumonia.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [2, 3, 5], \"evidence_summary\": \"The classifier indicates Atelectasis is likely present. Reports 2, 3, and 5 mention atelectasis.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"The classifier indicates Pleural Effusion is likely present. Reports 1, 2, 3, 4, and 5 mention pleural effusion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"The classifier indicates Fracture is likely present. No retrieved reports mention fracture.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"The classifier indicates Enlarged Cardiomediastinum is likely present. No retrieved reports mention enlarged cardiomediastinum.\"}\n  ],\n  \"normal_report_ranks\": [\n    1, 2, 3, 4, 5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Lung Opacity, Consolidation, Pneumonia, Atelectasis, and Pleural Effusion are likely present. Fracture is possible.\",\n\"impression\": \"Multiple lung abnormalities are present.\"\n}",
+ "agent3_raw_text": "{\n \"issues_detected\": [\n  \"unsupported_finding_stated\",\n  \"missed_strongly_supported_finding\",\n  \"no_finding_contradiction\",\n  \"abnormal_to_normal_collapse\",\n  \"invented_measurement_history_or_comparison\",\n  \"excessive_certainty\",\n  \"duplication_or_repetition\",\n  \"malformed_structure\"\n ],\n \"decision\": \"REVISE\",\n \"findings\": \"Lung Opacity, Consolidation, Pneumonia, Atelectasis, and Pleural Effusion are likely present. Fracture is possible.\",\n \"impression\": \"Multiple lung abnormalities are present.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "cfa0effda8584b7a87e270bc0cb4932fa7de44489bd0f6069f0235bf9bba8a7f",
+  "agent2_grounded_report_writer": "d949f9a6e92a09fe44fd4bd5fcf2968ec4e0ed966d17da83054e29d845dfd650",
+  "agent3_grounding_critic": "e71309fe2884fd0a20ecfc80e1049139e7d56cf9f39fd1ee0280eac2f9e2dd94"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "32f398fecdbbd650a3aca128515f3826d1bf148dd295c64eb5cb7e71ef6baec4",
+  "agent2_grounded_report_writer": "e47e567bd6bce563abf135b5a919a29bf80091651eaae10356884c1bdcb11db3",
+  "agent3_grounding_critic": "be56d31e9739897dfe69840143c9dc3a8b8e142a4c8a237858124442d714b37a"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 13.43,
+  "agent2_grounded_report_writer": 3.89,
+  "agent3_grounding_critic": 6.12
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 492,
+  "agent2_grounded_report_writer": 47,
+  "agent3_grounding_critic": 151
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 945,
+  "agent2_grounded_report_writer": 1518,
+  "agent3_grounding_critic": 1558
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Lung Opacity (calibrated probability 0.74); Consolidation (calibrated probability 0.25); Pneumonia (calibrated probability 0.11); Atelectasis (calibrated probability 0.22); Pleural Effusion (calibrated probability 0.41); Fracture (calibrated probability 0.16)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: Low lung volumes. Question patchy opacity left base. No pneumothorax. Osseous structures intact. Small right effusion.\nIMPRESSION: 1. Patchy opacity left base, may represent evolving infiltrate. 2. Small right pleural effusion..\n[2]\nFINDINGS: Heart size moderately enlarged, stable mediastinal contours. opacity in the left lung base. Otherwise, no focal alveolar consolidation, no definite pleural effusion seen. No typical findings of pulmonary edema.\nIMPRESSION: 1. Cardiomegaly 2. opacity in the left base atelectasis\n[3]\nFINDINGS: Right middle lobe opacity is present. The cardiac silhouette and mediastinal contours are within normal limits. There is no pneumothorax. No large pleural effusion.\nIMPRESSION: Right middle lobe opacity which may represent a focal area of consolidation or atelectasis.\n[4]\nFINDINGS: Large left lower lobe opacity is present. There does not appear to be significant mediastinal shift. There is no pneumothorax. The cardiac silhouette is not definitively identified and not fully evaluated. The mediastinal contours are unremarkable.\nIMPRESSION: Large left lower lobe opacity represents a large layering pleural effusion. Right lung is clear.\n[5]\nFINDINGS: Frontal and lateral views of the chest show an unchanged cardiomediastinal silhouette. There is airspace opacity in the mid right lung radiating from the right hilum to the pleura and bordered inferiorly by the fissures. The fissure is convex upward. There is right base patchy airspace opacity. This appears chronic and may be due to scarring. There is no significant pleural effusion.\nIMPRESSION: Right upper lobe airspace consolidation Please correlate clinically for pneumonia.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Opacity (calibrated probability 0.74); Consolidation (calibrated probability 0.25); Pneumonia (calibrated probability 0.11); Atelectasis (calibrated probability 0.22); Pleural Effusion (calibrated probability 0.41); Fracture (calibrated probability 0.16)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.7391,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"The classifier indicates Lung Opacity is likely present. Reports 1, 2, 3, 4, and 5 mention various lung opacities.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Consolidation\",\n   \"classifier_probability\": 0.2466,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    3,\n    5\n   ],\n   \"evidence_summary\": \"The classifier indicates Consolidation is likely present. Reports 1, 3, and 5 mention consolidation.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pneumonia\",\n   \"classifier_probability\": 0.1137,\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    5\n   ],\n   \"evidence_summary\": \"The classifier indicates Pneumonia is likely present. Reports 1 and 5 mention pneumonia.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Atelectasis\",\n   \"classifier_probability\": 0.2173,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    2,\n    3,\n    5\n   ],\n   \"evidence_summary\": \"The classifier indicates Atelectasis is likely present. Reports 2, 3, and 5 mention atelectasis.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"classifier_probability\": 0.4121,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"The classifier indicates Pleural Effusion is likely present. Reports 1, 2, 3, 4, and 5 mention pleural effusion.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.1561,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"The classifier indicates Fracture is likely present. No retrieved reports mention fracture.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  3,\n  4,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Opacity (calibrated probability 0.74); Consolidation (calibrated probability 0.25); Pneumonia (calibrated probability 0.11); Atelectasis (calibrated probability 0.22); Pleural Effusion (calibrated probability 0.41); Fracture (calibrated probability 0.16)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.7391,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"The classifier indicates Lung Opacity is likely present. Reports 1, 2, 3, 4, and 5 mention various lung opacities.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Consolidation\",\n   \"classifier_probability\": 0.2466,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    3,\n    5\n   ],\n   \"evidence_summary\": \"The classifier indicates Consolidation is likely present. Reports 1, 3, and 5 mention consolidation.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pneumonia\",\n   \"classifier_probability\": 0.1137,\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    5\n   ],\n   \"evidence_summary\": \"The classifier indicates Pneumonia is likely present. Reports 1 and 5 mention pneumonia.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Atelectasis\",\n   \"classifier_probability\": 0.2173,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    2,\n    3,\n    5\n   ],\n   \"evidence_summary\": \"The classifier indicates Atelectasis is likely present. Reports 2, 3, and 5 mention atelectasis.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"classifier_probability\": 0.4121,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"The classifier indicates Pleural Effusion is likely present. Reports 1, 2, 3, 4, and 5 mention pleural effusion.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.1561,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"The classifier indicates Fracture is likely present. No retrieved reports mention fracture.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  3,\n  4,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Lung Opacity, Consolidation, Pneumonia, Atelectasis, and Pleural Effusion are likely present. Fracture is possible.\nIMPRESSION: Multiple lung abnormalities are present.\n\nReturn the JSON now."
+ }
+}

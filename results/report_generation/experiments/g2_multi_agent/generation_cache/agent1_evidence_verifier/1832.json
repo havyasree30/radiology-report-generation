@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "6b1f54b2f46ee5a95da8b68d4ed8e11998d1363d6c7f157a3503285b633bc934",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Retrieved reports mention cardiomegaly.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2], \"evidence_summary\": \"Retrieved reports mention opacity in the left lung base and nodular opacities.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [2, 3, 4], \"evidence_summary\": \"Retrieved reports mention interstitial pulmonary edema.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [2, 4], \"evidence_summary\": \"Retrieved reports mention posterior effusion and pleural effusion.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions fracture.\"}\n  ],\n  \"normal_report_ranks\": [\n    5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 948,
+ "output_tokens": 272,
+ "total_duration_ns": 17696206600,
+ "load_duration_ns": 26832300,
+ "attempts": 1,
+ "wall_seconds": 19.76,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:11:41+00:00",
+ "agent": "agent1_evidence_verifier"
+}

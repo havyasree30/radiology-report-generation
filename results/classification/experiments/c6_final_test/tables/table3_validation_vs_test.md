@@ -1,0 +1,14 @@
+| Metric | Validation | Locked test | Test - validation |
+|---|---:|---:|---:|
+| macro auroc | 0.8011 | 0.8026 | +0.0014 |
+| micro auroc | 0.8922 | 0.8932 | +0.0010 |
+| macro auprc | 0.4235 | 0.4269 | +0.0034 |
+| micro auprc | 0.6674 | 0.6720 | +0.0046 |
+| macro precision | 0.3985 | 0.3992 | +0.0007 |
+| macro recall | 0.5354 | 0.5352 | -0.0002 |
+| macro specificity | 0.8374 | 0.8374 | +0.0000 |
+| macro f1 | 0.4495 | 0.4500 | +0.0005 |
+| macro balanced accuracy | 0.6864 | 0.6863 | -0.0001 |
+| macro brier | 0.0839 | 0.0837 | -0.0002 |
+| macro log loss | 0.2774 | 0.2768 | -0.0006 |
+| macro ece | 0.0056 | 0.0069 | +0.0013 |

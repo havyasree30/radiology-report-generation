@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "732ac35c4aae4f35eeb7508c530228932dd4f06eb046c22fd11f730c7712baae",
+ "text": "FINDINGS:\nPulmonary opacity is seen in the left lung base.\nIMPRESSION:\nPossible atelectasis or pneumonia in the left lung base.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1398,
+ "output_tokens": 34,
+ "total_duration_ns": 1292998200,
+ "load_duration_ns": 11628900,
+ "attempts": 1,
+ "wall_seconds": 3.33,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:14:11+00:00"
+}

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "eda43fa2b58dc6d24c3c7ea8af17fc83e7c093ac46088a6fbb19bdb9af17634c",
+ "text": "FINDINGS:\nCardiomegaly is present. Pulmonary edema is present. Pleural effusion is present.\nIMPRESSION:\nCardiomegaly, pulmonary edema, and pleural effusion are present.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1146,
+ "output_tokens": 52,
+ "total_duration_ns": 1849532300,
+ "load_duration_ns": 5098700,
+ "attempts": 1,
+ "wall_seconds": 3.88,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T10:46:16+00:00"
+}

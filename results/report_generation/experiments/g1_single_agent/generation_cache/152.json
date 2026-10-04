@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "1b53135b3151453e5182689f7dad2ee9ff54f2f816db8c4236e399f94b25b987",
+ "text": "FINDINGS:\nEnlarged cardiomediastinal silhouette. Lung opacities noted at the lung bases. Fracture of the right clavicle.\nIMPRESSION:\nCardiomegaly. Possible pneumonia and fracture.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1291,
+ "output_tokens": 57,
+ "total_duration_ns": 1803197900,
+ "load_duration_ns": 15325100,
+ "attempts": 1,
+ "wall_seconds": 3.86,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T10:16:48+00:00"
+}

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "dee17ac906c4c7d8217aed0d16ec93838617c877882218688dc19a7af53e30e0",
+ "text": "FINDINGS:\nPleural effusion is present.\nIMPRESSION:\nPleural effusion.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1101,
+ "output_tokens": 30,
+ "total_duration_ns": 1308350800,
+ "load_duration_ns": 4505900,
+ "attempts": 1,
+ "wall_seconds": 3.36,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:35:38+00:00"
+}

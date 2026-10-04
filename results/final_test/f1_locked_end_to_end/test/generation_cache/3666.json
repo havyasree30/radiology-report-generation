@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "affb6e43fd35e7f1356118da02c639ec7765aadab42d60387b211de34fa23fbd",
+ "text": "FINDINGS:\nCardiomegaly is present. There is opacity in the left lung base. Pleural effusion is present.\nIMPRESSION:\nCardiomegaly, opacity in the left lung base, and pleural effusion.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1324,
+ "output_tokens": 58,
+ "total_duration_ns": 11980356700,
+ "load_duration_ns": 12630600,
+ "attempts": 1,
+ "wall_seconds": 14.01,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:18:03+00:00"
+}

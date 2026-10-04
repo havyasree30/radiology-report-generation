@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "135e011fcdf39573601268e284458db68c107012cfb4c4150d7b1899eddcd3dd",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 5], \"evidence_summary\": \"Reports 1, 2, 3, and 5 mention a lung opacity.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [1, 2, 5], \"evidence_summary\": \"Reports 1, 2, and 5 mention consolidation.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 2, 3, 5], \"evidence_summary\": \"Reports 1, 2, 3, and 5 mention pneumonia.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Reports 1, 2, 3, 4, and 5 mention pleural effusion.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions edema.\"}\n  ],\n  \"normal_report_ranks\": [\n    4\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 911,
+ "output_tokens": 311,
+ "total_duration_ns": 6862287600,
+ "load_duration_ns": 5010000,
+ "attempts": 1,
+ "wall_seconds": 8.91,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:12:33+00:00",
+ "agent": "agent1_evidence_verifier"
+}

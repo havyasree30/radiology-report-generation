@@ -1,0 +1,29 @@
+{
+  "n_images": 28671,
+  "n_patients": 9530,
+  "class_order_ok": true,
+  "image_ids_identical": true,
+  "patient_ids_identical": true,
+  "scores_bit_identical": true,
+  "thresholds_equal_thresholds_f1_json": true,
+  "raw_predictions_equal": true,
+  "final_predictions_equal_rule": true,
+  "no_finding_rule": "suppress_if_any_abnormal_positive",
+  "rule_abnormal_labels": [
+    "Enlarged Cardiomediastinum",
+    "Cardiomegaly",
+    "Lung Opacity",
+    "Lung Lesion",
+    "Edema",
+    "Consolidation",
+    "Pneumonia",
+    "Atelectasis",
+    "Pneumothorax",
+    "Pleural Effusion",
+    "Pleural Other",
+    "Fracture"
+  ],
+  "max_abs_diff_macro_vs_c4_14": 0.0,
+  "max_abs_diff_macro_vs_c4_13": 0.0,
+  "reproduced": true
+}

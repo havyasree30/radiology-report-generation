@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "27c0b740dae02d405176bfdce8636a7f29240d57a8ef50a2fbeaf80bc144c3f8",
+ "text": "FINDINGS:\nNo acute cardiopulmonary abnormality is identified.\nIMPRESSION:\nNo definite evidence of metastatic disease. 1. No definite evidence of metastatic disease. 2. Age-indeterminate deformity of T6, since study dated,..",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1236,
+ "output_tokens": 51,
+ "total_duration_ns": 1615691900,
+ "load_duration_ns": 2895100,
+ "attempts": 1,
+ "wall_seconds": 3.65,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:24:03+00:00"
+}

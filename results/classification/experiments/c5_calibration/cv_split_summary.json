@@ -1,0 +1,36 @@
+{
+  "n_folds": 5,
+  "seed": 42,
+  "method": "multi-label iterative stratification over patients (valid positive images per class)",
+  "images_per_fold": [
+    5748,
+    5730,
+    5731,
+    5731,
+    5731
+  ],
+  "patients_per_fold": [
+    1895,
+    1951,
+    1949,
+    1852,
+    1883
+  ],
+  "patient_overlap_between_folds": 0,
+  "min_positives_per_class_per_fold": {
+    "No Finding": 507,
+    "Enlarged Cardiomediastinum": 274,
+    "Cardiomegaly": 692,
+    "Lung Opacity": 2825,
+    "Lung Lesion": 212,
+    "Edema": 1485,
+    "Consolidation": 391,
+    "Pneumonia": 142,
+    "Atelectasis": 892,
+    "Pneumothorax": 526,
+    "Pleural Effusion": 2308,
+    "Pleural Other": 76,
+    "Fracture": 218,
+    "Support Devices": 3200
+  }
+}

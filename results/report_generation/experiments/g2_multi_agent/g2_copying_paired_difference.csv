@@ -1,0 +1,10 @@
+comparison,metric,n_studies_with_context,a,b,diff,ci95_low,ci95_high,excludes_zero
+G2_multi_agent_rag minus G1_single_agent_rag,copied_sentence_rate_from_top5,498,0,0.29487951807228913,-0.29487951807228913,-0.3332019745649264,-0.26039156626506021,True
+G2_multi_agent_rag minus G1_single_agent_rag,whole_report_copy_rate_from_top5,498,0,0.24096385542168675,-0.24096385542168675,-0.27911646586345379,-0.20682730923694778,True
+G2_multi_agent_rag minus G1_single_agent_rag,repeated_sentence_rate,498,0.044678714859437751,0.0038465550513743286,0.040832159808063422,0.02818590378831343,0.054037361567482053,True
+G2_agent2_draft_pre_critic minus G1_single_agent_rag,copied_sentence_rate_from_top5,498,0,0.29487951807228913,-0.29487951807228913,-0.3332019745649264,-0.26039156626506021,True
+G2_agent2_draft_pre_critic minus G1_single_agent_rag,whole_report_copy_rate_from_top5,498,0,0.24096385542168675,-0.24096385542168675,-0.27911646586345379,-0.20682730923694778,True
+G2_agent2_draft_pre_critic minus G1_single_agent_rag,repeated_sentence_rate,498,0.045348058902275772,0.0038465550513743286,0.041501503850901442,0.028997972409116991,0.054393548218849418,True
+G2_multi_agent_rag minus G2_agent2_draft_pre_critic,copied_sentence_rate_from_top5,498,0,0,0,0,0,False
+G2_multi_agent_rag minus G2_agent2_draft_pre_critic,whole_report_copy_rate_from_top5,498,0,0,0,0,0,False
+G2_multi_agent_rag minus G2_agent2_draft_pre_critic,repeated_sentence_rate,498,0.044678714859437751,0.045348058902275772,-0.00066934404283802013,-0.0020080321285140604,0,False

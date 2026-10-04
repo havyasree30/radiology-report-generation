@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "0456e3ba5a87dcf2e45ce04fea9fc7cf968f4f3ae756b325e4eb4502341bf228",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is normal. The lungs are clear. No pneumothorax or pneumomediastinum is visualized. Visualized bony structures are normal.\nIMPRESSION:\nNo acute cardiopulmonary finding.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1185,
+ "output_tokens": 61,
+ "total_duration_ns": 1967173200,
+ "load_duration_ns": 3186500,
+ "attempts": 1,
+ "wall_seconds": 4.01,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:13:22+00:00"
+}

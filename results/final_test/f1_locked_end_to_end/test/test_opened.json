@@ -1,0 +1,6 @@
+{
+  "opened_utc": "2026-10-04T06:47:42+00:00",
+  "protocol_json_sha256": "dee43410b37b3eaaa7f810d80e0e7bc776ba92f2a885702c350c93c7c4a48a08",
+  "code_freeze_combined_sha256": "0c679cc037a0ea045fbf1bcbcf65fea7d9be75602bfec8c911ea6138ac644028",
+  "note": "written once; the locked test partition is open from this moment"
+}

@@ -1,0 +1,7 @@
+source,reference,predicted_normal,predicted_abnormal,predicted_indeterminate
+classifier,normal,140,43,9
+classifier,abnormal,36,135,15
+B0_rule_based,normal,140,43,9
+B0_rule_based,abnormal,36,135,15
+G1_single_agent_rag,normal,175,17,0
+G1_single_agent_rag,abnormal,78,108,0

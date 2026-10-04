@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "08939e8900e4a2f267402b8eeac03f902570d411280c93f157fe2f1812c9c1a3",
+ "text": "FINDINGS:\nThe left pneumothorax is increased in size, with partial collapse of the left upper and lower lobes. The maximum width of the pneumothorax is 3.5 cm at the apex. There is no significant mediastinal shift. The right lung is clear. The cardiomediastinal silhouette is within normal limits. There is a small left pleural effusion/hemothorax.\nIMPRESSION:\n1. Increased size of left pneumothorax, with partial collapse of the left upper and lower lobes. 2. Small left pleural effusion/hemothorax.\n\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1207,
+ "output_tokens": 130,
+ "total_duration_ns": 3355469900,
+ "load_duration_ns": 7585600,
+ "attempts": 1,
+ "wall_seconds": 5.38,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T13:27:17+00:00"
+}
