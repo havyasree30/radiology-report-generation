@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "381cd2f8c47be9388fa9310262823a622d94746b728b7a437f6654adb014511a",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [3], \"evidence_summary\": \"Report 3 mentions a large medial right upper lobe mass lesion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions patchy alveolar and interstitial opacities within the lung bases bilaterally.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions enlarged cardiomediastinum.\"}\n  ],\n  \"normal_report_ranks\": [\n    1,\n    2,\n    4,\n    5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 971,
+ "output_tokens": 195,
+ "total_duration_ns": 5550850200,
+ "load_duration_ns": 9073900,
+ "attempts": 1,
+ "wall_seconds": 7.6,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:27:16+00:00",
+ "agent": "agent1_evidence_verifier"
+}

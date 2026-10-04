@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "bf107b0fc30e4de019243845b151b698b8344e2b9f82fce93934648104f65d45",
+ "text": "{\n\"findings\": \"Support device noted.\",\n\"impression\": \"Support device.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 880,
+ "output_tokens": 21,
+ "total_duration_ns": 1075361200,
+ "load_duration_ns": 9680400,
+ "attempts": 1,
+ "wall_seconds": 3.11,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:00:21+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "fa86d3580fd6df045b33cd3e2e84d36ca1e100fd4cf6a8e3a6a96e2d3d885d9b",
+ "text": "{\n\"findings\": \"Lung Lesion and Pneumonia.\",\n\"impression\": \"Pneumonia.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 932,
+ "output_tokens": 25,
+ "total_duration_ns": 1183934600,
+ "load_duration_ns": 6833500,
+ "attempts": 1,
+ "wall_seconds": 3.28,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T17:09:31+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

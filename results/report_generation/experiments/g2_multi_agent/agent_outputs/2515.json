@@ -1,0 +1,68 @@
+{
+ "uid": "2515",
+ "evidence": {
+  "classifier_output_state": "no_output",
+  "n_retrieved_reports": 0,
+  "classifier_findings": [],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": []
+ },
+ "agent1_validation_flags": [
+  "agent1_skipped_no_query"
+ ],
+ "agent2_draft": {
+  "findings": "No abnormal findings.",
+  "impression": "No acute cardiopulmonary process.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "revise",
+  "issues": [
+   "no_finding_contradiction"
+  ],
+  "model_copy_identical_to_draft": false,
+  "flags": []
+ },
+ "final_report": {
+  "findings": "FINDINGS: No abnormal findings.",
+  "impression": "IMPRESSION: No acute cardiopulmonary process.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": null,
+ "agent2_raw_text": "{\n\"findings\": \"No abnormal findings.\",\n\"impression\": \"No acute cardiopulmonary process.\"\n}",
+ "agent3_raw_text": "{\"issues_detected\": [\"no_finding_contradiction\"], \"decision\": \"REVISE\", \"findings\": \"FINDINGS: No abnormal findings.\", \"impression\": \"IMPRESSION: No acute cardiopulmonary process.\"}",
+ "messages_sha256": {
+  "agent2_grounded_report_writer": "289b8827145e7e48b5988be83d267280009bf9366116e912765eb0406de194a8",
+  "agent3_grounding_critic": "0e1017cb8a00dd68290c06e681b928c95457627a33d5a24a93f9234fe91ec758"
+ },
+ "request_hashes": {
+  "agent2_grounded_report_writer": "9039fe68423df1216356e16b5121b2d4f36edebf6435a59df28cff061a317798",
+  "agent3_grounding_critic": "3a1dd869d7d636d2be541907759780bc08d098f92895bb5255e32605d3155fd5"
+ },
+ "seconds": {
+  "agent2_grounded_report_writer": 3.26,
+  "agent3_grounding_critic": 3.82
+ },
+ "output_tokens": {
+  "agent2_grounded_report_writer": 24,
+  "agent3_grounding_critic": 48
+ },
+ "prompt_tokens": {
+  "agent2_grounded_report_writer": 737,
+  "agent3_grounding_critic": 754
+ },
+ "done_reasons": {
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: no_output\nFinal positive findings: none\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"no_output\",\n \"n_retrieved_reports\": 0,\n \"classifier_findings\": [],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: no_output\nFinal positive findings: none\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"no_output\",\n \"n_retrieved_reports\": 0,\n \"classifier_findings\": [],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nC. DRAFT REPORT\nFINDINGS: No abnormal findings.\nIMPRESSION: No acute cardiopulmonary process.\n\nReturn the JSON now."
+ }
+}

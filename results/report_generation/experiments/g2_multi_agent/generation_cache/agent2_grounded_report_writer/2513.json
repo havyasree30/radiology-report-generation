@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "41363e8e7dd3123b35f428b12143e028d70f7263b2ef9d2dad9e5b55d3edde57",
+ "text": "{\n\"findings\": \"Lung Opacity and Atelectasis are possible. Pleural Effusion is supported.\",\n\"impression\": \"Pleural Effusion is supported.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1032,
+ "output_tokens": 38,
+ "total_duration_ns": 1586616800,
+ "load_duration_ns": 8104600,
+ "attempts": 1,
+ "wall_seconds": 3.62,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:32:41+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

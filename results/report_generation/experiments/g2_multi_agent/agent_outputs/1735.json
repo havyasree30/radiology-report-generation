@@ -1,0 +1,100 @@
+{
+ "uid": "1735",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Pleural Effusion",
+    "classifier_probability": 0.5514,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   },
+   {
+    "finding": "Fracture",
+    "classifier_probability": 0.2049,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": []
+ },
+ "agent1_validation_flags": [
+  "agent1_omitted_classifier_finding",
+  "agent1_status_inconsistent_with_count",
+  "agent1_summary_replaced",
+  "agent1_unparseable"
+ ],
+ "agent2_draft": {
+  "findings": "Pleural Effusion is possible.",
+  "impression": "Fracture is possible.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Pleural Effusion is possible.",
+  "impression": "Fracture is possible.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 2, 4, 5], \"evidence_summary\": \"Retrieved reports mention pleural effusion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [1, 2, 4, 5], \"evidence_summary\": \"Retrieved reports mention fracture.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [2], \"evidence_summary\": \"Report 2 mentions atelectasis, which can be considered a type of lung opacity.\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [4], \"evidence_summary\": \"Report 4 mentions fracture of ribs, which could be considered a lesion.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [2, 4], \"evidence_summary\": \"Report 2 mentions atelectasis, which can be considered a type of edema.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [2, 3, 5], \"evidence_summary\": \"Reports 2, 3, and 5 mention atelectasis, which can be considered a type of consolidation.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [2, 4, 5], \"evidence_summary\": \"Reports 2, 4, and 5 mention fracture, which can be considered a type of pneumothorax.\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [2, 3, 5], \"evidence_summary\": \"Reports 2, 3, and 5 mention atelectasis, which can be considered a type of pneumonia.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [2, 4], \"evidence_summary\": \"Report 2 mentions atelectasis. Report 4 mentions atelectasis.\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [2, 4, 5], \"evidence_summary\": \"Report 2 mentions pleural effusion. Report 4 mentions fracture. Report 5 mentions contour irregularity.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [1, 2, 4, 5], \"evidence_summary\": \"Retrieved reports mention fracture.\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention support devices.\"},\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions aortic ectasia/tortuosity, which can be considered a type of enlarged cardiomediastinum.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions aortic ectasia/tortuosity, which can be considered a type of cardiomegaly.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [2], \"evidence_summary\": \"Report 2 mentions atelectasis, which can be considered a type of lung opacity.\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [4], \"evidence_summary\": \"Report 4 mentions fracture of ribs, which could be considered a lesion.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [2, 4], \"evidence_summary\": \"Report 2 mentions atelectasis, which can be considered a type of edema.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [2, 3, 5], \"evidence_summary\": \"Reports 2, 3, and 5 mention atelectasis, which can be considered a type of consolidation.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [2, 4, 5], \"evidence_summary\": \"Reports 2",
+ "agent2_raw_text": "{\n\"findings\": \"Pleural Effusion is possible.\",\n\"impression\": \"Fracture is possible.\"\n}",
+ "agent3_raw_text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Pleural Effusion is possible.\",\n\"impression\": \"Fracture is possible.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "87b3c4daa03544af9cd58373fcd18fc5b2b550d787f40cae4b15e6a67a3cc0a9",
+  "agent2_grounded_report_writer": "6667996f34e11317ebe38e733466bf211ab872e932a4527bde9703acfb496cc7",
+  "agent3_grounding_critic": "57281e3f90ae99474af64d6fc77396895631b4347b5ba9fde0fd8bfd3ca2c754"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "2a30bcfb961c41bc0f0cae1dd73f83c7a6d1f9c510efcced4ba85a002ef0587d",
+  "agent2_grounded_report_writer": "b312a568631b7dd77bd634a076b2e013e2fcd23102cfc5392c2b100b2bae3614",
+  "agent3_grounding_critic": "0601bb9d932fa86fe831dc5975258133e9cada2ac93b53e8458f488db45c1d19"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 22.24,
+  "agent2_grounded_report_writer": 3.39,
+  "agent3_grounding_critic": 3.96
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 900,
+  "agent2_grounded_report_writer": 26,
+  "agent3_grounding_critic": 49
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 1155,
+  "agent2_grounded_report_writer": 932,
+  "agent3_grounding_critic": 950
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "length",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Pleural Effusion (calibrated probability 0.55); Fracture (calibrated probability 0.20)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: Heart size and mediastinal contour are within normal limits. No focal consolidation, suspicious pulmonary opacity, large pleural effusion, or pneumothorax is identified. Again visualized is a wedge-shaped fracture of T12.\nIMPRESSION: 1. No acute cardiopulmonary abnormality. 2. Wedge-shaped fracture of T12.\n[2]\nFINDINGS: There is a minimally displaced fracture of the right lateral 7th rib. There is a small right pleural effusion with associated atelectasis of the right lower lobe. There appears to be a healing fracture of the posterolateral right 8th rib. There is questionable cortical defect involving the sternum seen on lateral view. would be to evaluate this finding. As the small right-sided pleural effusion is visible on both PA and lateral views. There is a left-sided pleural effusion as well. The left lung appears grossly clear. Heart size and pulmonary appear normal. There is a mild scoliosis involving the thoracic spine.\nIMPRESSION: 1. Minimally displaced fracture involving the lateral right 7th rib, acute. There is and associated small right pleural effusion and right basilar atelectasis. 2. Questionable anterior cortical disruption seen on lateral view. would be needed to evaluate this. 3. left-sided pleural effusion\n[3]\nFINDINGS: The cardiomediastinal silhouette and pulmonary vasculature are within normal limits in size. The lungs are clear of focal airspace disease, pneumothorax, or pleural effusion. There is no definite evidence of acute fracture.\nIMPRESSION: No acute cardiopulmonary findings..\n[4]\nFINDINGS: The lungs are hypoinflated with mild basilar bronchovascular crowding/atelectasis. There is a fracture of the left anterior 7th rib and the left anterior 6th rib, of uncertain acuity. Correlate with tenderness. There is mild atelectasis in the left lung base. There is corticated deformity of the right anterior 7th rib, remote fracture. There is no evidence of pneumothorax or large pleural effusion.\nIMPRESSION: 1. Suspected fractures of the left anterior 6th and 7th ribs, of uncertain acuity. Correlate with tenderness. 2. Low lung volumes with mild basilar atelectasis, left greater than right..\n[5]\nFINDINGS: No focal consolidation, no definite pleural effusion seen. Exaggerated kyphosis with increased AP dimension of the thorax, curvilinear density projected over the right anterior 3rd and 4th ribs beyond which lung markings are seen skin fold artifact. Mild aortic ectasia/tortuosity, no typical mediastinal widening to suggest vascular injury. Contour irregularity of the lateral right 9th rib of indeterminate age.\nIMPRESSION: 1. No acute cardiopulmonary findings. 2. Age-indeterminate fracture of the right lateral 9th rib. If findings localize to this region, suspect acute fracture.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Pleural Effusion (calibrated probability 0.55); Fracture (calibrated probability 0.20)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"classifier_probability\": 0.5514,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.2049,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Pleural Effusion (calibrated probability 0.55); Fracture (calibrated probability 0.20)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"classifier_probability\": 0.5514,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.2049,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nC. DRAFT REPORT\nFINDINGS: Pleural Effusion is possible.\nIMPRESSION: Fracture is possible.\n\nReturn the JSON now."
+ }
+}

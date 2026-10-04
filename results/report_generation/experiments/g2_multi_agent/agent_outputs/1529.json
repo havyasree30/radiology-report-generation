@@ -1,0 +1,91 @@
+{
+ "uid": "1529",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Atelectasis",
+    "classifier_probability": 0.2082,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": []
+ },
+ "agent1_validation_flags": [
+  "agent1_omitted_classifier_finding",
+  "agent1_status_inconsistent_with_count",
+  "agent1_summary_replaced",
+  "agent1_unparseable"
+ ],
+ "agent2_draft": {
+  "findings": "Atelectasis.",
+  "impression": "Atelectasis.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "missed_strongly_supported_finding"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Atelectasis.",
+  "impression": "Atelectasis.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 3, 5], \"evidence_summary\": \"Atelectasis is present in the right base.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [], \"evidence_summary\": \"Cardiomegaly is not supported by the retrieved reports.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [3], \"evidence_summary\": \"Lung opacity is present in the right base.\", \"support_status\": \"partially_supported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"Lung lesion is not supported by the retrieved reports.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"Edema is not supported by the retrieved reports.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"Consolidation is not supported by the retrieved reports.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [], \"evidence_summary\": \"Pneumonia is not supported by the retrieved reports.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [], \"evidence_summary\": \"Atelectasis is not supported by the retrieved reports.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"Pneumothorax is not supported by the retrieved reports.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [3], \"evidence_summary\": \"Pleural effusion is present in the right base.\", \"support_status\": \"partially_supported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"Pleural other is not supported by the retrieved reports.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"Fracture is not supported by the retrieved reports.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"Support devices are not supported by the retrieved reports.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [], \"evidence_summary\": \"Cardiomegaly is not supported by the retrieved reports. The retrieved reports do not mention cardiomegaly, although one mentions stable or line cardiac enlargement. Cardiomegaly is not explicitly stated as present in any report. The report with rank 3 mentions 'stable or line cardiac enlargement', which could be interpreted as cardiomegaly, but it is not explicitly stated as such. The report with rank 2 mentions 'marked elevation left diaphragm with atelectasis in the left base. Mild atelectasis in the right base. Stable or line cardiac enlargement with atherosclerotic aorta. Obscured left heart.', which could be interpreted as cardiomegaly, but it is not explicitly stated as such. The report with rank 5 mentions 'Heart size is normal.' which contradicts cardiomegaly. Therefore, cardiomegaly is not supported by the retrieved reports. The evidence summary is paraphrased from the reports to avoid quoting. The finding is not explicitly stated as present in any report. The report with rank 3 mentions 'Large right effusion.' which is not cardiomegaly. The report with rank 2 mentions 'Stable or line cardiac enlargement with atherosclerotic aorta. Obscured left heart.' which could be interpreted as cardiomegaly, but it is not explicitly stated as such. The report with rank 5 mentions 'Heart size is normal.' which contradicts cardiomegaly.",
+ "agent2_raw_text": "{\n\"findings\": \"Atelectasis.\",\n\"impression\": \"Atelectasis.\"\n}",
+ "agent3_raw_text": "{\n \"issues_detected\": [\n  \"missed_strongly_supported_finding\"\n ],\n \"decision\": \"REVISE\",\n \"findings\": \"Atelectasis.\",\n \"impression\": \"Atelectasis.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "fcac67795e44505d337daf4963e212ce2e659cdaec2fb1e2b1aa05f5d2c1c5c3",
+  "agent2_grounded_report_writer": "d52be8aae8fa3319413a3250f8718c9eceb617b9bc2e2780664a59f3d0e8a997",
+  "agent3_grounding_critic": "6f2c13c42a9b9d06a527733b607fd54513dbc1120bd331be88555ce19029c618"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "125ae5efa4b2b5f77a88af6445983e065b72576d74e1997567e0e8678556584c",
+  "agent2_grounded_report_writer": "a8478be92c0961b8459896c2629eee08ba928ccc4fd9f51e7bf2119837ad6689",
+  "agent3_grounding_critic": "1b26874a55c9e9d3c9d2c482dd7c8adcf0e21e060cdc420843c4f472636ed4b4"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 23.91,
+  "agent2_grounded_report_writer": 3.23,
+  "agent3_grounding_critic": 3.8
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 900,
+  "agent2_grounded_report_writer": 24,
+  "agent3_grounding_critic": 54
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 754,
+  "agent2_grounded_report_writer": 837,
+  "agent3_grounding_critic": 852
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "length",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Atelectasis (calibrated probability 0.21)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: (not available)\nIMPRESSION: Elevated diaphragms with atelectasis in the bases. Normal heart size. Mild spondylosis.\n[2]\nFINDINGS: (not available)\nIMPRESSION: Marked elevation left diaphragm with atelectasis in the left base. Mild atelectasis in the right base. Stable or line cardiac enlargement with atherosclerotic aorta. Obscured left heart. Kyphotic degenerated thoracic spine with osteopenia multilevel deformities, poorly defined due to the extensive osteopenia.\n[3]\nFINDINGS: (not available)\nIMPRESSION: Cardiomegaly. Left lung clear. Large right effusion. Compressive atelectasis or infiltrate in the right base\n[4]\nFINDINGS: (not available)\nIMPRESSION: Minimal atelectasis, platelike in the right upper lobe. Heart size upper limits normal. Degenerative spurring of thoracic spine.\n[5]\nFINDINGS: (not available)\nIMPRESSION: Minimal atelectasis right base. No evidence of tuberculosis. Heart size is normal.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Atelectasis (calibrated probability 0.21)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Atelectasis\",\n   \"classifier_probability\": 0.2082,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Atelectasis (calibrated probability 0.21)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Atelectasis\",\n   \"classifier_probability\": 0.2082,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nC. DRAFT REPORT\nFINDINGS: Atelectasis.\nIMPRESSION: Atelectasis.\n\nReturn the JSON now."
+ }
+}

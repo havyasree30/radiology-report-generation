@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "89968a3784bfa1ca4ab789080b62a7c007ff707700a1beadaf5ef93fb734e70d",
+ "text": "{\n\"findings\": \"Lung Opacity and Pleural Effusion are possible.\",\n\"impression\": \"Pneumonia is possible.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1031,
+ "output_tokens": 31,
+ "total_duration_ns": 1437207400,
+ "load_duration_ns": 9075400,
+ "attempts": 1,
+ "wall_seconds": 3.46,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T14:51:28+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

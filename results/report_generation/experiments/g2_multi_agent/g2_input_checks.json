@@ -1,0 +1,14 @@
+{
+  "n": 547,
+  "n_with_retrieval": 498,
+  "n_empty_query": 49,
+  "reference_sentences_outside_retrieved_text": 0,
+  "study_ids_in_agent1_message": 0,
+  "locked_test_ids_in_case_file": 0,
+  "reference_keys_in_case_file": 0,
+  "same_547_studies_and_order_as_g1": true,
+  "sha256_g1_cases_source": "574a6b2a18e7d925876acaa39493e6c59c10bcfd0521a7d3339c81dfb53dc47a",
+  "sha256_r2_candidate_config": "9fb4d701a498de9f2e9a1ca325f645027ace0c72af0ef3a6180c0b85f34bc114",
+  "retrieved_ids_equal_g1_top5": true,
+  "note": "retrieval is read from the stored G1 cases (frozen R2 Top-5); the case file holds no reference information"
+}

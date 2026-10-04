@@ -1,0 +1,94 @@
+{
+ "uid": "2691",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Enlarged Cardiomediastinum",
+    "classifier_probability": 0.15,
+    "retrieval_support_count": 2,
+    "supporting_retrieved_report_ranks": [
+     1,
+     4
+    ],
+    "evidence_summary": "Report 1 mentions enlarged cardiomediastinum. Report 4 mentions enlarged cardiomediastinal silhouette.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   1,
+   5
+  ]
+ },
+ "agent1_validation_flags": [
+  "agent1_extra_or_duplicate_classifier_entry"
+ ],
+ "agent2_draft": {
+  "findings": "Enlarged Cardiomediastinum",
+  "impression": "Enlarged Cardiomediastinum",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Enlarged Cardiomediastinum",
+  "impression": "Enlarged Cardiomediastinum",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Report 1 mentions enlarged cardiomediastinum. Report 4 mentions enlarged cardiomediastinal silhouette.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 2, 3, 5], \"evidence_summary\": \"Reports 1, 2, 3, and 5 mention enlarged heart or cardiomegaly.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [2, 3, 4], \"evidence_summary\": \"Reports 2, 3, and 4 mention opacities compatible with atelectasis or scarring.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [4], \"evidence_summary\": \"Report 4 mentions no overt edema.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [3], \"evidence_summary\": \"Report 3 mentions no pneumothorax.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [3, 4], \"evidence_summary\": \"Report 3 mentions no pleural effusion. Report 4 mentions question small right pleural effusion versus pleural thickening.\", \"support_status\": \"partially_supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions lung lesion.\"}\n  ],\n  \"normal_report_ranks\": [\n    1, 5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Enlarged Cardiomediastinum\",\n\"impression\": \"Enlarged Cardiomediastinum\"\n}",
+ "agent3_raw_text": "{\n \"issues_detected\": [\n  \"unsupported_finding_stated\"\n ],\n \"decision\": \"REVISE\",\n \"findings\": \"Enlarged Cardiomediastinum\",\n \"impression\": \"Enlarged Cardiomediastinum\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "476d4890bc7fb1820468cb3b1411b012d9ecd70fad9092febae38404af04d5cd",
+  "agent2_grounded_report_writer": "76291596bc21177ccae47431afbb42dbde9853d3a271c2493730780351c4797c",
+  "agent3_grounding_critic": "bdee27b1f2394efb68fc7109c8f2dd31ef4200de5204d18fcf8bbcc4518150b6"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "57557130d3b406a80380c973bc9f0994cb4b1125de61521604070a6b7bbaace4",
+  "agent2_grounded_report_writer": "c8ca0a8cbc410024c717d067b4e40f9ceeb5b72181f4f3fefc298b866c5b74a6",
+  "agent3_grounding_critic": "7e1a4f161360cfdb946a5620a6be7a134e377088cae6fc615e4756e046052a6f"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 11.78,
+  "agent2_grounded_report_writer": 3.45,
+  "agent3_grounding_critic": 4.0
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 415,
+  "agent2_grounded_report_writer": 32,
+  "agent3_grounding_critic": 60
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 817,
+  "agent2_grounded_report_writer": 877,
+  "agent3_grounding_critic": 898
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.15)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: The heart is mildly enlarged. Left hemidiaphragm is elevated. There is no acute infiltrate or pleural effusion. The mediastinum is unremarkable.\nIMPRESSION: Borderline cardiomegaly without acute disease.\n[2]\nFINDINGS: The heart is enlarged. The left subclavian ICD is again identified. There is again hilar enlargement, superimposes enlarged pulmonary vasculature. opacities are unchanged and compatible with subsegmental atelectasis or scarring. There is no large pleural effusion or focal consolidation.\nIMPRESSION: Stable moderate to marked cardiomegaly.\n[3]\nFINDINGS: The heart size is mildly enlarged. There is tortuosity of the thoracic aorta. No focal airspace consolidation, pleural effusions or pneumothorax. No acute bony abnormalities.\nIMPRESSION: Cardiomegaly without acute pulmonary findings.\n[4]\nFINDINGS: (not available)\nIMPRESSION: Stable enlarged cardiomediastinal silhouette. Tortuous aorta. Low lung volumes and left basilar bandlike opacities suggestive of scarring or atelectasis. No overt edema. Question small right pleural effusion versus pleural thickening. No visible pneumothorax.\n[5]\nFINDINGS: The heart is mildly enlarged. The mediastinal contours are stable. The lungs are clear.\nIMPRESSION: Mild stable cardiomegaly, no acute disease.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.15)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Enlarged Cardiomediastinum\",\n   \"classifier_probability\": 0.15,\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    4\n   ],\n   \"evidence_summary\": \"Report 1 mentions enlarged cardiomediastinum. Report 4 mentions enlarged cardiomediastinal silhouette.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.15)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Enlarged Cardiomediastinum\",\n   \"classifier_probability\": 0.15,\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    4\n   ],\n   \"evidence_summary\": \"Report 1 mentions enlarged cardiomediastinum. Report 4 mentions enlarged cardiomediastinal silhouette.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Enlarged Cardiomediastinum\nIMPRESSION: Enlarged Cardiomediastinum\n\nReturn the JSON now."
+ }
+}

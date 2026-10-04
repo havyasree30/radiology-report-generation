@@ -1,0 +1,92 @@
+{
+ "uid": "2157",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Pleural Other",
+    "classifier_probability": 0.0687,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "The classifier suggests the presence of Pleural Other.",
+    "support_status": "unsupported",
+    "agent_stated_status": "unsupported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "agent1_validation_flags": [],
+ "agent2_draft": {
+  "findings": "Pleural Other",
+  "impression": "Pleural Other",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Pleural Other",
+  "impression": "Pleural Other",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"The classifier suggests the presence of Pleural Other.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [],\n  \"normal_report_ranks\": [\n    1, 2, 3, 4, 5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Pleural Other\",\n\"impression\": \"Pleural Other\"\n}",
+ "agent3_raw_text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Pleural Other\",\n\"impression\": \"Pleural Other\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "3550b458663674cf1eceae4f6be5791f00ec5e51dc8e164bbc37d34fbf2fdb7b",
+  "agent2_grounded_report_writer": "d200b6d9d2ec913094e4f126ad63cfc019ec4bc6e1649237f3965570e87f6ade",
+  "agent3_grounding_critic": "eabba8c92c43b5ee05160524e9be23a8859fa4e2648c7e83dc793f42d699b07c"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "19976ddb8838f6f40013696db981da85d824dece9310aff9d9022a83ddad68e5",
+  "agent2_grounded_report_writer": "b8c2c218fbd2da9bf0ecb2d661973ec4225694d5f0ced4d61884eacee04cdbba",
+  "agent3_grounding_critic": "8edaf3d66439942da5e9112bca1993ef5cd1074b2d1e14e3392a497ab2ab56c7"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 5.2,
+  "agent2_grounded_report_writer": 3.25,
+  "agent3_grounding_critic": 3.72
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 97,
+  "agent2_grounded_report_writer": 22,
+  "agent3_grounding_critic": 45
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 725,
+  "agent2_grounded_report_writer": 860,
+  "agent3_grounding_critic": 873
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Pleural Other (calibrated probability 0.07)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: The lungs and pleural spaces show no acute abnormality. Heart size and pulmonary vascularity within normal limits.\nIMPRESSION: 1. No acute pulmonary abnormality.\n[2]\nFINDINGS: The lungs and pleural spaces show no acute abnormality. Heart size and pulmonary vascularity within normal limits..\nIMPRESSION: 1. No acute pulmonary abnormality.\n[3]\nFINDINGS: The lungs and pleural spaces show no acute abnormality. Heart size and pulmonary vascularity within normal limits.\nIMPRESSION: 1. No acute pulmonary abnormality.\n[4]\nFINDINGS: The lungs and pleural spaces show no acute abnormality. Heart size and pulmonary vascularity within normal limits.\nIMPRESSION: 1. No acute pulmonary abnormality.\n[5]\nFINDINGS: The lungs and pleural spaces show no acute abnormality. Heart size and pulmonary vascularity within normal limits..\nIMPRESSION: 1. No acute pulmonary abnormality.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Pleural Other (calibrated probability 0.07)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Pleural Other\",\n   \"classifier_probability\": 0.0687,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"The classifier suggests the presence of Pleural Other.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  3,\n  4,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Pleural Other (calibrated probability 0.07)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Pleural Other\",\n   \"classifier_probability\": 0.0687,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"The classifier suggests the presence of Pleural Other.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  3,\n  4,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Pleural Other\nIMPRESSION: Pleural Other\n\nReturn the JSON now."
+ }
+}

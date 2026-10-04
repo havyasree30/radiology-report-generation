@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "09e4cde9221aa4463760ff56e750081f5c5c5ead8661fa007ca6af16cfaa3364",
+ "text": "{\n\"findings\": \"Fracture\",\n\"impression\": \"Fracture\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 869,
+ "output_tokens": 20,
+ "total_duration_ns": 988217800,
+ "load_duration_ns": 3357900,
+ "attempts": 1,
+ "wall_seconds": 3.01,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T14:50:18+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

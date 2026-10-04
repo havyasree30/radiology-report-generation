@@ -1,0 +1,143 @@
+{
+ "uid": "1451",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Lung Opacity",
+    "classifier_probability": 0.488,
+    "retrieval_support_count": 5,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "evidence_summary": "Retrieved reports mention left lung opacities.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Fracture",
+    "classifier_probability": 0.1734,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "No retrieved reports mention fracture.",
+    "support_status": "unsupported",
+    "agent_stated_status": "unsupported"
+   }
+  ],
+  "retrieval_only_candidates": [
+   {
+    "finding": "Atelectasis",
+    "retrieval_support_count": 5,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "evidence_summary": "Retrieved reports mention atelectasis or streaky opacity which may represent atelectasis.",
+    "status": "retrieval_only"
+   },
+   {
+    "finding": "Pneumonia",
+    "retrieval_support_count": 4,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     5
+    ],
+    "evidence_summary": "Retrieved reports mention opacity which may represent pneumonia or infiltrate.",
+    "status": "retrieval_only"
+   },
+   {
+    "finding": "Pleural Effusion",
+    "retrieval_support_count": 2,
+    "supporting_retrieved_report_ranks": [
+     3,
+     4
+    ],
+    "evidence_summary": "Retrieved reports mention pleural effusion.",
+    "status": "retrieval_only"
+   }
+  ],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "agent1_validation_flags": [],
+ "agent2_draft": {
+  "findings": "Lung opacity is present.",
+  "impression": "Atelectasis or pneumonia is possible.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Lung opacity is present.",
+  "impression": "Atelectasis or pneumonia is possible.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention left lung opacities.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention edema.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention consolidation.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention atelectasis or streaky opacity which may represent atelectasis.\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 2, 3, 5], \"evidence_summary\": \"Retrieved reports mention opacity which may represent pneumonia or infiltrate.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [3, 4], \"evidence_summary\": \"Retrieved reports mention pleural effusion.\"}\n  ],\n  \"normal_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Lung opacity is present.\",\n\"impression\": \"Atelectasis or pneumonia is possible.\"\n}",
+ "agent3_raw_text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Lung opacity is present.\",\n\"impression\": \"Atelectasis or pneumonia is possible.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "d0411af321244f5714afde0bf3dafadb4b547b6bbe53ca0f92c45cf11efcc0f6",
+  "agent2_grounded_report_writer": "231454ff377bbb8b8797fa4cd71082df562e5473e02f1ed7d47d76eaca5c632f",
+  "agent3_grounding_critic": "acc14f5a266250b87a983289908647de80dcb117f5b6915f9983eb74499e5916"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "fa30537b6ebdfe718aa411ee5a065db1f706b2afbf90da93428fde851f078f4f",
+  "agent2_grounded_report_writer": "e60573426ef1f75b39e20c3c055b1605654df622bf932b11d8c8961078d9309a",
+  "agent3_grounding_critic": "49e985025799df8f259884f9eab3c4fc0a5829e18de975631b66e61898545d2e"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 11.12,
+  "agent2_grounded_report_writer": 3.52,
+  "agent3_grounding_critic": 4.04
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 354,
+  "agent2_grounded_report_writer": 28,
+  "agent3_grounding_critic": 51
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 889,
+  "agent2_grounded_report_writer": 1253,
+  "agent3_grounding_critic": 1273
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Lung Opacity (calibrated probability 0.49); Fracture (calibrated probability 0.17)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: There is a airspace opacity in the left upper lung. Heart size within normal limits. Mild calcification of the aortic. No pneumothorax or pleural effusions.\nIMPRESSION: airspace opacity in the left upper lung which may represent streaky atelectasis or resolving pneumonia.\n[2]\nFINDINGS: There is opacity left lung base may represent atelectasis or early infiltrate. The cardiomediastinal silhouette is within normal limits. No pneumothorax or pleural effusion.\nIMPRESSION: opacity left lung base..\n[3]\nFINDINGS: Low lung volumes. Question patchy opacity left base. No pneumothorax. Osseous structures intact. Small right effusion.\nIMPRESSION: 1. Patchy opacity left base, may represent evolving infiltrate. 2. Small right pleural effusion..\n[4]\nFINDINGS: No acute osseous abnormalities. Left midlung, and basilar streaky opacity. There is elevation of the left hemidiaphragm. No pneumothorax. Small calcified 8 cm granuloma adjacent to the right diaphragm within the right chest. Cardiomediastinal silhouette is within normal limits.\nIMPRESSION: No acute osseous abnormalities. If continued clinical concern for rib fracture dedicated rib films will be helpful. Left midlung, and left basilar streaky opacity may represent atelectasis.\n[5]\nFINDINGS: Left midlung opacity noted, not visualized on prior. Heart size within normal limits. No pleural effusions. No evidence of pneumothorax. Osseous structures intact.\nIMPRESSION: Left mid lung opacity noted, most compatible with atelectasis versus infiltrate. Recommend clinical correlation..\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Opacity (calibrated probability 0.49); Fracture (calibrated probability 0.17)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.488,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention left lung opacities.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.1734,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports mention fracture.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [\n  {\n   \"finding\": \"Atelectasis\",\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention atelectasis or streaky opacity which may represent atelectasis.\",\n   \"status\": \"retrieval_only\"\n  },\n  {\n   \"finding\": \"Pneumonia\",\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention opacity which may represent pneumonia or infiltrate.\",\n   \"status\": \"retrieval_only\"\n  },\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention pleural effusion.\",\n   \"status\": \"retrieval_only\"\n  }\n ],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  3,\n  4,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Opacity (calibrated probability 0.49); Fracture (calibrated probability 0.17)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.488,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention left lung opacities.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.1734,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports mention fracture.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [\n  {\n   \"finding\": \"Atelectasis\",\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention atelectasis or streaky opacity which may represent atelectasis.\",\n   \"status\": \"retrieval_only\"\n  },\n  {\n   \"finding\": \"Pneumonia\",\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention opacity which may represent pneumonia or infiltrate.\",\n   \"status\": \"retrieval_only\"\n  },\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention pleural effusion.\",\n   \"status\": \"retrieval_only\"\n  }\n ],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  3,\n  4,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Lung opacity is present.\nIMPRESSION: Atelectasis or pneumonia is possible.\n\nReturn the JSON now."
+ }
+}

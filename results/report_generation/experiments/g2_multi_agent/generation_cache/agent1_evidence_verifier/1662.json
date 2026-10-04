@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "0d8dec35aaae163e6b4ae7ab05deb42d540700d3c4fc3e90e9e22c87ed1d80b1",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"The classifier identified Lung Opacity. Reports 1, 2, 3, and 4 mention this finding.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [4], \"evidence_summary\": \"The classifier identified Consolidation. Report 4 mentions this finding.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"The classifier identified Pneumonia. Reports 1, 2, 3, 4, and 5 mention this finding.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention edema.\"}\n  ],\n  \"normal_report_ranks\": [\n    1, 2, 3, 4, 5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 974,
+ "output_tokens": 270,
+ "total_duration_ns": 7040549500,
+ "load_duration_ns": 8086700,
+ "attempts": 1,
+ "wall_seconds": 9.1,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:04:50+00:00",
+ "agent": "agent1_evidence_verifier"
+}

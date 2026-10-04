@@ -1,0 +1,106 @@
+{
+ "uid": "2498",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Enlarged Cardiomediastinum",
+    "classifier_probability": 0.1293,
+    "retrieval_support_count": 1,
+    "supporting_retrieved_report_ranks": [
+     4
+    ],
+    "evidence_summary": "Report 4 mentions an enlarged cardiomediastinal silhouette.",
+    "support_status": "partially_supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Cardiomegaly",
+    "classifier_probability": 0.27,
+    "retrieval_support_count": 4,
+    "supporting_retrieved_report_ranks": [
+     1,
+     3,
+     4,
+     5
+    ],
+    "evidence_summary": "Reports 1, 3, 4, and 5 mention an enlarged heart.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   2
+  ]
+ },
+ "agent1_validation_flags": [
+  "agent1_status_inconsistent_with_count"
+ ],
+ "agent2_draft": {
+  "findings": "Enlarged cardiomediastinal silhouette and cardiomegaly.",
+  "impression": "Cardiomegaly.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Enlarged cardiomediastinal silhouette and cardiomegaly.",
+  "impression": "Cardiomegaly.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [4], \"evidence_summary\": \"Report 4 mentions an enlarged cardiomediastinal silhouette.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 3, 4, 5], \"evidence_summary\": \"Reports 1, 3, 4, and 5 mention an enlarged heart.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions Lung Opacity.\"}\n  ],\n  \"normal_report_ranks\": [\n    2\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Enlarged cardiomediastinal silhouette and cardiomegaly.\",\n\"impression\": \"Cardiomegaly.\"\n}",
+ "agent3_raw_text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Enlarged cardiomediastinal silhouette and cardiomegaly.\",\n\"impression\": \"Cardiomegaly.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "9994abe25c96b0bc635a317823025f11cfdc12b33991ac378b54fe839a5489f5",
+  "agent2_grounded_report_writer": "70f41390c9bb9469c5742242dcf72ac3b7eb386dab3eb902222c325e3fb55c77",
+  "agent3_grounding_critic": "e90655c7c4772ceb093096d1a41f88dfddfd6d19e80748cf483ddd3fc2a6c545"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "0b13b48332bff2bbd9cb2badbbf5e6dfd746ab94f6aaa04779fd6ee34195202e",
+  "agent2_grounded_report_writer": "78e4228a0d24c12979d9c5d3015574dc22ef4c8076ec4894ffe57735dd625752",
+  "agent3_grounding_critic": "c3f497a322b43043611e99285eefd27a784e83cc6ff91ea74fbcd86f53c38594"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 7.57,
+  "agent2_grounded_report_writer": 3.45,
+  "agent3_grounding_critic": 3.87
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 190,
+  "agent2_grounded_report_writer": 33,
+  "agent3_grounding_critic": 56
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 836,
+  "agent2_grounded_report_writer": 988,
+  "agent3_grounding_critic": 1012
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.13); Cardiomegaly (calibrated probability 0.27)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: The heart is enlarged. The left subclavian ICD is again identified. There is again hilar enlargement, superimposes enlarged pulmonary vasculature. opacities are unchanged and compatible with subsegmental atelectasis or scarring. There is no large pleural effusion or focal consolidation.\nIMPRESSION: Stable moderate to marked cardiomegaly.\n[2]\nFINDINGS: The heart is mildly enlarged. Left hemidiaphragm is elevated. There is no acute infiltrate or pleural effusion. The mediastinum is unremarkable.\nIMPRESSION: Borderline cardiomegaly without acute disease.\n[3]\nFINDINGS: The heart size is mildly enlarged. There is tortuosity of the thoracic aorta. No focal airspace consolidation, pleural effusions or pneumothorax. No acute bony abnormalities.\nIMPRESSION: Cardiomegaly without acute pulmonary findings.\n[4]\nFINDINGS: Enlarged cardiomediastinal silhouette. Low lung volumes. Relative elevation of right hemidiaphragm. left base density. No focal consolidation, pneumothorax or large pleural effusion. Negative for acute bone abnormality.\nIMPRESSION: Cardiomegaly without heart failure. Minimal left basilar scarring/atelectasis.\n[5]\nFINDINGS: The heart is mildly enlarged. The mediastinal contours are stable. The lungs are clear.\nIMPRESSION: Mild stable cardiomegaly, no acute disease.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.13); Cardiomegaly (calibrated probability 0.27)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Enlarged Cardiomediastinum\",\n   \"classifier_probability\": 0.1293,\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    4\n   ],\n   \"evidence_summary\": \"Report 4 mentions an enlarged cardiomediastinal silhouette.\",\n   \"support_status\": \"partially_supported\"\n  },\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"classifier_probability\": 0.27,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Reports 1, 3, 4, and 5 mention an enlarged heart.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  2\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.13); Cardiomegaly (calibrated probability 0.27)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Enlarged Cardiomediastinum\",\n   \"classifier_probability\": 0.1293,\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    4\n   ],\n   \"evidence_summary\": \"Report 4 mentions an enlarged cardiomediastinal silhouette.\",\n   \"support_status\": \"partially_supported\"\n  },\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"classifier_probability\": 0.27,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Reports 1, 3, 4, and 5 mention an enlarged heart.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  2\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Enlarged cardiomediastinal silhouette and cardiomegaly.\nIMPRESSION: Cardiomegaly.\n\nReturn the JSON now."
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "uid": "2977",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Lung Lesion",
+    "classifier_probability": 0.1271,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "The classifier suggests a lung lesion, but no retrieved reports mention this finding.",
+    "support_status": "unsupported",
+    "agent_stated_status": "unsupported"
+   },
+   {
+    "finding": "Fracture",
+    "classifier_probability": 0.409,
+    "retrieval_support_count": 2,
+    "supporting_retrieved_report_ranks": [
+     1,
+     5
+    ],
+    "evidence_summary": "The classifier suggests a fracture, and reports 1 and 5 mention fractures.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   3
+  ]
+ },
+ "agent1_validation_flags": [],
+ "agent2_draft": {
+  "findings": "Fracture is supported by retrieved evidence. Lung Lesion is not supported by retrieved evidence.",
+  "impression": "Fracture.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Fracture is supported by retrieved evidence. Lung Lesion is not supported by retrieved evidence.",
+  "impression": "Fracture.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"The classifier suggests a lung lesion, but no retrieved reports mention this finding.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [1, 5], \"evidence_summary\": \"The classifier suggests a fracture, and reports 1 and 5 mention fractures.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention enlarged cardiomediastinum.\"}\n  ],\n  \"normal_report_ranks\": [\n    3\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Fracture is supported by retrieved evidence. Lung Lesion is not supported by retrieved evidence.\",\n\"impression\": \"Fracture.\"\n}",
+ "agent3_raw_text": "{\"issues_detected\": [\"unsupported_finding_stated\"], \"decision\": \"REVISE\", \"findings\": \"Fracture is supported by retrieved evidence. Lung Lesion is not supported by retrieved evidence.\", \"impression\": \"Fracture.\"}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "82e6b0b5c2a287c37b8302be4e32112fd6dcdf1e2dbdbf453fd42e2b2cf1457a",
+  "agent2_grounded_report_writer": "6449a64290afcf7b483ac9e46aef3d0b35126ec8929a385c0fb9505a8224e17a",
+  "agent3_grounding_critic": "80afa4d82c68bd673ea4a11c81b813502472945ee14722fc2703e8e1485544e9"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "ccd7c2a2130064ea86fe711c6a8b351784d28219e3a249f1d3d5f504ebd7ef67",
+  "agent2_grounded_report_writer": "ea759fa4e9c6461fd39567c0756a8f46ac6607e6e3b3f35d07c7812f878234e5",
+  "agent3_grounding_critic": "37b1bb6a53120f2a505751cbb8b63e7e08af559c28da59e401ce8288333fbf8a"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 7.25,
+  "agent2_grounded_report_writer": 3.4,
+  "agent3_grounding_critic": 3.8
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 184,
+  "agent2_grounded_report_writer": 35,
+  "agent3_grounding_critic": 52
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 1052,
+  "agent2_grounded_report_writer": 960,
+  "agent3_grounding_critic": 986
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Lung Lesion (calibrated probability 0.13); Fracture (calibrated probability 0.41)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: The lungs are hypoinflated with mild basilar bronchovascular crowding/atelectasis. There is a fracture of the left anterior 7th rib and the left anterior 6th rib, of uncertain acuity. Correlate with tenderness. There is mild atelectasis in the left lung base. There is corticated deformity of the right anterior 7th rib, remote fracture. There is no evidence of pneumothorax or large pleural effusion.\nIMPRESSION: 1. Suspected fractures of the left anterior 6th and 7th ribs, of uncertain acuity. Correlate with tenderness. 2. Low lung volumes with mild basilar atelectasis, left greater than right..\n[2]\nFINDINGS: Right thorax volume loss with some degree of left-to-right mediastinal shift. Relative hyperlucency of left lung, compensatory hyperinflation. Diminutive right hilar silhouette, compatible with absence of right pulmonary artery, as noted on prior CT. No focal consolidation, pneumothorax or large pleural effusion. Negative for acute displaced rib fracture.\nIMPRESSION: Negative for acute abnormality.\n[3]\nFINDINGS: The cardiomediastinal silhouette and pulmonary vasculature are within normal limits in size. The lungs are clear of focal airspace disease, pneumothorax, or pleural effusion. There is no definite evidence of acute fracture.\nIMPRESSION: No acute cardiopulmonary findings..\n[4]\nFINDINGS: Chronic increased interstitial markings without evidence of focal infiltrate. Bilateral apical pleural thickening. No pneumothorax. No pleural effusion. Stable heart size. Marked degenerative change of the, status post remote right humerus fracture. deformity of a midthoracic vertebral body, also chronic.\nIMPRESSION: Chronic lung disease without acute findings.\n[5]\nFINDINGS: The examination consists of frontal and lateral radiographs of the chest. Upper thorax is poorly visualized due to patient's overlying head and chin. The cardiomediastinal contours are within normal limits. Background of mild coarse interstitial opacities seen throughout the lungs related to background of emphysema. Calcified granuloma is seen in the left medial lung base. There is no consolidation, pleural effusion or pneumothorax. Deformity of the right 6th rib laterally has appearance of acute or subacute fracture. Degenerative changes of the thoracic spine are again seen.\nIMPRESSION: Age indeterminant but acute to subacute right 6th rib fracture.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Lesion (calibrated probability 0.13); Fracture (calibrated probability 0.41)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Lesion\",\n   \"classifier_probability\": 0.1271,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"The classifier suggests a lung lesion, but no retrieved reports mention this finding.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.409,\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    5\n   ],\n   \"evidence_summary\": \"The classifier suggests a fracture, and reports 1 and 5 mention fractures.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  3\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Lesion (calibrated probability 0.13); Fracture (calibrated probability 0.41)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Lesion\",\n   \"classifier_probability\": 0.1271,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"The classifier suggests a lung lesion, but no retrieved reports mention this finding.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.409,\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    5\n   ],\n   \"evidence_summary\": \"The classifier suggests a fracture, and reports 1 and 5 mention fractures.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  3\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Fracture is supported by retrieved evidence. Lung Lesion is not supported by retrieved evidence.\nIMPRESSION: Fracture.\n\nReturn the JSON now."
+ }
+}

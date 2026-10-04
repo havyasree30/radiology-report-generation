@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "34bd087795bd6b56bacae849999f2e14ebd113470575869e59f468d27b6c306e",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [1], \"evidence_summary\": \"Report 1 mentions an enlarged cardiomediastinal silhouette.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions a lung lesion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [3, 5], \"evidence_summary\": \"Reports 3 and 5 mention fractures.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [3, 5], \"evidence_summary\": \"Reports 3 and 5 mention opacities in the lung bases bilaterally, which could be considered lung opacity.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"Reports 1, 3, and 5 mention atelectasis or similar findings in the lung bases.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 5], \"evidence_summary\": \"Reports 1 and 5 mention cardiomegaly or enlarged heart size.\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions possible right lower lobe pneumonia.\"}\n  ],\n  \"normal_report_ranks\": [\n    2,\n    4\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 941,
+ "output_tokens": 371,
+ "total_duration_ns": 9483986900,
+ "load_duration_ns": 9455200,
+ "attempts": 1,
+ "wall_seconds": 11.53,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T14:50:52+00:00",
+ "agent": "agent1_evidence_verifier"
+}

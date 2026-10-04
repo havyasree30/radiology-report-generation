@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "e87a441ce64a055e9c12e44686b699a9dbe7998c62a212a978f0acb7093d952b",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Retrieved reports mention airspace opacity or vague opacity in the lung.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung lesion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [1, 2, 4], \"evidence_summary\": \"Retrieved reports mention airspace opacity or consolidation in the lung.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 2, 3, 5], \"evidence_summary\": \"Retrieved reports mention airspace opacity, vague opacity, or pneumonia.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Edema\", \"supporting_ranks\": [2, 5], \"evidence_summary\": \"Retrieved report 2 mentions edema as a possibility, but not as a primary finding.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 3], \"evidence_summary\": \"Retrieved report 1 mentions streaky atelectasis, and report 3 mentions resolving or developing pneumonia which could be atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [4], \"evidence_summary\": \"Retrieved report 4 mentions chronic opacity which may be due to scarring, possibly related to atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Retrieved report 5 mentions aspiration or edema as possible but less likely causes for patchy opacities.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Retrieved report 5 mentions lung volumes 3, which could imply atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Retrieved report 5 mentions patchy bilateral opacities, which could be atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Retrieved report 5 mentions patchy bilateral opacities, which could be atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Retrieved report 5 mentions patchy bilateral opacities, which could be atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Retrieved report 5 mentions patchy bilateral opacities, which could be atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Retrieved report 5 mentions patchy bilateral opacities, which could be atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Retrieved report 5 mentions patchy bilateral opacities, which could be atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Retrieved report 5 mentions patchy bilateral opacities, which could be atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Retrieved report 5 mentions patchy bilateral opacities, which could be atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Retrieved report 5 mentions patchy bilateral opacities, which could be atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Retrieved report ",
+ "done_reason": "length",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 987,
+ "output_tokens": 900,
+ "total_duration_ns": 19662356600,
+ "load_duration_ns": 4383700,
+ "attempts": 1,
+ "wall_seconds": 21.68,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:56:53+00:00",
+ "agent": "agent1_evidence_verifier"
+}

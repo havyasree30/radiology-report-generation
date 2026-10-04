@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "612ad0426514f943042b3e96f2adae0a127513641601e07dc34c9ebf7ddd199a",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention lung opacity.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [1], \"evidence_summary\": \"Retrieved report 1 mentions pleural effusion.\", \"support_status\": \"partially_supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [1], \"evidence_summary\": \"Retrieved report 1 mentions fracture.\", \"support_status\": \"partially_supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports are classifier-positive for Lung Opacity.\"}\n  ],\n  \"normal_report_ranks\": [\n    1, 2, 3, 4, 5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 882,
+ "output_tokens": 236,
+ "total_duration_ns": 5491618400,
+ "load_duration_ns": 5460000,
+ "attempts": 1,
+ "wall_seconds": 7.54,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:05:32+00:00",
+ "agent": "agent1_evidence_verifier"
+}

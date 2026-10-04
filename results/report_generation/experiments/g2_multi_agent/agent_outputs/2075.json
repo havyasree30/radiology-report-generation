@@ -1,0 +1,80 @@
+{
+ "uid": "2075",
+ "evidence": {
+  "classifier_output_state": "no_finding",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "agent1_validation_flags": [],
+ "agent2_draft": {
+  "findings": "No abnormal findings.",
+  "impression": "No acute cardiopulmonary process.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "revise",
+  "issues": [
+   "no_finding_contradiction"
+  ],
+  "model_copy_identical_to_draft": false,
+  "flags": []
+ },
+ "final_report": {
+  "findings": "FINDINGS: No abnormal findings.",
+  "impression": "IMPRESSION: No acute cardiopulmonary process.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [],\n  \"retrieval_only_candidates\": [],\n  \"normal_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n  ]\n}",
+ "agent2_raw_text": "{\n \"findings\": \"No abnormal findings.\",\n \"impression\": \"No acute cardiopulmonary process.\"\n}",
+ "agent3_raw_text": "{\"issues_detected\": [\"no_finding_contradiction\"], \"decision\": \"REVISE\", \"findings\": \"FINDINGS: No abnormal findings.\", \"impression\": \"IMPRESSION: No acute cardiopulmonary process.\"}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "a2f25bd9cb69f1a7ae97f534a6eac383151654da7e695908805925775a4b5c88",
+  "agent2_grounded_report_writer": "d0e3917188f5ee55ded4691f60909666e81a91ab4159211e8afb018050cf5f8e",
+  "agent3_grounding_critic": "22d7b86c4b9d307500dfab72ab0b83bd3604386ef8ac725b3576b919654243d7"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "27447656cdec6f9e145b252eaeb6e381f0d9831b26931168230bed1323ec8394",
+  "agent2_grounded_report_writer": "7107569df53c90452ca727216ba401a748177ac8e38a3c00c123c0aed09b009e",
+  "agent3_grounding_critic": "27c3aebb14cbc011861fbf6f0f3614b151d33e796660150e8a232979c43d6e4c"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 4.2,
+  "agent2_grounded_report_writer": 3.27,
+  "agent3_grounding_critic": 3.73
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 56,
+  "agent2_grounded_report_writer": 24,
+  "agent3_grounding_critic": 48
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 713,
+  "agent2_grounded_report_writer": 758,
+  "agent3_grounding_critic": 775
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: none\nNo Finding: positive\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: The lungs and pleural spaces show no acute abnormality. Heart size and pulmonary vascularity within normal limits..\nIMPRESSION: 1. No acute pulmonary abnormality.\n[2]\nFINDINGS: The lungs and pleural spaces show no acute abnormality. Heart size and pulmonary vascularity within normal limits.\nIMPRESSION: 1. No acute pulmonary abnormality.\n[3]\nFINDINGS: The lungs and pleural spaces show no acute abnormality. Heart size and pulmonary vascularity within normal limits.\nIMPRESSION: 1. No acute pulmonary abnormality.\n[4]\nFINDINGS: The lungs and pleural spaces show no acute abnormality. Heart size and pulmonary vascularity within normal limits..\nIMPRESSION: 1. No acute pulmonary abnormality.\n[5]\nFINDINGS: The lungs and pleural spaces show no acute abnormality. Heart size and pulmonary vascularity within normal limits.\nIMPRESSION: 1. No acute pulmonary abnormality.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: no_finding\nFinal positive findings: none\nNo Finding: positive\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"no_finding\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  3,\n  4,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: no_finding\nFinal positive findings: none\nNo Finding: positive\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"no_finding\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  3,\n  4,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: No abnormal findings.\nIMPRESSION: No acute cardiopulmonary process.\n\nReturn the JSON now."
+ }
+}

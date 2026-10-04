@@ -1,0 +1,100 @@
+{
+ "uid": "972",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Enlarged Cardiomediastinum",
+    "classifier_probability": 0.1498,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   },
+   {
+    "finding": "Lung Lesion",
+    "classifier_probability": 0.1329,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "Not stated in any retrieved report.",
+    "support_status": "unsupported",
+    "agent_stated_status": null
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": []
+ },
+ "agent1_validation_flags": [
+  "agent1_omitted_classifier_finding",
+  "agent1_status_inconsistent_with_count",
+  "agent1_summary_replaced",
+  "agent1_unparseable"
+ ],
+ "agent2_draft": {
+  "findings": "Enlarged Cardiomediastinum and Lung Lesion.",
+  "impression": "Enlarged Cardiomediastinum and Lung Lesion.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Enlarged Cardiomediastinum and Lung Lesion.",
+  "impression": "Enlarged Cardiomediastinum and Lung Lesion.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [1, 2, 4], \"evidence_summary\": \"Report 1 states normal cardiomediastinal contours. Report 2 states Enlarged cardiomediastinal silhouette. Report 4 states suspected cardiomegaly or less, pericardial effusion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [2, 4], \"evidence_summary\": \"Report 2 states Cardiomegaly without heart failure. Report 4 states suspected cardiomegaly, less pericardial effusion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [2, 3, 4, 5], \"evidence_summary\": \"Report 2 states left base density. Report 3 states left basilar bandlike opacities suggestive of scarring or atelectasis. Report 4 states low lung volumes and central bronchovascular crowding but no evidence of overt pulmonary edema. Report 5 states Bronchovascular crowding without typical findings of pulmonary edema.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [2], \"evidence_summary\": \"Report 2 states no identified mass lesion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [4, 5], \"evidence_summary\": \"Report 4 states no evidence of overt pulmonary edema. Report 5 states Bronchovascular crowding without typical findings of pulmonary edema.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [2, 3, 4, 5], \"evidence_summary\": \"Report 2 states no pneumothorax. Report 3 states No overt edema. Report 4 states no evidence of focal airspace disease, pneumothorax, pleural effusion. Report 5 states no definite pleural effusion seen.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [2, 3, 4, 5], \"evidence_summary\": \"Report 2 states no large pleural effusion. Report 3 states Question small right pleural effusion versus pleural thickening. Report 4 states no evidence of focal airspace disease, pneumothorax, pleural effusion. Report 5 states no definite pleural effusion seen.\", \"support_status\": \"partially_supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Report 1 states no focal infiltrate. Report 2 states left base density. Report 3 states left basilar bandlike opacities suggestive of scarring or atelectasis. Report 4 states low lung volumes and central bronchovascular crowding but no evidence of overt pulmonary edema. Report 5 states Bronchovascular crowding without typical findings of pulmonary edema. These findings are not classified as positive by the automated classifier.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [2, 4], \"evidence_summary\": \"Report 2 states Cardiomegaly without heart failure. Report 4 states suspected cardiomegaly, less pericardial effusion. These findings are not classified as positive by the automated classifier.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [2, 3, 4, 5], \"evidence_summary\": \"Report 2 states no large pleural effusion. Report 3 states Question small right pleural effusion versus pleural thickening. Report 4 states no evidence of focal airspace disease, pneumothorax, pleural effusion. Report 5 states no definite pleural effusion seen.",
+ "agent2_raw_text": "{\n\"findings\": \"Enlarged Cardiomediastinum and Lung Lesion.\",\n\"impression\": \"Enlarged Cardiomediastinum and Lung Lesion.\"\n}",
+ "agent3_raw_text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Enlarged Cardiomediastinum and Lung Lesion.\",\n\"impression\": \"Enlarged Cardiomediastinum and Lung Lesion.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "a8ecee4e782772f4eabd4344b857213ace955744d8a6a64e70dea298bd8185ab",
+  "agent2_grounded_report_writer": "442917d0260b64ace95a05a69dd17d9d44841189ec61bc7b8db767ea408ad132",
+  "agent3_grounding_critic": "e5b5d850382343595637d546b39ae9df03c014e50b22393e54df35ce9bc225ad"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "ca8b2993506392e09beb1976fd441c4e0d2ae084f25395e445fd5a7a50cd4f93",
+  "agent2_grounded_report_writer": "6b3e0b33bba189a261ffe630c36c17b8db95e68b625c7b7e1822de00c27418b3",
+  "agent3_grounding_critic": "ff942ac1472cfa09495e653ce6e9149e1fe4c974107c9e1da351236eebb2909f"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 20.94,
+  "agent2_grounded_report_writer": 3.34,
+  "agent3_grounding_critic": 3.76
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 900,
+  "agent2_grounded_report_writer": 40,
+  "agent3_grounding_critic": 63
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 959,
+  "agent2_grounded_report_writer": 942,
+  "agent3_grounding_critic": 973
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "length",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.15); Lung Lesion (calibrated probability 0.13)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: Lungs are hyperinflated with flattening of the diaphragms and increased AP chest diameter, compatible with emphysema. There is no evidence of focal infiltrate, pneumothorax, pleural effusion, or identified mass lesion. There is normal cardiomediastinal contours.\nIMPRESSION: 1. No acute cardiopulmonary abnormality, findings compatible with emphysema.\n[2]\nFINDINGS: Enlarged cardiomediastinal silhouette. Low lung volumes. Relative elevation of right hemidiaphragm. left base density. No focal consolidation, pneumothorax or large pleural effusion. Negative for acute bone abnormality.\nIMPRESSION: Cardiomegaly without heart failure. Minimal left basilar scarring/atelectasis.\n[3]\nFINDINGS: (not available)\nIMPRESSION: Stable enlarged cardiomediastinal silhouette. Tortuous aorta. Low lung volumes and left basilar bandlike opacities suggestive of scarring or atelectasis. No overt edema. Question small right pleural effusion versus pleural thickening. No visible pneumothorax.\n[4]\nFINDINGS: The cardiac silhouette is enlarged with no comparison studies. Findings are accentuated by low lung volumes and eventration of the anterior right hemidiaphragm, however, cardiomegaly or less, pericardial effusion is suspected. The lungs are hypoinflated with central bronchovascular crowding but no evidence of overt pulmonary edema. The lungs are grossly clear of focal airspace disease, pneumothorax, pleural effusion. There are no acute bony findings. There are degenerative changes of the thoracic spine. Patient appears morbidly obese.\nIMPRESSION: 1. Suspected cardiomegaly, less pericardial effusion. Prior comparison studies would be helpful. 2. Low lung volumes. No evidence of focal airspace disease..\n[5]\nFINDINGS: (not available)\nIMPRESSION: Heart size mildly enlarged for technique. No focal alveolar consolidation, no definite pleural effusion seen. Bronchovascular crowding without typical findings of pulmonary edema.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.15); Lung Lesion (calibrated probability 0.13)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Enlarged Cardiomediastinum\",\n   \"classifier_probability\": 0.1498,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Lung Lesion\",\n   \"classifier_probability\": 0.1329,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.15); Lung Lesion (calibrated probability 0.13)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Enlarged Cardiomediastinum\",\n   \"classifier_probability\": 0.1498,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Lung Lesion\",\n   \"classifier_probability\": 0.1329,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"Not stated in any retrieved report.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": []\n}\n\nC. DRAFT REPORT\nFINDINGS: Enlarged Cardiomediastinum and Lung Lesion.\nIMPRESSION: Enlarged Cardiomediastinum and Lung Lesion.\n\nReturn the JSON now."
+ }
+}

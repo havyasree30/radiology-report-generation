@@ -1,0 +1,126 @@
+{
+ "uid": "847",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Lung Opacity",
+    "classifier_probability": 0.4364,
+    "retrieval_support_count": 5,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "evidence_summary": "Stated in 5 of 5 retrieved reports.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Atelectasis",
+    "classifier_probability": 0.2936,
+    "retrieval_support_count": 5,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "evidence_summary": "Stated in 5 of 5 retrieved reports.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Fracture",
+    "classifier_probability": 0.1485,
+    "retrieval_support_count": 1,
+    "supporting_retrieved_report_ranks": [
+     3
+    ],
+    "evidence_summary": "Stated in 1 of 5 retrieved reports.",
+    "support_status": "partially_supported",
+    "agent_stated_status": "partially_supported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   1,
+   2,
+   4,
+   5
+  ]
+ },
+ "agent1_validation_flags": [
+  "agent1_summary_replaced",
+  "agent1_summary_truncated"
+ ],
+ "agent2_draft": {
+  "findings": "Lung Opacity and Atelectasis are supported by retrieved evidence. Fracture is partially supported by retrieved evidence.",
+  "impression": "Atelectasis is the most likely finding.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Lung Opacity and Atelectasis are supported by retrieved evidence. Fracture is partially supported by retrieved evidence.",
+  "impression": "Atelectasis is the most likely finding.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention opacity in the left lung base, left lung, and left midlung.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention atelectasis in the left lung base, left lower lobe, left lung base, left lung base, and left midlung.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [3], \"evidence_summary\": \"Retrieved report 3 mentions fractures of the left anterior 6th and 7th ribs.\", \"support_status\": \"partially_supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions enlarged cardiomediastinum.\"}\n  ],\n  \"normal_report_ranks\": [\n    1, 2, 4, 5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Lung Opacity and Atelectasis are supported by retrieved evidence. Fracture is partially supported by retrieved evidence.\",\n\"impression\": \"Atelectasis is the most likely finding.\"\n}",
+ "agent3_raw_text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Lung Opacity and Atelectasis are supported by retrieved evidence. Fracture is partially supported by retrieved evidence.\",\n\"impression\": \"Atelectasis is the most likely finding.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "d8adb614a0d32e737a157f308007d2ea9af5b68cb9943313ec6346fa272345b7",
+  "agent2_grounded_report_writer": "f619fc2c2c410c9e5f1f2509cabc74e84e1b95f5f05a8e509cfc2c07f9349ba6",
+  "agent3_grounding_critic": "f53987de848cb0b4790178fabd8a87b4adcd4e44943be8c2e491f55277192de7"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "fa6a04157b06e01f50fabb4d1672d72cbe8f5cc0a204764011633ac4a3004774",
+  "agent2_grounded_report_writer": "9f7611e4786b713893cc69ce886e171bab535dcada1e36095e010ec66f2e29e7",
+  "agent3_grounding_critic": "9c60913bebe879d3aec27a73e6804ea921a6c269699feaf6679f53d6ea4c195e"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 8.57,
+  "agent2_grounded_report_writer": 3.52,
+  "agent3_grounding_critic": 4.03
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 290,
+  "agent2_grounded_report_writer": 45,
+  "agent3_grounding_critic": 68
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 947,
+  "agent2_grounded_report_writer": 1107,
+  "agent3_grounding_critic": 1144
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Lung Opacity (calibrated probability 0.44); Atelectasis (calibrated probability 0.29); Fracture (calibrated probability 0.15)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: There is opacity left lung base may represent atelectasis or early infiltrate. The cardiomediastinal silhouette is within normal limits. No pneumothorax or pleural effusion.\nIMPRESSION: opacity left lung base..\n[2]\nFINDINGS: Streaky opacity is noted within the left lung base which may represent focal area of atelectasis. Right lung is grossly clear. Cardiac silhouette and mediastinal contours are within normal limits. There is no pneumothorax. No large pleural effusion.\nIMPRESSION: Left lower lobe atelectasis otherwise no acute cardiopulmonary disease.\n[3]\nFINDINGS: The lungs are hypoinflated with mild basilar bronchovascular crowding/atelectasis. There is a fracture of the left anterior 7th rib and the left anterior 6th rib, of uncertain acuity. Correlate with tenderness. There is mild atelectasis in the left lung base. There is corticated deformity of the right anterior 7th rib, remote fracture. There is no evidence of pneumothorax or large pleural effusion.\nIMPRESSION: 1. Suspected fractures of the left anterior 6th and 7th ribs, of uncertain acuity. Correlate with tenderness. 2. Low lung volumes with mild basilar atelectasis, left greater than right..\n[4]\nFINDINGS: There is minimal opacity in the left lung base, representing atelectasis. The lungs are otherwise clear. Heart size is normal. No pneumothorax.\nIMPRESSION: Left base atelectasis. Lungs otherwise clear..\n[5]\nFINDINGS: Left midlung opacity noted, not visualized on prior. Heart size within normal limits. No pleural effusions. No evidence of pneumothorax. Osseous structures intact.\nIMPRESSION: Left mid lung opacity noted, most compatible with atelectasis versus infiltrate. Recommend clinical correlation..\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Opacity (calibrated probability 0.44); Atelectasis (calibrated probability 0.29); Fracture (calibrated probability 0.15)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.4364,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Stated in 5 of 5 retrieved reports.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Atelectasis\",\n   \"classifier_probability\": 0.2936,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Stated in 5 of 5 retrieved reports.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.1485,\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    3\n   ],\n   \"evidence_summary\": \"Stated in 1 of 5 retrieved reports.\",\n   \"support_status\": \"partially_supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  4,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Opacity (calibrated probability 0.44); Atelectasis (calibrated probability 0.29); Fracture (calibrated probability 0.15)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.4364,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Stated in 5 of 5 retrieved reports.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Atelectasis\",\n   \"classifier_probability\": 0.2936,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Stated in 5 of 5 retrieved reports.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.1485,\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    3\n   ],\n   \"evidence_summary\": \"Stated in 1 of 5 retrieved reports.\",\n   \"support_status\": \"partially_supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  4,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Lung Opacity and Atelectasis are supported by retrieved evidence. Fracture is partially supported by retrieved evidence.\nIMPRESSION: Atelectasis is the most likely finding.\n\nReturn the JSON now."
+ }
+}

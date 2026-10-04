@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "fd6ea7fe0b9b20cd011a34f50e376ab9209bebecfa6f0c178c734cb55d3e1f44",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"The classifier indicates a high probability of Lung Opacity. Reports 1, 2, 3, and 4 mention an opacity in the lung.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [4], \"evidence_summary\": \"The classifier indicates a moderate probability of Consolidation. Report 4 mentions consolidation.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"The classifier indicates a moderate probability of Pneumonia. Reports 1, 2, 3, 4, and 5 mention pneumonia or findings consistent with it.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Edema\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions edema as a possibility, but it is less likely than pneumonia. The classifier does not support edema.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1], \"evidence_summary\": \"Report 1 mentions streaky atelectasis as a possibility for the opacity. The classifier does not support atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [3], \"evidence_summary\": \"Report 3 mentions resolving or developing pneumonia, which could involve atelectasis. The classifier does not support atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [4], \"evidence_summary\": \"Report 4 mentions chronic scarring, which could be related to atelectasis. The classifier does not support atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions aspiration or edema as possibilities, which could involve atelectasis. The classifier does not support atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions lung volumes, which could be related to atelectasis. The classifier does not support atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions aspiration or edema as possibilities, which could involve atelectasis. The classifier does not support atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions lung volumes, which could be related to atelectasis. The classifier does not support atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions aspiration or edema as possibilities, which could involve atelectasis. The classifier does not support atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions lung volumes, which could be related to atelectasis. The classifier does not support atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions aspiration or edema as possibilities, which could involve atelectasis. The classifier does not support atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions lung volumes, which could be related to atelectasis. The classifier does not support atelectasis.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions aspiration or edema as possibilities, which could involve atelectasis. The classifier does not support atelectasis.\"},\n    {\"finding\": \"Atelectasis",
+ "done_reason": "length",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 974,
+ "output_tokens": 900,
+ "total_duration_ns": 19206112400,
+ "load_duration_ns": 6901100,
+ "attempts": 1,
+ "wall_seconds": 21.24,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:18:32+00:00",
+ "agent": "agent1_evidence_verifier"
+}

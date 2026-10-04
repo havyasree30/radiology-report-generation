@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "7861b06d4034ef971134b12a06f3486bc1bee3fd7a88b6484bc2cff49e58a2d6",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention lung opacity.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung lesion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"Retrieved reports mention pneumothorax.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Edema\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Retrieved reports mention edema, but not as a classifier positive finding.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [1, 3, 4], \"evidence_summary\": \"Retrieved reports mention consolidation, but not as a classifier positive finding.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention atelectasis, but not as a classifier positive finding.\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [1, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention pleural other, but not as a classifier positive finding.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention support devices.\"},\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention enlarged cardiomediastinum.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention cardiomegaly.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention lung opacity, but not as a classifier positive finding.\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung lesion.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"Retrieved reports mention pneumothorax, but not as a classifier positive finding.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Retrieved reports mention edema, but not as a classifier positive finding.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [1, 3, 4], \"evidence_summary\": \"Retrieved reports mention consolidation, but not as a classifier positive finding.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention atelectasis, but not as a classifier positive finding.\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [1, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention pleural other, but not as a classifier positive finding.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention support devices.\"},\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention enlarged cardiomediastinum.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\":",
+ "done_reason": "length",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 837,
+ "output_tokens": 900,
+ "total_duration_ns": 19745799600,
+ "load_duration_ns": 6084300,
+ "attempts": 1,
+ "wall_seconds": 21.78,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T14:59:38+00:00",
+ "agent": "agent1_evidence_verifier"
+}

@@ -1,0 +1,94 @@
+{
+ "uid": "2223",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Edema",
+    "classifier_probability": 0.536,
+    "retrieval_support_count": 2,
+    "supporting_retrieved_report_ranks": [
+     1,
+     5
+    ],
+    "evidence_summary": "Reports 1 and 5 mention edema.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   3,
+   4
+  ]
+ },
+ "agent1_validation_flags": [
+  "agent1_extra_or_duplicate_classifier_entry"
+ ],
+ "agent2_draft": {
+  "findings": "Pulmonary edema.",
+  "impression": "Pulmonary edema.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "abnormal_to_normal_collapse"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Pulmonary edema.",
+  "impression": "Pulmonary edema.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Edema\", \"supporting_ranks\": [1, 5], \"evidence_summary\": \"Reports 1 and 5 mention edema.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 2], \"evidence_summary\": \"Reports 1 and 2 mention cardiomegaly.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 5], \"evidence_summary\": \"Reports 1, 2, and 5 mention lung opacity.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions enlarged cardiomediastinum.\"}\n  ],\n  \"normal_report_ranks\": [\n    3, 4\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Pulmonary edema.\",\n\"impression\": \"Pulmonary edema.\"\n}",
+ "agent3_raw_text": "{\n \"issues_detected\": [\n  \"abnormal_to_normal_collapse\"\n ],\n \"decision\": \"REVISE\",\n \"findings\": \"Pulmonary edema.\",\n \"impression\": \"Pulmonary edema.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "dc4cf270cea92751b17258ade39a4b9e983125e89b7d56d079aa145c3edb2b69",
+  "agent2_grounded_report_writer": "24d343ea08197b7337e854e885c86d5ee697f0a8cdb55cf510da811fee4b4e27",
+  "agent3_grounding_critic": "1c1b1fff5f91d433735740be611d389ea9b891ed12dc7d442a25fa89ff69483d"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "1e7986e7f9e42a89f4375a1e8beffd342128a1629a923eeb2662a4b399092f2e",
+  "agent2_grounded_report_writer": "da8ee5c40f4a8bf1779590d87041481d0676ef6686b6d9e03da1a9214665b713",
+  "agent3_grounding_critic": "1d946e621516ed20bd9f98403d2539d8b03456a9bab15713d42970398a364d6b"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 8.12,
+  "agent2_grounded_report_writer": 3.32,
+  "agent3_grounding_critic": 3.78
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 234,
+  "agent2_grounded_report_writer": 22,
+  "agent3_grounding_critic": 52
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 824,
+  "agent2_grounded_report_writer": 853,
+  "agent3_grounding_critic": 866
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Edema (calibrated probability 0.54)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: The heart is enlarged. There is pulmonary vascular congestion with diffusely increased interstitial and mild patchy airspace opacities. The distribution pulmonary edema. There is no pneumothorax or large pleural effusion. There are no acute bony findings.\nIMPRESSION: Cardiomegaly with vascular congestion and suspected pulmonary edema..\n[2]\nFINDINGS: Increased interstitial lung changes with superimposed pulmonary edema. Cardiomegaly. Negative for effusion or pneumothorax. Degenerative changes of the thoracic spine.\nIMPRESSION: Cardiomegaly with pulmonary edema superimposed on chronic interstitial lung changes.\n[3]\nFINDINGS: (not available)\nIMPRESSION: Borderline heart size, improved mediastinal widening. No focal alveolar consolidation, no definite pleural effusion seen. Mild hypoventilation, bronchovascular crowding without typical findings of pulmonary edema.\n[4]\nFINDINGS: (not available)\nIMPRESSION: Heart size mildly enlarged for technique. No focal alveolar consolidation, no definite pleural effusion seen. Bronchovascular crowding without typical findings of pulmonary edema.\n[5]\nFINDINGS: and lateral chest examination was obtained. There is improvement in bilateral pulmonary edema with mild residual. There is minimal right-sided pleural effusion. Heart silhouette is not enlarged. There is calcified mediastinal lymph. There is no pneumothorax\nIMPRESSION: 1. Improving bilateral interstitial edema pattern. 2. Small right-sided pleural effusion.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Edema (calibrated probability 0.54)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Edema\",\n   \"classifier_probability\": 0.536,\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    5\n   ],\n   \"evidence_summary\": \"Reports 1 and 5 mention edema.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  3,\n  4\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Edema (calibrated probability 0.54)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Edema\",\n   \"classifier_probability\": 0.536,\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    5\n   ],\n   \"evidence_summary\": \"Reports 1 and 5 mention edema.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  3,\n  4\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Pulmonary edema.\nIMPRESSION: Pulmonary edema.\n\nReturn the JSON now."
+ }
+}

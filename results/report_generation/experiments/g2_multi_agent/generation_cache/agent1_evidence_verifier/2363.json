@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "8f7004d4ff6407ef48e7fd9b6b3a977bc5ffe18d3a335db511474762b03786a7",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"The classifier indicates Lung Opacity is present. Reports 1, 2, 3, and 4 mention opacity in the lung.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [1, 2, 4], \"evidence_summary\": \"The classifier indicates Consolidation is present. Reports 1, 2, and 4 mention consolidation.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 2, 3, 5], \"evidence_summary\": \"The classifier indicates Pneumonia is present. Reports 1, 2, 3, and 5 mention pneumonia.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"The classifier indicates Pleural Effusion is present. Reports 1 and 4 mention pleural effusion.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [4], \"evidence_summary\": \"Report 4 mentions a right upper lobe airspace consolidation, which could be considered a lung lesion.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [2, 5], \"evidence_summary\": \"Report 2 mentions stable cardiomediastinal silhouette with normal heart size, no typical findings of pulmonary edema. Report 5 mentions patchy bilateral opacities, primarily in the lung bases, whose features are most consistent with pneumonia. Aspiration or edema are also possible but less.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 3], \"evidence_summary\": \"Report 1 mentions airspace opacity in the left upper lung which may represent streaky atelectasis or resolving pneumonia. Report 3 mentions vague opacity which appears to be within the left lower lobe. This may represent resolving or developing pneumonia given the patient's history.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention support devices.\"},\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [2], \"evidence_summary\": \"Report 2 mentions stable cardiomediastinal silhouette with normal heart size, no typical findings of pulmonary edema. Enlarged Cardiomediastinum is not mentioned.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [2], \"evidence_summary\": \"Report 2 mentions stable cardiomediastinal silhouette with normal heart size, no typical findings of pulmonary edema. Cardiomegaly is not mentioned.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [4], \"evidence_summary\": \"Report 4 mentions a right upper lobe airspace consolidation, which could be considered a lung lesion. Lung Opacity is not mentioned.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [4], \"evidence_summary\": \"Report 4 mentions a right upper lobe airspace consolidation, which could be considered a lung lesion. Consolidation is not mentioned.\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 2, 3, 5], \"evidence_summary\": \"Report 1 mentions airspace opacity in the left upper lung which may represent streaky atelectasis or resolving pneumonia. Report 2 mentions abnormal opacity in the right lung base which may be compatible with pneumonia. Report 3 mentions vague opacity at the left lung base which appears to be within the left lower lobe. This may represent resolving or developing pneumonia given the patient's history. Report 5 mentions patchy bilateral opacities, primarily in the lung bases, whose features are most consistent with pneumonia. A",
+ "done_reason": "length",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 988,
+ "output_tokens": 900,
+ "total_duration_ns": 19730882900,
+ "load_duration_ns": 8071600,
+ "attempts": 1,
+ "wall_seconds": 21.8,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:28:03+00:00",
+ "agent": "agent1_evidence_verifier"
+}

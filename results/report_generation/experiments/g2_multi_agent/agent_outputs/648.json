@@ -1,0 +1,101 @@
+{
+ "uid": "648",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Enlarged Cardiomediastinum",
+    "classifier_probability": 0.2519,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "No retrieved reports state this finding.",
+    "support_status": "unsupported",
+    "agent_stated_status": "unsupported"
+   },
+   {
+    "finding": "Fracture",
+    "classifier_probability": 0.1608,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "No retrieved reports state this finding.",
+    "support_status": "unsupported",
+    "agent_stated_status": "unsupported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "agent1_validation_flags": [],
+ "agent2_draft": {
+  "findings": "Enlarged Cardiomediastinum is possible.",
+  "impression": "Fracture is possible.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Enlarged Cardiomediastinum is possible.",
+  "impression": "Fracture is possible.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports state this finding.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports state this finding.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports state this finding.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports state this finding.\"}\n  ],\n  \"normal_report_ranks\": [\n    1, 2, 3, 4, 5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Enlarged Cardiomediastinum is possible.\",\n\"impression\": \"Fracture is possible.\"\n}",
+ "agent3_raw_text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Enlarged Cardiomediastinum is possible.\",\n\"impression\": \"Fracture is possible.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "2f3307a275063d23e217bcaf74e2fe107afd053c179175109ef5d3b6c7338e3f",
+  "agent2_grounded_report_writer": "7e35b866d9c13d734c1183ee2fe4b8204748f3f1eb21737bb02400f8524a82ac",
+  "agent3_grounding_critic": "96f8a1243a3cc4638d029f5e3177c35746d906d8175387ecf3959067a89b77a0"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "960603200ac81cc67b46980632516dc369ba28c92a42f5fd1b8ed5dd462e766c",
+  "agent2_grounded_report_writer": "de10a7c730ad119882dcd8cbc5ae19a7c1d8298675256e3079bc098ddd9988b0",
+  "agent3_grounding_critic": "c58b07769da24a2286bde4be1af6e4dec1cec5598bc019bc3b3dab77980dcd00"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 6.81,
+  "agent2_grounded_report_writer": 3.14,
+  "agent3_grounding_critic": 3.63
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 206,
+  "agent2_grounded_report_writer": 30,
+  "agent3_grounding_critic": 53
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 835,
+  "agent2_grounded_report_writer": 960,
+  "agent3_grounding_critic": 981
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.25); Fracture (calibrated probability 0.16)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: The cardiomediastinal silhouette is normal size and configuration. The thoracic aorta is tortuous. Pulmonary vasculature within normal limits. The lungs are well-aerated. There is no pneumothorax, pleural effusion, or focal consolidation. There is no obvious displaced rib fracture. If there is concern for fracture consider rib series.\nIMPRESSION: No acute cardiopulmonary disease..\n[2]\nFINDINGS: The cardiomediastinal silhouette is normal in size and contour. No focal consolidation, pneumothorax or large pleural effusion. Negative for acute displaced rib fracture.\nIMPRESSION: Negative for acute abnormality.\n[3]\nFINDINGS: The cardiomediastinal silhouette and pulmonary vasculature are within normal limits in size. The lungs are clear of focal airspace disease, pneumothorax, or pleural effusion. There is no definite evidence of acute fracture.\nIMPRESSION: No acute cardiopulmonary findings..\n[4]\nFINDINGS: The cardiomediastinal silhouette is normal in size and contour. No focal consolidation, pneumothorax or large pleural effusion. Negative for acute displaced rib fracture.\nIMPRESSION: Negative for acute abnormality.\n[5]\nFINDINGS: The cardiomediastinal silhouette is normal in size and contour. No focal consolidation, pneumothorax or large pleural effusion. Negative for acute displaced rib fracture.\nIMPRESSION: Negative for acute abnormality.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.25); Fracture (calibrated probability 0.16)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Enlarged Cardiomediastinum\",\n   \"classifier_probability\": 0.2519,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports state this finding.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.1608,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports state this finding.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  3,\n  4,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.25); Fracture (calibrated probability 0.16)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Enlarged Cardiomediastinum\",\n   \"classifier_probability\": 0.2519,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports state this finding.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.1608,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports state this finding.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  3,\n  4,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Enlarged Cardiomediastinum is possible.\nIMPRESSION: Fracture is possible.\n\nReturn the JSON now."
+ }
+}

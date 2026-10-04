@@ -1,0 +1,119 @@
+{
+ "uid": "1753",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Cardiomegaly",
+    "classifier_probability": 0.2929,
+    "retrieval_support_count": 4,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "evidence_summary": "Retrieved reports mention cardiomegaly.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Lung Opacity",
+    "classifier_probability": 0.3776,
+    "retrieval_support_count": 3,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     4
+    ],
+    "evidence_summary": "Retrieved reports mention lung opacity.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Edema",
+    "classifier_probability": 0.3839,
+    "retrieval_support_count": 3,
+    "supporting_retrieved_report_ranks": [
+     2,
+     3,
+     4
+    ],
+    "evidence_summary": "Retrieved reports mention edema.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   5
+  ]
+ },
+ "agent1_validation_flags": [],
+ "agent2_draft": {
+  "findings": "Cardiomegaly and Lung Opacity are supported by retrieved evidence. Edema is also supported by retrieved evidence.",
+  "impression": "Cardiomegaly, Lung Opacity, and Edema are present.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "abnormal_to_normal_collapse"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Cardiomegaly and Lung Opacity are supported by retrieved evidence. Edema is also supported by retrieved evidence.",
+  "impression": "Cardiomegaly, Lung Opacity, and Edema are present.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Retrieved reports mention cardiomegaly.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 4], \"evidence_summary\": \"Retrieved reports mention lung opacity.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [2, 3, 4], \"evidence_summary\": \"Retrieved reports mention edema.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions fracture.\"}\n  ],\n  \"normal_report_ranks\": [\n    5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Cardiomegaly and Lung Opacity are supported by retrieved evidence. Edema is also supported by retrieved evidence.\",\n\"impression\": \"Cardiomegaly, Lung Opacity, and Edema are present.\"\n}",
+ "agent3_raw_text": "{\n \"issues_detected\": [\n  \"abnormal_to_normal_collapse\"\n ],\n \"decision\": \"REVISE\",\n \"findings\": \"Cardiomegaly and Lung Opacity are supported by retrieved evidence. Edema is also supported by retrieved evidence.\",\n \"impression\": \"Cardiomegaly, Lung Opacity, and Edema are present.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "880a6afa8bacce033aa9f1a18e6f091800a12eba783979cfd81d861324c3bc5d",
+  "agent2_grounded_report_writer": "285a35f0e71a6ff0dbb3ea60de711b386d8950c1195cad6c3f6e194f2abf4252",
+  "agent3_grounding_critic": "3d253765095a37773bac3625b46a7cb97a765c2bea46741d99b040ff575bbd3e"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "68ea6f9550e9c425186c6c38830331f1bfe7e026e3b7651f67caeca422c2466c",
+  "agent2_grounded_report_writer": "d8552d3f6eb5091f2ae803a40b1925ced645d8ebebea74a5e3bf88c06952633b",
+  "agent3_grounding_critic": "d126579df144973fd1cc1d1927e9c7c8373686f19ec75bae3dc5910db226708d"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 7.53,
+  "agent2_grounded_report_writer": 3.93,
+  "agent3_grounding_critic": 4.56
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 216,
+  "agent2_grounded_report_writer": 52,
+  "agent3_grounding_critic": 82
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 934,
+  "agent2_grounded_report_writer": 1077,
+  "agent3_grounding_critic": 1120
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Cardiomegaly (calibrated probability 0.29); Lung Opacity (calibrated probability 0.38); Edema (calibrated probability 0.38)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: Heart size moderately enlarged, stable mediastinal contours. opacity in the left lung base. Otherwise, no focal alveolar consolidation, no definite pleural effusion seen. No typical findings of pulmonary edema.\nIMPRESSION: 1. Cardiomegaly 2. opacity in the left base atelectasis\n[2]\nFINDINGS: Cardiomegaly is present. There is interstitial pulmonary edema with the presence of B-lines. There is no pneumothorax. There is an oval, 17 mm nodular opacity projecting between the posterior left 5th and 6th ribs. There is a 10 mm nodular density projecting over the right posterior 4th rib. There is a posterior effusion. Normal mediastinal silhouette. T-spine osteophytes.\nIMPRESSION: 1. Cardiomegaly with mild interstitial edema and posterior pleural effusion. 2. 17 mm nodular opacity in the left lung and 10 mm nodular opacity in the right lung. These lesions are and could be followed up radiographically after treatment of edema, or could be further characterized with CT.\n[3]\nFINDINGS: Cardiomegaly. Interstitial opacities consistent with edema in the lower lobes. No pneumothorax. No large pleural effusion.\nIMPRESSION: Interstitial pulmonary edema.\n[4]\nFINDINGS: Increased interstitial lung changes with superimposed pulmonary edema. Cardiomegaly. Negative for effusion or pneumothorax. Degenerative changes of the thoracic spine.\nIMPRESSION: Cardiomegaly with pulmonary edema superimposed on chronic interstitial lung changes.\n[5]\nFINDINGS: Mild cardiomegaly, stable mediastinal contours. No focal alveolar consolidation, no definite pleural effusion seen. Mild bronchovascular crowding without typical findings of pulmonary edema.\nIMPRESSION: Mild cardiomegaly, no acute pulmonary findings\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Cardiomegaly (calibrated probability 0.29); Lung Opacity (calibrated probability 0.38); Edema (calibrated probability 0.38)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"classifier_probability\": 0.2929,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention cardiomegaly.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.3776,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention lung opacity.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Edema\",\n   \"classifier_probability\": 0.3839,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention edema.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Cardiomegaly (calibrated probability 0.29); Lung Opacity (calibrated probability 0.38); Edema (calibrated probability 0.38)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"classifier_probability\": 0.2929,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention cardiomegaly.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.3776,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention lung opacity.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Edema\",\n   \"classifier_probability\": 0.3839,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention edema.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Cardiomegaly and Lung Opacity are supported by retrieved evidence. Edema is also supported by retrieved evidence.\nIMPRESSION: Cardiomegaly, Lung Opacity, and Edema are present.\n\nReturn the JSON now."
+ }
+}

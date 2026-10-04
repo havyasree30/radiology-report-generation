@@ -1,0 +1,159 @@
+{
+ "uid": "266",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Enlarged Cardiomediastinum",
+    "classifier_probability": 0.0977,
+    "retrieval_support_count": 1,
+    "supporting_retrieved_report_ranks": [
+     4
+    ],
+    "evidence_summary": "Report 4 mentions an enlarged cardiomediastinal silhouette.",
+    "support_status": "partially_supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Cardiomegaly",
+    "classifier_probability": 0.5776,
+    "retrieval_support_count": 4,
+    "supporting_retrieved_report_ranks": [
+     1,
+     3,
+     4,
+     5
+    ],
+    "evidence_summary": "Reports 1, 3, 4, and 5 mention an enlarged heart.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   }
+  ],
+  "retrieval_only_candidates": [
+   {
+    "finding": "Lung Opacity",
+    "retrieval_support_count": 2,
+    "supporting_retrieved_report_ranks": [
+     1,
+     4
+    ],
+    "evidence_summary": "Report 1 and 4 mention opacities, which are not classifier-positive.",
+    "status": "retrieval_only"
+   },
+   {
+    "finding": "Consolidation",
+    "retrieval_support_count": 2,
+    "supporting_retrieved_report_ranks": [
+     1,
+     4
+    ],
+    "evidence_summary": "Report 1 and 4 mention consolidation, which are not classifier-positive.",
+    "status": "retrieval_only"
+   },
+   {
+    "finding": "Atelectasis",
+    "retrieval_support_count": 2,
+    "supporting_retrieved_report_ranks": [
+     1,
+     4
+    ],
+    "evidence_summary": "Report 1 and 4 mention atelectasis, which are not classifier-positive.",
+    "status": "retrieval_only"
+   },
+   {
+    "finding": "Pleural Effusion",
+    "retrieval_support_count": 2,
+    "supporting_retrieved_report_ranks": [
+     1,
+     4
+    ],
+    "evidence_summary": "Report 1 and 4 mention pleural effusion, which are not classifier-positive.",
+    "status": "retrieval_only"
+   },
+   {
+    "finding": "Support Devices",
+    "retrieval_support_count": 1,
+    "supporting_retrieved_report_ranks": [
+     1
+    ],
+    "evidence_summary": "Report 1 mentions a left subclavian ICD, which is not classifier-positive.",
+    "status": "retrieval_only"
+   }
+  ],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   2,
+   3,
+   5
+  ]
+ },
+ "agent1_validation_flags": [
+  "agent1_extra_or_duplicate_classifier_entry",
+  "agent1_status_inconsistent_with_count"
+ ],
+ "agent2_draft": {
+  "findings": "Cardiomegaly is present. Enlarged Cardiomediastinum is possible.",
+  "impression": "Cardiomegaly.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "abnormal_to_normal_collapse"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Cardiomegaly is present. Enlarged Cardiomediastinum is possible.",
+  "impression": "Cardiomegaly.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [4], \"evidence_summary\": \"Report 4 mentions an enlarged cardiomediastinal silhouette.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 3, 4, 5], \"evidence_summary\": \"Reports 1, 3, 4, and 5 mention an enlarged heart.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Reports 1 and 4 mention opacities.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung lesions.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention edema.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Reports 1 and 4 mention consolidation.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Reports 1 and 4 mention atelectasis.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pneumothorax.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Reports 1 and 4 mention pleural effusion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pleural other.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [1], \"evidence_summary\": \"Report 1 mentions a left subclavian ICD.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Report 1 and 4 mention opacities, which are not classifier-positive.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Report 1 and 4 mention consolidation, which are not classifier-positive.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Report 1 and 4 mention atelectasis, which are not classifier-positive.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Report 1 and 4 mention pleural effusion, which are not classifier-positive.\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [1], \"evidence_summary\": \"Report 1 mentions a left subclavian ICD, which is not classifier-positive.\"}\n  ],\n  \"normal_report_ranks\": [\n    2,\n    3,\n    5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Cardiomegaly is present. Enlarged Cardiomediastinum is possible.\",\n\"impression\": \"Cardiomegaly.\"\n}",
+ "agent3_raw_text": "{\"issues_detected\": [\"abnormal_to_normal_collapse\"], \"decision\": \"REVISE\", \"findings\": \"Cardiomegaly is present. Enlarged Cardiomediastinum is possible.\", \"impression\": \"Cardiomegaly.\"}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "2c963458e57fcbea0df8016ca8e481e6b0bacf1fcd91dcad4532a4f1a8fd318a",
+  "agent2_grounded_report_writer": "4c0b5eefb9ca849e3b8d745653b02fbf2da1ce72127aa4cde1a7745d98947d65",
+  "agent3_grounding_critic": "4f8c3cc88dbcaa7708ff2913e68ed66fad71646050e253a4f8052638f4f629f1"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "f8a4aac01a9a539a0e6bbca2d915eb06bad923d609ade1e4b74e1272ea1e0d86",
+  "agent2_grounded_report_writer": "1fa88862a95691dc7863ef43f2deb98ce8bad2a2613571935505fd12f22ce7d8",
+  "agent3_grounding_critic": "b7d78be6722067b290677935d64254f712387febe2c508a8f67f2df4ecc09cf7"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 19.99,
+  "agent2_grounded_report_writer": 3.68,
+  "agent3_grounding_critic": 4.22
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 813,
+  "agent2_grounded_report_writer": 36,
+  "agent3_grounding_critic": 55
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 836,
+  "agent2_grounded_report_writer": 1448,
+  "agent3_grounding_critic": 1475
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.10); Cardiomegaly (calibrated probability 0.58)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: The heart is enlarged. The left subclavian ICD is again identified. There is again hilar enlargement, superimposes enlarged pulmonary vasculature. opacities are unchanged and compatible with subsegmental atelectasis or scarring. There is no large pleural effusion or focal consolidation.\nIMPRESSION: Stable moderate to marked cardiomegaly.\n[2]\nFINDINGS: The heart is mildly enlarged. Left hemidiaphragm is elevated. There is no acute infiltrate or pleural effusion. The mediastinum is unremarkable.\nIMPRESSION: Borderline cardiomegaly without acute disease.\n[3]\nFINDINGS: The heart size is mildly enlarged. There is tortuosity of the thoracic aorta. No focal airspace consolidation, pleural effusions or pneumothorax. No acute bony abnormalities.\nIMPRESSION: Cardiomegaly without acute pulmonary findings.\n[4]\nFINDINGS: Enlarged cardiomediastinal silhouette. Low lung volumes. Relative elevation of right hemidiaphragm. left base density. No focal consolidation, pneumothorax or large pleural effusion. Negative for acute bone abnormality.\nIMPRESSION: Cardiomegaly without heart failure. Minimal left basilar scarring/atelectasis.\n[5]\nFINDINGS: The heart is mildly enlarged. The mediastinal contours are stable. The lungs are clear.\nIMPRESSION: Mild stable cardiomegaly, no acute disease.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.10); Cardiomegaly (calibrated probability 0.58)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Enlarged Cardiomediastinum\",\n   \"classifier_probability\": 0.0977,\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    4\n   ],\n   \"evidence_summary\": \"Report 4 mentions an enlarged cardiomediastinal silhouette.\",\n   \"support_status\": \"partially_supported\"\n  },\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"classifier_probability\": 0.5776,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Reports 1, 3, 4, and 5 mention an enlarged heart.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    4\n   ],\n   \"evidence_summary\": \"Report 1 and 4 mention opacities, which are not classifier-positive.\",\n   \"status\": \"retrieval_only\"\n  },\n  {\n   \"finding\": \"Consolidation\",\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    4\n   ],\n   \"evidence_summary\": \"Report 1 and 4 mention consolidation, which are not classifier-positive.\",\n   \"status\": \"retrieval_only\"\n  },\n  {\n   \"finding\": \"Atelectasis\",\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    4\n   ],\n   \"evidence_summary\": \"Report 1 and 4 mention atelectasis, which are not classifier-positive.\",\n   \"status\": \"retrieval_only\"\n  },\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    4\n   ],\n   \"evidence_summary\": \"Report 1 and 4 mention pleural effusion, which are not classifier-positive.\",\n   \"status\": \"retrieval_only\"\n  },\n  {\n   \"finding\": \"Support Devices\",\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    1\n   ],\n   \"evidence_summary\": \"Report 1 mentions a left subclavian ICD, which is not classifier-positive.\",\n   \"status\": \"retrieval_only\"\n  }\n ],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  2,\n  3,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Enlarged Cardiomediastinum (calibrated probability 0.10); Cardiomegaly (calibrated probability 0.58)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Enlarged Cardiomediastinum\",\n   \"classifier_probability\": 0.0977,\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    4\n   ],\n   \"evidence_summary\": \"Report 4 mentions an enlarged cardiomediastinal silhouette.\",\n   \"support_status\": \"partially_supported\"\n  },\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"classifier_probability\": 0.5776,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Reports 1, 3, 4, and 5 mention an enlarged heart.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    4\n   ],\n   \"evidence_summary\": \"Report 1 and 4 mention opacities, which are not classifier-positive.\",\n   \"status\": \"retrieval_only\"\n  },\n  {\n   \"finding\": \"Consolidation\",\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    4\n   ],\n   \"evidence_summary\": \"Report 1 and 4 mention consolidation, which are not classifier-positive.\",\n   \"status\": \"retrieval_only\"\n  },\n  {\n   \"finding\": \"Atelectasis\",\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    4\n   ],\n   \"evidence_summary\": \"Report 1 and 4 mention atelectasis, which are not classifier-positive.\",\n   \"status\": \"retrieval_only\"\n  },\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    4\n   ],\n   \"evidence_summary\": \"Report 1 and 4 mention pleural effusion, which are not classifier-positive.\",\n   \"status\": \"retrieval_only\"\n  },\n  {\n   \"finding\": \"Support Devices\",\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    1\n   ],\n   \"evidence_summary\": \"Report 1 mentions a left subclavian ICD, which is not classifier-positive.\",\n   \"status\": \"retrieval_only\"\n  }\n ],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  2,\n  3,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Cardiomegaly is present. Enlarged Cardiomediastinum is possible.\nIMPRESSION: Cardiomegaly.\n\nReturn the JSON now."
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "00ae8febe1e8f7b73a0ecc1f7e1aa93aaaa22ca5cd95949823c58238bd548aa3",
+ "text": "{\n\"findings\": \"Pleural Other and Fracture are possible.\",\n\"impression\": \"Fracture is possible.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 930,
+ "output_tokens": 27,
+ "total_duration_ns": 1013201500,
+ "load_duration_ns": 4580100,
+ "attempts": 1,
+ "wall_seconds": 3.05,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:28:36+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

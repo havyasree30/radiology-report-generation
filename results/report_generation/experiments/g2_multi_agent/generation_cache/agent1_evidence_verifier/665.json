@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "9f57faf4608f64607ca3327c034358b5205f0d4f0728d78d8dddbf72255f469f",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Retrieved reports mention cardiomegaly.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung opacity.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung lesion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention edema.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention consolidation.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention atelectasis.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pneumothorax.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pleural effusion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pleural other.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention support devices.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung opacity. This finding is not supported by the retrieved reports. Use [] if none.\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung lesion. This finding is not supported by the retrieved reports. Use [] if none.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention edema. This finding is not supported by the retrieved reports. Use [] if none.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention consolidation. This finding is not supported by the retrieved reports. Use [] if none.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention atelectasis. This finding is not supported by the retrieved reports. Use [] if none.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pneumothorax. This finding is not supported by the retrieved reports. Use [] if none.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pleural effusion. This finding is not supported by the retrieved reports. Use [] if none.\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pleural other. This finding is not supported by the retrieved reports. Use [] if none.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture. This finding is not supported by the retrieved reports. Use [] if none.\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"",
+ "done_reason": "length",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 731,
+ "output_tokens": 900,
+ "total_duration_ns": 18708821200,
+ "load_duration_ns": 3419100,
+ "attempts": 1,
+ "wall_seconds": 20.76,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:11:57+00:00",
+ "agent": "agent1_evidence_verifier"
+}

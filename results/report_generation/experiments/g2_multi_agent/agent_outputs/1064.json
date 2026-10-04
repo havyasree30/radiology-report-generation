@@ -1,0 +1,154 @@
+{
+ "uid": "1064",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Lung Opacity",
+    "classifier_probability": 0.5054,
+    "retrieval_support_count": 4,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "evidence_summary": "Stated in 4 of 5 retrieved reports.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Consolidation",
+    "classifier_probability": 0.1687,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "No retrieved reports mention consolidation.",
+    "support_status": "unsupported",
+    "agent_stated_status": "unsupported"
+   },
+   {
+    "finding": "Atelectasis",
+    "classifier_probability": 0.2128,
+    "retrieval_support_count": 4,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "evidence_summary": "Retrieved reports mention atelectasis in the left lung base.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Pleural Effusion",
+    "classifier_probability": 0.805,
+    "retrieval_support_count": 5,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "evidence_summary": "Retrieved reports mention pleural effusion.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Fracture",
+    "classifier_probability": 0.2041,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "No retrieved reports mention fracture.",
+    "support_status": "unsupported",
+    "agent_stated_status": "unsupported"
+   }
+  ],
+  "retrieval_only_candidates": [
+   {
+    "finding": "Cardiomegaly",
+    "retrieval_support_count": 1,
+    "supporting_retrieved_report_ranks": [
+     3
+    ],
+    "evidence_summary": "Report 3 mentions cardiomegaly.",
+    "status": "retrieval_only"
+   }
+  ],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   4
+  ]
+ },
+ "agent1_validation_flags": [
+  "agent1_summary_replaced"
+ ],
+ "agent2_draft": {
+  "findings": "Pulmonary opacity and atelectasis are present. Pleural effusion is present.",
+  "impression": "Cardiomegaly is present.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "no_finding_contradiction",
+   "abnormal_to_normal_collapse",
+   "invented_measurement_history_or_comparison"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Pulmonary opacity and atelectasis are present. Pleural effusion is present.",
+  "impression": "Cardiomegaly is present.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Retrieved reports mention opacity in the left lung base.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention consolidation.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Retrieved reports mention atelectasis in the left lung base.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention pleural effusion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention enlarged cardiomediastinum.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [3], \"evidence_summary\": \"Report 3 mentions cardiomegaly.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Retrieved reports mention opacity in the left lung base.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention consolidation.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Retrieved reports mention atelectasis in the left lung base.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention pleural effusion.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\"}\n  ],\n  \"normal_report_ranks\": [\n    4\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Pulmonary opacity and atelectasis are present. Pleural effusion is present.\",\n\"impression\": \"Cardiomegaly is present.\"\n}",
+ "agent3_raw_text": "{\n \"issues_detected\": [\n  \"no_finding_contradiction\",\n  \"abnormal_to_normal_collapse\",\n  \"invented_measurement_history_or_comparison\"\n ],\n \"decision\": \"REVISE\",\n \"findings\": \"Pulmonary opacity and atelectasis are present. Pleural effusion is present.\",\n \"impression\": \"Cardiomegaly is present.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "c472488da74fe928d49fa7b119b547384753b3cabf374ca5165ac4b9051ac22e",
+  "agent2_grounded_report_writer": "1f2a5866cf8efb2fbf493ca2ad407f1c211f40701a010dcb0bdc99add6e2c4a1",
+  "agent3_grounding_critic": "66958c24acc72e2059add2a3b753b52c5cce39456f448ffe1ef13339a68a6c0b"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "a2bdc739b675ba44c082dadb859591422f289a4ed04b34eadd8826567cbd6706",
+  "agent2_grounded_report_writer": "46a174d16c50b1cfb203381d5cb60ad4b438cd8821f49519354c01bb5b4d6464",
+  "agent3_grounding_critic": "318459d9e7488ccaa2161846599c109dae9e27612883420e80d996a3f778f0bf"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 14.05,
+  "agent2_grounded_report_writer": 3.43,
+  "agent3_grounding_critic": 4.57
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 558,
+  "agent2_grounded_report_writer": 37,
+  "agent3_grounding_critic": 91
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 938,
+  "agent2_grounded_report_writer": 1370,
+  "agent3_grounding_critic": 1398
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Lung Opacity (calibrated probability 0.51); Consolidation (calibrated probability 0.17); Atelectasis (calibrated probability 0.21); Pleural Effusion (calibrated probability 0.80); Fracture (calibrated probability 0.20)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: There is opacity left lung base may represent atelectasis or early infiltrate. The cardiomediastinal silhouette is within normal limits. No pneumothorax or pleural effusion.\nIMPRESSION: opacity left lung base..\n[2]\nFINDINGS: Streaky opacity is noted within the left lung base which may represent focal area of atelectasis. Right lung is grossly clear. Cardiac silhouette and mediastinal contours are within normal limits. There is no pneumothorax. No large pleural effusion.\nIMPRESSION: Left lower lobe atelectasis otherwise no acute cardiopulmonary disease.\n[3]\nFINDINGS: Heart size moderately enlarged, stable mediastinal contours. opacity in the left lung base. Otherwise, no focal alveolar consolidation, no definite pleural effusion seen. No typical findings of pulmonary edema.\nIMPRESSION: 1. Cardiomegaly 2. opacity in the left base atelectasis\n[4]\nFINDINGS: Minimal subsegmental atelectasis posteriorly. No pleural effusions or pneumothoraces. Heart and mediastinum of normal size and contour.\nIMPRESSION: No focal lung opacity, pleural effusion of pneumothorax.\n[5]\nFINDINGS: (not available)\nIMPRESSION: Comparison,. right pleural opacity along the lower chest wall compatible with thickening and/or some loculated effusion, accompanied with some adjacent atelectasis / airspace disease within the right lung base. Round opacity seen projecting adjacent to right hilum on PA view is on lateral view to represent some discoid atelectasis or fluid associated with the upper aspect of the fissure. Some opacities compatible with scarring/chronic inflammatory change are seen within the left lower lung which are more conspicuous versus previous examination. Stable mediastinal contour.\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Opacity (calibrated probability 0.51); Consolidation (calibrated probability 0.17); Atelectasis (calibrated probability 0.21); Pleural Effusion (calibrated probability 0.80); Fracture (calibrated probability 0.20)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.5054,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Stated in 4 of 5 retrieved reports.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Consolidation\",\n   \"classifier_probability\": 0.1687,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports mention consolidation.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Atelectasis\",\n   \"classifier_probability\": 0.2128,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention atelectasis in the left lung base.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"classifier_probability\": 0.805,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention pleural effusion.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.2041,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports mention fracture.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    3\n   ],\n   \"evidence_summary\": \"Report 3 mentions cardiomegaly.\",\n   \"status\": \"retrieval_only\"\n  }\n ],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  4\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Opacity (calibrated probability 0.51); Consolidation (calibrated probability 0.17); Atelectasis (calibrated probability 0.21); Pleural Effusion (calibrated probability 0.80); Fracture (calibrated probability 0.20)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.5054,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Stated in 4 of 5 retrieved reports.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Consolidation\",\n   \"classifier_probability\": 0.1687,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports mention consolidation.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Atelectasis\",\n   \"classifier_probability\": 0.2128,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention atelectasis in the left lung base.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"classifier_probability\": 0.805,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention pleural effusion.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.2041,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports mention fracture.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"retrieval_support_count\": 1,\n   \"supporting_retrieved_report_ranks\": [\n    3\n   ],\n   \"evidence_summary\": \"Report 3 mentions cardiomegaly.\",\n   \"status\": \"retrieval_only\"\n  }\n ],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  4\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Pulmonary opacity and atelectasis are present. Pleural effusion is present.\nIMPRESSION: Cardiomegaly is present.\n\nReturn the JSON now."
+ }
+}

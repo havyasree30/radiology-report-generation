@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "5b0ade4aa3edb4e4c450bc14771b9d1bcb326117a6168f35fbd67def51a8e759",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Retrieved reports mention opacity in the left lung base.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention a lung lesion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [3], \"evidence_summary\": \"One retrieved report mentions a possible infiltrate or resolving pneumonia.\", \"support_status\": \"partially_supported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Multiple retrieved reports mention atelectasis in the left lung base.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [5], \"evidence_summary\": \"One retrieved report mentions cardiomegaly.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention a fracture.\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention support devices.\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pleural other findings.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention edema or pulmonary edema.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [3], \"evidence_summary\": \"One retrieved report mentions a possible infiltrate which may represent consolidation or resolving pneumonia.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pneumothorax.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pleural effusion.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Multiple retrieved reports mention opacity in the left lung base, supporting the classifier finding of Lung Opacity.\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention a lung lesion.\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [3], \"evidence_summary\": \"One retrieved report mentions a possible infiltrate or resolving pneumonia.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Multiple retrieved reports mention atelectasis in the left lung base, supporting the classifier finding of Atelectasis.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [5], \"evidence_summary\": \"One retrieved report mentions cardiomegaly.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention a fracture.\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention support devices.\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pleural other findings.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention edema or pulmonary edema.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [3], \"evidence_summary\": \"One retrieved report mentions a possible infiltrate which may represent consolidation or resolving pneumonia.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pneumothorax.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [], \"",
+ "done_reason": "length",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 873,
+ "output_tokens": 900,
+ "total_duration_ns": 20759478800,
+ "load_duration_ns": 8055200,
+ "attempts": 1,
+ "wall_seconds": 22.82,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:47:27+00:00",
+ "agent": "agent1_evidence_verifier"
+}

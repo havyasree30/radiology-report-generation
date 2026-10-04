@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "03911d02c8190798267cd1f70ac6ccc12cef40a70f6c24957bc6e39de2a68492",
+ "text": "{\n\"findings\": \"Lung Opacity and Pleural Effusion.\",\n\"impression\": \"Pleural Effusion.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 935,
+ "output_tokens": 28,
+ "total_duration_ns": 1266122900,
+ "load_duration_ns": 7077400,
+ "attempts": 1,
+ "wall_seconds": 3.33,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:35:31+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

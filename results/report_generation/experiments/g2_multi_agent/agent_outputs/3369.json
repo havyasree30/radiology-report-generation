@@ -1,0 +1,106 @@
+{
+ "uid": "3369",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Pneumothorax",
+    "classifier_probability": 0.6082,
+    "retrieval_support_count": 3,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     4
+    ],
+    "evidence_summary": "Retrieved reports mention pneumothorax.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Fracture",
+    "classifier_probability": 0.1448,
+    "retrieval_support_count": 3,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     4
+    ],
+    "evidence_summary": "Retrieved reports mention fracture.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   3,
+   5
+  ]
+ },
+ "agent1_validation_flags": [],
+ "agent2_draft": {
+  "findings": "Pneumothorax is present. Fracture is present.",
+  "impression": "Pneumothorax and Fracture.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Pneumothorax is present. Fracture is present.",
+  "impression": "Pneumothorax and Fracture.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [1, 2, 4], \"evidence_summary\": \"Retrieved reports mention pneumothorax.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [1, 2, 4], \"evidence_summary\": \"Retrieved reports mention fracture.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions enlarged cardiomediastinum.\"}\n  ],\n  \"normal_report_ranks\": [\n    3, 5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Pneumothorax is present. Fracture is present.\",\n\"impression\": \"Pneumothorax and Fracture.\"\n}",
+ "agent3_raw_text": "{\"issues_detected\": [\"unsupported_finding_stated\"], \"decision\": \"REVISE\", \"findings\": \"Pneumothorax is present. Fracture is present.\", \"impression\": \"Pneumothorax and Fracture.\"}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "05ffa3b56f499e8efdcf2d2c31b492449a732786e746a66aa74697da15552c7e",
+  "agent2_grounded_report_writer": "434a7c4c9f28db45e1c0c5f727a05ceea3dce7dc1e25a32bf2da7867ae372997",
+  "agent3_grounding_critic": "187cf5bb9e12b82159f74d6b1b574b9dc5691ec77f82fbff06d953ea441fd80d"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "af30f8ca855a9347af40d1afac68f0370f2d8ce6b9a207cc44c722536e7ebcea",
+  "agent2_grounded_report_writer": "64ab3321962bfe6ef176969b615e85dcca3dba828b6eb725b480f29cd4f42827",
+  "agent3_grounding_critic": "447d4f0e51ad886a8a7a60a498e89b974d169f6ea21a38f7e8375927583b5454"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 7.05,
+  "agent2_grounded_report_writer": 3.42,
+  "agent3_grounding_critic": 3.95
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 181,
+  "agent2_grounded_report_writer": 32,
+  "agent3_grounding_critic": 49
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 1075,
+  "agent2_grounded_report_writer": 966,
+  "agent3_grounding_critic": 989
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Pneumothorax (calibrated probability 0.61); Fracture (calibrated probability 0.14)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: Heart size and mediastinal contour are within normal limits. No focal consolidation, suspicious pulmonary opacity, large pleural effusion, or pneumothorax is identified. Again visualized is a wedge-shaped fracture of T12.\nIMPRESSION: 1. No acute cardiopulmonary abnormality. 2. Wedge-shaped fracture of T12.\n[2]\nFINDINGS: There is an endotracheal tube at the level of the carina, recommend retraction. Heart size is normal. The mediastinal silhouette is unremarkable. shrapnel is overlying the right lower lobe. There is a round bullet overlying the T10 vertebral body. density is seen within the right lower lobe representing hemorrhage. There is a right-sided pneumothorax with 10 mm in maximal thickness. There is right axillary subcutaneous emphysema. Probable lateral right 8th rib fracture. The osseous structures are otherwise normal.\nIMPRESSION: 1. Moderate right-sided hemopneumothorax as detailed above. 2. Probable lateral right 8th rib fracture. 3. Endotracheal tube at the level of the carina, recommend retraction.\n[3]\nFINDINGS: The cardiomediastinal silhouette and pulmonary vasculature are within normal limits in size. The lungs are clear of focal airspace disease, pneumothorax, or pleural effusion. There is no definite evidence of acute fracture.\nIMPRESSION: No acute cardiopulmonary findings..\n[4]\nFINDINGS: The lungs are hypoinflated with mild basilar bronchovascular crowding/atelectasis. There is a fracture of the left anterior 7th rib and the left anterior 6th rib, of uncertain acuity. Correlate with tenderness. There is mild atelectasis in the left lung base. There is corticated deformity of the right anterior 7th rib, remote fracture. There is no evidence of pneumothorax or large pleural effusion.\nIMPRESSION: 1. Suspected fractures of the left anterior 6th and 7th ribs, of uncertain acuity. Correlate with tenderness. 2. Low lung volumes with mild basilar atelectasis, left greater than right..\n[5]\nFINDINGS: The cardiomediastinal silhouette is normal size and configuration. The thoracic aorta is tortuous. Pulmonary vasculature within normal limits. The lungs are well-aerated. There is no pneumothorax, pleural effusion, or focal consolidation. There is no obvious displaced rib fracture. If there is concern for fracture consider rib series.\nIMPRESSION: No acute cardiopulmonary disease..\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Pneumothorax (calibrated probability 0.61); Fracture (calibrated probability 0.14)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Pneumothorax\",\n   \"classifier_probability\": 0.6082,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention pneumothorax.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.1448,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention fracture.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  3,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Pneumothorax (calibrated probability 0.61); Fracture (calibrated probability 0.14)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Pneumothorax\",\n   \"classifier_probability\": 0.6082,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention pneumothorax.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.1448,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention fracture.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  3,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Pneumothorax is present. Fracture is present.\nIMPRESSION: Pneumothorax and Fracture.\n\nReturn the JSON now."
+ }
+}

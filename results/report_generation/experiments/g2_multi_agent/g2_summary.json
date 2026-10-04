@@ -1,0 +1,249 @@
+{
+  "n_paired_studies": 547,
+  "n_clinical_subset": 378,
+  "n_studies_with_context": 498,
+  "n_empty_query_studies": 49,
+  "n_failed_generation": 0,
+  "reproduction": {
+    "B0_rule_based": {
+      "n_studies": 547,
+      "max_abs_numeric_difference": 9.93129189996722e-17,
+      "numeric_columns_compared": 16,
+      "string_columns_identical": {
+        "stated": true,
+        "definite": true,
+        "clf_pos": true,
+        "truth": true,
+        "report_state": true,
+        "classifier_state": true,
+        "reference_state": true
+      }
+    },
+    "G1_single_agent_rag": {
+      "n_studies": 547,
+      "max_abs_numeric_difference": 9.8879238130678e-17,
+      "numeric_columns_compared": 16,
+      "string_columns_identical": {
+        "stated": true,
+        "definite": true,
+        "clf_pos": true,
+        "truth": true,
+        "report_state": true,
+        "classifier_state": true,
+        "reference_state": true
+      }
+    },
+    "G1A_llm_no_retrieval": {
+      "n_studies": 547,
+      "max_abs_numeric_difference": 9.980080997729068e-17,
+      "numeric_columns_compared": 16,
+      "string_columns_identical": {
+        "stated": true,
+        "definite": true,
+        "clf_pos": true,
+        "truth": true,
+        "report_state": true,
+        "classifier_state": true,
+        "reference_state": true
+      }
+    },
+    "G1B_llm_sham_retrieval": {
+      "n_studies": 547,
+      "max_abs_numeric_difference": 1.1102230246251565e-16,
+      "numeric_columns_compared": 16,
+      "string_columns_identical": {
+        "stated": true,
+        "definite": true,
+        "clf_pos": true,
+        "truth": true,
+        "report_state": true,
+        "classifier_state": true,
+        "reference_state": true
+      }
+    },
+    "earlier_results_reproduced": true
+  },
+  "format_length": {
+    "B0_rule_based": {
+      "format_ok_rate": 1.0,
+      "mean_words": 10.526508226691043,
+      "median_words": 10.0
+    },
+    "G1A_llm_no_retrieval": {
+      "format_ok_rate": 0.9890310786106032,
+      "mean_words": 15.058500914076783,
+      "median_words": 10.0
+    },
+    "G1B_llm_sham_retrieval": {
+      "format_ok_rate": 0.9835466179159049,
+      "mean_words": 23.851919561243143,
+      "median_words": 23.0
+    },
+    "G1_single_agent_rag": {
+      "format_ok_rate": 1.0,
+      "mean_words": 23.90676416819013,
+      "median_words": 21.0
+    },
+    "G2_agent2_draft_pre_critic": {
+      "format_ok_rate": 1.0,
+      "mean_words": 7.259597806215722,
+      "median_words": 7.0
+    },
+    "G2_multi_agent_rag": {
+      "format_ok_rate": 1.0,
+      "mean_words": 8.007312614259599,
+      "median_words": 9.0
+    }
+  },
+  "point_estimates": {
+    "B0_rule_based": {
+      "precision": 0.3305084745762712,
+      "recall": 0.4105263157894737,
+      "f1": 0.36619718309859156,
+      "macro_f1": 0.3246243824881783,
+      "hallucination_rate": 0.4074074074074074,
+      "omission_rate": 0.3492063492063492,
+      "mean_hallucinated": 0.626984126984127,
+      "mean_omitted": 0.4444444444444444,
+      "clf_fp_propagation": 1.0,
+      "tp_retention": 1.0,
+      "normal_recall": 0.7291666666666666,
+      "abnormal_recall": 0.7258064516129032,
+      "over_normalisation_given_classifier_abnormal": 0.0,
+      "rare_tp_retention": 1.0,
+      "common_tp_retention": 1.0,
+      "rare_minus_common_retention": 0.0,
+      "rouge_l": 0.12066512361659308,
+      "bleu1": 0.04246027348127626,
+      "bleu4": 0.010106731733475085,
+      "meteor_exact": 0.06336985685664812,
+      "mean_words": 10.526508226691043
+    },
+    "G1A_llm_no_retrieval": {
+      "precision": 0.16507177033492823,
+      "recall": 0.24210526315789474,
+      "f1": 0.19630156472261737,
+      "macro_f1": 0.19894909225776958,
+      "hallucination_rate": 0.753968253968254,
+      "omission_rate": 0.40476190476190477,
+      "mean_hallucinated": 0.9232804232804233,
+      "mean_omitted": 0.5714285714285714,
+      "clf_fp_propagation": 0.5611814345991561,
+      "tp_retention": 0.5641025641025641,
+      "normal_recall": 0.11458333333333333,
+      "abnormal_recall": 0.7096774193548387,
+      "over_normalisation_given_classifier_abnormal": 0.25842696629213485,
+      "rare_tp_retention": 0.38095238095238093,
+      "common_tp_retention": 0.6041666666666666,
+      "rare_minus_common_retention": -0.2232142857142857,
+      "rouge_l": 0.1036813164994739,
+      "bleu1": 0.058795379439462704,
+      "bleu4": 0.011205332704064744,
+      "meteor_exact": 0.06928241616299108,
+      "mean_words": 15.058500914076783
+    },
+    "G1B_llm_sham_retrieval": {
+      "precision": 0.272108843537415,
+      "recall": 0.14035087719298245,
+      "f1": 0.18518518518518517,
+      "macro_f1": 0.11458152054416422,
+      "hallucination_rate": 0.1984126984126984,
+      "omission_rate": 0.4417989417989418,
+      "mean_hallucinated": 0.2830687830687831,
+      "mean_omitted": 0.6481481481481481,
+      "clf_fp_propagation": 0.270042194092827,
+      "tp_retention": 0.3162393162393162,
+      "normal_recall": 0.8177083333333334,
+      "abnormal_recall": 0.2956989247311828,
+      "over_normalisation_given_classifier_abnormal": 0.5955056179775281,
+      "rare_tp_retention": 0.047619047619047616,
+      "common_tp_retention": 0.375,
+      "rare_minus_common_retention": -0.3273809523809524,
+      "rouge_l": 0.25423420564806487,
+      "bleu1": 0.2370765928691152,
+      "bleu4": 0.05902409694477054,
+      "meteor_exact": 0.23213171967214238,
+      "mean_words": 23.851919561243143
+    },
+    "G1_single_agent_rag": {
+      "precision": 0.4112903225806452,
+      "recall": 0.35789473684210527,
+      "f1": 0.3827392120075047,
+      "macro_f1": 0.21542533442980316,
+      "hallucination_rate": 0.2566137566137566,
+      "omission_rate": 0.38095238095238093,
+      "mean_hallucinated": 0.3862433862433862,
+      "mean_omitted": 0.48412698412698413,
+      "clf_fp_propagation": 0.4050632911392405,
+      "tp_retention": 0.717948717948718,
+      "normal_recall": 0.9114583333333334,
+      "abnormal_recall": 0.5806451612903226,
+      "over_normalisation_given_classifier_abnormal": 0.29775280898876405,
+      "rare_tp_retention": 0.3333333333333333,
+      "common_tp_retention": 0.8020833333333334,
+      "rare_minus_common_retention": -0.46875000000000006,
+      "rouge_l": 0.24651933330151565,
+      "bleu1": 0.2541209139326697,
+      "bleu4": 0.038961685168201296,
+      "meteor_exact": 0.22737697474337423,
+      "mean_words": 23.90676416819013
+    },
+    "G2_agent2_draft_pre_critic": {
+      "precision": 0.3569230769230769,
+      "recall": 0.4070175438596491,
+      "f1": 0.380327868852459,
+      "macro_f1": 0.3114112521933834,
+      "hallucination_rate": 0.3835978835978836,
+      "omission_rate": 0.3386243386243386,
+      "mean_hallucinated": 0.5529100529100529,
+      "mean_omitted": 0.4470899470899471,
+      "clf_fp_propagation": 0.8396624472573839,
+      "tp_retention": 0.9316239316239316,
+      "normal_recall": 0.7760416666666666,
+      "abnormal_recall": 0.7204301075268817,
+      "over_normalisation_given_classifier_abnormal": 0.0,
+      "rare_tp_retention": 0.8095238095238095,
+      "common_tp_retention": 0.9583333333333334,
+      "rare_minus_common_retention": -0.14880952380952384,
+      "rouge_l": 0.10700280832409272,
+      "bleu1": 0.02048337949285935,
+      "bleu4": 0.004703473241247742,
+      "meteor_exact": 0.054274325253181634,
+      "mean_words": 7.259597806215722
+    },
+    "G2_multi_agent_rag": {
+      "precision": 0.3591331269349845,
+      "recall": 0.4070175438596491,
+      "f1": 0.3815789473684211,
+      "macro_f1": 0.31161157270620393,
+      "hallucination_rate": 0.38095238095238093,
+      "omission_rate": 0.3386243386243386,
+      "mean_hallucinated": 0.5476190476190477,
+      "mean_omitted": 0.4470899470899471,
+      "clf_fp_propagation": 0.8312236286919831,
+      "tp_retention": 0.9316239316239316,
+      "normal_recall": 0.7760416666666666,
+      "abnormal_recall": 0.7204301075268817,
+      "over_normalisation_given_classifier_abnormal": 0.0,
+      "rare_tp_retention": 0.8095238095238095,
+      "common_tp_retention": 0.9583333333333334,
+      "rare_minus_common_retention": -0.14880952380952384,
+      "rouge_l": 0.1033660668577615,
+      "bleu1": 0.026733274743479918,
+      "bleu4": 0.006009813626026326,
+      "meteor_exact": 0.05392202181332944,
+      "mean_words": 8.007312614259599
+    }
+  },
+  "systems": [
+    "B0_rule_based",
+    "G1A_llm_no_retrieval",
+    "G1B_llm_sham_retrieval",
+    "G1_single_agent_rag",
+    "G2_agent2_draft_pre_critic",
+    "G2_multi_agent_rag"
+  ],
+  "primary_comparison": "G2_multi_agent_rag minus G1_single_agent_rag",
+  "macro_classes_with_truth": 12,
+  "template_min_df": 10
+}

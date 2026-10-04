@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "328d8871213e4bf413cfe9be9d8d307651b3d6e348c6173cfc033a6d0261c768",
+ "text": "{\n\"findings\": \"Cardiomegaly and Pleural Effusion are present.\",\n\"impression\": \"Cardiomegaly and Pleural Effusion are present.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1128,
+ "output_tokens": 38,
+ "total_duration_ns": 1544169300,
+ "load_duration_ns": 12442700,
+ "attempts": 1,
+ "wall_seconds": 3.6,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T14:52:05+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

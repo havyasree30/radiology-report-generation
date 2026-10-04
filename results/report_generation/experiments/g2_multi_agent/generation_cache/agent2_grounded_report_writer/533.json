@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "7e4327117681db5f900dec9ad22ee9cd36f4cefb1aec246cdf06e5c309784aae",
+ "text": "{\n\"findings\": \"Enlarged Cardiomediastinal silhouette is supported by 3 retrieved reports. Lung Lesion is supported by 2 retrieved reports.\",\n\"impression\": \"Enlarged Cardiomediastinal silhouette and Lung Lesion are present.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1099,
+ "output_tokens": 58,
+ "total_duration_ns": 1741242300,
+ "load_duration_ns": 3985300,
+ "attempts": 1,
+ "wall_seconds": 3.78,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:06:54+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

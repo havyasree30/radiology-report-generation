@@ -1,0 +1,3 @@
+uid,finding,direction,in_clinical,in_reference,classifier_positive
+504,Fracture,removed_by_critic,True,False,True
+3004,Pleural Other,removed_by_critic,True,False,True

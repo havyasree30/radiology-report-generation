@@ -1,0 +1,117 @@
+{
+ "uid": "120",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Lung Opacity",
+    "classifier_probability": 0.4129,
+    "retrieval_support_count": 5,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "evidence_summary": "Retrieved reports mention left lung opacities.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Fracture",
+    "classifier_probability": 0.1608,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "No retrieved reports mention fracture.",
+    "support_status": "unsupported",
+    "agent_stated_status": "unsupported"
+   }
+  ],
+  "retrieval_only_candidates": [
+   {
+    "finding": "Edema",
+    "retrieval_support_count": 2,
+    "supporting_retrieved_report_ranks": [
+     1,
+     3
+    ],
+    "evidence_summary": "Retrieved reports mention edema, but the classifier did not identify it as positive.",
+    "status": "retrieval_only"
+   }
+  ],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   1,
+   2,
+   4,
+   5
+  ]
+ },
+ "agent1_validation_flags": [],
+ "agent2_draft": {
+  "findings": "Lung Opacity is supported by retrieved evidence. Fracture is not supported by retrieved evidence.",
+  "impression": "Lung Opacity is supported by retrieved evidence.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Lung Opacity is supported by retrieved evidence. Fracture is not supported by retrieved evidence.",
+  "impression": "Lung Opacity is supported by retrieved evidence.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention left lung opacities.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Edema\", \"supporting_ranks\": [1, 3], \"evidence_summary\": \"Retrieved reports mention edema, but the classifier did not identify it as positive.\"}\n  ],\n  \"normal_report_ranks\": [\n    1, 2, 4, 5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Lung Opacity is supported by retrieved evidence. Fracture is not supported by retrieved evidence.\",\n\"impression\": \"Lung Opacity is supported by retrieved evidence.\"\n}",
+ "agent3_raw_text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Lung Opacity is supported by retrieved evidence. Fracture is not supported by retrieved evidence.\",\n\"impression\": \"Lung Opacity is supported by retrieved evidence.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "f1bd5ec2c185be3e8da01d64e6a87e2ca9486ff3a1e8de47a62752c96ecb891f",
+  "agent2_grounded_report_writer": "c2bd45647d4da16d9fbbc669a64bce7244dc228749555985f84e6430c2661d7f",
+  "agent3_grounding_critic": "1bf41b3034f8db2e6588ed24a2afdb5a53b34a231074ee493ff94de14c6f2363"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "595f10a9cb7827c948773867a7e367e9f95bbef663d2d39290127fa235e1d344",
+  "agent2_grounded_report_writer": "01be825b519d3ed1a8cb08b3869e9a16f31c3e1c9c1afa75360c7056ca76f99c",
+  "agent3_grounding_critic": "7286a68243d3cab2e99eed646bba2f2f9d1baec12f281e0914afb84e3fe8bbf0"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 7.61,
+  "agent2_grounded_report_writer": 3.67,
+  "agent3_grounding_critic": 4.04
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 191,
+  "agent2_grounded_report_writer": 40,
+  "agent3_grounding_critic": 63
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 889,
+  "agent2_grounded_report_writer": 1060,
+  "agent3_grounding_critic": 1093
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Lung Opacity (calibrated probability 0.41); Fracture (calibrated probability 0.16)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: There is a airspace opacity in the left upper lung. Heart size within normal limits. Mild calcification of the aortic. No pneumothorax or pleural effusions.\nIMPRESSION: airspace opacity in the left upper lung which may represent streaky atelectasis or resolving pneumonia.\n[2]\nFINDINGS: There is opacity left lung base may represent atelectasis or early infiltrate. The cardiomediastinal silhouette is within normal limits. No pneumothorax or pleural effusion.\nIMPRESSION: opacity left lung base..\n[3]\nFINDINGS: Low lung volumes. Question patchy opacity left base. No pneumothorax. Osseous structures intact. Small right effusion.\nIMPRESSION: 1. Patchy opacity left base, may represent evolving infiltrate. 2. Small right pleural effusion..\n[4]\nFINDINGS: No acute osseous abnormalities. Left midlung, and basilar streaky opacity. There is elevation of the left hemidiaphragm. No pneumothorax. Small calcified 8 cm granuloma adjacent to the right diaphragm within the right chest. Cardiomediastinal silhouette is within normal limits.\nIMPRESSION: No acute osseous abnormalities. If continued clinical concern for rib fracture dedicated rib films will be helpful. Left midlung, and left basilar streaky opacity may represent atelectasis.\n[5]\nFINDINGS: Left midlung opacity noted, not visualized on prior. Heart size within normal limits. No pleural effusions. No evidence of pneumothorax. Osseous structures intact.\nIMPRESSION: Left mid lung opacity noted, most compatible with atelectasis versus infiltrate. Recommend clinical correlation..\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Opacity (calibrated probability 0.41); Fracture (calibrated probability 0.16)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.4129,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention left lung opacities.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.1608,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports mention fracture.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [\n  {\n   \"finding\": \"Edema\",\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    3\n   ],\n   \"evidence_summary\": \"Retrieved reports mention edema, but the classifier did not identify it as positive.\",\n   \"status\": \"retrieval_only\"\n  }\n ],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  4,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Opacity (calibrated probability 0.41); Fracture (calibrated probability 0.16)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.4129,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention left lung opacities.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.1608,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports mention fracture.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [\n  {\n   \"finding\": \"Edema\",\n   \"retrieval_support_count\": 2,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    3\n   ],\n   \"evidence_summary\": \"Retrieved reports mention edema, but the classifier did not identify it as positive.\",\n   \"status\": \"retrieval_only\"\n  }\n ],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  4,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Lung Opacity is supported by retrieved evidence. Fracture is not supported by retrieved evidence.\nIMPRESSION: Lung Opacity is supported by retrieved evidence.\n\nReturn the JSON now."
+ }
+}

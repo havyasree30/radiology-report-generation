@@ -1,0 +1,167 @@
+{
+ "uid": "569",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Lung Opacity",
+    "classifier_probability": 0.5323,
+    "retrieval_support_count": 4,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     4,
+     5
+    ],
+    "evidence_summary": "Stated in 4 of 5 retrieved reports.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Atelectasis",
+    "classifier_probability": 0.2146,
+    "retrieval_support_count": 5,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "evidence_summary": "Retrieved reports mention atelectasis.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Pneumothorax",
+    "classifier_probability": 0.5029,
+    "retrieval_support_count": 5,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "evidence_summary": "Retrieved reports mention pneumothorax.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Pleural Effusion",
+    "classifier_probability": 0.3785,
+    "retrieval_support_count": 5,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "evidence_summary": "Retrieved reports mention pleural effusion.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Pleural Other",
+    "classifier_probability": 0.0907,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "No retrieved reports mention pleural other.",
+    "support_status": "unsupported",
+    "agent_stated_status": "unsupported"
+   },
+   {
+    "finding": "Fracture",
+    "classifier_probability": 0.1766,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "No retrieved reports mention fracture.",
+    "support_status": "unsupported",
+    "agent_stated_status": "unsupported"
+   },
+   {
+    "finding": "Support Devices",
+    "classifier_probability": 0.4853,
+    "retrieval_support_count": 0,
+    "supporting_retrieved_report_ranks": [],
+    "evidence_summary": "No retrieved reports mention support devices.",
+    "support_status": "unsupported",
+    "agent_stated_status": "unsupported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   3
+  ]
+ },
+ "agent1_validation_flags": [
+  "agent1_summary_replaced"
+ ],
+ "agent2_draft": {
+  "findings": "Lung Opacity and Atelectasis are supported by the classifier and retrieved evidence. Pneumothorax and Pleural Effusion are also supported. Support Devices are partially supported.",
+  "impression": "The findings suggest possible pulmonary pathology.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Lung Opacity and Atelectasis are supported by the classifier and retrieved evidence. Pneumothorax and Pleural Effusion are also supported. Support Devices are partially supported.",
+  "impression": "The findings suggest possible pulmonary pathology.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 4, 5], \"evidence_summary\": \"Retrieved reports mention opacity in the left lung base.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention atelectasis.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention pneumothorax.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention pleural effusion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pleural other.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention support devices.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports are positive for Lung Opacity, only negative or mention opacity as possible/questionable.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports are positive for Atelectasis, only negative or mention atelectasis as possible/questionable.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports are positive for Pneumothorax, only negative or mention pneumothorax as possible/questionable.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports are positive for Pleural Effusion, only negative or mention effusion as possible/questionable.\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports are positive for Pleural Other, only negative or mention pleural other as possible/questionable.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports are positive for Fracture, only negative or mention fracture as possible/questionable.\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports are positive for Support Devices, only negative or mention support devices as possible/questionable.\"}\n  ],\n  \"normal_report_ranks\": [\n    3\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Lung Opacity and Atelectasis are supported by the classifier and retrieved evidence. Pneumothorax and Pleural Effusion are also supported. Support Devices are partially supported.\",\n\"impression\": \"The findings suggest possible pulmonary pathology.\"\n}",
+ "agent3_raw_text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Lung Opacity and Atelectasis are supported by the classifier and retrieved evidence. Pneumothorax and Pleural Effusion are also supported. Support Devices are partially supported.\",\n\"impression\": \"The findings suggest possible pulmonary pathology.\"\n}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "143c86d64361c30f4fe60e15aabd9e2787f4bd2c8cdcbd039e635c365ce841f0",
+  "agent2_grounded_report_writer": "3519b9f668ee5772a4f4672a84b26c0fe12841f33c5082ce6ae8f253e63f5a46",
+  "agent3_grounding_critic": "5a60685a03d490d7b245b2d857d33564f8b1532d10acfd6b8b527b880670dd62"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "711518389eeb4a60f43c79cae80367454aaa7edb05c6a4b46252659454c93ef8",
+  "agent2_grounded_report_writer": "430cf06150d4ef084259d6e0d8b8ea757e1ee0fbaef263c623fb5463f4c0cf32",
+  "agent3_grounding_critic": "fa33a29030b5e1fbab8f2f7562ce145a622de42d920d3eeea5e916b04456b3f7"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 16.7,
+  "agent2_grounded_report_writer": 3.9,
+  "agent3_grounding_critic": 4.38
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 688,
+  "agent2_grounded_report_writer": 55,
+  "agent3_grounding_critic": 78
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 875,
+  "agent2_grounded_report_writer": 1507,
+  "agent3_grounding_critic": 1555
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Lung Opacity (calibrated probability 0.53); Atelectasis (calibrated probability 0.21); Pneumothorax (calibrated probability 0.50); Pleural Effusion (calibrated probability 0.38); Pleural Other (calibrated probability 0.09); Fracture (calibrated probability 0.18); Support Devices (calibrated probability 0.49)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: Low lung volumes. Question patchy opacity left base. No pneumothorax. Osseous structures intact. Small right effusion.\nIMPRESSION: 1. Patchy opacity left base, may represent evolving infiltrate. 2. Small right pleural effusion..\n[2]\nFINDINGS: There is opacity left lung base may represent atelectasis or early infiltrate. The cardiomediastinal silhouette is within normal limits. No pneumothorax or pleural effusion.\nIMPRESSION: opacity left lung base..\n[3]\nFINDINGS: No focal lung opacity, pleural effusion or pneumothorax. Cardiomediastinal silhouette is unremarkable.\nIMPRESSION: No focal lung opacity, pleural effusion of pneumothorax.\n[4]\nFINDINGS: There is a airspace opacity in the left upper lung. Heart size within normal limits. Mild calcification of the aortic. No pneumothorax or pleural effusions.\nIMPRESSION: airspace opacity in the left upper lung which may represent streaky atelectasis or resolving pneumonia.\n[5]\nFINDINGS: There is minimal opacity in the left lung base, representing atelectasis. The lungs are otherwise clear. Heart size is normal. No pneumothorax.\nIMPRESSION: Left base atelectasis. Lungs otherwise clear..\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Opacity (calibrated probability 0.53); Atelectasis (calibrated probability 0.21); Pneumothorax (calibrated probability 0.50); Pleural Effusion (calibrated probability 0.38); Pleural Other (calibrated probability 0.09); Fracture (calibrated probability 0.18); Support Devices (calibrated probability 0.49)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.5323,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Stated in 4 of 5 retrieved reports.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Atelectasis\",\n   \"classifier_probability\": 0.2146,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention atelectasis.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pneumothorax\",\n   \"classifier_probability\": 0.5029,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention pneumothorax.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"classifier_probability\": 0.3785,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention pleural effusion.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pleural Other\",\n   \"classifier_probability\": 0.0907,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports mention pleural other.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.1766,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports mention fracture.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Support Devices\",\n   \"classifier_probability\": 0.4853,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports mention support devices.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  3\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Opacity (calibrated probability 0.53); Atelectasis (calibrated probability 0.21); Pneumothorax (calibrated probability 0.50); Pleural Effusion (calibrated probability 0.38); Pleural Other (calibrated probability 0.09); Fracture (calibrated probability 0.18); Support Devices (calibrated probability 0.49)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.5323,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Stated in 4 of 5 retrieved reports.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Atelectasis\",\n   \"classifier_probability\": 0.2146,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention atelectasis.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pneumothorax\",\n   \"classifier_probability\": 0.5029,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention pneumothorax.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pleural Effusion\",\n   \"classifier_probability\": 0.3785,\n   \"retrieval_support_count\": 5,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n   ],\n   \"evidence_summary\": \"Retrieved reports mention pleural effusion.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pleural Other\",\n   \"classifier_probability\": 0.0907,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports mention pleural other.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Fracture\",\n   \"classifier_probability\": 0.1766,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports mention fracture.\",\n   \"support_status\": \"unsupported\"\n  },\n  {\n   \"finding\": \"Support Devices\",\n   \"classifier_probability\": 0.4853,\n   \"retrieval_support_count\": 0,\n   \"supporting_retrieved_report_ranks\": [],\n   \"evidence_summary\": \"No retrieved reports mention support devices.\",\n   \"support_status\": \"unsupported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  3\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Lung Opacity and Atelectasis are supported by the classifier and retrieved evidence. Pneumothorax and Pleural Effusion are also supported. Support Devices are partially supported.\nIMPRESSION: The findings suggest possible pulmonary pathology.\n\nReturn the JSON now."
+ }
+}

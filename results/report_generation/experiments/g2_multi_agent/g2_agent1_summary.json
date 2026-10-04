@@ -1,0 +1,27 @@
+{
+  "n_studies": 547,
+  "n_classifier_positives_all_studies": 441,
+  "validation_flag_counts": {
+    "agent1_extra_or_duplicate_classifier_entry": 103,
+    "agent1_omitted_classifier_finding": 52,
+    "agent1_status_inconsistent_with_count": 74,
+    "agent1_summary_replaced": 78,
+    "agent1_unparseable": 52,
+    "agent1_skipped_no_query": 49,
+    "agent1_summary_truncated": 8
+  },
+  "n_retrieval_only_candidates_all_studies": 41,
+  "n_retrieval_only_candidates_clinical": 34,
+  "retrieval_only_candidates_reference_supported": 5,
+  "retrieval_only_candidates_unsupported": 29,
+  "candidate_ge_promotion_threshold_clinical": 10,
+  "candidate_ge_threshold_reference_supported": 3,
+  "cited_ranks_total": 970,
+  "cited_ranks_whose_report_carries_the_finding_in_iu_labels": 642,
+  "citation_agreement_with_iu_labels": 0.6618556701030928,
+  "iu_labelled_supporting_reports_total": 983,
+  "iu_labelled_supporting_reports_cited": 642,
+  "recall_of_iu_labelled_support": 0.6531027466937945,
+  "status_agreement_with_deterministic_g1_support_table": 0.6235827664399093,
+  "note": "IU labels of the retrieved reports are an incomplete MeSH-derived approximation of what those reports state; agreement is descriptive"
+}

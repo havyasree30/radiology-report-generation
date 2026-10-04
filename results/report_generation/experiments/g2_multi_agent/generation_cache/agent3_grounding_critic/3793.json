@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "80179f4f69ab464729a7adcfe2fe1e3d396496e2ca5481da778584487cc04463",
+ "text": "{\n\"issues_detected\": [\"unsupported_finding_stated\"],\n\"decision\": \"REVISE\",\n\"findings\": \"Lung Opacity and Atelectasis are supported by retrieved evidence. Fracture is partially supported. Pneumonia is not supported.\",\n\"impression\": \"Lung Opacity and Atelectasis are present. Fracture is present. Pneumonia is not present.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1236,
+ "output_tokens": 81,
+ "total_duration_ns": 2667469500,
+ "load_duration_ns": 7007800,
+ "attempts": 1,
+ "wall_seconds": 4.75,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 700,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T17:18:33+00:00",
+ "agent": "agent3_grounding_critic"
+}

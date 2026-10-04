@@ -1,0 +1,127 @@
+{
+ "uid": "1976",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Lung Opacity",
+    "classifier_probability": 0.6199,
+    "retrieval_support_count": 4,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "evidence_summary": "Stated in 4 of 5 retrieved reports.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Consolidation",
+    "classifier_probability": 0.1331,
+    "retrieval_support_count": 3,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     4
+    ],
+    "evidence_summary": "Stated in 3 of 5 retrieved reports.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Pneumonia",
+    "classifier_probability": 0.3105,
+    "retrieval_support_count": 4,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "evidence_summary": "Stated in 4 of 5 retrieved reports.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "agent1_validation_flags": [
+  "agent1_summary_replaced",
+  "agent1_summary_truncated"
+ ],
+ "agent2_draft": {
+  "findings": "Pulmonary opacity and consolidation are present. Pneumonia is also present.",
+  "impression": "Pneumonia.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "unsupported_finding_stated"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Pulmonary opacity and consolidation are present. Pneumonia is also present.",
+  "impression": "Pneumonia.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"The classifier indicates a possible Lung Opacity in the left upper lung. Retrieved reports mention airspace opacity in the left upper lung, focal opacity in the medial right lung base, vague increased opacity in the left lower lobe, airspace opacity in the mid right lung, and right base patchy airspace opacity.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [1, 2, 4], \"evidence_summary\": \"The classifier indicates a possible Consolidation in the left upper lung. Retrieved reports mention airspace opacity in the left upper lung, focal opacity in the medial right lung base, vague increased opacity in the left lower lobe, airspace opacity in the mid right lung, and right base patchy airspace opacity.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"The classifier indicates a possible Pneumonia in the left upper lung. Retrieved reports mention airspace opacity in the left upper lung, focal opacity in the medial right lung base, vague increased opacity in the left lower lobe, airspace opacity in the mid right lung, and right base patchy airspace opacity.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Lung Lesion.\"}\n  ],\n  \"normal_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Pulmonary opacity and consolidation are present. Pneumonia is also present.\",\n\"impression\": \"Pneumonia.\"\n}",
+ "agent3_raw_text": "{\"issues_detected\": [\"unsupported_finding_stated\"], \"decision\": \"REVISE\", \"findings\": \"Pulmonary opacity and consolidation are present. Pneumonia is also present.\", \"impression\": \"Pneumonia.\"}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "9ed0bf82f86be5b500125735e1749cddb153f7c39d2fc52448495d27951dbf4c",
+  "agent2_grounded_report_writer": "c8a44d2764ff71da05427c277f5e26945b9df5a4753e641e319bfee034f57bcd",
+  "agent3_grounding_critic": "94e1900a9bf2f5c8008d61ed3edd735f828abf4485b8aff5b677ce743ffa0eea"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "9c1e1554aa9d6e401a06683e690b93df19039596fb5d93ad3150aacb966587cb",
+  "agent2_grounded_report_writer": "d2a5f7eecc61722d5b5d43adf38da581987e52ef78399aa032c98b06590fc6fa",
+  "agent3_grounding_critic": "3c3e7c6a7286655858be04dd012168aefaa2c3f1994dc8708c14c05b7a8fc5f2"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 10.88,
+  "agent2_grounded_report_writer": 3.25,
+  "agent3_grounding_critic": 3.69
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 389,
+  "agent2_grounded_report_writer": 32,
+  "agent3_grounding_critic": 49
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 974,
+  "agent2_grounded_report_writer": 1108,
+  "agent3_grounding_critic": 1131
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Lung Opacity (calibrated probability 0.62); Consolidation (calibrated probability 0.13); Pneumonia (calibrated probability 0.31)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: There is a airspace opacity in the left upper lung. Heart size within normal limits. Mild calcification of the aortic. No pneumothorax or pleural effusions.\nIMPRESSION: airspace opacity in the left upper lung which may represent streaky atelectasis or resolving pneumonia.\n[2]\nFINDINGS: focal opacity in the medial right lung base seen on the frontal view. No definite pleural effusion. Stable cardiomediastinal silhouette with normal heart size, no typical findings of pulmonary edema.\nIMPRESSION: Abnormal opacity in the right lung base which may be compatible with pneumonia in the appropriate clinical setting. Recommend clinical correlation for infection and followup to resolution. Or, if clinical findings are not compatible with may be of.\n[3]\nFINDINGS: Vague increased opacity which appears to be within the left lower lobe. Question of this could be developing or resolving pneumonia. Lungs are otherwise clear. No pleural effusions or pneumothoraces. heart and mediastinum are stable normal size heart. Atherosclerotic vascular disease. Degenerative changes in the thoracic spine.\nIMPRESSION: Vague opacity at the left lung base which appears to be within the left lower lobe. This may represent resolving or developing pneumonia given the patient's history.\n[4]\nFINDINGS: Frontal and lateral views of the chest show an unchanged cardiomediastinal silhouette. There is airspace opacity in the mid right lung radiating from the right hilum to the pleura and bordered inferiorly by the fissures. The fissure is convex upward. There is right base patchy airspace opacity. This appears chronic and may be due to scarring. There is no significant pleural effusion.\nIMPRESSION: Right upper lobe airspace consolidation Please correlate clinically for pneumonia.\n[5]\nFINDINGS: (not available)\nIMPRESSION: 1. Patchy bilateral opacities, primarily in the lung bases, whose features are most consistent with pneumonia. Aspiration or edema are also possible but less. 2. lung volumes 3. No pneumothorax\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Opacity (calibrated probability 0.62); Consolidation (calibrated probability 0.13); Pneumonia (calibrated probability 0.31)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.6199,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Stated in 4 of 5 retrieved reports.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Consolidation\",\n   \"classifier_probability\": 0.1331,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    4\n   ],\n   \"evidence_summary\": \"Stated in 3 of 5 retrieved reports.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pneumonia\",\n   \"classifier_probability\": 0.3105,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Stated in 4 of 5 retrieved reports.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  3,\n  4,\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Lung Opacity (calibrated probability 0.62); Consolidation (calibrated probability 0.13); Pneumonia (calibrated probability 0.31)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Lung Opacity\",\n   \"classifier_probability\": 0.6199,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Stated in 4 of 5 retrieved reports.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Consolidation\",\n   \"classifier_probability\": 0.1331,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    4\n   ],\n   \"evidence_summary\": \"Stated in 3 of 5 retrieved reports.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Pneumonia\",\n   \"classifier_probability\": 0.3105,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Stated in 4 of 5 retrieved reports.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  1,\n  2,\n  3,\n  4,\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Pulmonary opacity and consolidation are present. Pneumonia is also present.\nIMPRESSION: Pneumonia.\n\nReturn the JSON now."
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "f1a5bbe7e8d5b2592c24aaf0429e8a217790147d2608f448f2ed50b335b810e8",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"The classifier indicates a possible Lung Opacity. Report 1 mentions an airspace opacity in the left upper lung. Report 2 mentions a focal opacity in the medial right lung base. Report 3 mentions a vague increased opacity in the left lower lobe. Report 4 mentions airspace opacity in the mid right lung and right base patchy airspace opacity.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [1, 2, 4], \"evidence_summary\": \"The classifier indicates a possible Consolidation. Report 1 mentions airspace opacity which may represent streaky atelectasis or resolving pneumonia. Report 2 mentions an abnormal opacity which may be compatible with pneumonia. Report 4 mentions airspace consolidation Please correlate clinically for pneumonia.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"The classifier indicates a possible Pneumonia. Report 1 mentions airspace opacity which may represent streaky atelectasis or resolving pneumonia. Report 2 mentions an abnormal opacity which may be compatible with pneumonia. Report 3 mentions vague opacity which appears to be within the left lower lobe. This may represent resolving or developing pneumonia given the patient's history. Report 4 mentions airspace consolidation Please correlate clinically for pneumonia.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1], \"evidence_summary\": \"Report 1 mentions airspace opacity which may represent streaky atelectasis or resolving pneumonia.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [2], \"evidence_summary\": \"Report 2 mentions stable cardiomediastinal silhouette with normal heart size, no typical findings of pulmonary edema.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [3], \"evidence_summary\": \"Report 3 mentions vague opacity which appears to be within the left lower lobe. This may represent resolving or developing pneumonia given the patient's history.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [4], \"evidence_summary\": \"Report 4 mentions right base patchy airspace opacity. This appears chronic and may be due to scarring.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions patchy bilateral opacities, primarily in the lung bases, whose features are most consistent with pneumonia. Aspiration or edema are also possible but less.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions patchy bilateral opacities, primarily in the lung bases, whose features are most consistent with pneumonia. Aspiration or edema are also possible but less.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions patchy bilateral opacities, primarily in the lung bases, whose features are most consistent with pneumonia. Aspiration or edema are also possible but less.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions patchy bilateral opacities, primarily in the lung bases, whose features are most consistent with pneumonia. Aspiration or edema are also possible but less.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions patchy bilateral opacities, primarily in the lung bases, whose features are most consistent with pneumonia. Aspiration or edema are also possible but less.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [5], \"evidence_summary\": \"Report 5 mentions patchy bilateral opacities, primarily in the lung bases, whose features are most consistent with pneumonia. Aspiration or edema are also possible but less.\"},",
+ "done_reason": "length",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 974,
+ "output_tokens": 900,
+ "total_duration_ns": 20855268000,
+ "load_duration_ns": 7168800,
+ "attempts": 1,
+ "wall_seconds": 22.92,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T17:08:30+00:00",
+ "agent": "agent1_evidence_verifier"
+}

@@ -1,0 +1,5 @@
+system,n,report_normal,report_abnormal,report_indeterminate
+B0_rule_based,49,0,0,49
+G1_single_agent_rag,49,49,0,0
+G2_agent2_draft_pre_critic,49,49,0,0
+G2_multi_agent_rag,49,49,0,0

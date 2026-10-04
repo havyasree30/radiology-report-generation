@@ -1,0 +1,106 @@
+{
+ "uid": "50",
+ "evidence": {
+  "classifier_output_state": "abnormal_findings",
+  "n_retrieved_reports": 5,
+  "classifier_findings": [
+   {
+    "finding": "Cardiomegaly",
+    "classifier_probability": 0.3758,
+    "retrieval_support_count": 4,
+    "supporting_retrieved_report_ranks": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "evidence_summary": "Retrieved reports mention cardiomegaly.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   },
+   {
+    "finding": "Edema",
+    "classifier_probability": 0.5585,
+    "retrieval_support_count": 3,
+    "supporting_retrieved_report_ranks": [
+     2,
+     3,
+     4
+    ],
+    "evidence_summary": "Retrieved reports mention edema.",
+    "support_status": "supported",
+    "agent_stated_status": "supported"
+   }
+  ],
+  "retrieval_only_candidates": [],
+  "retrieved_report_ranks_describing_a_normal_study": [
+   5
+  ]
+ },
+ "agent1_validation_flags": [],
+ "agent2_draft": {
+  "findings": "Cardiomegaly and pulmonary edema are present.",
+  "impression": "Cardiomegaly and pulmonary edema.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent3": {
+  "action": "approve",
+  "issues": [
+   "excessive_certainty"
+  ],
+  "model_copy_identical_to_draft": true,
+  "flags": [
+   "revise_but_identical"
+  ]
+ },
+ "final_report": {
+  "findings": "Cardiomegaly and pulmonary edema are present.",
+  "impression": "Cardiomegaly and pulmonary edema.",
+  "format_ok": true,
+  "format_flags": []
+ },
+ "agent1_raw_text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 2, 3, 4], \"evidence_summary\": \"Retrieved reports mention cardiomegaly.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [2, 3, 4], \"evidence_summary\": \"Retrieved reports mention edema.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"None of the retrieved reports mention Lung Opacity.\"}\n  ],\n  \"normal_report_ranks\": [\n    5\n  ]\n}",
+ "agent2_raw_text": "{\n\"findings\": \"Cardiomegaly and pulmonary edema are present.\",\n\"impression\": \"Cardiomegaly and pulmonary edema.\"\n}",
+ "agent3_raw_text": "{\"issues_detected\": [\"excessive_certainty\"], \"decision\": \"REVISE\", \"findings\": \"Cardiomegaly and pulmonary edema are present.\", \"impression\": \"Cardiomegaly and pulmonary edema.\"}",
+ "messages_sha256": {
+  "agent1_evidence_verifier": "a02d47e1047d091991f7b1f2cd0ec985448c7e1dc0584245fab3085c4d57b77f",
+  "agent2_grounded_report_writer": "5e90286dfb9541bc8a18d1d446fe6bdfaafd13259d8bf6e7a7b099f0c92b0b61",
+  "agent3_grounding_critic": "58876a38911cd43a59b4f730dc31753e7846c6ebe88e018702b9175fce530fb9"
+ },
+ "request_hashes": {
+  "agent1_evidence_verifier": "8fdd43b5aa8cd35598aa07ec740845f0cf9f23eb11fc597abe249257d3053ccd",
+  "agent2_grounded_report_writer": "31c76f3da78c3cc0c7e9f50273b5b933bc1021f392e85dcb56aa9a42fde66af4",
+  "agent3_grounding_critic": "bbd7b2754603154a24900ab8d58f7dd1c15d7cf0af1c437b2ed1e612f55060d3"
+ },
+ "seconds": {
+  "agent1_evidence_verifier": 6.74,
+  "agent2_grounded_report_writer": 3.67,
+  "agent3_grounding_critic": 3.7
+ },
+ "output_tokens": {
+  "agent1_evidence_verifier": 175,
+  "agent2_grounded_report_writer": 32,
+  "agent3_grounding_critic": 48
+ },
+ "prompt_tokens": {
+  "agent1_evidence_verifier": 735,
+  "agent2_grounded_report_writer": 967,
+  "agent3_grounding_critic": 990
+ },
+ "done_reasons": {
+  "agent1_evidence_verifier": "stop",
+  "agent2_grounded_report_writer": "stop",
+  "agent3_grounding_critic": "stop"
+ },
+ "prompt_may_be_truncated": {
+  "agent1_evidence_verifier": false,
+  "agent2_grounded_report_writer": false,
+  "agent3_grounding_critic": false
+ },
+ "messages": {
+  "agent1_evidence_verifier": "A. AUTOMATED CLASSIFIER OUTPUT (may contain errors)\nFinal positive findings: Cardiomegaly (calibrated probability 0.38); Edema (calibrated probability 0.56)\nNo Finding: negative\n\nB. RETRIEVED REPORTS (reports of other patients)\n[1]\nFINDINGS: Mild cardiomegaly, stable mediastinal contours. No focal alveolar consolidation, no definite pleural effusion seen. Mild bronchovascular crowding without typical findings of pulmonary edema.\nIMPRESSION: Mild cardiomegaly, no acute pulmonary findings\n[2]\nFINDINGS: (not available)\nIMPRESSION: Increasing cardiomegaly. No effusions. Minimal interstitial edema.\n[3]\nFINDINGS: (not available)\nIMPRESSION: Cardiomegaly with interstitial edema. No effusions, pneumonia, nodules or masses.\n[4]\nFINDINGS: Increased interstitial lung changes with superimposed pulmonary edema. Cardiomegaly. Negative for effusion or pneumothorax. Degenerative changes of the thoracic spine.\nIMPRESSION: Cardiomegaly with pulmonary edema superimposed on chronic interstitial lung changes.\n[5]\nFINDINGS: (not available)\nIMPRESSION: Cardiomegaly. No effusions or edema. Clear chest\n\nReturn the JSON now.",
+  "agent2_grounded_report_writer": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Cardiomegaly (calibrated probability 0.38); Edema (calibrated probability 0.56)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"classifier_probability\": 0.3758,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention cardiomegaly.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Edema\",\n   \"classifier_probability\": 0.5585,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention edema.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  5\n ]\n}\n\nWrite the preliminary report now, following the rules and the exact output format.",
+  "agent3_grounding_critic": "A. CLASSIFIER STATE (may contain errors)\nState: abnormal_findings\nFinal positive findings: Cardiomegaly (calibrated probability 0.38); Edema (calibrated probability 0.56)\nNo Finding: negative\n\nB. STRUCTURED EVIDENCE (JSON from the evidence verifier)\n{\n \"classifier_output_state\": \"abnormal_findings\",\n \"n_retrieved_reports\": 5,\n \"classifier_findings\": [\n  {\n   \"finding\": \"Cardiomegaly\",\n   \"classifier_probability\": 0.3758,\n   \"retrieval_support_count\": 4,\n   \"supporting_retrieved_report_ranks\": [\n    1,\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention cardiomegaly.\",\n   \"support_status\": \"supported\"\n  },\n  {\n   \"finding\": \"Edema\",\n   \"classifier_probability\": 0.5585,\n   \"retrieval_support_count\": 3,\n   \"supporting_retrieved_report_ranks\": [\n    2,\n    3,\n    4\n   ],\n   \"evidence_summary\": \"Retrieved reports mention edema.\",\n   \"support_status\": \"supported\"\n  }\n ],\n \"retrieval_only_candidates\": [],\n \"retrieved_report_ranks_describing_a_normal_study\": [\n  5\n ]\n}\n\nC. DRAFT REPORT\nFINDINGS: Cardiomegaly and pulmonary edema are present.\nIMPRESSION: Cardiomegaly and pulmonary edema.\n\nReturn the JSON now."
+ }
+}

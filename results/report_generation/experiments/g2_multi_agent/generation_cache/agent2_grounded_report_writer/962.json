@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "7107569df53c90452ca727216ba401a748177ac8e38a3c00c123c0aed09b009e",
+ "text": "{\n \"findings\": \"No abnormal findings.\",\n \"impression\": \"No acute cardiopulmonary process.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 758,
+ "output_tokens": 24,
+ "total_duration_ns": 838514600,
+ "load_duration_ns": 4660900,
+ "attempts": 1,
+ "wall_seconds": 2.88,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:24:35+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

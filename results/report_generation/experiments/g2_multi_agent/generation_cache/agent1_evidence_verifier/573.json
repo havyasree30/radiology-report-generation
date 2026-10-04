@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "fd7d4f9f404a4e0238e32ced14bab42239192f439bf5e5f603a10dfbfbbcf577",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 4, 5], \"evidence_summary\": \"Retrieved reports mention lung opacity in various locations.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention cardiomegaly.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung lesions.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention edema.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention consolidation.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 5], \"evidence_summary\": \"Retrieved reports mention atelectasis in various locations.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pneumothorax.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [4, 5], \"evidence_summary\": \"Retrieved reports mention pleural effusion in various locations.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention support devices.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention enlarged cardiomediastinum. The cardiomediastinal silhouette is within normal limits in retrieved reports 1, 2, 3, 4, 5.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [5], \"evidence_summary\": \"Retrieved report 5 mentions cardiomegaly. The heart is large in this report. The heart size is within normal limits in retrieved reports 1, 2, 3, 4.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 4, 5], \"evidence_summary\": \"Retrieved reports mention lung opacity in various locations. The classifier states Lung Opacity is positive. This is supported by reports 1, 2, 4, 5 mentioning opacity in the left upper lung, left lung base, left midlung, and patchy opacity left base respectively. The classifier states Lung Opacity is positive. This is supported by reports 1, 2, 4, 5 mentioning opacity in the left upper lung, left lung base, left midlung, and patchy opacity left base respectively.\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung lesions. The classifier states Lung Lesion is positive. This is not supported by any retrieved reports.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention edema. The classifier states Edema is positive. This is not supported by any retrieved reports.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention consolidation. The classifier states Consolidation is positive. This is not supported by any retrieved reports.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 5], \"evidence_summary\": \"Retrieved reports mention atelectasis in various locations",
+ "done_reason": "length",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 808,
+ "output_tokens": 900,
+ "total_duration_ns": 19166096700,
+ "load_duration_ns": 2128800,
+ "attempts": 1,
+ "wall_seconds": 21.24,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:08:09+00:00",
+ "agent": "agent1_evidence_verifier"
+}

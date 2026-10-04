@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "95d0342d4832965f87a219e8e7c5fc79e8de11cf6e313dca6c5c99d06086a3f1",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"The classifier identified a Lung Opacity. Reports 1, 2, 3, 4, and 5 mention an opacity in the lung.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 2, 3, 5], \"evidence_summary\": \"The classifier identified Pneumonia. Reports 1, 2, 3, and 5 mention pneumonia.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"The classifier identified Pleural Other. Reports 1, 3, and 5 mention pleural findings.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Enlarged Cardiomediastinum.\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Cardiomegaly.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"Lung Opacity is already supported by the classifier.\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Lung Lesion.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Edema.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Consolidation.\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [], \"evidence_summary\": \"Pneumonia is already supported by the classifier.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Atelectasis.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Pneumothorax.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Pleural Effusion.\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"Pleural Other is already supported by the classifier.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Fracture.\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Support Devices.\"}\n  ],\n  \"normal_report_ranks\": [\n    1,\n    2,\n    3,\n    4,\n    5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 966,
+ "output_tokens": 678,
+ "total_duration_ns": 15051262900,
+ "load_duration_ns": 9555700,
+ "attempts": 1,
+ "wall_seconds": 17.08,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:41:32+00:00",
+ "agent": "agent1_evidence_verifier"
+}

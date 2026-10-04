@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "19eef23a27af528d4a68d2c1e900ceb77dc497a490812dc699bfc62fd3fff6ed",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [2, 3, 4], \"evidence_summary\": \"Retrieved reports mention pneumonia.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [4], \"evidence_summary\": \"Retrieved report 4 mentions mild streaky perihilar opacity.\"}\n  ],\n  \"normal_report_ranks\": [\n    1, 5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 731,
+ "output_tokens": 134,
+ "total_duration_ns": 11350979900,
+ "load_duration_ns": 24771700,
+ "attempts": 1,
+ "wall_seconds": 13.39,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:10:49+00:00",
+ "agent": "agent1_evidence_verifier"
+}

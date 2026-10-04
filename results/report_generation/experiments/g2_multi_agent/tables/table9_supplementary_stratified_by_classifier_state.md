@@ -1,0 +1,23 @@
+| Classifier state | Studies | Metric | G1 | G2 | G2 - G1 (95% CI) | CI excludes 0 |
+|---|---:|---:|---:|---:|---:|---:|
+| abnormal | 178 | precision | 0.411 | 0.359 | -0.052 (-0.098 to -0.008) | yes |
+| abnormal | 178 | recall | 0.462 | 0.525 | +0.063 (+0.009 to +0.118) | yes |
+| abnormal | 178 | f1 | 0.435 | 0.426 | -0.008 (-0.054 to +0.035) | no |
+| abnormal | 178 | hallucination_rate | 0.545 | 0.809 | +0.264 (+0.185 to +0.337) | yes |
+| abnormal | 178 | omission_rate | 0.522 | 0.433 | -0.090 (-0.140 to -0.039) | yes |
+| abnormal | 178 | clf_fp_propagation | 0.405 | 0.831 | +0.426 (+0.356 to +0.495) | yes |
+| abnormal | 178 | tp_retention | 0.718 | 0.932 | +0.214 (+0.140 to +0.290) | yes |
+| abnormal | 178 | normal_recall | 0.605 | 0.000 | -0.605 (-0.750 to -0.463) | yes |
+| abnormal | 178 | abnormal_recall | 0.800 | 0.993 | +0.193 (+0.128 to +0.261) | yes |
+| normal | 176 | recall | 0.000 | 0.000 | +0.000 (+0.000 to +0.000) | no |
+| normal | 176 | f1 | 0.000 | 0.000 | +0.000 (+0.000 to +0.000) | no |
+| normal | 176 | hallucination_rate | 0.000 | 0.000 | +0.000 (+0.000 to +0.000) | no |
+| normal | 176 | omission_rate | 0.205 | 0.205 | +0.000 (+0.000 to +0.000) | no |
+| normal | 176 | normal_recall | 1.000 | 1.000 | +0.000 (+0.000 to +0.000) | no |
+| normal | 176 | abnormal_recall | 0.000 | 0.000 | +0.000 (+0.000 to +0.000) | no |
+| indeterminate | 24 | recall | 0.000 | 0.000 | +0.000 (+0.000 to +0.000) | no |
+| indeterminate | 24 | f1 | 0.000 | 0.000 | +0.000 (+0.000 to +0.000) | no |
+| indeterminate | 24 | hallucination_rate | 0.000 | 0.000 | +0.000 (+0.000 to +0.000) | no |
+| indeterminate | 24 | omission_rate | 0.625 | 0.625 | +0.000 (+0.000 to +0.000) | no |
+| indeterminate | 24 | normal_recall | 1.000 | 1.000 | +0.000 (+0.000 to +0.000) | no |
+| indeterminate | 24 | abnormal_recall | 0.000 | 0.000 | +0.000 (+0.000 to +0.000) | no |

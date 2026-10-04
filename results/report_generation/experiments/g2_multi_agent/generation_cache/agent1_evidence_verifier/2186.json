@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "e22af3658fc50f72c1629445bfa0f219bd5ec3a6d9b5221ca09e4adf50685837",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Reports mention opacity in the left lung base, possibly representing atelectasis or infiltrate.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions pneumonia.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Reports mention atelectasis in the left lung base or left lower lobe.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions pleural other.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [3], \"evidence_summary\": \"Report 3 mentions fractures of the left anterior 6th and 7th ribs.\", \"support_status\": \"partially_supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report is positive for Lung Opacity.\"}\n  ],\n  \"normal_report_ranks\": [\n    1, 2, 4, 5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 972,
+ "output_tokens": 340,
+ "total_duration_ns": 8670622600,
+ "load_duration_ns": 6363300,
+ "attempts": 1,
+ "wall_seconds": 10.73,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:22:28+00:00",
+ "agent": "agent1_evidence_verifier"
+}

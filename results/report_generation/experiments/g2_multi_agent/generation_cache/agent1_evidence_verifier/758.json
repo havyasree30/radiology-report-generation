@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "7c8bc23f635c75b5cf84d67df31a0ddc002d2acfcd9d6d861fcc6f970a5be78d",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Fracture is mentioned in reports 1, 2, 3, 4, and 5.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Enlarged Cardiomediastinum.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Cardiomegaly.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Lung Opacity.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Lung Lesion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Edema.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Consolidation.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Pneumonia.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Atelectasis.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Pneumothorax.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Pleural Effusion.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Pleural Other.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Fracture.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No report mentions Support Devices.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [],\n  \"normal_report_ranks\": [1, 2, 4, 5]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 863,
+ "output_tokens": 626,
+ "total_duration_ns": 13138427500,
+ "load_duration_ns": 4563700,
+ "attempts": 1,
+ "wall_seconds": 15.17,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:17:32+00:00",
+ "agent": "agent1_evidence_verifier"
+}

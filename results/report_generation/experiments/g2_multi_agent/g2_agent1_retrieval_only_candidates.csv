@@ -1,0 +1,42 @@
+uid,finding,count,in_clinical,in_reference,promoted_to_draft,survives_critic
+78,Cardiomegaly,1,True,False,True,True
+78,Pleural Other,1,True,False,False,False
+120,Edema,2,False,,False,False
+152,Atelectasis,3,True,False,True,True
+152,Cardiomegaly,2,True,True,True,True
+152,Lung Opacity,2,True,False,False,False
+152,Pneumonia,1,True,False,True,True
+249,Pneumonia,4,True,False,True,True
+249,Atelectasis,4,True,False,False,False
+249,Pleural Effusion,2,True,False,False,False
+266,Lung Opacity,2,True,False,False,False
+266,Consolidation,2,True,False,False,False
+266,Atelectasis,2,True,False,False,False
+266,Pleural Effusion,2,True,False,False,False
+266,Support Devices,1,True,False,False,False
+533,Lung Opacity,4,False,,False,False
+716,Pleural Effusion,3,True,False,False,False
+716,Edema,2,True,False,False,False
+760,Edema,1,True,False,False,False
+846,Lung Opacity,4,False,,False,False
+846,Atelectasis,3,False,,False,False
+846,Pleural Effusion,3,False,,False,False
+1064,Cardiomegaly,1,True,False,True,True
+1394,Lung Opacity,1,True,False,False,False
+1451,Atelectasis,5,True,True,True,True
+1451,Pneumonia,4,True,False,True,True
+1451,Pleural Effusion,2,True,False,False,False
+1820,Lung Opacity,1,False,,False,False
+1988,Cardiomegaly,1,True,False,False,False
+2074,Cardiomegaly,3,True,False,True,True
+2453,Lung Opacity,1,True,False,False,False
+3069,Atelectasis,1,True,False,False,False
+3148,Cardiomegaly,4,True,True,True,True
+3337,Lung Opacity,1,False,,False,False
+3455,Atelectasis,5,True,True,False,False
+3455,Pleural Effusion,4,True,False,False,False
+3455,Cardiomegaly,2,True,True,False,False
+3455,Consolidation,1,True,False,False,False
+3455,Pneumonia,1,True,False,False,False
+3589,Pleural Effusion,2,True,False,False,False
+3879,Lung Opacity,1,True,False,False,False

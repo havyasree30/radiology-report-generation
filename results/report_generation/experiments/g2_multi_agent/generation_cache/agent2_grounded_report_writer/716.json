@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "2efc4c65cb47085fea6737a9a1beee89f141a2ad7be7830a148d0ce77a6c008a",
+ "text": "{\n\"findings\": \"Cardiomegaly is supported by retrieved evidence. Pneumonia is partially supported by retrieved evidence.\",\n\"impression\": \"Cardiomegaly and pneumonia are present.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1154,
+ "output_tokens": 42,
+ "total_duration_ns": 1424812800,
+ "load_duration_ns": 6094400,
+ "attempts": 1,
+ "wall_seconds": 3.48,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:15:00+00:00",
+ "agent": "agent2_grounded_report_writer"
+}

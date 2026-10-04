@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "711518389eeb4a60f43c79cae80367454aaa7edb05c6a4b46252659454c93ef8",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 4, 5], \"evidence_summary\": \"Retrieved reports mention opacity in the left lung base.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention atelectasis.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention pneumothorax.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"Retrieved reports mention pleural effusion.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention pleural other.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention support devices.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports are positive for Lung Opacity, only negative or mention opacity as possible/questionable.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports are positive for Atelectasis, only negative or mention atelectasis as possible/questionable.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports are positive for Pneumothorax, only negative or mention pneumothorax as possible/questionable.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports are positive for Pleural Effusion, only negative or mention effusion as possible/questionable.\"},\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports are positive for Pleural Other, only negative or mention pleural other as possible/questionable.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports are positive for Fracture, only negative or mention fracture as possible/questionable.\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports are positive for Support Devices, only negative or mention support devices as possible/questionable.\"}\n  ],\n  \"normal_report_ranks\": [\n    3\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 875,
+ "output_tokens": 688,
+ "total_duration_ns": 14659765400,
+ "load_duration_ns": 5030100,
+ "attempts": 1,
+ "wall_seconds": 16.7,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:07:40+00:00",
+ "agent": "agent1_evidence_verifier"
+}

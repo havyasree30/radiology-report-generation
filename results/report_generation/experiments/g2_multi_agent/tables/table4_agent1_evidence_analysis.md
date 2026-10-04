@@ -1,0 +1,13 @@
+| Quantity | Value |
+|---|---:|
+| Supported classifier positives | 190 (67 match reference, 35.3%) |
+| Partially supported classifier positives | 22 (0 match reference, 0.0%) |
+| Unsupported classifier positives | 142 (50 match reference, 35.2%) |
+| All classifier positives (clinical subset) | 354 (117 match reference, 33.1%) |
+| Model-stated status inconsistent with the cited ranks (validation corrected) | 74 |
+| Retrieval-only candidates proposed (clinical subset) | 34 |
+|   reference-supported | 5 (14.7%) |
+|   with >=3 supporting reports | 10 |
+| Citation agreement with IU labels of the retrieved report | 66.2% |
+| Recall of IU-labelled supporting reports | 65.3% |
+| Status agreement with the deterministic G1 support table | 62.4% |

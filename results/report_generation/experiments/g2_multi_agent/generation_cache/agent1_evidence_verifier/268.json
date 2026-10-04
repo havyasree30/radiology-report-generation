@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "ebb3439b4b84dd902edc604f70911de279266858ad4dc1763c8b32a749af2b94",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"The classifier indicates Lung Opacity is present. Retrieved reports 1, 2, 3, 4, and 5 mention Lung Opacity.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"The classifier indicates Consolidation is present. Retrieved reports 1, 2, 3, 4, and 5 mention Consolidation.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [1, 2, 3, 4, 5], \"evidence_summary\": \"The classifier indicates Pneumonia is present. Retrieved reports 1, 2, 3, 4, and 5 mention Pneumonia.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Lung Lesion.\"}\n  ],\n  \"normal_report_ranks\": [\n    5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 974,
+ "output_tokens": 302,
+ "total_duration_ns": 7384419600,
+ "load_duration_ns": 8549600,
+ "attempts": 1,
+ "wall_seconds": 9.42,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T14:55:49+00:00",
+ "agent": "agent1_evidence_verifier"
+}

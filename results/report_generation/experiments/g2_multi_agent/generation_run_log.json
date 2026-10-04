@@ -1,0 +1,34 @@
+{
+  "started_utc": "2026-10-03T16:46:02+00:00",
+  "n_cases": 547,
+  "prompt_sha256": {
+    "agent1_evidence_verifier": "ccca211d17867114afc3eff6467db3e1dfe2a9df83c5697c0e5a39978af51038",
+    "agent2_grounded_report_writer": "a41126c192a59c4dc1f62df218a1dc4bf3ba883d28df5883895c01f539e78b99",
+    "agent3_grounding_critic": "3be25ca4a0e93091b17643a696a1201851ee181ff35b88814ecd2f4924fcef46",
+    "combined": "885a6793bec33a1c308c85fc682c457bd5cb380ef7192ffd463cdc61eff2e80c"
+  },
+  "model_tag": "medgemma1.5:4b",
+  "model_digest": "433252621ab154668b5d8be6aff6c1b771bacba045e46e6193da8d6ad1630f2c",
+  "ollama_version": "0.35.1",
+  "finished_utc": "2026-10-03T17:27:02+00:00",
+  "n_completed": 547,
+  "n_failed": 0,
+  "failed": {},
+  "wall_seconds_this_run": 2459.8,
+  "gpu_memory_used_mib_peak_sampled": 4235.0,
+  "gpu_memory_samples": 110,
+  "hardware_at_end": {
+    "os": "Windows-10-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "nvidia_smi": "NVIDIA GeForce RTX 3050 6GB Laptop GPU, 596.08, 6144 MiB",
+    "ollama_ps": [
+      {
+        "name": "medgemma1.5:4b",
+        "size": 2879851068,
+        "size_vram": 2879851068,
+        "context_length": 8192
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "n_studies": 547,
+  "agents": {
+    "agent1_evidence_verifier": {
+      "n_calls": 498,
+      "mean_seconds": 10.941184738955823,
+      "median_seconds": 5.87,
+      "mean_prompt_tokens": 786.3052208835342,
+      "mean_output_tokens": 285.5120481927711,
+      "total_output_tokens": 142185
+    },
+    "agent2_grounded_report_writer": {
+      "n_calls": 547,
+      "mean_seconds": 3.4377879341864714,
+      "median_seconds": 3.23,
+      "mean_prompt_tokens": 848.6563071297988,
+      "mean_output_tokens": 26.340036563071298,
+      "total_output_tokens": 14408
+    },
+    "agent3_grounding_critic": {
+      "n_calls": 547,
+      "mean_seconds": 4.159999999999999,
+      "median_seconds": 3.72,
+      "mean_prompt_tokens": 867.0987202925046,
+      "mean_output_tokens": 51.72029250457038,
+      "total_output_tokens": 28291
+    }
+  },
+  "g2_mean_seconds_per_study": 17.558866544789765,
+  "g2_median_seconds_per_study": 11.36,
+  "g2_total_recorded_call_seconds": 9604.7,
+  "g2_wall_seconds_this_run": 2459.8,
+  "g1_mean_seconds_per_study": 3.6889762340036563,
+  "g1_total_recorded_call_seconds": 2017.87,
+  "g1b_mean_seconds_per_study": 3.643564899451554,
+  "g2_over_g1_time_ratio": 4.759820999370624,
+  "g2_calls_per_study_mean": 2.9104204753199268,
+  "gpu_memory_used_mib_peak_sampled": 4235.0,
+  "gpu_memory_samples": 110,
+  "note": "seconds are the wall time of each local Ollama call as recorded at generation time (cached responses keep their original timing); G1 ran earlier on the same machine; GPU memory is the nvidia-smi total used memory sampled every 5 studies"
+}

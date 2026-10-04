@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "430bf7c06f8ea5a707f6becc5586afea60146636d094a6b5a42afc64f4a8d32b",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [1, 5], \"evidence_summary\": \"One report mentions 'Pleural Other'.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [1, 2, 3, 5], \"evidence_summary\": \"Multiple reports mention 'Fracture'.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [2], \"evidence_summary\": \"One report mentions 'Lung Opacity'.\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [3], \"evidence_summary\": \"One report mentions 'Lung Lesion'.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [2], \"evidence_summary\": \"One report mentions 'Edema'.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [3], \"evidence_summary\": \"One report mentions 'Consolidation'.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [2, 5], \"evidence_summary\": \"Two reports mention 'Atelectasis'.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [2], \"evidence_summary\": \"One report mentions 'Pneumothorax'.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [2, 3, 5], \"evidence_summary\": \"Three reports mention 'Pleural Effusion'.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [1, 2, 3, 5], \"evidence_summary\": \"Multiple reports mention 'Fracture'.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [2], \"evidence_summary\": \"One report mentions 'Lung Opacity'.\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [3], \"evidence_summary\": \"One report mentions 'Lung Lesion'.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [2], \"evidence_summary\": \"One report mentions 'Edema'.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [3], \"evidence_summary\": \"One report mentions 'Consolidation'.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [2, 5], \"evidence_summary\": \"Two reports mention 'Atelectasis'.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [2], \"evidence_summary\": \"One report mentions 'Pneumothorax'.\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [2, 3, 5], \"evidence_summary\": \"Three reports mention 'Pleural Effusion'.\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [1, 2, 3, 5], \"evidence_summary\": \"Multiple reports mention 'Fracture'.\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [2], \"evidence_summary\": \"One report mentions 'Lung Opacity'.\"},\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [3], \"evidence_summary\": \"One report mentions 'Lung Lesion'.\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [2], \"evidence_summary\": \"One report mentions 'Edema'.\"},\n    {\"finding\": \"Consolidation\", \"supporting_ranks\": [3], \"evidence_summary\": \"One report mentions 'Consolidation'.\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [2, 5], \"evidence_summary\": \"Two reports mention 'Atelectasis'.\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [2], \"evidence_summary\":",
+ "done_reason": "length",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1141,
+ "output_tokens": 900,
+ "total_duration_ns": 19866539800,
+ "load_duration_ns": 9029300,
+ "attempts": 1,
+ "wall_seconds": 21.91,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:38:44+00:00",
+ "agent": "agent1_evidence_verifier"
+}

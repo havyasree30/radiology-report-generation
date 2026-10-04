@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "9f432face5ed2e17d7663f4da189cd8b1ba21069e662e46487476048824084e1",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"One report mentions enlarged cardiomediastinum, another mentions enlarged cardiomediastinal silhouette.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 2, 3, 5], \"evidence_summary\": \"Multiple reports mention enlarged heart or cardiomegaly.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [2, 4], \"evidence_summary\": \"One report mentions opacities compatible with atelectasis or scarring, another mentions bandlike opacities.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Edema\", \"supporting_ranks\": [4], \"evidence_summary\": \"One report mentions no overt edema.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pneumonia\", \"supporting_ranks\": [2], \"evidence_summary\": \"One report mentions no focal airspace consolidation.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Atelectasis\", \"supporting_ranks\": [2, 4], \"evidence_summary\": \"One report mentions subsegmental atelectasis or scarring, another mentions bandlike opacities suggestive of scarring or atelectasis.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pneumothorax\", \"supporting_ranks\": [3], \"evidence_summary\": \"One report mentions no pneumothorax.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [3, 4], \"evidence_summary\": \"One report mentions no large pleural effusion, another mentions question small right pleural effusion versus pleural thickening.\", \"support_status\": \"partially_supported\"},\n    {\"finding\": \"Fracture\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention fracture.\", \"support_status\": \"unsupported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [2], \"evidence_summary\": \"One report mentions ICD.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Lesion\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention lung lesions.\"}\n  ],\n  \"normal_report_ranks\": [\n    1,\n    5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 817,
+ "output_tokens": 575,
+ "total_duration_ns": 13102701200,
+ "load_duration_ns": 6513600,
+ "attempts": 1,
+ "wall_seconds": 15.16,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:54:20+00:00",
+ "agent": "agent1_evidence_verifier"
+}

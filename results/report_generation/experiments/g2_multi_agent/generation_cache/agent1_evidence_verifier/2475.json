@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "f0aee3131a31a446e7167a96badf6300c4dbcd5f7d1999a268eee8c923729e55",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Report 1 mentions enlarged mediastinum. Report 4 mentions enlarged cardiomediastinal silhouette.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 2, 3, 5], \"evidence_summary\": \"Reports 1, 2, 3, and 5 mention enlarged heart. Report 4 mentions moderate to marked cardiomegaly.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [2, 3, 4], \"evidence_summary\": \"Reports 2, 3, and 4 mention opacities compatible with atelectasis or scarring. Report 5 mentions clear lungs but report 4 mentions bandlike opacities suggestive of scarring or atelectasis. Report 2 mentions hilar enlargement, superimposes enlarged pulmonary vasculature. Report 4 mentions low lung volumes and left basilar bandlike opacities suggestive of scarring or atelectasis. Report 3 mentions opacities are unchanged and compatible with subsegmental atelectasis or scarring. Report 2 mentions opacities are unchanged and compatible with subsegmental atelectasis or scarring. Report 4 mentions low lung volumes and left basilar bandlike opacities suggestive of scarring or atelectasis. Report 3 mentions opacities are unchanged and compatible with subsegmental atelectasis or scarring. Report 2 mentions hilar enlargement, superimposes enlarged pulmonary vasculature. Report 4 mentions low lung volumes and left basilar bandlike opacities suggestive of scarring or atelectasis. Report 3 mentions opacities are unchanged and compatible with subsegmental atelectasis or scarring. Report 2 mentions hilar enlargement, superimposes enlarged pulmonary vasculature. Report 4 mentions low lung volumes and left basilar bandlike opacities suggestive of scarring or atelectasis. Report 3 mentions opacities are unchanged and compatible with subsegmental atelectasis or scarring. Report 2 mentions hilar enlargement, superimposes enlarged pulmonary vasculature. Report 4 mentions low lung volumes and left basilar bandlike opacities suggestive of scarring or atelectasis. Report 3 mentions opacities are unchanged and compatible with subsegmental atelectasis or scarring. Report 2 mentions hilar enlargement, superimposes enlarged pulmonary vasculature. Report 4 mentions low lung volumes and left basilar bandlike opacities suggestive of scarring or atelectasis. Report 3 mentions opacities are unchanged and compatible with subsegmental atelectasis or scarring. Report 2 mentions hilar enlargement, superimposes enlarged pulmonary vasculature. Report 4 mentions low lung volumes and left basilar bandlike opacities suggestive of scarring or atelectasis. Report 3 mentions opacities are unchanged and compatible with subsegmental atelectasis or scarring. Report 2 mentions hilar enlargement, superimposes enlarged pulmonary vasculature. Report 4 mentions low lung volumes and left basilar bandlike opacities suggestive of scarring or atelectasis. Report 3 mentions opacities are unchanged and compatible with subsegmental atelectasis or scarring. Report 2 mentions hilar enlargement, superimposes enlarged pulmonary vasculature. Report 4 mentions low lung volumes and left basilar bandlike opacities suggestive of scarring or atelectasis. Report 3 mentions opacities are unchanged and compatible with subsegmental atelectasis or scarring. Report 2 mentions hilar enlargement, superimposes enlarged pulmonary vasculature. Report 4 mentions low lung volumes and left basilar bandlike opacities suggestive of scarring or atelectasis. Report 3 mentions opacities are unchanged and compatible with subsegmental atelectasis or scarring. Report 2 mentions hilar enlargement, superimposes enlarged pulmonary vasculature. Report 4 mentions low lung volumes and left basilar bandlike opacities suggestive of scarring or atelectasis. Report 3 mentions opacities are unchanged and compatible with subsegmental atelectasis or scarring. Report 2 mentions hilar enlargement, superimposes enlarged",
+ "done_reason": "length",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 817,
+ "output_tokens": 900,
+ "total_duration_ns": 21385232400,
+ "load_duration_ns": 9126600,
+ "attempts": 1,
+ "wall_seconds": 23.42,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:31:27+00:00",
+ "agent": "agent1_evidence_verifier"
+}

@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "1d7e9305fabfa79e5d3c69a6bba22b5cf38d0af3c79a837e08e1a13e9777825b",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [1, 5], \"evidence_summary\": \"Report 1 and Report 5 mention an enlarged cardiomediastinal silhouette.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Support Devices\", \"supporting_ranks\": [1, 2, 3, 5], \"evidence_summary\": \"Report 1, Report 2, Report 3, and Report 5 mention the presence of support devices.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report explicitly states cardiomegaly, although some mention enlarged heart or mildly enlarged heart.\"}\n  ],\n  \"normal_report_ranks\": [\n    2\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 890,
+ "output_tokens": 212,
+ "total_duration_ns": 5460292900,
+ "load_duration_ns": 4315600,
+ "attempts": 1,
+ "wall_seconds": 7.5,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:03:57+00:00",
+ "agent": "agent1_evidence_verifier"
+}

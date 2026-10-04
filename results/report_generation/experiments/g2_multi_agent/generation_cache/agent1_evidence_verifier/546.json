@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "193c8bd3a9d02258ecd139910abbebb0a942d3391806f0208602f6695f3a0fc3",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Cardiomegaly\", \"supporting_ranks\": [1, 3, 5], \"evidence_summary\": \"Report 1, 3, and 5 mention cardiomegaly.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Lung Opacity\", \"supporting_ranks\": [1, 4], \"evidence_summary\": \"Report 1 and 4 mention lung opacity.\", \"support_status\": \"supported\"},\n    {\"finding\": \"Pleural Effusion\", \"supporting_ranks\": [3, 5], \"evidence_summary\": \"Report 3 and 5 mention pleural effusion.\", \"support_status\": \"supported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved report mentions enlarged cardiomediastinum.\"}\n  ],\n  \"normal_report_ranks\": [\n    2\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 975,
+ "output_tokens": 234,
+ "total_duration_ns": 5417528900,
+ "load_duration_ns": 5480300,
+ "attempts": 1,
+ "wall_seconds": 7.47,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:07:05+00:00",
+ "agent": "agent1_evidence_verifier"
+}

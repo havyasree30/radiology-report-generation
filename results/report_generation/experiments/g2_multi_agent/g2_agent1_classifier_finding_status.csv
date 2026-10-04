@@ -1,0 +1,355 @@
+uid,finding,status,agent_stated_status,in_reference,count,probability
+50,Cardiomegaly,supported,supported,True,4,0.3758
+50,Edema,supported,supported,False,3,0.5585
+73,Pleural Effusion,supported,supported,True,5,0.8896
+78,Lung Opacity,supported,supported,False,4,0.5394
+78,Atelectasis,supported,supported,True,4,0.3561
+78,Pleural Effusion,supported,supported,False,5,0.6499
+144,Enlarged Cardiomediastinum,supported,supported,False,2,0.0871
+152,Enlarged Cardiomediastinum,partially_supported,supported,False,1,0.3516
+152,Lung Lesion,unsupported,unsupported,False,0,0.1631
+152,Fracture,supported,supported,True,2,0.2075
+160,Lung Opacity,unsupported,,True,0,0.6722
+160,Pneumonia,unsupported,,False,0,0.1548
+160,Pleural Effusion,unsupported,,False,0,0.4683
+188,Cardiomegaly,unsupported,,False,0,0.462
+188,Lung Opacity,unsupported,,True,0,0.4964
+188,Consolidation,unsupported,,False,0,0.1677
+188,Pleural Effusion,unsupported,,True,0,0.9102
+195,Pneumonia,unsupported,unsupported,False,0,0.0993
+220,Lung Opacity,unsupported,,False,0,0.6205
+220,Lung Lesion,unsupported,,True,0,0.1577
+220,Consolidation,unsupported,,False,0,0.2028
+220,Pneumonia,unsupported,,False,0,0.1691
+220,Pleural Other,unsupported,,False,0,0.0948
+249,Lung Opacity,supported,supported,False,5,0.4155
+249,Lung Lesion,unsupported,unsupported,True,0,0.2642
+266,Enlarged Cardiomediastinum,partially_supported,supported,False,1,0.0977
+266,Cardiomegaly,supported,supported,True,4,0.5776
+268,Lung Opacity,supported,supported,True,5,0.4738
+268,Consolidation,supported,supported,False,5,0.6077
+268,Pneumonia,supported,supported,True,5,0.6785
+317,Fracture,supported,supported,False,5,0.1552
+335,Support Devices,supported,supported,True,5,0.6443
+382,Lung Opacity,unsupported,,True,0,0.6947
+382,Lung Lesion,unsupported,,False,0,0.1649
+382,Pneumothorax,unsupported,,False,0,0.4106
+392,Support Devices,supported,supported,True,5,0.6643
+407,Support Devices,supported,supported,False,5,0.5085
+436,Lung Opacity,supported,supported,False,5,0.7391
+436,Consolidation,supported,supported,False,3,0.2466
+436,Pneumonia,supported,supported,False,2,0.1137
+436,Atelectasis,supported,supported,False,3,0.2173
+436,Pleural Effusion,supported,supported,False,5,0.4121
+436,Fracture,unsupported,unsupported,False,0,0.1561
+441,Fracture,supported,supported,False,5,0.1527
+481,Enlarged Cardiomediastinum,supported,supported,False,2,0.0956
+481,Support Devices,supported,supported,True,4,0.7605
+483,Atelectasis,unsupported,,False,0,0.2061
+499,Fracture,supported,supported,False,5,0.1598
+501,Pneumonia,unsupported,unsupported,False,0,0.1134
+504,Lung Opacity,supported,supported,True,5,0.399
+504,Atelectasis,supported,supported,True,5,0.3184
+504,Fracture,partially_supported,partially_supported,False,1,0.1397
+505,Lung Opacity,supported,supported,False,5,0.377
+505,Pleural Other,partially_supported,partially_supported,False,1,0.0628
+505,Fracture,partially_supported,partially_supported,False,1,0.2185
+522,Fracture,supported,supported,False,5,0.2423
+530,Cardiomegaly,supported,supported,True,4,0.4481
+546,Cardiomegaly,supported,supported,False,3,0.5496
+546,Lung Opacity,supported,supported,False,2,0.389
+546,Pleural Effusion,supported,supported,True,2,0.7151
+569,Lung Opacity,supported,supported,True,4,0.5323
+569,Atelectasis,supported,supported,False,5,0.2146
+569,Pneumothorax,supported,supported,False,5,0.5029
+569,Pleural Effusion,supported,supported,False,5,0.3785
+569,Pleural Other,unsupported,unsupported,False,0,0.0907
+569,Fracture,unsupported,unsupported,False,0,0.1766
+569,Support Devices,unsupported,unsupported,True,0,0.4853
+573,Lung Opacity,unsupported,,True,0,0.522
+586,Cardiomegaly,unsupported,,True,0,0.5836
+586,Lung Opacity,unsupported,,True,0,0.6181
+586,Consolidation,unsupported,,False,0,0.2785
+586,Pneumonia,unsupported,,False,0,0.2007
+601,Lung Opacity,unsupported,,True,0,0.7096
+601,Consolidation,unsupported,,False,0,0.2491
+601,Pneumonia,unsupported,,False,0,0.23
+601,Support Devices,unsupported,,True,0,0.4891
+608,Fracture,supported,supported,True,5,0.2396
+661,Pleural Effusion,supported,supported,False,5,0.5107
+665,Cardiomegaly,unsupported,,True,0,0.5103
+668,Atelectasis,supported,supported,False,5,0.4266
+672,Lung Opacity,supported,supported,False,4,0.6323
+672,Consolidation,supported,supported,False,3,0.1943
+672,Pneumonia,supported,supported,False,4,0.271
+672,Pleural Effusion,supported,supported,False,5,0.4328
+683,Fracture,supported,supported,False,5,0.1664
+688,Lung Opacity,supported,supported,True,4,0.3876
+688,Pneumonia,partially_supported,partially_supported,False,1,0.1477
+688,Atelectasis,supported,supported,True,4,0.3058
+689,Lung Opacity,supported,supported,False,5,0.4149
+689,Lung Lesion,unsupported,unsupported,True,0,0.4451
+691,Fracture,supported,supported,False,5,0.1711
+709,Fracture,supported,supported,True,5,0.2108
+716,Cardiomegaly,supported,supported,True,4,0.5285
+716,Pneumonia,partially_supported,partially_supported,False,1,0.1136
+725,Fracture,supported,supported,False,5,0.1806
+733,Support Devices,supported,supported,True,5,0.8083
+744,Pneumothorax,supported,supported,False,4,0.5181
+744,Support Devices,partially_supported,supported,False,1,0.5494
+756,Fracture,supported,supported,False,5,0.1598
+758,Fracture,supported,supported,False,5,0.1411
+760,Lung Opacity,supported,supported,True,4,0.4092
+760,Pneumonia,supported,supported,False,4,0.129
+760,Fracture,unsupported,unsupported,False,0,0.1426
+808,Lung Opacity,unsupported,,True,0,0.6863
+808,Consolidation,unsupported,,False,0,0.164
+808,Pneumonia,unsupported,,True,0,0.1388
+808,Atelectasis,unsupported,,True,0,0.2404
+847,Lung Opacity,supported,supported,False,5,0.4364
+847,Atelectasis,supported,supported,False,5,0.2936
+847,Fracture,partially_supported,partially_supported,False,1,0.1485
+867,Fracture,supported,supported,False,5,0.1435
+868,Lung Lesion,partially_supported,supported,False,1,0.1335
+929,Lung Lesion,unsupported,unsupported,False,0,0.2103
+929,Fracture,supported,supported,False,2,0.4154
+941,Fracture,supported,supported,False,5,0.2296
+955,Lung Opacity,supported,supported,False,4,0.5255
+955,Consolidation,partially_supported,supported,False,1,0.3105
+955,Pneumonia,supported,supported,False,4,0.2818
+959,Lung Opacity,supported,supported,True,4,0.3756
+972,Enlarged Cardiomediastinum,unsupported,,False,0,0.1498
+972,Lung Lesion,unsupported,,False,0,0.1329
+981,Enlarged Cardiomediastinum,partially_supported,supported,False,1,0.0959
+981,Cardiomegaly,supported,supported,True,4,0.4735
+1049,Support Devices,supported,supported,False,5,0.78
+1064,Lung Opacity,supported,supported,True,4,0.5054
+1064,Consolidation,unsupported,unsupported,False,0,0.1687
+1064,Atelectasis,supported,supported,True,4,0.2128
+1064,Pleural Effusion,supported,supported,False,5,0.805
+1064,Fracture,unsupported,unsupported,False,0,0.2041
+1079,Atelectasis,unsupported,,True,0,0.2644
+1125,Lung Opacity,supported,supported,True,4,0.3791
+1159,Support Devices,supported,supported,False,5,0.4658
+1206,Fracture,supported,supported,False,5,0.2355
+1214,Lung Opacity,unsupported,,False,0,0.5776
+1214,Consolidation,unsupported,,False,0,0.1284
+1214,Pneumonia,unsupported,,False,0,0.2972
+1234,Cardiomegaly,unsupported,,True,0,0.4202
+1277,Fracture,supported,supported,False,5,0.162
+1285,Pleural Effusion,supported,supported,False,3,0.4301
+1288,Atelectasis,unsupported,,False,0,0.2915
+1334,Fracture,supported,supported,False,5,0.2536
+1394,Pneumonia,supported,supported,False,3,0.0911
+1422,Lung Opacity,unsupported,,True,0,0.5002
+1422,Lung Lesion,unsupported,,False,0,0.2996
+1422,Consolidation,unsupported,,True,0,0.5614
+1422,Pneumonia,unsupported,,True,0,0.4648
+1451,Lung Opacity,supported,supported,False,5,0.488
+1451,Fracture,unsupported,unsupported,False,0,0.1734
+1456,Fracture,supported,supported,False,5,0.1453
+1518,Enlarged Cardiomediastinum,partially_supported,supported,False,1,0.1001
+1518,Cardiomegaly,supported,supported,False,4,0.3519
+1529,Atelectasis,unsupported,,False,0,0.2082
+1545,Fracture,supported,supported,False,5,0.2848
+1556,Lung Opacity,supported,supported,True,4,0.6302
+1556,Consolidation,unsupported,unsupported,False,0,0.1326
+1556,Atelectasis,supported,supported,False,4,0.3608
+1556,Pleural Effusion,supported,supported,False,5,0.4817
+1595,Enlarged Cardiomediastinum,unsupported,unsupported,False,0,0.0953
+1595,Cardiomegaly,supported,supported,True,5,0.3507
+1595,Lung Opacity,supported,supported,True,2,0.4418
+1595,Edema,supported,supported,False,4,0.3521
+1647,Fracture,supported,supported,False,5,0.2147
+1661,Fracture,supported,supported,False,5,0.2369
+1735,Pleural Effusion,unsupported,,False,0,0.5514
+1735,Fracture,unsupported,,False,0,0.2049
+1753,Cardiomegaly,supported,supported,True,4,0.2929
+1753,Lung Opacity,supported,supported,False,3,0.3776
+1753,Edema,supported,supported,False,3,0.3839
+1819,Enlarged Cardiomediastinum,unsupported,unsupported,False,0,0.0867
+1819,Cardiomegaly,supported,supported,True,5,0.7504
+1819,Lung Opacity,supported,supported,True,2,0.6143
+1819,Edema,supported,supported,False,4,0.5636
+1819,Atelectasis,supported,supported,True,2,0.2375
+1832,Cardiomegaly,supported,supported,True,4,0.7776
+1832,Lung Opacity,supported,supported,True,2,0.5014
+1832,Edema,supported,supported,False,3,0.4955
+1832,Pleural Effusion,supported,supported,False,2,0.4924
+1907,Cardiomegaly,supported,supported,False,4,0.4982
+1918,Enlarged Cardiomediastinum,supported,supported,False,2,0.0984
+1947,Fracture,supported,supported,False,5,0.2302
+1976,Lung Opacity,supported,supported,True,4,0.6199
+1976,Consolidation,supported,supported,False,3,0.1331
+1976,Pneumonia,supported,supported,False,4,0.3105
+1988,Lung Opacity,supported,supported,True,4,0.7428
+1988,Edema,unsupported,unsupported,False,0,0.4038
+1988,Pneumonia,supported,supported,False,4,0.1371
+2006,Fracture,supported,supported,False,5,0.195
+2062,Lung Opacity,unsupported,,True,0,0.7038
+2062,Consolidation,unsupported,,False,0,0.2381
+2062,Pneumonia,unsupported,,False,0,0.3957
+2066,Enlarged Cardiomediastinum,partially_supported,supported,False,1,0.1216
+2066,Cardiomegaly,supported,supported,True,4,0.329
+2074,Enlarged Cardiomediastinum,supported,supported,False,2,0.2687
+2074,Pleural Effusion,supported,supported,True,2,0.4527
+2116,Lung Lesion,partially_supported,supported,False,1,0.1707
+2138,Lung Opacity,unsupported,,True,0,0.4093
+2138,Lung Lesion,unsupported,,False,0,0.3768
+2138,Fracture,unsupported,,True,0,0.43
+2157,Pleural Other,unsupported,unsupported,False,0,0.0687
+2160,Fracture,supported,supported,False,5,0.2083
+2207,Fracture,supported,supported,False,2,0.2622
+2223,Edema,supported,supported,False,2,0.536
+2238,Fracture,supported,supported,False,5,0.1551
+2239,Lung Opacity,unsupported,,True,0,0.4037
+2239,Pneumonia,unsupported,,False,0,0.1085
+2313,Enlarged Cardiomediastinum,supported,supported,False,2,0.1041
+2363,Lung Opacity,unsupported,,True,0,0.5787
+2363,Consolidation,unsupported,,False,0,0.5278
+2363,Pneumonia,unsupported,,True,0,0.5016
+2363,Pleural Effusion,unsupported,,False,0,0.3592
+2396,Lung Opacity,unsupported,,True,0,0.4937
+2415,Lung Opacity,supported,supported,True,4,0.6447
+2415,Consolidation,unsupported,unsupported,False,0,0.1293
+2415,Atelectasis,supported,supported,False,4,0.2573
+2415,Pleural Effusion,supported,supported,False,4,0.8615
+2415,Pleural Other,partially_supported,supported,False,1,0.111
+2453,Pneumonia,supported,supported,False,3,0.125
+2475,Enlarged Cardiomediastinum,unsupported,,False,0,0.1116
+2493,Enlarged Cardiomediastinum,unsupported,unsupported,False,0,0.1631
+2493,Fracture,unsupported,unsupported,False,0,0.1621
+2513,Lung Opacity,unsupported,,False,0,0.4301
+2513,Atelectasis,unsupported,,True,0,0.237
+2513,Pleural Effusion,unsupported,,False,0,0.8335
+2533,Fracture,supported,supported,False,5,0.1509
+2594,Enlarged Cardiomediastinum,unsupported,unsupported,False,0,0.1129
+2594,Fracture,unsupported,unsupported,False,0,0.1559
+2605,Lung Opacity,unsupported,,False,0,0.3951
+2605,Pleural Effusion,unsupported,,False,0,0.8366
+2616,Pleural Effusion,unsupported,unsupported,True,0,0.8956
+2616,Pleural Other,unsupported,unsupported,False,0,0.0657
+2622,Pleural Other,unsupported,unsupported,False,0,0.0722
+2629,Fracture,supported,supported,False,5,0.3095
+2644,Enlarged Cardiomediastinum,partially_supported,supported,False,1,0.0879
+2644,Cardiomegaly,supported,supported,True,4,0.2886
+2691,Enlarged Cardiomediastinum,supported,supported,False,2,0.15
+2737,Fracture,supported,supported,False,5,0.1671
+2747,Atelectasis,unsupported,,False,0,0.2347
+2778,Support Devices,supported,supported,True,5,0.9163
+2817,Lung Opacity,supported,supported,True,5,0.5666
+2817,Pneumonia,supported,supported,False,4,0.1461
+2817,Pleural Other,supported,supported,True,3,0.2473
+2831,Pleural Effusion,supported,supported,True,5,0.9534
+2833,Pneumothorax,unsupported,,False,0,0.2855
+2884,Cardiomegaly,supported,supported,False,4,0.2998
+2894,Support Devices,supported,supported,True,5,0.9935
+2902,Pleural Effusion,unsupported,unsupported,False,0,0.5661
+2902,Pleural Other,unsupported,unsupported,False,0,0.0857
+2936,Enlarged Cardiomediastinum,partially_supported,supported,False,1,0.1038
+2936,Cardiomegaly,supported,supported,True,4,0.3912
+2955,Enlarged Cardiomediastinum,unsupported,unsupported,False,0,0.1674
+2955,Cardiomegaly,supported,supported,True,4,0.4938
+2955,Edema,supported,supported,False,3,0.4858
+2957,Lung Opacity,unsupported,,True,0,0.6543
+2957,Lung Lesion,unsupported,,False,0,0.2012
+2957,Pneumonia,unsupported,,False,0,0.0967
+2957,Atelectasis,unsupported,,True,0,0.282
+3004,Lung Opacity,supported,supported,True,5,0.5093
+3004,Pleural Other,partially_supported,partially_supported,False,1,0.119
+3022,Lung Opacity,supported,supported,False,3,0.7227
+3022,Lung Lesion,unsupported,unsupported,True,0,0.4311
+3022,Consolidation,supported,supported,False,2,0.4052
+3022,Pneumonia,supported,supported,False,2,0.2329
+3025,Fracture,supported,supported,False,5,0.3381
+3049,Fracture,supported,supported,False,5,0.2589
+3069,Lung Lesion,unsupported,unsupported,False,0,0.1693
+3069,Consolidation,supported,supported,False,3,0.1306
+3069,Pneumonia,supported,supported,True,4,0.0884
+3135,Fracture,supported,supported,False,5,0.1404
+3148,Enlarged Cardiomediastinum,supported,supported,False,4,0.1072
+3148,Atelectasis,supported,supported,False,4,0.226
+3148,Pleural Effusion,supported,supported,True,4,0.9275
+3158,Pleural Effusion,supported,supported,False,3,0.4782
+3191,Enlarged Cardiomediastinum,unsupported,unsupported,False,0,0.1716
+3191,Cardiomegaly,supported,supported,True,3,0.3799
+3191,Pleural Other,partially_supported,partially_supported,False,1,0.0754
+3195,Lung Opacity,unsupported,,True,0,0.5149
+3195,Edema,unsupported,,False,0,0.6218
+3195,Atelectasis,unsupported,,False,0,0.2632
+3195,Pleural Effusion,unsupported,,False,0,0.9308
+3207,Cardiomegaly,unsupported,,True,0,0.7687
+3214,Cardiomegaly,unsupported,,True,0,0.9046
+3253,Fracture,supported,supported,False,5,0.1623
+3290,Fracture,supported,supported,False,5,0.1749
+3347,Fracture,supported,supported,False,5,0.1882
+3369,Pneumothorax,supported,supported,True,3,0.6082
+3369,Fracture,supported,supported,False,3,0.1448
+3378,Fracture,supported,supported,True,5,0.4352
+3379,Enlarged Cardiomediastinum,supported,supported,False,2,0.0988
+3435,Enlarged Cardiomediastinum,supported,supported,False,2,0.0959
+3455,Lung Opacity,supported,supported,True,5,0.6461
+3455,Edema,unsupported,unsupported,True,0,0.5755
+3508,Enlarged Cardiomediastinum,unsupported,unsupported,False,0,0.107
+3508,Lung Opacity,supported,supported,False,4,0.3591
+3508,Lung Lesion,unsupported,unsupported,False,0,0.1352
+3508,Pleural Effusion,supported,supported,True,4,0.8557
+3508,Pleural Other,unsupported,unsupported,True,0,0.4505
+3559,Fracture,supported,supported,False,5,0.3912
+3562,Enlarged Cardiomediastinum,unsupported,unsupported,False,0,0.2126
+3562,Fracture,unsupported,unsupported,False,0,0.2357
+3565,Lung Opacity,unsupported,,True,0,0.4185
+3565,Consolidation,unsupported,,True,0,0.5935
+3565,Pneumonia,unsupported,,True,0,0.6039
+3589,Pneumonia,supported,supported,False,3,0.1776
+3589,Atelectasis,supported,supported,False,3,0.3229
+3597,Lung Lesion,unsupported,,False,0,0.3946
+3597,Pneumonia,unsupported,,False,0,0.1109
+3608,Cardiomegaly,supported,supported,True,4,0.9392
+3608,Edema,supported,supported,False,3,0.5509
+3611,Enlarged Cardiomediastinum,unsupported,unsupported,False,0,0.1205
+3611,Cardiomegaly,supported,supported,False,3,0.4892
+3611,Lung Opacity,supported,supported,True,3,0.3869
+3611,Pleural Effusion,supported,supported,False,3,0.4435
+3611,Pleural Other,supported,supported,False,2,0.0629
+3611,Fracture,unsupported,unsupported,False,0,0.1601
+3632,Fracture,supported,supported,False,5,0.192
+3667,Support Devices,supported,supported,True,5,0.8876
+3672,Cardiomegaly,unsupported,,True,0,0.315
+3672,Edema,unsupported,,True,0,0.5559
+3672,Pleural Effusion,unsupported,,False,0,0.4602
+3756,Lung Opacity,unsupported,,True,0,0.3866
+3756,Atelectasis,unsupported,,False,0,0.4974
+3790,Lung Opacity,unsupported,,True,0,0.521
+3790,Atelectasis,unsupported,,False,0,0.3508
+3790,Pleural Effusion,unsupported,,False,0,0.7725
+3790,Fracture,unsupported,,False,0,0.2988
+3793,Lung Opacity,supported,supported,True,5,0.5892
+3793,Pneumonia,unsupported,unsupported,False,0,0.1531
+3793,Atelectasis,supported,supported,False,5,0.2199
+3793,Fracture,partially_supported,partially_supported,False,1,0.1737
+3814,Fracture,supported,supported,False,5,0.1513
+3817,Enlarged Cardiomediastinum,supported,supported,False,2,0.1144
+3847,Pneumothorax,unsupported,unsupported,True,0,0.5799
+3847,Pleural Effusion,supported,supported,False,3,0.8541
+3866,Lung Opacity,supported,supported,True,4,0.7661
+3866,Consolidation,partially_supported,supported,False,1,0.2757
+3866,Pneumonia,supported,supported,True,4,0.4539
+3875,Lung Opacity,unsupported,,True,0,0.4842
+3875,Pneumonia,unsupported,,False,0,0.1069
+3879,Pneumonia,supported,supported,False,3,0.1468
+3880,Cardiomegaly,supported,supported,True,4,0.4876
+3905,Cardiomegaly,supported,supported,True,4,0.8715
+3905,Edema,supported,supported,False,3,0.4129
+3951,Lung Lesion,unsupported,,True,0,0.6744
+3951,Consolidation,unsupported,,False,0,0.1467
+3951,Pneumonia,unsupported,,False,0,0.1137
+3953,Fracture,supported,supported,False,5,0.1586
+3968,Fracture,supported,supported,False,5,0.1995
+3972,Lung Opacity,unsupported,,True,0,0.6314
+3972,Pneumonia,unsupported,,False,0,0.1806
+3972,Pleural Other,unsupported,,False,0,0.0898
+3980,Lung Opacity,supported,supported,True,4,0.6229
+3980,Consolidation,unsupported,unsupported,False,0,0.1902
+3980,Atelectasis,supported,supported,False,4,0.2565
+3980,Pleural Effusion,supported,supported,True,5,0.8034

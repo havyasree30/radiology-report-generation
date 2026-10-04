@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "19976ddb8838f6f40013696db981da85d824dece9310aff9d9022a83ddad68e5",
+ "text": "{\n  \"classifier_findings\": [\n    {\"finding\": \"Pleural Other\", \"supporting_ranks\": [], \"evidence_summary\": \"The classifier suggests the presence of Pleural Other.\", \"support_status\": \"unsupported\"}\n  ],\n  \"retrieval_only_candidates\": [\n    {\"finding\": \"Enlarged Cardiomediastinum\", \"supporting_ranks\": [], \"evidence_summary\": \"No retrieved reports mention Enlarged Cardiomediastinum.\"}\n  ],\n  \"normal_report_ranks\": [\n    1, 2, 3, 4, 5\n  ]\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 725,
+ "output_tokens": 141,
+ "total_duration_ns": 4066440900,
+ "load_duration_ns": 9731100,
+ "attempts": 1,
+ "wall_seconds": 6.13,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 900,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T16:42:54+00:00",
+ "agent": "agent1_evidence_verifier"
+}

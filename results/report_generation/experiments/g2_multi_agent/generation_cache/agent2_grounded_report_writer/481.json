@@ -1,0 +1,25 @@
+{
+ "status": "success",
+ "request_hash": "c764390e3e90e99aa147a4223fa883b06157bb9d965a4e548955777c225c81d7",
+ "text": "{\n\"findings\": \"Enlarged Cardiomediastinal silhouette is possible.\",\n\"impression\": \"Support device is present.\"\n}",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 997,
+ "output_tokens": 31,
+ "total_duration_ns": 1295687700,
+ "load_duration_ns": 8516200,
+ "attempts": 1,
+ "wall_seconds": 3.34,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": []
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-03T15:04:00+00:00",
+ "agent": "agent2_grounded_report_writer"
+}
