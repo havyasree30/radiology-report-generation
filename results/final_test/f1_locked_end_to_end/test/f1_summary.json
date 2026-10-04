@@ -1,0 +1,425 @@
+{
+  "partition": "test",
+  "population_flow": {
+    "partition": "test",
+    "locked_or_validation_studies": 578,
+    "with_frontal_image": 550,
+    "without_frontal_image": 28,
+    "failing_image_validator": 0,
+    "classified_P2": 550,
+    "primary_end_to_end_set_P3_(classified_and_usable_reference_report)": 549,
+    "classified_without_usable_reference_report": 1,
+    "clinical_finding_subset_P4": 368,
+    "classification_population_(classified_with_mapped_truth)": 369,
+    "retrieval_primary_population_(non_empty_classifier_query)": 329,
+    "routing_counts_on_P3": {
+      "normal": 262,
+      "abnormal": 224,
+      "indeterminate": 63
+    },
+    "routing_counts_on_P2": {
+      "normal": 263,
+      "abnormal": 224,
+      "indeterminate": 63
+    },
+    "studies_with_mapped_truth_in_partition": 389,
+    "path_C_equals_studies_without_query": true,
+    "reference_normal_in_P4": 202
+  },
+  "classification": {
+    "n_studies": 369,
+    "point": {
+      "macro_auroc": 0.8304303775569406,
+      "macro_auprc": 0.3737129528435181,
+      "micro_auroc": 0.8810532214108204,
+      "micro_auprc": 0.5614265582181136,
+      "n_classes_defined": 13,
+      "undefined_classes": [
+        "Enlarged Cardiomediastinum"
+      ],
+      "macro_precision": 0.33927303475804266,
+      "macro_recall": 0.44239461281901604,
+      "macro_specificity": 0.9436808443109453,
+      "macro_f1": 0.31161384071019954,
+      "macro_balanced_accuracy": 0.6931647070464001,
+      "micro_precision": 0.5063559322033898,
+      "micro_recall": 0.5106837606837606,
+      "micro_f1": 0.5085106382978725,
+      "macro_brier": 0.05412961388651729,
+      "macro_log_loss": 0.18981933564262563,
+      "macro_ece": 0.050906533446362014
+    },
+    "ci95": {
+      "macro_auroc": {
+        "point": 0.8304303775569406,
+        "ci95_low": 0.7706571007096903,
+        "ci95_high": 0.8759712749059965
+      },
+      "macro_auprc": {
+        "point": 0.3737129528435181,
+        "ci95_low": 0.3525333877565608,
+        "ci95_high": 0.473716266764146
+      },
+      "macro_precision": {
+        "point": 0.33927303475804266,
+        "ci95_low": 0.30060224455302315,
+        "ci95_high": 0.37930420556549055
+      },
+      "macro_recall": {
+        "point": 0.44239461281901604,
+        "ci95_low": 0.3656564790155134,
+        "ci95_high": 0.5606473559235482
+      },
+      "macro_specificity": {
+        "point": 0.9436808443109453,
+        "ci95_low": 0.9367295759502832,
+        "ci95_high": 0.9499497522089482
+      },
+      "macro_f1": {
+        "point": 0.31161384071019954,
+        "ci95_low": 0.2640319444803174,
+        "ci95_high": 0.3516318188763732
+      },
+      "macro_balanced_accuracy": {
+        "point": 0.6931647070464001,
+        "ci95_low": 0.6537105832657216,
+        "ci95_high": 0.7504487763391546
+      },
+      "macro_brier": {
+        "point": 0.05412961388651729,
+        "ci95_low": 0.049938230522263816,
+        "ci95_high": 0.058450027322480336
+      },
+      "macro_log_loss": {
+        "point": 0.18981933564262563,
+        "ci95_low": 0.17629111202572237,
+        "ci95_high": 0.20382826979232785
+      },
+      "macro_ece": {
+        "point": 0.050906533446362014,
+        "ci95_low": 0.05095228581380529,
+        "ci95_high": 0.060283832653641366
+      }
+    },
+    "n_classes_defined": 13,
+    "undefined_classes": [
+      "Enlarged Cardiomediastinum"
+    ],
+    "pooled_ece": 0.02160649567045507
+  },
+  "retrieval_n_queries": 329,
+  "report": {
+    "n_primary_P3_with_final_report": 549,
+    "n_clinical_P4": 368,
+    "generation_failures": [],
+    "n_generation_failures": 0,
+    "metrics": {
+      "precision": {
+        "value": 0.413265306122449,
+        "ci95_low": 0.3418792517006803,
+        "ci95_high": 0.48864572927072925
+      },
+      "recall": {
+        "value": 0.30566037735849055,
+        "ci95_low": 0.24725757575757576,
+        "ci95_high": 0.36399017598842814
+      },
+      "f1": {
+        "value": 0.351409978308026,
+        "ci95_low": 0.295298317712799,
+        "ci95_high": 0.40650917829933014
+      },
+      "macro_f1": {
+        "value": 0.23332581397097527,
+        "ci95_low": 0.16450487080751605,
+        "ci95_high": 0.3044537689318857
+      },
+      "hallucination_rate": {
+        "value": 0.21739130434782608,
+        "ci95_low": 0.17391304347826086,
+        "ci95_high": 0.2608695652173913
+      },
+      "omission_rate": {
+        "value": 0.3641304347826087,
+        "ci95_low": 0.3125,
+        "ci95_high": 0.41304347826086957
+      },
+      "clf_fp_propagation": {
+        "value": 0.3556701030927835,
+        "ci95_low": 0.29049410947404986,
+        "ci95_high": 0.41935483870967744
+      },
+      "tp_retention": {
+        "value": 0.7019230769230769,
+        "ci95_low": 0.6116223811957077,
+        "ci95_high": 0.7878787878787878
+      },
+      "rare_tp_retention": {
+        "value": 0.2727272727272727,
+        "ci95_low": 0.07685185185185187,
+        "ci95_high": 0.5
+      },
+      "rouge_l": {
+        "value": 0.2197690428574773,
+        "ci95_low": 0.21068849538311196,
+        "ci95_high": 0.2297508722226773
+      },
+      "bleu1": {
+        "value": 0.22205793382869476,
+        "ci95_low": 0.20929681547120418,
+        "ci95_high": 0.23588533760914301
+      },
+      "bleu4": {
+        "value": 0.03477269469669639,
+        "ci95_low": 0.030761972397895323,
+        "ci95_high": 0.03983842542097558
+      },
+      "meteor_exact": {
+        "value": 0.20359111242252306,
+        "ci95_low": 0.19167356508264788,
+        "ci95_high": 0.2174713253733018
+      },
+      "mean_words": {
+        "value": 23.103825136612024,
+        "ci95_low": 22.418806921675774,
+        "ci95_high": 23.861703096539163
+      }
+    },
+    "rare_pooled": {
+      "classifier_true_positives": 22,
+      "retained": 6,
+      "tp_retention": 0.2727272727272727
+    },
+    "three_state": {
+      "state_counts_P3": {
+        "normal": 262,
+        "abnormal": 224,
+        "indeterminate": 63
+      },
+      "state_counts_P4": {
+        "normal": 173,
+        "abnormal": 155,
+        "indeterminate": 40
+      },
+      "reference_stratified": [
+        {
+          "reference_state": "normal",
+          "n": 202,
+          "routed_normal_n": 134,
+          "routed_abnormal_n": 47,
+          "routed_indeterminate_n": 21,
+          "routed_normal_pct": 66.33663366336634,
+          "routed_abnormal_pct": 23.26732673267327,
+          "routed_indeterminate_pct": 10.396039603960396
+        },
+        {
+          "reference_state": "abnormal",
+          "n": 166,
+          "routed_normal_n": 39,
+          "routed_abnormal_n": 108,
+          "routed_indeterminate_n": 19,
+          "routed_normal_pct": 23.49397590361446,
+          "routed_abnormal_pct": 65.06024096385542,
+          "routed_indeterminate_pct": 11.44578313253012
+        }
+      ],
+      "decided": {
+        "normal_recall_among_decided": {
+          "value": 0.7403314917127072,
+          "ci95_low": 0.6736575814536341,
+          "ci95_high": 0.7987464109926169
+        },
+        "abnormal_recall_among_decided": {
+          "value": 0.7346938775510204,
+          "ci95_low": 0.65751380085872,
+          "ci95_high": 0.8040915915915916
+        },
+        "decision_coverage": {
+          "value": 0.8913043478260869,
+          "ci95_low": 0.8586956521739131,
+          "ci95_high": 0.9211956521739131
+        }
+      },
+      "decided_n": 328,
+      "eligible_n": 368,
+      "decision_coverage_P3": 0.8852459016393442
+    },
+    "abstention": {
+      "n_abstained_P3": 63,
+      "pct_abstained_P3": 11.475409836065573,
+      "n_abstained_P4": 40,
+      "pct_abstained_P4": 10.869565217391305,
+      "reference_normal_among_abstained": 21,
+      "reference_abnormal_among_abstained": 19,
+      "reference_normal_fraction": 0.525,
+      "reference_abnormal_fraction": 0.475,
+      "abstained_share_of_reference_abnormal": 0.1144578313253012,
+      "abstained_share_of_reference_normal": 0.10396039603960396,
+      "findings_in_abstained_reference_abnormal": {
+        "Cardiomegaly": 5,
+        "Lung Opacity": 11,
+        "Lung Lesion": 1,
+        "Atelectasis": 6,
+        "Pleural Effusion": 1,
+        "Fracture": 1,
+        "Support Devices": 5
+      },
+      "rare_instances_in_abstained": 2,
+      "total_instances_in_abstained": 30,
+      "rare_instances_in_all_reference_abnormal": 45,
+      "total_instances_in_all_reference_abnormal": 265,
+      "abstained_reference_abnormal_with_a_rare_finding": 2,
+      "decided_reference_abnormal_with_a_rare_finding": 39,
+      "decided_reference_abnormal_n": 147,
+      "fisher_exact_p_two_sided": 0.16343486610672409,
+      "fisher_exact_odds_ratio": 0.3257918552036199
+    },
+    "routing_prose_consistency": {
+      "abnormal_routed_P3": {
+        "n": 224,
+        "prose_normal": 82,
+        "prose_abnormal": 142,
+        "prose_indeterminate": 0,
+        "prose_normal_pct": 36.607142857142854,
+        "prose_abnormal_pct": 63.392857142857146,
+        "prose_indeterminate_pct": 0.0
+      },
+      "abnormal_routed_P4": {
+        "n": 155,
+        "prose_normal": 47,
+        "prose_abnormal": 108,
+        "prose_indeterminate": 0,
+        "prose_normal_pct": 30.322580645161292,
+        "prose_abnormal_pct": 69.6774193548387,
+        "prose_indeterminate_pct": 0.0
+      },
+      "normal_routed_P3": {
+        "n": 262,
+        "prose_normal": 262,
+        "prose_abnormal": 0,
+        "prose_indeterminate": 0,
+        "prose_normal_pct": 100.0,
+        "prose_abnormal_pct": 0.0,
+        "prose_indeterminate_pct": 0.0
+      },
+      "indeterminate_routed_P3": {
+        "n": 63,
+        "prose_normal": 0,
+        "prose_abnormal": 0,
+        "prose_indeterminate": 63,
+        "prose_normal_pct": 0.0,
+        "prose_abnormal_pct": 0.0,
+        "prose_indeterminate_pct": 100.0
+      },
+      "abnormal_routing_to_normal_prose_rate_P3": 36.607142857142854,
+      "abnormal_routing_to_normal_prose_rate_ci95": [
+        0.30357142857142855,
+        0.42857142857142855
+      ]
+    },
+    "provenance": {
+      "classifier only": {
+        "n": 10,
+        "supported": 1,
+        "unsupported": 9
+      },
+      "retrieval only": {
+        "n": 50,
+        "supported": 8,
+        "unsupported": 42
+      },
+      "classifier and retrieval": {
+        "n": 132,
+        "supported": 72,
+        "unsupported": 60
+      },
+      "neither": {
+        "n": 4,
+        "supported": 0,
+        "unsupported": 4
+      }
+    },
+    "copying": {
+      "n_studies_with_context": 486,
+      "copied_sentence_rate_mean": 0.33281893004115226,
+      "whole_report_copy_rate": 0.27983539094650206,
+      "repeated_sentence_rate_mean_P3": 0.007756724150166774,
+      "repeated_sentence_rate_mean_with_context": 0.008762225428892097,
+      "copied_sentence_rate_ci95": [
+        0.29336848422496575,
+        0.374494170096022
+      ],
+      "whole_report_copy_rate_ci95": [
+        0.23868312757201646,
+        0.31893004115226337
+      ],
+      "repeated_sentence_rate_ci95": [
+        0.004561988936988937,
+        0.013815536315536316
+      ]
+    },
+    "failure_counts": {
+      "1_classifier_error": 199,
+      "2_normal_abnormal_classifier_mismatch": 86,
+      "3_retrieval_query_mismatch": 73,
+      "4_retrieval_only_unsupported_finding": 34,
+      "5_report_generator_omission": 134,
+      "6_report_generator_hallucination": 80,
+      "7_abnormal_routing_normal_prose": 47,
+      "8_indeterminate_abstention": 40,
+      "9_corpus_limitation": 9,
+      "10_reference_label_limitation": 120
+    },
+    "no_failure_categories_1_to_8": 142,
+    "format_ok_rate": 1.0
+  },
+  "runtime": {
+    "classifier": {
+      "model_load": 0.88,
+      "image_loading_and_preprocessing": 25.22,
+      "model_inference": 2.91,
+      "total": 29.01
+    },
+    "prepare": {
+      "classifier": {
+        "model_load": 0.88,
+        "image_loading_and_preprocessing": 25.22,
+        "model_inference": 2.91,
+        "total": 29.01
+      },
+      "case_building_incl_query_embedding_and_hybrid_retrieval_seconds": 9.07,
+      "mean_query_and_retrieval_seconds_per_study": 0.015307680939498929,
+      "retrieval_evaluation_run_seconds": 2.89,
+      "n_retrieval_queries_in_case_building": 549,
+      "total_prepare_seconds": 45.02
+    },
+    "generation": {
+      "n_generated": 486,
+      "mean_seconds_per_report": 4.542530864197531,
+      "median_seconds_per_report": 3.66,
+      "total_call_seconds": 2207.67,
+      "wall_seconds_this_run": 2218.2,
+      "mean_output_tokens": 50.0761316872428,
+      "mean_prompt_tokens": 1088.5925925925926,
+      "gpu_memory_used_mib_peak_sampled": 4213.0,
+      "ollama_version": "0.35.1",
+      "model_tag": "medgemma1.5:4b",
+      "model_digest": "433252621ab154668b5d8be6aff6c1b771bacba045e46e6193da8d6ad1630f2c",
+      "hardware": {
+        "os": "Windows-10-10.0.26300-SP0",
+        "machine": "AMD64",
+        "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+        "nvidia_smi": "NVIDIA GeForce RTX 3050 6GB Laptop GPU, 596.08, 6144 MiB",
+        "ollama_ps": [
+          {
+            "name": "medgemma1.5:4b",
+            "size": 2879851068,
+            "size_vram": 2879851068,
+            "context_length": 8192
+          }
+        ]
+      }
+    },
+    "total_end_to_end_seconds": 2256.2799999999997
+  }
+}

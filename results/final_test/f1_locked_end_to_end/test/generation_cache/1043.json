@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "1d4260fb935d3cb784c36083ec6737a78c8d5889ba00936f25fed9da9e8068ef",
+ "text": "FINDINGS:\nModerate sized right pleural effusion is identified.\nIMPRESSION:\n1. Moderate right pleural effusion.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1143,
+ "output_tokens": 26,
+ "total_duration_ns": 6123102500,
+ "load_duration_ns": 14251400,
+ "attempts": 1,
+ "wall_seconds": 8.16,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T06:55:59+00:00"
+}

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "30d9d3081015c7ce4a3e85113ff71ff960ca3b6a85bd272dc2ba891ba8ffaa40",
+ "text": "FINDINGS:\nPulmonary edema is present.\nIMPRESSION:\nEdema.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1129,
+ "output_tokens": 20,
+ "total_duration_ns": 864563200,
+ "load_duration_ns": 5247800,
+ "attempts": 1,
+ "wall_seconds": 2.92,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:05:38+00:00"
+}

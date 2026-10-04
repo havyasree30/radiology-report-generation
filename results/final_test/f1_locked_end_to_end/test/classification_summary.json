@@ -1,0 +1,107 @@
+{
+  "n_studies": 369,
+  "point": {
+    "macro_auroc": 0.8304303775569406,
+    "macro_auprc": 0.3737129528435181,
+    "micro_auroc": 0.8810532214108204,
+    "micro_auprc": 0.5614265582181136,
+    "n_classes_defined": 13,
+    "undefined_classes": [
+      "Enlarged Cardiomediastinum"
+    ],
+    "macro_precision": 0.33927303475804266,
+    "macro_recall": 0.44239461281901604,
+    "macro_specificity": 0.9436808443109453,
+    "macro_f1": 0.31161384071019954,
+    "macro_balanced_accuracy": 0.6931647070464001,
+    "micro_precision": 0.5063559322033898,
+    "micro_recall": 0.5106837606837606,
+    "micro_f1": 0.5085106382978725,
+    "macro_brier": 0.05412961388651729,
+    "macro_log_loss": 0.18981933564262563,
+    "macro_ece": 0.050906533446362014
+  },
+  "ci95": {
+    "macro_auroc": {
+      "point": 0.8304303775569406,
+      "ci95_low": 0.7706571007096903,
+      "ci95_high": 0.8759712749059965
+    },
+    "macro_auprc": {
+      "point": 0.3737129528435181,
+      "ci95_low": 0.3525333877565608,
+      "ci95_high": 0.473716266764146
+    },
+    "macro_precision": {
+      "point": 0.33927303475804266,
+      "ci95_low": 0.30060224455302315,
+      "ci95_high": 0.37930420556549055
+    },
+    "macro_recall": {
+      "point": 0.44239461281901604,
+      "ci95_low": 0.3656564790155134,
+      "ci95_high": 0.5606473559235482
+    },
+    "macro_specificity": {
+      "point": 0.9436808443109453,
+      "ci95_low": 0.9367295759502832,
+      "ci95_high": 0.9499497522089482
+    },
+    "macro_f1": {
+      "point": 0.31161384071019954,
+      "ci95_low": 0.2640319444803174,
+      "ci95_high": 0.3516318188763732
+    },
+    "macro_balanced_accuracy": {
+      "point": 0.6931647070464001,
+      "ci95_low": 0.6537105832657216,
+      "ci95_high": 0.7504487763391546
+    },
+    "macro_brier": {
+      "point": 0.05412961388651729,
+      "ci95_low": 0.049938230522263816,
+      "ci95_high": 0.058450027322480336
+    },
+    "macro_log_loss": {
+      "point": 0.18981933564262563,
+      "ci95_low": 0.17629111202572237,
+      "ci95_high": 0.20382826979232785
+    },
+    "macro_ece": {
+      "point": 0.050906533446362014,
+      "ci95_low": 0.05095228581380529,
+      "ci95_high": 0.060283832653641366
+    }
+  },
+  "n_classes_defined": 13,
+  "undefined_classes": [
+    "Enlarged Cardiomediastinum"
+  ],
+  "no_finding": {
+    "n_images": 369,
+    "no_finding_prevalence": 0.5501355013550135,
+    "precision": 0.7758620689655172,
+    "recall": 0.6650246305418719,
+    "specificity": 0.7650602409638554,
+    "f1": 0.7161803713527851,
+    "balanced_accuracy": 0.7150424357528636,
+    "pre_rule_precision": 0.7707317073170732,
+    "pre_rule_recall": 0.7783251231527094,
+    "pre_rule_specificity": 0.7168674698795181,
+    "pre_rule_f1": 0.7745098039215687,
+    "pct_predicted_no_finding_before_rule": 55.55555555555556,
+    "pct_predicted_no_finding_after_rule": 47.15447154471545,
+    "contradiction_n_before_rule": 31,
+    "contradiction_pct_of_images_before_rule": 8.401084010840108,
+    "contradiction_pct_of_predicted_no_finding_before_rule": 15.121951219512194,
+    "contradiction_n_after_rule": 0,
+    "contradiction_pct_of_images_after_rule": 0.0,
+    "images_modified_by_rule": 31,
+    "ground_truth_no_finding_positive": 203,
+    "ground_truth_contradiction_with_12_pathology_n": 0,
+    "ground_truth_no_finding_with_support_devices_n": 0,
+    "ground_truth_no_finding_with_uncertain_pathology_n": 0
+  },
+  "pooled_ece": 0.02160649567045507,
+  "labels_note": "IU truth = MeSH-mapped findings; not mapped is not a verified negative; the classifier is applied out of domain (CheXpert -> IU X-Ray); metrics use the frozen C6 definitions"
+}

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "1cfe7af1ffa98200f3c0f5328df641144b8ffe642b85123ff33207306cafd1f3",
+ "text": "FINDINGS:\nThe lungs are clear. No focal consolidation, pleural effusion, or pneumothorax is identified. The cardiomediastinal silhouette is unremarkable.\nIMPRESSION:\nNo acute cardiopulmonary abnormality.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1287,
+ "output_tokens": 46,
+ "total_duration_ns": 1744605100,
+ "load_duration_ns": 10416000,
+ "attempts": 1,
+ "wall_seconds": 3.78,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T06:53:14+00:00"
+}

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "995911e9fe1057573e868f17dab0a78ce5b5b8290e4217018d8f721caab8b3e1",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is normal in size and contour. The lungs are clear. No pneumothorax, pleural effusion, or focal consolidation is identified. No displaced rib fracture is seen.\nIMPRESSION:\nNo acute cardiopulmonary abnormality.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1169,
+ "output_tokens": 66,
+ "total_duration_ns": 1854980900,
+ "load_duration_ns": 2911100,
+ "attempts": 1,
+ "wall_seconds": 3.91,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:09:47+00:00"
+}

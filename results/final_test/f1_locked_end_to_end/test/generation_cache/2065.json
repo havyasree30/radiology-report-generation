@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "0b4c3e33df92fbe18e34504739cac3f222c648a0b130c895359f049da56b017e",
+ "text": "FINDINGS:\nThere is a left lung base opacity, possibly representing atelectasis. The cardiomediastinal silhouette is within normal limits. No pneumothorax or pleural effusion is identified.\nIMPRESSION:\nLeft lung base opacity, most consistent with atelectasis.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1293,
+ "output_tokens": 59,
+ "total_duration_ns": 2563333700,
+ "load_duration_ns": 5413100,
+ "attempts": 1,
+ "wall_seconds": 4.61,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:03:58+00:00"
+}

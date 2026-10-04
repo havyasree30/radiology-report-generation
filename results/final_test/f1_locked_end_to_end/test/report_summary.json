@@ -1,0 +1,265 @@
+{
+  "n_primary_P3_with_final_report": 549,
+  "n_clinical_P4": 368,
+  "generation_failures": [],
+  "n_generation_failures": 0,
+  "metrics": {
+    "precision": {
+      "value": 0.413265306122449,
+      "ci95_low": 0.3418792517006803,
+      "ci95_high": 0.48864572927072925
+    },
+    "recall": {
+      "value": 0.30566037735849055,
+      "ci95_low": 0.24725757575757576,
+      "ci95_high": 0.36399017598842814
+    },
+    "f1": {
+      "value": 0.351409978308026,
+      "ci95_low": 0.295298317712799,
+      "ci95_high": 0.40650917829933014
+    },
+    "macro_f1": {
+      "value": 0.23332581397097527,
+      "ci95_low": 0.16450487080751605,
+      "ci95_high": 0.3044537689318857
+    },
+    "hallucination_rate": {
+      "value": 0.21739130434782608,
+      "ci95_low": 0.17391304347826086,
+      "ci95_high": 0.2608695652173913
+    },
+    "omission_rate": {
+      "value": 0.3641304347826087,
+      "ci95_low": 0.3125,
+      "ci95_high": 0.41304347826086957
+    },
+    "clf_fp_propagation": {
+      "value": 0.3556701030927835,
+      "ci95_low": 0.29049410947404986,
+      "ci95_high": 0.41935483870967744
+    },
+    "tp_retention": {
+      "value": 0.7019230769230769,
+      "ci95_low": 0.6116223811957077,
+      "ci95_high": 0.7878787878787878
+    },
+    "rare_tp_retention": {
+      "value": 0.2727272727272727,
+      "ci95_low": 0.07685185185185187,
+      "ci95_high": 0.5
+    },
+    "rouge_l": {
+      "value": 0.2197690428574773,
+      "ci95_low": 0.21068849538311196,
+      "ci95_high": 0.2297508722226773
+    },
+    "bleu1": {
+      "value": 0.22205793382869476,
+      "ci95_low": 0.20929681547120418,
+      "ci95_high": 0.23588533760914301
+    },
+    "bleu4": {
+      "value": 0.03477269469669639,
+      "ci95_low": 0.030761972397895323,
+      "ci95_high": 0.03983842542097558
+    },
+    "meteor_exact": {
+      "value": 0.20359111242252306,
+      "ci95_low": 0.19167356508264788,
+      "ci95_high": 0.2174713253733018
+    },
+    "mean_words": {
+      "value": 23.103825136612024,
+      "ci95_low": 22.418806921675774,
+      "ci95_high": 23.861703096539163
+    }
+  },
+  "rare_pooled": {
+    "classifier_true_positives": 22,
+    "retained": 6,
+    "tp_retention": 0.2727272727272727
+  },
+  "three_state": {
+    "state_counts_P3": {
+      "normal": 262,
+      "abnormal": 224,
+      "indeterminate": 63
+    },
+    "state_counts_P4": {
+      "normal": 173,
+      "abnormal": 155,
+      "indeterminate": 40
+    },
+    "reference_stratified": [
+      {
+        "reference_state": "normal",
+        "n": 202,
+        "routed_normal_n": 134,
+        "routed_abnormal_n": 47,
+        "routed_indeterminate_n": 21,
+        "routed_normal_pct": 66.33663366336634,
+        "routed_abnormal_pct": 23.26732673267327,
+        "routed_indeterminate_pct": 10.396039603960396
+      },
+      {
+        "reference_state": "abnormal",
+        "n": 166,
+        "routed_normal_n": 39,
+        "routed_abnormal_n": 108,
+        "routed_indeterminate_n": 19,
+        "routed_normal_pct": 23.49397590361446,
+        "routed_abnormal_pct": 65.06024096385542,
+        "routed_indeterminate_pct": 11.44578313253012
+      }
+    ],
+    "decided": {
+      "normal_recall_among_decided": {
+        "value": 0.7403314917127072,
+        "ci95_low": 0.6736575814536341,
+        "ci95_high": 0.7987464109926169
+      },
+      "abnormal_recall_among_decided": {
+        "value": 0.7346938775510204,
+        "ci95_low": 0.65751380085872,
+        "ci95_high": 0.8040915915915916
+      },
+      "decision_coverage": {
+        "value": 0.8913043478260869,
+        "ci95_low": 0.8586956521739131,
+        "ci95_high": 0.9211956521739131
+      }
+    },
+    "decided_n": 328,
+    "eligible_n": 368,
+    "decision_coverage_P3": 0.8852459016393442
+  },
+  "abstention": {
+    "n_abstained_P3": 63,
+    "pct_abstained_P3": 11.475409836065573,
+    "n_abstained_P4": 40,
+    "pct_abstained_P4": 10.869565217391305,
+    "reference_normal_among_abstained": 21,
+    "reference_abnormal_among_abstained": 19,
+    "reference_normal_fraction": 0.525,
+    "reference_abnormal_fraction": 0.475,
+    "abstained_share_of_reference_abnormal": 0.1144578313253012,
+    "abstained_share_of_reference_normal": 0.10396039603960396,
+    "findings_in_abstained_reference_abnormal": {
+      "Cardiomegaly": 5,
+      "Lung Opacity": 11,
+      "Lung Lesion": 1,
+      "Atelectasis": 6,
+      "Pleural Effusion": 1,
+      "Fracture": 1,
+      "Support Devices": 5
+    },
+    "rare_instances_in_abstained": 2,
+    "total_instances_in_abstained": 30,
+    "rare_instances_in_all_reference_abnormal": 45,
+    "total_instances_in_all_reference_abnormal": 265,
+    "abstained_reference_abnormal_with_a_rare_finding": 2,
+    "decided_reference_abnormal_with_a_rare_finding": 39,
+    "decided_reference_abnormal_n": 147,
+    "fisher_exact_p_two_sided": 0.16343486610672409,
+    "fisher_exact_odds_ratio": 0.3257918552036199
+  },
+  "routing_prose_consistency": {
+    "abnormal_routed_P3": {
+      "n": 224,
+      "prose_normal": 82,
+      "prose_abnormal": 142,
+      "prose_indeterminate": 0,
+      "prose_normal_pct": 36.607142857142854,
+      "prose_abnormal_pct": 63.392857142857146,
+      "prose_indeterminate_pct": 0.0
+    },
+    "abnormal_routed_P4": {
+      "n": 155,
+      "prose_normal": 47,
+      "prose_abnormal": 108,
+      "prose_indeterminate": 0,
+      "prose_normal_pct": 30.322580645161292,
+      "prose_abnormal_pct": 69.6774193548387,
+      "prose_indeterminate_pct": 0.0
+    },
+    "normal_routed_P3": {
+      "n": 262,
+      "prose_normal": 262,
+      "prose_abnormal": 0,
+      "prose_indeterminate": 0,
+      "prose_normal_pct": 100.0,
+      "prose_abnormal_pct": 0.0,
+      "prose_indeterminate_pct": 0.0
+    },
+    "indeterminate_routed_P3": {
+      "n": 63,
+      "prose_normal": 0,
+      "prose_abnormal": 0,
+      "prose_indeterminate": 63,
+      "prose_normal_pct": 0.0,
+      "prose_abnormal_pct": 0.0,
+      "prose_indeterminate_pct": 100.0
+    },
+    "abnormal_routing_to_normal_prose_rate_P3": 36.607142857142854,
+    "abnormal_routing_to_normal_prose_rate_ci95": [
+      0.30357142857142855,
+      0.42857142857142855
+    ]
+  },
+  "provenance": {
+    "classifier only": {
+      "n": 10,
+      "supported": 1,
+      "unsupported": 9
+    },
+    "retrieval only": {
+      "n": 50,
+      "supported": 8,
+      "unsupported": 42
+    },
+    "classifier and retrieval": {
+      "n": 132,
+      "supported": 72,
+      "unsupported": 60
+    },
+    "neither": {
+      "n": 4,
+      "supported": 0,
+      "unsupported": 4
+    }
+  },
+  "copying": {
+    "n_studies_with_context": 486,
+    "copied_sentence_rate_mean": 0.33281893004115226,
+    "whole_report_copy_rate": 0.27983539094650206,
+    "repeated_sentence_rate_mean_P3": 0.007756724150166774,
+    "repeated_sentence_rate_mean_with_context": 0.008762225428892097,
+    "copied_sentence_rate_ci95": [
+      0.29336848422496575,
+      0.374494170096022
+    ],
+    "whole_report_copy_rate_ci95": [
+      0.23868312757201646,
+      0.31893004115226337
+    ],
+    "repeated_sentence_rate_ci95": [
+      0.004561988936988937,
+      0.013815536315536316
+    ]
+  },
+  "failure_counts": {
+    "1_classifier_error": 199,
+    "2_normal_abnormal_classifier_mismatch": 86,
+    "3_retrieval_query_mismatch": 73,
+    "4_retrieval_only_unsupported_finding": 34,
+    "5_report_generator_omission": 134,
+    "6_report_generator_hallucination": 80,
+    "7_abnormal_routing_normal_prose": 47,
+    "8_indeterminate_abstention": 40,
+    "9_corpus_limitation": 9,
+    "10_reference_label_limitation": 120
+  },
+  "no_failure_categories_1_to_8": 142,
+  "format_ok_rate": 1.0
+}

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "d91d7d017146847112fc30edbb7522a6d71f847b13cf9e487e1f1f1aea0ffdd0",
+ "text": "FINDINGS:\nThere is a left upper lung airspace opacity. The cardiomediastinal silhouette is within normal limits. No pneumothorax or pleural effusion is identified.\nIMPRESSION:\nLeft upper lung airspace opacity, possibly representing atelectasis or pneumonia. Clinical correlation is recommended.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1285,
+ "output_tokens": 61,
+ "total_duration_ns": 1815487800,
+ "load_duration_ns": 7092400,
+ "attempts": 1,
+ "wall_seconds": 3.83,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:14:53+00:00"
+}

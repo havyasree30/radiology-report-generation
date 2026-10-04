@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "eeb2436adb59a3cc9624e08ecf7e0cc1c12655d09cba41b31c143ff12130c217",
+ "text": "FINDINGS:\nThe right lung demonstrates a large pleural effusion with associated atelectasis of the right middle and lower lobes. The left lung is grossly clear.\nIMPRESSION:\nLarge right pleural effusion with associated passive atelectasis of the right middle and lower lobes.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1240,
+ "output_tokens": 57,
+ "total_duration_ns": 1682349800,
+ "load_duration_ns": 8291700,
+ "attempts": 1,
+ "wall_seconds": 3.72,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:11:31+00:00"
+}

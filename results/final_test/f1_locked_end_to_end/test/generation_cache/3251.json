@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "e1762657a7cf5855cecb58cac32e91c0a45514fdd6884220466b0865d8320ff7",
+ "text": "FINDINGS:\nThe lungs are clear. The heart size is normal. The mediastinal silhouette is unremarkable. There is no pleural effusion or pneumothorax.\nIMPRESSION:\nNo acute cardiopulmonary process.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1157,
+ "output_tokens": 45,
+ "total_duration_ns": 1434469500,
+ "load_duration_ns": 5782700,
+ "attempts": 1,
+ "wall_seconds": 3.45,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:12:50+00:00"
+}

@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "07e8ee9c009caf57d77b619d1b69ea885e6b56cc55de1b68a62985c7f0df11f0",
+ "text": "FINDINGS:\nLow lung volumes. Mild atelectasis in the left lung base. Fracture of the left anterior 7th rib. Fracture of the left anterior 6th rib.\nIMPRESSION:\nSuspected fractures of the left anterior 6th and 7th ribs. Mild atelectasis.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1529,
+ "output_tokens": 66,
+ "total_duration_ns": 2101681000,
+ "load_duration_ns": 9476600,
+ "attempts": 1,
+ "wall_seconds": 4.14,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:14:29+00:00"
+}

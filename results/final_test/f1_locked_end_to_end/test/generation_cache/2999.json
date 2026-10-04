@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "9e84e73a71d497e5cb3af61ed91f2d0a4cd6e1f61b7fce2bdce4bae2732b2e8b",
+ "text": "FINDINGS:\nFocal opacity in the medial right lung base. No definite pleural effusion. Cardiomediastinal silhouette is normal.\nIMPRESSION:\nAbnormal opacity in the right lung base, possibly pneumonia. Recommend clinical correlation.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1270,
+ "output_tokens": 51,
+ "total_duration_ns": 1617565600,
+ "load_duration_ns": 10545300,
+ "attempts": 1,
+ "wall_seconds": 3.64,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:10:47+00:00"
+}

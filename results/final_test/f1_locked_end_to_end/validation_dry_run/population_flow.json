@@ -1,0 +1,26 @@
+{
+  "partition": "validation",
+  "locked_or_validation_studies": 578,
+  "with_frontal_image": 551,
+  "without_frontal_image": 27,
+  "failing_image_validator": 0,
+  "classified_P2": 551,
+  "primary_end_to_end_set_P3_(classified_and_usable_reference_report)": 547,
+  "classified_without_usable_reference_report": 4,
+  "clinical_finding_subset_P4": 378,
+  "classification_population_(classified_with_mapped_truth)": 382,
+  "retrieval_primary_population_(non_empty_classifier_query)": 358,
+  "routing_counts_on_P3": {
+    "normal": 269,
+    "abnormal": 229,
+    "indeterminate": 49
+  },
+  "routing_counts_on_P2": {
+    "normal": 269,
+    "abnormal": 233,
+    "indeterminate": 49
+  },
+  "studies_with_mapped_truth_in_partition": 403,
+  "path_C_equals_studies_without_query": true,
+  "reference_normal_in_P4": 192
+}

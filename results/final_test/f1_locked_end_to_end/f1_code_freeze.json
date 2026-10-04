@@ -1,0 +1,27 @@
+{
+  "frozen_utc": "2026-10-04T06:47:42+00:00",
+  "scope": "analysis code that computes every scientific metric (population, classifier run, routing, retrieval, generation, evaluation, comparison, opening gate)",
+  "sha256": {
+    "src/f1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/f1/analysis.py": "c2ffd328cdcc1efa1065d318cf99c332a7244f322149f67e3fa64523586b87c8",
+    "src/f1/pipeline.py": "c9689fada249c6317478dbed1b4f4e0adb7e2c8aa78516008baf6b5a3bc3c788",
+    "scripts/f1_01_verify_freeze_and_register_protocol.py": "6dbb7bab21dc9f44b9326e41564367ad0255a2229f11ff9509140a6df9194e3f",
+    "scripts/f1_02_open_test.py": "a99515ce5e5b5029eaa0ac75307d18d8854ad9418399d156a0d6bbac67f4bc2e",
+    "scripts/f1_03_prepare.py": "300bd933c5275dd4111c83212932c47eb895b66b1815a7f2ddbf9a4aadfe181d",
+    "scripts/f1_04_generate.py": "d14ad332bf9e9c0d99d33f3aa2cadef7b982f147c3afee88235217902d89bfe9",
+    "scripts/f1_05_evaluate.py": "9897437931a6ade4e8a8c0841325ce5f3022be40d2d809a27fa242f9ecf7983b",
+    "scripts/f1_06_compare.py": "54dd8a1c8c63c1b2f00e113df41dff3196e53312e5320583194f79d41ae60f2b"
+  },
+  "combined_sha256": "0c679cc037a0ea045fbf1bcbcf65fea7d9be75602bfec8c911ea6138ac644028",
+  "protocol_json_sha256": "dee43410b37b3eaaa7f810d80e0e7bc776ba92f2a885702c350c93c7c4a48a08",
+  "preconditions": {
+    "protocol_json_hash_unchanged": true,
+    "protocol_md_hash_unchanged": true,
+    "freeze_verification_passed": true,
+    "dry_run_prepare_reproduced": true,
+    "dry_run_evaluation_reproduced": true,
+    "dry_run_generation_path_ran_without_failure": true
+  },
+  "not_in_scope": "figure, table, document, integrity and test scripts only format stored values; they are written/changed after the run and listed in the final integrity report",
+  "working_tree_note": "F1 code and protocol are uncommitted at this point; file hashes are the record"
+}

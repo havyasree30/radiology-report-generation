@@ -1,0 +1,17 @@
+| Population step | Studies |
+|---|---:|
+| Locked test studies | 578 |
+| With a frontal image | 550 |
+| Without a frontal image (not evaluable end to end) | 28 |
+| Failing the image validator | 0 |
+| Classified (P2) | 550 |
+| Classified with a usable reference report: primary end-to-end set (P3) | 549 |
+| Classified without a usable reference report | 1 |
+| Clinical-finding subset with usable mapped truth (P4) | 368 |
+|   of which reference-normal | 202 |
+| Classification population (classified with mapped truth) | 369 |
+| Retrieval population (non-empty classifier query) | 329 |
+| Routed to Path A / normal (P3) | 262 |
+| Routed to Path B / abnormal (P3) | 224 |
+| Routed to Path C / indeterminate (P3) | 63 |
+| Routed normal / abnormal / indeterminate (P2) | 263 / 224 / 63 |

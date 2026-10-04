@@ -1,0 +1,12 @@
+category,n_studies,pct_of_clinical_subset
+1_classifier_error,215,56.87830687830688
+2_normal_abnormal_classifier_mismatch,81,21.428571428571427
+3_retrieval_query_mismatch,74,19.576719576719576
+4_retrieval_only_unsupported_finding,36,9.523809523809524
+5_report_generator_omission,144,38.095238095238095
+6_report_generator_hallucination,97,25.66137566137566
+7_abnormal_routing_normal_prose,45,11.904761904761905
+8_indeterminate_abstention,24,6.349206349206349
+9_corpus_limitation,7,1.8518518518518519
+10_reference_label_limitation,131,34.65608465608466
+no_failure_in_categories_1_to_8,144,38.095238095238095

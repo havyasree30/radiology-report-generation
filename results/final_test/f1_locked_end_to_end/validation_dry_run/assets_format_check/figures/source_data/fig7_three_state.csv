@@ -1,0 +1,10 @@
+reference_state,routed,pct
+normal,normal,74.479166666666671
+normal,abnormal,20.833333333333332
+normal,indeterminate,4.6875
+abnormal,normal,22.043010752688172
+abnormal,abnormal,69.892473118279568
+abnormal,indeterminate,8.064516129032258
+decided,normal_recall_among_decided,78.142076502732237
+decided,abnormal_recall_among_decided,76.023391812865498
+decided,decision_coverage,93.650793650793645

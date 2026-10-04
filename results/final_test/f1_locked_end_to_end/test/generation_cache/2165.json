@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "926f2f6769a4b384f54c2ddcd6aec267fc97ea140fb69d868d11f55262499991",
+ "text": "FINDINGS:\nAtelectasis is present. Support Devices are present.\nIMPRESSION:\nAtelectasis is present. Support Devices are present.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1095,
+ "output_tokens": 44,
+ "total_duration_ns": 1686526400,
+ "load_duration_ns": 6148900,
+ "attempts": 1,
+ "wall_seconds": 3.74,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:05:03+00:00"
+}

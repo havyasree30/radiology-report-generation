@@ -1,0 +1,14 @@
+finding,rare_c2,reference_positive_in_abstained_reference_abnormal,reference_positive_in_all_reference_abnormal
+Enlarged Cardiomediastinum,True,0,0
+Cardiomegaly,False,6,52
+Lung Opacity,False,8,85
+Lung Lesion,True,0,21
+Edema,False,0,5
+Consolidation,True,0,4
+Pneumonia,True,0,10
+Atelectasis,False,2,42
+Pneumothorax,False,0,4
+Pleural Effusion,False,0,13
+Pleural Other,True,0,5
+Fracture,True,1,9
+Support Devices,False,2,35

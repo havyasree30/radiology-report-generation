@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "c49ea55cc8f22b2d10af71a0263d702e0087db0935020de2fce9c4d2d1f5f74d",
+ "text": "FINDINGS:\nA closure device is projected over the heart. The cardiomediastinal silhouette and pulmonary vasculature are within normal limits. The lungs are clear.\nIMPRESSION:\nStable appearance of the chest.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1153,
+ "output_tokens": 55,
+ "total_duration_ns": 2004366000,
+ "load_duration_ns": 6691300,
+ "attempts": 1,
+ "wall_seconds": 4.05,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:02:03+00:00"
+}

@@ -1,0 +1,15 @@
+Metric,Frozen classifier on the locked test (95% study-level bootstrap CI)
+Micro AUROC,0.881
+Micro AUPRC,0.561
+Macro AUROC,0.830 (0.771 to 0.876)
+Macro AUPRC,0.374 (0.353 to 0.474)
+Macro precision,0.339 (0.301 to 0.379)
+Macro recall,0.442 (0.366 to 0.561)
+Macro specificity,0.944 (0.937 to 0.950)
+Macro F1,0.312 (0.264 to 0.352)
+Macro balanced accuracy,0.693 (0.654 to 0.750)
+Brier score (macro),0.054 (0.050 to 0.058)
+Log loss (macro),0.190 (0.176 to 0.204)
+ECE (macro),0.051 (0.051 to 0.060)
+Classes with defined AUROC / undefined,13 / Enlarged Cardiomediastinum
+Studies (classification population),369

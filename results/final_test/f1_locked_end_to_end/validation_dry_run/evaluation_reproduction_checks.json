@@ -1,0 +1,21 @@
+{
+  "max_abs_diff_vs_stored_g1f_validation_metrics": 0.0,
+  "per_metric": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "macro_f1": 0.0,
+    "hallucination_rate": 0.0,
+    "omission_rate": 0.0,
+    "clf_fp_propagation": 0.0,
+    "tp_retention": 0.0,
+    "rouge_l": 0.0,
+    "bleu4": 0.0,
+    "meteor_exact": 0.0,
+    "mean_words": 0.0
+  },
+  "all_reproduced": true,
+  "abstention_counts_reproduced": true,
+  "decided_metrics_reproduced": true,
+  "prose_consistency_reproduced": true
+}

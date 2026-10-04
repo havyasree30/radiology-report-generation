@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "8ae5aac09eda21eea5ce59dad0f957790d4f8e18558313f0196375d7aef189c4",
+ "text": "FINDINGS:\nCardiomegaly and enlarged cardiomediastinal silhouette are noted. A left lung opacity is present.\nIMPRESSION:\nCardiomegaly and enlarged cardiomediastinal silhouette are noted. A left lung opacity is present.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1298,
+ "output_tokens": 64,
+ "total_duration_ns": 2794874100,
+ "load_duration_ns": 7511600,
+ "attempts": 1,
+ "wall_seconds": 4.84,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T06:51:15+00:00"
+}

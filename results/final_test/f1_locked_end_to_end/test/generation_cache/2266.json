@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "1fe6959b3a1e13b47d2f827c03f1f7351d8c30de4c937b08f63e60595b78d233",
+ "text": "FINDINGS:\nThe cardiomediastinal silhouette is enlarged. Low lung volumes are present. There is patchy opacification in the lung bases, compatible with atelectasis.\nIMPRESSION:\nCardiomegaly and atelectasis.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1267,
+ "output_tokens": 53,
+ "total_duration_ns": 1539425500,
+ "load_duration_ns": 5717700,
+ "attempts": 1,
+ "wall_seconds": 3.58,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:05:48+00:00"
+}

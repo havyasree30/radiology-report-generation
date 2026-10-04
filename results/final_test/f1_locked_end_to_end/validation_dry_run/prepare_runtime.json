@@ -1,0 +1,13 @@
+{
+  "classifier": {
+    "model_load": 0.3,
+    "image_loading_and_preprocessing": 25.04,
+    "model_inference": 2.62,
+    "total": 27.96
+  },
+  "case_building_incl_query_embedding_and_hybrid_retrieval_seconds": 4.88,
+  "mean_query_and_retrieval_seconds_per_study": 0.008431253311185122,
+  "retrieval_evaluation_run_seconds": 1.26,
+  "n_retrieval_queries_in_case_building": 547,
+  "total_prepare_seconds": 36.27
+}

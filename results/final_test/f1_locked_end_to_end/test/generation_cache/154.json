@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "313e851d87c82b5c50c22d7ff716386d23e7c2473f00d6766b23bf6ce5d096ab",
+ "text": "FINDINGS:\nThere is a left lung opacity.\nIMPRESSION:\nThe left lung opacity may represent atelectasis or pneumonia.",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1202,
+ "output_tokens": 30,
+ "total_duration_ns": 1202987200,
+ "load_duration_ns": 4001600,
+ "attempts": 1,
+ "wall_seconds": 3.25,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T06:50:17+00:00"
+}

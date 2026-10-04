@@ -1,0 +1,16 @@
+{
+  "all_identifiers_verified": true,
+  "checks": {
+    "config_hash_equals_expected_and_stored": true,
+    "g1_prompt_hash": true,
+    "guard_hash_in_config_and_on_disk": true,
+    "classification_checkpoint_loss_thresholds_rule_calibration": true,
+    "retrieval_top3_minilm_bm25_rrf60_depth100_k5_no_mmr_no_expansion_no_weighting": true,
+    "generation_g1_single_agent_medgemma_digest_decoding": true,
+    "guard_paths_A_B_C_and_exact_indeterminate_text": true,
+    "locked_test_unopened_and_no_test_results_in_config": true,
+    "locked_test_id_list_hash_equals_frozen_hash_and_has_578_ids": true,
+    "g1f_integrity_run_checks_pass": true
+  },
+  "g1f_integrity_status": "PASS"
+}

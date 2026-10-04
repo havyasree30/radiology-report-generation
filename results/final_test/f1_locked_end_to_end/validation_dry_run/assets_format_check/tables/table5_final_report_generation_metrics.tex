@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabular}{lr}
+\hline
+Metric & Final system on the locked test (95\% CI) \\
+\hline
+Finding precision & 0.411 (0.354 to 0.469) \\
+Finding recall & 0.358 (0.300 to 0.416) \\
+Finding F1 (micro) & 0.383 (0.330 to 0.435) \\
+Macro finding F1 & 0.215 (0.164 to 0.260) \\
+Hallucination rate & 0.257 (0.217 to 0.302) \\
+Omission rate & 0.381 (0.333 to 0.429) \\
+Classifier FP propagation & 0.405 (0.350 to 0.462) \\
+Classifier TP retention & 0.718 (0.641 to 0.789) \\
+ROUGE-L & 0.225 (0.215 to 0.235) \\
+BLEU-4 & 0.036 (0.032 to 0.040) \\
+METEOR (exact-match variant) & 0.207 (0.195 to 0.220) \\
+Mean report length (words) & 23.3 (22.6 to 24.0) \\
+Studies (clinical subset / primary set) & 378 / 547 \\
+Persistent generation failures & 0 \\
+\hline
+\end{tabular}
+\caption{Final report-generation metrics on the locked test (frozen G1 with the deterministic guard).}
+\label{tab:table5_final_report_generation_metrics}
+\end{table}

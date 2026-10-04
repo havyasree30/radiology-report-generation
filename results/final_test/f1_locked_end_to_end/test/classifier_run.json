@@ -1,0 +1,20 @@
+{
+  "partition": "test",
+  "n_studies": 578,
+  "n_with_frontal_image": 550,
+  "n_without_frontal_image": 28,
+  "n_failing_image_validator": 0,
+  "failing_images": [],
+  "n_classified": 550,
+  "device": "cuda",
+  "inference_policy": "fp32_strict",
+  "checkpoint_sha256": "6645ed44be7cb7d4cf4679b1fd561c7ac36be63f964ea320666199883126794b",
+  "seconds": {
+    "model_load": 0.88,
+    "image_loading_and_preprocessing": 25.22,
+    "model_inference": 2.91,
+    "total": 29.01
+  },
+  "image_validator_warnings": {},
+  "classifier_tuned_on_iu": false
+}

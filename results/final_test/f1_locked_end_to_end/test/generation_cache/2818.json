@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "7766865845372612961e01429d0cdf99bb11cd5d0abed8fe5236461212a4fb4c",
+ "text": "FINDINGS:\nLow lung volumes. Question patchy opacity left base. No pneumothorax. Osseous structures intact. Small right effusion.\nIMPRESSION:\n1. Patchy opacity left base, may represent evolving infiltrate. 2. Small right pleural effusion.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1270,
+ "output_tokens": 66,
+ "total_duration_ns": 2229886700,
+ "load_duration_ns": 7647600,
+ "attempts": 1,
+ "wall_seconds": 4.26,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:09:24+00:00"
+}

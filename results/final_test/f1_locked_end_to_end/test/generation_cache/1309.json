@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "c651651a6da4a5be20fa4688fab7d12432d881a38ab2283531e1c85b9bc00045",
+ "text": "FINDINGS:\nA small right-sided pneumothorax is identified. The lungs are clear. The cardiomediastinal silhouette is normal.\nIMPRESSION:\n1. Small right-sided pneumothorax.\n\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1080,
+ "output_tokens": 56,
+ "total_duration_ns": 1678976100,
+ "load_duration_ns": 7468000,
+ "attempts": 1,
+ "wall_seconds": 3.71,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T06:58:06+00:00"
+}

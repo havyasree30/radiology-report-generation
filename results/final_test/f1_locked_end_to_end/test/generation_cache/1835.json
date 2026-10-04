@@ -1,0 +1,28 @@
+{
+ "status": "success",
+ "request_hash": "337129b5bff070df3d4279badc6949ec08e6e53a005bc9a710c92fbe470ea5af",
+ "text": "FINDINGS:\nCardiomegaly is present. Mild pulmonary edema is noted. A fracture is present.\nIMPRESSION:\nCardiomegaly and pulmonary edema are present. A fracture is present.\n",
+ "done_reason": "stop",
+ "model_returned": "medgemma1.5:4b",
+ "prompt_tokens": 1114,
+ "output_tokens": 53,
+ "total_duration_ns": 1642489800,
+ "load_duration_ns": 4998200,
+ "attempts": 1,
+ "wall_seconds": 3.7,
+ "options": {
+  "temperature": 0.0,
+  "top_k": 1,
+  "top_p": 1.0,
+  "seed": 42,
+  "num_predict": 400,
+  "num_ctx": 8192,
+  "stop": [
+   "A. AUTOMATED CLASSIFIER OUTPUT",
+   "B. RETRIEVED EVIDENCE",
+   "C. EVIDENCE SUMMARY"
+  ]
+ },
+ "prompt_may_be_truncated": false,
+ "created_utc": "2026-10-04T07:02:10+00:00"
+}
