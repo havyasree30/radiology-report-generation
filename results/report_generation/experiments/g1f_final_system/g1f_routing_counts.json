@@ -1,0 +1,59 @@
+{
+  "n_studies": 547,
+  "path_counts": {
+    "A": 269,
+    "B": 229,
+    "C": 49
+  },
+  "state_counts": {
+    "normal": 269,
+    "abnormal": 229,
+    "indeterminate": 49
+  },
+  "path_C_equals_the_49_empty_classifier_outputs": true,
+  "n_path_C": 49,
+  "n_empty_classifier_outputs_in_g1": 49,
+  "n_path_C_in_clinical_subset": 24,
+  "path_A_B_reports_byte_identical_to_stored_g1": "498 of 498",
+  "path_A_B_equal_to_g1_generated_reports_csv_text": "498 of 498",
+  "retrieval_invoked_in_final_pipeline": 498,
+  "llm_invoked_in_final_pipeline": 498,
+  "new_llm_calls_in_g1f_run": 0,
+  "new_retrieval_calls_in_g1f_run": 0,
+  "path_C_retrieval_or_llm_calls_through_guard": 0,
+  "support_devices_edge_cases": {
+    "studies_with_support_devices_as_only_positive_label": 9,
+    "of_which_no_finding_positive_routed_normal_path_A": 8,
+    "of_which_no_finding_negative_routed_abnormal_path_B": 1
+  },
+  "alternative_readings_for_reference_only": {
+    "strict_c4_pathology_definition (Support Devices not a trigger for Path B)": {
+      "A": 269,
+      "B": 228,
+      "C": 50
+    },
+    "any_positive_label_is_pathology": {
+      "A": 261,
+      "B": 237,
+      "C": 49
+    }
+  },
+  "pathology_labels_that_make_a_study_not_explicit_normal": [
+    "Enlarged Cardiomediastinum",
+    "Cardiomegaly",
+    "Lung Opacity",
+    "Lung Lesion",
+    "Edema",
+    "Consolidation",
+    "Pneumonia",
+    "Atelectasis",
+    "Pneumothorax",
+    "Pleural Effusion",
+    "Pleural Other",
+    "Fracture"
+  ],
+  "indeterminate_wording": {
+    "findings": "Model output is indeterminate for this study.",
+    "impression": "Automated preliminary interpretation could not be established. Radiologist review is required."
+  }
+}

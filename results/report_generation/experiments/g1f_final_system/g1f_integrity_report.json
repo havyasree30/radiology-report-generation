@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "earlier_artifacts_checked": 4736,
+  "files_changed": [],
+  "files_missing": [],
+  "c6_freeze_manifest_files_all_match": true,
+  "checkpoint_unchanged": true,
+  "c4_thresholds_unchanged": true,
+  "c5_platt_parameters_unchanged": true,
+  "r2_candidate_config_unchanged": true,
+  "c1_c6_r1_r2_g1_g1a_g1b_g2_artifacts_unchanged": true,
+  "code_unchanged_since_commit": {
+    "G1": {
+      "commit": "9714f50d3f72587e91bf30cef238d4e5240f55e6",
+      "all_unchanged": true,
+      "changed": []
+    },
+    "G1A": {
+      "commit": "d4f78fca8601bb8a5146b307d4dcc74cd360d1f6",
+      "all_unchanged": true,
+      "changed": []
+    },
+    "G1B": {
+      "commit": "26dc0b34514d825710cf0d5a22bb59b33ae6cf43",
+      "all_unchanged": true,
+      "changed": []
+    },
+    "G2": {
+      "commit": "0f583d58466d39825060d781d41d97eedec0c419",
+      "all_unchanged": true,
+      "changed": []
+    }
+  },
+  "g1_generator_and_prompt_unchanged": {
+    "ollama_version": true,
+    "model_digest": true,
+    "options": true,
+    "g1_prompt_hash_equals_current_prompt_module": true
+  },
+  "model_tag": "medgemma1.5:4b",
+  "model_digest": "433252621ab154668b5d8be6aff6c1b771bacba045e46e6193da8d6ad1630f2c",
+  "g1_prompt_sha256": "476b05326f85652b0cdb2faf79a4868a6e839660eb43e34d46cdae625e4b5688",
+  "n_studies": 547,
+  "routing_path_counts": {
+    "A": 269,
+    "B": 229,
+    "C": 49
+  },
+  "routing_matches_guard_function": "547 of 547",
+  "path_C_equals_the_49_empty_classifier_outputs": true,
+  "path_A_B_reports_byte_identical_to_stored_g1": "498 of 498",
+  "path_C_exact_wording_and_no_calls": "49 of 49",
+  "indeterminate_wording": {
+    "module_constants_equal_specification": true,
+    "rendered_text_equals_specification": true
+  },
+  "new_llm_calls_in_g1f_run": 0,
+  "new_retrieval_calls_in_g1f_run": 0,
+  "locked_retrieval_test_studies_in_g1f_outputs": {
+    "g1f_final_validation_outputs.csv": 0,
+    "g1f_per_study_results.csv": 0
+  },
+  "g1f_code_references_to_locked_test_files_or_ids_outside_the_freeze_script": {},
+  "g1f_code_with_model_or_retrieval_calls": {},
+  "external_api_used_in_g1f_code": {},
+  "fit_or_tune_calls_in_g1f_code": {},
+  "allow_locked_true_in_g1f_code": {},
+  "final_system_config_checks": {
+    "hash_recomputed_equals_stored": true,
+    "checkpoint_sha256": true,
+    "thresholds": true,
+    "calibration_file_sha256": true,
+    "r2_config_sha256": true,
+    "top_k": true,
+    "g1_prompt_hash": true,
+    "model_digest": true,
+    "guard_hash": true,
+    "selected_architecture": true,
+    "no_locked_test_results_in_config": true
+  },
+  "git_head": "0f583d58466d39825060d781d41d97eedec0c419",
+  "git_branch": "g1f-final-system-guard"
+}

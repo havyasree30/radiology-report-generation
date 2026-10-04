@@ -1,0 +1,3 @@
+population,n,normal_n,abnormal_n,indeterminate_n,normal_pct,abnormal_pct,indeterminate_pct
+all 547 validation studies (primary set),547,269,229,49,49.177330895795244,41.864716636197443,8.9579524680073135
+378 clinical-subset studies (reference available),378,184,170,24,48.677248677248677,44.973544973544975,6.3492063492063489
